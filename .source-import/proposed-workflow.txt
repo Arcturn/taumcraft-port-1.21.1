@@ -1,0 +1,128 @@
+name: Complete authorized source blob import
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.source-import/**'
+      - '.github/workflows/complete-source-import.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  create-source-blobs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify source parts and create immutable blobs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64
+          import hashlib
+          import json
+          import os
+          import re
+          import urllib.parse
+          import urllib.request
+          
+          REPOSITORY = "Arcturn/taumcraft-port-1.21.1"
+          API_ROOT = "https://api.github.com/repos/" + REPOSITORY
+          EXPECTED = {'src/main/resources/assets/thaumcraft/textures/misc/auranodes.png': {'bytes': 1149590, 'sha256': '3b46124e4a48422bbb64d7948707c3d4422e9399970b7637e255726e5156bda4', 'git_blob_sha': '411d52fefb272574dfbb0466e3437e377e2cb907'}, 'reference/legacy-decompiled-sources.zip': {'bytes': 1389718, 'sha256': '605091cd0649be059faea98acc7fd3a215e30a0c060ea6f94a05bdf36e67e484', 'git_blob_sha': '9d28b995de667d27f4d9124829eb2718bbed8018'}}
+          
+          
+          def require(condition, message):
+              if not condition:
+                  raise ValueError(message)
+          
+          
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, request, fp, code, message, headers, new_url):
+                  raise ValueError("Unexpected API redirect")
+          
+          
+          def main():
+              require(os.environ.get("GITHUB_REPOSITORY") == REPOSITORY, "Repository mismatch")
+              revision = os.environ["GITHUB_SHA"]
+              require(re.fullmatch(r"[0-9a-f]{40}", revision) is not None, "Invalid pinned revision")
+              token = os.environ["GITHUB_TOKEN"]
+              require(bool(token), "Missing GitHub token")
+              opener = urllib.request.build_opener(NoRedirect())
+          
+              def api(method, endpoint, payload=None):
+                  # The only write endpoint allowed by this program creates immutable blobs.
+                  require((method == "GET" and endpoint.startswith("/contents/.source-import/"))
+                          or (method == "POST" and endpoint == "/git/blobs"), "Unexpected API operation")
+                  headers = {
+                      "Accept": "application/vnd.github+json",
+                      "Authorization": "Bearer " + token,
+                      "X-GitHub-Api-Version": "2022-11-28",
+                      "User-Agent": "source-import-blob-completion",
+                  }
+                  body = None
+                  if payload is not None:
+                      headers["Content-Type"] = "application/json"
+                      body = json.dumps(payload).encode("utf-8")
+                  request = urllib.request.Request(API_ROOT + endpoint, data=body, headers=headers, method=method)
+                  with opener.open(request, timeout=30) as response:
+                      require(response.status == (201 if method == "POST" else 200), "Unexpected API status")
+                      return json.load(response)
+          
+              def read_pinned(path):
+                  require(path.startswith(".source-import/") and ".." not in path.split("/"), "Unexpected input path")
+                  endpoint = "/contents/" + urllib.parse.quote(path, safe="/")
+                  endpoint += "?ref=" + revision
+                  result = api("GET", endpoint)
+                  require(result.get("type") == "file" and result.get("encoding") == "base64", "Unexpected Contents response")
+                  # The Contents API wraps its base64 representation at line boundaries.
+                  content = "".join(result["content"].split())
+                  data = base64.b64decode(content, validate=True)
+                  require(len(data) == result["size"], "Contents size mismatch")
+                  return data
+          
+              manifest = json.loads(read_pinned(".source-import/manifest.json"))
+              require(manifest.get("version") == 1 and manifest.get("repository") == REPOSITORY, "Unexpected manifest")
+              files = manifest["files"]
+              require(len(files) == len(EXPECTED) and {item["path"] for item in files} == set(EXPECTED), "Unexpected source files")
+              assembled = []
+              for item in files:
+                  source_path = item["path"]
+                  expected = EXPECTED[source_path]
+                  require(all(item.get(key) == value for key, value in expected.items()), "Source identity mismatch")
+                  chunks = []
+                  seen_parts = set()
+                  for part in item["parts"]:
+                      path = part["path"]
+                      require(re.fullmatch(r"\.source-import/parts/[0-9]{2}-[0-9]{3}\.b64", path) is not None, "Invalid part path")
+                      require(path not in seen_parts, "Duplicate source part")
+                      seen_parts.add(path)
+                      chunk = read_pinned(path)
+                      require(len(chunk) == part["chars"] and 0 < len(chunk) <= 100000, "Invalid part size")
+                      require(hashlib.sha256(chunk).hexdigest() == part["sha256"], "Part digest mismatch")
+                      chunks.append(chunk.decode("ascii"))
+                  encoded = "".join(chunks)
+                  data = base64.b64decode(encoded, validate=True)
+                  require(len(data) == expected["bytes"], "Source size mismatch")
+                  require(hashlib.sha256(data).hexdigest() == expected["sha256"], "Source digest mismatch")
+                  git_blob_sha = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
+                  require(git_blob_sha == expected["git_blob_sha"], "Git blob digest mismatch")
+                  assembled.append((source_path, encoded, git_blob_sha))
+          
+              # Both authorized source files are fully verified before any immutable blob write.
+              for source_path, encoded, git_blob_sha in assembled:
+                  result = api("POST", "/git/blobs", {"content": encoded, "encoding": "base64"})
+                  require(result.get("sha") == git_blob_sha, "Returned Git blob digest mismatch")
+                  print(source_path + " " + git_blob_sha, flush=True)
+          
+          
+          if __name__ == "__main__":
+              try:
+                  main()
+              except Exception as error:
+                  # Do not print API bodies, file contents, request headers, or token values.
+                  raise SystemExit("Source import failed (" + type(error).__name__ + ")") from None
+          PY

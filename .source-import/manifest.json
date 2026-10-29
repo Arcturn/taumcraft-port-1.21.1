@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "repository": "Arcturn/taumcraft-port-1.21.1",
+  "files": [
+    {
+      "path": "src/main/resources/assets/thaumcraft/textures/misc/auranodes.png",
+      "bytes": 1149590,
+      "sha256": "3b46124e4a48422bbb64d7948707c3d4422e9399970b7637e255726e5156bda4",
+      "git_blob_sha": "411d52fefb272574dfbb0466e3437e377e2cb907",
+      "parts": [
+        {
+          "path": ".source-import/parts/00-000.b64",
+          "chars": 96000,
+          "sha256": "6efc7e220f249adf4ea04563b29c587761b3f65480b9a3747f967f10829ef29c"
+        },
+        {
+          "path": ".source-import/parts/00-001.b64",
+          "chars": 96000,
+          "sha256": "b8af6b6c8f4f9757513e0ff44ac297a5fb06ab65db8a729d7698ef966c2199b0"
+        },
+        {
+          "path": ".source-import/parts/00-002.b64",
+          "chars": 96000,
+          "sha256": "175cc424ad61d84d1d5a0fab06547a67ab8f3917cc9ba1e32a299be5ad758523"
+        },
+        {
+          "path": ".source-import/parts/00-003.b64",
+          "chars": 96000,
+          "sha256": "731dba990fcd3db81070a8bd019e6878999b2618e04c92506a485fdb6d79b44a"
+        },
+        {
+          "path": ".source-import/parts/00-004.b64",
+          "chars": 96000,
+          "sha256": "c55e48cf8e966fa9d3f3b2f36a62ddc0c0f3a1aa597bbb31c5b40455b7fd82e5"
+        },
+        {
+          "path": ".source-import/parts/00-005.b64",
+          "chars": 96000,
+          "sha256": "b9ae773a36dc992607e023fa875286e2e1d6d9d9bf5dfa89bd2e15b128daede3"
+        },
+        {
+          "path": ".source-import/parts/00-006.b64",
+          "chars": 96000,
+          "sha256": "2820fe84814296e1b35f0b13632cac7eee02020a09b81d296efa0a807e2dac37"
+        },
+        {
+          "path": ".source-import/parts/00-007.b64",
+          "chars": 96000,
+          "sha256": "ccddd58be412ab03769c6d0b49ad91e73f09bad52de0ffb0e0304cc102cc30ed"
+        },
+        {
+          "path": ".source-import/parts/00-008.b64",
+          "chars": 96000,
+          "sha256": "e07963c284f3b31d1390dff6f68dba13195765d24a37caf39c34986a3f35a50c"
+        },
+        {
+          "path": ".source-import/parts/00-009.b64",
+          "chars": 96000,
+          "sha256": "4cd9666f1d4f0459ab9d6f255bd3cec9b2fefc144236a4b7e99e752ea631e26d"
+        },
+        {
+          "path": ".source-import/parts/00-010.b64",
+          "chars": 96000,
+          "sha256": "c27b40d9b843e3c370177080a558af59b845c367a315afba46fcea18b790acd1"
+        },
+        {
+          "path": ".source-import/parts/00-011.b64",
+          "chars": 96000,
+          "sha256": "fc81ab2e7a88c875605372d990d58fea9cadfdc723d374d961c7e2c52cfd9985"
+        },
+        {
+          "path": ".source-import/parts/00-012.b64",
+          "chars": 96000,
+          "sha256": "6cdc46273d0ede036541b0e2acbb831a3526a6d28c692a331c75db5922ce4ce1"
+        },
+        {
+          "path": ".source-import/parts/00-013.b64",
+          "chars": 96000,
+          "sha256": "b167c9e0bafa30be52b326f184bb60cffb02b26fda01391e6a7b4b748e680a9f"
+        },
+        {
+          "path": ".source-import/parts/00-014.b64",
+          "chars": 96000,
+          "sha256": "451489ff5e378930e22e0a7c1e4807fb8d9a7f9e42d4eb938ebf05dc2eff3df0"
+        },
+        {
+          "path": ".source-import/parts/00-015.b64",
+          "chars": 92788,
+          "sha256": "8009113fcade94674782f19ab3e6fc6bab490d9bf451a003410a2cf93e9b2787"
+        }
+      ]
+    },
+    {
+      "path": "reference/legacy-decompiled-sources.zip",
+      "bytes": 1389718,
+      "sha256": "605091cd0649be059faea98acc7fd3a215e30a0c060ea6f94a05bdf36e67e484",
+      "git_blob_sha": "9d28b995de667d27f4d9124829eb2718bbed8018",
+      "parts": [
+        {
+          "path": ".source-import/parts/01-000.b64",
+          "chars": 96000,
+          "sha256": "2ebebef07be23d8283e2830afe34c3cd914ed934ebe988dbabd84c0b8010420f"
+        },
+        {
+          "path": ".source-import/parts/01-001.b64",
+          "chars": 96000,
+          "sha256": "5e1853bd9a52044f96488e26f69c7d61fd17422a9d8fca2afaa9eb2c9b0b15ed"
+        },
+        {
+          "path": ".source-import/parts/01-002.b64",
+          "chars": 96000,
+          "sha256": "243c6ec9bc32cf27f18824e0b7fb86d9d4cead268413f77072eae0cd63ac6933"
+        },
+        {
+          "path": ".source-import/parts/01-003.b64",
+          "chars": 96000,
+          "sha256": "ba6df5371a2e8c89bd23cfe66e21c9c391cf1467340f0e1f661adac1eaf4be86"
+        },
+        {
+          "path": ".source-import/parts/01-004.b64",
+          "chars": 96000,
+          "sha256": "2300d33447026ed4794b562db6157fecbdd8279bfb3e8b42d3f854cfc495e7fe"
+        },
+        {
+          "path": ".source-import/parts/01-005.b64",
+          "chars": 96000,
+          "sha256": "b6a9c235f0f1218fafa42dcf7086aa663f7a31e50b60e38f5dd9a97b18e02bc9"
+        },
+        {
+          "path": ".source-import/parts/01-006.b64",
+          "chars": 96000,
+          "sha256": "ec5a37c2a29bee5388fb0ec8365372d860973bec1fb8ad58159c8cd99878127e"
+        },
+        {
+          "path": ".source-import/parts/01-007.b64",
+          "chars": 96000,
+          "sha256": "5087767a14853acf512d08eba2347b11f63b34b6566f4d14d8653e434e5bb157"
+        },
+        {
+          "path": ".source-import/parts/01-008.b64",
+          "chars": 96000,
+          "sha256": "346e61fe787dfd4cb349af3d4ff408c5c6d473651167e15741f50c7d9fe5650a"
+        },
+        {
+          "path": ".source-import/parts/01-009.b64",
+          "chars": 96000,
+          "sha256": "3bacf8ef0e09a9ebd6b1a3144ed661146a8198dd0da7dd96e9f0038368c79c1c"
+        },
+        {
+          "path": ".source-import/parts/01-010.b64",
+          "chars": 96000,
+          "sha256": "53b8fdc357339526f83ca99a977594d855446ed8c36a8696b30ac01ca095deab"
+        },
+        {
+          "path": ".source-import/parts/01-011.b64",
+          "chars": 96000,
+          "sha256": "3c4e18ed78997310bb33ada5c273ca2880a7bd511eaeddb92df407c06386c958"
+        },
+        {
+          "path": ".source-import/parts/01-012.b64",
+          "chars": 96000,
+          "sha256": "7d13c3579c440f6e70917d51539a67864f27ede16b93c2cd3325f5a6207371d8"
+        },
+        {
+          "path": ".source-import/parts/01-013.b64",
+          "chars": 96000,
+          "sha256": "0670138aef9d13eb76c8047d93b5e355ca6baaeb431fce4c4c4948eca1ffa659"
+        },
+        {
+          "path": ".source-import/parts/01-014.b64",
+          "chars": 96000,
+          "sha256": "8b52b7b73cf77db1494f497190e62bdce08ef7b2828bdf2d7d713bd2a7282c99"
+        },
+        {
+          "path": ".source-import/parts/01-015.b64",
+          "chars": 96000,
+          "sha256": "cb583fb89ac3879ccbcfb23b19a8678e0c18ed801951fdb05148f415484eb27e"
+        },
+        {
+          "path": ".source-import/parts/01-016.b64",
+          "chars": 96000,
+          "sha256": "1e3f56be6366e431cb07639b3e69e3778073c3197b63ad947c35f7712c794b17"
+        },
+        {
+          "path": ".source-import/parts/01-017.b64",
+          "chars": 96000,
+          "sha256": "4dfb748ea267d0ddf80f558053b6292669e0b3781d1d9b1fd1569bcf826dbdf9"
+        },
+        {
+          "path": ".source-import/parts/01-018.b64",
+          "chars": 96000,
+          "sha256": "def5c77ca4dc2df14f86d723b5c9df7deac32762c6e36e2dc3fd84006042b029"
+        },
+        {
+          "path": ".source-import/parts/01-019.b64",
+          "chars": 28960,
+          "sha256": "66eea060195daa1592973a4be298ae7a363713e50a47be7230d6d2a2b3ebf272"
+        }
+      ]
+    }
+  ]
+}
