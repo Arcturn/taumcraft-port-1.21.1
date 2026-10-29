@@ -1,0 +1,25 @@
+{
+  "textures": {
+    "all": "thaumcraft:blocks/vis_battery_0"
+  },
+  "parent": "minecraft:block/cube_all",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.ResearchProgressTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-26T09:00:35.317Z" hostname="6adda57d248a" time="0.005">
+  <properties/>
+  <testcase name="schemaOneMigrationPreservesScansAndGrantsAspectDiscoveries()" classname="thaumcraft.port.ResearchProgressTest" time="0.001"/>
+  <testcase name="originalRecipeAspectRoundingIsRetained()" classname="thaumcraft.port.ResearchProgressTest" time="0.001"/>
+  <testcase name="completedLegacyScanFlagsAlsoSatisfyStagedRequirements()" classname="thaumcraft.port.ResearchProgressTest" time="0.0"/>
+  <testcase name="completeStateRoundTripsIncludingWarpAndCrafts()" classname="thaumcraft.port.ResearchProgressTest" time="0.001"/>
+  <testcase name="knowledgeSpendingRejectsUnderflowAndUnknownCategory()" classname="thaumcraft.port.ResearchProgressTest" time="0.0"/>
+  <testcase name="andOrExpressionsUseRealBooleanSemantics()" classname="thaumcraft.port.ResearchProgressTest" time="0.001"/>
+  <testcase name="allOriginalEntriesAndFormulaArePresent()" classname="thaumcraft.port.ResearchProgressTest" time="0.0"/>
+  <testcase name="hiddenPrerequisitesAndStageReferencesRemainDistinct()" classname="thaumcraft.port.ResearchProgressTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

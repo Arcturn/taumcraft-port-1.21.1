@@ -1,0 +1,4678 @@
+{
+  "aspects": [
+    "aer",
+    "terra",
+    "ignis",
+    "aqua",
+    "ordo",
+    "perditio",
+    "vacuos",
+    "lux",
+    "motus",
+    "gelum",
+    "vitreus",
+    "metallum",
+    "victus",
+    "mortuus",
+    "potentia",
+    "permutatio",
+    "praecantatio",
+    "auram",
+    "alkimia",
+    "vitium",
+    "tenebrae",
+    "alienis",
+    "volatus",
+    "herba",
+    "instrumentum",
+    "fabrico",
+    "machina",
+    "vinculum",
+    "spiritus",
+    "cognitio",
+    "sensus",
+    "aversio",
+    "praemunio",
+    "desiderium",
+    "exanimis",
+    "bestia",
+    "humanus"
+  ],
+  "client_rendered": false,
+  "gameplay_verified": false,
+  "item_requirements": [
+    {
+      "craft_key": "thaumcraft:arcane_workbench",
+      "field": "required_craft",
+      "research": "FIRSTSTEPS",
+      "source": "thaumcraft:arcane_workbench",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:thaumometer",
+      "field": "required_craft",
+      "research": "FIRSTSTEPS",
+      "source": "thaumcraft:thaumometer",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:scribing_tools",
+      "field": "required_craft",
+      "research": "THEORYRESEARCH",
+      "source": "thaumcraft:scribing_tools",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:research_table",
+      "field": "required_craft",
+      "research": "THEORYRESEARCH",
+      "source": "thaumcraft:research_table",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/aer",
+      "field": "required_item",
+      "research": "CRYSTALFARMER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aer'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/terra",
+      "field": "required_item",
+      "research": "CRYSTALFARMER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'terra'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/ignis",
+      "field": "required_item",
+      "research": "CRYSTALFARMER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ignis'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/aqua",
+      "field": "required_item",
+      "research": "CRYSTALFARMER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aqua'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/ordo",
+      "field": "required_item",
+      "research": "CRYSTALFARMER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ordo'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/perditio",
+      "field": "required_item",
+      "research": "CRYSTALFARMER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'perditio'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crucible",
+      "field": "required_craft",
+      "research": "UNLOCKALCHEMY",
+      "source": "thaumcraft:crucible",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:nitor_yellow",
+      "field": "required_craft",
+      "research": "UNLOCKALCHEMY",
+      "source": "thaumcraft:nitor;1;4",
+      "stage": 3,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:vis_resonator",
+      "field": "required_craft",
+      "research": "UNLOCKAUROMANCY",
+      "source": "thaumcraft:vis_resonator",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:caster_basic",
+      "field": "required_craft",
+      "research": "UNLOCKAUROMANCY",
+      "source": "thaumcraft:caster_basic",
+      "stage": 2,
+      "supported": false
+    },
+    {
+      "craft_key": "thaumcraft:curio_rites",
+      "field": "required_item",
+      "research": "CrimsonRites",
+      "source": "thaumcraft:curio;1;6",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:phial/vitium",
+      "field": "required_item",
+      "research": "FLUXCLEANUP",
+      "source": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'vitium'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:ingot_brass",
+      "field": "required_craft",
+      "research": "METALLURGY",
+      "source": "thaumcraft:ingot;1;2",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:ingot_thaumium",
+      "field": "required_craft",
+      "research": "METALLURGY",
+      "source": "thaumcraft:ingot;1;0",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:tallow",
+      "field": "required_craft",
+      "research": "HEDGEALCHEMY",
+      "source": "thaumcraft:tallow",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:leather",
+      "field": "required_craft",
+      "research": "HEDGEALCHEMY",
+      "source": "thaumcraft:leather",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:gunpowder",
+      "field": "required_craft",
+      "research": "HEDGEALCHEMY",
+      "source": "minecraft:gunpowder",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:slime_ball",
+      "field": "required_craft",
+      "research": "HEDGEALCHEMY",
+      "source": "minecraft:slime_ball",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:ink_sac",
+      "field": "required_craft",
+      "research": "HEDGEALCHEMY",
+      "source": "minecraft:dye",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:glowstone_dust",
+      "field": "required_craft",
+      "research": "HEDGEALCHEMY",
+      "source": "minecraft:glowstone_dust",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:clay_ball",
+      "field": "required_craft",
+      "research": "HEDGEALCHEMY",
+      "source": "minecraft:clay_ball",
+      "stage": 3,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:string",
+      "field": "required_craft",
+      "research": "HEDGEALCHEMY",
+      "source": "minecraft:string",
+      "stage": 3,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:cobweb",
+      "field": "required_craft",
+      "research": "HEDGEALCHEMY",
+      "source": "minecraft:web",
+      "stage": 3,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:lava_bucket",
+      "field": "required_craft",
+      "research": "HEDGEALCHEMY",
+      "source": "minecraft:lava_bucket",
+      "stage": 3,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/aer",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aer'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/terra",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'terra'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/ignis",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ignis'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/aqua",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aqua'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/ordo",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ordo'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/perditio",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'perditio'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/vacuos",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'vacuos'}]}",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/lux",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'lux'}]}",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/motus",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'motus'}]}",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/gelum",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'gelum'}]}",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/vitreus",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'vitreus'}]}",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/metallum",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'metallum'}]}",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/victus",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'victus'}]}",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/mortuus",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'mortuus'}]}",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/potentia",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'potentia'}]}",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/permutatio",
+      "field": "required_item",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'permutatio'}]}",
+      "stage": 2,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:smelter_basic",
+      "field": "required_craft",
+      "research": "ESSENTIASMELTER",
+      "source": "thaumcraft:smelter_basic",
+      "stage": 3,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:phial/vitium",
+      "field": "required_item",
+      "research": "TUBES",
+      "source": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'vitium'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:phial/vinculum",
+      "field": "required_item",
+      "research": "TUBES",
+      "source": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'vinculum'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:phial/alienis",
+      "field": "required_item",
+      "research": "TUBES",
+      "source": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'alienis'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:phial/alkimia",
+      "field": "required_item",
+      "research": "TUBES",
+      "source": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'alkimia'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:plate_thaumium",
+      "field": "required_item",
+      "research": "ESSENTIASMELTERTHAUMIUM",
+      "source": "thaumcraft:plate;1;2",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:metal_brass",
+      "field": "required_craft",
+      "research": "ESSENTIASMELTERTHAUMIUM",
+      "source": "thaumcraft:metal;1;2",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:plate_void",
+      "field": "required_item",
+      "research": "ESSENTIASMELTERVOID",
+      "source": "thaumcraft:plate;1;3",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:metal_thaumium",
+      "field": "required_craft",
+      "research": "ESSENTIASMELTERVOID",
+      "source": "thaumcraft:metal;1;3",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:focus_1",
+      "field": "required_craft",
+      "research": "BASEAUROMANCY",
+      "source": "thaumcraft:focus_1",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:wand_workbench",
+      "field": "required_craft",
+      "research": "BASEAUROMANCY",
+      "source": "thaumcraft:wand_workbench",
+      "stage": 2,
+      "supported": false
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:focus_2",
+      "field": "required_craft",
+      "research": "FOCUSADVANCED",
+      "source": "thaumcraft:focus_2",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:focus_3",
+      "field": "required_craft",
+      "research": "FOCUSGREATER",
+      "source": "thaumcraft:focus_3",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "enchantment:{silk_touch=1}",
+      "field": "required_item",
+      "research": "FOCUSBREAK",
+      "source": "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:33s,lvl:1s}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "enchantment:{fortune=1}",
+      "field": "required_item",
+      "research": "FOCUSBREAK",
+      "source": "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:35s,lvl:1s}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:tripwire_hook",
+      "field": "required_item",
+      "research": "FOCUSMINE",
+      "source": "minecraft:tripwire_hook",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:dragon_breath",
+      "field": "required_item",
+      "research": "FOCUSCLOUD",
+      "source": "minecraft:dragon_breath",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:chest",
+      "field": "required_item",
+      "research": "HUNGRYCHEST",
+      "source": "oredict:chest",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:hopper",
+      "field": "required_item",
+      "research": "HUNGRYCHEST",
+      "source": "minecraft:hopper",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:obsidian",
+      "field": "required_item",
+      "research": "INFERNALFURNACE",
+      "source": "minecraft:obsidian",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:nether_brick",
+      "field": "required_item",
+      "research": "INFERNALFURNACE",
+      "source": "minecraft:nether_brick",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:blaze_rod",
+      "field": "required_item",
+      "research": "INFERNALFURNACE",
+      "source": "minecraft:blaze_rod",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:crystal_essence/aer",
+      "field": "required_item",
+      "research": "BELLOWS",
+      "source": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aer'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:redstone_torch",
+      "field": "required_item",
+      "research": "REDSTONERELAY",
+      "source": "minecraft:redstone_torch",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:note_block",
+      "field": "required_item",
+      "research": "ARCANEEAR",
+      "source": "minecraft:noteblock",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:ender_pearl",
+      "field": "required_item",
+      "research": "MIRROR",
+      "source": "minecraft:ender_pearl",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:mirrored_glass",
+      "field": "required_item",
+      "research": "MIRROR",
+      "source": "thaumcraft:mirrored_glass",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "minecraft:bone_meal",
+      "field": "required_item",
+      "research": "LAMPGROWTH",
+      "source": "minecraft:dye;1;15",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:wheat",
+      "field": "required_item",
+      "research": "LAMPFERTILITY",
+      "source": "minecraft:wheat",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:carrot",
+      "field": "required_item",
+      "research": "LAMPFERTILITY",
+      "source": "minecraft:carrot",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:nugget;1;10",
+      "field": "required_item",
+      "research": "GRAPPLEGUN",
+      "source": "thaumcraft:nugget;1;10",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "minecraft:redstone_block",
+      "field": "required_item",
+      "research": "VISGENERATOR",
+      "source": "minecraft:redstone_block",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:piston",
+      "field": "required_item",
+      "research": "VISGENERATOR",
+      "source": "minecraft:piston",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:stone",
+      "field": "required_item",
+      "research": "INFUSION",
+      "source": "minecraft:stone",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:feather",
+      "field": "required_item",
+      "research": "INFUSION",
+      "source": "minecraft:feather",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:phial/aer",
+      "field": "required_item",
+      "research": "INFUSION",
+      "source": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'aer'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:infusion_matrix",
+      "field": "required_craft",
+      "research": "INFUSION",
+      "source": "thaumcraft:infusion_matrix",
+      "stage": 2,
+      "supported": false
+    },
+    {
+      "craft_key": "minecraft:redstone",
+      "field": "required_item",
+      "research": "INFUSIONSTABLE",
+      "source": "minecraft:redstone",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:phial/vitium",
+      "field": "required_item",
+      "research": "INFUSIONSTABLE",
+      "source": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'vitium'}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:stone_ancient",
+      "field": "required_item",
+      "research": "INFUSIONANCIENT",
+      "source": "thaumcraft:stone_ancient",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:stone_eldritch_tile",
+      "field": "required_item",
+      "research": "INFUSIONELDRITCH",
+      "source": "thaumcraft:stone_eldritch_tile",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "thaumcraft:arcane_stone",
+      "field": "required_craft",
+      "research": "PAVINGSTONES",
+      "source": "thaumcraft:arcane_stone",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:thaumium_axe",
+      "field": "required_craft",
+      "research": "ELEMENTALTOOLS",
+      "source": "thaumcraft:thaumium_axe",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:thaumium_sword",
+      "field": "required_craft",
+      "research": "ELEMENTALTOOLS",
+      "source": "thaumcraft:thaumium_sword",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:thaumium_pick",
+      "field": "required_craft",
+      "research": "ELEMENTALTOOLS",
+      "source": "thaumcraft:thaumium_pick",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:thaumium_shovel",
+      "field": "required_craft",
+      "research": "ELEMENTALTOOLS",
+      "source": "thaumcraft:thaumium_shovel",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "unsupported:thaumcraft:thaumium_hoe",
+      "field": "required_craft",
+      "research": "ELEMENTALTOOLS",
+      "source": "thaumcraft:thaumium_hoe",
+      "stage": 1,
+      "supported": false
+    },
+    {
+      "craft_key": "enchantment:{sharpness=1}",
+      "field": "required_item",
+      "research": "INFUSIONENCHANTMENT",
+      "source": "minecraft:thaumcraft:enchanted_placeholder;1;0;{ench:[{id:16s,lvl:1s}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "enchantment:{protection=1}",
+      "field": "required_item",
+      "research": "RUNICSHIELDING",
+      "source": "minecraft:thaumcraft:enchanted_placeholder;1;0;{ench:[{id:0s,lvl:1s}]}",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:amber",
+      "field": "required_item",
+      "research": "RUNICSHIELDING",
+      "source": "thaumcraft:amber",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "thaumcraft:brain",
+      "field": "required_item",
+      "research": "JARBRAIN",
+      "source": "thaumcraft:brain",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:map",
+      "field": "required_item",
+      "research": "GOLEMLOGISTICS",
+      "source": "minecraft:map",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:ender_eye",
+      "field": "required_item",
+      "research": "GOLEMLOGISTICS",
+      "source": "minecraft:ender_eye",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:fermented_spider_eye",
+      "field": "required_item",
+      "research": "GOLEMVISION",
+      "source": "minecraft:fermented_spider_eye",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:flint",
+      "field": "required_item",
+      "research": "GOLEMCLIMBER",
+      "source": "minecraft:flint",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:diamond",
+      "field": "required_item",
+      "research": "GOLEMBREAKER",
+      "source": "minecraft:diamond",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:piston",
+      "field": "required_item",
+      "research": "GOLEMBREAKER",
+      "source": "minecraft:piston",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:arrow",
+      "field": "required_item",
+      "research": "GOLEMCOMBATADV",
+      "source": "minecraft:arrow",
+      "stage": 1,
+      "supported": true
+    },
+    {
+      "craft_key": "minecraft:shears",
+      "field": "required_item",
+      "research": "GOLEMCOMBATADV",
+      "source": "minecraft:shears",
+      "stage": 1,
+      "supported": true
+    }
+  ],
+  "items": {
+    "thaumcraft:alembic": {
+      "block": "thaumcraft:alembic",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:alumentum": {
+      "class": "thaumcraft.port.content.AlumentumItem",
+      "display_only": false
+    },
+    "thaumcraft:amber": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:amber_block": {
+      "block": "thaumcraft:amber_block",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:amber_brick": {
+      "block": "thaumcraft:amber_brick",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:amulet_fancy": {
+      "class": "thaumcraft.port.integration.CurioItem",
+      "display_only": false
+    },
+    "thaumcraft:amulet_mundane": {
+      "class": "thaumcraft.port.integration.CurioItem",
+      "display_only": false
+    },
+    "thaumcraft:arcane_brick": {
+      "block": "thaumcraft:arcane_brick",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:arcane_stone": {
+      "block": "thaumcraft:arcane_stone",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:arcane_workbench": {
+      "block": "thaumcraft:arcane_workbench",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:bellows": {
+      "block": "thaumcraft:bellows",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:brain": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:brain_box": {
+      "block": "thaumcraft:brain_box",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:celestial_notes": {
+      "class": "thaumcraft.port.content.CelestialNotesItem",
+      "display_only": false
+    },
+    "thaumcraft:centrifuge": {
+      "block": "thaumcraft:centrifuge",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:charm_undying": {
+      "class": "thaumcraft.port.integration.CurioItem",
+      "display_only": false
+    },
+    "thaumcraft:cinderpearl": {
+      "block": "thaumcraft:cinderpearl",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:cluster_cinnabar": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:cluster_copper": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:cluster_gold": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:cluster_iron": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:crucible": {
+      "block": "thaumcraft:crucible",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:crystal_aer": {
+      "block": "thaumcraft:crystal_aer",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:crystal_aqua": {
+      "block": "thaumcraft:crystal_aqua",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:crystal_essence": {
+      "class": "thaumcraft.port.content.CrystalItem",
+      "display_only": false
+    },
+    "thaumcraft:crystal_ignis": {
+      "block": "thaumcraft:crystal_ignis",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:crystal_ordo": {
+      "block": "thaumcraft:crystal_ordo",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:crystal_perditio": {
+      "block": "thaumcraft:crystal_perditio",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:crystal_terra": {
+      "block": "thaumcraft:crystal_terra",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:crystal_vitium": {
+      "block": "thaumcraft:crystal_vitium",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:curio_ancient": {
+      "class": "thaumcraft.port.theory.ResearchCurioItem",
+      "display_only": false
+    },
+    "thaumcraft:curio_arcane": {
+      "class": "thaumcraft.port.theory.ResearchCurioItem",
+      "display_only": false
+    },
+    "thaumcraft:curio_eldritch": {
+      "class": "thaumcraft.port.theory.ResearchCurioItem",
+      "display_only": false
+    },
+    "thaumcraft:curio_knowledge": {
+      "class": "thaumcraft.port.theory.ResearchCurioItem",
+      "display_only": false
+    },
+    "thaumcraft:curio_preserved": {
+      "class": "thaumcraft.port.theory.ResearchCurioItem",
+      "display_only": false
+    },
+    "thaumcraft:curio_rites": {
+      "class": "thaumcraft.port.theory.ResearchCurioItem",
+      "display_only": false
+    },
+    "thaumcraft:curio_twisted": {
+      "class": "thaumcraft.port.theory.ResearchCurioItem",
+      "display_only": false
+    },
+    "thaumcraft:fabric": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:filter": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:flux_goo": {
+      "block": "thaumcraft:flux_goo",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:girdle_fancy": {
+      "class": "thaumcraft.port.integration.CurioItem",
+      "display_only": false
+    },
+    "thaumcraft:girdle_mundane": {
+      "class": "thaumcraft.port.integration.CurioItem",
+      "display_only": false
+    },
+    "thaumcraft:grass_ambient": {
+      "block": "thaumcraft:grass_ambient",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:ingot_brass": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:ingot_thaumium": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:ingot_void": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:jar_brace": {
+      "class": "thaumcraft.port.essentia.JarBraceItem",
+      "display_only": false
+    },
+    "thaumcraft:jar_normal": {
+      "block": "thaumcraft:jar_normal",
+      "class": "thaumcraft.port.essentia.JarItem",
+      "display_only": false
+    },
+    "thaumcraft:jar_void": {
+      "block": "thaumcraft:jar_void",
+      "class": "thaumcraft.port.essentia.JarItem",
+      "display_only": false
+    },
+    "thaumcraft:label": {
+      "class": "thaumcraft.port.essentia.EssentiaItem",
+      "display_only": false
+    },
+    "thaumcraft:leaves_greatwood": {
+      "block": "thaumcraft:leaves_greatwood",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:leaves_silverwood": {
+      "block": "thaumcraft:leaves_silverwood",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:log_greatwood": {
+      "block": "thaumcraft:log_greatwood",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:log_silverwood": {
+      "block": "thaumcraft:log_silverwood",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:loot_crate_common": {
+      "block": "thaumcraft:loot_crate_common",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:loot_crate_rare": {
+      "block": "thaumcraft:loot_crate_rare",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:loot_crate_uncommon": {
+      "block": "thaumcraft:loot_crate_uncommon",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:loot_urn_common": {
+      "block": "thaumcraft:loot_urn_common",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:loot_urn_rare": {
+      "block": "thaumcraft:loot_urn_rare",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:loot_urn_uncommon": {
+      "block": "thaumcraft:loot_urn_uncommon",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:mechanism_simple": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:metal_alchemical": {
+      "block": "thaumcraft:metal_alchemical",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:metal_alchemical_advanced": {
+      "block": "thaumcraft:metal_alchemical_advanced",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:metal_brass": {
+      "block": "thaumcraft:metal_brass",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:metal_thaumium": {
+      "block": "thaumcraft:metal_thaumium",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:metal_void": {
+      "block": "thaumcraft:metal_void",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:mind_clockwork": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:morphic_resonator": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:nitor_black": {
+      "block": "thaumcraft:nitor_black",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_blue": {
+      "block": "thaumcraft:nitor_blue",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_brown": {
+      "block": "thaumcraft:nitor_brown",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_cyan": {
+      "block": "thaumcraft:nitor_cyan",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_gray": {
+      "block": "thaumcraft:nitor_gray",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_green": {
+      "block": "thaumcraft:nitor_green",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_light_blue": {
+      "block": "thaumcraft:nitor_light_blue",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_light_gray": {
+      "block": "thaumcraft:nitor_light_gray",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_lime": {
+      "block": "thaumcraft:nitor_lime",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_magenta": {
+      "block": "thaumcraft:nitor_magenta",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_orange": {
+      "block": "thaumcraft:nitor_orange",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_pink": {
+      "block": "thaumcraft:nitor_pink",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_purple": {
+      "block": "thaumcraft:nitor_purple",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_red": {
+      "block": "thaumcraft:nitor_red",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_white": {
+      "block": "thaumcraft:nitor_white",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nitor_yellow": {
+      "block": "thaumcraft:nitor_yellow",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:nugget_brass": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:nugget_quartz": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:nugget_quicksilver": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:nugget_thaumium": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:nugget_void": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:ore_amber": {
+      "block": "thaumcraft:ore_amber",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:ore_cinnabar": {
+      "block": "thaumcraft:ore_cinnabar",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:ore_quartz": {
+      "block": "thaumcraft:ore_quartz",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:phial": {
+      "class": "thaumcraft.port.essentia.EssentiaItem",
+      "display_only": false
+    },
+    "thaumcraft:plank_greatwood": {
+      "block": "thaumcraft:plank_greatwood",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:plank_silverwood": {
+      "block": "thaumcraft:plank_silverwood",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:plate_brass": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:plate_iron": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:plate_thaumium": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:plate_void": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:primordial_pearl": {
+      "class": "thaumcraft.port.content.PrimordialPearlItem",
+      "display_only": false
+    },
+    "thaumcraft:quicksilver": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:research_display_research_advancedturret": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_alumentum": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_arcanebore": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_arcaneear": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_arcanelamp": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_arcanepatterncrafter": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_arcanespa": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_armorfortress": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_basealchemy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_baseartifice": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_baseauromancy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_baseeldritch": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_basegolemancy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_baseinfusion": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_basicturret": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_bathsalts": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_bellows": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_bootstraveller": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_bottletaint": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_category_alchemy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_category_artifice": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_category_auromancy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_category_basics": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_category_eldritch": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_category_golemancy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_category_infusion": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_celestialscanning": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_centrifuge": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_charmundying": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_cloudring": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_controlseals": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_crimsonrites": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_crystalfarmer": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_curiosityband": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_dioptra": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_elementaltools": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_essentiasmelter": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_essentiasmelterthaumium": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_essentiasmeltervoid": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_essentiatransport": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_everfullurn": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_firststeps": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_flux": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_fluxcleanup": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_fluxrift": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusadvanced": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusbolt": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusbreak": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focuscloud": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focuscurse": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focuselemental": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusexchange": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusflux": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusgreater": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusheal": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusmine": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusplan": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focuspouch": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusprojectile": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusrift": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusscatter": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focusspellbat": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_focussplit": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_fortressmask": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_golembreaker": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_golemclimber": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_golemcombatadv": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_golemdirect": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_golemflyer": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_golemlogistics": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_golemvision": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_grapplegun": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_hedgealchemy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_hungrychest": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_improvedsmelting": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_improvedsmelting2": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_infernalfurnace": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_infusion": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_infusionancient": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_infusionboost": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_infusioneldritch": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_infusionenchantment": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_infusionstable": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_jarbrain": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_knowledgetypes": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_lampfertility": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_lampgrowth": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_levitator": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_liquiddeath": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_matstudbrass": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_matstudclay": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_matstudiron": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_matstudthaumium": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_matstudvoid": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_matstudwood": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_metallurgy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_metalpurification": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_mindbiothaumic": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_mindclockwork": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_mirror": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_mirroressentia": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_mirrorhand": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_ore": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_pavingstones": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_plants": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_potionsprayer": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_primalcrusher": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_primpearl": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_rechargepedestal": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_redstonerelay": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_riftcloser": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_runicshielding": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sanesoap": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_brainyzombie": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_crimsoncultist": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_eldritchcrab": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_eldritchguardian": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_firebat": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_pech": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_taintacle": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_taintcrawler": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_taintseed": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_taintswarm": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_thaumslime": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_scan_wisp": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sealbreak": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sealbutcher": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sealcollect": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sealempty": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sealguard": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sealharvest": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_seallumber": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sealprovide": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sealstock": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sealstore": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_sealuse": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_thaumatorium": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_theoryresearch": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_tubes": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_unlockalchemy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_unlockartifice": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_unlockauromancy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_unlockeldritch": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_unlockgolemancy": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_unlockinfusion": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_verdantcharms": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_visamulet": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_visbattery": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_visgenerator": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_voidrobearmor": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_voidseerpearl": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_voidsiphon": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_wardedjars": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_warp": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_research_workbenchcharger": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_display_root": {
+      "class": "thaumcraft.port.content.ResearchDisplayItem",
+      "display_only": true
+    },
+    "thaumcraft:research_icon": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": true
+    },
+    "thaumcraft:research_table": {
+      "block": "thaumcraft:research_table",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:ring_fancy": {
+      "class": "thaumcraft.port.integration.CurioItem",
+      "display_only": false
+    },
+    "thaumcraft:ring_mundane": {
+      "class": "thaumcraft.port.integration.CurioItem",
+      "display_only": false
+    },
+    "thaumcraft:salis_mundus": {
+      "class": "thaumcraft.port.content.SalisMundusItem",
+      "display_only": false
+    },
+    "thaumcraft:sapling_greatwood": {
+      "block": "thaumcraft:sapling_greatwood",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:sapling_silverwood": {
+      "block": "thaumcraft:sapling_silverwood",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:scribing_tools": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:shimmerleaf": {
+      "block": "thaumcraft:shimmerleaf",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:smelter_aux": {
+      "block": "thaumcraft:smelter_aux",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:smelter_basic": {
+      "block": "thaumcraft:smelter_basic",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:smelter_thaumium": {
+      "block": "thaumcraft:smelter_thaumium",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:smelter_vent": {
+      "block": "thaumcraft:smelter_vent",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:smelter_void": {
+      "block": "thaumcraft:smelter_void",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:stone_porous": {
+      "block": "thaumcraft:stone_porous",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:table_wood": {
+      "block": "thaumcraft:table_wood",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:taint_crust": {
+      "block": "thaumcraft:taint_crust",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:taint_fibre": {
+      "block": "thaumcraft:taint_fibre",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:taint_log": {
+      "block": "thaumcraft:taint_log",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:taint_rock": {
+      "block": "thaumcraft:taint_rock",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:taint_soil": {
+      "block": "thaumcraft:taint_soil",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:tallow": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:thaumatorium": {
+      "block": "thaumcraft:thaumatorium",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:thaumatorium_top": {
+      "block": "thaumcraft:thaumatorium_top",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:thaumometer": {
+      "class": "thaumcraft.port.content.ThaumometerItem",
+      "display_only": false
+    },
+    "thaumcraft:thaumonomicon": {
+      "class": "thaumcraft.port.content.ThaumonomiconItem",
+      "display_only": false
+    },
+    "thaumcraft:tube": {
+      "block": "thaumcraft:tube",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:tube_buffer": {
+      "block": "thaumcraft:tube_buffer",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:tube_filter": {
+      "block": "thaumcraft:tube_filter",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:tube_oneway": {
+      "block": "thaumcraft:tube_oneway",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:tube_restrict": {
+      "block": "thaumcraft:tube_restrict",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:tube_valve": {
+      "block": "thaumcraft:tube_valve",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:vis_resonator": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    },
+    "thaumcraft:vishroom": {
+      "block": "thaumcraft:vishroom",
+      "class": "net.minecraft.world.item.BlockItem",
+      "display_only": false
+    },
+    "thaumcraft:void_seed": {
+      "class": "net.minecraft.world.item.Item",
+      "display_only": false
+    }
+  },
+  "mod_version": "0.1.0-alpha.9.9",
+  "recipes": {
+    "thaumcraft:alembic": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aqua": 1
+      },
+      "key": {
+        "B": {
+          "item": "minecraft:bucket"
+        },
+        "F": {
+          "item": "thaumcraft:filter"
+        },
+        "S": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "W": {
+          "item": "thaumcraft:plank_greatwood"
+        }
+      },
+      "pattern": [
+        "WFW",
+        "SBS",
+        "WFW"
+      ],
+      "research": "ESSENTIASMELTER",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:alembic"
+      },
+      "vis": 50
+    },
+    "thaumcraft:arcane_brick": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "K": {
+          "item": "thaumcraft:arcane_stone"
+        }
+      },
+      "pattern": [
+        "KK",
+        "KK"
+      ],
+      "result": {
+        "count": 4,
+        "id": "thaumcraft:arcane_brick"
+      }
+    },
+    "thaumcraft:arcane_stone": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "C": {
+          "item": "thaumcraft:crystal_essence"
+        },
+        "K": {
+          "item": "minecraft:stone"
+        }
+      },
+      "pattern": [
+        "KKK",
+        "KCK",
+        "KKK"
+      ],
+      "result": {
+        "count": 9,
+        "id": "thaumcraft:arcane_stone"
+      }
+    },
+    "thaumcraft:bellows": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aer": 1
+      },
+      "key": {
+        "I": {
+          "item": "minecraft:iron_ingot"
+        },
+        "L": {
+          "item": "minecraft:leather"
+        },
+        "W": {
+          "tag": "minecraft:planks"
+        }
+      },
+      "pattern": [
+        "WW ",
+        "LLI",
+        "WW "
+      ],
+      "research": "BELLOWS",
+      "result": {
+        "id": "thaumcraft:bellows"
+      },
+      "vis": 25
+    },
+    "thaumcraft:brain_box": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "ordo": 1,
+        "terra": 1
+      },
+      "key": {
+        "A": {
+          "item": "thaumcraft:amber"
+        },
+        "B": {
+          "item": "thaumcraft:mind_clockwork"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
+        }
+      },
+      "pattern": [
+        "IAI",
+        "ABA",
+        "IAI"
+      ],
+      "research": "THAUMATORIUM",
+      "result": {
+        "id": "thaumcraft:brain_box"
+      },
+      "vis": 50
+    },
+    "thaumcraft:brass_block": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "thaumcraft:ingot_brass"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "id": "thaumcraft:metal_brass"
+      }
+    },
+    "thaumcraft:brass_ingot": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "thaumcraft:nugget_brass"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "id": "thaumcraft:ingot_brass"
+      }
+    },
+    "thaumcraft:brass_nuggets": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "thaumcraft:ingot_brass"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "thaumcraft:nugget_brass"
+      }
+    },
+    "thaumcraft:brass_unpack": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "thaumcraft:metal_brass"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "thaumcraft:ingot_brass"
+      }
+    },
+    "thaumcraft:centrifuge": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "ordo": 1,
+        "perditio": 1
+      },
+      "key": {
+        "C": {
+          "item": "thaumcraft:metal_alchemical"
+        },
+        "P": {
+          "item": "thaumcraft:mechanism_simple"
+        },
+        "R": {
+          "item": "thaumcraft:morphic_resonator"
+        },
+        "T": {
+          "item": "thaumcraft:tube"
+        }
+      },
+      "pattern": [
+        " T ",
+        "RCP",
+        " T "
+      ],
+      "research": "CENTRIFUGE",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:centrifuge"
+      },
+      "vis": 100
+    },
+    "thaumcraft:cinderpearl_crushing": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "thaumcraft:cinderpearl"
+        }
+      ],
+      "result": {
+        "id": "minecraft:blaze_powder"
+      }
+    },
+    "thaumcraft:cinnabar_blasting": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "thaumcraft:ore_cinnabar"
+      },
+      "result": {
+        "id": "thaumcraft:quicksilver"
+      }
+    },
+    "thaumcraft:cinnabar_smelting": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "thaumcraft:ore_cinnabar"
+      },
+      "result": {
+        "id": "thaumcraft:quicksilver"
+      }
+    },
+    "thaumcraft:cluster_cinnabar_blasting": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "thaumcraft:cluster_cinnabar"
+      },
+      "result": {
+        "count": 2,
+        "id": "thaumcraft:quicksilver"
+      }
+    },
+    "thaumcraft:cluster_cinnabar_smelting": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "thaumcraft:cluster_cinnabar"
+      },
+      "result": {
+        "count": 2,
+        "id": "thaumcraft:quicksilver"
+      }
+    },
+    "thaumcraft:cluster_copper_blasting": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "thaumcraft:cluster_copper"
+      },
+      "result": {
+        "count": 2,
+        "id": "minecraft:copper_ingot"
+      }
+    },
+    "thaumcraft:cluster_copper_smelting": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "thaumcraft:cluster_copper"
+      },
+      "result": {
+        "count": 2,
+        "id": "minecraft:copper_ingot"
+      }
+    },
+    "thaumcraft:cluster_gold_blasting": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "thaumcraft:cluster_gold"
+      },
+      "result": {
+        "count": 2,
+        "id": "minecraft:gold_ingot"
+      }
+    },
+    "thaumcraft:cluster_gold_smelting": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "thaumcraft:cluster_gold"
+      },
+      "result": {
+        "count": 2,
+        "id": "minecraft:gold_ingot"
+      }
+    },
+    "thaumcraft:cluster_iron_blasting": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "thaumcraft:cluster_iron"
+      },
+      "result": {
+        "count": 2,
+        "id": "minecraft:iron_ingot"
+      }
+    },
+    "thaumcraft:cluster_iron_smelting": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "thaumcraft:cluster_iron"
+      },
+      "result": {
+        "count": 2,
+        "id": "minecraft:iron_ingot"
+      }
+    },
+    "thaumcraft:crucible_alumentum": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "ignis": 10,
+        "perditio": 5,
+        "potentia": 10
+      },
+      "catalyst": {
+        "tag": "minecraft:coals"
+      },
+      "research": "ALUMENTUM",
+      "result": {
+        "id": "thaumcraft:alumentum"
+      }
+    },
+    "thaumcraft:crucible_brassingot": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "instrumentum": 5
+      },
+      "catalyst": {
+        "item": "minecraft:iron_ingot"
+      },
+      "research": "METALLURGY@1",
+      "result": {
+        "id": "thaumcraft:ingot_brass"
+      }
+    },
+    "thaumcraft:crucible_hedge_leather": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "aer": 3,
+        "bestia": 3
+      },
+      "catalyst": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "research": "HEDGEALCHEMY@1",
+      "result": {
+        "id": "minecraft:leather"
+      }
+    },
+    "thaumcraft:crucible_hedge_tallow": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "ignis": 1
+      },
+      "catalyst": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "research": "HEDGEALCHEMY@1",
+      "result": {
+        "id": "thaumcraft:tallow"
+      }
+    },
+    "thaumcraft:crucible_metal_purification_cinnabar": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "metallum": 5,
+        "ordo": 5
+      },
+      "catalyst": {
+        "item": "thaumcraft:ore_cinnabar"
+      },
+      "research": "METALPURIFICATION",
+      "result": {
+        "id": "thaumcraft:cluster_cinnabar"
+      }
+    },
+    "thaumcraft:crucible_metal_purification_copper": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "metallum": 5,
+        "ordo": 5
+      },
+      "catalyst": {
+        "tag": "c:ores/copper"
+      },
+      "research": "METALPURIFICATION",
+      "result": {
+        "id": "thaumcraft:cluster_copper"
+      }
+    },
+    "thaumcraft:crucible_metal_purification_gold": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "metallum": 5,
+        "ordo": 5
+      },
+      "catalyst": {
+        "tag": "c:ores/gold"
+      },
+      "research": "METALPURIFICATION",
+      "result": {
+        "id": "thaumcraft:cluster_gold"
+      }
+    },
+    "thaumcraft:crucible_metal_purification_iron": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "metallum": 5,
+        "ordo": 5
+      },
+      "catalyst": {
+        "tag": "c:ores/iron"
+      },
+      "research": "METALPURIFICATION",
+      "result": {
+        "id": "thaumcraft:cluster_iron"
+      }
+    },
+    "thaumcraft:crucible_nitor": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "ignis": 10,
+        "lux": 10,
+        "potentia": 10
+      },
+      "catalyst": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "research": "UNLOCKALCHEMY@3",
+      "result": {
+        "id": "thaumcraft:nitor_yellow"
+      }
+    },
+    "thaumcraft:crucible_thaumiumingot": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "praecantatio": 5,
+        "terra": 5
+      },
+      "catalyst": {
+        "item": "minecraft:iron_ingot"
+      },
+      "research": "METALLURGY@2",
+      "result": {
+        "id": "thaumcraft:ingot_thaumium"
+      }
+    },
+    "thaumcraft:crucible_voidingot": {
+      "type": "thaumcraft:crucible",
+      "aspects": {
+        "metallum": 10,
+        "vitium": 5
+      },
+      "catalyst": {
+        "item": "thaumcraft:void_seed"
+      },
+      "research": "BASEELDRITCH",
+      "result": {
+        "id": "thaumcraft:ingot_void"
+      }
+    },
+    "thaumcraft:enchanted_fabric": {
+      "type": "thaumcraft:arcane",
+      "key": {
+        "C": {
+          "tag": "minecraft:wool"
+        },
+        "S": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        " S ",
+        "SCS",
+        " S "
+      ],
+      "research": "UNLOCKINFUSION",
+      "result": {
+        "id": "thaumcraft:fabric"
+      },
+      "vis": 5
+    },
+    "thaumcraft:filter": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aqua": 1
+      },
+      "key": {
+        "G": {
+          "item": "minecraft:gold_ingot"
+        },
+        "W": {
+          "item": "thaumcraft:plank_silverwood"
+        }
+      },
+      "pattern": [
+        "GWG"
+      ],
+      "research": "BASEALCHEMY",
+      "result": {
+        "count": 2,
+        "id": "thaumcraft:filter"
+      },
+      "vis": 15
+    },
+    "thaumcraft:greatwood_log_conversion": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "ingredients": [
+        {
+          "item": "thaumcraft:log_greatwood"
+        }
+      ],
+      "result": {
+        "count": 4,
+        "id": "thaumcraft:plank_greatwood"
+      }
+    },
+    "thaumcraft:greatwood_plank_conversion": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "ingredients": [
+        {
+          "item": "thaumcraft:plank_greatwood"
+        },
+        {
+          "item": "thaumcraft:plank_greatwood"
+        }
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:stick"
+      }
+    },
+    "thaumcraft:jar_brace": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "N": {
+          "item": "thaumcraft:nugget_brass"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "NSN",
+        "S S",
+        "NSN"
+      ],
+      "result": {
+        "count": 2,
+        "id": "thaumcraft:jar_brace"
+      }
+    },
+    "thaumcraft:jar_normal": {
+      "type": "thaumcraft:arcane",
+      "crystals": {},
+      "key": {
+        "G": {
+          "item": "minecraft:glass_pane"
+        },
+        "W": {
+          "tag": "minecraft:wooden_slabs"
+        }
+      },
+      "pattern": [
+        "GWG",
+        "G G",
+        "GGG"
+      ],
+      "research": "WARDEDJARS",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:jar_normal"
+      },
+      "vis": 5
+    },
+    "thaumcraft:jar_void": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "perditio": 1
+      },
+      "key": {
+        "J": {
+          "item": "thaumcraft:jar_normal"
+        }
+      },
+      "pattern": [
+        "J"
+      ],
+      "research": "WARDEDJARS",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:jar_void"
+      },
+      "vis": 50
+    },
+    "thaumcraft:label": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "c:dyes/black"
+        },
+        {
+          "item": "minecraft:slime_ball"
+        },
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "minecraft:paper"
+        }
+      ],
+      "result": {
+        "count": 4,
+        "id": "thaumcraft:label"
+      }
+    },
+    "thaumcraft:label_aspect": {
+      "type": "thaumcraft:label_aspect",
+      "category": "misc"
+    },
+    "thaumcraft:mechanism_simple": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aqua": 1,
+        "ignis": 1
+      },
+      "key": {
+        "B": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
+        },
+        "S": {
+          "item": "minecraft:stick"
+        }
+      },
+      "pattern": [
+        " B ",
+        "ISI",
+        " B "
+      ],
+      "research": "BASEARTIFICE",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:mechanism_simple"
+      },
+      "vis": 10
+    },
+    "thaumcraft:metal_alchemical": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aqua": 1,
+        "ordo": 1,
+        "perditio": 1
+      },
+      "key": {
+        "I": {
+          "item": "thaumcraft:plate_iron"
+        },
+        "T": {
+          "item": "thaumcraft:tube"
+        },
+        "V": {
+          "item": "thaumcraft:tube_valve"
+        },
+        "W": {
+          "item": "thaumcraft:plank_greatwood"
+        }
+      },
+      "pattern": [
+        "IVI",
+        "TWT",
+        "IVI"
+      ],
+      "research": "TUBES",
+      "result": {
+        "count": 2,
+        "id": "thaumcraft:metal_alchemical"
+      },
+      "vis": 75
+    },
+    "thaumcraft:metal_alchemical_advanced": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "ignis": 1,
+        "terra": 1
+      },
+      "key": {
+        "A": {
+          "item": "thaumcraft:metal_alchemical"
+        },
+        "P": {
+          "item": "thaumcraft:primordial_pearl"
+        },
+        "V": {
+          "item": "thaumcraft:plate_void"
+        }
+      },
+      "pattern": [
+        " A ",
+        "VPV",
+        " A "
+      ],
+      "research": "ESSENTIASMELTERVOID@1",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:metal_alchemical_advanced"
+      },
+      "vis": 200
+    },
+    "thaumcraft:mind_clockwork": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "ignis": 1,
+        "ordo": 1
+      },
+      "key": {
+        "B": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "C": {
+          "item": "minecraft:comparator"
+        },
+        "G": {
+          "item": "thaumcraft:mechanism_simple"
+        },
+        "P": {
+          "item": "minecraft:glass_pane"
+        }
+      },
+      "pattern": [
+        " P ",
+        "PGP",
+        "BCB"
+      ],
+      "research": "MINDCLOCKWORK@2",
+      "result": {
+        "id": "thaumcraft:mind_clockwork"
+      },
+      "vis": 25
+    },
+    "thaumcraft:morphic_resonator": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aer": 1,
+        "ignis": 1
+      },
+      "key": {
+        "B": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "G": {
+          "item": "minecraft:glass_pane"
+        },
+        "S": {
+          "item": "thaumcraft:nugget_quartz"
+        }
+      },
+      "pattern": [
+        " G ",
+        "BSB",
+        " G "
+      ],
+      "research": "BASEALCHEMY",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:morphic_resonator"
+      },
+      "vis": 50
+    },
+    "thaumcraft:nitor_black_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:black_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_black"
+      }
+    },
+    "thaumcraft:nitor_blue_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:blue_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_blue"
+      }
+    },
+    "thaumcraft:nitor_brown_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:brown_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_brown"
+      }
+    },
+    "thaumcraft:nitor_cyan_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:cyan_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_cyan"
+      }
+    },
+    "thaumcraft:nitor_gray_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:gray_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_gray"
+      }
+    },
+    "thaumcraft:nitor_green_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:green_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_green"
+      }
+    },
+    "thaumcraft:nitor_light_blue_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:light_blue_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_light_blue"
+      }
+    },
+    "thaumcraft:nitor_light_gray_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:light_gray_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_light_gray"
+      }
+    },
+    "thaumcraft:nitor_lime_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:lime_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_lime"
+      }
+    },
+    "thaumcraft:nitor_magenta_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:magenta_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_magenta"
+      }
+    },
+    "thaumcraft:nitor_orange_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:orange_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_orange"
+      }
+    },
+    "thaumcraft:nitor_pink_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:pink_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_pink"
+      }
+    },
+    "thaumcraft:nitor_purple_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:purple_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_purple"
+      }
+    },
+    "thaumcraft:nitor_red_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:red_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_red"
+      }
+    },
+    "thaumcraft:nitor_white_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:white_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_white"
+      }
+    },
+    "thaumcraft:nitor_yellow_dye": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "thaumcraft:nitor"
+        },
+        {
+          "item": "minecraft:yellow_dye"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:nitor_yellow"
+      }
+    },
+    "thaumcraft:phial": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "C": {
+          "item": "minecraft:clay_ball"
+        },
+        "G": {
+          "item": "minecraft:glass"
+        }
+      },
+      "pattern": [
+        " C ",
+        "G G",
+        " G "
+      ],
+      "result": {
+        "count": 8,
+        "id": "thaumcraft:phial"
+      }
+    },
+    "thaumcraft:plate_brass": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "B": {
+          "item": "thaumcraft:ingot_brass"
+        }
+      },
+      "pattern": [
+        "BBB"
+      ],
+      "result": {
+        "count": 3,
+        "id": "thaumcraft:plate_brass"
+      }
+    },
+    "thaumcraft:plate_iron": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "B": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "BBB"
+      ],
+      "result": {
+        "count": 3,
+        "id": "thaumcraft:plate_iron"
+      }
+    },
+    "thaumcraft:plate_thaumium": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "B": {
+          "item": "thaumcraft:ingot_thaumium"
+        }
+      },
+      "pattern": [
+        "BBB"
+      ],
+      "result": {
+        "count": 3,
+        "id": "thaumcraft:plate_thaumium"
+      }
+    },
+    "thaumcraft:plate_void": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "B": {
+          "item": "thaumcraft:ingot_void"
+        }
+      },
+      "pattern": [
+        "BBB"
+      ],
+      "result": {
+        "count": 3,
+        "id": "thaumcraft:plate_void"
+      }
+    },
+    "thaumcraft:salis_mundus": {
+      "type": "thaumcraft:salis_mundus",
+      "category": "misc"
+    },
+    "thaumcraft:scribingtoolscraft1": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "thaumcraft:phial"
+        },
+        {
+          "item": "minecraft:feather"
+        },
+        [
+          {
+            "item": "minecraft:ink_sac"
+          },
+          {
+            "item": "minecraft:black_dye"
+          }
+        ]
+      ],
+      "result": {
+        "id": "thaumcraft:scribing_tools"
+      }
+    },
+    "thaumcraft:scribingtoolscraft2": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:glass_bottle"
+        },
+        {
+          "item": "minecraft:feather"
+        },
+        [
+          {
+            "item": "minecraft:ink_sac"
+          },
+          {
+            "item": "minecraft:black_dye"
+          }
+        ]
+      ],
+      "result": {
+        "id": "thaumcraft:scribing_tools"
+      }
+    },
+    "thaumcraft:scribingtoolsrefill": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "thaumcraft:scribing_tools"
+        },
+        [
+          {
+            "item": "minecraft:ink_sac"
+          },
+          {
+            "item": "minecraft:black_dye"
+          }
+        ]
+      ],
+      "result": {
+        "id": "thaumcraft:scribing_tools"
+      }
+    },
+    "thaumcraft:shimmerleaf_crushing": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "thaumcraft:shimmerleaf"
+        }
+      ],
+      "result": {
+        "id": "thaumcraft:quicksilver"
+      }
+    },
+    "thaumcraft:silverwood_log_conversion": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "ingredients": [
+        {
+          "item": "thaumcraft:log_silverwood"
+        }
+      ],
+      "result": {
+        "count": 4,
+        "id": "thaumcraft:plank_silverwood"
+      }
+    },
+    "thaumcraft:silverwood_plank_conversion": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "ingredients": [
+        {
+          "item": "thaumcraft:plank_silverwood"
+        },
+        {
+          "item": "thaumcraft:plank_silverwood"
+        }
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:stick"
+      }
+    },
+    "thaumcraft:smelter_aux": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aer": 1,
+        "terra": 1
+      },
+      "key": {
+        "B": {
+          "item": "thaumcraft:bellows"
+        },
+        "G": {
+          "item": "thaumcraft:metal_alchemical"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
+        },
+        "R": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "T": {
+          "item": "thaumcraft:tube_filter"
+        },
+        "W": {
+          "item": "thaumcraft:plank_greatwood"
+        }
+      },
+      "pattern": [
+        "WTW",
+        "RGR",
+        "IBI"
+      ],
+      "research": "IMPROVEDSMELTING",
+      "result": {
+        "id": "thaumcraft:smelter_aux"
+      },
+      "vis": 100
+    },
+    "thaumcraft:smelter_basic": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "ignis": 1
+      },
+      "key": {
+        "B": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "C": {
+          "item": "thaumcraft:crucible"
+        },
+        "F": {
+          "item": "minecraft:furnace"
+        },
+        "S": {
+          "item": "minecraft:cobblestone"
+        }
+      },
+      "pattern": [
+        "BCB",
+        "SFS",
+        "SSS"
+      ],
+      "research": "ESSENTIASMELTER@2",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:smelter_basic"
+      },
+      "vis": 50
+    },
+    "thaumcraft:smelter_thaumium": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "ignis": 2
+      },
+      "key": {
+        "B": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "F": {
+          "item": "thaumcraft:smelter_basic"
+        },
+        "G": {
+          "item": "thaumcraft:metal_alchemical"
+        },
+        "I": {
+          "item": "thaumcraft:plate_thaumium"
+        }
+      },
+      "pattern": [
+        "BFB",
+        "IGI",
+        "III"
+      ],
+      "research": "ESSENTIASMELTERTHAUMIUM",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:smelter_thaumium"
+      },
+      "vis": 250
+    },
+    "thaumcraft:smelter_vent": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aer": 1
+      },
+      "key": {
+        "B": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "F": {
+          "item": "thaumcraft:filter"
+        },
+        "G": {
+          "item": "thaumcraft:metal_alchemical"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
+        },
+        "M": {
+          "item": "thaumcraft:filter"
+        }
+      },
+      "pattern": [
+        "IBI",
+        "MGF",
+        "IBI"
+      ],
+      "research": "IMPROVEDSMELTING2",
+      "result": {
+        "id": "thaumcraft:smelter_vent"
+      },
+      "vis": 150
+    },
+    "thaumcraft:smelter_void": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "ignis": 3
+      },
+      "key": {
+        "B": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "F": {
+          "item": "thaumcraft:smelter_basic"
+        },
+        "G": {
+          "item": "thaumcraft:metal_alchemical_advanced"
+        },
+        "I": {
+          "item": "thaumcraft:plate_void"
+        }
+      },
+      "pattern": [
+        "BFB",
+        "IGI",
+        "III"
+      ],
+      "research": "ESSENTIASMELTERVOID",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:smelter_void"
+      },
+      "vis": 750
+    },
+    "thaumcraft:tablewood": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "S": {
+          "tag": "minecraft:wooden_slabs"
+        },
+        "W": {
+          "tag": "minecraft:planks"
+        }
+      },
+      "pattern": [
+        "SSS",
+        "W W"
+      ],
+      "result": {
+        "id": "thaumcraft:table_wood"
+      }
+    },
+    "thaumcraft:thaumium_block": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "thaumcraft:ingot_thaumium"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "id": "thaumcraft:metal_thaumium"
+      }
+    },
+    "thaumcraft:thaumium_ingot": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "thaumcraft:nugget_thaumium"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "id": "thaumcraft:ingot_thaumium"
+      }
+    },
+    "thaumcraft:thaumium_nuggets": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "thaumcraft:ingot_thaumium"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "thaumcraft:nugget_thaumium"
+      }
+    },
+    "thaumcraft:thaumium_unpack": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "thaumcraft:metal_thaumium"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "thaumcraft:ingot_thaumium"
+      }
+    },
+    "thaumcraft:thaumometer": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aer": 1,
+        "aqua": 1,
+        "ignis": 1,
+        "ordo": 1,
+        "perditio": 1,
+        "terra": 1
+      },
+      "key": {
+        "G": {
+          "item": "minecraft:glass_pane"
+        },
+        "I": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        " I ",
+        "IGI",
+        " I "
+      ],
+      "research": "FIRSTSTEPS@2",
+      "result": {
+        "id": "thaumcraft:thaumometer"
+      },
+      "vis": 20
+    },
+    "thaumcraft:tube": {
+      "type": "thaumcraft:arcane",
+      "crystals": {},
+      "key": {
+        "B": {
+          "item": "thaumcraft:nugget_brass"
+        },
+        "G": {
+          "item": "minecraft:glass"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
+        },
+        "Q": {
+          "item": "thaumcraft:nugget_quicksilver"
+        }
+      },
+      "pattern": [
+        " Q ",
+        "IGI",
+        " B "
+      ],
+      "research": "TUBES",
+      "result": {
+        "count": 8,
+        "id": "thaumcraft:tube"
+      },
+      "vis": 10
+    },
+    "thaumcraft:tube_buffer": {
+      "type": "thaumcraft:arcane",
+      "crystals": {},
+      "key": {
+        "P": {
+          "item": "thaumcraft:phial"
+        },
+        "R": {
+          "item": "thaumcraft:tube_restrict"
+        },
+        "T": {
+          "item": "thaumcraft:tube"
+        },
+        "V": {
+          "item": "thaumcraft:tube_valve"
+        },
+        "W": {
+          "item": "thaumcraft:plate_iron"
+        }
+      },
+      "pattern": [
+        "PVP",
+        "TWT",
+        "PRP"
+      ],
+      "research": "TUBES",
+      "result": {
+        "id": "thaumcraft:tube_buffer"
+      },
+      "vis": 25
+    },
+    "thaumcraft:tube_filter": {
+      "type": "thaumcraft:arcane",
+      "crystals": {},
+      "key": {
+        "F": {
+          "item": "thaumcraft:filter"
+        },
+        "T": {
+          "item": "thaumcraft:tube"
+        }
+      },
+      "pattern": [
+        "TF"
+      ],
+      "research": "TUBES",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:tube_filter"
+      },
+      "shapeless": true,
+      "vis": 10
+    },
+    "thaumcraft:tube_oneway": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aqua": 1
+      },
+      "key": {
+        "T": {
+          "item": "thaumcraft:tube"
+        }
+      },
+      "pattern": [
+        "T"
+      ],
+      "research": "TUBES",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:tube_oneway"
+      },
+      "shapeless": true,
+      "vis": 10
+    },
+    "thaumcraft:tube_restrict": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "terra": 1
+      },
+      "key": {
+        "T": {
+          "item": "thaumcraft:tube"
+        }
+      },
+      "pattern": [
+        "T"
+      ],
+      "research": "TUBES",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:tube_restrict"
+      },
+      "shapeless": true,
+      "vis": 10
+    },
+    "thaumcraft:tube_valve": {
+      "type": "thaumcraft:arcane",
+      "crystals": {},
+      "key": {
+        "L": {
+          "item": "minecraft:lever"
+        },
+        "T": {
+          "item": "thaumcraft:tube"
+        }
+      },
+      "pattern": [
+        "TL"
+      ],
+      "research": "TUBES",
+      "result": {
+        "count": 1,
+        "id": "thaumcraft:tube_valve"
+      },
+      "shapeless": true,
+      "vis": 10
+    },
+    "thaumcraft:vis_resonator": {
+      "type": "thaumcraft:arcane",
+      "crystals": {
+        "aer": 1,
+        "aqua": 1
+      },
+      "key": {
+        "P": {
+          "tag": "c:plates/iron"
+        },
+        "Q": {
+          "tag": "c:gems/quartz"
+        }
+      },
+      "pattern": [
+        "PQ"
+      ],
+      "research": "UNLOCKAUROMANCY@2",
+      "result": {
+        "id": "thaumcraft:vis_resonator"
+      },
+      "shapeless": true,
+      "vis": 50
+    },
+    "thaumcraft:void_block": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "thaumcraft:ingot_void"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "id": "thaumcraft:metal_void"
+      }
+    },
+    "thaumcraft:void_ingot": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "thaumcraft:nugget_void"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "id": "thaumcraft:ingot_void"
+      }
+    },
+    "thaumcraft:void_nuggets": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "thaumcraft:ingot_void"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "thaumcraft:nugget_void"
+      }
+    },
+    "thaumcraft:void_unpack": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "thaumcraft:metal_void"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "thaumcraft:ingot_void"
+      }
+    }
+  },
+  "registries": {
+    "minecraft:block": [
+      "thaumcraft:alembic",
+      "thaumcraft:amber_block",
+      "thaumcraft:amber_brick",
+      "thaumcraft:arcane_brick",
+      "thaumcraft:arcane_stone",
+      "thaumcraft:arcane_workbench",
+      "thaumcraft:bellows",
+      "thaumcraft:brain_box",
+      "thaumcraft:centrifuge",
+      "thaumcraft:cinderpearl",
+      "thaumcraft:crucible",
+      "thaumcraft:crystal_aer",
+      "thaumcraft:crystal_aqua",
+      "thaumcraft:crystal_ignis",
+      "thaumcraft:crystal_ordo",
+      "thaumcraft:crystal_perditio",
+      "thaumcraft:crystal_terra",
+      "thaumcraft:crystal_vitium",
+      "thaumcraft:flux_goo",
+      "thaumcraft:grass_ambient",
+      "thaumcraft:jar_normal",
+      "thaumcraft:jar_void",
+      "thaumcraft:leaves_greatwood",
+      "thaumcraft:leaves_silverwood",
+      "thaumcraft:log_greatwood",
+      "thaumcraft:log_silverwood",
+      "thaumcraft:loot_crate_common",
+      "thaumcraft:loot_crate_rare",
+      "thaumcraft:loot_crate_uncommon",
+      "thaumcraft:loot_urn_common",
+      "thaumcraft:loot_urn_rare",
+      "thaumcraft:loot_urn_uncommon",
+      "thaumcraft:metal_alchemical",
+      "thaumcraft:metal_alchemical_advanced",
+      "thaumcraft:metal_brass",
+      "thaumcraft:metal_thaumium",
+      "thaumcraft:metal_void",
+      "thaumcraft:nitor_black",
+      "thaumcraft:nitor_blue",
+      "thaumcraft:nitor_brown",
+      "thaumcraft:nitor_cyan",
+      "thaumcraft:nitor_gray",
+      "thaumcraft:nitor_green",
+      "thaumcraft:nitor_light_blue",
+      "thaumcraft:nitor_light_gray",
+      "thaumcraft:nitor_lime",
+      "thaumcraft:nitor_magenta",
+      "thaumcraft:nitor_orange",
+      "thaumcraft:nitor_pink",
+      "thaumcraft:nitor_purple",
+      "thaumcraft:nitor_red",
+      "thaumcraft:nitor_white",
+      "thaumcraft:nitor_yellow",
+      "thaumcraft:ore_amber",
+      "thaumcraft:ore_cinnabar",
+      "thaumcraft:ore_quartz",
+      "thaumcraft:plank_greatwood",
+      "thaumcraft:plank_silverwood",
+      "thaumcraft:research_table",
+      "thaumcraft:sapling_greatwood",
+      "thaumcraft:sapling_silverwood",
+      "thaumcraft:shimmerleaf",
+      "thaumcraft:smelter_aux",
+      "thaumcraft:smelter_basic",
+      "thaumcraft:smelter_thaumium",
+      "thaumcraft:smelter_vent",
+      "thaumcraft:smelter_void",
+      "thaumcraft:stone_porous",
+      "thaumcraft:table_wood",
+      "thaumcraft:taint_crust",
+      "thaumcraft:taint_fibre",
+      "thaumcraft:taint_log",
+      "thaumcraft:taint_rock",
+      "thaumcraft:taint_soil",
+      "thaumcraft:thaumatorium",
+      "thaumcraft:thaumatorium_top",
+      "thaumcraft:tube",
+      "thaumcraft:tube_buffer",
+      "thaumcraft:tube_filter",
+      "thaumcraft:tube_oneway",
+      "thaumcraft:tube_restrict",
+      "thaumcraft:tube_valve",
+      "thaumcraft:vishroom"
+    ],
+    "minecraft:block_entity_type": [
+      "thaumcraft:arcane_workbench",
+      "thaumcraft:bellows",
+      "thaumcraft:centrifuge",
+      "thaumcraft:crucible",
+      "thaumcraft:jar",
+      "thaumcraft:nitor",
+      "thaumcraft:research_table",
+      "thaumcraft:smelter",
+      "thaumcraft:thaumatorium",
+      "thaumcraft:tube"
+    ],
+    "minecraft:creative_mode_tab": [
+      "thaumcraft:thaumcraft"
+    ],
+    "minecraft:data_component_type": [
+      "thaumcraft:celestial_kind",
+      "thaumcraft:crystal_aspect",
+      "thaumcraft:essentia_aspect"
+    ],
+    "minecraft:entity_type": [
+      "thaumcraft:alumentum",
+      "thaumcraft:cultist_cleric",
+      "thaumcraft:cultist_knight",
+      "thaumcraft:cultist_orb",
+      "thaumcraft:cultist_portal_lesser",
+      "thaumcraft:flux_rift",
+      "thaumcraft:taint_seed",
+      "thaumcraft:taint_seed_prime",
+      "thaumcraft:thaumic_slime",
+      "thaumcraft:wisp"
+    ],
+    "minecraft:item": [
+      "thaumcraft:alembic",
+      "thaumcraft:alumentum",
+      "thaumcraft:amber",
+      "thaumcraft:amber_block",
+      "thaumcraft:amber_brick",
+      "thaumcraft:amulet_fancy",
+      "thaumcraft:amulet_mundane",
+      "thaumcraft:arcane_brick",
+      "thaumcraft:arcane_stone",
+      "thaumcraft:arcane_workbench",
+      "thaumcraft:bellows",
+      "thaumcraft:brain",
+      "thaumcraft:brain_box",
+      "thaumcraft:celestial_notes",
+      "thaumcraft:centrifuge",
+      "thaumcraft:charm_undying",
+      "thaumcraft:cinderpearl",
+      "thaumcraft:cluster_cinnabar",
+      "thaumcraft:cluster_copper",
+      "thaumcraft:cluster_gold",
+      "thaumcraft:cluster_iron",
+      "thaumcraft:crucible",
+      "thaumcraft:crystal_aer",
+      "thaumcraft:crystal_aqua",
+      "thaumcraft:crystal_essence",
+      "thaumcraft:crystal_ignis",
+      "thaumcraft:crystal_ordo",
+      "thaumcraft:crystal_perditio",
+      "thaumcraft:crystal_terra",
+      "thaumcraft:crystal_vitium",
+      "thaumcraft:curio_ancient",
+      "thaumcraft:curio_arcane",
+      "thaumcraft:curio_eldritch",
+      "thaumcraft:curio_knowledge",
+      "thaumcraft:curio_preserved",
+      "thaumcraft:curio_rites",
+      "thaumcraft:curio_twisted",
+      "thaumcraft:fabric",
+      "thaumcraft:filter",
+      "thaumcraft:flux_goo",
+      "thaumcraft:girdle_fancy",
+      "thaumcraft:girdle_mundane",
+      "thaumcraft:grass_ambient",
+      "thaumcraft:ingot_brass",
+      "thaumcraft:ingot_thaumium",
+      "thaumcraft:ingot_void",
+      "thaumcraft:jar_brace",
+      "thaumcraft:jar_normal",
+      "thaumcraft:jar_void",
+      "thaumcraft:label",
+      "thaumcraft:leaves_greatwood",
+      "thaumcraft:leaves_silverwood",
+      "thaumcraft:log_greatwood",
+      "thaumcraft:log_silverwood",
+      "thaumcraft:loot_crate_common",
+      "thaumcraft:loot_crate_rare",
+      "thaumcraft:loot_crate_uncommon",
+      "thaumcraft:loot_urn_common",
+      "thaumcraft:loot_urn_rare",
+      "thaumcraft:loot_urn_uncommon",
+      "thaumcraft:mechanism_simple",
+      "thaumcraft:metal_alchemical",
+      "thaumcraft:metal_alchemical_advanced",
+      "thaumcraft:metal_brass",
+      "thaumcraft:metal_thaumium",
+      "thaumcraft:metal_void",
+      "thaumcraft:mind_clockwork",
+      "thaumcraft:morphic_resonator",
+      "thaumcraft:nitor_black",
+      "thaumcraft:nitor_blue",
+      "thaumcraft:nitor_brown",
+      "thaumcraft:nitor_cyan",
+      "thaumcraft:nitor_gray",
+      "thaumcraft:nitor_green",
+      "thaumcraft:nitor_light_blue",
+      "thaumcraft:nitor_light_gray",
+      "thaumcraft:nitor_lime",
+      "thaumcraft:nitor_magenta",
+      "thaumcraft:nitor_orange",
+      "thaumcraft:nitor_pink",
+      "thaumcraft:nitor_purple",
+      "thaumcraft:nitor_red",
+      "thaumcraft:nitor_white",
+      "thaumcraft:nitor_yellow",
+      "thaumcraft:nugget_brass",
+      "thaumcraft:nugget_quartz",
+      "thaumcraft:nugget_quicksilver",
+      "thaumcraft:nugget_thaumium",
+      "thaumcraft:nugget_void",
+      "thaumcraft:ore_amber",
+      "thaumcraft:ore_cinnabar",
+      "thaumcraft:ore_quartz",
+      "thaumcraft:phial",
+      "thaumcraft:plank_greatwood",
+      "thaumcraft:plank_silverwood",
+      "thaumcraft:plate_brass",
+      "thaumcraft:plate_iron",
+      "thaumcraft:plate_thaumium",
+      "thaumcraft:plate_void",
+      "thaumcraft:primordial_pearl",
+      "thaumcraft:quicksilver",
+      "thaumcraft:research_display_research_advancedturret",
+      "thaumcraft:research_display_research_alumentum",
+      "thaumcraft:research_display_research_arcanebore",
+      "thaumcraft:research_display_research_arcaneear",
+      "thaumcraft:research_display_research_arcanelamp",
+      "thaumcraft:research_display_research_arcanepatterncrafter",
+      "thaumcraft:research_display_research_arcanespa",
+      "thaumcraft:research_display_research_armorfortress",
+      "thaumcraft:research_display_research_basealchemy",
+      "thaumcraft:research_display_research_baseartifice",
+      "thaumcraft:research_display_research_baseauromancy",
+      "thaumcraft:research_display_research_baseeldritch",
+      "thaumcraft:research_display_research_basegolemancy",
+      "thaumcraft:research_display_research_baseinfusion",
+      "thaumcraft:research_display_research_basicturret",
+      "thaumcraft:research_display_research_bathsalts",
+      "thaumcraft:research_display_research_bellows",
+      "thaumcraft:research_display_research_bootstraveller",
+      "thaumcraft:research_display_research_bottletaint",
+      "thaumcraft:research_display_research_category_alchemy",
+      "thaumcraft:research_display_research_category_artifice",
+      "thaumcraft:research_display_research_category_auromancy",
+      "thaumcraft:research_display_research_category_basics",
+      "thaumcraft:research_display_research_category_eldritch",
+      "thaumcraft:research_display_research_category_golemancy",
+      "thaumcraft:research_display_research_category_infusion",
+      "thaumcraft:research_display_research_celestialscanning",
+      "thaumcraft:research_display_research_centrifuge",
+      "thaumcraft:research_display_research_charmundying",
+      "thaumcraft:research_display_research_cloudring",
+      "thaumcraft:research_display_research_controlseals",
+      "thaumcraft:research_display_research_crimsonrites",
+      "thaumcraft:research_display_research_crystalfarmer",
+      "thaumcraft:research_display_research_curiosityband",
+      "thaumcraft:research_display_research_dioptra",
+      "thaumcraft:research_display_research_elementaltools",
+      "thaumcraft:research_display_research_essentiasmelter",
+      "thaumcraft:research_display_research_essentiasmelterthaumium",
+      "thaumcraft:research_display_research_essentiasmeltervoid",
+      "thaumcraft:research_display_research_essentiatransport",
+      "thaumcraft:research_display_research_everfullurn",
+      "thaumcraft:research_display_research_firststeps",
+      "thaumcraft:research_display_research_flux",
+      "thaumcraft:research_display_research_fluxcleanup",
+      "thaumcraft:research_display_research_fluxrift",
+      "thaumcraft:research_display_research_focusadvanced",
+      "thaumcraft:research_display_research_focusbolt",
+      "thaumcraft:research_display_research_focusbreak",
+      "thaumcraft:research_display_research_focuscloud",
+      "thaumcraft:research_display_research_focuscurse",
+      "thaumcraft:research_display_research_focuselemental",
+      "thaumcraft:research_display_research_focusexchange",
+      "thaumcraft:research_display_research_focusflux",
+      "thaumcraft:research_display_research_focusgreater",
+      "thaumcraft:research_display_research_focusheal",
+      "thaumcraft:research_display_research_focusmine",
+      "thaumcraft:research_display_research_focusplan",
+      "thaumcraft:research_display_research_focuspouch",
+      "thaumcraft:research_display_research_focusprojectile",
+      "thaumcraft:research_display_research_focusrift",
+      "thaumcraft:research_display_research_focusscatter",
+      "thaumcraft:research_display_research_focusspellbat",
+      "thaumcraft:research_display_research_focussplit",
+      "thaumcraft:research_display_research_fortressmask",
+      "thaumcraft:research_display_research_golembreaker",
+      "thaumcraft:research_display_research_golemclimber",
+      "thaumcraft:research_display_research_golemcombatadv",
+      "thaumcraft:research_display_research_golemdirect",
+      "thaumcraft:research_display_research_golemflyer",
+      "thaumcraft:research_display_research_golemlogistics",
+      "thaumcraft:research_display_research_golemvision",
+      "thaumcraft:research_display_research_grapplegun",
+      "thaumcraft:research_display_research_hedgealchemy",
+      "thaumcraft:research_display_research_hungrychest",
+      "thaumcraft:research_display_research_improvedsmelting",
+      "thaumcraft:research_display_research_improvedsmelting2",
+      "thaumcraft:research_display_research_infernalfurnace",
+      "thaumcraft:research_display_research_infusion",
+      "thaumcraft:research_display_research_infusionancient",
+      "thaumcraft:research_display_research_infusionboost",
+      "thaumcraft:research_display_research_infusioneldritch",
+      "thaumcraft:research_display_research_infusionenchantment",
+      "thaumcraft:research_display_research_infusionstable",
+      "thaumcraft:research_display_research_jarbrain",
+      "thaumcraft:research_display_research_knowledgetypes",
+      "thaumcraft:research_display_research_lampfertility",
+      "thaumcraft:research_display_research_lampgrowth",
+      "thaumcraft:research_display_research_levitator",
+      "thaumcraft:research_display_research_liquiddeath",
+      "thaumcraft:research_display_research_matstudbrass",
+      "thaumcraft:research_display_research_matstudclay",
+      "thaumcraft:research_display_research_matstudiron",
+      "thaumcraft:research_display_research_matstudthaumium",
+      "thaumcraft:research_display_research_matstudvoid",
+      "thaumcraft:research_display_research_matstudwood",
+      "thaumcraft:research_display_research_metallurgy",
+      "thaumcraft:research_display_research_metalpurification",
+      "thaumcraft:research_display_research_mindbiothaumic",
+      "thaumcraft:research_display_research_mindclockwork",
+      "thaumcraft:research_display_research_mirror",
+      "thaumcraft:research_display_research_mirroressentia",
+      "thaumcraft:research_display_research_mirrorhand",
+      "thaumcraft:research_display_research_ore",
+      "thaumcraft:research_display_research_pavingstones",
+      "thaumcraft:research_display_research_plants",
+      "thaumcraft:research_display_research_potionsprayer",
+      "thaumcraft:research_display_research_primalcrusher",
+      "thaumcraft:research_display_research_primpearl",
+      "thaumcraft:research_display_research_rechargepedestal",
+      "thaumcraft:research_display_research_redstonerelay",
+      "thaumcraft:research_display_research_riftcloser",
+      "thaumcraft:research_display_research_runicshielding",
+      "thaumcraft:research_display_research_sanesoap",
+      "thaumcraft:research_display_research_scan_brainyzombie",
+      "thaumcraft:research_display_research_scan_crimsoncultist",
+      "thaumcraft:research_display_research_scan_eldritchcrab",
+      "thaumcraft:research_display_research_scan_eldritchguardian",
+      "thaumcraft:research_display_research_scan_firebat",
+      "thaumcraft:research_display_research_scan_pech",
+      "thaumcraft:research_display_research_scan_taintacle",
+      "thaumcraft:research_display_research_scan_taintcrawler",
+      "thaumcraft:research_display_research_scan_taintseed",
+      "thaumcraft:research_display_research_scan_taintswarm",
+      "thaumcraft:research_display_research_scan_thaumslime",
+      "thaumcraft:research_display_research_scan_wisp",
+      "thaumcraft:research_display_research_sealbreak",
+      "thaumcraft:research_display_research_sealbutcher",
+      "thaumcraft:research_display_research_sealcollect",
+      "thaumcraft:research_display_research_sealempty",
+      "thaumcraft:research_display_research_sealguard",
+      "thaumcraft:research_display_research_sealharvest",
+      "thaumcraft:research_display_research_seallumber",
+      "thaumcraft:research_display_research_sealprovide",
+      "thaumcraft:research_display_research_sealstock",
+      "thaumcraft:research_display_research_sealstore",
+      "thaumcraft:research_display_research_sealuse",
+      "thaumcraft:research_display_research_thaumatorium",
+      "thaumcraft:research_display_research_theoryresearch",
+      "thaumcraft:research_display_research_tubes",
+      "thaumcraft:research_display_research_unlockalchemy",
+      "thaumcraft:research_display_research_unlockartifice",
+      "thaumcraft:research_display_research_unlockauromancy",
+      "thaumcraft:research_display_research_unlockeldritch",
+      "thaumcraft:research_display_research_unlockgolemancy",
+      "thaumcraft:research_display_research_unlockinfusion",
+      "thaumcraft:research_display_research_verdantcharms",
+      "thaumcraft:research_display_research_visamulet",
+      "thaumcraft:research_display_research_visbattery",
+      "thaumcraft:research_display_research_visgenerator",
+      "thaumcraft:research_display_research_voidrobearmor",
+      "thaumcraft:research_display_research_voidseerpearl",
+      "thaumcraft:research_display_research_voidsiphon",
+      "thaumcraft:research_display_research_wardedjars",
+      "thaumcraft:research_display_research_warp",
+      "thaumcraft:research_display_research_workbenchcharger",
+      "thaumcraft:research_display_root",
+      "thaumcraft:research_icon",
+      "thaumcraft:research_table",
+      "thaumcraft:ring_fancy",
+      "thaumcraft:ring_mundane",
+      "thaumcraft:salis_mundus",
+      "thaumcraft:sapling_greatwood",
+      "thaumcraft:sapling_silverwood",
+      "thaumcraft:scribing_tools",
+      "thaumcraft:shimmerleaf",
+      "thaumcraft:smelter_aux",
+      "thaumcraft:smelter_basic",
+      "thaumcraft:smelter_thaumium",
+      "thaumcraft:smelter_vent",
+      "thaumcraft:smelter_void",
+      "thaumcraft:stone_porous",
+      "thaumcraft:table_wood",
+      "thaumcraft:taint_crust",
+      "thaumcraft:taint_fibre",
+      "thaumcraft:taint_log",
+      "thaumcraft:taint_rock",
+      "thaumcraft:taint_soil",
+      "thaumcraft:tallow",
+      "thaumcraft:thaumatorium",
+      "thaumcraft:thaumatorium_top",
+      "thaumcraft:thaumometer",
+      "thaumcraft:thaumonomicon",
+      "thaumcraft:tube",
+      "thaumcraft:tube_buffer",
+      "thaumcraft:tube_filter",
+      "thaumcraft:tube_oneway",
+      "thaumcraft:tube_restrict",
+      "thaumcraft:tube_valve",
+      "thaumcraft:vis_resonator",
+      "thaumcraft:vishroom",
+      "thaumcraft:void_seed"
+    ],
+    "minecraft:menu": [
+      "thaumcraft:arcane_workbench",
+      "thaumcraft:research_table",
+      "thaumcraft:smelter",
+      "thaumcraft:thaumatorium"
+    ],
+    "minecraft:mob_effect": [
+      "thaumcraft:flux_taint",
+      "thaumcraft:infectious_vis_exhaust",
+      "thaumcraft:vis_exhaust"
+    ],
+    "minecraft:particle_type": [
+      "thaumcraft:alumentum",
+      "thaumcraft:craft",
+      "thaumcraft:nitor_black",
+      "thaumcraft:nitor_blue",
+      "thaumcraft:nitor_brown",
+      "thaumcraft:nitor_core",
+      "thaumcraft:nitor_cyan",
+      "thaumcraft:nitor_gray",
+      "thaumcraft:nitor_green",
+      "thaumcraft:nitor_light_blue",
+      "thaumcraft:nitor_light_gray",
+      "thaumcraft:nitor_lime",
+      "thaumcraft:nitor_magenta",
+      "thaumcraft:nitor_orange",
+      "thaumcraft:nitor_pink",
+      "thaumcraft:nitor_purple",
+      "thaumcraft:nitor_red",
+      "thaumcraft:nitor_white",
+      "thaumcraft:nitor_yellow",
+      "thaumcraft:rune",
+      "thaumcraft:scan_rune",
+      "thaumcraft:scan_spark",
+      "thaumcraft:spark",
+      "thaumcraft:taint",
+      "thaumcraft:theory_rune",
+      "thaumcraft:wisp"
+    ],
+    "minecraft:recipe_serializer": [
+      "thaumcraft:arcane",
+      "thaumcraft:crucible",
+      "thaumcraft:label_aspect",
+      "thaumcraft:salis_mundus"
+    ],
+    "minecraft:recipe_type": [
+      "thaumcraft:arcane",
+      "thaumcraft:crucible"
+    ],
+    "minecraft:sound_event": [
+      "thaumcraft:brain",
+      "thaumcraft:bubble",
+      "thaumcraft:chant",
+      "thaumcraft:clack",
+      "thaumcraft:coins",
+      "thaumcraft:crabclaw",
+      "thaumcraft:crabdeath",
+      "thaumcraft:crabtalk",
+      "thaumcraft:craftfail",
+      "thaumcraft:craftstart",
+      "thaumcraft:creak",
+      "thaumcraft:crystal",
+      "thaumcraft:dust",
+      "thaumcraft:egattack",
+      "thaumcraft:egdeath",
+      "thaumcraft:egidle",
+      "thaumcraft:egscreech",
+      "thaumcraft:erase",
+      "thaumcraft:evilportal",
+      "thaumcraft:fly",
+      "thaumcraft:gore",
+      "thaumcraft:grind",
+      "thaumcraft:heartbeat",
+      "thaumcraft:hhoff",
+      "thaumcraft:hhon",
+      "thaumcraft:ice",
+      "thaumcraft:infuser",
+      "thaumcraft:infuserstart",
+      "thaumcraft:jacobs",
+      "thaumcraft:jar",
+      "thaumcraft:key",
+      "thaumcraft:learn",
+      "thaumcraft:monolith",
+      "thaumcraft:page",
+      "thaumcraft:pageturn",
+      "thaumcraft:pech_charge",
+      "thaumcraft:pech_death",
+      "thaumcraft:pech_dice",
+      "thaumcraft:pech_hit",
+      "thaumcraft:pech_idle",
+      "thaumcraft:pech_trade",
+      "thaumcraft:poof",
+      "thaumcraft:pump",
+      "thaumcraft:rumble",
+      "thaumcraft:runicshieldcharge",
+      "thaumcraft:runicshieldecharge",
+      "thaumcraft:runicshieldeffect",
+      "thaumcraft:scan",
+      "thaumcraft:shock",
+      "thaumcraft:spill",
+      "thaumcraft:squeek",
+      "thaumcraft:swarm",
+      "thaumcraft:swarmattack",
+      "thaumcraft:tentacle",
+      "thaumcraft:ticks",
+      "thaumcraft:tool",
+      "thaumcraft:upgrade",
+      "thaumcraft:urnbreak",
+      "thaumcraft:wand",
+      "thaumcraft:wandfail",
+      "thaumcraft:whispers",
+      "thaumcraft:wind",
+      "thaumcraft:wispdead",
+      "thaumcraft:wisplive",
+      "thaumcraft:write",
+      "thaumcraft:zap"
+    ],
+    "minecraft:trigger_type": [
+      "thaumcraft:research"
+    ],
+    "minecraft:worldgen/biome": [
+      "thaumcraft:magical_forest"
+    ],
+    "minecraft:worldgen/configured_feature": [
+      "thaumcraft:deposits",
+      "thaumcraft:greatwood_sapling",
+      "thaumcraft:lesser_portals",
+      "thaumcraft:silverwood_sapling",
+      "thaumcraft:vegetation"
+    ],
+    "minecraft:worldgen/feature": [
+      "thaumcraft:deposits",
+      "thaumcraft:greatwood",
+      "thaumcraft:lesser_portals",
+      "thaumcraft:silverwood",
+      "thaumcraft:vegetation"
+    ],
+    "minecraft:worldgen/placed_feature": [
+      "thaumcraft:deposits",
+      "thaumcraft:lesser_portals",
+      "thaumcraft:vegetation"
+    ],
+    "minecraft:worldgen/structure": [
+      "thaumcraft:mound"
+    ],
+    "minecraft:worldgen/structure_piece": [
+      "thaumcraft:mound"
+    ],
+    "minecraft:worldgen/structure_set": [
+      "thaumcraft:mounds"
+    ],
+    "minecraft:worldgen/structure_type": [
+      "thaumcraft:mound"
+    ],
+    "neoforge:attachment_types": [
+      "thaumcraft:aura"
+    ]
+  },
+  "research": [
+    "!BrainyZombie",
+    "!CrimsonCultist",
+    "!EldritchCrab",
+    "!EldritchGuardian",
+    "!Firebat",
+    "!Pech",
+    "!TaintCrawler",
+    "!TaintSeed",
+    "!TaintSwarm",
+    "!Taintacle",
+    "!ThaumSlime",
+    "!Wisp",
+    "ADVANCEDTURRET",
+    "ALUMENTUM",
+    "ARCANEBORE",
+    "ARCANEEAR",
+    "ARCANELAMP",
+    "ARCANEPATTERNCRAFTER",
+    "ARCANESPA",
+    "ARMORFORTRESS",
+    "BASEALCHEMY",
+    "BASEARTIFICE",
+    "BASEAUROMANCY",
+    "BASEELDRITCH",
+    "BASEGOLEMANCY",
+    "BASEINFUSION",
+    "BASICTURRET",
+    "BATHSALTS",
+    "BELLOWS",
+    "BOOTSTRAVELLER",
+    "BOTTLETAINT",
+    "CELESTIALSCANNING",
+    "CENTRIFUGE",
+    "CHARMUNDYING",
+    "CLOUDRING",
+    "CONTROLSEALS",
+    "CRYSTALFARMER",
+    "CURIOSITYBAND",
+    "CrimsonRites",
+    "DIOPTRA",
+    "ELEMENTALTOOLS",
+    "ESSENTIASMELTER",
+    "ESSENTIASMELTERTHAUMIUM",
+    "ESSENTIASMELTERVOID",
+    "ESSENTIATRANSPORT",
+    "EVERFULLURN",
+    "FIRSTSTEPS",
+    "FLUX",
+    "FLUXCLEANUP",
+    "FLUXRIFT",
+    "FOCUSADVANCED",
+    "FOCUSBOLT",
+    "FOCUSBREAK",
+    "FOCUSCLOUD",
+    "FOCUSCURSE",
+    "FOCUSELEMENTAL",
+    "FOCUSEXCHANGE",
+    "FOCUSFLUX",
+    "FOCUSGREATER",
+    "FOCUSHEAL",
+    "FOCUSMINE",
+    "FOCUSPLAN",
+    "FOCUSPOUCH",
+    "FOCUSPROJECTILE",
+    "FOCUSRIFT",
+    "FOCUSSCATTER",
+    "FOCUSSPELLBAT",
+    "FOCUSSPLIT",
+    "FORTRESSMASK",
+    "GOLEMBREAKER",
+    "GOLEMCLIMBER",
+    "GOLEMCOMBATADV",
+    "GOLEMDIRECT",
+    "GOLEMFLYER",
+    "GOLEMLOGISTICS",
+    "GOLEMVISION",
+    "GRAPPLEGUN",
+    "HEDGEALCHEMY",
+    "HUNGRYCHEST",
+    "IMPROVEDSMELTING",
+    "IMPROVEDSMELTING2",
+    "INFERNALFURNACE",
+    "INFUSION",
+    "INFUSIONANCIENT",
+    "INFUSIONBOOST",
+    "INFUSIONELDRITCH",
+    "INFUSIONENCHANTMENT",
+    "INFUSIONSTABLE",
+    "JARBRAIN",
+    "KNOWLEDGETYPES",
+    "LAMPFERTILITY",
+    "LAMPGROWTH",
+    "LEVITATOR",
+    "LIQUIDDEATH",
+    "MATSTUDBRASS",
+    "MATSTUDCLAY",
+    "MATSTUDIRON",
+    "MATSTUDTHAUMIUM",
+    "MATSTUDVOID",
+    "MATSTUDWOOD",
+    "METALLURGY",
+    "METALPURIFICATION",
+    "MINDBIOTHAUMIC",
+    "MINDCLOCKWORK",
+    "MIRROR",
+    "MIRRORESSENTIA",
+    "MIRRORHAND",
+    "ORE",
+    "PAVINGSTONES",
+    "PLANTS",
+    "POTIONSPRAYER",
+    "PRIMALCRUSHER",
+    "PRIMPEARL",
+    "RECHARGEPEDESTAL",
+    "REDSTONERELAY",
+    "RIFTCLOSER",
+    "RUNICSHIELDING",
+    "SANESOAP",
+    "SEALBREAK",
+    "SEALBUTCHER",
+    "SEALCOLLECT",
+    "SEALEMPTY",
+    "SEALGUARD",
+    "SEALHARVEST",
+    "SEALLUMBER",
+    "SEALPROVIDE",
+    "SEALSTOCK",
+    "SEALSTORE",
+    "SEALUSE",
+    "THAUMATORIUM",
+    "THEORYRESEARCH",
+    "TUBES",
+    "UNLOCKALCHEMY",
+    "UNLOCKARTIFICE",
+    "UNLOCKAUROMANCY",
+    "UNLOCKELDRITCH",
+    "UNLOCKGOLEMANCY",
+    "UNLOCKINFUSION",
+    "VERDANTCHARMS",
+    "VISAMULET",
+    "VISBATTERY",
+    "VISGENERATOR",
+    "VOIDROBEARMOR",
+    "VOIDSEERPEARL",
+    "VOIDSIPHON",
+    "WARDEDJARS",
+    "WARP",
+    "WORKBENCHCHARGER"
+  ],
+  "schema": 1,
+  "source": "NeoForge GatherDataEvent: loaded Minecraft registries and decoded datapack",
+  "theory_aids": {
+    "BasicAlchemy": {
+      "definition_only": true,
+      "object": "thaumcraft:crucible"
+    },
+    "BasicArtifice": {
+      "definition_only": true,
+      "object": "thaumcraft:arcane_workbench"
+    },
+    "BasicAuromancy": {
+      "definition_only": true,
+      "object": "thaumcraft:wand_workbench"
+    },
+    "BasicEldritch": {
+      "definition_only": true,
+      "object": "thaumcraft:eldritch"
+    },
+    "BasicGolemancy": {
+      "definition_only": true,
+      "object": "thaumcraft:golem_builder"
+    },
+    "BasicInfusion": {
+      "definition_only": true,
+      "object": "thaumcraft:infusion_matrix"
+    },
+    "Beacon": {
+      "definition_only": true,
+      "object": "minecraft:beacon"
+    },
+    "Bookshelf": {
+      "definition_only": true,
+      "object": "minecraft:bookshelf"
+    },
+    "BrainInAJar": {
+      "definition_only": true,
+      "object": "thaumcraft:jar_brain"
+    },
+    "EnchantmentTable": {
+      "definition_only": true,
+      "object": "minecraft:enchanting_table"
+    },
+    "GlyphedStone": {
+      "definition_only": true,
+      "object": "thaumcraft:stone_ancient_glyphed"
+    },
+    "PortalCrimson": {
+      "definition_only": true,
+      "object": "entity:thaumcraft:cultist_portal"
+    },
+    "PortalEnd": {
+      "definition_only": true,
+      "object": "minecraft:end_portal"
+    },
+    "PortalNether": {
+      "definition_only": true,
+      "object": "minecraft:nether_portal"
+    }
+  },
+  "theory_cards": [
+    "Study",
+    "Analyze",
+    "Balance",
+    "Notation",
+    "Ponder",
+    "Rethink",
+    "Reject",
+    "Experimentation",
+    "Curio",
+    "Inspired",
+    "Enchantment",
+    "Beacon",
+    "Celestial",
+    "Concentrate",
+    "Reactions",
+    "Synthesis",
+    "Calibrate",
+    "MindOverMatter",
+    "Tinker",
+    "Measure",
+    "Channel",
+    "Infuse",
+    "Focus",
+    "Awareness",
+    "Spellbinding",
+    "Sculpting",
+    "Scripting",
+    "Synergy",
+    "DarkWhispers",
+    "Glyphs",
+    "Portal",
+    "Revelation",
+    "Realization"
+  ]
+}

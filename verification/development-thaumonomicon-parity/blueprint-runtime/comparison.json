@@ -1,0 +1,272 @@
+{
+  "profile": "modern-ru2",
+  "actual_gui_scale": 2.0,
+  "framebuffer": [
+    1280,
+    720
+  ],
+  "language": "ru_ru",
+  "force_unicode": false,
+  "interaction": "Actual running client; real mouse/key navigation queued through shared GUI controller. No synthetic screen/model injection. Existing all-research presentation fixture.",
+  "coverage": {
+    "source_blueprints": 6,
+    "original_reference_blueprints": 6,
+    "extra_furnace_cycle_states": [
+      "middle layer with lava and connected bars",
+      "base layer",
+      "empty cycle state matching original <=height cycling"
+    ],
+    "golem_bookmark_and_piston_tooltip": true,
+    "captured_png_count": 17
+  },
+  "runtime_model_audit": {
+    "selections": 925,
+    "problems": 0,
+    "evidence": "model-audit-runtime-lines.log"
+  },
+  "manual_findings": [
+    "All six source constructions render at original coordinates and scale; no missing-model magenta or shader failures in inspected preview regions.",
+    "Infusion Matrix now has original idle eight-cube geometry and source lighting; sample(640,280) isRGB35,35,35 in both reference and port.",
+    "Coordinate-dependent stone texture rotations match the original Arcane/Ancient/Eldritch source previews; representative arcane brightness samples62->61,58->57,34->33 remove the earlier double-lighting defect.",
+    "Thaumatorium shows two original brass construct blocks vertically above the hollow crucible.",
+    "Infernal Furnace middle slice exposes lava and the iron grille connected to its two neighboring bricks; base and fully hidden cycling states also rendered.",
+    "Golem Press source piston points upward and complete source assembly is present; original explicit GUI-stack bookmark renders without magenta. Unused GolemBuilder world fallback lava omission does not affect this recipe preview."
+  ],
+  "comparison_method": "Diagnostic RGB comparison within explicit central model crops. Dark masks require max(R,G,B)<140; MAE/exact percentages use only pixels dark in both frames. Mask IoU measures threshold-mask agreement, not an independent semantic geometry guarantee. Font/background/book content and animation phases are excluded. Metrics are not full screenshot pixel-parity proof.",
+  "comparisons": [
+    {
+      "blueprint": "infusion",
+      "original": "original-ru2-blueprint-infusion.png",
+      "modern": "modern-final-ru2-blueprint-infusion.png",
+      "crop_xyxy": [
+        500,
+        250,
+        776,
+        500
+      ],
+      "common_dark_pixels": 45116,
+      "dark_threshold_mask_iou": 1.0,
+      "mean_absolute_rgb_channel_error_on_common_dark_pixels": 0.6058826137068889,
+      "exact_pixel_percent_on_common_dark_pixels": 48.5371043532228
+    },
+    {
+      "blueprint": "ancient",
+      "original": "original-en2-blueprint-ancient.png",
+      "modern": "modern-final-ru2-blueprint-ancient.png",
+      "crop_xyxy": [
+        500,
+        250,
+        776,
+        500
+      ],
+      "common_dark_pixels": 45108,
+      "dark_threshold_mask_iou": 0.9998226793155421,
+      "mean_absolute_rgb_channel_error_on_common_dark_pixels": 0.571672430610978,
+      "exact_pixel_percent_on_common_dark_pixels": 33.579409417398246
+    },
+    {
+      "blueprint": "eldritch",
+      "original": "original-en2-blueprint-eldritch.png",
+      "modern": "modern-final-ru2-blueprint-eldritch.png",
+      "crop_xyxy": [
+        500,
+        250,
+        776,
+        500
+      ],
+      "common_dark_pixels": 45116,
+      "dark_threshold_mask_iou": 1.0,
+      "mean_absolute_rgb_channel_error_on_common_dark_pixels": 0.2563170493838106,
+      "exact_pixel_percent_on_common_dark_pixels": 59.57088394361202
+    },
+    {
+      "blueprint": "thaumatorium",
+      "original": "original-ru2-blueprint-thaumatorium.png",
+      "modern": "modern-final-ru2-blueprint-thaumatorium.png",
+      "crop_xyxy": [
+        590,
+        250,
+        690,
+        463
+      ],
+      "common_dark_pixels": 16633,
+      "dark_threshold_mask_iou": 0.9987990151924578,
+      "mean_absolute_rgb_channel_error_on_common_dark_pixels": 0.8198160283773221,
+      "exact_pixel_percent_on_common_dark_pixels": 40.497805567245834
+    },
+    {
+      "blueprint": "golempress",
+      "original": "original-ru2-blueprint-golempress.png",
+      "modern": "modern-final-ru2-blueprint-golempress.png",
+      "crop_xyxy": [
+        550,
+        290,
+        735,
+        457
+      ],
+      "common_dark_pixels": 16862,
+      "dark_threshold_mask_iou": 0.9964543198203522,
+      "mean_absolute_rgb_channel_error_on_common_dark_pixels": 6.331198355276164,
+      "exact_pixel_percent_on_common_dark_pixels": 5.029059423555925
+    },
+    {
+      "blueprint": "furnace",
+      "original": "original-ru2-blueprint-furnace.png",
+      "modern": "modern-final-ru2-blueprint-furnace.png",
+      "crop_xyxy": [
+        500,
+        210,
+        776,
+        500
+      ],
+      "common_dark_pixels": 62883,
+      "dark_threshold_mask_iou": 0.9997138360280441,
+      "mean_absolute_rgb_channel_error_on_common_dark_pixels": 7.444136995160324,
+      "exact_pixel_percent_on_common_dark_pixels": 4.43204045608511
+    }
+  ],
+  "files": [
+    {
+      "file": "original-ru2-blueprint-infusion.png",
+      "sha256": "2ba664bd8c262fe88ca854253fe85d9a8da3bb2420fbe5de448676837bb57808",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-infusion.png",
+      "sha256": "2440a313545ec48f6d5bc638066c63ae926c8331ff482b0efa2d6dfe613ad47a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "original-en2-blueprint-ancient.png",
+      "sha256": "176e0c544405f48b2785c075fc1ae163ff1cdbb9665681b3bf637a4bfd0bd78f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-ancient.png",
+      "sha256": "42bb44523a17ee907e507d61c7cdc5258be6133524b91baff35b8143fc8cc4a0",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "original-en2-blueprint-eldritch.png",
+      "sha256": "a337012db0d6269f1f15b1b4e441104efc23bf4d4f5bc47a9b5d55ddc133d427",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-eldritch.png",
+      "sha256": "06f974197fff91a5af9cb59a78e22c6e4fdec00f00a60dfa0d2965476378796e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "original-ru2-blueprint-thaumatorium.png",
+      "sha256": "07f80fb3f6a019fc10cd3c8d6923622390e00592b4c2dfc1ba6a1f95afb9a15b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-thaumatorium.png",
+      "sha256": "9304a44e96097f495b92741761a676f6fc16df3793b4400bfcecac4031c09609",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "original-ru2-blueprint-golempress.png",
+      "sha256": "0ab9d7c38bf005dd6f58dec1da4b02694cbb9bbb3c5ccb3390d38a59dda7745f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-golempress.png",
+      "sha256": "a98f1dea32713e744abed2308c7799a819044266efecaf09e29c941f60ec59fb",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "original-ru2-blueprint-furnace.png",
+      "sha256": "e4204a63ae91bce1fb0869e894d9ca73a9e06c35f5227cdde78d521656bc81f9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-furnace.png",
+      "sha256": "5575ba29bf56aa46f99e47250502576faa6b86350ade546d1ee9c4066859628d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-furnace-cycle-1.png",
+      "sha256": "cdc8a87810b5c74f556a4d5168288639cb0c20754f7e1736cfc62897780d8a75",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-furnace-cycle-2.png",
+      "sha256": "400c975df4280092dceaf5030d7e421943365c2aec0dd96373d6af0c457b65a9",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-furnace-cycle-3.png",
+      "sha256": "f24561f37a56cb3c4b49b121c4f763863bd49eee55d92f20db0ae64ab3db52d2",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-golempress-bookmark.png",
+      "sha256": "3ad429e977c6edefcb4ae60dd6c076874d478717a70eb1d5d7b616f295d46394",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "modern-final-ru2-blueprint-golempress-piston-tooltip.png",
+      "sha256": "d58873bc70e28946b2a0a3d4cd7f8cc01c4c737548860fb3adcdd7bd7b0d9883",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "limitations": [
+    "Native modern font is an explicit user-approved change, so page text is not expected to match old glyph pixels.",
+    "Furnace/Golem source previews include vanilla1.21 block textures/models, which visibly differ from vanilla1.12 assets; their MAE is larger than original TC6-only construction cells.",
+    "Lava animation phases differ and are assessed for geometry/connection visibility, not frame-exact texels.",
+    "No claim of full-screen or all-state pixel parity."
+  ]
+}

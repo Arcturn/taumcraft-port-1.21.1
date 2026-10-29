@@ -1,0 +1,155 @@
+{
+  "block": {
+    "thaumcraft:nitor_silver": [
+      "thaumcraft:nitor_light_gray"
+    ],
+    "thaumcraft:nitor_lightblue": [
+      "thaumcraft:nitor_light_blue"
+    ],
+    "thaumcraft:stone_arcane": [
+      "thaumcraft:arcane_stone"
+    ],
+    "thaumcraft:stone_arcane_brick": [
+      "thaumcraft:arcane_brick"
+    ]
+  },
+  "entity_type": {
+    "thaumcraft:cultistportallesser": [
+      "thaumcraft:cultist_portal_lesser"
+    ],
+    "thaumcraft:cultistknight": [
+      "thaumcraft:cultist_knight"
+    ],
+    "thaumcraft:cultistcleric": [
+      "thaumcraft:cultist_cleric"
+    ],
+    "thaumcraft:eldritchorb": [
+      "thaumcraft:cultist_orb"
+    ],
+    "thaumcraft:fluxrift": [
+      "thaumcraft:flux_rift"
+    ],
+    "thaumcraft:taintseed": [
+      "thaumcraft:taint_seed"
+    ],
+    "thaumcraft:taintseedprime": [
+      "thaumcraft:taint_seed_prime"
+    ],
+    "thaumcraft:thaumslime": [
+      "thaumcraft:thaumic_slime"
+    ]
+  },
+  "mob_effect": {
+    "thaumcraft:fluxtaint": [
+      "thaumcraft:flux_taint"
+    ],
+    "thaumcraft:visexhaust": [
+      "thaumcraft:vis_exhaust"
+    ],
+    "thaumcraft:infectiousvisexhaust": [
+      "thaumcraft:infectious_vis_exhaust"
+    ]
+  },
+  "item": {
+    "thaumcraft:ingot": [
+      "thaumcraft:ingot_thaumium",
+      "thaumcraft:ingot_void",
+      "thaumcraft:ingot_brass"
+    ],
+    "thaumcraft:nugget": [
+      "thaumcraft:nugget_brass",
+      "thaumcraft:nugget_thaumium",
+      "thaumcraft:nugget_void",
+      "thaumcraft:nugget_quicksilver",
+      "thaumcraft:nugget_quartz"
+    ],
+    "thaumcraft:plate": [
+      "thaumcraft:plate_brass",
+      "thaumcraft:plate_iron",
+      "thaumcraft:plate_thaumium",
+      "thaumcraft:plate_void"
+    ],
+    "thaumcraft:cluster": [
+      "thaumcraft:cluster_iron",
+      "thaumcraft:cluster_gold",
+      "thaumcraft:cluster_copper",
+      "thaumcraft:cluster_cinnabar"
+    ],
+    "thaumcraft:mind": [
+      "thaumcraft:mind_clockwork"
+    ],
+    "thaumcraft:curio": [
+      "thaumcraft:curio_arcane",
+      "thaumcraft:curio_preserved",
+      "thaumcraft:curio_ancient",
+      "thaumcraft:curio_eldritch",
+      "thaumcraft:curio_knowledge",
+      "thaumcraft:curio_twisted",
+      "thaumcraft:curio_rites"
+    ],
+    "thaumcraft:baubles": [
+      "thaumcraft:amulet_mundane",
+      "thaumcraft:ring_mundane",
+      "thaumcraft:girdle_mundane",
+      "thaumcraft:amulet_fancy",
+      "thaumcraft:ring_fancy",
+      "thaumcraft:girdle_fancy"
+    ]
+  },
+  "block_entity_type": {
+    "thaumcraft:TileArcaneWorkbench": [
+      "thaumcraft:arcane_workbench"
+    ],
+    "thaumcraft:TileCrucible": [
+      "thaumcraft:crucible"
+    ],
+    "thaumcraft:TileNitor": [
+      "thaumcraft:nitor"
+    ],
+    "thaumcraft:TileResearchTable": [
+      "thaumcraft:research_table"
+    ],
+    "thaumcraft:TileTube": [
+      "thaumcraft:tube"
+    ],
+    "thaumcraft:TileTubeValve": [
+      "thaumcraft:tube"
+    ],
+    "thaumcraft:TileTubeFilter": [
+      "thaumcraft:tube"
+    ],
+    "thaumcraft:TileTubeRestrict": [
+      "thaumcraft:tube"
+    ],
+    "thaumcraft:TileTubeOneway": [
+      "thaumcraft:tube"
+    ],
+    "thaumcraft:TileTubeBuffer": [
+      "thaumcraft:tube"
+    ],
+    "thaumcraft:TileJar": [
+      "thaumcraft:jar"
+    ],
+    "thaumcraft:TileJarVoid": [
+      "thaumcraft:jar"
+    ],
+    "thaumcraft:TileAlembic": [
+      "thaumcraft:jar"
+    ],
+    "thaumcraft:TileBellows": [
+      "thaumcraft:bellows"
+    ],
+    "thaumcraft:TileSmelter": [
+      "thaumcraft:smelter"
+    ],
+    "thaumcraft:TileCentrifuge": [
+      "thaumcraft:centrifuge"
+    ],
+    "thaumcraft:TileThaumatorium": [
+      "thaumcraft:thaumatorium"
+    ],
+    "thaumcraft:TileThaumatoriumTop": [
+      "thaumcraft:thaumatorium"
+    ]
+  }
+}

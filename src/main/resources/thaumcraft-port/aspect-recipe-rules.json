@@ -1,0 +1,2731 @@
+[
+  {
+    "target": "minecraft:terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 215,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150405_ch, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:white_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:orange_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:magenta_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:light_blue_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:yellow_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:lime_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:pink_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:gray_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:light_gray_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:cyan_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:purple_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:blue_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:brown_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:green_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:red_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:black_terracotta",
+    "kind": "copy",
+    "source": "minecraft:clay",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 216,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150406_ce, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150435_aG)).add(Aspect.FIRE, 1).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:brick",
+    "kind": "copy",
+    "source": "minecraft:clay_ball",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 217,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Items.field_151118_aC, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Items.field_151119_aD)).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:mossy_stone_bricks",
+    "kind": "copy",
+    "source": "minecraft:stone_bricks",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "herba",
+        "amount": 1
+      }
+    ],
+    "line": 224,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150417_aV, 1, 1), new AspectList(new ItemStack(Blocks.field_150417_aV)).add(Aspect.PLANT, 1));"
+  },
+  {
+    "target": "minecraft:cracked_stone_bricks",
+    "kind": "copy",
+    "source": "minecraft:stone_bricks",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "perditio",
+        "amount": 1
+      }
+    ],
+    "line": 225,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150417_aV, 1, 2), new AspectList(new ItemStack(Blocks.field_150417_aV)).add(Aspect.ENTROPY, 1));"
+  },
+  {
+    "target": "minecraft:chiseled_stone_bricks",
+    "kind": "copy",
+    "source": "minecraft:stone_bricks",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 226,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150417_aV, 1, 3), new AspectList(new ItemStack(Blocks.field_150417_aV)).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:chiseled_sandstone",
+    "kind": "copy",
+    "source": "minecraft:sandstone",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 227,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150322_A, 1, 1), new AspectList(new ItemStack(Blocks.field_150322_A)).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:cut_sandstone",
+    "kind": "copy",
+    "source": "minecraft:sandstone",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 228,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_150322_A, 1, 2), new AspectList(new ItemStack(Blocks.field_150322_A)).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:white_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:orange_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:magenta_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:light_blue_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:yellow_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:lime_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:pink_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:gray_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:light_gray_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:cyan_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:purple_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:blue_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:brown_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:green_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:red_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:black_concrete",
+    "kind": "complex",
+    "source": "minecraft:white_concrete_powder",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 1
+      }
+    ],
+    "line": 229,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_192443_dR, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_192444_dS)).add(Aspect.WATER, 1).add(Aspect.ORDER, 1));"
+  },
+  {
+    "target": "minecraft:black_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 230,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192442_dQ), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:blue_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 231,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192438_dM), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:brown_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 232,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192439_dN), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:cyan_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 233,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192436_dK), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:gray_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 234,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192434_dI), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:green_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 235,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192440_dO), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:light_blue_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 236,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192430_dE), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:lime_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 237,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192432_dG), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:magenta_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 238,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192429_dD), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:orange_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 239,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192428_dC), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:pink_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 240,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192433_dH), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:purple_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 241,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192437_dL), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:red_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 242,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192441_dP), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:light_gray_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 243,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192435_dJ), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:white_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 244,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192427_dB), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:yellow_glazed_terracotta",
+    "kind": "copy",
+    "source": "minecraft:white_terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 245,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_192431_dF), new AspectList(new ItemStack(Blocks.field_150406_ce)).add(Aspect.SENSES, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "minecraft:melon",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "herba",
+        "amount": 10
+      },
+      {
+        "op": "remove",
+        "aspect": "victus",
+        "amount": 5
+      }
+    ],
+    "line": 280,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150440_ba, 1, Short.MAX_VALUE), new AspectList().add(Aspect.PLANT, 10).remove(Aspect.LIFE, 5));"
+  },
+  {
+    "target": "minecraft:sugar",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "desiderium",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "potentia",
+        "amount": 1
+      }
+    ],
+    "line": 284,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151102_aT), new AspectList().add(Aspect.DESIRE, 1).add(Aspect.ENERGY, 1));"
+  },
+  {
+    "target": "minecraft:cake",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "desiderium",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 2
+      }
+    ],
+    "line": 285,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151105_aU), new AspectList().add(Aspect.DESIRE, 1).add(Aspect.LIFE, 2));"
+  },
+  {
+    "target": "minecraft:pumpkin_pie",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "desiderium",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 2
+      }
+    ],
+    "line": 286,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151158_bO), new AspectList().add(Aspect.DESIRE, 1).add(Aspect.LIFE, 2));"
+  },
+  {
+    "target": "minecraft:cookie",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "desiderium",
+        "amount": 1
+      }
+    ],
+    "line": 302,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151106_aX, 1, Short.MAX_VALUE), new AspectList().add(Aspect.DESIRE, 1));"
+  },
+  {
+    "target": "minecraft:torch",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 304,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150478_aa, 1, Short.MAX_VALUE), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "minecraft:cauldron",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alkimia",
+        "amount": 15
+      }
+    ],
+    "line": 341,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151066_bu), new AspectList().add(Aspect.ALCHEMY, 15));"
+  },
+  {
+    "target": "minecraft:fermented_spider_eye",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alkimia",
+        "amount": 5
+      }
+    ],
+    "line": 342,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151071_bq), new AspectList().add(Aspect.ALCHEMY, 5));"
+  },
+  {
+    "target": "minecraft:blaze_powder",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alkimia",
+        "amount": 5
+      }
+    ],
+    "line": 343,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151065_br), new AspectList().add(Aspect.ALCHEMY, 5));"
+  },
+  {
+    "target": "minecraft:glistering_melon_slice",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alkimia",
+        "amount": 5
+      }
+    ],
+    "line": 344,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151060_bw), new AspectList().add(Aspect.ALCHEMY, 5));"
+  },
+  {
+    "target": "minecraft:magma_cream",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alkimia",
+        "amount": 5
+      }
+    ],
+    "line": 345,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151064_bs), new AspectList().add(Aspect.ALCHEMY, 5));"
+  },
+  {
+    "target": "minecraft:black_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 348,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190975_dA), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:blue_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 349,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190988_dw), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:green_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 350,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190990_dy), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:red_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 351,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190991_dz), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:yellow_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 352,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190981_dp), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:light_gray_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 353,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190985_dt), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:white_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 354,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190977_dl), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:orange_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 355,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190978_dm), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:pink_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 356,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190983_dr), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:gray_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 357,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190984_ds), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:cyan_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 358,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190986_du), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:light_blue_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 359,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190980_do), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:lime_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 360,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190982_dq), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:magenta_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 361,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190979_dn), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:brown_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:purple_shulker_box",
+    "operations": [],
+    "line": 362,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Blocks.field_190989_dx), new AspectList(new ItemStack(Blocks.field_190987_dv)));"
+  },
+  {
+    "target": "minecraft:paper",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "cognitio",
+        "amount": 2
+      }
+    ],
+    "line": 380,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151121_aF), new AspectList().add(Aspect.MIND, 2));"
+  },
+  {
+    "target": "minecraft:enchanted_book",
+    "kind": "complex",
+    "source": "minecraft:book",
+    "operations": [],
+    "line": 381,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151134_bR), new AspectList(new ItemStack(Items.field_151122_aG)));"
+  },
+  {
+    "target": "minecraft:bookshelf",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "cognitio",
+        "amount": 8
+      }
+    ],
+    "line": 382,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150342_X), new AspectList().add(Aspect.MIND, 8));"
+  },
+  {
+    "target": "minecraft:chest",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vacuos",
+        "amount": 15
+      }
+    ],
+    "line": 392,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack((Block)Blocks.field_150486_ae, 1, Short.MAX_VALUE), new AspectList().add(Aspect.VOID, 15));"
+  },
+  {
+    "target": "minecraft:trapped_chest",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 10
+      }
+    ],
+    "line": 393,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150447_bR, 1, Short.MAX_VALUE), new AspectList().add(Aspect.TRAP, 10));"
+  },
+  {
+    "target": "minecraft:ender_eye",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "praecantatio",
+        "amount": 5
+      }
+    ],
+    "line": 394,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151061_bv), new AspectList().add(Aspect.SENSES, 10).add(Aspect.MAGIC, 5));"
+  },
+  {
+    "target": "minecraft:arrow",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aversio",
+        "amount": 5
+      }
+    ],
+    "line": 395,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151032_g), new AspectList().add(Aspect.AVERSION, 5));"
+  },
+  {
+    "target": "minecraft:glass_bottle",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vacuos",
+        "amount": 5
+      }
+    ],
+    "line": 396,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151069_bo), new AspectList().add(Aspect.VOID, 5));"
+  },
+  {
+    "target": "minecraft:golden_apple",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "praecantatio",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 10
+      }
+    ],
+    "line": 397,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151153_ao, 1, 0), new AspectList().add(Aspect.MAGIC, 5).add(Aspect.LIFE, 10));"
+  },
+  {
+    "target": "minecraft:enchanted_golden_apple",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "praecantatio",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 15
+      },
+      {
+        "op": "add",
+        "aspect": "praemunio",
+        "amount": 15
+      }
+    ],
+    "line": 398,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151153_ao, 1, 1), new AspectList().add(Aspect.MAGIC, 5).add(Aspect.LIFE, 15).add(Aspect.PROTECT, 15));"
+  },
+  {
+    "target": "minecraft:bowl",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vacuos",
+        "amount": 5
+      }
+    ],
+    "line": 399,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151054_z), new AspectList().add(Aspect.VOID, 5));"
+  },
+  {
+    "target": "minecraft:mushroom_stew",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 5
+      }
+    ],
+    "line": 400,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151009_A), new AspectList().add(Aspect.LIFE, 5));"
+  },
+  {
+    "target": "minecraft:minecart",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 15
+      }
+    ],
+    "line": 401,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151143_au), new AspectList().add(Aspect.MOTION, 15));"
+  },
+  {
+    "target": "minecraft:iron_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 402,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151139_aw), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:acacia_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 403,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_179572_au), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:dark_oak_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 404,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_179571_av), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:jungle_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 405,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_179567_at), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:oak_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 406,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_179570_aq), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:spruce_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 407,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_179569_ar), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:birch_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 408,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_179568_as), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:oak_boat",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 15
+      }
+    ],
+    "line": 409,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151124_az), new AspectList().add(Aspect.WATER, 10).add(Aspect.MOTION, 15));"
+  },
+  {
+    "target": "minecraft:acacia_boat",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 15
+      }
+    ],
+    "line": 410,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_185153_aK), new AspectList().add(Aspect.WATER, 10).add(Aspect.MOTION, 15));"
+  },
+  {
+    "target": "minecraft:birch_boat",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 15
+      }
+    ],
+    "line": 411,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_185151_aI), new AspectList().add(Aspect.WATER, 10).add(Aspect.MOTION, 15));"
+  },
+  {
+    "target": "minecraft:dark_oak_boat",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 15
+      }
+    ],
+    "line": 412,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_185154_aL), new AspectList().add(Aspect.WATER, 10).add(Aspect.MOTION, 15));"
+  },
+  {
+    "target": "minecraft:jungle_boat",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 15
+      }
+    ],
+    "line": 413,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_185152_aJ), new AspectList().add(Aspect.WATER, 10).add(Aspect.MOTION, 15));"
+  },
+  {
+    "target": "minecraft:spruce_boat",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 15
+      }
+    ],
+    "line": 414,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_185150_aH), new AspectList().add(Aspect.WATER, 10).add(Aspect.MOTION, 15));"
+  },
+  {
+    "target": "minecraft:flint_and_steel",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "instrumentum",
+        "amount": 5
+      }
+    ],
+    "line": 415,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151033_d, 1, Short.MAX_VALUE), new AspectList().add(Aspect.FIRE, 10).add(Aspect.TOOL, 5));"
+  },
+  {
+    "target": "minecraft:fishing_rod",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "instrumentum",
+        "amount": 5
+      }
+    ],
+    "line": 416,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack((Item)Items.field_151112_aM, 1, Short.MAX_VALUE), new AspectList().add(Aspect.WATER, 10).add(Aspect.TOOL, 5));"
+  },
+  {
+    "target": "minecraft:shield",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "praemunio",
+        "amount": 20
+      }
+    ],
+    "line": 417,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_185159_cQ, 1, Short.MAX_VALUE), new AspectList().add(Aspect.PROTECT, 20));"
+  },
+  {
+    "target": "minecraft:spectral_arrow",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "praecantatio",
+        "amount": 5
+      }
+    ],
+    "line": 425,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_185166_h, 1, Short.MAX_VALUE), new AspectList().add(Aspect.SENSES, 10).add(Aspect.MAGIC, 5));"
+  },
+  {
+    "target": "minecraft:bucket",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vacuos",
+        "amount": 5
+      }
+    ],
+    "line": 426,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151133_ar), new AspectList().add(Aspect.VOID, 5));"
+  },
+  {
+    "target": "minecraft:water_bucket",
+    "kind": "copy",
+    "source": "minecraft:bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 20
+      }
+    ],
+    "line": 428,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Items.field_151131_as), new AspectList(new ItemStack(Items.field_151133_ar)).add(Aspect.WATER, 20));"
+  },
+  {
+    "target": "minecraft:lava_bucket",
+    "kind": "copy",
+    "source": "minecraft:bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 15
+      },
+      {
+        "op": "add",
+        "aspect": "terra",
+        "amount": 5
+      }
+    ],
+    "line": 429,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Items.field_151129_at), new AspectList(new ItemStack(Items.field_151133_ar)).add(Aspect.FIRE, 15).add(Aspect.EARTH, 5));"
+  },
+  {
+    "target": "minecraft:milk_bucket",
+    "kind": "copy",
+    "source": "minecraft:bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 5
+      }
+    ],
+    "line": 430,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Items.field_151117_aB), new AspectList(new ItemStack(Items.field_151133_ar)).add(Aspect.LIFE, 10).add(Aspect.BEAST, 5).add(Aspect.WATER, 5));"
+  },
+  {
+    "target": "minecraft:brewing_stand",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 15
+      },
+      {
+        "op": "add",
+        "aspect": "alkimia",
+        "amount": 25
+      }
+    ],
+    "line": 431,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151067_bt), new AspectList().add(Aspect.CRAFT, 15).add(Aspect.ALCHEMY, 25));"
+  },
+  {
+    "target": "minecraft:stone_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 432,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150430_aB), new AspectList().add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:rail",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 10
+      }
+    ],
+    "line": 433,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150448_aq, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MOTION, 10));"
+  },
+  {
+    "target": "minecraft:detector_rail",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "line": 434,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150319_E, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 5).add(Aspect.SENSES, 1));"
+  },
+  {
+    "target": "minecraft:powered_rail",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "potentia",
+        "amount": 1
+      }
+    ],
+    "line": 435,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150318_D, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 5).add(Aspect.ENERGY, 1));"
+  },
+  {
+    "target": "minecraft:activator_rail",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 436,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150408_cc, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:acacia_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 437,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_180387_bt, 1, Short.MAX_VALUE), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:dark_oak_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 438,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_180385_bs, 1, Short.MAX_VALUE), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:jungle_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 439,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_180386_br, 1, Short.MAX_VALUE), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:dark_oak_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 440,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_180385_bs, 1, Short.MAX_VALUE), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:spruce_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 441,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_180391_bp, 1, Short.MAX_VALUE), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:birch_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 442,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_180392_bq, 1, Short.MAX_VALUE), new AspectList().add(Aspect.TRAP, 5).add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:oak_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "line": 443,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150452_aw, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 5).add(Aspect.SENSES, 5));"
+  },
+  {
+    "target": "minecraft:stone_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "line": 444,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150456_au, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 5).add(Aspect.SENSES, 5));"
+  },
+  {
+    "target": "minecraft:light_weighted_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "line": 445,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150445_bS, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 5).add(Aspect.SENSES, 5));"
+  },
+  {
+    "target": "minecraft:heavy_weighted_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "line": 446,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150443_bT, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 5).add(Aspect.SENSES, 5));"
+  },
+  {
+    "target": "minecraft:lever",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 447,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150442_at, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:piston",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 10
+      }
+    ],
+    "line": 448,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack((Block)Blocks.field_150331_J, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 10).add(Aspect.MOTION, 10));"
+  },
+  {
+    "target": "minecraft:sticky_piston",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 10
+      }
+    ],
+    "line": 449,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack((Block)Blocks.field_150320_F, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 10).add(Aspect.MOTION, 10));"
+  },
+  {
+    "target": "minecraft:jukebox",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 20
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "aer",
+        "amount": 15
+      }
+    ],
+    "line": 450,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150421_aI), new AspectList().add(Aspect.SENSES, 20).add(Aspect.MECHANISM, 10).add(Aspect.AIR, 15));"
+  },
+  {
+    "target": "minecraft:note_block",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 20
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "aer",
+        "amount": 15
+      }
+    ],
+    "line": 451,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150323_B), new AspectList().add(Aspect.SENSES, 20).add(Aspect.MECHANISM, 10).add(Aspect.AIR, 15));"
+  },
+  {
+    "target": "minecraft:oak_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "line": 452,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150415_aT, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MOTION, 5));"
+  },
+  {
+    "target": "minecraft:furnace",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 10
+      }
+    ],
+    "line": 453,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150460_al, 1, Short.MAX_VALUE), new AspectList().add(Aspect.FIRE, 10));"
+  },
+  {
+    "target": "minecraft:enchanting_table",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "praecantatio",
+        "amount": 25
+      },
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 15
+      }
+    ],
+    "line": 454,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150381_bn), new AspectList().add(Aspect.MAGIC, 25).add(Aspect.CRAFT, 15));"
+  },
+  {
+    "target": "minecraft:crafting_table",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 20
+      }
+    ],
+    "line": 455,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150462_ai), new AspectList().add(Aspect.CRAFT, 20));"
+  },
+  {
+    "target": "minecraft:clock",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 10
+      }
+    ],
+    "line": 456,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151113_aN), new AspectList().add(Aspect.MECHANISM, 10));"
+  },
+  {
+    "target": "minecraft:beacon",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "auram",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "praecantatio",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "permutatio",
+        "amount": 10
+      }
+    ],
+    "line": 457,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack((Block)Blocks.field_150461_bJ), new AspectList().add(Aspect.AURA, 10).add(Aspect.MAGIC, 10).add(Aspect.EXCHANGE, 10));"
+  },
+  {
+    "target": "minecraft:oak_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 458,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150471_bO, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:carrot_on_a_stick",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "desiderium",
+        "amount": 10
+      }
+    ],
+    "line": 459,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151146_bM, 1, Short.MAX_VALUE), new AspectList().add(Aspect.MOTION, 5).add(Aspect.DESIRE, 10));"
+  },
+  {
+    "target": "minecraft:flower_pot",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vacuos",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "herba",
+        "amount": 5
+      }
+    ],
+    "line": 460,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151162_bE), new AspectList().add(Aspect.VOID, 5).add(Aspect.PLANT, 5));"
+  },
+  {
+    "target": "minecraft:golden_carrot",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "alkimia",
+        "amount": 5
+      }
+    ],
+    "line": 461,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151150_bK), new AspectList().add(Aspect.SENSES, 10).add(Aspect.ALCHEMY, 5));"
+  },
+  {
+    "target": "minecraft:ender_chest",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "merge",
+        "aspect": "permutatio",
+        "amount": 10
+      },
+      {
+        "op": "merge",
+        "aspect": "motus",
+        "amount": 10
+      },
+      {
+        "op": "merge",
+        "aspect": "vacuos",
+        "amount": 20
+      }
+    ],
+    "line": 462,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150477_bB, 1, Short.MAX_VALUE), new AspectList().merge(Aspect.EXCHANGE, 10).merge(Aspect.MOTION, 10).merge(Aspect.VOID, 20));"
+  },
+  {
+    "target": "minecraft:comparator",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "merge",
+        "aspect": "machina",
+        "amount": 15
+      },
+      {
+        "op": "merge",
+        "aspect": "ordo",
+        "amount": 5
+      },
+      {
+        "op": "merge",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "line": 463,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151132_bS, 1, Short.MAX_VALUE), new AspectList().merge(Aspect.MECHANISM, 15).merge(Aspect.ORDER, 5).merge(Aspect.SENSES, 5));"
+  },
+  {
+    "target": "minecraft:repeater",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "merge",
+        "aspect": "machina",
+        "amount": 15
+      },
+      {
+        "op": "merge",
+        "aspect": "potentia",
+        "amount": 10
+      }
+    ],
+    "line": 464,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Items.field_151107_aW, 1, Short.MAX_VALUE), new AspectList().merge(Aspect.MECHANISM, 15).merge(Aspect.ENERGY, 10));"
+  },
+  {
+    "target": "minecraft:hopper",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "merge",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "merge",
+        "aspect": "permutatio",
+        "amount": 10
+      },
+      {
+        "op": "merge",
+        "aspect": "vacuos",
+        "amount": 5
+      }
+    ],
+    "line": 465,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack((Block)Blocks.field_150438_bZ, 1, Short.MAX_VALUE), new AspectList().merge(Aspect.MECHANISM, 5).merge(Aspect.EXCHANGE, 10).merge(Aspect.VOID, 5));"
+  },
+  {
+    "target": "minecraft:dropper",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "merge",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "merge",
+        "aspect": "permutatio",
+        "amount": 10
+      },
+      {
+        "op": "merge",
+        "aspect": "vacuos",
+        "amount": 5
+      }
+    ],
+    "line": 466,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150409_cd, 1, Short.MAX_VALUE), new AspectList().merge(Aspect.MECHANISM, 5).merge(Aspect.EXCHANGE, 10).merge(Aspect.VOID, 5));"
+  },
+  {
+    "target": "minecraft:dispenser",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "merge",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "merge",
+        "aspect": "permutatio",
+        "amount": 10
+      },
+      {
+        "op": "merge",
+        "aspect": "vacuos",
+        "amount": 5
+      }
+    ],
+    "line": 467,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150367_z, 1, Short.MAX_VALUE), new AspectList().merge(Aspect.MECHANISM, 5).merge(Aspect.EXCHANGE, 10).merge(Aspect.VOID, 5));"
+  },
+  {
+    "target": "minecraft:daylight_detector",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "merge",
+        "aspect": "sensus",
+        "amount": 10
+      },
+      {
+        "op": "merge",
+        "aspect": "lux",
+        "amount": 10
+      },
+      {
+        "op": "merge",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "line": 470,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack((Block)Blocks.field_150453_bW, 1, Short.MAX_VALUE), new AspectList().merge(Aspect.SENSES, 10).merge(Aspect.LIGHT, 10).merge(Aspect.MECHANISM, 5));"
+  },
+  {
+    "target": "minecraft:green_dye",
+    "kind": "copy",
+    "source": "minecraft:cactus",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      }
+    ],
+    "line": 483,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(Items.field_151100_aR, 1, 2), new AspectList(new ItemStack((Block)Blocks.field_150434_aF)).add(Aspect.WATER, 1).add(Aspect.FIRE, 1));"
+  },
+  {
+    "target": "thaumcraft:table_wood",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "instrumentum",
+        "amount": 1
+      }
+    ],
+    "line": 490,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(BlocksTC.tableWood), new AspectList().add(Aspect.TOOL, 1));"
+  },
+  {
+    "target": "thaumcraft:arcane_workbench",
+    "kind": "copy",
+    "source": "minecraft:crafting_table",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "praecantatio",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "auram",
+        "amount": 5
+      }
+    ],
+    "line": 492,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.arcaneWorkbench), new AspectList(new ItemStack(Blocks.field_150462_ai)).add(Aspect.MAGIC, 5).add(Aspect.AURA, 5));"
+  },
+  {
+    "target": "thaumcraft:research_table",
+    "kind": "copy",
+    "source": "thaumcraft:table_wood",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "cognitio",
+        "amount": 5
+      }
+    ],
+    "line": 535,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.researchTable, 1, Short.MAX_VALUE), new AspectList(new ItemStack(BlocksTC.tableWood)).add(Aspect.MIND, 5));"
+  },
+  {
+    "target": "thaumcraft:crucible",
+    "kind": "copy",
+    "source": "minecraft:cauldron",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 20
+      },
+      {
+        "op": "add",
+        "aspect": "alkimia",
+        "amount": 20
+      }
+    ],
+    "line": 548,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.crucible), new AspectList(new ItemStack(Items.field_151066_bu, 1, Short.MAX_VALUE)).add(Aspect.CRAFT, 20).add(Aspect.ALCHEMY, 20));"
+  },
+  {
+    "target": "thaumcraft:thaumonomicon",
+    "kind": "copy",
+    "source": "minecraft:bookshelf",
+    "operations": [
+      {
+        "op": "merge",
+        "aspect": "praecantatio",
+        "amount": 10
+      }
+    ],
+    "line": 552,
+    "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.thaumonomicon, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Blocks.field_150342_X)).merge(Aspect.MAGIC, 10));"
+  },
+  {
+    "target": "thaumcraft:thaumometer",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "auram",
+        "amount": 10
+      }
+    ],
+    "line": 556,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ItemsTC.thaumometer, 1, Short.MAX_VALUE), new AspectList().add(Aspect.SENSES, 10).add(Aspect.AURA, 10));"
+  }
+]

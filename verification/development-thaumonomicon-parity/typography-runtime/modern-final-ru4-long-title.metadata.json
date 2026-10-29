@@ -1,0 +1,19 @@
+{
+  "forceUnicode": "false",
+  "getGuiScale": "4.0",
+  "getGuiScaledHeight": "270",
+  "getGuiScaledWidth": "480",
+  "getHeight": "1080",
+  "getWidth": "1920",
+  "language": "ru_ru",
+  "optionGuiScale": "4",
+  "screen": "thaumcraft.port.client.ResearchPageScreen",
+  "screen.aspectPage": "0",
+  "screen.insert": "0",
+  "screen.page": "0",
+  "screen.recipeVariant": "0",
+  "screen.shownRecipe": "null",
+  "layoutResourceEpoch": 1,
+  "sourcePropertiesSha256": "6461ba2eb7ebd3b1d54b7275e784a1dbbc86562c216dd3c53a3b23a6e185e573",
+  "sourcePropertiesFile": "modern-final-ru4-long-title.properties"
+}

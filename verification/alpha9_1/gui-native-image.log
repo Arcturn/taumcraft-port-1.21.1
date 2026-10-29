@@ -1,0 +1,2 @@
+PASS: reproduced rejection of 7 legacy JPG backgrounds; all 7 replacement PNG backgrounds decode at 1024x1024
+PASS: 41 GUI textures decoded by Minecraft NativeImage; GPU compositing not tested

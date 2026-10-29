@@ -1,0 +1,25 @@
+{
+  "UUID": [
+    -2140827689,
+    1077820589,
+    -1848153550,
+    -399820805
+  ],
+  "XpTotal": 0,
+  "XpP": 0.0,
+  "XpLevel": 0,
+  "Health": 20.0,
+  "Dimension": "minecraft:overworld",
+  "Pos": [
+    0.5,
+    101.0,
+    3.5
+  ],
+  "Inventory": [
+    {
+      "count": 1,
+      "Slot": 0,
+      "id": "thaumcraft:thaumonomicon"
+    }
+  ]
+}

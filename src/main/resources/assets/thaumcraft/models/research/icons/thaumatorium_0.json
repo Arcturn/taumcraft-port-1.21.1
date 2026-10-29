@@ -1,0 +1,29 @@
+{
+  "textures": {
+    "texture": "thaumcraft:blocks/thaumatorium"
+  },
+  "loader": "neoforge:obj",
+  "model": "thaumcraft:models/research/obj/thaumatorium.obj",
+  "flip_v": false,
+  "automatic_culling": false,
+  "parent": "minecraft:block/block",
+  "display": {
+    "gui": {
+      "rotation": [
+        300,
+        0,
+        45
+      ],
+      "translation": [
+        0,
+        -4.0,
+        0
+      ],
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ]
+    }
+  }
+}

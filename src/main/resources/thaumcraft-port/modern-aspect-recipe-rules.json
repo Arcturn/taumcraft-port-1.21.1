@@ -1,0 +1,1782 @@
+[
+  {
+    "target": "minecraft:exposed_copper",
+    "kind": "copy",
+    "source": "minecraft:copper_block",
+    "operations": [],
+    "rationale": "Oxidation/scraping changes state, not the metal quantity."
+  },
+  {
+    "target": "minecraft:weathered_copper",
+    "kind": "copy",
+    "source": "minecraft:copper_block",
+    "operations": [],
+    "rationale": "Oxidation/scraping changes state, not the metal quantity."
+  },
+  {
+    "target": "minecraft:oxidized_copper",
+    "kind": "copy",
+    "source": "minecraft:copper_block",
+    "operations": [],
+    "rationale": "Oxidation/scraping changes state, not the metal quantity."
+  },
+  {
+    "target": "minecraft:dried_kelp",
+    "kind": "copy",
+    "source": "minecraft:kelp",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "remove",
+        "aspect": "aqua",
+        "amount": 3
+      }
+    ],
+    "rationale": "Drying removes the water component, following original cooked-food registrations."
+  },
+  {
+    "target": "minecraft:honey_bottle",
+    "kind": "copy",
+    "source": "minecraft:glass_bottle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 3
+      }
+    ],
+    "rationale": "Filled bottle retains the actual glass-container aspects."
+  },
+  {
+    "target": "minecraft:powder_snow_bucket",
+    "kind": "copy",
+    "source": "minecraft:bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "gelum",
+        "amount": 20
+      }
+    ],
+    "rationale": "Filled snow bucket retains the actual metal-container aspects."
+  },
+  {
+    "target": "minecraft:cod_bucket",
+    "kind": "copy",
+    "source": "minecraft:water_bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Captured aquatic animal adds life to a complete water bucket."
+  },
+  {
+    "target": "minecraft:salmon_bucket",
+    "kind": "copy",
+    "source": "minecraft:water_bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Captured aquatic animal adds life to a complete water bucket."
+  },
+  {
+    "target": "minecraft:tropical_fish_bucket",
+    "kind": "copy",
+    "source": "minecraft:water_bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Captured aquatic animal adds life to a complete water bucket."
+  },
+  {
+    "target": "minecraft:pufferfish_bucket",
+    "kind": "copy",
+    "source": "minecraft:water_bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Captured aquatic animal adds life to a complete water bucket."
+  },
+  {
+    "target": "minecraft:axolotl_bucket",
+    "kind": "copy",
+    "source": "minecraft:water_bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Captured aquatic animal adds life to a complete water bucket."
+  },
+  {
+    "target": "minecraft:tadpole_bucket",
+    "kind": "copy",
+    "source": "minecraft:water_bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "victus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Captured aquatic animal adds life to a complete water bucket."
+  },
+  {
+    "target": "minecraft:suspicious_stew",
+    "kind": "copy",
+    "source": "minecraft:mushroom_stew",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alkimia",
+        "amount": 5
+      }
+    ],
+    "rationale": "Special-recipe mushroom stew gains a small effect/brewing component."
+  },
+  {
+    "target": "minecraft:decorated_pot",
+    "kind": "copy",
+    "source": "minecraft:terracotta",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vacuos",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Special-recipe ceramic vessel; decoration patterns do not alter its base material."
+  },
+  {
+    "target": "minecraft:bundle",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vacuos",
+        "amount": 5
+      }
+    ],
+    "rationale": "Container function; material derives if a feature pack enables its recipe."
+  },
+  {
+    "target": "minecraft:mangrove_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:cherry_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:bamboo_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:crimson_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:warped_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:mangrove_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:cherry_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:bamboo_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:crimson_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:warped_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:spruce_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:birch_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:jungle_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:acacia_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:dark_oak_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:mangrove_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:cherry_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:bamboo_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:crimson_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:warped_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:spruce_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:birch_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:jungle_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:acacia_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:dark_oak_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:mangrove_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:cherry_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:bamboo_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:crimson_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:warped_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:spruce_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:birch_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:jungle_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:acacia_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:dark_oak_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:mangrove_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:cherry_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:bamboo_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:crimson_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:warped_fence_gate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New wood variants inherit the corresponding original functional bonus; materials still derive."
+  },
+  {
+    "target": "minecraft:polished_blackstone_button",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "New stone button inherits the original button function."
+  },
+  {
+    "target": "minecraft:polished_blackstone_pressure_plate",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 5
+      }
+    ],
+    "rationale": "New stone pressure plate inherits the original function."
+  },
+  {
+    "target": "minecraft:mangrove_boat",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 15
+      }
+    ],
+    "rationale": "New boats/raft inherit original boat function; wood derives."
+  },
+  {
+    "target": "minecraft:cherry_boat",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 15
+      }
+    ],
+    "rationale": "New boats/raft inherit original boat function; wood derives."
+  },
+  {
+    "target": "minecraft:bamboo_raft",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "aqua",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 15
+      }
+    ],
+    "rationale": "New boats/raft inherit original boat function; wood derives."
+  },
+  {
+    "target": "minecraft:barrel",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vacuos",
+        "amount": 15
+      }
+    ],
+    "rationale": "Chest-like storage capacity, with its own recipe materials."
+  },
+  {
+    "target": "minecraft:smoker",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 10
+      }
+    ],
+    "rationale": "Specialized crafting by heat."
+  },
+  {
+    "target": "minecraft:blast_furnace",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 10
+      }
+    ],
+    "rationale": "Specialized crafting by heat."
+  },
+  {
+    "target": "minecraft:stonecutter",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "instrumentum",
+        "amount": 5
+      }
+    ],
+    "rationale": "Stone-working tool station."
+  },
+  {
+    "target": "minecraft:grindstone",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "permutatio",
+        "amount": 5
+      }
+    ],
+    "rationale": "Repair/disenchantment station transforms equipment."
+  },
+  {
+    "target": "minecraft:cartography_table",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "cognitio",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 10
+      }
+    ],
+    "rationale": "Makes and transforms maps."
+  },
+  {
+    "target": "minecraft:fletching_table",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "volatus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Fletcher work station and ranged-projectile craft."
+  },
+  {
+    "target": "minecraft:smithing_table",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 20
+      }
+    ],
+    "rationale": "Equipment-working table, matching the original crafting-table scale."
+  },
+  {
+    "target": "minecraft:loom",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 10
+      }
+    ],
+    "rationale": "Patterned textile craft."
+  },
+  {
+    "target": "minecraft:lectern",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "cognitio",
+        "amount": 10
+      }
+    ],
+    "rationale": "Displays written knowledge."
+  },
+  {
+    "target": "minecraft:composter",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "herba",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "permutatio",
+        "amount": 5
+      }
+    ],
+    "rationale": "Transforms organic matter into fertilizer."
+  },
+  {
+    "target": "minecraft:campfire",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "rationale": "Cooking fire and visible light."
+  },
+  {
+    "target": "minecraft:soul_campfire",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "spiritus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Soul-bearing campfire."
+  },
+  {
+    "target": "minecraft:lantern",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "rationale": "Lamp function supplements its derived metal/torch material."
+  },
+  {
+    "target": "minecraft:soul_lantern",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "spiritus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Soul light supplements recipe materials."
+  },
+  {
+    "target": "minecraft:soul_torch",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "spiritus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Soul light supplements recipe materials."
+  },
+  {
+    "target": "minecraft:chain",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      }
+    ],
+    "rationale": "Binding function of linked metal."
+  },
+  {
+    "target": "minecraft:target",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 10
+      }
+    ],
+    "rationale": "Detects projectile hits."
+  },
+  {
+    "target": "minecraft:crafter",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "fabrico",
+        "amount": 20
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 10
+      }
+    ],
+    "rationale": "Automated crafting combines the original table and mechanism roles."
+  },
+  {
+    "target": "minecraft:copper_bulb",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "Switchable copper light; materials derive from each recipe."
+  },
+  {
+    "target": "minecraft:exposed_copper_bulb",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "Switchable copper light; materials derive from each recipe."
+  },
+  {
+    "target": "minecraft:weathered_copper_bulb",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "Switchable copper light; materials derive from each recipe."
+  },
+  {
+    "target": "minecraft:oxidized_copper_bulb",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "Switchable copper light; materials derive from each recipe."
+  },
+  {
+    "target": "minecraft:lightning_rod",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "potentia",
+        "amount": 10
+      }
+    ],
+    "rationale": "Conducts lightning energy."
+  },
+  {
+    "target": "minecraft:calibrated_sculk_sensor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 5
+      }
+    ],
+    "rationale": "Restricts vibration detection to an ordered signal range."
+  },
+  {
+    "target": "minecraft:chiseled_bookshelf",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "cognitio",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "vacuos",
+        "amount": 5
+      }
+    ],
+    "rationale": "Stores knowledge-bearing books."
+  },
+  {
+    "target": "minecraft:stripped_bamboo_block",
+    "kind": "copy",
+    "source": "minecraft:bamboo_block",
+    "operations": [],
+    "rationale": "Stripping preserves the bamboo log material, as for the original log tag."
+  },
+  {
+    "target": "minecraft:carved_pumpkin",
+    "kind": "copy",
+    "source": "minecraft:pumpkin",
+    "operations": [],
+    "rationale": "Modern separated carved state retains the original pumpkin material."
+  },
+  {
+    "target": "minecraft:purple_shulker_box",
+    "kind": "copy",
+    "source": "minecraft:shulker_box",
+    "operations": [],
+    "rationale": "Original default purple shulker box became an uncolored craft result in modern Minecraft; keep old color-copy rules linked to the actual modern base."
+  },
+  {
+    "target": "minecraft:chipped_anvil",
+    "kind": "copy",
+    "source": "minecraft:anvil",
+    "operations": [],
+    "rationale": "Wear changes remaining service life, not the amount of metal in an existing anvil."
+  },
+  {
+    "target": "minecraft:damaged_anvil",
+    "kind": "copy",
+    "source": "minecraft:anvil",
+    "operations": [],
+    "rationale": "Wear changes remaining service life, not the amount of metal in an existing anvil."
+  },
+  {
+    "target": "minecraft:infested_stone",
+    "kind": "copy",
+    "source": "minecraft:stone",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      }
+    ],
+    "rationale": "Explicit modern world-scan adaptation: host stone plus the hidden silverfish, not claimed as an original TC6 registration."
+  },
+  {
+    "target": "minecraft:infested_cobblestone",
+    "kind": "copy",
+    "source": "minecraft:cobblestone",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      }
+    ],
+    "rationale": "Explicit modern world-scan adaptation: host stone plus the hidden silverfish, not claimed as an original TC6 registration."
+  },
+  {
+    "target": "minecraft:infested_stone_bricks",
+    "kind": "copy",
+    "source": "minecraft:stone_bricks",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      }
+    ],
+    "rationale": "Explicit modern world-scan adaptation: host stone plus the hidden silverfish, not claimed as an original TC6 registration."
+  },
+  {
+    "target": "minecraft:infested_mossy_stone_bricks",
+    "kind": "copy",
+    "source": "minecraft:mossy_stone_bricks",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      }
+    ],
+    "rationale": "Explicit modern world-scan adaptation: host stone plus the hidden silverfish, not claimed as an original TC6 registration."
+  },
+  {
+    "target": "minecraft:infested_cracked_stone_bricks",
+    "kind": "copy",
+    "source": "minecraft:cracked_stone_bricks",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      }
+    ],
+    "rationale": "Explicit modern world-scan adaptation: host stone plus the hidden silverfish, not claimed as an original TC6 registration."
+  },
+  {
+    "target": "minecraft:infested_chiseled_stone_bricks",
+    "kind": "copy",
+    "source": "minecraft:chiseled_stone_bricks",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      }
+    ],
+    "rationale": "Explicit modern world-scan adaptation: host stone plus the hidden silverfish, not claimed as an original TC6 registration."
+  },
+  {
+    "target": "minecraft:infested_deepslate",
+    "kind": "copy",
+    "source": "minecraft:deepslate",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "bestia",
+        "amount": 5
+      }
+    ],
+    "rationale": "Explicit modern world-scan adaptation: host stone plus the hidden silverfish, not claimed as an original TC6 registration."
+  },
+  {
+    "target": "minecraft:copper_door",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "vinculum",
+        "amount": 5
+      },
+      {
+        "op": "add",
+        "aspect": "machina",
+        "amount": 5
+      }
+    ],
+    "rationale": "Copper door inherits the original iron-door functional bonuses."
+  },
+  {
+    "target": "minecraft:copper_trapdoor",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "motus",
+        "amount": 5
+      }
+    ],
+    "rationale": "Copper hatch inherits the original trapdoor motion bonus."
+  },
+  {
+    "target": "minecraft:exposed_copper_door",
+    "kind": "copy",
+    "source": "minecraft:copper_door",
+    "operations": [],
+    "rationale": "World oxidation/scraping changes the copper state, not its material or door function."
+  },
+  {
+    "target": "minecraft:weathered_copper_door",
+    "kind": "copy",
+    "source": "minecraft:copper_door",
+    "operations": [],
+    "rationale": "World oxidation/scraping changes the copper state, not its material or door function."
+  },
+  {
+    "target": "minecraft:oxidized_copper_door",
+    "kind": "copy",
+    "source": "minecraft:copper_door",
+    "operations": [],
+    "rationale": "World oxidation/scraping changes the copper state, not its material or door function."
+  },
+  {
+    "target": "minecraft:exposed_copper_trapdoor",
+    "kind": "copy",
+    "source": "minecraft:copper_trapdoor",
+    "operations": [],
+    "rationale": "World oxidation/scraping changes the copper state, not its material or door function."
+  },
+  {
+    "target": "minecraft:weathered_copper_trapdoor",
+    "kind": "copy",
+    "source": "minecraft:copper_trapdoor",
+    "operations": [],
+    "rationale": "World oxidation/scraping changes the copper state, not its material or door function."
+  },
+  {
+    "target": "minecraft:oxidized_copper_trapdoor",
+    "kind": "copy",
+    "source": "minecraft:copper_trapdoor",
+    "operations": [],
+    "rationale": "World oxidation/scraping changes the copper state, not its material or door function."
+  },
+  {
+    "target": "minecraft:candle",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "ignis",
+        "amount": 1
+      },
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "rationale": "Candle lighting function uses the original torch scale, while wax and wick derive."
+  },
+  {
+    "target": "minecraft:white_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:orange_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:magenta_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:light_blue_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:yellow_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:lime_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:pink_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:gray_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:light_gray_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:cyan_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:purple_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:blue_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:brown_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:green_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:red_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  },
+  {
+    "target": "minecraft:black_candle",
+    "kind": "copy",
+    "source": "minecraft:candle",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 1
+      }
+    ],
+    "rationale": "Colored candle preserves its material/light composition and gains the small decorative Sensus used by original colored blocks."
+  }
+]

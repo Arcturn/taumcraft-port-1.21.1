@@ -1,0 +1,10 @@
+[08:55:13] [main/INFO]: [STDOUT]: SKIP advancement:60 thaumcraft:research/advancements/icon_60
+[08:55:13] [main/INFO]: [STDOUT]: SKIP book:arcane_workbench_charger_0 thaumcraft:research/icons/arcane_workbench_charger_0
+[08:55:13] [main/INFO]: [STDOUT]: SKIP book:golem_builder_0 thaumcraft:research/icons/golem_builder_0
+[08:55:13] [main/INFO]: [STDOUT]: SKIP book:thaumatorium_0 thaumcraft:research/icons/thaumatorium_0
+[08:55:13] [main/INFO]: [STDOUT]: SKIP book:thaumometer_0 thaumcraft:research/icons/thaumometer_0
+[08:55:13] [main/INFO]: [STDOUT]: SKIP direct:data/thaumcraft/advancement/research/crystalfarmer.json thaumcraft:item/crystal_aer
+[08:55:13] [main/INFO]: [STDOUT]: SKIP direct:data/thaumcraft/advancement/research/thaumatorium.json thaumcraft:item/thaumatorium
+[08:55:13] [main/INFO]: [STDOUT]: Baked 436; failed 0; custom skipped 7
+[08:55:13] [main/INFO]: [STDOUT]: SKIP NeoForge geometry: thaumcraft:research/advancements/icon_60
+[08:55:13] [main/INFO]: [STDOUT]: PASS: 136 actual CustomModelData override selections plus the default icon

@@ -1,0 +1,370 @@
+{
+  "source_sha256": "9425f8643581b27ff8845b087c8bc6fc10425a32942f1a3f0e265ce6b38f7b5f",
+  "assets": [
+    {
+      "source": "assets/thaumcraft/textures/blocks/jar_side.png",
+      "target": "assets/thaumcraft/textures/block/jar_side.png",
+      "sha256": "b2c5e716ad1816a2dc07d28d5d6dc5393b292ffa006e04793ac50ae06e40ba26"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/jar_bottom.png",
+      "target": "assets/thaumcraft/textures/block/jar_bottom.png",
+      "sha256": "53ce838d68ec3e566119ced57b08cd0c03574ce416b01ec36d1a866c44297b8b"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/jar_top.png",
+      "target": "assets/thaumcraft/textures/block/jar_top.png",
+      "sha256": "7a85f4417ff6d659e6f6fd850d4b641dec2efb0c9db58f1fdeb778f3e6fa8dde"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/animatedglow.png",
+      "target": "assets/thaumcraft/textures/block/animatedglow.png",
+      "sha256": "1a8e61c3605d49bec6317028a148cffa792a100aa4f9865694ce9713d874c3f7"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/animatedglow.png.mcmeta",
+      "target": "assets/thaumcraft/textures/block/animatedglow.png.mcmeta",
+      "sha256": "6a19bef21d66aac8fdcd8032751057733e321446b304d38f5ee8ba35efe99a1d"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/jar_normal.json",
+      "target": "assets/thaumcraft/models/block/jar_normal.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/jar_normal_25.json",
+      "target": "assets/thaumcraft/models/block/jar_normal_25.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/jar_normal_50.json",
+      "target": "assets/thaumcraft/models/block/jar_normal_50.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/jar_normal_75.json",
+      "target": "assets/thaumcraft/models/block/jar_normal_75.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/jar_normal_100.json",
+      "target": "assets/thaumcraft/models/block/jar_normal_100.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/jar_side_void.png",
+      "target": "assets/thaumcraft/textures/block/jar_side_void.png",
+      "sha256": "9ebf9a0b6f7f41e44c2537713d7c6f0bc45c17af1f75c434fc754f3841b6d643"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/jar_top_void.png",
+      "target": "assets/thaumcraft/textures/block/jar_top_void.png",
+      "sha256": "0a1a6de0996b0ec33ae171ac3ba14681513d8eef69d00dee782c5632f525b3b9"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/jar_void.json",
+      "target": "assets/thaumcraft/models/block/jar_void.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/jar_void_25.json",
+      "target": "assets/thaumcraft/models/block/jar_void_25.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/jar_void_50.json",
+      "target": "assets/thaumcraft/models/block/jar_void_50.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/jar_void_75.json",
+      "target": "assets/thaumcraft/models/block/jar_void_75.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/jar_void_100.json",
+      "target": "assets/thaumcraft/models/block/jar_void_100.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/alembic_normal.png",
+      "target": "assets/thaumcraft/textures/block/alembic_normal.png",
+      "sha256": "219f2abd4f12ec4831048609a1fef813fa273e2103906d299212a96190c1f043"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/alembic_normal.json",
+      "target": "assets/thaumcraft/models/block/alembic_normal.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/centrifuge.png",
+      "target": "assets/thaumcraft/textures/block/centrifuge.png",
+      "sha256": "441c126285ae0f89d44e1c974e5cc4174051e6b8eb35146869357d5933b1e7da"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/centrifuge.json",
+      "target": "assets/thaumcraft/models/block/centrifuge.json",
+      "transformation": "Original housing elements/UVs; four moving elements rendered separately using original ModelCentrifuge geometry and texture"
+    },
+    {
+      "source": "assets/thaumcraft/textures/models/centrifuge.png",
+      "target": "assets/thaumcraft/textures/models/centrifuge.png",
+      "sha256": "1313bfb24571792ade78689153cbfdf6f6558540fdec023d0fa50031218c2429"
+    },
+    {
+      "source": "assets/thaumcraft/textures/models/valve.png",
+      "target": "assets/thaumcraft/textures/models/valve.png",
+      "sha256": "d09a6e02f8a4fe2b373c181994be7d512b6672e807486aafdc7e46264a6cdcec"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/tube.png",
+      "target": "assets/thaumcraft/textures/block/tube.png",
+      "sha256": "e4e7a7a0fbbc025a1e3bacce21661e04fd398a79c582c6dae6ab5989271e585d"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/base_metal.png",
+      "target": "assets/thaumcraft/textures/block/base_metal.png",
+      "sha256": "78b06aeb88466da22154655e75333bad8685a8a4b89a6fa623ae84b64b7bb86b"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/tube_core.json",
+      "target": "assets/thaumcraft/models/block/tube_core.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/tube_core_valve.json",
+      "target": "assets/thaumcraft/models/block/tube_core_valve.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/tube_filter_core.json",
+      "target": "assets/thaumcraft/models/block/tube_filter_core.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/tube_side.json",
+      "target": "assets/thaumcraft/models/block/tube_side.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/tube_side_restrict.json",
+      "target": "assets/thaumcraft/models/block/tube_side_restrict.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/tube_normal.png",
+      "target": "assets/thaumcraft/textures/item/tube_normal.png",
+      "sha256": "595a5bf379112cbeeaa1e27ce441268bc2788ba42d2d5678ffc8657d880f9ae7"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/tube_filter.png",
+      "target": "assets/thaumcraft/textures/item/tube_filter.png",
+      "sha256": "c998b3e4841b8ef91edfbc4ac00f748fe7b3efd3fb15930e35583b676aa0851e"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/tube_restrict.png",
+      "target": "assets/thaumcraft/textures/item/tube_restrict.png",
+      "sha256": "4576f3fef0451b70dd6967188b1e66bcc6b29759733584f3cb2015f8b6c0410d"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/tube_oneway.png",
+      "target": "assets/thaumcraft/textures/item/tube_oneway.png",
+      "sha256": "cb32b95645cd2ad655f3ee5c0c64baf985bbaa0cef03076f3ccf02e412ffccb9"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/tube_valve.png",
+      "target": "assets/thaumcraft/textures/item/tube_valve.png",
+      "sha256": "35e15a98e850d7983fdacc7a0c47e01771371085b1bf05d1bf1949a6857d54bd"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_basic_front_off.png",
+      "target": "assets/thaumcraft/textures/block/smelter_basic_front_off.png",
+      "sha256": "d91944feab41d5612fb427a28adbf8b252897ae1f8a373cc812d6e1f0f60dba7"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_basic_side.png",
+      "target": "assets/thaumcraft/textures/block/smelter_basic_side.png",
+      "sha256": "468ebdfce7e409a81ed777bc3c0600c2b3695cdf77e70ddc0a26f252aca293ed"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_top.png",
+      "target": "assets/thaumcraft/textures/block/smelter_top.png",
+      "sha256": "0a5de460d55997676bba60471069d086aad2dff488b83d928dfc47f95c0b95da"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/smelter_basic_off.json",
+      "target": "assets/thaumcraft/models/block/smelter_basic_off.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer; vanilla furnace_top migrated from blocks/furnace_top to minecraft:block/furnace_top"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_basic_front_on.png",
+      "target": "assets/thaumcraft/textures/block/smelter_basic_front_on.png",
+      "sha256": "2f2660117398300a55a66d5230533cb95b93ec9d23e0aed98a410525f9eba1c6"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/smelter_basic_on.json",
+      "target": "assets/thaumcraft/models/block/smelter_basic_on.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer; vanilla furnace_top migrated from blocks/furnace_top to minecraft:block/furnace_top"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_thaumium_front_off.png",
+      "target": "assets/thaumcraft/textures/block/smelter_thaumium_front_off.png",
+      "sha256": "ba9f5cf2606759007e3f6a972606aac9b20809114221cc9c0279fd59e9a5c62a"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_thaumium_side.png",
+      "target": "assets/thaumcraft/textures/block/smelter_thaumium_side.png",
+      "sha256": "443e3dfde2c9f19b6eaba97356f992ec8457874348753022dc75a27126ba50fe"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/metal_thaumium.png",
+      "target": "assets/thaumcraft/textures/block/metal_thaumium.png",
+      "sha256": "4aa8cb2fd64d673d95857f212dc0ddd50ab98181165b6efd14b5ffbd383bde89"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/smelter_thaumium_off.json",
+      "target": "assets/thaumcraft/models/block/smelter_thaumium_off.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_thaumium_front_on.png",
+      "target": "assets/thaumcraft/textures/block/smelter_thaumium_front_on.png",
+      "sha256": "a4228f904f226a729e96215c95f2a08c4b288068f742d5d525760af02c66eb3c"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/smelter_thaumium_on.json",
+      "target": "assets/thaumcraft/models/block/smelter_thaumium_on.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_void_front_off.png",
+      "target": "assets/thaumcraft/textures/block/smelter_void_front_off.png",
+      "sha256": "539003e98779b890ed0e946debd522a0fa820fb84cc7fdda55003a9fe9bf7b51"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_void_side.png",
+      "target": "assets/thaumcraft/textures/block/smelter_void_side.png",
+      "sha256": "6e00bcd6c42a4b46f7255c9040cc5f8eb8797e2e75d43eb06ce1048f7c86ecb8"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/metal_void.png",
+      "target": "assets/thaumcraft/textures/block/metal_void.png",
+      "sha256": "1e000dcb6afb438310b0d2611a693b99ba919dc267b43fc11f87abaa205b1f76"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/smelter_void_off.json",
+      "target": "assets/thaumcraft/models/block/smelter_void_off.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_void_front_on.png",
+      "target": "assets/thaumcraft/textures/block/smelter_void_front_on.png",
+      "sha256": "e851132a0a54165aaba543b23d82ba6957f4132beb578a62cc8a409acd91e312"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/smelter_void_on.json",
+      "target": "assets/thaumcraft/models/block/smelter_void_on.json",
+      "transformation": "Original elements/UVs retained; singular texture directories and explicit modern render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/metal_alchemical.png",
+      "target": "assets/thaumcraft/textures/block/metal_alchemical.png",
+      "sha256": "346dd0000d48f1e287e8e01312b5df8d90eb2b5bf57ba058edfb6d65bca08e63"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/metal_alchemical_advanced.png",
+      "target": "assets/thaumcraft/textures/block/metal_alchemical_advanced.png",
+      "sha256": "dc4cfef7ce77f578585d0b657c27bc4b12c2b0ca3e2379d9e0d6c8e8a9ef0e1a"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/phial.png",
+      "target": "assets/thaumcraft/textures/item/phial.png",
+      "sha256": "5090d998a511b3c919df772313d5cbd44bc01cbe8e8a281aa3c150bd8348ee48"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/phial_overlay.png",
+      "target": "assets/thaumcraft/textures/item/phial_overlay.png",
+      "sha256": "6cdc33264e64f3878d7bd62a1fde106a8194bfae33a0114d48a3a3ed50519670"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/phial_overlay.png.mcmeta",
+      "target": "assets/thaumcraft/textures/item/phial_overlay.png.mcmeta",
+      "sha256": "802acdb8f55f30146d5ed18414b21ba35650d4e550f81825ea104131c12dc4fc"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/label.png",
+      "target": "assets/thaumcraft/textures/item/label.png",
+      "sha256": "33254f4dc65ba1ecae796e39dcab51db170a054167de4f3ca4111b6f10af1dd0"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/label_overlay.png",
+      "target": "assets/thaumcraft/textures/item/label_overlay.png",
+      "sha256": "a7531f2eef4b42bb6a05e25c19f277ab292f384e61b821310de54e8162c3dffe"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/filter.png",
+      "target": "assets/thaumcraft/textures/item/filter.png",
+      "sha256": "79b2165e81c30ecdaa4ab3d2f0e05f31f28e77267c9dfa47d5e575761f7f38e7"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/plate_iron.png",
+      "target": "assets/thaumcraft/textures/item/plate_iron.png",
+      "sha256": "f41d6daa018f727a7cab29a8021cea7ef6a607bf7cc389dfd0eca8a680bc1134"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/plate_brass.png",
+      "target": "assets/thaumcraft/textures/item/plate_brass.png",
+      "sha256": "c0f31e940f1aa7fd6935f873ffebc53a45375b7f24c5e3583f5c5f35d9a9092f"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/plate_thaumium.png",
+      "target": "assets/thaumcraft/textures/item/plate_thaumium.png",
+      "sha256": "6b190dac18c75b80769ec1bb29d9ee672d329424eef8ef82293ffe0f3e03e6fa"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/plate_void.png",
+      "target": "assets/thaumcraft/textures/item/plate_void.png",
+      "sha256": "f76491ef3e8cd485120a085153ee807232225ff6b117af96037cd93bb73ce35c"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/mechanism_simple.png",
+      "target": "assets/thaumcraft/textures/item/mechanism_simple.png",
+      "sha256": "57a69b7888770fa5d4b85e153e03b39ea7363a5880589da76846dc9b2dc301c1"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/morphic_resonator.png",
+      "target": "assets/thaumcraft/textures/item/morphic_resonator.png",
+      "sha256": "fbac546e21afa942cefdfa4454dfa1afd7e324ac83a15d5275c7e247153ef536"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_smelter.png",
+      "target": "assets/thaumcraft/textures/gui/gui_smelter.png",
+      "sha256": "9879a43922d0c0ae03d0ee1dfbd3266c2f53f46a02ef784d833e5b73c9d6b74d"
+    },
+    {
+      "source": "assets/thaumcraft/textures/models/label.png",
+      "target": "assets/thaumcraft/textures/models/label.png",
+      "sha256": "81aa78bf12216d2918c5a84b602f53f2ff5703105adc245946b0f5853acbb5ab"
+    }
+  ],
+  "arcane_recipes": [
+    "jar_normal",
+    "jar_void",
+    "filter",
+    "alembic",
+    "smelter_basic",
+    "smelter_thaumium",
+    "smelter_void",
+    "tube",
+    "tube_filter",
+    "tube_valve",
+    "tube_oneway",
+    "tube_restrict",
+    "metal_alchemical",
+    "mechanism_simple",
+    "metal_alchemical_advanced",
+    "morphic_resonator",
+    "centrifuge"
+  ],
+  "remaining": "Extended by import_essentia_extensions.py; remaining gaps tracked in PORTING-16.md"
+}

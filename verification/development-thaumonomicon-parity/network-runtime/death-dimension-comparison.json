@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "checks": {
+    "player.totalExperience": true,
+    "playerUuid": true,
+    "research.discovered": true,
+    "research.permanentWarp": true,
+    "research.researchFlags": true,
+    "research.stages": true
+  },
+  "events": [
+    "real kill command",
+    "actual respawn button",
+    "travel to nether",
+    "return overworld",
+    "book use forces server snapshot"
+  ],
+  "keepInventory": true
+}

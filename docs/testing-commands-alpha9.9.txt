@@ -1,0 +1,178 @@
+# Reference only. Do not run as one function. Sections use separate worlds/places.
+/gamemode creative
+/difficulty normal
+/gamerule keepInventory true
+/give @s thaumcraft:salis_mundus 16
+/give @s minecraft:bookshelf
+/give @s minecraft:crafting_table
+/give @s minecraft:cauldron
+/thaumcraft audit
+/thaumcraft audit research
+/give @s thaumcraft:thaumonomicon
+/thaumcraft research grant all
+/advancement grant @s from thaumcraft:root
+/give @s thaumcraft:thaumometer
+/give @s minecraft:diamond
+/give @s minecraft:chest
+/summon minecraft:sheep ~ ~ ~3
+/summon minecraft:bat ~ ~2 ~3
+/thaumcraft research
+/give @s thaumcraft:crystal_essence[thaumcraft:crystal_aspect="aer"]
+/give @s thaumcraft:crystal_essence[thaumcraft:crystal_aspect="terra"]
+/give @s minecraft:iron_pickaxe[minecraft:enchantments={levels:{"minecraft:efficiency":1}}]
+/give @s minecraft:enchanted_book[minecraft:stored_enchantments={levels:{"minecraft:lure":1}}]
+/give @s minecraft:potion[minecraft:potion_contents={potion:"minecraft:swiftness"}]
+/give @s minecraft:potion[minecraft:potion_contents={potion:"minecraft:healing"}]
+/thaumcraft research grant CELESTIALSCANNING
+/give @s thaumcraft:scribing_tools
+/give @s minecraft:paper 32
+/weather clear
+/time set noon
+/time set midnight
+/give @s thaumcraft:table_wood
+/give @s thaumcraft:scribing_tools
+/give @s minecraft:paper 64
+/experience set @s 30 levels
+/thaumcraft research
+/give @s minecraft:bookshelf
+/give @s thaumcraft:crucible
+/give @s thaumcraft:arcane_workbench
+/give @s minecraft:enchanting_table
+/give @s minecraft:beacon
+/give @s thaumcraft:curio_arcane 16
+/give @s thaumcraft:curio_rites 16
+/give @s minecraft:clay_ball 64
+/give @s thaumcraft:arcane_workbench
+/thaumcraft research grant FIRSTSTEPS
+/thaumcraft aura vis 200
+/give @s minecraft:gold_ingot 16
+/give @s minecraft:glass_pane 4
+/give @s thaumcraft:crystal_essence[thaumcraft:crystal_aspect="aer"] 8
+/thaumcraft research grant UNLOCKALCHEMY
+/setblock ~2 ~-1 ~ minecraft:magma_block
+/setblock ~2 ~ ~ thaumcraft:crucible
+/give @s minecraft:water_bucket
+/give @s minecraft:coal 8
+/give @s minecraft:glowstone_dust 8
+/thaumcraft research grant METALLURGY
+/thaumcraft research grant ALUMENTUM
+/thaumcraft research grant HEDGEALCHEMY
+/thaumcraft research grant METALPURIFICATION
+/thaumcraft research grant BASEELDRITCH
+/give @s minecraft:iron_ingot 16
+/give @s thaumcraft:void_seed 8
+/gamemode creative
+/tp @s 100 100 100
+/fill 99 99 99 110 99 104 minecraft:stone
+/setblock 104 100 100 thaumcraft:smelter_basic[facing=north]
+/setblock 104 101 100 thaumcraft:alembic
+/setblock 104 102 100 thaumcraft:alembic
+/setblock 106 100 100 thaumcraft:jar_normal
+/setblock 105 101 100 thaumcraft:tube
+/setblock 106 101 100 thaumcraft:tube
+/item replace block 104 100 100 container.0 with minecraft:coal 32
+/item replace block 104 100 100 container.1 with minecraft:coal 16
+/setblock 0 100 0 thaumcraft:jar_normal{Aspect:"ignis",Amount:80,Filter:"ignis",LabelFacing:5}
+/setblock 2 100 0 thaumcraft:alembic{Aspect:"ignis",Amount:128}
+/give @s thaumcraft:phial 16
+/give @s thaumcraft:jar_normal 4
+/give @s thaumcraft:jar_brace 4
+/give @s thaumcraft:label 8
+/data get block 0 100 0
+/give @s thaumcraft:tube 16
+/give @s thaumcraft:tube_filter 8
+/give @s thaumcraft:tube_restrict 8
+/give @s thaumcraft:tube_oneway 8
+/give @s thaumcraft:tube_valve 8
+/give @s thaumcraft:crystal_essence[thaumcraft:crystal_aspect="ignis"]
+/setblock 105 101 100 thaumcraft:tube_valve[facing=north]
+/setblock 109 100 102 thaumcraft:jar_normal{Aspect:"motus",Amount:30}
+/setblock 109 101 102 thaumcraft:centrifuge
+/setblock 109 102 102 thaumcraft:tube
+/setblock 110 102 102 thaumcraft:tube
+/setblock 110 101 102 thaumcraft:jar_normal
+/setblock 6 101 0 thaumcraft:tube_buffer{Contents:{aer:4,ignis:6}}
+/setblock 6 100 0 thaumcraft:jar_normal{Filter:"ignis"}
+/setblock 7 101 0 thaumcraft:bellows[facing=west,enabled=true]
+/setblock 5 100 0 minecraft:furnace[facing=south]
+/setblock 4 100 0 thaumcraft:bellows[facing=east,enabled=true]
+/setblock 8 100 0 minecraft:furnace[facing=south]
+/item replace block 5 100 0 container.0 with minecraft:iron_ore 32
+/item replace block 8 100 0 container.0 with minecraft:iron_ore 32
+/item replace block 5 100 0 container.1 with minecraft:coal 8
+/item replace block 8 100 0 container.1 with minecraft:coal 8
+/setblock 12 101 0 thaumcraft:smelter_basic[facing=north]
+/setblock 12 102 0 thaumcraft:alembic
+/setblock 13 101 0 thaumcraft:smelter_aux[facing=west]
+/setblock 13 102 0 thaumcraft:alembic
+/setblock 11 101 0 thaumcraft:smelter_vent[facing=east]
+/thaumcraft research grant THAUMATORIUM
+/thaumcraft research grant METALLURGY
+/setblock 0 99 0 minecraft:magma_block
+/setblock 0 100 0 thaumcraft:crucible
+/setblock 0 101 0 thaumcraft:metal_alchemical
+/setblock 0 102 0 thaumcraft:metal_alchemical
+/tp @s 0.5 101 4.5 180 25
+/give @s thaumcraft:salis_mundus
+/give @s minecraft:iron_ingot 8
+/setblock 1 101 0 thaumcraft:tube
+/setblock 2 101 0 thaumcraft:alembic{Aspect:"praecantatio",Amount:64}
+/setblock -1 101 0 thaumcraft:tube
+/setblock -2 101 0 thaumcraft:alembic{Aspect:"terra",Amount:64}
+/locate biome thaumcraft:magical_forest
+/locate structure thaumcraft:mound
+/place template thaumcraft:mound ~ ~ ~
+/place template thaumcraft:mound_trapped ~ ~ ~
+/place feature thaumcraft:greatwood_sapling
+/place feature thaumcraft:silverwood_sapling
+/thaumcraft aura
+/setblock ~2 ~-1 ~ minecraft:stone
+/setblock ~2 ~ ~ thaumcraft:crystal_aer[down=true,size=0]
+/setblock ~2 ~ ~ thaumcraft:crystal_aer[down=true,size=3]
+/give @s thaumcraft:crystal_ignis
+/give @s thaumcraft:crystal_aqua
+/give @s thaumcraft:crystal_terra
+/give @s thaumcraft:crystal_ordo
+/give @s thaumcraft:crystal_perditio
+/give @s thaumcraft:crystal_vitium
+/thaumcraft aura vis 100
+/thaumcraft aura flux 50
+/gamemode creative
+/difficulty normal
+/summon thaumcraft:cultist_portal_lesser ~8 ~ ~
+/give @s minecraft:diamond_sword
+/give @s minecraft:diamond_chestplate
+/give @s minecraft:golden_apple 16
+/gamemode survival
+/summon thaumcraft:wisp ~5 ~2 ~ {aspect:"ignis"}
+/summon thaumcraft:thaumic_slime ~8 ~ ~ {Size:1}
+/summon thaumcraft:flux_rift ~12 ~3 ~ {size:40,seed:12345,stability:0.0f}
+/thaumcraft aura flux 100
+/gamerule mobGriefing true
+/summon thaumcraft:taint_seed ~8 ~ ~
+/summon thaumcraft:taint_seed_prime ~16 ~ ~
+/setblock ~10 ~ ~ thaumcraft:taint_soil
+/setblock ~11 ~ ~ thaumcraft:flux_goo[level=7]
+/effect give @s thaumcraft:flux_taint 20 0
+/effect give @s thaumcraft:vis_exhaust 20 0
+/effect give @s thaumcraft:infectious_vis_exhaust 20 1
+/effect clear @s
+/give @s thaumcraft:charm_undying
+/give @s thaumcraft:amulet_mundane
+/give @s thaumcraft:ring_fancy
+/give @s thaumcraft:girdle_mundane
+/give @s thaumcraft:curio_arcane 8
+/give @s thaumcraft:curio_rites 8
+/give @s thaumcraft:primordial_pearl[minecraft:damage=7]
+/playsound thaumcraft:scan master @s ~ ~ ~ 1 1
+/playsound thaumcraft:evilportal master @s ~ ~ ~ 1 1
+/playsound thaumcraft:wisplive master @s ~ ~ ~ 1 1
+/playsound thaumcraft:write master @s ~ ~ ~ 1 1
+/particle thaumcraft:craft ~ ~1 ~ 0 0 0 0 1 force
+/particle thaumcraft:scan_rune ~ ~1 ~ 0 0 0 0 1 force
+/particle thaumcraft:theory_rune ~ ~1 ~ 0 0 0 0 1 force
+/thaumcraft research
+/thaumcraft aura
+/thaumcraft audit
+/save-all flush
+/reload

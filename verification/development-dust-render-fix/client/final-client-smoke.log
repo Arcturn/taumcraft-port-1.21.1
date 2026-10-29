@@ -1,0 +1,395 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/truststore.jks -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=33461 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33461
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :writeClientLegacyClasspath UP-TO-DATE
+> Task :prepareClientRun UP-TO-DATE
+
+> Task :runClient
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/truststore.jks -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=33461 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33461
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[07:36:43] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.259, --assetIndex, 17, --assetsDir, /workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/assets, --gameDir, ., --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.259, --fml.neoFormVersion, 20240808.144430, --username, DustRenderTest, --width, 1280, --height, 720, --quickPlaySingleplayer, dust-render-test]
+[07:36:43] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.13+9-LTS
+[07:36:43] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.13 by Eclipse Adoptium; OS Linux arch amd64 version 6.18.55
+[07:36:43] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[LWJGL] Version: 3.3.3+5
+	 OS: Linux v6.18.55
+	JRE: Linux amd64 21.0.13
+	JVM: OpenJDK 64-Bit Server VM v21.0.13+9-LTS by Eclipse Adoptium
+[LWJGL] Loading JNI library: lwjgl
+	Module: org.lwjgl
+	Loaded from org.lwjgl.librarypath: /tmp/lwjgl_root/3.3.3+5/x64/liblwjgl.so
+[LWJGL] Loading library: glfw
+	Module: org.lwjgl.glfw
+	Loaded from org.lwjgl.librarypath: /tmp/lwjgl_root/3.3.3+5/x64/libglfw.so
+[07:36:43] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[LWJGL] Java 10 multiplyHigh enabled
+[LWJGL] Java 9 text decoding enabled
+[07:36:43] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.5
+[07:36:43] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.5 got version 4.5
+[LWJGL] Loading library: jemalloc
+	Module: org.lwjgl.jemalloc
+	Loaded from org.lwjgl.librarypath: /tmp/lwjgl_root/3.3.3+5/x64/libjemalloc.so
+[LWJGL] MemoryUtil allocator: JEmallocAllocator
+[LWJGL] Loading JNI library: lwjgl_stb
+	Module: org.lwjgl.stb
+	Loaded from org.lwjgl.librarypath: /tmp/lwjgl_root/3.3.3+5/x64/liblwjgl_stb.so
+[LWJGL] Java 16 memcpy enabled
+[LWJGL] Java 9 check intrinsics enabled
+[LWJGL] Closure Registry: ConcurrentHashMap
+[LWJGL] Loading JNI library: lwjgl_opengl
+	Module: org.lwjgl.opengl
+	Loaded from org.lwjgl.librarypath: /tmp/lwjgl_root/3.3.3+5/x64/liblwjgl_opengl.so
+[LWJGL] Loading library: libGLX.so.0
+	Module: org.lwjgl.opengl
+	libGLX.so.0 not found in org.lwjgl.librarypath=/tmp/lwjgl_root/3.3.3+5/x64
+	Loaded from system paths: /lib/x86_64-linux-gnu/libGLX.so.0
+[07:36:43] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/26d01f0567ab46e9ca0d2ed89d0ecc11aadbd433/sponge-mixin-0.16.4+mixin.0.8.7.jar%23126!/ Service=ModLauncher Env=CLIENT
+[07:36:43] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: llvmpipe (LLVM 20.1.2, 256 bits) GL version 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2, Mesa
+[07:36:43] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[07:36:43] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Curios API 9.5.1+1.21.1 (curios)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.259 (neoforge)
+		TerraBlender 4.1.0.8 (terrablender)
+		Thaumcraft — Experimental Port 0.1.0-alpha.9.11-dev (thaumcraft)
+[07:36:44] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[07:36:44] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[07:36:44] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.259, --gameDir, ., --assetsDir, /workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/assets, --assetIndex, 17, --username, DustRenderTest, --width, 1280, --height, 720, --quickPlaySingleplayer, dust-render-test]
+[07:36:44] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender.mixins.json could not be read. If this is a development environment you can ignore this message
+[07:36:44] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender_neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[07:36:44] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[07:36:44] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.mixins.json could not be read. If this is a development environment you can ignore this message
+[07:36:45] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[07:36:45] [Datafixer Bootstrap/INFO] [mojang/DataFixerBuilder]: 229 Datafixer optimizations took 220 milliseconds
+[07:36:49] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07:36:49] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07:36:49] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[07:36:49] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[07:36:49] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07:36:49] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/workspace/scratch/5f8dd1a26602/work/dust-animation/thaumcraft-port/build/moddev/artifacts/neoforge-21.1.259.jar%23177!/assets/.mcassetsroot' uses unexpected schema
+[07:36:49] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/workspace/scratch/5f8dd1a26602/work/dust-animation/thaumcraft-port/build/moddev/artifacts/neoforge-21.1.259.jar%23177!/data/.mcassetsroot' uses unexpected schema
+[07:36:49] [Render thread/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:36:49] [Render thread/INFO] [minecraft/Minecraft]: Setting user: DustRenderTest
+[07:36:49] [Render thread/INFO] [minecraft/Minecraft]: Backend library: LWJGL version 3.3.3+5
+[07:36:49] [Yggdrasil Key Fetcher/ERROR] [mojang/YggdrasilServicesKeyInfo]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to api.minecraftservices.com
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:108) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?] {}
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?] {}
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?] {}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+Caused by: java.net.UnknownHostException: api.minecraftservices.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?] {}
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:351) ~[?:?] {}
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?] {}
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?] {}
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:539) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:644) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:378) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:196) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1305) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1146) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1075) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:181) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1707) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1632) ~[?:?] {}
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:84) ~[authlib-6.0.54.jar%23104!/:?] {}
+	... 9 more
+[07:36:49] [Download-1/WARN] [mojang/YggdrasilMinecraftSessionService]: Couldn't look up profile properties for 80658fd7-403e-3cad-91d7-6a32e82b37fb
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://sessionserver.mojang.com/session/minecraft/profile/80658fd7403e3cad91d76a32e82b37fb?unsigned=false due to sessionserver.mojang.com
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:108) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fetchProfileUncached(YggdrasilMinecraftSessionService.java:201) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fetchProfile(YggdrasilMinecraftSessionService.java:171) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.lambda$new$1(Minecraft.java:426) ~[neoforge-21.1.259.jar%23177!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?] {}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+Caused by: java.net.UnknownHostException: sessionserver.mojang.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?] {}
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:351) ~[?:?] {}
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?] {}
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?] {}
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:539) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:644) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:378) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:196) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1305) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1146) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1075) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:181) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1707) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1632) ~[?:?] {}
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:84) ~[authlib-6.0.54.jar%23104!/:?] {}
+	... 8 more
+[07:36:49] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.259, for MC 1.21.1
+[LWJGL] Loading library: openal
+	Module: org.lwjgl.openal
+	Loaded from org.lwjgl.librarypath: /tmp/lwjgl_root/3.3.3+5/x64/libopenal.so
+[LWJGL] [ALC] ALC_SOFT_reopen_device was reported as available but an entry point is missing.
+[07:36:53] [Render thread/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: []
+[07:36:53] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources, mod/terrablender, mod/curios, mod/thaumcraft, mod/neoforge
+[07:36:53] [Render thread/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[07:36:53] [Render thread/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[07:36:53] [Render thread/INFO] [terrablender/]: Registered region thaumcraft:magical_forest to index 1 for type OVERWORLD
+[07:36:53] [Worker-Main-4/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.1.05.hex, loading
+[07:36:53] [Worker-Main-1/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-15.1.05.hex, loading
+[07:36:54] [Worker-Main-7/WARN] [minecraft/ModelBakery]: Unable to bake model: 'thaumcraft:research/icons/arcane_workbench_charger_0#standalone': net.minecraft.ResourceLocationException: Non [a-z0-9_.-] character in namespace of location: C:/Thaumcraft/thaumcraft110/src/main/resources/assets/thaumcraft/textures/blocks/arcane_workbench_charger
+[07:36:54] [Worker-Main-7/WARN] [minecraft/ModelBakery]: Unable to bake model: 'thaumcraft:item/research_display_research_thaumatorium#standalone': net.minecraft.ResourceLocationException: Non [a-z0-9_.-] character in namespace of location: C:/Thaumcraft/thaumcraft110/src/main/resources/assets/thaumcraft/textures/blocks/thaumatorium
+[07:36:54] [Worker-Main-7/WARN] [minecraft/ModelBakery]: Unable to bake model: 'thaumcraft:research_icon#inventory': net.minecraft.ResourceLocationException: Non [a-z0-9_.-] character in namespace of location: C:/Thaumcraft/thaumcraft110/src/main/resources/assets/thaumcraft/textures/blocks/arcane_workbench_charger
+[07:36:54] [Worker-Main-7/WARN] [minecraft/ModelBakery]: Unable to bake model: 'thaumcraft:item/research_display_research_workbenchcharger#standalone': net.minecraft.ResourceLocationException: Non [a-z0-9_.-] character in namespace of location: C:/Thaumcraft/thaumcraft110/src/main/resources/assets/thaumcraft/textures/blocks/arcane_workbench_charger
+[07:36:54] [Worker-Main-7/WARN] [minecraft/ModelBakery]: Unable to bake model: 'thaumcraft:research/icons/thaumatorium_0#standalone': net.minecraft.ResourceLocationException: Non [a-z0-9_.-] character in namespace of location: C:/Thaumcraft/thaumcraft110/src/main/resources/assets/thaumcraft/textures/blocks/thaumatorium
+[07:36:54] [Worker-Main-7/WARN] [minecraft/ModelBakery]: Unable to bake model: 'thaumcraft:research_display_research_thaumatorium#inventory': net.minecraft.ResourceLocationException: Non [a-z0-9_.-] character in namespace of location: C:/Thaumcraft/thaumcraft110/src/main/resources/assets/thaumcraft/textures/blocks/thaumatorium
+[07:36:54] [Worker-Main-7/WARN] [minecraft/ModelBakery]: Unable to bake model: 'thaumcraft:research_display_research_workbenchcharger#inventory': net.minecraft.ResourceLocationException: Non [a-z0-9_.-] character in namespace of location: C:/Thaumcraft/thaumcraft110/src/main/resources/assets/thaumcraft/textures/blocks/arcane_workbench_charger
+[07:36:54] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[07:36:54] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[07:36:54] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device No Output
+[07:36:54] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] thaumcraft:research_icon: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] thaumcraft:research_display_research_thaumatorium: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] thaumcraft:research_display_research_workbenchcharger: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=1 source=thaumcraft:textures/items/thaumonomicon_cheat.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=2 source=thaumcraft:textures/research/cat_auromancy.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=3 source=thaumcraft:textures/research/cat_alchemy.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=4 source=thaumcraft:textures/research/cat_artifice.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=5 source=thaumcraft:textures/research/cat_infusion.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=6 source=thaumcraft:textures/research/cat_golemancy.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=7 source=thaumcraft:textures/research/cat_eldritch.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=8 source=thaumcraft:textures/research/cat_alchemy.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=9 source=thaumcraft:textures/items/alumentum.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=10 source=thaumcraft:textures/items/ingot_brass.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=11 source=thaumcraft:textures/items/cluster_iron.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=12 source=thaumcraft:textures/items/tallow.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=13 source=thaumcraft:textures/items/bucket_death.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=14 source=thaumcraft:bottle_taint: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=15 source=thaumcraft:bath_salts: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=16 source=thaumcraft:sanity_soap: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=17 source=thaumcraft:spa: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=18 source=thaumcraft:essentia_input: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=19 source=thaumcraft:everfull_urn: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=20 source=thaumcraft:potion_sprayer: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=21 source=thaumcraft:textures/research/cat_artifice.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=22 source=thaumcraft:hungry_chest: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=23 source=thaumcraft:levitator: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=24 source=thaumcraft:infernal_furnace: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=25 source=thaumcraft:redstone_relay: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=26 source=thaumcraft:arcane_ear: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=27 source=thaumcraft:dioptra: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=28 source=thaumcraft:mirror: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=29 source=thaumcraft:hand_mirror: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=30 source=thaumcraft:mirror_essentia: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=31 source=thaumcraft:lamp_arcane: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=32 source=thaumcraft:lamp_growth: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=33 source=thaumcraft:lamp_fertility: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=34 source=thaumcraft:pattern_crafter: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=35 source=thaumcraft:turret;1;0: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=36 source=thaumcraft:turret;1;1: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=37 source=thaumcraft:turret;1;2: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=38 source=thaumcraft:grapple_gun: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=39 source=thaumcraft:vis_generator: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=40 source=thaumcraft:textures/research/cat_auromancy.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=41 source=thaumcraft:focus_2: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=42 source=thaumcraft:focus_3: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=43 source=focus:thaumcraft.AIR: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=44 source=focus:thaumcraft.FLUX: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=45 source=focus:thaumcraft.HEAL: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=46 source=focus:thaumcraft.CURSE: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=47 source=focus:thaumcraft.BREAK: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=48 source=focus:thaumcraft.EXCHANGE: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=49 source=focus:thaumcraft.PLAN: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=50 source=focus:thaumcraft.RIFT: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=51 source=focus:thaumcraft.PROJECTILE: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=52 source=focus:thaumcraft.BOLT: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=53 source=focus:thaumcraft.SCATTER: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=54 source=focus:thaumcraft.MINE: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=55 source=focus:thaumcraft.SPELLBAT: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=56 source=focus:thaumcraft.CLOUD: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=57 source=focus:thaumcraft.SPLITTARGET: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=58 source=thaumcraft:recharge_pedestal: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=59 source=thaumcraft:amulet_vis;1;1: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=60 source=thaumcraft:arcane_workbench_charger: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=61 source=thaumcraft:focus_pouch: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=62 source=thaumcraft:vis_battery: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=63 source=thaumcraft:textures/items/thaumonomicon.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=64 source=thaumcraft:textures/research/knowledge_theory.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=65 source=thaumcraft:textures/research/knowledge_theory.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=66 source=thaumcraft:textures/research/r_flux.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=67 source=thaumcraft:textures/research/r_warp.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=68 source=thaumcraft:textures/research/cat_alchemy.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=69 source=thaumcraft:textures/research/cat_auromancy.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=70 source=thaumcraft:textures/research/cat_artifice.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=71 source=thaumcraft:textures/research/cat_infusion.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=72 source=thaumcraft:textures/research/cat_golemancy.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=73 source=thaumcraft:curio;1;6: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=74 source=thaumcraft:textures/research/cat_eldritch.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=75 source=thaumcraft:textures/research/r_celestial.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=76 source=thaumcraft:condenser: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=77 source=thaumcraft:textures/research/r_fluxrift.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=78 source=thaumcraft:causality_collapser: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=79 source=thaumcraft:void_siphon: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=80 source=thaumcraft:voidseer_charm: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=81 source=thaumcraft:void_robe_helm: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=82 source=thaumcraft:primal_crusher: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=83 source=thaumcraft:textures/research/cat_golemancy.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=84 source=thaumcraft:jar_brain: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=85 source=thaumcraft:plate;1;1: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=86 source=thaumcraft:plate: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=87 source=thaumcraft:plate;1;2: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=88 source=thaumcraft:plate;1;3: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=89 source=thaumcraft:mind: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=90 source=thaumcraft:seal: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=91 source=thaumcraft:textures/misc/golem/head_basic.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=92 source=thaumcraft:textures/research/golem_logistics.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=93 source=thaumcraft:mind;1;1: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=94 source=thaumcraft:textures/items/seals/seal_pickup.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=95 source=thaumcraft:textures/items/seals/seal_fill.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=96 source=thaumcraft:textures/items/seals/seal_empty.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=97 source=thaumcraft:textures/items/seals/seal_provider.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=98 source=thaumcraft:textures/items/seals/seal_stock.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=99 source=thaumcraft:textures/items/seals/seal_guard.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=100 source=thaumcraft:textures/items/seals/seal_butcher.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=101 source=thaumcraft:textures/items/seals/seal_use.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=102 source=thaumcraft:textures/items/seals/seal_harvest.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=103 source=thaumcraft:textures/items/seals/seal_breaker.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=104 source=thaumcraft:textures/items/seals/seal_lumber.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=105 source=thaumcraft:module: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=106 source=thaumcraft:textures/misc/golem/legs_climber.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=107 source=thaumcraft:textures/misc/golem/legs_flyer.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=108 source=thaumcraft:textures/misc/golem/arms_breakers.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=109 source=thaumcraft:textures/misc/golem/addon_fighter.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=110 source=thaumcraft:textures/research/cat_infusion.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=111 source=thaumcraft:infusion_matrix: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=112 source=thaumcraft:stabilizer: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=113 source=thaumcraft:matrix_cost: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=114 source=thaumcraft:stone_ancient: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=115 source=thaumcraft:stone_eldritch_tile: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=116 source=thaumcraft:paving_stone_barrier: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=117 source=thaumcraft:traveller_boots: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=118 source=thaumcraft:elemental_axe: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=119 source=thaumcraft:textures/research/r_inf_enchant.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=120 source=thaumcraft:textures/research/r_runicupg.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=121 source=thaumcraft:fortress_helm: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=122 source=thaumcraft:textures/research/r_mask0.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=123 source=thaumcraft:cloud_ring: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=124 source=thaumcraft:curiosity_band: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=125 source=thaumcraft:verdant_charm: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=126 source=thaumcraft:textures/research/r_wisp.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=127 source=thaumcraft:textures/research/r_pech.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=128 source=thaumcraft:textures/research/r_thaumslime.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=129 source=thaumcraft:textures/research/r_firebat.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=130 source=thaumcraft:textures/research/r_taintseed.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=131 source=thaumcraft:textures/research/r_taintcrawler.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=132 source=thaumcraft:textures/research/r_taintacle.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=133 source=thaumcraft:textures/research/r_taintswarm.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=134 source=thaumcraft:textures/research/r_cultist.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=135 source=thaumcraft:textures/research/r_angryzombie.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=136 source=thaumcraft:textures/research/r_eldritchguardian.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] advancement custom_model_data=137 source=thaumcraft:textures/research/r_crab.png: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] original research research_display_research_thaumatorium frame=0 source=thaumcraft:thaumatorium: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] original research research_display_research_workbenchcharger frame=0 source=thaumcraft:arcane_workbench_charger: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] book arcane_workbench_charger_0 model=thaumcraft:research/icons/arcane_workbench_charger_0#standalone: model not loaded
+[07:36:55] [Render thread/WARN] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] book thaumatorium_0 model=thaumcraft:research/icons/thaumatorium_0#standalone: model not loaded
+[07:36:55] [Render thread/INFO] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] Checked 889 item/book/advancement model selections; 144 problems
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 2048x1024x0 minecraft:textures/atlas/particles.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[07:36:55] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[07:36:55] [Render thread/WARN] [minecraft/ShaderInstance]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[07:36:55] [Render thread/INFO] [ne.ne.ne.cl.en.an.js.AnimationLoader/]: Loaded 0 entity animations
+[07:36:56] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 1387 recipes
+[07:36:56] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 1556 advancements
+[07:36:56] [Render thread/INFO] [Curios API/]: Loaded 10 curio slots
+[07:36:56] [Render thread/INFO] [Curios API/]: Loaded 1 curio entities
+[07:36:59] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.21.1
+[07:36:59] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[07:36:59] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:the_nether
+[07:36:59] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[07:36:59] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[07:36:59] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[07:36:59] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 185 ms
+[07:36:59] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 4, from 10
+[07:36:59] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 5, from 0
+[07:36:59] [Render thread/WARN] [io.ne.ut.in.MacAddressUtil/]: Failed to find a usable hardware address from the network interfaces; using random bytes: 3d:f9:17:39:99:a8:66:e6
+[07:37:00] [Server thread/INFO] [minecraft/PlayerList]: DustRenderTest[local:E:47acef70] logged in with entity id 2 at (0.5, 101.0, 3.5)
+[07:37:00] [Server thread/INFO] [minecraft/MinecraftServer]: DustRenderTest joined the game
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:smelter_thaumium
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:metal_alchemical
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:jar_void
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:vis_resonator
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:tube_valve
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:filter
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:alembic
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:tube_filter
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:smelter_vent
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:tube_buffer
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:brain_box
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:smelter_basic
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:tube_oneway
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:smelter_aux
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:smelter_void
+[07:37:00] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:tube_restrict
+[07:37:00] [Render thread/WARN] [minecraft/ClientPacketListener]: Ignoring chat session from DustRenderTest due to missing Services public key
+[07:37:00] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 2 advancements
+[07:37:16] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] No blocks were filled
+[07:37:17] [Server thread/INFO] [minecraft/MinecraftServer]: [DustRenderTest: Changed the block at 0, 101, 0]
+[07:37:17] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] Changed the block at 0, 101, 0
+[07:37:18] [Server thread/INFO] [minecraft/MinecraftServer]: [DustRenderTest: Replaced a slot on DustRenderTest with [Salis Mundus]]
+[07:37:18] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] Replaced a slot on DustRenderTest with [Salis Mundus]
+[07:37:19] [Server thread/INFO] [minecraft/MinecraftServer]: [DustRenderTest: Teleported DustRenderTest to 0.500000, 101.000000, 3.500000]
+[07:37:19] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] Teleported DustRenderTest to 0.500000, 101.000000, 3.500000
+[07:38:17] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [DustRenderTest] WORKBENCH_CONVERSION_CONFIRMED
+[07:38:17] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] [DustRenderTest] WORKBENCH_CONVERSION_CONFIRMED
+[07:38:18] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Dust rendering smoke test]'/minecraft:overworld
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Dust rendering smoke test]'/minecraft:the_nether
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Dust rendering smoke test]'/minecraft:the_end
+[07:38:18] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: DustRenderTest lost connection: Disconnected
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: DustRenderTest left the game
+[07:38:18] [Server thread/INFO] [minecraft/ServerCommonPacketListenerImpl]: Stopping singleplayer server as player logged out
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Dust rendering smoke test]'/minecraft:overworld
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Dust rendering smoke test]'/minecraft:the_nether
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Dust rendering smoke test]'/minecraft:the_end
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (dust-render-test): All chunks are saved
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[07:38:18] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+[07:38:22] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
+
+BUILD SUCCESSFUL in 1m 46s
+7 actionable tasks: 1 executed, 6 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.2.1/userguide/configuration_cache_enabling.html

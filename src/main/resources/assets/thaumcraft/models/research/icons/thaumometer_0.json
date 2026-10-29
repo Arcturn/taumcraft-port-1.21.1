@@ -1,0 +1,30 @@
+{
+  "textures": {
+    "body": "thaumcraft:items/scanner",
+    "pane": "thaumcraft:items/scanscreen"
+  },
+  "loader": "neoforge:obj",
+  "model": "thaumcraft:models/research/obj/scanner.obj",
+  "flip_v": true,
+  "automatic_culling": false,
+  "parent": "minecraft:block/block",
+  "display": {
+    "gui": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        2.8,
+        -2.8,
+        0
+      ],
+      "scale": [
+        0.35,
+        0.35,
+        0.35
+      ]
+    }
+  }
+}

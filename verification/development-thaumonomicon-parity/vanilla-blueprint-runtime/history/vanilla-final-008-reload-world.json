@@ -1,0 +1,87 @@
+[
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "key",
+      "Escape"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.45
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "key",
+      "Escape"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.45
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "key",
+      "Escape"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.45
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "keydown",
+      "F3"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.5
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "keydown",
+      "t"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.3
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "keyup",
+      "t"
+    ]
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "keyup",
+      "F3"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 10
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "resume-final-world-after-f3t.png"
+  }
+]

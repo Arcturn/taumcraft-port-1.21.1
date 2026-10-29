@@ -1,0 +1,195 @@
+{
+  "scope": "Read-only source and original bytecode audit of TC6 BETA26 against alpha9.15. Mathematical candidate density, not measured natural-world yield.",
+  "baseline_version": "0.1.0-alpha.9.15-dev",
+  "baseline_deposits_sha256": "ca432be40331f78ef57d08a38f462aa183b9eb231f2b0b1178fa3e18083904dc",
+  "original_world_height_proof": {
+    "archive": "Official Minecraft 1.12.2 client",
+    "mapping": "amu.aa()I -> World.func_72800_K()I",
+    "bytecode": "sipush 256; ireturn",
+    "evidence": "original/World-1.12.2.javap.txt:8039"
+  },
+  "original_rules": {
+    "horizontal_positions": "chunk minimum + 2 through +14, each axis inclusive, 13x13 candidate columns",
+    "cinnabar": {
+      "attempts_at_100_percent": 18,
+      "y_min": 0,
+      "y_max_inclusive": 50,
+      "layers": 51,
+      "placement": "one ore block per successful stone replacement"
+    },
+    "quartz": {
+      "attempts_at_100_percent": 18,
+      "y_min": 0,
+      "y_max_inclusive": 63,
+      "layers": 64,
+      "placement": "one ore block per successful stone replacement"
+    },
+    "amber": {
+      "attempts_at_100_percent": 20,
+      "y": "surfaceHeight - nextInt(25): surface-24 through surface inclusive",
+      "placement": "one ore block per successful stone replacement"
+    },
+    "ore_density_rounding": "Math.round(base * densityPercent / 100.0f)",
+    "ore_host": "BlockMatcher(Blocks.STONE): all states of old stone block, including granite/diorite/andesite. Modern deepslate is an explicit new substrate adaptation.",
+    "crystals": {
+      "center_attempts_at_100_percent": 8,
+      "center_y": "0 through max(5, surfaceHeight-5)-1 inclusive",
+      "candidate_cube": "3x3x3 around each selected center",
+      "candidate_rejection": "reject 1/3 at random, liquids, occupied nonreplaceable blocks, or no adjacent solid Material.ROCK face",
+      "generated_size": [
+        1,
+        2,
+        3
+      ],
+      "generated_gen": 1,
+      "budget_units": "SIZE (1..3), not drop count",
+      "budget_at_100_percent": 64,
+      "budget_scaling": "Math.round(64 * densityPercent / 100.0f)",
+      "stop": "only after finishing the entire cube, and only when cumulative units > budget",
+      "drops": "SIZE+1 (2..4 for naturally generated blocks), unaffected by Fortune or Silk Touch"
+    },
+    "nether": "generateOres returns immediately in dimension -1. The later t=1 Nether branch is unreachable. No TC ores/crystals from this method in Nether.",
+    "other_dimensions": "Original generic generator can run outside Overworld unless dimension/biome blacklist excludes it. Port currently explicitly restricts deposits to Overworld; do not silently claim all-dimension parity."
+  },
+  "alpha915_discrepancies": [
+    {
+      "id": "cinnabar-dilution",
+      "original_attempts_per_layer": 0.35294117647058826,
+      "port_attempts_per_layer": 0.1565217391304348,
+      "port_fraction_of_original": 0.4434782608695652,
+      "cause": "Same18 candidates spread from -64 through50 (115layers)"
+    },
+    {
+      "id": "quartz-dilution",
+      "original_attempts_per_layer": 0.28125,
+      "port_attempts_per_layer": 0.140625,
+      "port_fraction_of_original": 0.5,
+      "cause": "Same18 candidates spread from -64 through63 (128layers)"
+    },
+    {
+      "id": "crystal-dilution-at-surface64",
+      "original_center_layers": 59,
+      "port_center_layers": 122,
+      "original_attempts_per_layer": 0.13559322033898305,
+      "port_attempts_per_layer": 0.06557377049180328,
+      "port_fraction_of_original": 0.48360655737704916,
+      "cause": "Current min seed=-63, max seed=58, same8 center attempts"
+    },
+    {
+      "id": "rounding",
+      "current": "ceil(base*densityPercent/100)",
+      "examples": [
+        {
+          "density_percent": 1,
+          "base": 18,
+          "original": 0,
+          "port": 1
+        },
+        {
+          "density_percent": 101,
+          "base": 18,
+          "original": 18,
+          "port": 19
+        }
+      ]
+    },
+    {
+      "id": "crystal-budget",
+      "current": "Always64, accumulates SIZE+1, and stops within a cube at units>=64",
+      "original": "Density-scaled64, accumulates SIZE, checks >limit after each complete cube"
+    },
+    {
+      "id": "crystal-support",
+      "current": "Curated support tag excludes ordinary TC ores and many vanilla ores",
+      "original": "Any adjacent solid Material.ROCK face can support crystals"
+    }
+  ],
+  "adaptation_recommendation": {
+    "objective": "Preserve expected candidate density per vertical layer, not merely original totals per chunk. More total underground volume therefore receives more candidates.",
+    "upper_limits": "Keep original cinnabar top50 and quartz top63; extend only the lower bound to modern min build height. Do not substitute384 for256 into original fractional-height formulas.",
+    "scale_formula": "expected attempts = legacy base * densityPercent/100 * modern candidate layer count / legacy candidate layer count",
+    "default_examples": {
+      "cinnabar": 40.588235294117645,
+      "quartz": 36.0,
+      "amber": 20,
+      "crystal_centers_surface64": 16.54237288135593,
+      "crystal_budget_surface64": 132.33898305084745
+    },
+    "rounding_choice": "For exact original control at minY=0 retain original Math.round(base*density); for added deep layers use unbiased stochastic rounding for fractional extra attempts, or a documented nearest-integer total. A two-band legacy+deep pass most directly preserves old upper-band intensity.",
+    "crystals": "Surface varies by column, so a center-height or mean-height ratio is a documented approximation. Do not claim identical natural cave yield: modern cave geometry and flooded caves affect success independently.",
+    "amber": "Do not scale20 upward simply because the world is deeper; it still samples a25-layer near-surface band. Add deepslate amber as a substrate variant, without inventing a blanket deep amber band.",
+    "variant_selection": "Choose ore variant from the actual replaced block/tag, not from Y alone; stone and deepslate mix around Y0.",
+    "safety": "Clamp sample positions and cluster writes to actual build bounds; respect ensureCanWrite in feature regions; do not modify pre-existing chunks or overwrite non-host blocks."
+  },
+  "source_locations": {
+    "ore_generation": "reference/legacy-decompiled-sources.zip:thaumcraft/common/world/ThaumcraftWorldGenerator.java:137-218",
+    "crystal_metadata_and_drops": "original/BlockCrystal.java:115-121,299-313",
+    "crystal_support": "original/BlockUtils.java:295-300",
+    "ore_drops": "original/BlockOreTC.java:45-95",
+    "ore_hardness": "original/ConfigBlocks.java:177-178,195-197"
+  },
+  "selected_implementation_policy": {
+    "mode": "Two independent vertical bands, preserving the original upper-band pass and adding a proportional lower-band pass.",
+    "ore_upper": "Original0..50 or0..63, intersected with valid build range; original Math.round(base*density).",
+    "ore_lower": "minBuildY..-1, count Math.round(base*density*lowerLayers/legacyLayers).",
+    "default_ore_counts": {
+      "cinnabar_upper": 18,
+      "cinnabar_lower": 23,
+      "cinnabar_total": 41,
+      "quartz_upper": 18,
+      "quartz_lower": 18,
+      "quartz_total": 36,
+      "amber_total": 20
+    },
+    "crystal_upper": "Original0..max(5, localSurface-5)-1 centers, with guarded cluster writes outside build bounds.",
+    "crystal_lower": "Normally minBuildY+1..-1 centers, with ratio to max(5, chunk-center surface-5). Low negative surface cases require clipping so centers do not rise above the intended underground interval.",
+    "default_crystal_counts_at_surface64": {
+      "upper_attempts": 8,
+      "lower_attempts": 9,
+      "upper_budget": 64,
+      "lower_budget": 68
+    },
+    "rounding": "Nearest-integer Math.round for each band separately; deliberate exact old upper pass, not an assertion of unbiased fractional density.",
+    "budget_semantics": "Each band owns its own original-style budget, which may be exceeded by its final complete3x3x3cluster. Sum of budgets is not a hard global cap.",
+    "edge_cases": [
+      "Skip empty bands before nextInt.",
+      "Clamp writes and respect ensureCanWrite.",
+      "Keep seed0 in original upper band when minY=0; reject out-of-world neighbor writes rather than silently dropping that source layer.",
+      "Use actual substituted block to choose deepslate variant.",
+      "Do not alter old chunks."
+    ]
+  },
+  "heightmap_verification": {
+    "legacy_chain": "World.func_175645_m (amu.l) -> World.c(x,z) -> Chunk.func_76611_b (axw.b) -> stored heightMap field_76634_f.",
+    "legacy_heightmap_predicate": "Chunk.generateSkylightMap scans downward until IBlockState.getLightOpacity() !=0, then stores blockY+1.",
+    "water_proof": "Both flowing_water and water registration call setLightOpacity(3), so original World.getHeight includes the top water surface.",
+    "modern_world_surface": "WORLD_SURFACE_WG uses !state.isAir(), therefore includes water.",
+    "modern_ocean_floor": "OCEAN_FLOOR_WG uses state.blocksMotion(), therefore ignores water and measures the bottom.",
+    "decision": "Switching ore/crystal surface reference to WORLD_SURFACE_WG restores water-surface behavior.",
+    "limits": [
+      "Old heightmap is not literally first non-air: zero-opacity plants/glass differ.",
+      "Modern deposits run at underground_ores before trees; original Forge pass may see already-decorated canopies. Exact canopy-height equivalence is not claimed."
+    ],
+    "evidence": [
+      "original/World-1.12.2.javap.txt:1323-1389",
+      "original/Chunk-1.12.2.javap.txt:235-245,364-423,1042-1050",
+      "original/Block-1.12.2.javap.txt:1643-1670",
+      "original/Heightmap-1.21.1.java:25-26,140-143"
+    ]
+  },
+  "implementation_review": {
+    "files": [
+      "DepositRules.java",
+      "DepositsFeature.java"
+    ],
+    "status": "No blocking source-level issue found before runtime tests.",
+    "checked": [
+      "Two independent vertical bands and rounding",
+      "Empty-band and nextInt bounds",
+      "Actual replaced host selects stone/deepslate variant",
+      "Crystal SIZE budget and stop only after complete cube",
+      "World-surface water reference"
+    ],
+    "optional_random_order_note": "Original tests support before drawing crystal SIZE; moving current size draw after canSurvive preserves that part of random consumption. This is not a change to nominal probabilities."
+  }
+}

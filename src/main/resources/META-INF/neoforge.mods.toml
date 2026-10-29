@@ -1,0 +1,38 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved; original Thaumcraft assets and logic by Azanor"
+
+[[mods]]
+modId="thaumcraft"
+version="${version}"
+displayName="Thaumcraft — Experimental Port"
+authors="Azanor (original); unofficial migration project"
+description='''An incomplete, unofficial Thaumcraft 6 migration to Minecraft 1.21.1. See README.ru.md for implemented and missing systems.'''
+
+[[dependencies.thaumcraft]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.259,21.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.thaumcraft]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.thaumcraft]]
+modId="curios"
+type="required"
+versionRange="[9.5.1,10)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.thaumcraft]]
+modId="terrablender"
+type="required"
+versionRange="[4.1.0.8,4.2)"
+ordering="AFTER"
+side="BOTH"

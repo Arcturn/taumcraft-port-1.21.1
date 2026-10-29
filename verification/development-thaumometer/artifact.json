@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0-alpha.9.17-dev",
+  "path": "build/libs/thaumcraft-port-1.21.1-0.1.0-alpha.9.17-dev.jar",
+  "bytes": 13082941,
+  "sha256": "b1a76cc1a368ea3520b5fa84fadabdaafe8dcc8777c3b9f5fa00871e48d1ee46",
+  "zip_crc": "PASS",
+  "duplicate_entries": false,
+  "comparisons": {
+    "classes": {
+      "files": 337,
+      "byte_identical": true
+    },
+    "resources": {
+      "files": 2826,
+      "byte_identical": true
+    }
+  },
+  "expanded_metadata": "PASS",
+  "embedded_terrablender_sha256": "6f9b488dbfebe134b848d1a07f462fed711bb1c96b6bd50645eaa8b9569da0b1",
+  "matches_local_dependency": true,
+  "resource_verifier": "resources.log",
+  "final_client_inputs_match": {
+    "compiled_classes": {
+      "file_count": 337,
+      "ordered_paths_and_file_sha256": "b888183b7c227f65a0c0111378f616122d6ace64f8ce2b5951b4e4482074dab4"
+    },
+    "processed_resources": {
+      "file_count": 2826,
+      "ordered_paths_and_file_sha256": "6bc205fe8577ac1efcc9db7326a5d4e2642328ccde621f826c22fd718e39a8ba"
+    }
+  }
+}

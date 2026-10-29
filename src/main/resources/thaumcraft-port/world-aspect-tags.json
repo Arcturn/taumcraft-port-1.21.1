@@ -1,0 +1,110 @@
+{
+  "item:thaumcraft:crystal_aer": {
+    "aer": 15,
+    "vitreus": 10
+  },
+  "item:thaumcraft:crystal_ignis": {
+    "ignis": 15,
+    "vitreus": 10
+  },
+  "item:thaumcraft:crystal_aqua": {
+    "aqua": 15,
+    "vitreus": 10
+  },
+  "item:thaumcraft:crystal_terra": {
+    "terra": 15,
+    "vitreus": 10
+  },
+  "item:thaumcraft:crystal_ordo": {
+    "ordo": 15,
+    "vitreus": 10
+  },
+  "item:thaumcraft:crystal_perditio": {
+    "perditio": 15,
+    "vitreus": 10
+  },
+  "item:thaumcraft:crystal_vitium": {
+    "vitium": 15,
+    "vitreus": 10
+  },
+  "item:thaumcraft:taint_fibre": {
+    "herba": 5,
+    "vitium": 10
+  },
+  "item:thaumcraft:taint_crust": {
+    "victus": 5,
+    "vitium": 5
+  },
+  "item:thaumcraft:taint_soil": {
+    "terra": 5,
+    "vitium": 5
+  },
+  "item:thaumcraft:taint_rock": {
+    "terra": 10,
+    "vitium": 5
+  },
+  "item:thaumcraft:taint_log": {
+    "herba": 5,
+    "vitium": 5
+  },
+  "item:thaumcraft:log_greatwood": {
+    "herba": 20,
+    "victus": 5
+  },
+  "item:thaumcraft:log_silverwood": {
+    "herba": 20,
+    "auram": 5
+  },
+  "item:thaumcraft:leaves_greatwood": {
+    "herba": 5
+  },
+  "item:thaumcraft:leaves_silverwood": {
+    "herba": 5
+  },
+  "item:thaumcraft:sapling_greatwood": {
+    "herba": 15,
+    "victus": 5
+  },
+  "item:thaumcraft:sapling_silverwood": {
+    "herba": 15,
+    "auram": 5
+  },
+  "item:thaumcraft:shimmerleaf": {
+    "herba": 5,
+    "auram": 10,
+    "potentia": 5
+  },
+  "item:thaumcraft:cinderpearl": {
+    "herba": 5,
+    "auram": 5,
+    "ignis": 10
+  },
+  "item:thaumcraft:vishroom": {
+    "herba": 2,
+    "mortuus": 1,
+    "praecantatio": 1,
+    "perditio": 1
+  },
+  "item:thaumcraft:stone_porous": {
+    "terra": 5,
+    "vacuos": 5
+  },
+  "item:thaumcraft:primordial_pearl": {
+    "aer": 10,
+    "ignis": 10,
+    "aqua": 10,
+    "terra": 10,
+    "ordo": 10,
+    "perditio": 10
+  },
+  "entity:thaumcraft:taint_seed": {
+    "herba": 20,
+    "bestia": 20,
+    "vitium": 20
+  },
+  "entity:thaumcraft:taint_seed_prime": {
+    "herba": 30,
+    "bestia": 30,
+    "vitium": 30
+  }
+}

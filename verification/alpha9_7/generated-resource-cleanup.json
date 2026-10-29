@@ -1,0 +1,6 @@
+{
+  "removed_generated_orphan": "thaumcraft-port/advancement-icons.json",
+  "reason": "Cancelled vanilla replacement table remained in Gradle processResources output; absent from authored source.",
+  "all_other_processed_resources_have_source": true,
+  "action": "Remove this obsolete generated file, rerun jar, recheck archive against all current sources."
+}

@@ -1,0 +1,40 @@
+[32m[19:15:50.924] [main/INFO] [Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatadev, --fml.neoForgeVersion, 21.1.264, --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430, --gameDir, /workspace/scratch/5f8dd1a26602/work/datagen-alpha7, --mod, thaumcraft, --all, --output, /workspace/scratch/5f8dd1a26602/work/datagen-alpha7/generated, --existing, /workspace/scratch/5f8dd1a26602/thaumcraft-port/src/main/resources] 
+[m[32m[19:15:50.927] [main/INFO] [Launcher/MODLAUNCHER]: JVM identified as Microsoft OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS 
+[m[32m[19:15:50.929] [main/INFO] [Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Microsoft; OS Linux arch amd64 version 6.18.55 
+[m[32m[19:15:51.061] [main/INFO] [loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatadev 
+[m[32m[19:15:51.120] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/workspace/scratch/5f8dd1a26602/work/test-server/libraries/net/fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/sponge-mixin-0.16.4+mixin.0.8.7.jar%2383!/ Service=ModLauncher Env=CLIENT 
+[m[32m[19:15:51.215] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "datagen-minecraft" [locator: neoforge devenv provider ([/workspace/scratch/5f8dd1a26602/work/datagen-minecraft])] 
+[m[32m[19:15:51.233] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "datagen-minecraft" [locator: neoforge devenv provider ([/workspace/scratch/5f8dd1a26602/work/datagen-minecraft])] 
+[m[32m[19:15:51.242] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "curios-neoforge-9.5.1+1.21.1.jar" [locator: {mods folder locator at /workspace/scratch/5f8dd1a26602/work/datagen-alpha7/mods}, reader: mod manifest] 
+[m[32m[19:15:51.247] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "thaumcraft-port-1.21.1-0.1.0-alpha.7.jar" [locator: {mods folder locator at /workspace/scratch/5f8dd1a26602/work/datagen-alpha7/mods}, reader: mod manifest] 
+[m[32m[19:15:51.254] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "datagen-minecraft" [locator: userdev mods and services, reader: mod manifest] 
+[m[32m[19:15:51.350] [main/INFO] [loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 3 dependencies adding them to mods collection 
+[m[32m[19:15:51.350] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.5.jar" [parent: datagen-minecraft, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:15:51.350] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "TerraBlender-neoforge-1.21.1-4.1.0.8.jar" [parent: thaumcraft-port-1.21.1-0.1.0-alpha.7.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:15:51.350] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.264.jar" [parent: datagen-minecraft, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:15:51.352] [main/INFO] [loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Curios API 9.5.1+1.21.1 (curios)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.264 (neoforge)
+		TerraBlender 4.1.0.8 (terrablender)
+		Thaumcraft — Experimental Port 0.1.0-alpha.7 (thaumcraft) 
+[m[32m[19:15:52.228] [main/INFO] [mixin/]: Compatibility level set to JAVA_17 
+[m[32m[19:15:52.231] [main/INFO] [mixin/]: Compatibility level set to JAVA_21 
+[m[32m[19:15:52.241] [main/INFO] [LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatadev' with arguments [--gameDir, /workspace/scratch/5f8dd1a26602/work/datagen-alpha7, --mod, thaumcraft, --all, --output, /workspace/scratch/5f8dd1a26602/work/datagen-alpha7/generated, --existing, /workspace/scratch/5f8dd1a26602/thaumcraft-port/src/main/resources] 
+[m[33m[19:15:52.296] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender.mixins.json could not be read. If this is a development environment you can ignore this message 
+[m[33m[19:15:52.297] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender_neoforge.mixins.json could not be read. If this is a development environment you can ignore this message 
+[m[33m[19:15:52.297] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message 
+[m[33m[19:15:52.297] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.mixins.json could not be read. If this is a development environment you can ignore this message 
+[mWARN StatusConsoleListener Advanced terminal features are not available in this environment
+[19:15:52] [main/INFO] [ne.ne.ne.da.lo.DatagenModLoader/]: Initializing Data Gatherer for mods [thaumcraft]
+[19:15:52] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[19:15:57] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.264, for MC 1.21.1
+[19:16:00] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/workspace/scratch/5f8dd1a26602/work/datagen-minecraft/%23139!/assets/.mcassetsroot' uses unexpected schema
+[19:16:00] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/workspace/scratch/5f8dd1a26602/work/datagen-minecraft/%23139!/data/.mcassetsroot' uses unexpected schema
+[19:16:00] [main/INFO] [minecraft/DataGenerator]: Starting provider: Thaumcraft registry, worldgen, loot and structure validation
+[19:16:01] [main/INFO] [minecraft/DataGenerator]: Thaumcraft registry, worldgen, loot and structure validation finished after 861 ms
+[19:16:01] [main/INFO] [minecraft/DataGenerator]: All providers took: 862 ms
+[19:16:01] [main/INFO] [minecraft/HashCache]: Caching: total files: 1, old count: 1, new count: 2, removed stale: 0, written: 1

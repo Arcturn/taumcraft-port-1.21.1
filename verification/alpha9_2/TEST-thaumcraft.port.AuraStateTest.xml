@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.AuraStateTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-24T10:55:56.138Z" hostname="bb565e390ffa" time="0.011">
+  <properties/>
+  <testcase name="fluxOccupiesRegenerationCapacity()" classname="thaumcraft.port.AuraStateTest" time="0.0"/>
+  <testcase name="drainsAreBoundedAndSimulationDoesNotConsume()" classname="thaumcraft.port.AuraStateTest" time="0.001"/>
+  <testcase name="excessVisConvertsWithoutCreatingEnergy()" classname="thaumcraft.port.AuraStateTest" time="0.0"/>
+  <testcase name="riftNeedsPollutionThresholdAndSuccessfulRoll()" classname="thaumcraft.port.AuraStateTest" time="0.001"/>
+  <testcase name="seededGenerationIsStableAcrossUnloadReload()" classname="thaumcraft.port.AuraStateTest" time="0.002"/>
+  <testcase name="diffusionMovesOneUnitAndConservesEnergy()" classname="thaumcraft.port.AuraStateTest" time="0.001"/>
+  <testcase name="fullMoonRegeneratesButNewMoonDoesNot()" classname="thaumcraft.port.AuraStateTest" time="0.001"/>
+  <testcase name="generatedBaseNeverExceedsOriginalRange()" classname="thaumcraft.port.AuraStateTest" time="0.002"/>
+  <testcase name="saturatedNeighbourCannotReceiveOverflow()" classname="thaumcraft.port.AuraStateTest" time="0.0"/>
+  <testcase name="invalidEnergyCannotPoisonOrCreateAura()" classname="thaumcraft.port.AuraStateTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

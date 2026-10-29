@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.client.ScannerVisualRulesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-29T01:00:06.492Z" hostname="e54a7cd1abdc" time="0.005">
+  <properties/>
+  <testcase name="worldLabelsCenterEachFiveColumnRowAndKeepOriginalGrowth()" classname="thaumcraft.port.client.ScannerVisualRulesTest" time="0.0"/>
+  <testcase name="runeOpacityPreservesTheOriginalOneFifthRiseAndGravity()" classname="thaumcraft.port.client.ScannerVisualRulesTest" time="0.0"/>
+  <testcase name="highlightsRetainOriginalAgeFrameMixtureFlickerAndGrowingSize()" classname="thaumcraft.port.client.ScannerVisualRulesTest" time="0.003"/>
+  <testcase name="runeQuadsFaceOutwardOnAllFourSidesAndKeepOriginalTextureOrientation()" classname="thaumcraft.port.client.ScannerVisualRulesTest" time="0.001"/>
+  <testcase name="activationUsesOriginalDispatcherOffsetsAndSmallEntityDurations()" classname="thaumcraft.port.client.ScannerVisualRulesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "thaumcraft:research_display_research_firststeps"
+    },
+    "title": {
+      "translate": "research.FIRSTSTEPS.title"
+    },
+    "description": {
+      "translate": "thaumcraft.advancement.research.description",
+      "with": [
+        {
+          "translate": "research.FIRSTSTEPS.title"
+        }
+      ]
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "completed": {
+      "trigger": "thaumcraft:research",
+      "conditions": {
+        "research": "FIRSTSTEPS"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "completed"
+    ]
+  ],
+  "sends_telemetry_event": false,
+  "parent": "thaumcraft:research/category/basics"
+}

@@ -1,0 +1,57 @@
+{
+  "baseline": "source-only checkpoint version 13",
+  "status": "development_only",
+  "junit": {
+    "tests": 104,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "scan_fixture_checks": 325,
+  "aspect_fixture_checks": 394,
+  "changed": [
+    "build.gradle",
+    "reference/aspect-calculation-parity.json",
+    "src/main/java/thaumcraft/port/client/ClientScanner.java",
+    "src/main/java/thaumcraft/port/data/WorldDataChecks.java",
+    "src/main/java/thaumcraft/port/research/Scanning.java",
+    "src/main/java/thaumcraft/port/research/ScanDiscoveries.java",
+    "src/main/java/thaumcraft/port/research/ResearchCodec.java",
+    "src/main/java/thaumcraft/port/research/Scanner.java"
+  ],
+  "new": [
+    "reference/scanning-parity.json",
+    "reference/scan-key-migration.json",
+    "tools/import_scan_keys.py",
+    "tools/__pycache__/original_research_icons.cpython-312.pyc",
+    "src/main/java/thaumcraft/port/data/ScanFixtures.java",
+    "src/main/java/thaumcraft/port/research/ScanObservation.java",
+    "src/main/java/thaumcraft/port/research/LegacyScanKeys.java",
+    "src/main/resources/thaumcraft-port/scan-keys.json",
+    "src/test/java/thaumcraft/port/ScanObservationTest.java"
+  ],
+  "textures_models_sounds_recipes_world_data_unchanged": true,
+  "client_rendered": false,
+  "server_started": false,
+  "jar_created": false,
+  "jar_delivered": false,
+  "source_sha256": {
+    "build.gradle": "0a1afd2c80d7df06063c24972b6d07c203aed2433b3a691a819d9e0464d2ea73",
+    "reference/aspect-calculation-parity.json": "92a6ef155ebd429edc0985e8dbcc44520a80d5b0b9d3650b2832f72f9f5a99eb",
+    "src/main/java/thaumcraft/port/client/ClientScanner.java": "c44bd8fd26f1373c424c43c9c7d72a1895d8b7b20ed6c245803af990bc0a8358",
+    "src/main/java/thaumcraft/port/data/WorldDataChecks.java": "9f1406c497a85082b44eda4d72eedb9deb646a9ebb2fd3dea80f6680064224cd",
+    "src/main/java/thaumcraft/port/research/Scanning.java": "7931a4511475069fc966a75cb73f9feda519b7a9f2919fb9529562d5e49cd59d",
+    "src/main/java/thaumcraft/port/research/ScanDiscoveries.java": "8186e94c81c8b59cd7381f7f54c3a9428e1c7f0be1c3cebc4e2166d356f8d1d3",
+    "src/main/java/thaumcraft/port/research/ResearchCodec.java": "e1eabc091e27c1d726767fe4cecc348279307a80d3408e26ffbe7627651d755c",
+    "src/main/java/thaumcraft/port/research/Scanner.java": "ddeb33269ea01990f2e5e91d8b426b0061b3933204f3d8e5938ca2f48583548e",
+    "reference/scanning-parity.json": "d161ce79d1d3b8d8fe87dc2d4c9e2373029d56e1c8033d82d169a8b8081d3023",
+    "reference/scan-key-migration.json": "047e1d35c4a434187ae4eb95a38967d7a5026479b5ebd49da2b0dc4f27b0179e",
+    "tools/import_scan_keys.py": "d9acabc0b6634a9734d63a7b37044de661bdaf491f8b709e2bb278d5af9e948e",
+    "tools/__pycache__/original_research_icons.cpython-312.pyc": "b3c3bc64a280195b1b206274825e9d1b397c8e1a2ee7c2bb376fd094d286fa46",
+    "src/main/java/thaumcraft/port/data/ScanFixtures.java": "4ddcbc05848b614ed16949bc94132a01ae4da6c77bc1e576b287cee1a36023a6",
+    "src/main/java/thaumcraft/port/research/ScanObservation.java": "c77983cd14fc4bd422c9a0764e46a97b0ae58c9f9d2eebc10f7e5be14183c58e",
+    "src/main/java/thaumcraft/port/research/LegacyScanKeys.java": "28f641eee8828eb8f57e4b211c15d32761f3337c0ace4032e530703cae35ec27",
+    "src/main/resources/thaumcraft-port/scan-keys.json": "d0d562348163c28409e2b929e86b54af76719673775f5dd4cb084217e9ba5b30",
+    "src/test/java/thaumcraft/port/ScanObservationTest.java": "410e50e832772dc8c165679da5a333961a9c2224cf7af6ca3f2b02dbce17f9dd"
+  }
+}

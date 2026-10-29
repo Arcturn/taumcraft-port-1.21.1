@@ -1,0 +1,28 @@
+{
+  "textures": {
+    "particle": "thaumcraft:blocks/dioptra_side_on",
+    "side": "thaumcraft:blocks/dioptra_side_on",
+    "top": "thaumcraft:blocks/dioptra_top",
+    "bottom": "thaumcraft:blocks/arcane_stone_1"
+  },
+  "parent": "thaumcraft:research/legacy/block/dioptra",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    }
+  }
+}

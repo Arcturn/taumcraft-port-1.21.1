@@ -1,0 +1,16 @@
+[
+  {
+    "action": "stop",
+    "target": "migration-alpha913"
+  },
+  {
+    "action": "start",
+    "target": "migration-alpha913"
+  },
+  {
+    "action": "wait_log",
+    "target": "migration-alpha913",
+    "text": "logged in with entity id",
+    "seconds": 15
+  }
+]

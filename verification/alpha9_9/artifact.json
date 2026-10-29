@@ -1,0 +1,61 @@
+{
+  "version": "0.1.0-alpha.9.9",
+  "date": "2026-10-24",
+  "junit": {
+    "tests": 104,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "jar": {
+    "name": "thaumcraft-port-1.21.1-0.1.0-alpha.9.9.jar",
+    "bytes": 12703236,
+    "sha256": "74c6999b3e0bc435440879dc34c8c6aca56565a0114d688fda77164bb8b94693",
+    "class_count": 250,
+    "matches_compiled_classes": true,
+    "zip_crc_passed": true
+  },
+  "resources_verified": true,
+  "assets_recipes_worldgen_unchanged_from_alpha9_8": true,
+  "client_rendered": false,
+  "game_server_started": false,
+  "changes_from_alpha9_8": [
+    "thaumcraft/port/aspect/AspectTags.class",
+    "thaumcraft/port/aspect/RecipeAspects.class",
+    "thaumcraft/port/client/ClientScanner.class",
+    "thaumcraft/port/crafting/CrucibleRecipe.class",
+    "thaumcraft/port/data/WorldDataChecks.class",
+    "thaumcraft/port/essentia/SmelterEntity.class",
+    "thaumcraft/port/machine/CrucibleEntity.class",
+    "thaumcraft/port/research/ResearchCodec.class",
+    "thaumcraft/port/research/ResearchProgress.class",
+    "thaumcraft/port/research/ResearchState.class",
+    "thaumcraft/port/research/ScanDiscoveries.class",
+    "thaumcraft/port/research/Scanner.class",
+    "thaumcraft/port/research/Scanning.class",
+    "thaumcraft/port/theory/TheoryItems$2.class",
+    "META-INF/accesstransformer.cfg",
+    "META-INF/neoforge.mods.toml"
+  ],
+  "validation": {
+    "advancement_fixture_checks": 1733,
+    "aspect_fixture_checks": 394,
+    "audit_fixture_checks": 18,
+    "blocks": 83,
+    "essentia_extension_fixture_checks": 18,
+    "essentia_fixture_checks": 69,
+    "feature_order_cycles": false,
+    "items": 292,
+    "jar_bellows_fixture_checks": 35,
+    "loot_tables_decoded": 96,
+    "machine_fixture_checks": 169,
+    "presentation_fixture_checks": 219,
+    "recipes_decoded": 96,
+    "scan_fixture_checks": 325,
+    "server_started": false,
+    "templates_decoded": 3,
+    "theory_fixture_checks": 239,
+    "tree_fixture_checks": 66,
+    "worldgen_registries_loaded": true
+  }
+}

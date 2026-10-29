@@ -1,0 +1,74 @@
+{
+  "scope": "Generic item-aspect derivation for standard recipes and common material tags; no claim that every item of every mod has meaningful aspects.",
+  "original_source": "original/thaumcraft/common/lib/crafting/ThaumcraftCraftingManager.java",
+  "original_methods": {
+    "getObjectTags": "Explicit/NBT/wildcard assignments first; otherwise generate recipe aspects; apply equipment, dye and enchantment bonuses.",
+    "generateTagsFromRecipes": "Crucible, then infusion, then crafting. Ordinary furnace recipes are not inspected.",
+    "generateTagsFromCraftingRecipes": "Select positive candidate with least total aspects; take first ingredient representative; subtract recipe remaining items; apply 75%/output count with original truncation.",
+    "generateTags": "Cycle/history guard; cache generated result; per-aspect cap500. getBonusTags then culls to seven aspect types."
+  },
+  "compatibility_correction": "Original TC6 supports many third-party items through OreDictionary material assignments, crafting ingredient recursion and item-class/enchantment bonuses. An unknown raw item with no recognized material, recipe route or explicit integration is not guaranteed aspects.",
+  "port_before": "RecipeAspects already accepted any namespace for crafting/arcane/crucible recipes and AspectTags recognized c: common-material tags. It did not inspect modern workstation recipes.",
+  "changes": [
+    "Prefer explicitly assigned valid material alternatives before deep recursive conversions; otherwise try recipe-derived representatives. Missing required tags reject uncraftable candidates. This avoids factorial recoloring graphs introduced after1.12.",
+    "Use cooking (smelting/blasting/smoking/campfire), stonecutting and smithing-transform as fallback only when no positive legacy crafting result exists; this preserves prior crafting-derived values.",
+    "Read smithing inputs via public recipe codec; no reflection or fabricated ingredients. Custom machine serializers and dynamic empty outputs still require explicit integration.",
+    "Modern cooking/stonecutting preserve material amount/output count without invented fuel or crafting loss; crafting/arcane/smithing retain75% arithmetic. Crafting-only remainder callbacks run only for crafting/arcane recipes.",
+    "Bound traversal to100active levels/4096visits and avoid caching any incomplete exhausted result. Ordinary cycles yield empty branches and do not cache intermediate results.",
+    "Isolate malformed third-party crafting callbacks and continue with alternate valid recipes. Synchronized per-calculator cache and deterministic manager recipe-ID order.",
+    "Recipe reload clears existing caches; root adding tag-update cache invalidation too.",
+    "Per-request memoization stores only subtrees that encounter no ancestor cycle. Narrow construction recipes precede broad conversion recipes; a route that hits an ancestor cycle cannot replace an already valid construction with eroded material aspects.",
+    "Construction ordering prioritizes shaped recipes before shapeless conversion routes, because broad planks tags otherwise make a real bed recipe look more complex than its recoloring loop. Acyclic alternatives still compete by the original smallest-positive-total rule."
+  ],
+  "tests": {
+    "file": "src/main/java/thaumcraft/port/gametest/RecipeAspectGameTests.java",
+    "methods": 5,
+    "scope": "Synthetic recipes against real loaded server registries. Uses already registered thaumcraft:research_icon as an otherwise unassigned non-vanilla output, without adding dummy gameplay items or asserting that an external content mod was installed.",
+    "checks": [
+      "count-normalized crafting",
+      "unknown first alternative",
+      "unassigned raw input stays empty",
+      "missing required tag",
+      "reusable catalyst",
+      "broken remainder callback isolation",
+      "cycle with and without independent seed recipe",
+      "all four cooking types",
+      "stonecutting",
+      "three-slot smithing codec",
+      "legacy crafting priority",
+      "explicit/common-tag priority",
+      "component-subtype isolation",
+      "independent recipe snapshots",
+      "Loaded vanilla recipes for all64 colored wool/carpet/bed/shulker variants; exact white carpet/bed material contributions; mud brick slab and cracked deepslate tile processing retain Terra"
+    ]
+  },
+  "limits": [
+    "No universal inference for unknown raw materials or custom machine recipe formats.",
+    "Infusion recipe derivation cannot run until the corresponding gameplay recipe system exists in the port.",
+    "Alternative fallback and modern workstation support are deliberate 1.21.1 extensions, not claims about features present in TC6.",
+    "Automatic aspect derivation for newly supported workstations is deliberately adapted to modern processing; it is not a feature of originalTC6."
+  ],
+  "validation_note": "Final shared release validation passed1990JUnit and56GameTests, including all64 colored-family material-route checks. The initial bed regression was fixed without weakening its material assertion.",
+  "validation": {
+    "junit": 1990,
+    "server_gametests": 56,
+    "all_passed": true,
+    "coverage_report": "build/modern-aspect-coverage.json",
+    "registered_vanilla_default_stacks": 1333,
+    "assigned": 1237,
+    "technical_or_creative_only": 93,
+    "legacy_dynamic_recipe_exceptions": 3,
+    "unresolved": [],
+    "modern_logical_seeds": 214,
+    "modern_copy_and_function_rules": 123,
+    "white_bed": {
+      "bestia": 33,
+      "fabrico": 11,
+      "herba": 6
+    },
+    "white_carpet": {
+      "bestia": 7,
+      "fabrico": 2
+    }
+  }
+}

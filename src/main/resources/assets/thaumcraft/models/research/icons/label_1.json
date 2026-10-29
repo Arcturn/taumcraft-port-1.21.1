@@ -1,0 +1,26 @@
+{
+  "textures": {
+    "layer0": "thaumcraft:items/label",
+    "layer1": "thaumcraft:items/label_overlay"
+  },
+  "parent": "minecraft:item/generated",
+  "display": {
+    "gui": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  }
+}

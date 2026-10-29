@@ -1,0 +1,4003 @@
+{
+  "source": "Minecraft 1.12.2 / Forge 14.23.5.2860 / Thaumcraft 6.1.BETA26 / Baubles 1.5.2",
+  "method": "Actual ItemStack.getTooltip(client player, NORMAL/ADVANCED), EN/RU, book presentation only",
+  "normalization": "Count=1; wildcard damage 32767 begins at 0; recipe SNBT preserved",
+  "entries": {
+    "thaumcraft:activator_rail;1;0": [
+      "book.original.tooltip.dda3c452542e042f75e7.0"
+    ],
+    "thaumcraft:alembic;1;0": [
+      "book.original.tooltip.00c880337a860ac9295c.0"
+    ],
+    "thaumcraft:alumentum;1;0": [
+      "book.original.tooltip.5f2e5ad3ee2cae98a1a1.0"
+    ],
+    "thaumcraft:amber;1;0": [
+      "book.original.tooltip.b966e276fd7cc4a6d5cb.0"
+    ],
+    "thaumcraft:amber_block;1;0": [
+      "book.original.tooltip.9d554f01be8b1a6595dd.0"
+    ],
+    "thaumcraft:amber_brick;1;0": [
+      "book.original.tooltip.743eaef144258b6d3bc2.0"
+    ],
+    "thaumcraft:amulet_vis;1;1": [
+      "book.original.tooltip.ff6db348f546303465f8.0",
+      "book.original.tooltip.ff6db348f546303465f8.1",
+      "book.original.tooltip.ff6db348f546303465f8.2"
+    ],
+    "thaumcraft:arcane_brick;1;0": [
+      "book.original.tooltip.320bb6e8753ec9e4778e.0"
+    ],
+    "thaumcraft:arcane_ear;1;0": [
+      "book.original.tooltip.474a71774c5132d9bf95.0"
+    ],
+    "thaumcraft:arcane_ear_toggle;1;0": [
+      "book.original.tooltip.f074ca841780f1df5a77.0"
+    ],
+    "thaumcraft:arcane_stone;1;0": [
+      "book.original.tooltip.72cee312aa6699c8701d.0"
+    ],
+    "thaumcraft:arcane_workbench;1;0": [
+      "book.original.tooltip.f17e65a35906b908ac49.0"
+    ],
+    "thaumcraft:arcane_workbench_charger;1;0": [
+      "book.original.tooltip.5886a91c7bf17ad7e250.0"
+    ],
+    "thaumcraft:banner_black;1;0": [
+      "book.original.tooltip.96f75d661251b201f8d3.0"
+    ],
+    "thaumcraft:banner_blue;1;0": [
+      "book.original.tooltip.ed3bfdaf0cca7315077f.0"
+    ],
+    "thaumcraft:banner_brown;1;0": [
+      "book.original.tooltip.5aa23dc4e77ca4e100e1.0"
+    ],
+    "thaumcraft:banner_cyan;1;0": [
+      "book.original.tooltip.7396c0f2c9c65574fab6.0"
+    ],
+    "thaumcraft:banner_gray;1;0": [
+      "book.original.tooltip.0c07b3f9b76f158c2473.0"
+    ],
+    "thaumcraft:banner_green;1;0": [
+      "book.original.tooltip.491bffe0d58d0d8f30b2.0"
+    ],
+    "thaumcraft:banner_light_blue;1;0": [
+      "book.original.tooltip.1e64405faecb8bd7127a.0"
+    ],
+    "thaumcraft:banner_lime;1;0": [
+      "book.original.tooltip.5ba22fb7ef460333e85e.0"
+    ],
+    "thaumcraft:banner_magenta;1;0": [
+      "book.original.tooltip.8877820c97f6d75107bb.0"
+    ],
+    "thaumcraft:banner_orange;1;0": [
+      "book.original.tooltip.a85f0e74b0ea0d09daa2.0"
+    ],
+    "thaumcraft:banner_pink;1;0": [
+      "book.original.tooltip.4e24d0adc761076917b4.0"
+    ],
+    "thaumcraft:banner_purple;1;0": [
+      "book.original.tooltip.4b1c847ef774afb21e64.0"
+    ],
+    "thaumcraft:banner_red;1;0": [
+      "book.original.tooltip.a96cec767571545cc179.0"
+    ],
+    "thaumcraft:banner_silver;1;0": [
+      "book.original.tooltip.90a2e8fea812301db74d.0"
+    ],
+    "thaumcraft:banner_white;1;0": [
+      "book.original.tooltip.094fe1c1379ed441bb52.0"
+    ],
+    "thaumcraft:banner_yellow;1;0": [
+      "book.original.tooltip.62bce61d7deba7cb2246.0"
+    ],
+    "thaumcraft:bath_salts;1;0": [
+      "book.original.tooltip.b4121a32aefd8858ab00.0"
+    ],
+    "thaumcraft:baubles;1;0": [
+      "book.original.tooltip.c45f09d60c38f80aa139.0",
+      "book.original.tooltip.c45f09d60c38f80aa139.1"
+    ],
+    "thaumcraft:baubles;1;1": [
+      "book.original.tooltip.ba313e33a9c4608c5c49.0",
+      "book.original.tooltip.ba313e33a9c4608c5c49.1"
+    ],
+    "thaumcraft:baubles;1;2": [
+      "book.original.tooltip.33073a957b7cf9a65398.0",
+      "book.original.tooltip.33073a957b7cf9a65398.1"
+    ],
+    "thaumcraft:baubles;1;4": [
+      "book.original.tooltip.20cd42d3b889a0a9aee4.0",
+      "book.original.tooltip.20cd42d3b889a0a9aee4.1"
+    ],
+    "thaumcraft:baubles;1;5": [
+      "book.original.tooltip.6e7abae6b29b619a45ff.0",
+      "book.original.tooltip.6e7abae6b29b619a45ff.1"
+    ],
+    "thaumcraft:baubles;1;6": [
+      "book.original.tooltip.bf3cc5a3ecfd5439970e.0",
+      "book.original.tooltip.bf3cc5a3ecfd5439970e.1"
+    ],
+    "thaumcraft:bellows;1;0": [
+      "book.original.tooltip.cad25dc2ab0527928508.0"
+    ],
+    "thaumcraft:bottle_taint;1;0": [
+      "book.original.tooltip.13ead3e4bd35f9e6269d.0"
+    ],
+    "thaumcraft:brain;1;0": [
+      "book.original.tooltip.82cec5fca5bae335e4ee.0"
+    ],
+    "thaumcraft:brain_box;1;0": [
+      "book.original.tooltip.9a3315dc614ad86a4437.0"
+    ],
+    "thaumcraft:bucket_death;1;0": [
+      "book.original.tooltip.05a1f1f33b8d7d2489eb.0"
+    ],
+    "thaumcraft:candle_black;1;0": [
+      "book.original.tooltip.4a65e78a56573a51b96c.0"
+    ],
+    "thaumcraft:candle_blue;1;0": [
+      "book.original.tooltip.a5791ef86e262829f565.0"
+    ],
+    "thaumcraft:candle_brown;1;0": [
+      "book.original.tooltip.e73f9a4ef99d7a35a13c.0"
+    ],
+    "thaumcraft:candle_cyan;1;0": [
+      "book.original.tooltip.cfc1f3aa1c8d0613e45d.0"
+    ],
+    "thaumcraft:candle_gray;1;0": [
+      "book.original.tooltip.239a9ce1f37f911c7918.0"
+    ],
+    "thaumcraft:candle_green;1;0": [
+      "book.original.tooltip.a3a764c70ea4b052ee8b.0"
+    ],
+    "thaumcraft:candle_light_blue;1;0": [
+      "book.original.tooltip.4c2e6025849a4455933e.0"
+    ],
+    "thaumcraft:candle_lime;1;0": [
+      "book.original.tooltip.e9f9fabca751bb4d65ad.0"
+    ],
+    "thaumcraft:candle_magenta;1;0": [
+      "book.original.tooltip.7cdd53e4d13145398b31.0"
+    ],
+    "thaumcraft:candle_orange;1;0": [
+      "book.original.tooltip.04ff4551b069dadc0f63.0"
+    ],
+    "thaumcraft:candle_pink;1;0": [
+      "book.original.tooltip.234f3a9c516039feccdb.0"
+    ],
+    "thaumcraft:candle_purple;1;0": [
+      "book.original.tooltip.809d447a5a449e85b8d9.0"
+    ],
+    "thaumcraft:candle_red;1;0": [
+      "book.original.tooltip.f5b7ac2630ed1f22db9e.0"
+    ],
+    "thaumcraft:candle_silver;1;0": [
+      "book.original.tooltip.7392a83bccabd1bfe063.0"
+    ],
+    "thaumcraft:candle_white;1;0": [
+      "book.original.tooltip.7f64bdc2b54f4728d073.0"
+    ],
+    "thaumcraft:candle_yellow;1;0": [
+      "book.original.tooltip.d4de8573ab5e87be9910.0"
+    ],
+    "thaumcraft:caster_basic;1;0": [
+      "book.original.tooltip.64dd418162ffa62664f8.0"
+    ],
+    "thaumcraft:causality_collapser;1;0": [
+      "book.original.tooltip.8bb9aaca45143345e05d.0"
+    ],
+    "thaumcraft:centrifuge;1;0": [
+      "book.original.tooltip.42a6787ba69b7f66289b.0"
+    ],
+    "thaumcraft:charm_undying;1;0": [
+      "book.original.tooltip.f861911bf046b5ef53f2.0",
+      "book.original.tooltip.f861911bf046b5ef53f2.1"
+    ],
+    "thaumcraft:chunk;1;0": [
+      "book.original.tooltip.19d69d5e65c0744e939c.0"
+    ],
+    "thaumcraft:chunk;1;1": [
+      "book.original.tooltip.8899b2ff1548f879495d.0"
+    ],
+    "thaumcraft:chunk;1;2": [
+      "book.original.tooltip.17d24612ba6a7be5f940.0"
+    ],
+    "thaumcraft:chunk;1;3": [
+      "book.original.tooltip.28661f50b6fc68fc16a0.0"
+    ],
+    "thaumcraft:chunk;1;4": [
+      "book.original.tooltip.73d2522515b2fe98c56a.0"
+    ],
+    "thaumcraft:chunk;1;5": [
+      "book.original.tooltip.f2348b6f38ea21dff25f.0"
+    ],
+    "thaumcraft:cinderpearl;1;0": [
+      "book.original.tooltip.20281dc7be92b64aff82.0"
+    ],
+    "thaumcraft:cloth_boots;1;0": [
+      "book.original.tooltip.80c4a42e38e8aa71344e.0",
+      "book.original.tooltip.80c4a42e38e8aa71344e.1",
+      "book.original.tooltip.80c4a42e38e8aa71344e.2",
+      "book.original.tooltip.80c4a42e38e8aa71344e.3",
+      "book.original.tooltip.80c4a42e38e8aa71344e.4",
+      "book.original.tooltip.80c4a42e38e8aa71344e.5"
+    ],
+    "thaumcraft:cloth_chest;1;0": [
+      "book.original.tooltip.0061080c92308b27aabf.0",
+      "book.original.tooltip.0061080c92308b27aabf.1",
+      "book.original.tooltip.0061080c92308b27aabf.2",
+      "book.original.tooltip.0061080c92308b27aabf.3",
+      "book.original.tooltip.0061080c92308b27aabf.4",
+      "book.original.tooltip.0061080c92308b27aabf.5"
+    ],
+    "thaumcraft:cloth_legs;1;0": [
+      "book.original.tooltip.92e0d4063de0291ca6b1.0",
+      "book.original.tooltip.92e0d4063de0291ca6b1.1",
+      "book.original.tooltip.92e0d4063de0291ca6b1.2",
+      "book.original.tooltip.92e0d4063de0291ca6b1.3",
+      "book.original.tooltip.92e0d4063de0291ca6b1.4",
+      "book.original.tooltip.92e0d4063de0291ca6b1.5"
+    ],
+    "thaumcraft:cloud_ring;1;0": [
+      "book.original.tooltip.267a5474a60586f42ec5.0",
+      "book.original.tooltip.267a5474a60586f42ec5.1"
+    ],
+    "thaumcraft:cluster;1;0": [
+      "book.original.tooltip.712ff1a70030fd69bf0d.0"
+    ],
+    "thaumcraft:cluster;1;1": [
+      "book.original.tooltip.bffb95ccb2559ec10f6e.0"
+    ],
+    "thaumcraft:cluster;1;2": [
+      "book.original.tooltip.c4c8fb345cd2afc51e07.0"
+    ],
+    "thaumcraft:cluster;1;3": [
+      "book.original.tooltip.e2b207c648b132d40bf2.0"
+    ],
+    "thaumcraft:cluster;1;4": [
+      "book.original.tooltip.1c2546a5ea19204d767e.0"
+    ],
+    "thaumcraft:cluster;1;5": [
+      "book.original.tooltip.75990013b2d63574eb4e.0"
+    ],
+    "thaumcraft:cluster;1;6": [
+      "book.original.tooltip.5eb577a21a24e3598b86.0"
+    ],
+    "thaumcraft:cluster_cinnabar;1;0": [
+      "book.original.tooltip.684e2072c6f4981a823b.0"
+    ],
+    "thaumcraft:cluster_copper;1;0": [
+      "book.original.tooltip.292664caa2a48abb4395.0"
+    ],
+    "thaumcraft:cluster_gold;1;0": [
+      "book.original.tooltip.02d811344a2c8b80f302.0"
+    ],
+    "thaumcraft:cluster_iron;1;0": [
+      "book.original.tooltip.a9401a7368d499df7475.0"
+    ],
+    "thaumcraft:condenser;1;0": [
+      "book.original.tooltip.08cf8b1e9a24fd7da28d.0"
+    ],
+    "thaumcraft:condenser_lattice_dirty;1;0": [
+      "book.original.tooltip.2ca6c15c2ec9b8697b4e.0"
+    ],
+    "thaumcraft:crucible;1;0": [
+      "book.original.tooltip.563889aad9d39bba8476.0"
+    ],
+    "thaumcraft:crystal_aer;1;0": [
+      "book.original.tooltip.95737d68ce2187ede19e.0"
+    ],
+    "thaumcraft:crystal_aqua;1;0": [
+      "book.original.tooltip.623c8fc1dafbb9d52132.0"
+    ],
+    "thaumcraft:crystal_essence;1;0": [
+      "book.original.tooltip.72ea8c93cbe8fb4e332a.0"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aer'}]}": [
+      "book.original.tooltip.e50875e0c05de0f5fd55.0",
+      "book.original.tooltip.e50875e0c05de0f5fd55.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aqua'}]}": [
+      "book.original.tooltip.2d7ca039778fbdf6527f.0",
+      "book.original.tooltip.2d7ca039778fbdf6527f.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'gelum'}]}": [
+      "book.original.tooltip.b6b572d21fabc5c6ed8e.0",
+      "book.original.tooltip.b6b572d21fabc5c6ed8e.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ignis'}]}": [
+      "book.original.tooltip.6695b8f855933f37e8c1.0",
+      "book.original.tooltip.6695b8f855933f37e8c1.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'lux'}]}": [
+      "book.original.tooltip.e4fbda0203b79be3b5c7.0",
+      "book.original.tooltip.e4fbda0203b79be3b5c7.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'metallum'}]}": [
+      "book.original.tooltip.64ae3ab449f745788232.0",
+      "book.original.tooltip.64ae3ab449f745788232.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'mortuus'}]}": [
+      "book.original.tooltip.53a837f93ae201a06834.0",
+      "book.original.tooltip.53a837f93ae201a06834.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'motus'}]}": [
+      "book.original.tooltip.191bd94c8eaa5a166d9f.0",
+      "book.original.tooltip.191bd94c8eaa5a166d9f.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ordo'}]}": [
+      "book.original.tooltip.d202f809e597927b2d2d.0",
+      "book.original.tooltip.d202f809e597927b2d2d.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'perditio'}]}": [
+      "book.original.tooltip.cf18ac0a55e3517dda9c.0",
+      "book.original.tooltip.cf18ac0a55e3517dda9c.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'permutatio'}]}": [
+      "book.original.tooltip.de6b8ff893aecfde9b63.0",
+      "book.original.tooltip.de6b8ff893aecfde9b63.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'potentia'}]}": [
+      "book.original.tooltip.dd36e1aa5ac348b031c1.0",
+      "book.original.tooltip.dd36e1aa5ac348b031c1.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'terra'}]}": [
+      "book.original.tooltip.f46dd735e8fbc523d7bc.0",
+      "book.original.tooltip.f46dd735e8fbc523d7bc.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'vacuos'}]}": [
+      "book.original.tooltip.8ec8cdac27b0b94a2473.0",
+      "book.original.tooltip.8ec8cdac27b0b94a2473.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'victus'}]}": [
+      "book.original.tooltip.0e21aef9c3d16b293bc2.0",
+      "book.original.tooltip.0e21aef9c3d16b293bc2.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'vitreus'}]}": [
+      "book.original.tooltip.52444a21ec05890f311a.0",
+      "book.original.tooltip.52444a21ec05890f311a.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"aer\",amount:1}]}": [
+      "book.original.tooltip.2f0038c4a32be15eab8a.0",
+      "book.original.tooltip.2f0038c4a32be15eab8a.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"alienis\",amount:1}]}": [
+      "book.original.tooltip.ac8f1c46639d87bf4cd0.0",
+      "book.original.tooltip.ac8f1c46639d87bf4cd0.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"alkimia\",amount:1}]}": [
+      "book.original.tooltip.b6c2151e9f2ca2aa1f83.0",
+      "book.original.tooltip.b6c2151e9f2ca2aa1f83.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"aqua\",amount:1}]}": [
+      "book.original.tooltip.0fd6b661e83a05c380f4.0",
+      "book.original.tooltip.0fd6b661e83a05c380f4.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"auram\",amount:1}]}": [
+      "book.original.tooltip.440361bcb94cd8f468bd.0",
+      "book.original.tooltip.440361bcb94cd8f468bd.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"aversio\",amount:1}]}": [
+      "book.original.tooltip.674312d874eda2591477.0",
+      "book.original.tooltip.674312d874eda2591477.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"bestia\",amount:1}]}": [
+      "book.original.tooltip.74d3b925669b48754839.0",
+      "book.original.tooltip.74d3b925669b48754839.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"cognitio\",amount:1}]}": [
+      "book.original.tooltip.3a1a3e2a65bbc9384b58.0",
+      "book.original.tooltip.3a1a3e2a65bbc9384b58.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"desiderium\",amount:1}]}": [
+      "book.original.tooltip.cd1620aa01d9a128364e.0",
+      "book.original.tooltip.cd1620aa01d9a128364e.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"exanimis\",amount:1}]}": [
+      "book.original.tooltip.c4e4b6f8ef0865f1246d.0",
+      "book.original.tooltip.c4e4b6f8ef0865f1246d.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"fabrico\",amount:1}]}": [
+      "book.original.tooltip.92a415af6f66b802e604.0",
+      "book.original.tooltip.92a415af6f66b802e604.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"gelum\",amount:1}]}": [
+      "book.original.tooltip.061435875d674e39ae98.0",
+      "book.original.tooltip.061435875d674e39ae98.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"herba\",amount:1}]}": [
+      "book.original.tooltip.011bfa1a346d1148f1ef.0",
+      "book.original.tooltip.011bfa1a346d1148f1ef.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"humanus\",amount:1}]}": [
+      "book.original.tooltip.2fa203ce780e73fab5e8.0",
+      "book.original.tooltip.2fa203ce780e73fab5e8.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"ignis\",amount:1}]}": [
+      "book.original.tooltip.85ef8953f58f2de69057.0",
+      "book.original.tooltip.85ef8953f58f2de69057.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"instrumentum\",amount:1}]}": [
+      "book.original.tooltip.07237d4df0cf30ad4b09.0",
+      "book.original.tooltip.07237d4df0cf30ad4b09.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"lux\",amount:1}]}": [
+      "book.original.tooltip.6981c5c38cb8ef3f324e.0",
+      "book.original.tooltip.6981c5c38cb8ef3f324e.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"machina\",amount:1}]}": [
+      "book.original.tooltip.50159b75fba8ecb69dda.0",
+      "book.original.tooltip.50159b75fba8ecb69dda.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"metallum\",amount:1}]}": [
+      "book.original.tooltip.b22724d7ec81fa62d1eb.0",
+      "book.original.tooltip.b22724d7ec81fa62d1eb.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"mortuus\",amount:1}]}": [
+      "book.original.tooltip.20355d8723688b177c07.0",
+      "book.original.tooltip.20355d8723688b177c07.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"motus\",amount:1}]}": [
+      "book.original.tooltip.5c1fdf17edea7d74700a.0",
+      "book.original.tooltip.5c1fdf17edea7d74700a.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"ordo\",amount:1}]}": [
+      "book.original.tooltip.f607b9831dd2b86559f8.0",
+      "book.original.tooltip.f607b9831dd2b86559f8.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"perditio\",amount:1}]}": [
+      "book.original.tooltip.44c890b956146913d004.0",
+      "book.original.tooltip.44c890b956146913d004.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"permutatio\",amount:1}]}": [
+      "book.original.tooltip.07309eca3c6fe7904296.0",
+      "book.original.tooltip.07309eca3c6fe7904296.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"potentia\",amount:1}]}": [
+      "book.original.tooltip.63d980c1653a46b2aeb0.0",
+      "book.original.tooltip.63d980c1653a46b2aeb0.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"praecantatio\",amount:1}]}": [
+      "book.original.tooltip.32ee2cf0059970df17e2.0",
+      "book.original.tooltip.32ee2cf0059970df17e2.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"praemunio\",amount:1}]}": [
+      "book.original.tooltip.b5312f4cee3a7581f06f.0",
+      "book.original.tooltip.b5312f4cee3a7581f06f.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"sensus\",amount:1}]}": [
+      "book.original.tooltip.e34d60b30b803d9d7d17.0",
+      "book.original.tooltip.e34d60b30b803d9d7d17.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"spiritus\",amount:1}]}": [
+      "book.original.tooltip.ff9533325a2c06b15fcb.0",
+      "book.original.tooltip.ff9533325a2c06b15fcb.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"tenebrae\",amount:1}]}": [
+      "book.original.tooltip.11f822b7e6d237c1e946.0",
+      "book.original.tooltip.11f822b7e6d237c1e946.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"terra\",amount:1}]}": [
+      "book.original.tooltip.e562c725be81a8b35eb2.0",
+      "book.original.tooltip.e562c725be81a8b35eb2.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vacuos\",amount:1}]}": [
+      "book.original.tooltip.fcbb4a9babb13e9f42fd.0",
+      "book.original.tooltip.fcbb4a9babb13e9f42fd.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"victus\",amount:1}]}": [
+      "book.original.tooltip.bd4e0fbb7ea4830e2c9d.0",
+      "book.original.tooltip.bd4e0fbb7ea4830e2c9d.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vinculum\",amount:1}]}": [
+      "book.original.tooltip.097448efc69922bdcb3d.0",
+      "book.original.tooltip.097448efc69922bdcb3d.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vitium\",amount:1}]}": [
+      "book.original.tooltip.29e8aa6b4885671392b1.0",
+      "book.original.tooltip.29e8aa6b4885671392b1.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vitreus\",amount:1}]}": [
+      "book.original.tooltip.aeecfc1525a6d65a7f69.0",
+      "book.original.tooltip.aeecfc1525a6d65a7f69.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"volatus\",amount:1}]}": [
+      "book.original.tooltip.04451c6f075d6dcff7b8.0",
+      "book.original.tooltip.04451c6f075d6dcff7b8.1"
+    ],
+    "thaumcraft:crystal_ignis;1;0": [
+      "book.original.tooltip.ddb57e938d3194e287a5.0"
+    ],
+    "thaumcraft:crystal_ordo;1;0": [
+      "book.original.tooltip.2d9a3f910e283be894cf.0"
+    ],
+    "thaumcraft:crystal_perditio;1;0": [
+      "book.original.tooltip.935257bd1ee214b2a5c4.0"
+    ],
+    "thaumcraft:crystal_terra;1;0": [
+      "book.original.tooltip.790b7b0b91babe740932.0"
+    ],
+    "thaumcraft:crystal_vitium;1;0": [
+      "book.original.tooltip.50a325f7d70f704c9ee1.0"
+    ],
+    "thaumcraft:curio;1;6": [
+      "book.original.tooltip.3e5517684d1354bb6b62.0",
+      "book.original.tooltip.3e5517684d1354bb6b62.1"
+    ],
+    "thaumcraft:curiosity_band;1;0": [
+      "book.original.tooltip.76be179bc81db7e42d5f.0",
+      "book.original.tooltip.76be179bc81db7e42d5f.1"
+    ],
+    "thaumcraft:dioptra;1;0": [
+      "book.original.tooltip.bbf6c1d8d89813e71636.0"
+    ],
+    "thaumcraft:elemental_axe;1;0": [
+      "book.original.tooltip.cae1e1378f85456266b1.0",
+      "book.original.tooltip.cae1e1378f85456266b1.1",
+      "book.original.tooltip.cae1e1378f85456266b1.2",
+      "book.original.tooltip.cae1e1378f85456266b1.3",
+      "book.original.tooltip.cae1e1378f85456266b1.4"
+    ],
+    "thaumcraft:elemental_hoe;1;0": [
+      "book.original.tooltip.b6bdade205bcf94af29c.0",
+      "book.original.tooltip.b6bdade205bcf94af29c.1",
+      "book.original.tooltip.b6bdade205bcf94af29c.2",
+      "book.original.tooltip.b6bdade205bcf94af29c.3",
+      "book.original.tooltip.b6bdade205bcf94af29c.4"
+    ],
+    "thaumcraft:elemental_pick;1;0": [
+      "book.original.tooltip.6bebc15eb736d18c09ba.0",
+      "book.original.tooltip.6bebc15eb736d18c09ba.1",
+      "book.original.tooltip.6bebc15eb736d18c09ba.2",
+      "book.original.tooltip.6bebc15eb736d18c09ba.3",
+      "book.original.tooltip.6bebc15eb736d18c09ba.4"
+    ],
+    "thaumcraft:elemental_shovel;1;0": [
+      "book.original.tooltip.ded91117a67b8f02458f.0",
+      "book.original.tooltip.ded91117a67b8f02458f.1",
+      "book.original.tooltip.ded91117a67b8f02458f.2",
+      "book.original.tooltip.ded91117a67b8f02458f.3",
+      "book.original.tooltip.ded91117a67b8f02458f.4"
+    ],
+    "thaumcraft:elemental_sword;1;0": [
+      "book.original.tooltip.fac89158d15a9ce78d5f.0",
+      "book.original.tooltip.fac89158d15a9ce78d5f.1",
+      "book.original.tooltip.fac89158d15a9ce78d5f.2",
+      "book.original.tooltip.fac89158d15a9ce78d5f.3",
+      "book.original.tooltip.fac89158d15a9ce78d5f.4"
+    ],
+    "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:0s,lvl:1s}]}": [
+      "book.original.tooltip.2722f58d67d750fb0d2e.0",
+      "book.original.tooltip.2722f58d67d750fb0d2e.1",
+      "book.original.tooltip.2722f58d67d750fb0d2e.2"
+    ],
+    "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:16s,lvl:1s}]}": [
+      "book.original.tooltip.23287534fbbb2c289cb5.0",
+      "book.original.tooltip.23287534fbbb2c289cb5.1",
+      "book.original.tooltip.23287534fbbb2c289cb5.2"
+    ],
+    "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:33s,lvl:1s}]}": [
+      "book.original.tooltip.eec1d12b8506adbba112.0",
+      "book.original.tooltip.eec1d12b8506adbba112.1",
+      "book.original.tooltip.eec1d12b8506adbba112.2"
+    ],
+    "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:35s,lvl:1s}]}": [
+      "book.original.tooltip.bc3491030acf59338ffa.0",
+      "book.original.tooltip.bc3491030acf59338ffa.1",
+      "book.original.tooltip.bc3491030acf59338ffa.2"
+    ],
+    "thaumcraft:essentia_input;1;0": [
+      "book.original.tooltip.eedcbb3b334889818dc7.0"
+    ],
+    "thaumcraft:essentia_output;1;0": [
+      "book.original.tooltip.324e9e4775b3b982d352.0"
+    ],
+    "thaumcraft:everfull_urn;1;0": [
+      "book.original.tooltip.efbbc74962875e540732.0"
+    ],
+    "thaumcraft:fabric;1;0": [
+      "book.original.tooltip.eed2fa414308dfad3817.0"
+    ],
+    "thaumcraft:filter;1;0": [
+      "book.original.tooltip.3660d24448b1bf27141b.0"
+    ],
+    "thaumcraft:flesh_block;1;0": [
+      "book.original.tooltip.fad70d65beeff4a46a5f.0"
+    ],
+    "thaumcraft:focus_1;1;0": [
+      "book.original.tooltip.8a16eb6b278253a7f8f6.0"
+    ],
+    "thaumcraft:focus_2;1;0": [
+      "book.original.tooltip.341c1634d836661ec8a0.0"
+    ],
+    "thaumcraft:focus_3;1;0": [
+      "book.original.tooltip.8d121f77ed15d1618ef4.0"
+    ],
+    "thaumcraft:focus_pouch;1;0": [
+      "book.original.tooltip.ddc6f15caedd5413945f.0",
+      "book.original.tooltip.ddc6f15caedd5413945f.1"
+    ],
+    "thaumcraft:fortress_chest;1;0": [
+      "book.original.tooltip.76dffb4922fd199abbbf.0",
+      "book.original.tooltip.76dffb4922fd199abbbf.1",
+      "book.original.tooltip.76dffb4922fd199abbbf.2",
+      "book.original.tooltip.76dffb4922fd199abbbf.3",
+      "book.original.tooltip.76dffb4922fd199abbbf.4"
+    ],
+    "thaumcraft:fortress_helm;1;0": [
+      "book.original.tooltip.1b353e574947645830d7.0",
+      "book.original.tooltip.1b353e574947645830d7.1",
+      "book.original.tooltip.1b353e574947645830d7.2",
+      "book.original.tooltip.1b353e574947645830d7.3",
+      "book.original.tooltip.1b353e574947645830d7.4"
+    ],
+    "thaumcraft:fortress_helm;1;0;{goggles:1b}": [
+      "book.original.tooltip.33d1256e6fd8e56deb5c.0",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.1",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.2",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.3",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.4",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.5"
+    ],
+    "thaumcraft:fortress_helm;1;0;{mask:0}": [
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.0",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.1",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.2",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.3",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.4",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.5"
+    ],
+    "thaumcraft:fortress_helm;1;0;{mask:1}": [
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.0",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.1",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.2",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.3",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.4",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.5"
+    ],
+    "thaumcraft:fortress_helm;1;0;{mask:2}": [
+      "book.original.tooltip.a921532b10c9d564fdb0.0",
+      "book.original.tooltip.a921532b10c9d564fdb0.1",
+      "book.original.tooltip.a921532b10c9d564fdb0.2",
+      "book.original.tooltip.a921532b10c9d564fdb0.3",
+      "book.original.tooltip.a921532b10c9d564fdb0.4",
+      "book.original.tooltip.a921532b10c9d564fdb0.5"
+    ],
+    "thaumcraft:fortress_legs;1;0": [
+      "book.original.tooltip.2ffda634bdbab3601785.0",
+      "book.original.tooltip.2ffda634bdbab3601785.1",
+      "book.original.tooltip.2ffda634bdbab3601785.2",
+      "book.original.tooltip.2ffda634bdbab3601785.3",
+      "book.original.tooltip.2ffda634bdbab3601785.4"
+    ],
+    "thaumcraft:goggles;1;0": [
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.0",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.1",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.2",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.3",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.4",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.5",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.6"
+    ],
+    "thaumcraft:golem_bell;1;0": [
+      "book.original.tooltip.4fa0fada9a78e57302c5.0"
+    ],
+    "thaumcraft:golem_builder;1;0": [
+      "book.original.tooltip.c50c512fc11e1da1acaa.0"
+    ],
+    "thaumcraft:grapple_gun;1;0": [
+      "book.original.tooltip.74c36224aa6d76ed6654.0",
+      "book.original.tooltip.74c36224aa6d76ed6654.1"
+    ],
+    "thaumcraft:grapple_gun_spool;1;0": [
+      "book.original.tooltip.caba412a054161f453b8.0"
+    ],
+    "thaumcraft:grapple_gun_tip;1;0": [
+      "book.original.tooltip.cb525678d63e2f1cb754.0"
+    ],
+    "thaumcraft:hand_mirror;1;0": [
+      "book.original.tooltip.4b1e36180abeadfc2b34.0"
+    ],
+    "thaumcraft:hungry_chest;1;0": [
+      "book.original.tooltip.647877ab1b252ff07658.0"
+    ],
+    "thaumcraft:infusion_matrix;1;0": [
+      "book.original.tooltip.f0ebb3c88033864c45dc.0"
+    ],
+    "thaumcraft:ingot;1;0": [
+      "book.original.tooltip.ffb0cad847b7e3730bf3.0"
+    ],
+    "thaumcraft:ingot;1;1": [
+      "book.original.tooltip.fc6685a48b3941acc22c.0"
+    ],
+    "thaumcraft:ingot;1;2": [
+      "book.original.tooltip.2748fc88eeb0151bb16c.0"
+    ],
+    "thaumcraft:ingot_brass;1;0": [
+      "book.original.tooltip.a11310560d0c870a8cbc.0"
+    ],
+    "thaumcraft:ingot_thaumium;1;0": [
+      "book.original.tooltip.b7a7497c98c10e2542ea.0"
+    ],
+    "thaumcraft:ingot_void;1;0": [
+      "book.original.tooltip.2c5a6c47183cf4a4bbb2.0"
+    ],
+    "thaumcraft:inlay;1;0": [
+      "book.original.tooltip.c34725370e9f7dd0e5ef.0"
+    ],
+    "thaumcraft:jar_brace;1;0": [
+      "book.original.tooltip.a8e97ef9887bcb19f65a.0"
+    ],
+    "thaumcraft:jar_brain;1;0": [
+      "book.original.tooltip.180be0bc97ced72104d8.0"
+    ],
+    "thaumcraft:jar_normal;1;0": [
+      "book.original.tooltip.7ca6c9e4bdf1f45505cf.0"
+    ],
+    "thaumcraft:jar_void;1;0": [
+      "book.original.tooltip.e2955d29e83c467223fc.0"
+    ],
+    "thaumcraft:label;1;0": [
+      "book.original.tooltip.ee079327c250b5e05afd.0"
+    ],
+    "thaumcraft:label;1;1": [
+      "book.original.tooltip.1213ae6487425b0141af.0"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"aer\",amount:1}]}": [
+      "book.original.tooltip.94b2449dffc28ea31c73.0",
+      "book.original.tooltip.94b2449dffc28ea31c73.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"alienis\",amount:1}]}": [
+      "book.original.tooltip.8308f4dcbf830d03bd35.0",
+      "book.original.tooltip.8308f4dcbf830d03bd35.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"alkimia\",amount:1}]}": [
+      "book.original.tooltip.8c9b7ff2131dbcec904c.0",
+      "book.original.tooltip.8c9b7ff2131dbcec904c.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"aqua\",amount:1}]}": [
+      "book.original.tooltip.9ff39741d57cc400f6c3.0",
+      "book.original.tooltip.9ff39741d57cc400f6c3.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"auram\",amount:1}]}": [
+      "book.original.tooltip.717a1866281684adc7f4.0",
+      "book.original.tooltip.717a1866281684adc7f4.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"aversio\",amount:1}]}": [
+      "book.original.tooltip.789dc2c9e7c203b69cad.0",
+      "book.original.tooltip.789dc2c9e7c203b69cad.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"bestia\",amount:1}]}": [
+      "book.original.tooltip.ee4dfd343fd79144c59a.0",
+      "book.original.tooltip.ee4dfd343fd79144c59a.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"cognitio\",amount:1}]}": [
+      "book.original.tooltip.113b775efa59693a8edc.0",
+      "book.original.tooltip.113b775efa59693a8edc.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"desiderium\",amount:1}]}": [
+      "book.original.tooltip.aaca612fb7e9f66a2e8a.0",
+      "book.original.tooltip.aaca612fb7e9f66a2e8a.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"exanimis\",amount:1}]}": [
+      "book.original.tooltip.312c3be79f2dcd9ba062.0",
+      "book.original.tooltip.312c3be79f2dcd9ba062.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"fabrico\",amount:1}]}": [
+      "book.original.tooltip.12fdab63f2cc59ad7c46.0",
+      "book.original.tooltip.12fdab63f2cc59ad7c46.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"gelum\",amount:1}]}": [
+      "book.original.tooltip.3fa82dcdf95cbf02f18a.0",
+      "book.original.tooltip.3fa82dcdf95cbf02f18a.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"herba\",amount:1}]}": [
+      "book.original.tooltip.89c3e946e6eec952659b.0",
+      "book.original.tooltip.89c3e946e6eec952659b.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"humanus\",amount:1}]}": [
+      "book.original.tooltip.8d3433cce65431344f2f.0",
+      "book.original.tooltip.8d3433cce65431344f2f.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"ignis\",amount:1}]}": [
+      "book.original.tooltip.65ade8e493ac9f322357.0",
+      "book.original.tooltip.65ade8e493ac9f322357.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"instrumentum\",amount:1}]}": [
+      "book.original.tooltip.b500db6dff7dbefd9e57.0",
+      "book.original.tooltip.b500db6dff7dbefd9e57.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"lux\",amount:1}]}": [
+      "book.original.tooltip.179dd9f9852729a11808.0",
+      "book.original.tooltip.179dd9f9852729a11808.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"machina\",amount:1}]}": [
+      "book.original.tooltip.48782bf1c0150110484c.0",
+      "book.original.tooltip.48782bf1c0150110484c.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"metallum\",amount:1}]}": [
+      "book.original.tooltip.d05ed34937d82aa565a0.0",
+      "book.original.tooltip.d05ed34937d82aa565a0.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"mortuus\",amount:1}]}": [
+      "book.original.tooltip.f801015db5249a917fde.0",
+      "book.original.tooltip.f801015db5249a917fde.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"motus\",amount:1}]}": [
+      "book.original.tooltip.43b8acdc37c6e49f83b3.0",
+      "book.original.tooltip.43b8acdc37c6e49f83b3.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"ordo\",amount:1}]}": [
+      "book.original.tooltip.2031d87b1314b2f48347.0",
+      "book.original.tooltip.2031d87b1314b2f48347.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"perditio\",amount:1}]}": [
+      "book.original.tooltip.baaf6847f0a90a478da6.0",
+      "book.original.tooltip.baaf6847f0a90a478da6.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"permutatio\",amount:1}]}": [
+      "book.original.tooltip.5cfc95bcf37015106c03.0",
+      "book.original.tooltip.5cfc95bcf37015106c03.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"potentia\",amount:1}]}": [
+      "book.original.tooltip.4e4427285940eff10a5a.0",
+      "book.original.tooltip.4e4427285940eff10a5a.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"praecantatio\",amount:1}]}": [
+      "book.original.tooltip.0eb9c5a6fa64c0acbf7b.0",
+      "book.original.tooltip.0eb9c5a6fa64c0acbf7b.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"praemunio\",amount:1}]}": [
+      "book.original.tooltip.608a349abb187fb4ae3c.0",
+      "book.original.tooltip.608a349abb187fb4ae3c.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"sensus\",amount:1}]}": [
+      "book.original.tooltip.7da861c16d89e8611cbe.0",
+      "book.original.tooltip.7da861c16d89e8611cbe.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"spiritus\",amount:1}]}": [
+      "book.original.tooltip.84404ea74c63ac366afb.0",
+      "book.original.tooltip.84404ea74c63ac366afb.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"tenebrae\",amount:1}]}": [
+      "book.original.tooltip.c95c9d880796d5bd5a4f.0",
+      "book.original.tooltip.c95c9d880796d5bd5a4f.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"terra\",amount:1}]}": [
+      "book.original.tooltip.8f3d497bda385a2b8be1.0",
+      "book.original.tooltip.8f3d497bda385a2b8be1.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"vacuos\",amount:1}]}": [
+      "book.original.tooltip.652194381e5256d41887.0",
+      "book.original.tooltip.652194381e5256d41887.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"victus\",amount:1}]}": [
+      "book.original.tooltip.63a5ca2839c98a5b8d5e.0",
+      "book.original.tooltip.63a5ca2839c98a5b8d5e.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"vinculum\",amount:1}]}": [
+      "book.original.tooltip.dd9efabfb7eb3a3ad0e1.0",
+      "book.original.tooltip.dd9efabfb7eb3a3ad0e1.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"vitium\",amount:1}]}": [
+      "book.original.tooltip.d7be3097211abfbe24e2.0",
+      "book.original.tooltip.d7be3097211abfbe24e2.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"vitreus\",amount:1}]}": [
+      "book.original.tooltip.2f36ac494b99bb210cf7.0",
+      "book.original.tooltip.2f36ac494b99bb210cf7.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"volatus\",amount:1}]}": [
+      "book.original.tooltip.a7a0065c991d14246825.0",
+      "book.original.tooltip.a7a0065c991d14246825.1"
+    ],
+    "thaumcraft:lamp_arcane;1;0": [
+      "book.original.tooltip.a1c091ca8f9bae22c68d.0"
+    ],
+    "thaumcraft:lamp_fertility;1;0": [
+      "book.original.tooltip.a0976cc3ee3c6fc0ae49.0"
+    ],
+    "thaumcraft:lamp_growth;1;0": [
+      "book.original.tooltip.db22b83c7ee6ff037f44.0"
+    ],
+    "thaumcraft:leather;1;0": [
+      "book.original.tooltip.4668be9d1fa4c310e7c4.0"
+    ],
+    "thaumcraft:levitator;1;0": [
+      "book.original.tooltip.cd70bb0a45429baa4320.0"
+    ],
+    "thaumcraft:log_greatwood;1;0": [
+      "book.original.tooltip.5cc930404116794e7a5d.0"
+    ],
+    "thaumcraft:log_silverwood;1;0": [
+      "book.original.tooltip.95273d81aaae2267f727.0"
+    ],
+    "thaumcraft:matrix_cost;1;0": [
+      "book.original.tooltip.deef5634f74fed065620.0"
+    ],
+    "thaumcraft:matrix_speed;1;0": [
+      "book.original.tooltip.2ff1bceddb5d2c534c88.0"
+    ],
+    "thaumcraft:mechanism_complex;1;0": [
+      "book.original.tooltip.f34d2940b6cff66ed0f2.0"
+    ],
+    "thaumcraft:mechanism_simple;1;0": [
+      "book.original.tooltip.d1ecb3614585c707d5c7.0"
+    ],
+    "thaumcraft:metal;1;2": [
+      "book.original.tooltip.7b1000b527d2fc53f70f.0"
+    ],
+    "thaumcraft:metal;1;3": [
+      "book.original.tooltip.28195db8fb3ab5fc137f.0"
+    ],
+    "thaumcraft:metal_alchemical;1;0": [
+      "book.original.tooltip.855a71fdeb72465c2fbe.0"
+    ],
+    "thaumcraft:metal_alchemical_advanced;1;0": [
+      "book.original.tooltip.0d0bae0b51d1be2886ec.0"
+    ],
+    "thaumcraft:metal_brass;1;0": [
+      "book.original.tooltip.8e25fdabefb9253ab841.0"
+    ],
+    "thaumcraft:metal_thaumium;1;0": [
+      "book.original.tooltip.a697e249636fd6c9fc5c.0"
+    ],
+    "thaumcraft:metal_void;1;0": [
+      "book.original.tooltip.75feab3d44246c906ce8.0"
+    ],
+    "thaumcraft:mind;1;0": [
+      "book.original.tooltip.de0746a9a3fe931d31f1.0"
+    ],
+    "thaumcraft:mind;1;1": [
+      "book.original.tooltip.963c1894ff90558097e3.0"
+    ],
+    "thaumcraft:mind_clockwork;1;0": [
+      "book.original.tooltip.876c62ab54584ff4c3b6.0"
+    ],
+    "thaumcraft:mirror;1;0": [
+      "book.original.tooltip.d53e9e3fb83c2c68f474.0"
+    ],
+    "thaumcraft:mirror_essentia;1;0": [
+      "book.original.tooltip.102cc09fc9fb0d22afdf.0"
+    ],
+    "thaumcraft:mirrored_glass;1;0": [
+      "book.original.tooltip.6f5bae8453b2fd37753c.0"
+    ],
+    "thaumcraft:module;1;0": [
+      "book.original.tooltip.a0eece8f1a1bb84309df.0"
+    ],
+    "thaumcraft:module;1;1": [
+      "book.original.tooltip.4b3a073917dd37f71b96.0"
+    ],
+    "thaumcraft:morphic_resonator;1;0": [
+      "book.original.tooltip.f241bec676d16b7ffa5c.0"
+    ],
+    "thaumcraft:nitor;1;4": [
+      "book.original.tooltip.dcd81bb93d276540ae11.0"
+    ],
+    "thaumcraft:nitor_black;1;0": [
+      "book.original.tooltip.fde9796a74b8f7ed12da.0"
+    ],
+    "thaumcraft:nitor_blue;1;0": [
+      "book.original.tooltip.5a8344b8e9fd22719fd5.0"
+    ],
+    "thaumcraft:nitor_brown;1;0": [
+      "book.original.tooltip.b3f2979a07348fa4979f.0"
+    ],
+    "thaumcraft:nitor_cyan;1;0": [
+      "book.original.tooltip.ebf752731f30de302841.0"
+    ],
+    "thaumcraft:nitor_gray;1;0": [
+      "book.original.tooltip.a0a1b7e291f720bd1913.0"
+    ],
+    "thaumcraft:nitor_green;1;0": [
+      "book.original.tooltip.0b4673cdece6d343180f.0"
+    ],
+    "thaumcraft:nitor_light_blue;1;0": [
+      "book.original.tooltip.25d309271275769175e6.0"
+    ],
+    "thaumcraft:nitor_light_gray;1;0": [
+      "book.original.tooltip.a40c02818999421c4da9.0"
+    ],
+    "thaumcraft:nitor_lightblue;1;0": [
+      "book.original.tooltip.62eeeb1355cdfdda4423.0"
+    ],
+    "thaumcraft:nitor_lime;1;0": [
+      "book.original.tooltip.265bdc79ecec877eb4aa.0"
+    ],
+    "thaumcraft:nitor_magenta;1;0": [
+      "book.original.tooltip.75ea6c3f405c1cdb211f.0"
+    ],
+    "thaumcraft:nitor_orange;1;0": [
+      "book.original.tooltip.a01cb063a11aa95d7804.0"
+    ],
+    "thaumcraft:nitor_pink;1;0": [
+      "book.original.tooltip.db89c4e7dc185c729711.0"
+    ],
+    "thaumcraft:nitor_purple;1;0": [
+      "book.original.tooltip.aa53d346c8dc394d7728.0"
+    ],
+    "thaumcraft:nitor_red;1;0": [
+      "book.original.tooltip.7623e88208a5169534ae.0"
+    ],
+    "thaumcraft:nitor_silver;1;0": [
+      "book.original.tooltip.0ba99ee3af99098d68b4.0"
+    ],
+    "thaumcraft:nitor_white;1;0": [
+      "book.original.tooltip.46734d7345c2d5b24522.0"
+    ],
+    "thaumcraft:nitor_yellow;1;0": [
+      "book.original.tooltip.451f5d7ad1785daf4fe8.0"
+    ],
+    "thaumcraft:nugget;1;0": [
+      "book.original.tooltip.616a28a7a20f230a76cb.0"
+    ],
+    "thaumcraft:nugget;1;10": [
+      "book.original.tooltip.48be88a804304108b68e.0"
+    ],
+    "thaumcraft:nugget;1;5": [
+      "book.original.tooltip.439a0ebef6c0f2a96de1.0"
+    ],
+    "thaumcraft:nugget;1;6": [
+      "book.original.tooltip.721ace01966c3a908ce4.0"
+    ],
+    "thaumcraft:nugget;1;7": [
+      "book.original.tooltip.2d49dc52c95662e226fd.0"
+    ],
+    "thaumcraft:nugget;1;8": [
+      "book.original.tooltip.5d59670ab49a482b843a.0"
+    ],
+    "thaumcraft:nugget;1;9": [
+      "book.original.tooltip.49d77d92cf725559f9ea.0"
+    ],
+    "thaumcraft:nugget_brass;1;0": [
+      "book.original.tooltip.af5893d8e48edeb82a6f.0"
+    ],
+    "thaumcraft:nugget_quartz;1;0": [
+      "book.original.tooltip.5bab6bb34bab95cbe3c8.0"
+    ],
+    "thaumcraft:nugget_quicksilver;1;0": [
+      "book.original.tooltip.21199e83471b0db8fd11.0"
+    ],
+    "thaumcraft:nugget_thaumium;1;0": [
+      "book.original.tooltip.8256210e8eeb46b5d0de.0"
+    ],
+    "thaumcraft:nugget_void;1;0": [
+      "book.original.tooltip.92082c40944e8c14ea3b.0"
+    ],
+    "thaumcraft:ore_cinnabar;1;0": [
+      "book.original.tooltip.3a8a0fe9b2ab5cedd43d.0"
+    ],
+    "thaumcraft:pattern_crafter;1;0": [
+      "book.original.tooltip.cf1b47c84b587f89d123.0"
+    ],
+    "thaumcraft:paving_stone_barrier;1;0": [
+      "book.original.tooltip.f6429d5109d1ce4ea8cd.0"
+    ],
+    "thaumcraft:paving_stone_travel;1;0": [
+      "book.original.tooltip.4556c95859960484765a.0"
+    ],
+    "thaumcraft:pedestal_ancient;1;0": [
+      "book.original.tooltip.42c19ecb4be321d1dc85.0"
+    ],
+    "thaumcraft:pedestal_arcane;1;0": [
+      "book.original.tooltip.aedef6d3c0ef18227b14.0"
+    ],
+    "thaumcraft:pedestal_eldritch;1;0": [
+      "book.original.tooltip.2b8fa4df703510c90f74.0"
+    ],
+    "thaumcraft:phial;1;0": [
+      "book.original.tooltip.aaa073487ec6b7339915.0"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'aer'}]}": [
+      "book.original.tooltip.ab306a1dd33b3a1afb6e.0",
+      "book.original.tooltip.ab306a1dd33b3a1afb6e.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'alienis'}]}": [
+      "book.original.tooltip.bc27826b6db932d7649c.0",
+      "book.original.tooltip.bc27826b6db932d7649c.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'alkimia'}]}": [
+      "book.original.tooltip.c684be6c92a96442f5df.0",
+      "book.original.tooltip.c684be6c92a96442f5df.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'vinculum'}]}": [
+      "book.original.tooltip.0385ec1bd5a17f5c97b3.0",
+      "book.original.tooltip.0385ec1bd5a17f5c97b3.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'vitium'}]}": [
+      "book.original.tooltip.2d6b7265774ba144584a.0",
+      "book.original.tooltip.2d6b7265774ba144584a.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"aer\",amount:10}]}": [
+      "book.original.tooltip.6aa8364290951d093145.0",
+      "book.original.tooltip.6aa8364290951d093145.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"alienis\",amount:10}]}": [
+      "book.original.tooltip.68b84c64a4faadf5b1d3.0",
+      "book.original.tooltip.68b84c64a4faadf5b1d3.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"alkimia\",amount:10}]}": [
+      "book.original.tooltip.dd991978e00699a96a59.0",
+      "book.original.tooltip.dd991978e00699a96a59.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"aqua\",amount:10}]}": [
+      "book.original.tooltip.de3ab96144a61cdae821.0",
+      "book.original.tooltip.de3ab96144a61cdae821.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"auram\",amount:10}]}": [
+      "book.original.tooltip.38892d43507087a4d90f.0",
+      "book.original.tooltip.38892d43507087a4d90f.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"aversio\",amount:10}]}": [
+      "book.original.tooltip.113689044d076621a726.0",
+      "book.original.tooltip.113689044d076621a726.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"bestia\",amount:10}]}": [
+      "book.original.tooltip.8f8bef32e2bc7c86fe4b.0",
+      "book.original.tooltip.8f8bef32e2bc7c86fe4b.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"cognitio\",amount:10}]}": [
+      "book.original.tooltip.20ebfd54f9ccb4751153.0",
+      "book.original.tooltip.20ebfd54f9ccb4751153.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"desiderium\",amount:10}]}": [
+      "book.original.tooltip.ddc5fb24be0c2b569f4d.0",
+      "book.original.tooltip.ddc5fb24be0c2b569f4d.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"exanimis\",amount:10}]}": [
+      "book.original.tooltip.244e896b1ef08ca0bc99.0",
+      "book.original.tooltip.244e896b1ef08ca0bc99.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"fabrico\",amount:10}]}": [
+      "book.original.tooltip.d0eef33d3d5030bf3930.0",
+      "book.original.tooltip.d0eef33d3d5030bf3930.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"gelum\",amount:10}]}": [
+      "book.original.tooltip.aa05002a7326fe91d3dc.0",
+      "book.original.tooltip.aa05002a7326fe91d3dc.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"herba\",amount:10}]}": [
+      "book.original.tooltip.c097a1b46c6e46ab1633.0",
+      "book.original.tooltip.c097a1b46c6e46ab1633.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"humanus\",amount:10}]}": [
+      "book.original.tooltip.0c545eec04b1be9778a8.0",
+      "book.original.tooltip.0c545eec04b1be9778a8.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"ignis\",amount:10}]}": [
+      "book.original.tooltip.73544eff9400224fb48b.0",
+      "book.original.tooltip.73544eff9400224fb48b.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"instrumentum\",amount:10}]}": [
+      "book.original.tooltip.67311b00b3b18aab4909.0",
+      "book.original.tooltip.67311b00b3b18aab4909.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"lux\",amount:10}]}": [
+      "book.original.tooltip.f90faf68b74563922d1a.0",
+      "book.original.tooltip.f90faf68b74563922d1a.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"machina\",amount:10}]}": [
+      "book.original.tooltip.f4dd78118e60dea907d7.0",
+      "book.original.tooltip.f4dd78118e60dea907d7.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"metallum\",amount:10}]}": [
+      "book.original.tooltip.2e7f76a44f0a22451970.0",
+      "book.original.tooltip.2e7f76a44f0a22451970.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"mortuus\",amount:10}]}": [
+      "book.original.tooltip.bf22404ddfb6d664d698.0",
+      "book.original.tooltip.bf22404ddfb6d664d698.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"motus\",amount:10}]}": [
+      "book.original.tooltip.66fa43dd264d76b4370e.0",
+      "book.original.tooltip.66fa43dd264d76b4370e.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"ordo\",amount:10}]}": [
+      "book.original.tooltip.0e2afe21aef26a12edf8.0",
+      "book.original.tooltip.0e2afe21aef26a12edf8.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"perditio\",amount:10}]}": [
+      "book.original.tooltip.6fbe60efece53c37e0cc.0",
+      "book.original.tooltip.6fbe60efece53c37e0cc.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"permutatio\",amount:10}]}": [
+      "book.original.tooltip.5ea73fa3e43e4ce62cf6.0",
+      "book.original.tooltip.5ea73fa3e43e4ce62cf6.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"potentia\",amount:10}]}": [
+      "book.original.tooltip.12dfd2f11408d4b9ecd7.0",
+      "book.original.tooltip.12dfd2f11408d4b9ecd7.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"praecantatio\",amount:10}]}": [
+      "book.original.tooltip.3c1c54bdf05754fe14e1.0",
+      "book.original.tooltip.3c1c54bdf05754fe14e1.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"praemunio\",amount:10}]}": [
+      "book.original.tooltip.38cf9afffd999e6fb638.0",
+      "book.original.tooltip.38cf9afffd999e6fb638.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"sensus\",amount:10}]}": [
+      "book.original.tooltip.5bfea8d329a677c2a8bd.0",
+      "book.original.tooltip.5bfea8d329a677c2a8bd.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"spiritus\",amount:10}]}": [
+      "book.original.tooltip.97413c5a6973569c1b96.0",
+      "book.original.tooltip.97413c5a6973569c1b96.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"tenebrae\",amount:10}]}": [
+      "book.original.tooltip.dd7b69bea5377df74e9a.0",
+      "book.original.tooltip.dd7b69bea5377df74e9a.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"terra\",amount:10}]}": [
+      "book.original.tooltip.f0b842667cad9db8d8cd.0",
+      "book.original.tooltip.f0b842667cad9db8d8cd.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"vacuos\",amount:10}]}": [
+      "book.original.tooltip.0bcde10794123dda2416.0",
+      "book.original.tooltip.0bcde10794123dda2416.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"victus\",amount:10}]}": [
+      "book.original.tooltip.4c27c5e8793790e18bbf.0",
+      "book.original.tooltip.4c27c5e8793790e18bbf.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"vinculum\",amount:10}]}": [
+      "book.original.tooltip.648c6742d5887d76303e.0",
+      "book.original.tooltip.648c6742d5887d76303e.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"vitium\",amount:10}]}": [
+      "book.original.tooltip.aa42aa07d5cf3cc8de48.0",
+      "book.original.tooltip.aa42aa07d5cf3cc8de48.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"vitreus\",amount:10}]}": [
+      "book.original.tooltip.46afb5d974446a3eef72.0",
+      "book.original.tooltip.46afb5d974446a3eef72.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"volatus\",amount:10}]}": [
+      "book.original.tooltip.759dcb2e98c78783729e.0",
+      "book.original.tooltip.759dcb2e98c78783729e.1"
+    ],
+    "thaumcraft:plank_greatwood;1;0": [
+      "book.original.tooltip.f6aa55e604b5ee587d0e.0"
+    ],
+    "thaumcraft:plank_silverwood;1;0": [
+      "book.original.tooltip.cd0e13d36ca101776aa8.0"
+    ],
+    "thaumcraft:plate;1;0": [
+      "book.original.tooltip.f6c321e83fee88a7cc41.0"
+    ],
+    "thaumcraft:plate;1;1": [
+      "book.original.tooltip.0e75ed2646fb6a73ab62.0"
+    ],
+    "thaumcraft:plate;1;2": [
+      "book.original.tooltip.5c2f7cccf909596378ab.0"
+    ],
+    "thaumcraft:plate;1;3": [
+      "book.original.tooltip.e939f167c119edff508d.0"
+    ],
+    "thaumcraft:plate_brass;1;0": [
+      "book.original.tooltip.6688a63dfdcd662de8ca.0"
+    ],
+    "thaumcraft:plate_iron;1;0": [
+      "book.original.tooltip.4dcea190f38ef5fc5503.0"
+    ],
+    "thaumcraft:plate_thaumium;1;0": [
+      "book.original.tooltip.6c80ecdd66c63f93313a.0"
+    ],
+    "thaumcraft:plate_void;1;0": [
+      "book.original.tooltip.c0b25ceef4887afa5f01.0"
+    ],
+    "thaumcraft:potion_sprayer;1;0": [
+      "book.original.tooltip.c23f27827ab6d81696f4.0"
+    ],
+    "thaumcraft:primal_crusher;1;0": [
+      "book.original.tooltip.c012054771d8e6863a33.0",
+      "book.original.tooltip.c012054771d8e6863a33.1",
+      "book.original.tooltip.c012054771d8e6863a33.2",
+      "book.original.tooltip.c012054771d8e6863a33.3",
+      "book.original.tooltip.c012054771d8e6863a33.4",
+      "book.original.tooltip.c012054771d8e6863a33.5"
+    ],
+    "thaumcraft:primordial_pearl;1;0": [
+      "book.original.tooltip.dcf4afa16125660fc7a2.0"
+    ],
+    "thaumcraft:quicksilver;1;0": [
+      "book.original.tooltip.5b776a56e1371964af31.0"
+    ],
+    "thaumcraft:recharge_pedestal;1;0": [
+      "book.original.tooltip.3448ae8202a26e368b0e.0"
+    ],
+    "thaumcraft:redstone_relay;1;0": [
+      "book.original.tooltip.5f8457b4c32bc54b54b9.0"
+    ],
+    "thaumcraft:research_table;1;0": [
+      "book.original.tooltip.f99a8d0f3cdb81d4f574.0"
+    ],
+    "thaumcraft:resonator;1;0": [
+      "book.original.tooltip.b704dc8126fac81ee8b4.0"
+    ],
+    "thaumcraft:salis_mundus;1;0": [
+      "book.original.tooltip.5659d557f7ee282ff5f7.0"
+    ],
+    "thaumcraft:sanity_checker;1;0": [
+      "book.original.tooltip.9bcb1374c016428d7cbc.0"
+    ],
+    "thaumcraft:sanity_soap;1;0": [
+      "book.original.tooltip.3e99af284c0238cb736d.0"
+    ],
+    "thaumcraft:scribing_tools;1;0": [
+      "book.original.tooltip.9a0038f9185d6a811446.0"
+    ],
+    "thaumcraft:seal;1;0": [
+      "book.original.tooltip.1b8df044850e44f02439.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:breaker": [
+      "book.original.tooltip.fda73307cedfa9b27448.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:breaker_advanced": [
+      "book.original.tooltip.8cb5ab3a8f1bb3154f7e.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:butcher": [
+      "book.original.tooltip.7948d99238f61235155b.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:empty": [
+      "book.original.tooltip.27bcfae1e7c9825cb8a2.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:empty_advanced": [
+      "book.original.tooltip.d68058c891a6fea0bd53.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:fill": [
+      "book.original.tooltip.22bdcc086eaca5662efc.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:fill_advanced": [
+      "book.original.tooltip.67f1dafc08dff0a9bfbd.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:guard": [
+      "book.original.tooltip.7edddb4a7c7b3888d943.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:guard_advanced": [
+      "book.original.tooltip.df0df57aab8cd1363d4f.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:harvest": [
+      "book.original.tooltip.c7fc133bb1f460664918.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:lumber": [
+      "book.original.tooltip.473c5ff2331f16ce621b.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:pickup": [
+      "book.original.tooltip.d129d584c963f9d87aa2.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:pickup_advanced": [
+      "book.original.tooltip.2db2d6bf86e17b6f6849.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:provider": [
+      "book.original.tooltip.b3859bdaa6b2d2b89d47.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:stock": [
+      "book.original.tooltip.2668a04d52474b591373.0"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:use": [
+      "book.original.tooltip.242d7454011efc2c203a.0"
+    ],
+    "thaumcraft:shimmerleaf;1;0": [
+      "book.original.tooltip.aeb678eabccd00169c4e.0"
+    ],
+    "thaumcraft:slab_ancient;1;0": [
+      "book.original.tooltip.6bb4489da4905658fa36.0"
+    ],
+    "thaumcraft:slab_arcane_brick;1;0": [
+      "book.original.tooltip.fb4dbe18d5ff754d7dee.0"
+    ],
+    "thaumcraft:slab_arcane_stone;1;0": [
+      "book.original.tooltip.e460dee5a4e319188389.0"
+    ],
+    "thaumcraft:slab_eldritch;1;0": [
+      "book.original.tooltip.0ecafbfc38f1afa61de6.0"
+    ],
+    "thaumcraft:slab_greatwood;1;0": [
+      "book.original.tooltip.784cb67ec361dcfbce30.0"
+    ],
+    "thaumcraft:slab_silverwood;1;0": [
+      "book.original.tooltip.29688a8e27739869e0fe.0"
+    ],
+    "thaumcraft:smelter_aux;1;0": [
+      "book.original.tooltip.da9b25486eb653bc6444.0"
+    ],
+    "thaumcraft:smelter_basic;1;0": [
+      "book.original.tooltip.1cf00e636cd7cee141d9.0"
+    ],
+    "thaumcraft:smelter_thaumium;1;0": [
+      "book.original.tooltip.d4ab720a92add78c19e9.0"
+    ],
+    "thaumcraft:smelter_vent;1;0": [
+      "book.original.tooltip.cc1ed8d9767639d4c333.0"
+    ],
+    "thaumcraft:smelter_void;1;0": [
+      "book.original.tooltip.de3dd021f95c8ef572cb.0"
+    ],
+    "thaumcraft:spa;1;0": [
+      "book.original.tooltip.cba797e44bbd13f85100.0"
+    ],
+    "thaumcraft:stabilizer;1;0": [
+      "book.original.tooltip.7efa9c666efeb87a10ad.0"
+    ],
+    "thaumcraft:stairs_ancient;1;0": [
+      "book.original.tooltip.286c0e38418b3b066258.0"
+    ],
+    "thaumcraft:stairs_arcane;1;0": [
+      "book.original.tooltip.7652137d3093229c6dfc.0"
+    ],
+    "thaumcraft:stairs_arcane_brick;1;0": [
+      "book.original.tooltip.987c5749944eabd93d74.0"
+    ],
+    "thaumcraft:stairs_greatwood;1;0": [
+      "book.original.tooltip.a316fe9af69dec8ef7a9.0"
+    ],
+    "thaumcraft:stairs_silverwood;1;0": [
+      "book.original.tooltip.42233765f429b61b7980.0"
+    ],
+    "thaumcraft:stone_ancient;1;0": [
+      "book.original.tooltip.24ce422391f4a593ade9.0"
+    ],
+    "thaumcraft:stone_arcane;1;0": [
+      "book.original.tooltip.b713a6b4d23cb0d47532.0"
+    ],
+    "thaumcraft:stone_arcane_brick;1;0": [
+      "book.original.tooltip.618566ba395797711027.0"
+    ],
+    "thaumcraft:stone_eldritch_tile;1;0": [
+      "book.original.tooltip.a3a9f2185bc97066647e.0"
+    ],
+    "thaumcraft:table_stone;1;0": [
+      "book.original.tooltip.639f7c9b0164ff5e06de.0"
+    ],
+    "thaumcraft:table_wood;1;0": [
+      "book.original.tooltip.a0143d256cbbf66aaff0.0"
+    ],
+    "thaumcraft:tallow;1;0": [
+      "book.original.tooltip.09814127302addbf4dac.0"
+    ],
+    "thaumcraft:thaumium_axe;1;0": [
+      "book.original.tooltip.8faa89c13d9f09dbd708.0",
+      "book.original.tooltip.8faa89c13d9f09dbd708.1",
+      "book.original.tooltip.8faa89c13d9f09dbd708.2",
+      "book.original.tooltip.8faa89c13d9f09dbd708.3",
+      "book.original.tooltip.8faa89c13d9f09dbd708.4"
+    ],
+    "thaumcraft:thaumium_boots;1;0": [
+      "book.original.tooltip.7d164dadba82a5a14853.0",
+      "book.original.tooltip.7d164dadba82a5a14853.1",
+      "book.original.tooltip.7d164dadba82a5a14853.2",
+      "book.original.tooltip.7d164dadba82a5a14853.3",
+      "book.original.tooltip.7d164dadba82a5a14853.4"
+    ],
+    "thaumcraft:thaumium_chest;1;0": [
+      "book.original.tooltip.f14d77166225a22cb8bd.0",
+      "book.original.tooltip.f14d77166225a22cb8bd.1",
+      "book.original.tooltip.f14d77166225a22cb8bd.2",
+      "book.original.tooltip.f14d77166225a22cb8bd.3",
+      "book.original.tooltip.f14d77166225a22cb8bd.4"
+    ],
+    "thaumcraft:thaumium_helm;1;0": [
+      "book.original.tooltip.14c2c24a44c8b2b98dce.0",
+      "book.original.tooltip.14c2c24a44c8b2b98dce.1",
+      "book.original.tooltip.14c2c24a44c8b2b98dce.2",
+      "book.original.tooltip.14c2c24a44c8b2b98dce.3",
+      "book.original.tooltip.14c2c24a44c8b2b98dce.4"
+    ],
+    "thaumcraft:thaumium_hoe;1;0": [
+      "book.original.tooltip.9f015140c5187826f13e.0",
+      "book.original.tooltip.9f015140c5187826f13e.1",
+      "book.original.tooltip.9f015140c5187826f13e.2",
+      "book.original.tooltip.9f015140c5187826f13e.3",
+      "book.original.tooltip.9f015140c5187826f13e.4"
+    ],
+    "thaumcraft:thaumium_legs;1;0": [
+      "book.original.tooltip.bc4c255ac66338d6ab39.0",
+      "book.original.tooltip.bc4c255ac66338d6ab39.1",
+      "book.original.tooltip.bc4c255ac66338d6ab39.2",
+      "book.original.tooltip.bc4c255ac66338d6ab39.3",
+      "book.original.tooltip.bc4c255ac66338d6ab39.4"
+    ],
+    "thaumcraft:thaumium_pick;1;0": [
+      "book.original.tooltip.22b5f5af8dd51dd92063.0",
+      "book.original.tooltip.22b5f5af8dd51dd92063.1",
+      "book.original.tooltip.22b5f5af8dd51dd92063.2",
+      "book.original.tooltip.22b5f5af8dd51dd92063.3",
+      "book.original.tooltip.22b5f5af8dd51dd92063.4"
+    ],
+    "thaumcraft:thaumium_shovel;1;0": [
+      "book.original.tooltip.9f17da78e9db47a79196.0",
+      "book.original.tooltip.9f17da78e9db47a79196.1",
+      "book.original.tooltip.9f17da78e9db47a79196.2",
+      "book.original.tooltip.9f17da78e9db47a79196.3",
+      "book.original.tooltip.9f17da78e9db47a79196.4"
+    ],
+    "thaumcraft:thaumium_sword;1;0": [
+      "book.original.tooltip.7e0acad80219167a013d.0",
+      "book.original.tooltip.7e0acad80219167a013d.1",
+      "book.original.tooltip.7e0acad80219167a013d.2",
+      "book.original.tooltip.7e0acad80219167a013d.3",
+      "book.original.tooltip.7e0acad80219167a013d.4"
+    ],
+    "thaumcraft:thaumometer;1;0": [
+      "book.original.tooltip.713f96445b85ef67e0a7.0"
+    ],
+    "thaumcraft:traveller_boots;1;0": [
+      "book.original.tooltip.e3d521058c154ee4948d.0",
+      "book.original.tooltip.e3d521058c154ee4948d.1",
+      "book.original.tooltip.e3d521058c154ee4948d.2",
+      "book.original.tooltip.e3d521058c154ee4948d.3",
+      "book.original.tooltip.e3d521058c154ee4948d.4",
+      "book.original.tooltip.e3d521058c154ee4948d.5"
+    ],
+    "thaumcraft:triple_meat_treat;1;0": [
+      "book.original.tooltip.83d263bbd706748854d1.0"
+    ],
+    "thaumcraft:tube;1;0": [
+      "book.original.tooltip.0e0a0b93e7c66effc568.0"
+    ],
+    "thaumcraft:tube_buffer;1;0": [
+      "book.original.tooltip.e7ce37854dd5c69f7c28.0"
+    ],
+    "thaumcraft:tube_filter;1;0": [
+      "book.original.tooltip.438ca36430d0086bbcda.0"
+    ],
+    "thaumcraft:tube_oneway;1;0": [
+      "book.original.tooltip.92dc615df23b2087d889.0"
+    ],
+    "thaumcraft:tube_restrict;1;0": [
+      "book.original.tooltip.b022c716c35bb2a7a7f0.0"
+    ],
+    "thaumcraft:tube_valve;1;0": [
+      "book.original.tooltip.2c8c6202a5008ec3effa.0"
+    ],
+    "thaumcraft:turret;1;0": [
+      "book.original.tooltip.a1ea09a737c2c53eaf09.0"
+    ],
+    "thaumcraft:turret;1;1": [
+      "book.original.tooltip.937c5383ac964095e416.0"
+    ],
+    "thaumcraft:turret;1;2": [
+      "book.original.tooltip.4b763dd970be0cc67d5a.0"
+    ],
+    "thaumcraft:verdant_charm;1;0": [
+      "book.original.tooltip.c3ebc41c9e0b9baca718.0",
+      "book.original.tooltip.c3ebc41c9e0b9baca718.1",
+      "book.original.tooltip.c3ebc41c9e0b9baca718.2"
+    ],
+    "thaumcraft:verdant_charm;1;0;{type:1b}": [
+      "book.original.tooltip.fe761b4e381c8cef341a.0",
+      "book.original.tooltip.fe761b4e381c8cef341a.1",
+      "book.original.tooltip.fe761b4e381c8cef341a.2",
+      "book.original.tooltip.fe761b4e381c8cef341a.3"
+    ],
+    "thaumcraft:verdant_charm;1;0;{type:2b}": [
+      "book.original.tooltip.3bf669a9c4425c6dc58e.0",
+      "book.original.tooltip.3bf669a9c4425c6dc58e.1",
+      "book.original.tooltip.3bf669a9c4425c6dc58e.2",
+      "book.original.tooltip.3bf669a9c4425c6dc58e.3"
+    ],
+    "thaumcraft:vis_battery;1;0": [
+      "book.original.tooltip.8b66eca369a08d9fb927.0"
+    ],
+    "thaumcraft:vis_generator;1;0": [
+      "book.original.tooltip.e82f46095689fed8f4bd.0"
+    ],
+    "thaumcraft:vis_resonator;1;0": [
+      "book.original.tooltip.075bf0788b0ffdc35d37.0"
+    ],
+    "thaumcraft:void_axe;1;0": [
+      "book.original.tooltip.dbabb65a6e80d3238cd6.0",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.1",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.2",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.3",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.4",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.5"
+    ],
+    "thaumcraft:void_boots;1;0": [
+      "book.original.tooltip.a63f86f01e9d66fe95e0.0",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.1",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.2",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.3",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.4",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.5"
+    ],
+    "thaumcraft:void_chest;1;0": [
+      "book.original.tooltip.2bf40d99db44b5204455.0",
+      "book.original.tooltip.2bf40d99db44b5204455.1",
+      "book.original.tooltip.2bf40d99db44b5204455.2",
+      "book.original.tooltip.2bf40d99db44b5204455.3",
+      "book.original.tooltip.2bf40d99db44b5204455.4",
+      "book.original.tooltip.2bf40d99db44b5204455.5"
+    ],
+    "thaumcraft:void_helm;1;0": [
+      "book.original.tooltip.a3eaefa94346848abae3.0",
+      "book.original.tooltip.a3eaefa94346848abae3.1",
+      "book.original.tooltip.a3eaefa94346848abae3.2",
+      "book.original.tooltip.a3eaefa94346848abae3.3",
+      "book.original.tooltip.a3eaefa94346848abae3.4",
+      "book.original.tooltip.a3eaefa94346848abae3.5"
+    ],
+    "thaumcraft:void_hoe;1;0": [
+      "book.original.tooltip.15ecc30c8040e227e9c5.0",
+      "book.original.tooltip.15ecc30c8040e227e9c5.1",
+      "book.original.tooltip.15ecc30c8040e227e9c5.2",
+      "book.original.tooltip.15ecc30c8040e227e9c5.3",
+      "book.original.tooltip.15ecc30c8040e227e9c5.4",
+      "book.original.tooltip.15ecc30c8040e227e9c5.5"
+    ],
+    "thaumcraft:void_legs;1;0": [
+      "book.original.tooltip.64ef5edad14208ece977.0",
+      "book.original.tooltip.64ef5edad14208ece977.1",
+      "book.original.tooltip.64ef5edad14208ece977.2",
+      "book.original.tooltip.64ef5edad14208ece977.3",
+      "book.original.tooltip.64ef5edad14208ece977.4",
+      "book.original.tooltip.64ef5edad14208ece977.5"
+    ],
+    "thaumcraft:void_pick;1;0": [
+      "book.original.tooltip.90dc5344ab8712b1a841.0",
+      "book.original.tooltip.90dc5344ab8712b1a841.1",
+      "book.original.tooltip.90dc5344ab8712b1a841.2",
+      "book.original.tooltip.90dc5344ab8712b1a841.3",
+      "book.original.tooltip.90dc5344ab8712b1a841.4",
+      "book.original.tooltip.90dc5344ab8712b1a841.5"
+    ],
+    "thaumcraft:void_robe_chest;1;0": [
+      "book.original.tooltip.f1e593addc3b0d9d593c.0",
+      "book.original.tooltip.f1e593addc3b0d9d593c.1",
+      "book.original.tooltip.f1e593addc3b0d9d593c.2",
+      "book.original.tooltip.f1e593addc3b0d9d593c.3",
+      "book.original.tooltip.f1e593addc3b0d9d593c.4",
+      "book.original.tooltip.f1e593addc3b0d9d593c.5",
+      "book.original.tooltip.f1e593addc3b0d9d593c.6"
+    ],
+    "thaumcraft:void_robe_helm;1;0": [
+      "book.original.tooltip.928f5be6d7ffd5df5c38.0",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.1",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.2",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.3",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.4",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.5",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.6"
+    ],
+    "thaumcraft:void_robe_legs;1;0": [
+      "book.original.tooltip.d6b669e5055a81e489db.0",
+      "book.original.tooltip.d6b669e5055a81e489db.1",
+      "book.original.tooltip.d6b669e5055a81e489db.2",
+      "book.original.tooltip.d6b669e5055a81e489db.3",
+      "book.original.tooltip.d6b669e5055a81e489db.4",
+      "book.original.tooltip.d6b669e5055a81e489db.5",
+      "book.original.tooltip.d6b669e5055a81e489db.6"
+    ],
+    "thaumcraft:void_seed;1;0": [
+      "book.original.tooltip.647c289f2de181b4cdb2.0"
+    ],
+    "thaumcraft:void_shovel;1;0": [
+      "book.original.tooltip.3ed7c8860ac3c759bbde.0",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.1",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.2",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.3",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.4",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.5"
+    ],
+    "thaumcraft:void_siphon;1;0": [
+      "book.original.tooltip.ccbe540aac5ae6d029a1.0"
+    ],
+    "thaumcraft:void_sword;1;0": [
+      "book.original.tooltip.ed7256269e5572b15c13.0",
+      "book.original.tooltip.ed7256269e5572b15c13.1",
+      "book.original.tooltip.ed7256269e5572b15c13.2",
+      "book.original.tooltip.ed7256269e5572b15c13.3",
+      "book.original.tooltip.ed7256269e5572b15c13.4",
+      "book.original.tooltip.ed7256269e5572b15c13.5",
+      "book.original.tooltip.ed7256269e5572b15c13.6"
+    ],
+    "thaumcraft:voidseer_charm;1;0": [
+      "book.original.tooltip.b4f76366b2c947cb9d6a.0",
+      "book.original.tooltip.b4f76366b2c947cb9d6a.1",
+      "book.original.tooltip.b4f76366b2c947cb9d6a.2"
+    ],
+    "thaumcraft:wand_workbench;1;0": [
+      "book.original.tooltip.372b92761283cdab5f89.0"
+    ]
+  },
+  "advanced_entries": {
+    "thaumcraft:activator_rail;1;0": [
+      "book.original.tooltip.dda3c452542e042f75e7.advanced.0",
+      "book.original.tooltip.dda3c452542e042f75e7.advanced.1"
+    ],
+    "thaumcraft:alembic;1;0": [
+      "book.original.tooltip.00c880337a860ac9295c.advanced.0",
+      "book.original.tooltip.00c880337a860ac9295c.advanced.1"
+    ],
+    "thaumcraft:alumentum;1;0": [
+      "book.original.tooltip.5f2e5ad3ee2cae98a1a1.advanced.0",
+      "book.original.tooltip.5f2e5ad3ee2cae98a1a1.advanced.1"
+    ],
+    "thaumcraft:amber;1;0": [
+      "book.original.tooltip.b966e276fd7cc4a6d5cb.advanced.0",
+      "book.original.tooltip.b966e276fd7cc4a6d5cb.advanced.1"
+    ],
+    "thaumcraft:amber_block;1;0": [
+      "book.original.tooltip.9d554f01be8b1a6595dd.advanced.0",
+      "book.original.tooltip.9d554f01be8b1a6595dd.advanced.1"
+    ],
+    "thaumcraft:amber_brick;1;0": [
+      "book.original.tooltip.743eaef144258b6d3bc2.advanced.0",
+      "book.original.tooltip.743eaef144258b6d3bc2.advanced.1"
+    ],
+    "thaumcraft:amulet_vis;1;1": [
+      "book.original.tooltip.ff6db348f546303465f8.advanced.0",
+      "book.original.tooltip.ff6db348f546303465f8.advanced.1",
+      "book.original.tooltip.ff6db348f546303465f8.advanced.2",
+      "book.original.tooltip.ff6db348f546303465f8.advanced.3"
+    ],
+    "thaumcraft:arcane_brick;1;0": [
+      "book.original.tooltip.320bb6e8753ec9e4778e.advanced.0",
+      "book.original.tooltip.320bb6e8753ec9e4778e.advanced.1"
+    ],
+    "thaumcraft:arcane_ear;1;0": [
+      "book.original.tooltip.474a71774c5132d9bf95.advanced.0",
+      "book.original.tooltip.474a71774c5132d9bf95.advanced.1"
+    ],
+    "thaumcraft:arcane_ear_toggle;1;0": [
+      "book.original.tooltip.f074ca841780f1df5a77.advanced.0",
+      "book.original.tooltip.f074ca841780f1df5a77.advanced.1"
+    ],
+    "thaumcraft:arcane_stone;1;0": [
+      "book.original.tooltip.72cee312aa6699c8701d.advanced.0",
+      "book.original.tooltip.72cee312aa6699c8701d.advanced.1"
+    ],
+    "thaumcraft:arcane_workbench;1;0": [
+      "book.original.tooltip.f17e65a35906b908ac49.advanced.0",
+      "book.original.tooltip.f17e65a35906b908ac49.advanced.1"
+    ],
+    "thaumcraft:arcane_workbench_charger;1;0": [
+      "book.original.tooltip.5886a91c7bf17ad7e250.advanced.0",
+      "book.original.tooltip.5886a91c7bf17ad7e250.advanced.1"
+    ],
+    "thaumcraft:banner_black;1;0": [
+      "book.original.tooltip.96f75d661251b201f8d3.advanced.0",
+      "book.original.tooltip.96f75d661251b201f8d3.advanced.1"
+    ],
+    "thaumcraft:banner_blue;1;0": [
+      "book.original.tooltip.ed3bfdaf0cca7315077f.advanced.0",
+      "book.original.tooltip.ed3bfdaf0cca7315077f.advanced.1"
+    ],
+    "thaumcraft:banner_brown;1;0": [
+      "book.original.tooltip.5aa23dc4e77ca4e100e1.advanced.0",
+      "book.original.tooltip.5aa23dc4e77ca4e100e1.advanced.1"
+    ],
+    "thaumcraft:banner_cyan;1;0": [
+      "book.original.tooltip.7396c0f2c9c65574fab6.advanced.0",
+      "book.original.tooltip.7396c0f2c9c65574fab6.advanced.1"
+    ],
+    "thaumcraft:banner_gray;1;0": [
+      "book.original.tooltip.0c07b3f9b76f158c2473.advanced.0",
+      "book.original.tooltip.0c07b3f9b76f158c2473.advanced.1"
+    ],
+    "thaumcraft:banner_green;1;0": [
+      "book.original.tooltip.491bffe0d58d0d8f30b2.advanced.0",
+      "book.original.tooltip.491bffe0d58d0d8f30b2.advanced.1"
+    ],
+    "thaumcraft:banner_light_blue;1;0": [
+      "book.original.tooltip.1e64405faecb8bd7127a.advanced.0",
+      "book.original.tooltip.1e64405faecb8bd7127a.advanced.1"
+    ],
+    "thaumcraft:banner_lime;1;0": [
+      "book.original.tooltip.5ba22fb7ef460333e85e.advanced.0",
+      "book.original.tooltip.5ba22fb7ef460333e85e.advanced.1"
+    ],
+    "thaumcraft:banner_magenta;1;0": [
+      "book.original.tooltip.8877820c97f6d75107bb.advanced.0",
+      "book.original.tooltip.8877820c97f6d75107bb.advanced.1"
+    ],
+    "thaumcraft:banner_orange;1;0": [
+      "book.original.tooltip.a85f0e74b0ea0d09daa2.advanced.0",
+      "book.original.tooltip.a85f0e74b0ea0d09daa2.advanced.1"
+    ],
+    "thaumcraft:banner_pink;1;0": [
+      "book.original.tooltip.4e24d0adc761076917b4.advanced.0",
+      "book.original.tooltip.4e24d0adc761076917b4.advanced.1"
+    ],
+    "thaumcraft:banner_purple;1;0": [
+      "book.original.tooltip.4b1c847ef774afb21e64.advanced.0",
+      "book.original.tooltip.4b1c847ef774afb21e64.advanced.1"
+    ],
+    "thaumcraft:banner_red;1;0": [
+      "book.original.tooltip.a96cec767571545cc179.advanced.0",
+      "book.original.tooltip.a96cec767571545cc179.advanced.1"
+    ],
+    "thaumcraft:banner_silver;1;0": [
+      "book.original.tooltip.90a2e8fea812301db74d.advanced.0",
+      "book.original.tooltip.90a2e8fea812301db74d.advanced.1"
+    ],
+    "thaumcraft:banner_white;1;0": [
+      "book.original.tooltip.094fe1c1379ed441bb52.advanced.0",
+      "book.original.tooltip.094fe1c1379ed441bb52.advanced.1"
+    ],
+    "thaumcraft:banner_yellow;1;0": [
+      "book.original.tooltip.62bce61d7deba7cb2246.advanced.0",
+      "book.original.tooltip.62bce61d7deba7cb2246.advanced.1"
+    ],
+    "thaumcraft:bath_salts;1;0": [
+      "book.original.tooltip.b4121a32aefd8858ab00.advanced.0",
+      "book.original.tooltip.b4121a32aefd8858ab00.advanced.1"
+    ],
+    "thaumcraft:baubles;1;0": [
+      "book.original.tooltip.c45f09d60c38f80aa139.advanced.0",
+      "book.original.tooltip.c45f09d60c38f80aa139.advanced.1",
+      "book.original.tooltip.c45f09d60c38f80aa139.advanced.2"
+    ],
+    "thaumcraft:baubles;1;1": [
+      "book.original.tooltip.ba313e33a9c4608c5c49.advanced.0",
+      "book.original.tooltip.ba313e33a9c4608c5c49.advanced.1",
+      "book.original.tooltip.ba313e33a9c4608c5c49.advanced.2"
+    ],
+    "thaumcraft:baubles;1;2": [
+      "book.original.tooltip.33073a957b7cf9a65398.advanced.0",
+      "book.original.tooltip.33073a957b7cf9a65398.advanced.1",
+      "book.original.tooltip.33073a957b7cf9a65398.advanced.2"
+    ],
+    "thaumcraft:baubles;1;4": [
+      "book.original.tooltip.20cd42d3b889a0a9aee4.advanced.0",
+      "book.original.tooltip.20cd42d3b889a0a9aee4.advanced.1",
+      "book.original.tooltip.20cd42d3b889a0a9aee4.advanced.2"
+    ],
+    "thaumcraft:baubles;1;5": [
+      "book.original.tooltip.6e7abae6b29b619a45ff.advanced.0",
+      "book.original.tooltip.6e7abae6b29b619a45ff.advanced.1",
+      "book.original.tooltip.6e7abae6b29b619a45ff.advanced.2"
+    ],
+    "thaumcraft:baubles;1;6": [
+      "book.original.tooltip.bf3cc5a3ecfd5439970e.advanced.0",
+      "book.original.tooltip.bf3cc5a3ecfd5439970e.advanced.1",
+      "book.original.tooltip.bf3cc5a3ecfd5439970e.advanced.2"
+    ],
+    "thaumcraft:bellows;1;0": [
+      "book.original.tooltip.cad25dc2ab0527928508.advanced.0",
+      "book.original.tooltip.cad25dc2ab0527928508.advanced.1"
+    ],
+    "thaumcraft:bottle_taint;1;0": [
+      "book.original.tooltip.13ead3e4bd35f9e6269d.advanced.0",
+      "book.original.tooltip.13ead3e4bd35f9e6269d.advanced.1"
+    ],
+    "thaumcraft:brain;1;0": [
+      "book.original.tooltip.82cec5fca5bae335e4ee.advanced.0",
+      "book.original.tooltip.82cec5fca5bae335e4ee.advanced.1"
+    ],
+    "thaumcraft:brain_box;1;0": [
+      "book.original.tooltip.9a3315dc614ad86a4437.advanced.0",
+      "book.original.tooltip.9a3315dc614ad86a4437.advanced.1"
+    ],
+    "thaumcraft:bucket_death;1;0": [
+      "book.original.tooltip.05a1f1f33b8d7d2489eb.advanced.0",
+      "book.original.tooltip.05a1f1f33b8d7d2489eb.advanced.1",
+      "book.original.tooltip.05a1f1f33b8d7d2489eb.advanced.2"
+    ],
+    "thaumcraft:candle_black;1;0": [
+      "book.original.tooltip.4a65e78a56573a51b96c.advanced.0",
+      "book.original.tooltip.4a65e78a56573a51b96c.advanced.1"
+    ],
+    "thaumcraft:candle_blue;1;0": [
+      "book.original.tooltip.a5791ef86e262829f565.advanced.0",
+      "book.original.tooltip.a5791ef86e262829f565.advanced.1"
+    ],
+    "thaumcraft:candle_brown;1;0": [
+      "book.original.tooltip.e73f9a4ef99d7a35a13c.advanced.0",
+      "book.original.tooltip.e73f9a4ef99d7a35a13c.advanced.1"
+    ],
+    "thaumcraft:candle_cyan;1;0": [
+      "book.original.tooltip.cfc1f3aa1c8d0613e45d.advanced.0",
+      "book.original.tooltip.cfc1f3aa1c8d0613e45d.advanced.1"
+    ],
+    "thaumcraft:candle_gray;1;0": [
+      "book.original.tooltip.239a9ce1f37f911c7918.advanced.0",
+      "book.original.tooltip.239a9ce1f37f911c7918.advanced.1"
+    ],
+    "thaumcraft:candle_green;1;0": [
+      "book.original.tooltip.a3a764c70ea4b052ee8b.advanced.0",
+      "book.original.tooltip.a3a764c70ea4b052ee8b.advanced.1"
+    ],
+    "thaumcraft:candle_light_blue;1;0": [
+      "book.original.tooltip.4c2e6025849a4455933e.advanced.0",
+      "book.original.tooltip.4c2e6025849a4455933e.advanced.1"
+    ],
+    "thaumcraft:candle_lime;1;0": [
+      "book.original.tooltip.e9f9fabca751bb4d65ad.advanced.0",
+      "book.original.tooltip.e9f9fabca751bb4d65ad.advanced.1"
+    ],
+    "thaumcraft:candle_magenta;1;0": [
+      "book.original.tooltip.7cdd53e4d13145398b31.advanced.0",
+      "book.original.tooltip.7cdd53e4d13145398b31.advanced.1"
+    ],
+    "thaumcraft:candle_orange;1;0": [
+      "book.original.tooltip.04ff4551b069dadc0f63.advanced.0",
+      "book.original.tooltip.04ff4551b069dadc0f63.advanced.1"
+    ],
+    "thaumcraft:candle_pink;1;0": [
+      "book.original.tooltip.234f3a9c516039feccdb.advanced.0",
+      "book.original.tooltip.234f3a9c516039feccdb.advanced.1"
+    ],
+    "thaumcraft:candle_purple;1;0": [
+      "book.original.tooltip.809d447a5a449e85b8d9.advanced.0",
+      "book.original.tooltip.809d447a5a449e85b8d9.advanced.1"
+    ],
+    "thaumcraft:candle_red;1;0": [
+      "book.original.tooltip.f5b7ac2630ed1f22db9e.advanced.0",
+      "book.original.tooltip.f5b7ac2630ed1f22db9e.advanced.1"
+    ],
+    "thaumcraft:candle_silver;1;0": [
+      "book.original.tooltip.7392a83bccabd1bfe063.advanced.0",
+      "book.original.tooltip.7392a83bccabd1bfe063.advanced.1"
+    ],
+    "thaumcraft:candle_white;1;0": [
+      "book.original.tooltip.7f64bdc2b54f4728d073.advanced.0",
+      "book.original.tooltip.7f64bdc2b54f4728d073.advanced.1"
+    ],
+    "thaumcraft:candle_yellow;1;0": [
+      "book.original.tooltip.d4de8573ab5e87be9910.advanced.0",
+      "book.original.tooltip.d4de8573ab5e87be9910.advanced.1"
+    ],
+    "thaumcraft:caster_basic;1;0": [
+      "book.original.tooltip.64dd418162ffa62664f8.advanced.0",
+      "book.original.tooltip.64dd418162ffa62664f8.advanced.1"
+    ],
+    "thaumcraft:causality_collapser;1;0": [
+      "book.original.tooltip.8bb9aaca45143345e05d.advanced.0",
+      "book.original.tooltip.8bb9aaca45143345e05d.advanced.1"
+    ],
+    "thaumcraft:centrifuge;1;0": [
+      "book.original.tooltip.42a6787ba69b7f66289b.advanced.0",
+      "book.original.tooltip.42a6787ba69b7f66289b.advanced.1"
+    ],
+    "thaumcraft:charm_undying;1;0": [
+      "book.original.tooltip.f861911bf046b5ef53f2.advanced.0",
+      "book.original.tooltip.f861911bf046b5ef53f2.advanced.1",
+      "book.original.tooltip.f861911bf046b5ef53f2.advanced.2"
+    ],
+    "thaumcraft:chunk;1;0": [
+      "book.original.tooltip.19d69d5e65c0744e939c.advanced.0",
+      "book.original.tooltip.19d69d5e65c0744e939c.advanced.1"
+    ],
+    "thaumcraft:chunk;1;1": [
+      "book.original.tooltip.8899b2ff1548f879495d.advanced.0",
+      "book.original.tooltip.8899b2ff1548f879495d.advanced.1"
+    ],
+    "thaumcraft:chunk;1;2": [
+      "book.original.tooltip.17d24612ba6a7be5f940.advanced.0",
+      "book.original.tooltip.17d24612ba6a7be5f940.advanced.1"
+    ],
+    "thaumcraft:chunk;1;3": [
+      "book.original.tooltip.28661f50b6fc68fc16a0.advanced.0",
+      "book.original.tooltip.28661f50b6fc68fc16a0.advanced.1"
+    ],
+    "thaumcraft:chunk;1;4": [
+      "book.original.tooltip.73d2522515b2fe98c56a.advanced.0",
+      "book.original.tooltip.73d2522515b2fe98c56a.advanced.1"
+    ],
+    "thaumcraft:chunk;1;5": [
+      "book.original.tooltip.f2348b6f38ea21dff25f.advanced.0",
+      "book.original.tooltip.f2348b6f38ea21dff25f.advanced.1"
+    ],
+    "thaumcraft:cinderpearl;1;0": [
+      "book.original.tooltip.20281dc7be92b64aff82.advanced.0",
+      "book.original.tooltip.20281dc7be92b64aff82.advanced.1"
+    ],
+    "thaumcraft:cloth_boots;1;0": [
+      "book.original.tooltip.80c4a42e38e8aa71344e.advanced.0",
+      "book.original.tooltip.80c4a42e38e8aa71344e.advanced.1",
+      "book.original.tooltip.80c4a42e38e8aa71344e.advanced.2",
+      "book.original.tooltip.80c4a42e38e8aa71344e.advanced.3",
+      "book.original.tooltip.80c4a42e38e8aa71344e.advanced.4",
+      "book.original.tooltip.80c4a42e38e8aa71344e.advanced.5",
+      "book.original.tooltip.80c4a42e38e8aa71344e.advanced.6"
+    ],
+    "thaumcraft:cloth_chest;1;0": [
+      "book.original.tooltip.0061080c92308b27aabf.advanced.0",
+      "book.original.tooltip.0061080c92308b27aabf.advanced.1",
+      "book.original.tooltip.0061080c92308b27aabf.advanced.2",
+      "book.original.tooltip.0061080c92308b27aabf.advanced.3",
+      "book.original.tooltip.0061080c92308b27aabf.advanced.4",
+      "book.original.tooltip.0061080c92308b27aabf.advanced.5",
+      "book.original.tooltip.0061080c92308b27aabf.advanced.6"
+    ],
+    "thaumcraft:cloth_legs;1;0": [
+      "book.original.tooltip.92e0d4063de0291ca6b1.advanced.0",
+      "book.original.tooltip.92e0d4063de0291ca6b1.advanced.1",
+      "book.original.tooltip.92e0d4063de0291ca6b1.advanced.2",
+      "book.original.tooltip.92e0d4063de0291ca6b1.advanced.3",
+      "book.original.tooltip.92e0d4063de0291ca6b1.advanced.4",
+      "book.original.tooltip.92e0d4063de0291ca6b1.advanced.5",
+      "book.original.tooltip.92e0d4063de0291ca6b1.advanced.6"
+    ],
+    "thaumcraft:cloud_ring;1;0": [
+      "book.original.tooltip.267a5474a60586f42ec5.advanced.0",
+      "book.original.tooltip.267a5474a60586f42ec5.advanced.1",
+      "book.original.tooltip.267a5474a60586f42ec5.advanced.2"
+    ],
+    "thaumcraft:cluster;1;0": [
+      "book.original.tooltip.712ff1a70030fd69bf0d.advanced.0",
+      "book.original.tooltip.712ff1a70030fd69bf0d.advanced.1"
+    ],
+    "thaumcraft:cluster;1;1": [
+      "book.original.tooltip.bffb95ccb2559ec10f6e.advanced.0",
+      "book.original.tooltip.bffb95ccb2559ec10f6e.advanced.1"
+    ],
+    "thaumcraft:cluster;1;2": [
+      "book.original.tooltip.c4c8fb345cd2afc51e07.advanced.0",
+      "book.original.tooltip.c4c8fb345cd2afc51e07.advanced.1"
+    ],
+    "thaumcraft:cluster;1;3": [
+      "book.original.tooltip.e2b207c648b132d40bf2.advanced.0",
+      "book.original.tooltip.e2b207c648b132d40bf2.advanced.1"
+    ],
+    "thaumcraft:cluster;1;4": [
+      "book.original.tooltip.1c2546a5ea19204d767e.advanced.0",
+      "book.original.tooltip.1c2546a5ea19204d767e.advanced.1"
+    ],
+    "thaumcraft:cluster;1;5": [
+      "book.original.tooltip.75990013b2d63574eb4e.advanced.0",
+      "book.original.tooltip.75990013b2d63574eb4e.advanced.1"
+    ],
+    "thaumcraft:cluster;1;6": [
+      "book.original.tooltip.5eb577a21a24e3598b86.advanced.0",
+      "book.original.tooltip.5eb577a21a24e3598b86.advanced.1"
+    ],
+    "thaumcraft:cluster_cinnabar;1;0": [
+      "book.original.tooltip.684e2072c6f4981a823b.advanced.0",
+      "book.original.tooltip.684e2072c6f4981a823b.advanced.1"
+    ],
+    "thaumcraft:cluster_copper;1;0": [
+      "book.original.tooltip.292664caa2a48abb4395.advanced.0",
+      "book.original.tooltip.292664caa2a48abb4395.advanced.1"
+    ],
+    "thaumcraft:cluster_gold;1;0": [
+      "book.original.tooltip.02d811344a2c8b80f302.advanced.0",
+      "book.original.tooltip.02d811344a2c8b80f302.advanced.1"
+    ],
+    "thaumcraft:cluster_iron;1;0": [
+      "book.original.tooltip.a9401a7368d499df7475.advanced.0",
+      "book.original.tooltip.a9401a7368d499df7475.advanced.1"
+    ],
+    "thaumcraft:condenser;1;0": [
+      "book.original.tooltip.08cf8b1e9a24fd7da28d.advanced.0",
+      "book.original.tooltip.08cf8b1e9a24fd7da28d.advanced.1"
+    ],
+    "thaumcraft:condenser_lattice_dirty;1;0": [
+      "book.original.tooltip.2ca6c15c2ec9b8697b4e.advanced.0",
+      "book.original.tooltip.2ca6c15c2ec9b8697b4e.advanced.1"
+    ],
+    "thaumcraft:crucible;1;0": [
+      "book.original.tooltip.563889aad9d39bba8476.advanced.0",
+      "book.original.tooltip.563889aad9d39bba8476.advanced.1"
+    ],
+    "thaumcraft:crystal_aer;1;0": [
+      "book.original.tooltip.95737d68ce2187ede19e.advanced.0",
+      "book.original.tooltip.95737d68ce2187ede19e.advanced.1"
+    ],
+    "thaumcraft:crystal_aqua;1;0": [
+      "book.original.tooltip.623c8fc1dafbb9d52132.advanced.0",
+      "book.original.tooltip.623c8fc1dafbb9d52132.advanced.1"
+    ],
+    "thaumcraft:crystal_essence;1;0": [
+      "book.original.tooltip.72ea8c93cbe8fb4e332a.advanced.0",
+      "book.original.tooltip.72ea8c93cbe8fb4e332a.advanced.1"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aer'}]}": [
+      "book.original.tooltip.e50875e0c05de0f5fd55.advanced.0",
+      "book.original.tooltip.e50875e0c05de0f5fd55.advanced.1",
+      "book.original.tooltip.e50875e0c05de0f5fd55.advanced.2",
+      "book.original.tooltip.e50875e0c05de0f5fd55.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aqua'}]}": [
+      "book.original.tooltip.2d7ca039778fbdf6527f.advanced.0",
+      "book.original.tooltip.2d7ca039778fbdf6527f.advanced.1",
+      "book.original.tooltip.2d7ca039778fbdf6527f.advanced.2",
+      "book.original.tooltip.2d7ca039778fbdf6527f.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'gelum'}]}": [
+      "book.original.tooltip.b6b572d21fabc5c6ed8e.advanced.0",
+      "book.original.tooltip.b6b572d21fabc5c6ed8e.advanced.1",
+      "book.original.tooltip.b6b572d21fabc5c6ed8e.advanced.2",
+      "book.original.tooltip.b6b572d21fabc5c6ed8e.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ignis'}]}": [
+      "book.original.tooltip.6695b8f855933f37e8c1.advanced.0",
+      "book.original.tooltip.6695b8f855933f37e8c1.advanced.1",
+      "book.original.tooltip.6695b8f855933f37e8c1.advanced.2",
+      "book.original.tooltip.6695b8f855933f37e8c1.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'lux'}]}": [
+      "book.original.tooltip.e4fbda0203b79be3b5c7.advanced.0",
+      "book.original.tooltip.e4fbda0203b79be3b5c7.advanced.1",
+      "book.original.tooltip.e4fbda0203b79be3b5c7.advanced.2",
+      "book.original.tooltip.e4fbda0203b79be3b5c7.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'metallum'}]}": [
+      "book.original.tooltip.64ae3ab449f745788232.advanced.0",
+      "book.original.tooltip.64ae3ab449f745788232.advanced.1",
+      "book.original.tooltip.64ae3ab449f745788232.advanced.2",
+      "book.original.tooltip.64ae3ab449f745788232.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'mortuus'}]}": [
+      "book.original.tooltip.53a837f93ae201a06834.advanced.0",
+      "book.original.tooltip.53a837f93ae201a06834.advanced.1",
+      "book.original.tooltip.53a837f93ae201a06834.advanced.2",
+      "book.original.tooltip.53a837f93ae201a06834.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'motus'}]}": [
+      "book.original.tooltip.191bd94c8eaa5a166d9f.advanced.0",
+      "book.original.tooltip.191bd94c8eaa5a166d9f.advanced.1",
+      "book.original.tooltip.191bd94c8eaa5a166d9f.advanced.2",
+      "book.original.tooltip.191bd94c8eaa5a166d9f.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ordo'}]}": [
+      "book.original.tooltip.d202f809e597927b2d2d.advanced.0",
+      "book.original.tooltip.d202f809e597927b2d2d.advanced.1",
+      "book.original.tooltip.d202f809e597927b2d2d.advanced.2",
+      "book.original.tooltip.d202f809e597927b2d2d.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'perditio'}]}": [
+      "book.original.tooltip.cf18ac0a55e3517dda9c.advanced.0",
+      "book.original.tooltip.cf18ac0a55e3517dda9c.advanced.1",
+      "book.original.tooltip.cf18ac0a55e3517dda9c.advanced.2",
+      "book.original.tooltip.cf18ac0a55e3517dda9c.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'permutatio'}]}": [
+      "book.original.tooltip.de6b8ff893aecfde9b63.advanced.0",
+      "book.original.tooltip.de6b8ff893aecfde9b63.advanced.1",
+      "book.original.tooltip.de6b8ff893aecfde9b63.advanced.2",
+      "book.original.tooltip.de6b8ff893aecfde9b63.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'potentia'}]}": [
+      "book.original.tooltip.dd36e1aa5ac348b031c1.advanced.0",
+      "book.original.tooltip.dd36e1aa5ac348b031c1.advanced.1",
+      "book.original.tooltip.dd36e1aa5ac348b031c1.advanced.2",
+      "book.original.tooltip.dd36e1aa5ac348b031c1.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'terra'}]}": [
+      "book.original.tooltip.f46dd735e8fbc523d7bc.advanced.0",
+      "book.original.tooltip.f46dd735e8fbc523d7bc.advanced.1",
+      "book.original.tooltip.f46dd735e8fbc523d7bc.advanced.2",
+      "book.original.tooltip.f46dd735e8fbc523d7bc.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'vacuos'}]}": [
+      "book.original.tooltip.8ec8cdac27b0b94a2473.advanced.0",
+      "book.original.tooltip.8ec8cdac27b0b94a2473.advanced.1",
+      "book.original.tooltip.8ec8cdac27b0b94a2473.advanced.2",
+      "book.original.tooltip.8ec8cdac27b0b94a2473.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'victus'}]}": [
+      "book.original.tooltip.0e21aef9c3d16b293bc2.advanced.0",
+      "book.original.tooltip.0e21aef9c3d16b293bc2.advanced.1",
+      "book.original.tooltip.0e21aef9c3d16b293bc2.advanced.2",
+      "book.original.tooltip.0e21aef9c3d16b293bc2.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'vitreus'}]}": [
+      "book.original.tooltip.52444a21ec05890f311a.advanced.0",
+      "book.original.tooltip.52444a21ec05890f311a.advanced.1",
+      "book.original.tooltip.52444a21ec05890f311a.advanced.2",
+      "book.original.tooltip.52444a21ec05890f311a.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"aer\",amount:1}]}": [
+      "book.original.tooltip.2f0038c4a32be15eab8a.advanced.0",
+      "book.original.tooltip.2f0038c4a32be15eab8a.advanced.1",
+      "book.original.tooltip.2f0038c4a32be15eab8a.advanced.2",
+      "book.original.tooltip.2f0038c4a32be15eab8a.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"alienis\",amount:1}]}": [
+      "book.original.tooltip.ac8f1c46639d87bf4cd0.advanced.0",
+      "book.original.tooltip.ac8f1c46639d87bf4cd0.advanced.1",
+      "book.original.tooltip.ac8f1c46639d87bf4cd0.advanced.2",
+      "book.original.tooltip.ac8f1c46639d87bf4cd0.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"alkimia\",amount:1}]}": [
+      "book.original.tooltip.b6c2151e9f2ca2aa1f83.advanced.0",
+      "book.original.tooltip.b6c2151e9f2ca2aa1f83.advanced.1",
+      "book.original.tooltip.b6c2151e9f2ca2aa1f83.advanced.2",
+      "book.original.tooltip.b6c2151e9f2ca2aa1f83.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"aqua\",amount:1}]}": [
+      "book.original.tooltip.0fd6b661e83a05c380f4.advanced.0",
+      "book.original.tooltip.0fd6b661e83a05c380f4.advanced.1",
+      "book.original.tooltip.0fd6b661e83a05c380f4.advanced.2",
+      "book.original.tooltip.0fd6b661e83a05c380f4.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"auram\",amount:1}]}": [
+      "book.original.tooltip.440361bcb94cd8f468bd.advanced.0",
+      "book.original.tooltip.440361bcb94cd8f468bd.advanced.1",
+      "book.original.tooltip.440361bcb94cd8f468bd.advanced.2",
+      "book.original.tooltip.440361bcb94cd8f468bd.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"aversio\",amount:1}]}": [
+      "book.original.tooltip.674312d874eda2591477.advanced.0",
+      "book.original.tooltip.674312d874eda2591477.advanced.1",
+      "book.original.tooltip.674312d874eda2591477.advanced.2",
+      "book.original.tooltip.674312d874eda2591477.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"bestia\",amount:1}]}": [
+      "book.original.tooltip.74d3b925669b48754839.advanced.0",
+      "book.original.tooltip.74d3b925669b48754839.advanced.1",
+      "book.original.tooltip.74d3b925669b48754839.advanced.2",
+      "book.original.tooltip.74d3b925669b48754839.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"cognitio\",amount:1}]}": [
+      "book.original.tooltip.3a1a3e2a65bbc9384b58.advanced.0",
+      "book.original.tooltip.3a1a3e2a65bbc9384b58.advanced.1",
+      "book.original.tooltip.3a1a3e2a65bbc9384b58.advanced.2",
+      "book.original.tooltip.3a1a3e2a65bbc9384b58.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"desiderium\",amount:1}]}": [
+      "book.original.tooltip.cd1620aa01d9a128364e.advanced.0",
+      "book.original.tooltip.cd1620aa01d9a128364e.advanced.1",
+      "book.original.tooltip.cd1620aa01d9a128364e.advanced.2",
+      "book.original.tooltip.cd1620aa01d9a128364e.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"exanimis\",amount:1}]}": [
+      "book.original.tooltip.c4e4b6f8ef0865f1246d.advanced.0",
+      "book.original.tooltip.c4e4b6f8ef0865f1246d.advanced.1",
+      "book.original.tooltip.c4e4b6f8ef0865f1246d.advanced.2",
+      "book.original.tooltip.c4e4b6f8ef0865f1246d.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"fabrico\",amount:1}]}": [
+      "book.original.tooltip.92a415af6f66b802e604.advanced.0",
+      "book.original.tooltip.92a415af6f66b802e604.advanced.1",
+      "book.original.tooltip.92a415af6f66b802e604.advanced.2",
+      "book.original.tooltip.92a415af6f66b802e604.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"gelum\",amount:1}]}": [
+      "book.original.tooltip.061435875d674e39ae98.advanced.0",
+      "book.original.tooltip.061435875d674e39ae98.advanced.1",
+      "book.original.tooltip.061435875d674e39ae98.advanced.2",
+      "book.original.tooltip.061435875d674e39ae98.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"herba\",amount:1}]}": [
+      "book.original.tooltip.011bfa1a346d1148f1ef.advanced.0",
+      "book.original.tooltip.011bfa1a346d1148f1ef.advanced.1",
+      "book.original.tooltip.011bfa1a346d1148f1ef.advanced.2",
+      "book.original.tooltip.011bfa1a346d1148f1ef.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"humanus\",amount:1}]}": [
+      "book.original.tooltip.2fa203ce780e73fab5e8.advanced.0",
+      "book.original.tooltip.2fa203ce780e73fab5e8.advanced.1",
+      "book.original.tooltip.2fa203ce780e73fab5e8.advanced.2",
+      "book.original.tooltip.2fa203ce780e73fab5e8.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"ignis\",amount:1}]}": [
+      "book.original.tooltip.85ef8953f58f2de69057.advanced.0",
+      "book.original.tooltip.85ef8953f58f2de69057.advanced.1",
+      "book.original.tooltip.85ef8953f58f2de69057.advanced.2",
+      "book.original.tooltip.85ef8953f58f2de69057.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"instrumentum\",amount:1}]}": [
+      "book.original.tooltip.07237d4df0cf30ad4b09.advanced.0",
+      "book.original.tooltip.07237d4df0cf30ad4b09.advanced.1",
+      "book.original.tooltip.07237d4df0cf30ad4b09.advanced.2",
+      "book.original.tooltip.07237d4df0cf30ad4b09.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"lux\",amount:1}]}": [
+      "book.original.tooltip.6981c5c38cb8ef3f324e.advanced.0",
+      "book.original.tooltip.6981c5c38cb8ef3f324e.advanced.1",
+      "book.original.tooltip.6981c5c38cb8ef3f324e.advanced.2",
+      "book.original.tooltip.6981c5c38cb8ef3f324e.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"machina\",amount:1}]}": [
+      "book.original.tooltip.50159b75fba8ecb69dda.advanced.0",
+      "book.original.tooltip.50159b75fba8ecb69dda.advanced.1",
+      "book.original.tooltip.50159b75fba8ecb69dda.advanced.2",
+      "book.original.tooltip.50159b75fba8ecb69dda.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"metallum\",amount:1}]}": [
+      "book.original.tooltip.b22724d7ec81fa62d1eb.advanced.0",
+      "book.original.tooltip.b22724d7ec81fa62d1eb.advanced.1",
+      "book.original.tooltip.b22724d7ec81fa62d1eb.advanced.2",
+      "book.original.tooltip.b22724d7ec81fa62d1eb.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"mortuus\",amount:1}]}": [
+      "book.original.tooltip.20355d8723688b177c07.advanced.0",
+      "book.original.tooltip.20355d8723688b177c07.advanced.1",
+      "book.original.tooltip.20355d8723688b177c07.advanced.2",
+      "book.original.tooltip.20355d8723688b177c07.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"motus\",amount:1}]}": [
+      "book.original.tooltip.5c1fdf17edea7d74700a.advanced.0",
+      "book.original.tooltip.5c1fdf17edea7d74700a.advanced.1",
+      "book.original.tooltip.5c1fdf17edea7d74700a.advanced.2",
+      "book.original.tooltip.5c1fdf17edea7d74700a.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"ordo\",amount:1}]}": [
+      "book.original.tooltip.f607b9831dd2b86559f8.advanced.0",
+      "book.original.tooltip.f607b9831dd2b86559f8.advanced.1",
+      "book.original.tooltip.f607b9831dd2b86559f8.advanced.2",
+      "book.original.tooltip.f607b9831dd2b86559f8.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"perditio\",amount:1}]}": [
+      "book.original.tooltip.44c890b956146913d004.advanced.0",
+      "book.original.tooltip.44c890b956146913d004.advanced.1",
+      "book.original.tooltip.44c890b956146913d004.advanced.2",
+      "book.original.tooltip.44c890b956146913d004.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"permutatio\",amount:1}]}": [
+      "book.original.tooltip.07309eca3c6fe7904296.advanced.0",
+      "book.original.tooltip.07309eca3c6fe7904296.advanced.1",
+      "book.original.tooltip.07309eca3c6fe7904296.advanced.2",
+      "book.original.tooltip.07309eca3c6fe7904296.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"potentia\",amount:1}]}": [
+      "book.original.tooltip.63d980c1653a46b2aeb0.advanced.0",
+      "book.original.tooltip.63d980c1653a46b2aeb0.advanced.1",
+      "book.original.tooltip.63d980c1653a46b2aeb0.advanced.2",
+      "book.original.tooltip.63d980c1653a46b2aeb0.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"praecantatio\",amount:1}]}": [
+      "book.original.tooltip.32ee2cf0059970df17e2.advanced.0",
+      "book.original.tooltip.32ee2cf0059970df17e2.advanced.1",
+      "book.original.tooltip.32ee2cf0059970df17e2.advanced.2",
+      "book.original.tooltip.32ee2cf0059970df17e2.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"praemunio\",amount:1}]}": [
+      "book.original.tooltip.b5312f4cee3a7581f06f.advanced.0",
+      "book.original.tooltip.b5312f4cee3a7581f06f.advanced.1",
+      "book.original.tooltip.b5312f4cee3a7581f06f.advanced.2",
+      "book.original.tooltip.b5312f4cee3a7581f06f.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"sensus\",amount:1}]}": [
+      "book.original.tooltip.e34d60b30b803d9d7d17.advanced.0",
+      "book.original.tooltip.e34d60b30b803d9d7d17.advanced.1",
+      "book.original.tooltip.e34d60b30b803d9d7d17.advanced.2",
+      "book.original.tooltip.e34d60b30b803d9d7d17.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"spiritus\",amount:1}]}": [
+      "book.original.tooltip.ff9533325a2c06b15fcb.advanced.0",
+      "book.original.tooltip.ff9533325a2c06b15fcb.advanced.1",
+      "book.original.tooltip.ff9533325a2c06b15fcb.advanced.2",
+      "book.original.tooltip.ff9533325a2c06b15fcb.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"tenebrae\",amount:1}]}": [
+      "book.original.tooltip.11f822b7e6d237c1e946.advanced.0",
+      "book.original.tooltip.11f822b7e6d237c1e946.advanced.1",
+      "book.original.tooltip.11f822b7e6d237c1e946.advanced.2",
+      "book.original.tooltip.11f822b7e6d237c1e946.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"terra\",amount:1}]}": [
+      "book.original.tooltip.e562c725be81a8b35eb2.advanced.0",
+      "book.original.tooltip.e562c725be81a8b35eb2.advanced.1",
+      "book.original.tooltip.e562c725be81a8b35eb2.advanced.2",
+      "book.original.tooltip.e562c725be81a8b35eb2.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vacuos\",amount:1}]}": [
+      "book.original.tooltip.fcbb4a9babb13e9f42fd.advanced.0",
+      "book.original.tooltip.fcbb4a9babb13e9f42fd.advanced.1",
+      "book.original.tooltip.fcbb4a9babb13e9f42fd.advanced.2",
+      "book.original.tooltip.fcbb4a9babb13e9f42fd.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"victus\",amount:1}]}": [
+      "book.original.tooltip.bd4e0fbb7ea4830e2c9d.advanced.0",
+      "book.original.tooltip.bd4e0fbb7ea4830e2c9d.advanced.1",
+      "book.original.tooltip.bd4e0fbb7ea4830e2c9d.advanced.2",
+      "book.original.tooltip.bd4e0fbb7ea4830e2c9d.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vinculum\",amount:1}]}": [
+      "book.original.tooltip.097448efc69922bdcb3d.advanced.0",
+      "book.original.tooltip.097448efc69922bdcb3d.advanced.1",
+      "book.original.tooltip.097448efc69922bdcb3d.advanced.2",
+      "book.original.tooltip.097448efc69922bdcb3d.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vitium\",amount:1}]}": [
+      "book.original.tooltip.29e8aa6b4885671392b1.advanced.0",
+      "book.original.tooltip.29e8aa6b4885671392b1.advanced.1",
+      "book.original.tooltip.29e8aa6b4885671392b1.advanced.2",
+      "book.original.tooltip.29e8aa6b4885671392b1.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vitreus\",amount:1}]}": [
+      "book.original.tooltip.aeecfc1525a6d65a7f69.advanced.0",
+      "book.original.tooltip.aeecfc1525a6d65a7f69.advanced.1",
+      "book.original.tooltip.aeecfc1525a6d65a7f69.advanced.2",
+      "book.original.tooltip.aeecfc1525a6d65a7f69.advanced.3"
+    ],
+    "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"volatus\",amount:1}]}": [
+      "book.original.tooltip.04451c6f075d6dcff7b8.advanced.0",
+      "book.original.tooltip.04451c6f075d6dcff7b8.advanced.1",
+      "book.original.tooltip.04451c6f075d6dcff7b8.advanced.2",
+      "book.original.tooltip.04451c6f075d6dcff7b8.advanced.3"
+    ],
+    "thaumcraft:crystal_ignis;1;0": [
+      "book.original.tooltip.ddb57e938d3194e287a5.advanced.0",
+      "book.original.tooltip.ddb57e938d3194e287a5.advanced.1"
+    ],
+    "thaumcraft:crystal_ordo;1;0": [
+      "book.original.tooltip.2d9a3f910e283be894cf.advanced.0",
+      "book.original.tooltip.2d9a3f910e283be894cf.advanced.1"
+    ],
+    "thaumcraft:crystal_perditio;1;0": [
+      "book.original.tooltip.935257bd1ee214b2a5c4.advanced.0",
+      "book.original.tooltip.935257bd1ee214b2a5c4.advanced.1"
+    ],
+    "thaumcraft:crystal_terra;1;0": [
+      "book.original.tooltip.790b7b0b91babe740932.advanced.0",
+      "book.original.tooltip.790b7b0b91babe740932.advanced.1"
+    ],
+    "thaumcraft:crystal_vitium;1;0": [
+      "book.original.tooltip.50a325f7d70f704c9ee1.advanced.0",
+      "book.original.tooltip.50a325f7d70f704c9ee1.advanced.1"
+    ],
+    "thaumcraft:curio;1;6": [
+      "book.original.tooltip.3e5517684d1354bb6b62.advanced.0",
+      "book.original.tooltip.3e5517684d1354bb6b62.advanced.1",
+      "book.original.tooltip.3e5517684d1354bb6b62.advanced.2"
+    ],
+    "thaumcraft:curiosity_band;1;0": [
+      "book.original.tooltip.76be179bc81db7e42d5f.advanced.0",
+      "book.original.tooltip.76be179bc81db7e42d5f.advanced.1",
+      "book.original.tooltip.76be179bc81db7e42d5f.advanced.2"
+    ],
+    "thaumcraft:dioptra;1;0": [
+      "book.original.tooltip.bbf6c1d8d89813e71636.advanced.0",
+      "book.original.tooltip.bbf6c1d8d89813e71636.advanced.1"
+    ],
+    "thaumcraft:elemental_axe;1;0": [
+      "book.original.tooltip.cae1e1378f85456266b1.advanced.0",
+      "book.original.tooltip.cae1e1378f85456266b1.advanced.1",
+      "book.original.tooltip.cae1e1378f85456266b1.advanced.2",
+      "book.original.tooltip.cae1e1378f85456266b1.advanced.3",
+      "book.original.tooltip.cae1e1378f85456266b1.advanced.4",
+      "book.original.tooltip.cae1e1378f85456266b1.advanced.5"
+    ],
+    "thaumcraft:elemental_hoe;1;0": [
+      "book.original.tooltip.b6bdade205bcf94af29c.advanced.0",
+      "book.original.tooltip.b6bdade205bcf94af29c.advanced.1",
+      "book.original.tooltip.b6bdade205bcf94af29c.advanced.2",
+      "book.original.tooltip.b6bdade205bcf94af29c.advanced.3",
+      "book.original.tooltip.b6bdade205bcf94af29c.advanced.4",
+      "book.original.tooltip.b6bdade205bcf94af29c.advanced.5"
+    ],
+    "thaumcraft:elemental_pick;1;0": [
+      "book.original.tooltip.6bebc15eb736d18c09ba.advanced.0",
+      "book.original.tooltip.6bebc15eb736d18c09ba.advanced.1",
+      "book.original.tooltip.6bebc15eb736d18c09ba.advanced.2",
+      "book.original.tooltip.6bebc15eb736d18c09ba.advanced.3",
+      "book.original.tooltip.6bebc15eb736d18c09ba.advanced.4",
+      "book.original.tooltip.6bebc15eb736d18c09ba.advanced.5"
+    ],
+    "thaumcraft:elemental_shovel;1;0": [
+      "book.original.tooltip.ded91117a67b8f02458f.advanced.0",
+      "book.original.tooltip.ded91117a67b8f02458f.advanced.1",
+      "book.original.tooltip.ded91117a67b8f02458f.advanced.2",
+      "book.original.tooltip.ded91117a67b8f02458f.advanced.3",
+      "book.original.tooltip.ded91117a67b8f02458f.advanced.4",
+      "book.original.tooltip.ded91117a67b8f02458f.advanced.5"
+    ],
+    "thaumcraft:elemental_sword;1;0": [
+      "book.original.tooltip.fac89158d15a9ce78d5f.advanced.0",
+      "book.original.tooltip.fac89158d15a9ce78d5f.advanced.1",
+      "book.original.tooltip.fac89158d15a9ce78d5f.advanced.2",
+      "book.original.tooltip.fac89158d15a9ce78d5f.advanced.3",
+      "book.original.tooltip.fac89158d15a9ce78d5f.advanced.4",
+      "book.original.tooltip.fac89158d15a9ce78d5f.advanced.5"
+    ],
+    "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:0s,lvl:1s}]}": [
+      "book.original.tooltip.2722f58d67d750fb0d2e.advanced.0",
+      "book.original.tooltip.2722f58d67d750fb0d2e.advanced.1",
+      "book.original.tooltip.2722f58d67d750fb0d2e.advanced.2",
+      "book.original.tooltip.2722f58d67d750fb0d2e.advanced.3",
+      "book.original.tooltip.2722f58d67d750fb0d2e.advanced.4"
+    ],
+    "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:16s,lvl:1s}]}": [
+      "book.original.tooltip.23287534fbbb2c289cb5.advanced.0",
+      "book.original.tooltip.23287534fbbb2c289cb5.advanced.1",
+      "book.original.tooltip.23287534fbbb2c289cb5.advanced.2",
+      "book.original.tooltip.23287534fbbb2c289cb5.advanced.3",
+      "book.original.tooltip.23287534fbbb2c289cb5.advanced.4"
+    ],
+    "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:33s,lvl:1s}]}": [
+      "book.original.tooltip.eec1d12b8506adbba112.advanced.0",
+      "book.original.tooltip.eec1d12b8506adbba112.advanced.1",
+      "book.original.tooltip.eec1d12b8506adbba112.advanced.2",
+      "book.original.tooltip.eec1d12b8506adbba112.advanced.3",
+      "book.original.tooltip.eec1d12b8506adbba112.advanced.4"
+    ],
+    "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:35s,lvl:1s}]}": [
+      "book.original.tooltip.bc3491030acf59338ffa.advanced.0",
+      "book.original.tooltip.bc3491030acf59338ffa.advanced.1",
+      "book.original.tooltip.bc3491030acf59338ffa.advanced.2",
+      "book.original.tooltip.bc3491030acf59338ffa.advanced.3",
+      "book.original.tooltip.bc3491030acf59338ffa.advanced.4"
+    ],
+    "thaumcraft:essentia_input;1;0": [
+      "book.original.tooltip.eedcbb3b334889818dc7.advanced.0",
+      "book.original.tooltip.eedcbb3b334889818dc7.advanced.1"
+    ],
+    "thaumcraft:essentia_output;1;0": [
+      "book.original.tooltip.324e9e4775b3b982d352.advanced.0",
+      "book.original.tooltip.324e9e4775b3b982d352.advanced.1"
+    ],
+    "thaumcraft:everfull_urn;1;0": [
+      "book.original.tooltip.efbbc74962875e540732.advanced.0",
+      "book.original.tooltip.efbbc74962875e540732.advanced.1"
+    ],
+    "thaumcraft:fabric;1;0": [
+      "book.original.tooltip.eed2fa414308dfad3817.advanced.0",
+      "book.original.tooltip.eed2fa414308dfad3817.advanced.1"
+    ],
+    "thaumcraft:filter;1;0": [
+      "book.original.tooltip.3660d24448b1bf27141b.advanced.0",
+      "book.original.tooltip.3660d24448b1bf27141b.advanced.1"
+    ],
+    "thaumcraft:flesh_block;1;0": [
+      "book.original.tooltip.fad70d65beeff4a46a5f.advanced.0",
+      "book.original.tooltip.fad70d65beeff4a46a5f.advanced.1"
+    ],
+    "thaumcraft:focus_1;1;0": [
+      "book.original.tooltip.8a16eb6b278253a7f8f6.advanced.0",
+      "book.original.tooltip.8a16eb6b278253a7f8f6.advanced.1"
+    ],
+    "thaumcraft:focus_2;1;0": [
+      "book.original.tooltip.341c1634d836661ec8a0.advanced.0",
+      "book.original.tooltip.341c1634d836661ec8a0.advanced.1"
+    ],
+    "thaumcraft:focus_3;1;0": [
+      "book.original.tooltip.8d121f77ed15d1618ef4.advanced.0",
+      "book.original.tooltip.8d121f77ed15d1618ef4.advanced.1"
+    ],
+    "thaumcraft:focus_pouch;1;0": [
+      "book.original.tooltip.ddc6f15caedd5413945f.advanced.0",
+      "book.original.tooltip.ddc6f15caedd5413945f.advanced.1",
+      "book.original.tooltip.ddc6f15caedd5413945f.advanced.2"
+    ],
+    "thaumcraft:fortress_chest;1;0": [
+      "book.original.tooltip.76dffb4922fd199abbbf.advanced.0",
+      "book.original.tooltip.76dffb4922fd199abbbf.advanced.1",
+      "book.original.tooltip.76dffb4922fd199abbbf.advanced.2",
+      "book.original.tooltip.76dffb4922fd199abbbf.advanced.3",
+      "book.original.tooltip.76dffb4922fd199abbbf.advanced.4",
+      "book.original.tooltip.76dffb4922fd199abbbf.advanced.5"
+    ],
+    "thaumcraft:fortress_helm;1;0": [
+      "book.original.tooltip.1b353e574947645830d7.advanced.0",
+      "book.original.tooltip.1b353e574947645830d7.advanced.1",
+      "book.original.tooltip.1b353e574947645830d7.advanced.2",
+      "book.original.tooltip.1b353e574947645830d7.advanced.3",
+      "book.original.tooltip.1b353e574947645830d7.advanced.4",
+      "book.original.tooltip.1b353e574947645830d7.advanced.5"
+    ],
+    "thaumcraft:fortress_helm;1;0;{goggles:1b}": [
+      "book.original.tooltip.33d1256e6fd8e56deb5c.advanced.0",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.advanced.1",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.advanced.2",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.advanced.3",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.advanced.4",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.advanced.5",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.advanced.6",
+      "book.original.tooltip.33d1256e6fd8e56deb5c.advanced.7"
+    ],
+    "thaumcraft:fortress_helm;1;0;{mask:0}": [
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.advanced.0",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.advanced.1",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.advanced.2",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.advanced.3",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.advanced.4",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.advanced.5",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.advanced.6",
+      "book.original.tooltip.c7ede6d57f7f2aed2ba3.advanced.7"
+    ],
+    "thaumcraft:fortress_helm;1;0;{mask:1}": [
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.advanced.0",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.advanced.1",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.advanced.2",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.advanced.3",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.advanced.4",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.advanced.5",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.advanced.6",
+      "book.original.tooltip.7c8851c8eb8b7767e1e4.advanced.7"
+    ],
+    "thaumcraft:fortress_helm;1;0;{mask:2}": [
+      "book.original.tooltip.a921532b10c9d564fdb0.advanced.0",
+      "book.original.tooltip.a921532b10c9d564fdb0.advanced.1",
+      "book.original.tooltip.a921532b10c9d564fdb0.advanced.2",
+      "book.original.tooltip.a921532b10c9d564fdb0.advanced.3",
+      "book.original.tooltip.a921532b10c9d564fdb0.advanced.4",
+      "book.original.tooltip.a921532b10c9d564fdb0.advanced.5",
+      "book.original.tooltip.a921532b10c9d564fdb0.advanced.6",
+      "book.original.tooltip.a921532b10c9d564fdb0.advanced.7"
+    ],
+    "thaumcraft:fortress_legs;1;0": [
+      "book.original.tooltip.2ffda634bdbab3601785.advanced.0",
+      "book.original.tooltip.2ffda634bdbab3601785.advanced.1",
+      "book.original.tooltip.2ffda634bdbab3601785.advanced.2",
+      "book.original.tooltip.2ffda634bdbab3601785.advanced.3",
+      "book.original.tooltip.2ffda634bdbab3601785.advanced.4",
+      "book.original.tooltip.2ffda634bdbab3601785.advanced.5"
+    ],
+    "thaumcraft:goggles;1;0": [
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.advanced.0",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.advanced.1",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.advanced.2",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.advanced.3",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.advanced.4",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.advanced.5",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.advanced.6",
+      "book.original.tooltip.6e70a5a3bbbcd1d4a50c.advanced.7"
+    ],
+    "thaumcraft:golem_bell;1;0": [
+      "book.original.tooltip.4fa0fada9a78e57302c5.advanced.0",
+      "book.original.tooltip.4fa0fada9a78e57302c5.advanced.1"
+    ],
+    "thaumcraft:golem_builder;1;0": [
+      "book.original.tooltip.c50c512fc11e1da1acaa.advanced.0",
+      "book.original.tooltip.c50c512fc11e1da1acaa.advanced.1"
+    ],
+    "thaumcraft:grapple_gun;1;0": [
+      "book.original.tooltip.74c36224aa6d76ed6654.advanced.0",
+      "book.original.tooltip.74c36224aa6d76ed6654.advanced.1",
+      "book.original.tooltip.74c36224aa6d76ed6654.advanced.2"
+    ],
+    "thaumcraft:grapple_gun_spool;1;0": [
+      "book.original.tooltip.caba412a054161f453b8.advanced.0",
+      "book.original.tooltip.caba412a054161f453b8.advanced.1"
+    ],
+    "thaumcraft:grapple_gun_tip;1;0": [
+      "book.original.tooltip.cb525678d63e2f1cb754.advanced.0",
+      "book.original.tooltip.cb525678d63e2f1cb754.advanced.1"
+    ],
+    "thaumcraft:hand_mirror;1;0": [
+      "book.original.tooltip.4b1e36180abeadfc2b34.advanced.0",
+      "book.original.tooltip.4b1e36180abeadfc2b34.advanced.1"
+    ],
+    "thaumcraft:hungry_chest;1;0": [
+      "book.original.tooltip.647877ab1b252ff07658.advanced.0",
+      "book.original.tooltip.647877ab1b252ff07658.advanced.1"
+    ],
+    "thaumcraft:infusion_matrix;1;0": [
+      "book.original.tooltip.f0ebb3c88033864c45dc.advanced.0",
+      "book.original.tooltip.f0ebb3c88033864c45dc.advanced.1"
+    ],
+    "thaumcraft:ingot;1;0": [
+      "book.original.tooltip.ffb0cad847b7e3730bf3.advanced.0",
+      "book.original.tooltip.ffb0cad847b7e3730bf3.advanced.1"
+    ],
+    "thaumcraft:ingot;1;1": [
+      "book.original.tooltip.fc6685a48b3941acc22c.advanced.0",
+      "book.original.tooltip.fc6685a48b3941acc22c.advanced.1"
+    ],
+    "thaumcraft:ingot;1;2": [
+      "book.original.tooltip.2748fc88eeb0151bb16c.advanced.0",
+      "book.original.tooltip.2748fc88eeb0151bb16c.advanced.1"
+    ],
+    "thaumcraft:ingot_brass;1;0": [
+      "book.original.tooltip.a11310560d0c870a8cbc.advanced.0",
+      "book.original.tooltip.a11310560d0c870a8cbc.advanced.1"
+    ],
+    "thaumcraft:ingot_thaumium;1;0": [
+      "book.original.tooltip.b7a7497c98c10e2542ea.advanced.0",
+      "book.original.tooltip.b7a7497c98c10e2542ea.advanced.1"
+    ],
+    "thaumcraft:ingot_void;1;0": [
+      "book.original.tooltip.2c5a6c47183cf4a4bbb2.advanced.0",
+      "book.original.tooltip.2c5a6c47183cf4a4bbb2.advanced.1"
+    ],
+    "thaumcraft:inlay;1;0": [
+      "book.original.tooltip.c34725370e9f7dd0e5ef.advanced.0",
+      "book.original.tooltip.c34725370e9f7dd0e5ef.advanced.1"
+    ],
+    "thaumcraft:jar_brace;1;0": [
+      "book.original.tooltip.a8e97ef9887bcb19f65a.advanced.0",
+      "book.original.tooltip.a8e97ef9887bcb19f65a.advanced.1"
+    ],
+    "thaumcraft:jar_brain;1;0": [
+      "book.original.tooltip.180be0bc97ced72104d8.advanced.0",
+      "book.original.tooltip.180be0bc97ced72104d8.advanced.1"
+    ],
+    "thaumcraft:jar_normal;1;0": [
+      "book.original.tooltip.7ca6c9e4bdf1f45505cf.advanced.0",
+      "book.original.tooltip.7ca6c9e4bdf1f45505cf.advanced.1"
+    ],
+    "thaumcraft:jar_void;1;0": [
+      "book.original.tooltip.e2955d29e83c467223fc.advanced.0",
+      "book.original.tooltip.e2955d29e83c467223fc.advanced.1"
+    ],
+    "thaumcraft:label;1;0": [
+      "book.original.tooltip.ee079327c250b5e05afd.advanced.0",
+      "book.original.tooltip.ee079327c250b5e05afd.advanced.1"
+    ],
+    "thaumcraft:label;1;1": [
+      "book.original.tooltip.1213ae6487425b0141af.advanced.0",
+      "book.original.tooltip.1213ae6487425b0141af.advanced.1"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"aer\",amount:1}]}": [
+      "book.original.tooltip.94b2449dffc28ea31c73.advanced.0",
+      "book.original.tooltip.94b2449dffc28ea31c73.advanced.1",
+      "book.original.tooltip.94b2449dffc28ea31c73.advanced.2",
+      "book.original.tooltip.94b2449dffc28ea31c73.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"alienis\",amount:1}]}": [
+      "book.original.tooltip.8308f4dcbf830d03bd35.advanced.0",
+      "book.original.tooltip.8308f4dcbf830d03bd35.advanced.1",
+      "book.original.tooltip.8308f4dcbf830d03bd35.advanced.2",
+      "book.original.tooltip.8308f4dcbf830d03bd35.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"alkimia\",amount:1}]}": [
+      "book.original.tooltip.8c9b7ff2131dbcec904c.advanced.0",
+      "book.original.tooltip.8c9b7ff2131dbcec904c.advanced.1",
+      "book.original.tooltip.8c9b7ff2131dbcec904c.advanced.2",
+      "book.original.tooltip.8c9b7ff2131dbcec904c.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"aqua\",amount:1}]}": [
+      "book.original.tooltip.9ff39741d57cc400f6c3.advanced.0",
+      "book.original.tooltip.9ff39741d57cc400f6c3.advanced.1",
+      "book.original.tooltip.9ff39741d57cc400f6c3.advanced.2",
+      "book.original.tooltip.9ff39741d57cc400f6c3.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"auram\",amount:1}]}": [
+      "book.original.tooltip.717a1866281684adc7f4.advanced.0",
+      "book.original.tooltip.717a1866281684adc7f4.advanced.1",
+      "book.original.tooltip.717a1866281684adc7f4.advanced.2",
+      "book.original.tooltip.717a1866281684adc7f4.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"aversio\",amount:1}]}": [
+      "book.original.tooltip.789dc2c9e7c203b69cad.advanced.0",
+      "book.original.tooltip.789dc2c9e7c203b69cad.advanced.1",
+      "book.original.tooltip.789dc2c9e7c203b69cad.advanced.2",
+      "book.original.tooltip.789dc2c9e7c203b69cad.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"bestia\",amount:1}]}": [
+      "book.original.tooltip.ee4dfd343fd79144c59a.advanced.0",
+      "book.original.tooltip.ee4dfd343fd79144c59a.advanced.1",
+      "book.original.tooltip.ee4dfd343fd79144c59a.advanced.2",
+      "book.original.tooltip.ee4dfd343fd79144c59a.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"cognitio\",amount:1}]}": [
+      "book.original.tooltip.113b775efa59693a8edc.advanced.0",
+      "book.original.tooltip.113b775efa59693a8edc.advanced.1",
+      "book.original.tooltip.113b775efa59693a8edc.advanced.2",
+      "book.original.tooltip.113b775efa59693a8edc.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"desiderium\",amount:1}]}": [
+      "book.original.tooltip.aaca612fb7e9f66a2e8a.advanced.0",
+      "book.original.tooltip.aaca612fb7e9f66a2e8a.advanced.1",
+      "book.original.tooltip.aaca612fb7e9f66a2e8a.advanced.2",
+      "book.original.tooltip.aaca612fb7e9f66a2e8a.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"exanimis\",amount:1}]}": [
+      "book.original.tooltip.312c3be79f2dcd9ba062.advanced.0",
+      "book.original.tooltip.312c3be79f2dcd9ba062.advanced.1",
+      "book.original.tooltip.312c3be79f2dcd9ba062.advanced.2",
+      "book.original.tooltip.312c3be79f2dcd9ba062.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"fabrico\",amount:1}]}": [
+      "book.original.tooltip.12fdab63f2cc59ad7c46.advanced.0",
+      "book.original.tooltip.12fdab63f2cc59ad7c46.advanced.1",
+      "book.original.tooltip.12fdab63f2cc59ad7c46.advanced.2",
+      "book.original.tooltip.12fdab63f2cc59ad7c46.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"gelum\",amount:1}]}": [
+      "book.original.tooltip.3fa82dcdf95cbf02f18a.advanced.0",
+      "book.original.tooltip.3fa82dcdf95cbf02f18a.advanced.1",
+      "book.original.tooltip.3fa82dcdf95cbf02f18a.advanced.2",
+      "book.original.tooltip.3fa82dcdf95cbf02f18a.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"herba\",amount:1}]}": [
+      "book.original.tooltip.89c3e946e6eec952659b.advanced.0",
+      "book.original.tooltip.89c3e946e6eec952659b.advanced.1",
+      "book.original.tooltip.89c3e946e6eec952659b.advanced.2",
+      "book.original.tooltip.89c3e946e6eec952659b.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"humanus\",amount:1}]}": [
+      "book.original.tooltip.8d3433cce65431344f2f.advanced.0",
+      "book.original.tooltip.8d3433cce65431344f2f.advanced.1",
+      "book.original.tooltip.8d3433cce65431344f2f.advanced.2",
+      "book.original.tooltip.8d3433cce65431344f2f.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"ignis\",amount:1}]}": [
+      "book.original.tooltip.65ade8e493ac9f322357.advanced.0",
+      "book.original.tooltip.65ade8e493ac9f322357.advanced.1",
+      "book.original.tooltip.65ade8e493ac9f322357.advanced.2",
+      "book.original.tooltip.65ade8e493ac9f322357.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"instrumentum\",amount:1}]}": [
+      "book.original.tooltip.b500db6dff7dbefd9e57.advanced.0",
+      "book.original.tooltip.b500db6dff7dbefd9e57.advanced.1",
+      "book.original.tooltip.b500db6dff7dbefd9e57.advanced.2",
+      "book.original.tooltip.b500db6dff7dbefd9e57.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"lux\",amount:1}]}": [
+      "book.original.tooltip.179dd9f9852729a11808.advanced.0",
+      "book.original.tooltip.179dd9f9852729a11808.advanced.1",
+      "book.original.tooltip.179dd9f9852729a11808.advanced.2",
+      "book.original.tooltip.179dd9f9852729a11808.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"machina\",amount:1}]}": [
+      "book.original.tooltip.48782bf1c0150110484c.advanced.0",
+      "book.original.tooltip.48782bf1c0150110484c.advanced.1",
+      "book.original.tooltip.48782bf1c0150110484c.advanced.2",
+      "book.original.tooltip.48782bf1c0150110484c.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"metallum\",amount:1}]}": [
+      "book.original.tooltip.d05ed34937d82aa565a0.advanced.0",
+      "book.original.tooltip.d05ed34937d82aa565a0.advanced.1",
+      "book.original.tooltip.d05ed34937d82aa565a0.advanced.2",
+      "book.original.tooltip.d05ed34937d82aa565a0.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"mortuus\",amount:1}]}": [
+      "book.original.tooltip.f801015db5249a917fde.advanced.0",
+      "book.original.tooltip.f801015db5249a917fde.advanced.1",
+      "book.original.tooltip.f801015db5249a917fde.advanced.2",
+      "book.original.tooltip.f801015db5249a917fde.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"motus\",amount:1}]}": [
+      "book.original.tooltip.43b8acdc37c6e49f83b3.advanced.0",
+      "book.original.tooltip.43b8acdc37c6e49f83b3.advanced.1",
+      "book.original.tooltip.43b8acdc37c6e49f83b3.advanced.2",
+      "book.original.tooltip.43b8acdc37c6e49f83b3.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"ordo\",amount:1}]}": [
+      "book.original.tooltip.2031d87b1314b2f48347.advanced.0",
+      "book.original.tooltip.2031d87b1314b2f48347.advanced.1",
+      "book.original.tooltip.2031d87b1314b2f48347.advanced.2",
+      "book.original.tooltip.2031d87b1314b2f48347.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"perditio\",amount:1}]}": [
+      "book.original.tooltip.baaf6847f0a90a478da6.advanced.0",
+      "book.original.tooltip.baaf6847f0a90a478da6.advanced.1",
+      "book.original.tooltip.baaf6847f0a90a478da6.advanced.2",
+      "book.original.tooltip.baaf6847f0a90a478da6.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"permutatio\",amount:1}]}": [
+      "book.original.tooltip.5cfc95bcf37015106c03.advanced.0",
+      "book.original.tooltip.5cfc95bcf37015106c03.advanced.1",
+      "book.original.tooltip.5cfc95bcf37015106c03.advanced.2",
+      "book.original.tooltip.5cfc95bcf37015106c03.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"potentia\",amount:1}]}": [
+      "book.original.tooltip.4e4427285940eff10a5a.advanced.0",
+      "book.original.tooltip.4e4427285940eff10a5a.advanced.1",
+      "book.original.tooltip.4e4427285940eff10a5a.advanced.2",
+      "book.original.tooltip.4e4427285940eff10a5a.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"praecantatio\",amount:1}]}": [
+      "book.original.tooltip.0eb9c5a6fa64c0acbf7b.advanced.0",
+      "book.original.tooltip.0eb9c5a6fa64c0acbf7b.advanced.1",
+      "book.original.tooltip.0eb9c5a6fa64c0acbf7b.advanced.2",
+      "book.original.tooltip.0eb9c5a6fa64c0acbf7b.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"praemunio\",amount:1}]}": [
+      "book.original.tooltip.608a349abb187fb4ae3c.advanced.0",
+      "book.original.tooltip.608a349abb187fb4ae3c.advanced.1",
+      "book.original.tooltip.608a349abb187fb4ae3c.advanced.2",
+      "book.original.tooltip.608a349abb187fb4ae3c.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"sensus\",amount:1}]}": [
+      "book.original.tooltip.7da861c16d89e8611cbe.advanced.0",
+      "book.original.tooltip.7da861c16d89e8611cbe.advanced.1",
+      "book.original.tooltip.7da861c16d89e8611cbe.advanced.2",
+      "book.original.tooltip.7da861c16d89e8611cbe.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"spiritus\",amount:1}]}": [
+      "book.original.tooltip.84404ea74c63ac366afb.advanced.0",
+      "book.original.tooltip.84404ea74c63ac366afb.advanced.1",
+      "book.original.tooltip.84404ea74c63ac366afb.advanced.2",
+      "book.original.tooltip.84404ea74c63ac366afb.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"tenebrae\",amount:1}]}": [
+      "book.original.tooltip.c95c9d880796d5bd5a4f.advanced.0",
+      "book.original.tooltip.c95c9d880796d5bd5a4f.advanced.1",
+      "book.original.tooltip.c95c9d880796d5bd5a4f.advanced.2",
+      "book.original.tooltip.c95c9d880796d5bd5a4f.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"terra\",amount:1}]}": [
+      "book.original.tooltip.8f3d497bda385a2b8be1.advanced.0",
+      "book.original.tooltip.8f3d497bda385a2b8be1.advanced.1",
+      "book.original.tooltip.8f3d497bda385a2b8be1.advanced.2",
+      "book.original.tooltip.8f3d497bda385a2b8be1.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"vacuos\",amount:1}]}": [
+      "book.original.tooltip.652194381e5256d41887.advanced.0",
+      "book.original.tooltip.652194381e5256d41887.advanced.1",
+      "book.original.tooltip.652194381e5256d41887.advanced.2",
+      "book.original.tooltip.652194381e5256d41887.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"victus\",amount:1}]}": [
+      "book.original.tooltip.63a5ca2839c98a5b8d5e.advanced.0",
+      "book.original.tooltip.63a5ca2839c98a5b8d5e.advanced.1",
+      "book.original.tooltip.63a5ca2839c98a5b8d5e.advanced.2",
+      "book.original.tooltip.63a5ca2839c98a5b8d5e.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"vinculum\",amount:1}]}": [
+      "book.original.tooltip.dd9efabfb7eb3a3ad0e1.advanced.0",
+      "book.original.tooltip.dd9efabfb7eb3a3ad0e1.advanced.1",
+      "book.original.tooltip.dd9efabfb7eb3a3ad0e1.advanced.2",
+      "book.original.tooltip.dd9efabfb7eb3a3ad0e1.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"vitium\",amount:1}]}": [
+      "book.original.tooltip.d7be3097211abfbe24e2.advanced.0",
+      "book.original.tooltip.d7be3097211abfbe24e2.advanced.1",
+      "book.original.tooltip.d7be3097211abfbe24e2.advanced.2",
+      "book.original.tooltip.d7be3097211abfbe24e2.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"vitreus\",amount:1}]}": [
+      "book.original.tooltip.2f36ac494b99bb210cf7.advanced.0",
+      "book.original.tooltip.2f36ac494b99bb210cf7.advanced.1",
+      "book.original.tooltip.2f36ac494b99bb210cf7.advanced.2",
+      "book.original.tooltip.2f36ac494b99bb210cf7.advanced.3"
+    ],
+    "thaumcraft:label;1;1;{Aspects:[{key:\"volatus\",amount:1}]}": [
+      "book.original.tooltip.a7a0065c991d14246825.advanced.0",
+      "book.original.tooltip.a7a0065c991d14246825.advanced.1",
+      "book.original.tooltip.a7a0065c991d14246825.advanced.2",
+      "book.original.tooltip.a7a0065c991d14246825.advanced.3"
+    ],
+    "thaumcraft:lamp_arcane;1;0": [
+      "book.original.tooltip.a1c091ca8f9bae22c68d.advanced.0",
+      "book.original.tooltip.a1c091ca8f9bae22c68d.advanced.1"
+    ],
+    "thaumcraft:lamp_fertility;1;0": [
+      "book.original.tooltip.a0976cc3ee3c6fc0ae49.advanced.0",
+      "book.original.tooltip.a0976cc3ee3c6fc0ae49.advanced.1"
+    ],
+    "thaumcraft:lamp_growth;1;0": [
+      "book.original.tooltip.db22b83c7ee6ff037f44.advanced.0",
+      "book.original.tooltip.db22b83c7ee6ff037f44.advanced.1"
+    ],
+    "thaumcraft:leather;1;0": [
+      "book.original.tooltip.4668be9d1fa4c310e7c4.advanced.0",
+      "book.original.tooltip.4668be9d1fa4c310e7c4.advanced.1"
+    ],
+    "thaumcraft:levitator;1;0": [
+      "book.original.tooltip.cd70bb0a45429baa4320.advanced.0",
+      "book.original.tooltip.cd70bb0a45429baa4320.advanced.1"
+    ],
+    "thaumcraft:log_greatwood;1;0": [
+      "book.original.tooltip.5cc930404116794e7a5d.advanced.0",
+      "book.original.tooltip.5cc930404116794e7a5d.advanced.1"
+    ],
+    "thaumcraft:log_silverwood;1;0": [
+      "book.original.tooltip.95273d81aaae2267f727.advanced.0",
+      "book.original.tooltip.95273d81aaae2267f727.advanced.1"
+    ],
+    "thaumcraft:matrix_cost;1;0": [
+      "book.original.tooltip.deef5634f74fed065620.advanced.0",
+      "book.original.tooltip.deef5634f74fed065620.advanced.1"
+    ],
+    "thaumcraft:matrix_speed;1;0": [
+      "book.original.tooltip.2ff1bceddb5d2c534c88.advanced.0",
+      "book.original.tooltip.2ff1bceddb5d2c534c88.advanced.1"
+    ],
+    "thaumcraft:mechanism_complex;1;0": [
+      "book.original.tooltip.f34d2940b6cff66ed0f2.advanced.0",
+      "book.original.tooltip.f34d2940b6cff66ed0f2.advanced.1"
+    ],
+    "thaumcraft:mechanism_simple;1;0": [
+      "book.original.tooltip.d1ecb3614585c707d5c7.advanced.0",
+      "book.original.tooltip.d1ecb3614585c707d5c7.advanced.1"
+    ],
+    "thaumcraft:metal;1;2": [
+      "book.original.tooltip.7b1000b527d2fc53f70f.advanced.0",
+      "book.original.tooltip.7b1000b527d2fc53f70f.advanced.1"
+    ],
+    "thaumcraft:metal;1;3": [
+      "book.original.tooltip.28195db8fb3ab5fc137f.advanced.0",
+      "book.original.tooltip.28195db8fb3ab5fc137f.advanced.1"
+    ],
+    "thaumcraft:metal_alchemical;1;0": [
+      "book.original.tooltip.855a71fdeb72465c2fbe.advanced.0",
+      "book.original.tooltip.855a71fdeb72465c2fbe.advanced.1"
+    ],
+    "thaumcraft:metal_alchemical_advanced;1;0": [
+      "book.original.tooltip.0d0bae0b51d1be2886ec.advanced.0",
+      "book.original.tooltip.0d0bae0b51d1be2886ec.advanced.1"
+    ],
+    "thaumcraft:metal_brass;1;0": [
+      "book.original.tooltip.8e25fdabefb9253ab841.advanced.0",
+      "book.original.tooltip.8e25fdabefb9253ab841.advanced.1"
+    ],
+    "thaumcraft:metal_thaumium;1;0": [
+      "book.original.tooltip.a697e249636fd6c9fc5c.advanced.0",
+      "book.original.tooltip.a697e249636fd6c9fc5c.advanced.1"
+    ],
+    "thaumcraft:metal_void;1;0": [
+      "book.original.tooltip.75feab3d44246c906ce8.advanced.0",
+      "book.original.tooltip.75feab3d44246c906ce8.advanced.1"
+    ],
+    "thaumcraft:mind;1;0": [
+      "book.original.tooltip.de0746a9a3fe931d31f1.advanced.0",
+      "book.original.tooltip.de0746a9a3fe931d31f1.advanced.1"
+    ],
+    "thaumcraft:mind;1;1": [
+      "book.original.tooltip.963c1894ff90558097e3.advanced.0",
+      "book.original.tooltip.963c1894ff90558097e3.advanced.1"
+    ],
+    "thaumcraft:mind_clockwork;1;0": [
+      "book.original.tooltip.876c62ab54584ff4c3b6.advanced.0",
+      "book.original.tooltip.876c62ab54584ff4c3b6.advanced.1"
+    ],
+    "thaumcraft:mirror;1;0": [
+      "book.original.tooltip.d53e9e3fb83c2c68f474.advanced.0",
+      "book.original.tooltip.d53e9e3fb83c2c68f474.advanced.1"
+    ],
+    "thaumcraft:mirror_essentia;1;0": [
+      "book.original.tooltip.102cc09fc9fb0d22afdf.advanced.0",
+      "book.original.tooltip.102cc09fc9fb0d22afdf.advanced.1"
+    ],
+    "thaumcraft:mirrored_glass;1;0": [
+      "book.original.tooltip.6f5bae8453b2fd37753c.advanced.0",
+      "book.original.tooltip.6f5bae8453b2fd37753c.advanced.1"
+    ],
+    "thaumcraft:module;1;0": [
+      "book.original.tooltip.a0eece8f1a1bb84309df.advanced.0",
+      "book.original.tooltip.a0eece8f1a1bb84309df.advanced.1"
+    ],
+    "thaumcraft:module;1;1": [
+      "book.original.tooltip.4b3a073917dd37f71b96.advanced.0",
+      "book.original.tooltip.4b3a073917dd37f71b96.advanced.1"
+    ],
+    "thaumcraft:morphic_resonator;1;0": [
+      "book.original.tooltip.f241bec676d16b7ffa5c.advanced.0",
+      "book.original.tooltip.f241bec676d16b7ffa5c.advanced.1"
+    ],
+    "thaumcraft:nitor;1;4": [
+      "book.original.tooltip.dcd81bb93d276540ae11.advanced.0",
+      "book.original.tooltip.dcd81bb93d276540ae11.advanced.1"
+    ],
+    "thaumcraft:nitor_black;1;0": [
+      "book.original.tooltip.fde9796a74b8f7ed12da.advanced.0",
+      "book.original.tooltip.fde9796a74b8f7ed12da.advanced.1"
+    ],
+    "thaumcraft:nitor_blue;1;0": [
+      "book.original.tooltip.5a8344b8e9fd22719fd5.advanced.0",
+      "book.original.tooltip.5a8344b8e9fd22719fd5.advanced.1"
+    ],
+    "thaumcraft:nitor_brown;1;0": [
+      "book.original.tooltip.b3f2979a07348fa4979f.advanced.0",
+      "book.original.tooltip.b3f2979a07348fa4979f.advanced.1"
+    ],
+    "thaumcraft:nitor_cyan;1;0": [
+      "book.original.tooltip.ebf752731f30de302841.advanced.0",
+      "book.original.tooltip.ebf752731f30de302841.advanced.1"
+    ],
+    "thaumcraft:nitor_gray;1;0": [
+      "book.original.tooltip.a0a1b7e291f720bd1913.advanced.0",
+      "book.original.tooltip.a0a1b7e291f720bd1913.advanced.1"
+    ],
+    "thaumcraft:nitor_green;1;0": [
+      "book.original.tooltip.0b4673cdece6d343180f.advanced.0",
+      "book.original.tooltip.0b4673cdece6d343180f.advanced.1"
+    ],
+    "thaumcraft:nitor_light_blue;1;0": [
+      "book.original.tooltip.25d309271275769175e6.advanced.0",
+      "book.original.tooltip.25d309271275769175e6.advanced.1"
+    ],
+    "thaumcraft:nitor_light_gray;1;0": [
+      "book.original.tooltip.a40c02818999421c4da9.advanced.0",
+      "book.original.tooltip.a40c02818999421c4da9.advanced.1"
+    ],
+    "thaumcraft:nitor_lightblue;1;0": [
+      "book.original.tooltip.62eeeb1355cdfdda4423.advanced.0",
+      "book.original.tooltip.62eeeb1355cdfdda4423.advanced.1"
+    ],
+    "thaumcraft:nitor_lime;1;0": [
+      "book.original.tooltip.265bdc79ecec877eb4aa.advanced.0",
+      "book.original.tooltip.265bdc79ecec877eb4aa.advanced.1"
+    ],
+    "thaumcraft:nitor_magenta;1;0": [
+      "book.original.tooltip.75ea6c3f405c1cdb211f.advanced.0",
+      "book.original.tooltip.75ea6c3f405c1cdb211f.advanced.1"
+    ],
+    "thaumcraft:nitor_orange;1;0": [
+      "book.original.tooltip.a01cb063a11aa95d7804.advanced.0",
+      "book.original.tooltip.a01cb063a11aa95d7804.advanced.1"
+    ],
+    "thaumcraft:nitor_pink;1;0": [
+      "book.original.tooltip.db89c4e7dc185c729711.advanced.0",
+      "book.original.tooltip.db89c4e7dc185c729711.advanced.1"
+    ],
+    "thaumcraft:nitor_purple;1;0": [
+      "book.original.tooltip.aa53d346c8dc394d7728.advanced.0",
+      "book.original.tooltip.aa53d346c8dc394d7728.advanced.1"
+    ],
+    "thaumcraft:nitor_red;1;0": [
+      "book.original.tooltip.7623e88208a5169534ae.advanced.0",
+      "book.original.tooltip.7623e88208a5169534ae.advanced.1"
+    ],
+    "thaumcraft:nitor_silver;1;0": [
+      "book.original.tooltip.0ba99ee3af99098d68b4.advanced.0",
+      "book.original.tooltip.0ba99ee3af99098d68b4.advanced.1"
+    ],
+    "thaumcraft:nitor_white;1;0": [
+      "book.original.tooltip.46734d7345c2d5b24522.advanced.0",
+      "book.original.tooltip.46734d7345c2d5b24522.advanced.1"
+    ],
+    "thaumcraft:nitor_yellow;1;0": [
+      "book.original.tooltip.451f5d7ad1785daf4fe8.advanced.0",
+      "book.original.tooltip.451f5d7ad1785daf4fe8.advanced.1"
+    ],
+    "thaumcraft:nugget;1;0": [
+      "book.original.tooltip.616a28a7a20f230a76cb.advanced.0",
+      "book.original.tooltip.616a28a7a20f230a76cb.advanced.1"
+    ],
+    "thaumcraft:nugget;1;10": [
+      "book.original.tooltip.48be88a804304108b68e.advanced.0",
+      "book.original.tooltip.48be88a804304108b68e.advanced.1"
+    ],
+    "thaumcraft:nugget;1;5": [
+      "book.original.tooltip.439a0ebef6c0f2a96de1.advanced.0",
+      "book.original.tooltip.439a0ebef6c0f2a96de1.advanced.1"
+    ],
+    "thaumcraft:nugget;1;6": [
+      "book.original.tooltip.721ace01966c3a908ce4.advanced.0",
+      "book.original.tooltip.721ace01966c3a908ce4.advanced.1"
+    ],
+    "thaumcraft:nugget;1;7": [
+      "book.original.tooltip.2d49dc52c95662e226fd.advanced.0",
+      "book.original.tooltip.2d49dc52c95662e226fd.advanced.1"
+    ],
+    "thaumcraft:nugget;1;8": [
+      "book.original.tooltip.5d59670ab49a482b843a.advanced.0",
+      "book.original.tooltip.5d59670ab49a482b843a.advanced.1"
+    ],
+    "thaumcraft:nugget;1;9": [
+      "book.original.tooltip.49d77d92cf725559f9ea.advanced.0",
+      "book.original.tooltip.49d77d92cf725559f9ea.advanced.1"
+    ],
+    "thaumcraft:nugget_brass;1;0": [
+      "book.original.tooltip.af5893d8e48edeb82a6f.advanced.0",
+      "book.original.tooltip.af5893d8e48edeb82a6f.advanced.1"
+    ],
+    "thaumcraft:nugget_quartz;1;0": [
+      "book.original.tooltip.5bab6bb34bab95cbe3c8.advanced.0",
+      "book.original.tooltip.5bab6bb34bab95cbe3c8.advanced.1"
+    ],
+    "thaumcraft:nugget_quicksilver;1;0": [
+      "book.original.tooltip.21199e83471b0db8fd11.advanced.0",
+      "book.original.tooltip.21199e83471b0db8fd11.advanced.1"
+    ],
+    "thaumcraft:nugget_thaumium;1;0": [
+      "book.original.tooltip.8256210e8eeb46b5d0de.advanced.0",
+      "book.original.tooltip.8256210e8eeb46b5d0de.advanced.1"
+    ],
+    "thaumcraft:nugget_void;1;0": [
+      "book.original.tooltip.92082c40944e8c14ea3b.advanced.0",
+      "book.original.tooltip.92082c40944e8c14ea3b.advanced.1"
+    ],
+    "thaumcraft:ore_cinnabar;1;0": [
+      "book.original.tooltip.3a8a0fe9b2ab5cedd43d.advanced.0",
+      "book.original.tooltip.3a8a0fe9b2ab5cedd43d.advanced.1"
+    ],
+    "thaumcraft:pattern_crafter;1;0": [
+      "book.original.tooltip.cf1b47c84b587f89d123.advanced.0",
+      "book.original.tooltip.cf1b47c84b587f89d123.advanced.1"
+    ],
+    "thaumcraft:paving_stone_barrier;1;0": [
+      "book.original.tooltip.f6429d5109d1ce4ea8cd.advanced.0",
+      "book.original.tooltip.f6429d5109d1ce4ea8cd.advanced.1"
+    ],
+    "thaumcraft:paving_stone_travel;1;0": [
+      "book.original.tooltip.4556c95859960484765a.advanced.0",
+      "book.original.tooltip.4556c95859960484765a.advanced.1"
+    ],
+    "thaumcraft:pedestal_ancient;1;0": [
+      "book.original.tooltip.42c19ecb4be321d1dc85.advanced.0",
+      "book.original.tooltip.42c19ecb4be321d1dc85.advanced.1"
+    ],
+    "thaumcraft:pedestal_arcane;1;0": [
+      "book.original.tooltip.aedef6d3c0ef18227b14.advanced.0",
+      "book.original.tooltip.aedef6d3c0ef18227b14.advanced.1"
+    ],
+    "thaumcraft:pedestal_eldritch;1;0": [
+      "book.original.tooltip.2b8fa4df703510c90f74.advanced.0",
+      "book.original.tooltip.2b8fa4df703510c90f74.advanced.1"
+    ],
+    "thaumcraft:phial;1;0": [
+      "book.original.tooltip.aaa073487ec6b7339915.advanced.0",
+      "book.original.tooltip.aaa073487ec6b7339915.advanced.1"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'aer'}]}": [
+      "book.original.tooltip.ab306a1dd33b3a1afb6e.advanced.0",
+      "book.original.tooltip.ab306a1dd33b3a1afb6e.advanced.1",
+      "book.original.tooltip.ab306a1dd33b3a1afb6e.advanced.2",
+      "book.original.tooltip.ab306a1dd33b3a1afb6e.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'alienis'}]}": [
+      "book.original.tooltip.bc27826b6db932d7649c.advanced.0",
+      "book.original.tooltip.bc27826b6db932d7649c.advanced.1",
+      "book.original.tooltip.bc27826b6db932d7649c.advanced.2",
+      "book.original.tooltip.bc27826b6db932d7649c.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'alkimia'}]}": [
+      "book.original.tooltip.c684be6c92a96442f5df.advanced.0",
+      "book.original.tooltip.c684be6c92a96442f5df.advanced.1",
+      "book.original.tooltip.c684be6c92a96442f5df.advanced.2",
+      "book.original.tooltip.c684be6c92a96442f5df.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'vinculum'}]}": [
+      "book.original.tooltip.0385ec1bd5a17f5c97b3.advanced.0",
+      "book.original.tooltip.0385ec1bd5a17f5c97b3.advanced.1",
+      "book.original.tooltip.0385ec1bd5a17f5c97b3.advanced.2",
+      "book.original.tooltip.0385ec1bd5a17f5c97b3.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'vitium'}]}": [
+      "book.original.tooltip.2d6b7265774ba144584a.advanced.0",
+      "book.original.tooltip.2d6b7265774ba144584a.advanced.1",
+      "book.original.tooltip.2d6b7265774ba144584a.advanced.2",
+      "book.original.tooltip.2d6b7265774ba144584a.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"aer\",amount:10}]}": [
+      "book.original.tooltip.6aa8364290951d093145.advanced.0",
+      "book.original.tooltip.6aa8364290951d093145.advanced.1",
+      "book.original.tooltip.6aa8364290951d093145.advanced.2",
+      "book.original.tooltip.6aa8364290951d093145.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"alienis\",amount:10}]}": [
+      "book.original.tooltip.68b84c64a4faadf5b1d3.advanced.0",
+      "book.original.tooltip.68b84c64a4faadf5b1d3.advanced.1",
+      "book.original.tooltip.68b84c64a4faadf5b1d3.advanced.2",
+      "book.original.tooltip.68b84c64a4faadf5b1d3.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"alkimia\",amount:10}]}": [
+      "book.original.tooltip.dd991978e00699a96a59.advanced.0",
+      "book.original.tooltip.dd991978e00699a96a59.advanced.1",
+      "book.original.tooltip.dd991978e00699a96a59.advanced.2",
+      "book.original.tooltip.dd991978e00699a96a59.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"aqua\",amount:10}]}": [
+      "book.original.tooltip.de3ab96144a61cdae821.advanced.0",
+      "book.original.tooltip.de3ab96144a61cdae821.advanced.1",
+      "book.original.tooltip.de3ab96144a61cdae821.advanced.2",
+      "book.original.tooltip.de3ab96144a61cdae821.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"auram\",amount:10}]}": [
+      "book.original.tooltip.38892d43507087a4d90f.advanced.0",
+      "book.original.tooltip.38892d43507087a4d90f.advanced.1",
+      "book.original.tooltip.38892d43507087a4d90f.advanced.2",
+      "book.original.tooltip.38892d43507087a4d90f.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"aversio\",amount:10}]}": [
+      "book.original.tooltip.113689044d076621a726.advanced.0",
+      "book.original.tooltip.113689044d076621a726.advanced.1",
+      "book.original.tooltip.113689044d076621a726.advanced.2",
+      "book.original.tooltip.113689044d076621a726.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"bestia\",amount:10}]}": [
+      "book.original.tooltip.8f8bef32e2bc7c86fe4b.advanced.0",
+      "book.original.tooltip.8f8bef32e2bc7c86fe4b.advanced.1",
+      "book.original.tooltip.8f8bef32e2bc7c86fe4b.advanced.2",
+      "book.original.tooltip.8f8bef32e2bc7c86fe4b.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"cognitio\",amount:10}]}": [
+      "book.original.tooltip.20ebfd54f9ccb4751153.advanced.0",
+      "book.original.tooltip.20ebfd54f9ccb4751153.advanced.1",
+      "book.original.tooltip.20ebfd54f9ccb4751153.advanced.2",
+      "book.original.tooltip.20ebfd54f9ccb4751153.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"desiderium\",amount:10}]}": [
+      "book.original.tooltip.ddc5fb24be0c2b569f4d.advanced.0",
+      "book.original.tooltip.ddc5fb24be0c2b569f4d.advanced.1",
+      "book.original.tooltip.ddc5fb24be0c2b569f4d.advanced.2",
+      "book.original.tooltip.ddc5fb24be0c2b569f4d.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"exanimis\",amount:10}]}": [
+      "book.original.tooltip.244e896b1ef08ca0bc99.advanced.0",
+      "book.original.tooltip.244e896b1ef08ca0bc99.advanced.1",
+      "book.original.tooltip.244e896b1ef08ca0bc99.advanced.2",
+      "book.original.tooltip.244e896b1ef08ca0bc99.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"fabrico\",amount:10}]}": [
+      "book.original.tooltip.d0eef33d3d5030bf3930.advanced.0",
+      "book.original.tooltip.d0eef33d3d5030bf3930.advanced.1",
+      "book.original.tooltip.d0eef33d3d5030bf3930.advanced.2",
+      "book.original.tooltip.d0eef33d3d5030bf3930.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"gelum\",amount:10}]}": [
+      "book.original.tooltip.aa05002a7326fe91d3dc.advanced.0",
+      "book.original.tooltip.aa05002a7326fe91d3dc.advanced.1",
+      "book.original.tooltip.aa05002a7326fe91d3dc.advanced.2",
+      "book.original.tooltip.aa05002a7326fe91d3dc.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"herba\",amount:10}]}": [
+      "book.original.tooltip.c097a1b46c6e46ab1633.advanced.0",
+      "book.original.tooltip.c097a1b46c6e46ab1633.advanced.1",
+      "book.original.tooltip.c097a1b46c6e46ab1633.advanced.2",
+      "book.original.tooltip.c097a1b46c6e46ab1633.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"humanus\",amount:10}]}": [
+      "book.original.tooltip.0c545eec04b1be9778a8.advanced.0",
+      "book.original.tooltip.0c545eec04b1be9778a8.advanced.1",
+      "book.original.tooltip.0c545eec04b1be9778a8.advanced.2",
+      "book.original.tooltip.0c545eec04b1be9778a8.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"ignis\",amount:10}]}": [
+      "book.original.tooltip.73544eff9400224fb48b.advanced.0",
+      "book.original.tooltip.73544eff9400224fb48b.advanced.1",
+      "book.original.tooltip.73544eff9400224fb48b.advanced.2",
+      "book.original.tooltip.73544eff9400224fb48b.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"instrumentum\",amount:10}]}": [
+      "book.original.tooltip.67311b00b3b18aab4909.advanced.0",
+      "book.original.tooltip.67311b00b3b18aab4909.advanced.1",
+      "book.original.tooltip.67311b00b3b18aab4909.advanced.2",
+      "book.original.tooltip.67311b00b3b18aab4909.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"lux\",amount:10}]}": [
+      "book.original.tooltip.f90faf68b74563922d1a.advanced.0",
+      "book.original.tooltip.f90faf68b74563922d1a.advanced.1",
+      "book.original.tooltip.f90faf68b74563922d1a.advanced.2",
+      "book.original.tooltip.f90faf68b74563922d1a.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"machina\",amount:10}]}": [
+      "book.original.tooltip.f4dd78118e60dea907d7.advanced.0",
+      "book.original.tooltip.f4dd78118e60dea907d7.advanced.1",
+      "book.original.tooltip.f4dd78118e60dea907d7.advanced.2",
+      "book.original.tooltip.f4dd78118e60dea907d7.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"metallum\",amount:10}]}": [
+      "book.original.tooltip.2e7f76a44f0a22451970.advanced.0",
+      "book.original.tooltip.2e7f76a44f0a22451970.advanced.1",
+      "book.original.tooltip.2e7f76a44f0a22451970.advanced.2",
+      "book.original.tooltip.2e7f76a44f0a22451970.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"mortuus\",amount:10}]}": [
+      "book.original.tooltip.bf22404ddfb6d664d698.advanced.0",
+      "book.original.tooltip.bf22404ddfb6d664d698.advanced.1",
+      "book.original.tooltip.bf22404ddfb6d664d698.advanced.2",
+      "book.original.tooltip.bf22404ddfb6d664d698.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"motus\",amount:10}]}": [
+      "book.original.tooltip.66fa43dd264d76b4370e.advanced.0",
+      "book.original.tooltip.66fa43dd264d76b4370e.advanced.1",
+      "book.original.tooltip.66fa43dd264d76b4370e.advanced.2",
+      "book.original.tooltip.66fa43dd264d76b4370e.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"ordo\",amount:10}]}": [
+      "book.original.tooltip.0e2afe21aef26a12edf8.advanced.0",
+      "book.original.tooltip.0e2afe21aef26a12edf8.advanced.1",
+      "book.original.tooltip.0e2afe21aef26a12edf8.advanced.2",
+      "book.original.tooltip.0e2afe21aef26a12edf8.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"perditio\",amount:10}]}": [
+      "book.original.tooltip.6fbe60efece53c37e0cc.advanced.0",
+      "book.original.tooltip.6fbe60efece53c37e0cc.advanced.1",
+      "book.original.tooltip.6fbe60efece53c37e0cc.advanced.2",
+      "book.original.tooltip.6fbe60efece53c37e0cc.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"permutatio\",amount:10}]}": [
+      "book.original.tooltip.5ea73fa3e43e4ce62cf6.advanced.0",
+      "book.original.tooltip.5ea73fa3e43e4ce62cf6.advanced.1",
+      "book.original.tooltip.5ea73fa3e43e4ce62cf6.advanced.2",
+      "book.original.tooltip.5ea73fa3e43e4ce62cf6.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"potentia\",amount:10}]}": [
+      "book.original.tooltip.12dfd2f11408d4b9ecd7.advanced.0",
+      "book.original.tooltip.12dfd2f11408d4b9ecd7.advanced.1",
+      "book.original.tooltip.12dfd2f11408d4b9ecd7.advanced.2",
+      "book.original.tooltip.12dfd2f11408d4b9ecd7.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"praecantatio\",amount:10}]}": [
+      "book.original.tooltip.3c1c54bdf05754fe14e1.advanced.0",
+      "book.original.tooltip.3c1c54bdf05754fe14e1.advanced.1",
+      "book.original.tooltip.3c1c54bdf05754fe14e1.advanced.2",
+      "book.original.tooltip.3c1c54bdf05754fe14e1.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"praemunio\",amount:10}]}": [
+      "book.original.tooltip.38cf9afffd999e6fb638.advanced.0",
+      "book.original.tooltip.38cf9afffd999e6fb638.advanced.1",
+      "book.original.tooltip.38cf9afffd999e6fb638.advanced.2",
+      "book.original.tooltip.38cf9afffd999e6fb638.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"sensus\",amount:10}]}": [
+      "book.original.tooltip.5bfea8d329a677c2a8bd.advanced.0",
+      "book.original.tooltip.5bfea8d329a677c2a8bd.advanced.1",
+      "book.original.tooltip.5bfea8d329a677c2a8bd.advanced.2",
+      "book.original.tooltip.5bfea8d329a677c2a8bd.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"spiritus\",amount:10}]}": [
+      "book.original.tooltip.97413c5a6973569c1b96.advanced.0",
+      "book.original.tooltip.97413c5a6973569c1b96.advanced.1",
+      "book.original.tooltip.97413c5a6973569c1b96.advanced.2",
+      "book.original.tooltip.97413c5a6973569c1b96.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"tenebrae\",amount:10}]}": [
+      "book.original.tooltip.dd7b69bea5377df74e9a.advanced.0",
+      "book.original.tooltip.dd7b69bea5377df74e9a.advanced.1",
+      "book.original.tooltip.dd7b69bea5377df74e9a.advanced.2",
+      "book.original.tooltip.dd7b69bea5377df74e9a.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"terra\",amount:10}]}": [
+      "book.original.tooltip.f0b842667cad9db8d8cd.advanced.0",
+      "book.original.tooltip.f0b842667cad9db8d8cd.advanced.1",
+      "book.original.tooltip.f0b842667cad9db8d8cd.advanced.2",
+      "book.original.tooltip.f0b842667cad9db8d8cd.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"vacuos\",amount:10}]}": [
+      "book.original.tooltip.0bcde10794123dda2416.advanced.0",
+      "book.original.tooltip.0bcde10794123dda2416.advanced.1",
+      "book.original.tooltip.0bcde10794123dda2416.advanced.2",
+      "book.original.tooltip.0bcde10794123dda2416.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"victus\",amount:10}]}": [
+      "book.original.tooltip.4c27c5e8793790e18bbf.advanced.0",
+      "book.original.tooltip.4c27c5e8793790e18bbf.advanced.1",
+      "book.original.tooltip.4c27c5e8793790e18bbf.advanced.2",
+      "book.original.tooltip.4c27c5e8793790e18bbf.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"vinculum\",amount:10}]}": [
+      "book.original.tooltip.648c6742d5887d76303e.advanced.0",
+      "book.original.tooltip.648c6742d5887d76303e.advanced.1",
+      "book.original.tooltip.648c6742d5887d76303e.advanced.2",
+      "book.original.tooltip.648c6742d5887d76303e.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"vitium\",amount:10}]}": [
+      "book.original.tooltip.aa42aa07d5cf3cc8de48.advanced.0",
+      "book.original.tooltip.aa42aa07d5cf3cc8de48.advanced.1",
+      "book.original.tooltip.aa42aa07d5cf3cc8de48.advanced.2",
+      "book.original.tooltip.aa42aa07d5cf3cc8de48.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"vitreus\",amount:10}]}": [
+      "book.original.tooltip.46afb5d974446a3eef72.advanced.0",
+      "book.original.tooltip.46afb5d974446a3eef72.advanced.1",
+      "book.original.tooltip.46afb5d974446a3eef72.advanced.2",
+      "book.original.tooltip.46afb5d974446a3eef72.advanced.3"
+    ],
+    "thaumcraft:phial;1;1;{Aspects:[{key:\"volatus\",amount:10}]}": [
+      "book.original.tooltip.759dcb2e98c78783729e.advanced.0",
+      "book.original.tooltip.759dcb2e98c78783729e.advanced.1",
+      "book.original.tooltip.759dcb2e98c78783729e.advanced.2",
+      "book.original.tooltip.759dcb2e98c78783729e.advanced.3"
+    ],
+    "thaumcraft:plank_greatwood;1;0": [
+      "book.original.tooltip.f6aa55e604b5ee587d0e.advanced.0",
+      "book.original.tooltip.f6aa55e604b5ee587d0e.advanced.1"
+    ],
+    "thaumcraft:plank_silverwood;1;0": [
+      "book.original.tooltip.cd0e13d36ca101776aa8.advanced.0",
+      "book.original.tooltip.cd0e13d36ca101776aa8.advanced.1"
+    ],
+    "thaumcraft:plate;1;0": [
+      "book.original.tooltip.f6c321e83fee88a7cc41.advanced.0",
+      "book.original.tooltip.f6c321e83fee88a7cc41.advanced.1"
+    ],
+    "thaumcraft:plate;1;1": [
+      "book.original.tooltip.0e75ed2646fb6a73ab62.advanced.0",
+      "book.original.tooltip.0e75ed2646fb6a73ab62.advanced.1"
+    ],
+    "thaumcraft:plate;1;2": [
+      "book.original.tooltip.5c2f7cccf909596378ab.advanced.0",
+      "book.original.tooltip.5c2f7cccf909596378ab.advanced.1"
+    ],
+    "thaumcraft:plate;1;3": [
+      "book.original.tooltip.e939f167c119edff508d.advanced.0",
+      "book.original.tooltip.e939f167c119edff508d.advanced.1"
+    ],
+    "thaumcraft:plate_brass;1;0": [
+      "book.original.tooltip.6688a63dfdcd662de8ca.advanced.0",
+      "book.original.tooltip.6688a63dfdcd662de8ca.advanced.1"
+    ],
+    "thaumcraft:plate_iron;1;0": [
+      "book.original.tooltip.4dcea190f38ef5fc5503.advanced.0",
+      "book.original.tooltip.4dcea190f38ef5fc5503.advanced.1"
+    ],
+    "thaumcraft:plate_thaumium;1;0": [
+      "book.original.tooltip.6c80ecdd66c63f93313a.advanced.0",
+      "book.original.tooltip.6c80ecdd66c63f93313a.advanced.1"
+    ],
+    "thaumcraft:plate_void;1;0": [
+      "book.original.tooltip.c0b25ceef4887afa5f01.advanced.0",
+      "book.original.tooltip.c0b25ceef4887afa5f01.advanced.1"
+    ],
+    "thaumcraft:potion_sprayer;1;0": [
+      "book.original.tooltip.c23f27827ab6d81696f4.advanced.0",
+      "book.original.tooltip.c23f27827ab6d81696f4.advanced.1"
+    ],
+    "thaumcraft:primal_crusher;1;0": [
+      "book.original.tooltip.c012054771d8e6863a33.advanced.0",
+      "book.original.tooltip.c012054771d8e6863a33.advanced.1",
+      "book.original.tooltip.c012054771d8e6863a33.advanced.2",
+      "book.original.tooltip.c012054771d8e6863a33.advanced.3",
+      "book.original.tooltip.c012054771d8e6863a33.advanced.4",
+      "book.original.tooltip.c012054771d8e6863a33.advanced.5",
+      "book.original.tooltip.c012054771d8e6863a33.advanced.6"
+    ],
+    "thaumcraft:primordial_pearl;1;0": [
+      "book.original.tooltip.dcf4afa16125660fc7a2.advanced.0",
+      "book.original.tooltip.dcf4afa16125660fc7a2.advanced.1"
+    ],
+    "thaumcraft:quicksilver;1;0": [
+      "book.original.tooltip.5b776a56e1371964af31.advanced.0",
+      "book.original.tooltip.5b776a56e1371964af31.advanced.1"
+    ],
+    "thaumcraft:recharge_pedestal;1;0": [
+      "book.original.tooltip.3448ae8202a26e368b0e.advanced.0",
+      "book.original.tooltip.3448ae8202a26e368b0e.advanced.1"
+    ],
+    "thaumcraft:redstone_relay;1;0": [
+      "book.original.tooltip.5f8457b4c32bc54b54b9.advanced.0",
+      "book.original.tooltip.5f8457b4c32bc54b54b9.advanced.1"
+    ],
+    "thaumcraft:research_table;1;0": [
+      "book.original.tooltip.f99a8d0f3cdb81d4f574.advanced.0",
+      "book.original.tooltip.f99a8d0f3cdb81d4f574.advanced.1"
+    ],
+    "thaumcraft:resonator;1;0": [
+      "book.original.tooltip.b704dc8126fac81ee8b4.advanced.0",
+      "book.original.tooltip.b704dc8126fac81ee8b4.advanced.1"
+    ],
+    "thaumcraft:salis_mundus;1;0": [
+      "book.original.tooltip.5659d557f7ee282ff5f7.advanced.0",
+      "book.original.tooltip.5659d557f7ee282ff5f7.advanced.1"
+    ],
+    "thaumcraft:sanity_checker;1;0": [
+      "book.original.tooltip.9bcb1374c016428d7cbc.advanced.0",
+      "book.original.tooltip.9bcb1374c016428d7cbc.advanced.1"
+    ],
+    "thaumcraft:sanity_soap;1;0": [
+      "book.original.tooltip.3e99af284c0238cb736d.advanced.0",
+      "book.original.tooltip.3e99af284c0238cb736d.advanced.1"
+    ],
+    "thaumcraft:scribing_tools;1;0": [
+      "book.original.tooltip.9a0038f9185d6a811446.advanced.0",
+      "book.original.tooltip.9a0038f9185d6a811446.advanced.1"
+    ],
+    "thaumcraft:seal;1;0": [
+      "book.original.tooltip.1b8df044850e44f02439.advanced.0",
+      "book.original.tooltip.1b8df044850e44f02439.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:breaker": [
+      "book.original.tooltip.fda73307cedfa9b27448.advanced.0",
+      "book.original.tooltip.fda73307cedfa9b27448.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:breaker_advanced": [
+      "book.original.tooltip.8cb5ab3a8f1bb3154f7e.advanced.0",
+      "book.original.tooltip.8cb5ab3a8f1bb3154f7e.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:butcher": [
+      "book.original.tooltip.7948d99238f61235155b.advanced.0",
+      "book.original.tooltip.7948d99238f61235155b.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:empty": [
+      "book.original.tooltip.27bcfae1e7c9825cb8a2.advanced.0",
+      "book.original.tooltip.27bcfae1e7c9825cb8a2.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:empty_advanced": [
+      "book.original.tooltip.d68058c891a6fea0bd53.advanced.0",
+      "book.original.tooltip.d68058c891a6fea0bd53.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:fill": [
+      "book.original.tooltip.22bdcc086eaca5662efc.advanced.0",
+      "book.original.tooltip.22bdcc086eaca5662efc.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:fill_advanced": [
+      "book.original.tooltip.67f1dafc08dff0a9bfbd.advanced.0",
+      "book.original.tooltip.67f1dafc08dff0a9bfbd.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:guard": [
+      "book.original.tooltip.7edddb4a7c7b3888d943.advanced.0",
+      "book.original.tooltip.7edddb4a7c7b3888d943.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:guard_advanced": [
+      "book.original.tooltip.df0df57aab8cd1363d4f.advanced.0",
+      "book.original.tooltip.df0df57aab8cd1363d4f.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:harvest": [
+      "book.original.tooltip.c7fc133bb1f460664918.advanced.0",
+      "book.original.tooltip.c7fc133bb1f460664918.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:lumber": [
+      "book.original.tooltip.473c5ff2331f16ce621b.advanced.0",
+      "book.original.tooltip.473c5ff2331f16ce621b.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:pickup": [
+      "book.original.tooltip.d129d584c963f9d87aa2.advanced.0",
+      "book.original.tooltip.d129d584c963f9d87aa2.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:pickup_advanced": [
+      "book.original.tooltip.2db2d6bf86e17b6f6849.advanced.0",
+      "book.original.tooltip.2db2d6bf86e17b6f6849.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:provider": [
+      "book.original.tooltip.b3859bdaa6b2d2b89d47.advanced.0",
+      "book.original.tooltip.b3859bdaa6b2d2b89d47.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:stock": [
+      "book.original.tooltip.2668a04d52474b591373.advanced.0",
+      "book.original.tooltip.2668a04d52474b591373.advanced.1"
+    ],
+    "thaumcraft:seals;1;0;thaumcraft:use": [
+      "book.original.tooltip.242d7454011efc2c203a.advanced.0",
+      "book.original.tooltip.242d7454011efc2c203a.advanced.1"
+    ],
+    "thaumcraft:shimmerleaf;1;0": [
+      "book.original.tooltip.aeb678eabccd00169c4e.advanced.0",
+      "book.original.tooltip.aeb678eabccd00169c4e.advanced.1"
+    ],
+    "thaumcraft:slab_ancient;1;0": [
+      "book.original.tooltip.6bb4489da4905658fa36.advanced.0",
+      "book.original.tooltip.6bb4489da4905658fa36.advanced.1"
+    ],
+    "thaumcraft:slab_arcane_brick;1;0": [
+      "book.original.tooltip.fb4dbe18d5ff754d7dee.advanced.0",
+      "book.original.tooltip.fb4dbe18d5ff754d7dee.advanced.1"
+    ],
+    "thaumcraft:slab_arcane_stone;1;0": [
+      "book.original.tooltip.e460dee5a4e319188389.advanced.0",
+      "book.original.tooltip.e460dee5a4e319188389.advanced.1"
+    ],
+    "thaumcraft:slab_eldritch;1;0": [
+      "book.original.tooltip.0ecafbfc38f1afa61de6.advanced.0",
+      "book.original.tooltip.0ecafbfc38f1afa61de6.advanced.1"
+    ],
+    "thaumcraft:slab_greatwood;1;0": [
+      "book.original.tooltip.784cb67ec361dcfbce30.advanced.0",
+      "book.original.tooltip.784cb67ec361dcfbce30.advanced.1"
+    ],
+    "thaumcraft:slab_silverwood;1;0": [
+      "book.original.tooltip.29688a8e27739869e0fe.advanced.0",
+      "book.original.tooltip.29688a8e27739869e0fe.advanced.1"
+    ],
+    "thaumcraft:smelter_aux;1;0": [
+      "book.original.tooltip.da9b25486eb653bc6444.advanced.0",
+      "book.original.tooltip.da9b25486eb653bc6444.advanced.1"
+    ],
+    "thaumcraft:smelter_basic;1;0": [
+      "book.original.tooltip.1cf00e636cd7cee141d9.advanced.0",
+      "book.original.tooltip.1cf00e636cd7cee141d9.advanced.1"
+    ],
+    "thaumcraft:smelter_thaumium;1;0": [
+      "book.original.tooltip.d4ab720a92add78c19e9.advanced.0",
+      "book.original.tooltip.d4ab720a92add78c19e9.advanced.1"
+    ],
+    "thaumcraft:smelter_vent;1;0": [
+      "book.original.tooltip.cc1ed8d9767639d4c333.advanced.0",
+      "book.original.tooltip.cc1ed8d9767639d4c333.advanced.1"
+    ],
+    "thaumcraft:smelter_void;1;0": [
+      "book.original.tooltip.de3dd021f95c8ef572cb.advanced.0",
+      "book.original.tooltip.de3dd021f95c8ef572cb.advanced.1"
+    ],
+    "thaumcraft:spa;1;0": [
+      "book.original.tooltip.cba797e44bbd13f85100.advanced.0",
+      "book.original.tooltip.cba797e44bbd13f85100.advanced.1"
+    ],
+    "thaumcraft:stabilizer;1;0": [
+      "book.original.tooltip.7efa9c666efeb87a10ad.advanced.0",
+      "book.original.tooltip.7efa9c666efeb87a10ad.advanced.1"
+    ],
+    "thaumcraft:stairs_ancient;1;0": [
+      "book.original.tooltip.286c0e38418b3b066258.advanced.0",
+      "book.original.tooltip.286c0e38418b3b066258.advanced.1"
+    ],
+    "thaumcraft:stairs_arcane;1;0": [
+      "book.original.tooltip.7652137d3093229c6dfc.advanced.0",
+      "book.original.tooltip.7652137d3093229c6dfc.advanced.1"
+    ],
+    "thaumcraft:stairs_arcane_brick;1;0": [
+      "book.original.tooltip.987c5749944eabd93d74.advanced.0",
+      "book.original.tooltip.987c5749944eabd93d74.advanced.1"
+    ],
+    "thaumcraft:stairs_greatwood;1;0": [
+      "book.original.tooltip.a316fe9af69dec8ef7a9.advanced.0",
+      "book.original.tooltip.a316fe9af69dec8ef7a9.advanced.1"
+    ],
+    "thaumcraft:stairs_silverwood;1;0": [
+      "book.original.tooltip.42233765f429b61b7980.advanced.0",
+      "book.original.tooltip.42233765f429b61b7980.advanced.1"
+    ],
+    "thaumcraft:stone_ancient;1;0": [
+      "book.original.tooltip.24ce422391f4a593ade9.advanced.0",
+      "book.original.tooltip.24ce422391f4a593ade9.advanced.1"
+    ],
+    "thaumcraft:stone_arcane;1;0": [
+      "book.original.tooltip.b713a6b4d23cb0d47532.advanced.0",
+      "book.original.tooltip.b713a6b4d23cb0d47532.advanced.1"
+    ],
+    "thaumcraft:stone_arcane_brick;1;0": [
+      "book.original.tooltip.618566ba395797711027.advanced.0",
+      "book.original.tooltip.618566ba395797711027.advanced.1"
+    ],
+    "thaumcraft:stone_eldritch_tile;1;0": [
+      "book.original.tooltip.a3a9f2185bc97066647e.advanced.0",
+      "book.original.tooltip.a3a9f2185bc97066647e.advanced.1"
+    ],
+    "thaumcraft:table_stone;1;0": [
+      "book.original.tooltip.639f7c9b0164ff5e06de.advanced.0",
+      "book.original.tooltip.639f7c9b0164ff5e06de.advanced.1"
+    ],
+    "thaumcraft:table_wood;1;0": [
+      "book.original.tooltip.a0143d256cbbf66aaff0.advanced.0",
+      "book.original.tooltip.a0143d256cbbf66aaff0.advanced.1"
+    ],
+    "thaumcraft:tallow;1;0": [
+      "book.original.tooltip.09814127302addbf4dac.advanced.0",
+      "book.original.tooltip.09814127302addbf4dac.advanced.1"
+    ],
+    "thaumcraft:thaumium_axe;1;0": [
+      "book.original.tooltip.8faa89c13d9f09dbd708.advanced.0",
+      "book.original.tooltip.8faa89c13d9f09dbd708.advanced.1",
+      "book.original.tooltip.8faa89c13d9f09dbd708.advanced.2",
+      "book.original.tooltip.8faa89c13d9f09dbd708.advanced.3",
+      "book.original.tooltip.8faa89c13d9f09dbd708.advanced.4",
+      "book.original.tooltip.8faa89c13d9f09dbd708.advanced.5"
+    ],
+    "thaumcraft:thaumium_boots;1;0": [
+      "book.original.tooltip.7d164dadba82a5a14853.advanced.0",
+      "book.original.tooltip.7d164dadba82a5a14853.advanced.1",
+      "book.original.tooltip.7d164dadba82a5a14853.advanced.2",
+      "book.original.tooltip.7d164dadba82a5a14853.advanced.3",
+      "book.original.tooltip.7d164dadba82a5a14853.advanced.4",
+      "book.original.tooltip.7d164dadba82a5a14853.advanced.5"
+    ],
+    "thaumcraft:thaumium_chest;1;0": [
+      "book.original.tooltip.f14d77166225a22cb8bd.advanced.0",
+      "book.original.tooltip.f14d77166225a22cb8bd.advanced.1",
+      "book.original.tooltip.f14d77166225a22cb8bd.advanced.2",
+      "book.original.tooltip.f14d77166225a22cb8bd.advanced.3",
+      "book.original.tooltip.f14d77166225a22cb8bd.advanced.4",
+      "book.original.tooltip.f14d77166225a22cb8bd.advanced.5"
+    ],
+    "thaumcraft:thaumium_helm;1;0": [
+      "book.original.tooltip.14c2c24a44c8b2b98dce.advanced.0",
+      "book.original.tooltip.14c2c24a44c8b2b98dce.advanced.1",
+      "book.original.tooltip.14c2c24a44c8b2b98dce.advanced.2",
+      "book.original.tooltip.14c2c24a44c8b2b98dce.advanced.3",
+      "book.original.tooltip.14c2c24a44c8b2b98dce.advanced.4",
+      "book.original.tooltip.14c2c24a44c8b2b98dce.advanced.5"
+    ],
+    "thaumcraft:thaumium_hoe;1;0": [
+      "book.original.tooltip.9f015140c5187826f13e.advanced.0",
+      "book.original.tooltip.9f015140c5187826f13e.advanced.1",
+      "book.original.tooltip.9f015140c5187826f13e.advanced.2",
+      "book.original.tooltip.9f015140c5187826f13e.advanced.3",
+      "book.original.tooltip.9f015140c5187826f13e.advanced.4",
+      "book.original.tooltip.9f015140c5187826f13e.advanced.5"
+    ],
+    "thaumcraft:thaumium_legs;1;0": [
+      "book.original.tooltip.bc4c255ac66338d6ab39.advanced.0",
+      "book.original.tooltip.bc4c255ac66338d6ab39.advanced.1",
+      "book.original.tooltip.bc4c255ac66338d6ab39.advanced.2",
+      "book.original.tooltip.bc4c255ac66338d6ab39.advanced.3",
+      "book.original.tooltip.bc4c255ac66338d6ab39.advanced.4",
+      "book.original.tooltip.bc4c255ac66338d6ab39.advanced.5"
+    ],
+    "thaumcraft:thaumium_pick;1;0": [
+      "book.original.tooltip.22b5f5af8dd51dd92063.advanced.0",
+      "book.original.tooltip.22b5f5af8dd51dd92063.advanced.1",
+      "book.original.tooltip.22b5f5af8dd51dd92063.advanced.2",
+      "book.original.tooltip.22b5f5af8dd51dd92063.advanced.3",
+      "book.original.tooltip.22b5f5af8dd51dd92063.advanced.4",
+      "book.original.tooltip.22b5f5af8dd51dd92063.advanced.5"
+    ],
+    "thaumcraft:thaumium_shovel;1;0": [
+      "book.original.tooltip.9f17da78e9db47a79196.advanced.0",
+      "book.original.tooltip.9f17da78e9db47a79196.advanced.1",
+      "book.original.tooltip.9f17da78e9db47a79196.advanced.2",
+      "book.original.tooltip.9f17da78e9db47a79196.advanced.3",
+      "book.original.tooltip.9f17da78e9db47a79196.advanced.4",
+      "book.original.tooltip.9f17da78e9db47a79196.advanced.5"
+    ],
+    "thaumcraft:thaumium_sword;1;0": [
+      "book.original.tooltip.7e0acad80219167a013d.advanced.0",
+      "book.original.tooltip.7e0acad80219167a013d.advanced.1",
+      "book.original.tooltip.7e0acad80219167a013d.advanced.2",
+      "book.original.tooltip.7e0acad80219167a013d.advanced.3",
+      "book.original.tooltip.7e0acad80219167a013d.advanced.4",
+      "book.original.tooltip.7e0acad80219167a013d.advanced.5"
+    ],
+    "thaumcraft:thaumometer;1;0": [
+      "book.original.tooltip.713f96445b85ef67e0a7.advanced.0",
+      "book.original.tooltip.713f96445b85ef67e0a7.advanced.1"
+    ],
+    "thaumcraft:traveller_boots;1;0": [
+      "book.original.tooltip.e3d521058c154ee4948d.advanced.0",
+      "book.original.tooltip.e3d521058c154ee4948d.advanced.1",
+      "book.original.tooltip.e3d521058c154ee4948d.advanced.2",
+      "book.original.tooltip.e3d521058c154ee4948d.advanced.3",
+      "book.original.tooltip.e3d521058c154ee4948d.advanced.4",
+      "book.original.tooltip.e3d521058c154ee4948d.advanced.5",
+      "book.original.tooltip.e3d521058c154ee4948d.advanced.6"
+    ],
+    "thaumcraft:triple_meat_treat;1;0": [
+      "book.original.tooltip.83d263bbd706748854d1.advanced.0",
+      "book.original.tooltip.83d263bbd706748854d1.advanced.1"
+    ],
+    "thaumcraft:tube;1;0": [
+      "book.original.tooltip.0e0a0b93e7c66effc568.advanced.0",
+      "book.original.tooltip.0e0a0b93e7c66effc568.advanced.1"
+    ],
+    "thaumcraft:tube_buffer;1;0": [
+      "book.original.tooltip.e7ce37854dd5c69f7c28.advanced.0",
+      "book.original.tooltip.e7ce37854dd5c69f7c28.advanced.1"
+    ],
+    "thaumcraft:tube_filter;1;0": [
+      "book.original.tooltip.438ca36430d0086bbcda.advanced.0",
+      "book.original.tooltip.438ca36430d0086bbcda.advanced.1"
+    ],
+    "thaumcraft:tube_oneway;1;0": [
+      "book.original.tooltip.92dc615df23b2087d889.advanced.0",
+      "book.original.tooltip.92dc615df23b2087d889.advanced.1"
+    ],
+    "thaumcraft:tube_restrict;1;0": [
+      "book.original.tooltip.b022c716c35bb2a7a7f0.advanced.0",
+      "book.original.tooltip.b022c716c35bb2a7a7f0.advanced.1"
+    ],
+    "thaumcraft:tube_valve;1;0": [
+      "book.original.tooltip.2c8c6202a5008ec3effa.advanced.0",
+      "book.original.tooltip.2c8c6202a5008ec3effa.advanced.1"
+    ],
+    "thaumcraft:turret;1;0": [
+      "book.original.tooltip.a1ea09a737c2c53eaf09.advanced.0",
+      "book.original.tooltip.a1ea09a737c2c53eaf09.advanced.1"
+    ],
+    "thaumcraft:turret;1;1": [
+      "book.original.tooltip.937c5383ac964095e416.advanced.0",
+      "book.original.tooltip.937c5383ac964095e416.advanced.1"
+    ],
+    "thaumcraft:turret;1;2": [
+      "book.original.tooltip.4b763dd970be0cc67d5a.advanced.0",
+      "book.original.tooltip.4b763dd970be0cc67d5a.advanced.1"
+    ],
+    "thaumcraft:verdant_charm;1;0": [
+      "book.original.tooltip.c3ebc41c9e0b9baca718.advanced.0",
+      "book.original.tooltip.c3ebc41c9e0b9baca718.advanced.1",
+      "book.original.tooltip.c3ebc41c9e0b9baca718.advanced.2",
+      "book.original.tooltip.c3ebc41c9e0b9baca718.advanced.3"
+    ],
+    "thaumcraft:verdant_charm;1;0;{type:1b}": [
+      "book.original.tooltip.fe761b4e381c8cef341a.advanced.0",
+      "book.original.tooltip.fe761b4e381c8cef341a.advanced.1",
+      "book.original.tooltip.fe761b4e381c8cef341a.advanced.2",
+      "book.original.tooltip.fe761b4e381c8cef341a.advanced.3",
+      "book.original.tooltip.fe761b4e381c8cef341a.advanced.4",
+      "book.original.tooltip.fe761b4e381c8cef341a.advanced.5"
+    ],
+    "thaumcraft:verdant_charm;1;0;{type:2b}": [
+      "book.original.tooltip.3bf669a9c4425c6dc58e.advanced.0",
+      "book.original.tooltip.3bf669a9c4425c6dc58e.advanced.1",
+      "book.original.tooltip.3bf669a9c4425c6dc58e.advanced.2",
+      "book.original.tooltip.3bf669a9c4425c6dc58e.advanced.3",
+      "book.original.tooltip.3bf669a9c4425c6dc58e.advanced.4",
+      "book.original.tooltip.3bf669a9c4425c6dc58e.advanced.5"
+    ],
+    "thaumcraft:vis_battery;1;0": [
+      "book.original.tooltip.8b66eca369a08d9fb927.advanced.0",
+      "book.original.tooltip.8b66eca369a08d9fb927.advanced.1"
+    ],
+    "thaumcraft:vis_generator;1;0": [
+      "book.original.tooltip.e82f46095689fed8f4bd.advanced.0",
+      "book.original.tooltip.e82f46095689fed8f4bd.advanced.1"
+    ],
+    "thaumcraft:vis_resonator;1;0": [
+      "book.original.tooltip.075bf0788b0ffdc35d37.advanced.0",
+      "book.original.tooltip.075bf0788b0ffdc35d37.advanced.1"
+    ],
+    "thaumcraft:void_axe;1;0": [
+      "book.original.tooltip.dbabb65a6e80d3238cd6.advanced.0",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.advanced.1",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.advanced.2",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.advanced.3",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.advanced.4",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.advanced.5",
+      "book.original.tooltip.dbabb65a6e80d3238cd6.advanced.6"
+    ],
+    "thaumcraft:void_boots;1;0": [
+      "book.original.tooltip.a63f86f01e9d66fe95e0.advanced.0",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.advanced.1",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.advanced.2",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.advanced.3",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.advanced.4",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.advanced.5",
+      "book.original.tooltip.a63f86f01e9d66fe95e0.advanced.6"
+    ],
+    "thaumcraft:void_chest;1;0": [
+      "book.original.tooltip.2bf40d99db44b5204455.advanced.0",
+      "book.original.tooltip.2bf40d99db44b5204455.advanced.1",
+      "book.original.tooltip.2bf40d99db44b5204455.advanced.2",
+      "book.original.tooltip.2bf40d99db44b5204455.advanced.3",
+      "book.original.tooltip.2bf40d99db44b5204455.advanced.4",
+      "book.original.tooltip.2bf40d99db44b5204455.advanced.5",
+      "book.original.tooltip.2bf40d99db44b5204455.advanced.6"
+    ],
+    "thaumcraft:void_helm;1;0": [
+      "book.original.tooltip.a3eaefa94346848abae3.advanced.0",
+      "book.original.tooltip.a3eaefa94346848abae3.advanced.1",
+      "book.original.tooltip.a3eaefa94346848abae3.advanced.2",
+      "book.original.tooltip.a3eaefa94346848abae3.advanced.3",
+      "book.original.tooltip.a3eaefa94346848abae3.advanced.4",
+      "book.original.tooltip.a3eaefa94346848abae3.advanced.5",
+      "book.original.tooltip.a3eaefa94346848abae3.advanced.6"
+    ],
+    "thaumcraft:void_hoe;1;0": [
+      "book.original.tooltip.15ecc30c8040e227e9c5.advanced.0",
+      "book.original.tooltip.15ecc30c8040e227e9c5.advanced.1",
+      "book.original.tooltip.15ecc30c8040e227e9c5.advanced.2",
+      "book.original.tooltip.15ecc30c8040e227e9c5.advanced.3",
+      "book.original.tooltip.15ecc30c8040e227e9c5.advanced.4",
+      "book.original.tooltip.15ecc30c8040e227e9c5.advanced.5",
+      "book.original.tooltip.15ecc30c8040e227e9c5.advanced.6"
+    ],
+    "thaumcraft:void_legs;1;0": [
+      "book.original.tooltip.64ef5edad14208ece977.advanced.0",
+      "book.original.tooltip.64ef5edad14208ece977.advanced.1",
+      "book.original.tooltip.64ef5edad14208ece977.advanced.2",
+      "book.original.tooltip.64ef5edad14208ece977.advanced.3",
+      "book.original.tooltip.64ef5edad14208ece977.advanced.4",
+      "book.original.tooltip.64ef5edad14208ece977.advanced.5",
+      "book.original.tooltip.64ef5edad14208ece977.advanced.6"
+    ],
+    "thaumcraft:void_pick;1;0": [
+      "book.original.tooltip.90dc5344ab8712b1a841.advanced.0",
+      "book.original.tooltip.90dc5344ab8712b1a841.advanced.1",
+      "book.original.tooltip.90dc5344ab8712b1a841.advanced.2",
+      "book.original.tooltip.90dc5344ab8712b1a841.advanced.3",
+      "book.original.tooltip.90dc5344ab8712b1a841.advanced.4",
+      "book.original.tooltip.90dc5344ab8712b1a841.advanced.5",
+      "book.original.tooltip.90dc5344ab8712b1a841.advanced.6"
+    ],
+    "thaumcraft:void_robe_chest;1;0": [
+      "book.original.tooltip.f1e593addc3b0d9d593c.advanced.0",
+      "book.original.tooltip.f1e593addc3b0d9d593c.advanced.1",
+      "book.original.tooltip.f1e593addc3b0d9d593c.advanced.2",
+      "book.original.tooltip.f1e593addc3b0d9d593c.advanced.3",
+      "book.original.tooltip.f1e593addc3b0d9d593c.advanced.4",
+      "book.original.tooltip.f1e593addc3b0d9d593c.advanced.5",
+      "book.original.tooltip.f1e593addc3b0d9d593c.advanced.6",
+      "book.original.tooltip.f1e593addc3b0d9d593c.advanced.7"
+    ],
+    "thaumcraft:void_robe_helm;1;0": [
+      "book.original.tooltip.928f5be6d7ffd5df5c38.advanced.0",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.advanced.1",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.advanced.2",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.advanced.3",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.advanced.4",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.advanced.5",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.advanced.6",
+      "book.original.tooltip.928f5be6d7ffd5df5c38.advanced.7"
+    ],
+    "thaumcraft:void_robe_legs;1;0": [
+      "book.original.tooltip.d6b669e5055a81e489db.advanced.0",
+      "book.original.tooltip.d6b669e5055a81e489db.advanced.1",
+      "book.original.tooltip.d6b669e5055a81e489db.advanced.2",
+      "book.original.tooltip.d6b669e5055a81e489db.advanced.3",
+      "book.original.tooltip.d6b669e5055a81e489db.advanced.4",
+      "book.original.tooltip.d6b669e5055a81e489db.advanced.5",
+      "book.original.tooltip.d6b669e5055a81e489db.advanced.6",
+      "book.original.tooltip.d6b669e5055a81e489db.advanced.7"
+    ],
+    "thaumcraft:void_seed;1;0": [
+      "book.original.tooltip.647c289f2de181b4cdb2.advanced.0",
+      "book.original.tooltip.647c289f2de181b4cdb2.advanced.1"
+    ],
+    "thaumcraft:void_shovel;1;0": [
+      "book.original.tooltip.3ed7c8860ac3c759bbde.advanced.0",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.advanced.1",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.advanced.2",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.advanced.3",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.advanced.4",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.advanced.5",
+      "book.original.tooltip.3ed7c8860ac3c759bbde.advanced.6"
+    ],
+    "thaumcraft:void_siphon;1;0": [
+      "book.original.tooltip.ccbe540aac5ae6d029a1.advanced.0",
+      "book.original.tooltip.ccbe540aac5ae6d029a1.advanced.1"
+    ],
+    "thaumcraft:void_sword;1;0": [
+      "book.original.tooltip.ed7256269e5572b15c13.advanced.0",
+      "book.original.tooltip.ed7256269e5572b15c13.advanced.1",
+      "book.original.tooltip.ed7256269e5572b15c13.advanced.2",
+      "book.original.tooltip.ed7256269e5572b15c13.advanced.3",
+      "book.original.tooltip.ed7256269e5572b15c13.advanced.4",
+      "book.original.tooltip.ed7256269e5572b15c13.advanced.5",
+      "book.original.tooltip.ed7256269e5572b15c13.advanced.6",
+      "book.original.tooltip.ed7256269e5572b15c13.advanced.7"
+    ],
+    "thaumcraft:voidseer_charm;1;0": [
+      "book.original.tooltip.b4f76366b2c947cb9d6a.advanced.0",
+      "book.original.tooltip.b4f76366b2c947cb9d6a.advanced.1",
+      "book.original.tooltip.b4f76366b2c947cb9d6a.advanced.2",
+      "book.original.tooltip.b4f76366b2c947cb9d6a.advanced.3"
+    ],
+    "thaumcraft:wand_workbench;1;0": [
+      "book.original.tooltip.372b92761283cdab5f89.advanced.0",
+      "book.original.tooltip.372b92761283cdab5f89.advanced.1"
+    ]
+  }
+}

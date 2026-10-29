@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.AuraCodecTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-24T16:36:40.169Z" hostname="bb565e390ffa" time="0.035">
+  <properties/>
+  <testcase name="corruptedAmountsAreClampedOnLoad()" classname="thaumcraft.port.AuraCodecTest" time="0.029"/>
+  <testcase name="incompleteDataFailsInsteadOfPretendingToBeAHealthyChunk()" classname="thaumcraft.port.AuraCodecTest" time="0.002"/>
+  <testcase name="persistencePreservesFractionalVisAndFlux()" classname="thaumcraft.port.AuraCodecTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

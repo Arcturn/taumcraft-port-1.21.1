@@ -1,0 +1,13 @@
+Actual unmodified1.12.2 reflection probe; no copied selector implementation.
+[0, 0, 0] seed=0 selected=variant0
+[0, 0, 2] seed=-5444680982622362366 selected=variant8
+[0, 1, 0] seed=42317872 selected=variant5
+[0, 1, 2] seed=-5425023526858770730 selected=variant2
+[2, 0, 0] seed=-2008247555232448674 selected=variant2
+[2, 0, 2] seed=-2674758720412006324 selected=variant10
+[2, 1, 0] seed=-2007717757406427078 selected=variant11
+[2, 1, 2] seed=-2655542312059857660 selected=variant7
+[1, 2, 1] seed=3923779930808210152 selected=variant15
+[-1, 0, -1] seed=3942996338948769522 selected=variant11
+[-2147483648, 7, 2147483647] seed=3422402307557659988 selected=variant3
+[1000000, -64, -1000000] seed=-4107537825190913472 selected=variant3

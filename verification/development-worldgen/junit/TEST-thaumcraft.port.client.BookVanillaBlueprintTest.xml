@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.client.BookVanillaBlueprintTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-28T23:41:18.279Z" hostname="e54a7cd1abdc" time="0.014">
+  <properties/>
+  <testcase name="furnaceAndPressUseConnectedGrilleAndOriginalMetadataOrientations()" classname="thaumcraft.port.client.BookVanillaBlueprintTest" time="0.0"/>
+  <testcase name="cauldronAndAnvilRetainFacesRemovedFromModernVanillaModels()" classname="thaumcraft.port.client.BookVanillaBlueprintTest" time="0.001"/>
+  <testcase name="everyOriginalVanillaBlueprintCellUsesAnExplicitBookOnlyModel()" classname="thaumcraft.port.client.BookVanillaBlueprintTest" time="0.002"/>
+  <testcase name="multipartBarsSelectOriginalCapsAndSidesForAllSixteenConnectionStates()" classname="thaumcraft.port.client.BookVanillaBlueprintTest" time="0.001"/>
+  <testcase name="allTwelveTextureFilesAreExactOriginal112Bytes()" classname="thaumcraft.port.client.BookVanillaBlueprintTest" time="0.004"/>
+  <testcase name="modelRegistrationIncludesEveryStandalonePartAndAllItsDependenciesAreLocal()" classname="thaumcraft.port.client.BookVanillaBlueprintTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

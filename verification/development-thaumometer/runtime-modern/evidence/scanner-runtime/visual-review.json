@@ -1,0 +1,45 @@
+{
+  "pass": true,
+  "original_minecraft": "1.12.2 Forge / Thaumcraft 6.1.BETA26",
+  "modern_minecraft": "1.21.1 NeoForge / port 0.1.0-alpha.9.17-dev",
+  "report": "runtime-modern/evidence-final/scanner-runtime/thaumometer-runtime.json",
+  "report_sha256": "0073bd3f88abead9bdde2b3f92df2d907159fbd307b7c75248e9aedfc3faa23b",
+  "cases_passed": 6,
+  "sound_events": 4,
+  "runes_per_use": [
+    10,
+    10,
+    0,
+    10
+  ],
+  "all_gl_errors_zero": true,
+  "no_arm_swing_on_use": true,
+  "sound_requests": {
+    "event": "thaumcraft:scan",
+    "source": "PLAYERS",
+    "volume": 0.5,
+    "pitch": 1,
+    "verified": "Real PlaySoundEvent raw request fields; original OGG byte-identical, unit sound multipliers. No listening assessment."
+  },
+  "fresh_entity_readout": {
+    "scanned_subjects": 0,
+    "profile": "{BEAST=10, EARTH=10, DESIRE=5}",
+    "highlight_particles": 215,
+    "tag_scale": 0.26499993
+  },
+  "visual_review": [
+    "Compared matched pig scenes: same centered large hexagonal lens, visible unscanned entity aspect icons in original order and position above head, blue highlight sparks.",
+    "Compared original scan video frame at 0.60 seconds with modern use +2/+6 ticks: upright tool, no attack swing; vanilla equipped-progress reset preserved.",
+    "Modern block scan +6 ticks shows purple glyphs on visible faces through translucent lens.",
+    "Modern offhand +6 ticks shows same centered upright lens and empty main hand as original offhand capture."
+  ],
+  "evidence_sha256": {
+    "runtime-modern/evidence-final/scanner-runtime/01-unscanned_pig_billboard_and_highlights.png": "ef0f8c882790b6392fe2b9615649996a587f98def0be7dff56430c6a11687577",
+    "runtime-modern/evidence-final/scanner-runtime/02-block_scan-after-02t.png": "88d5ee3e5eea8be395528230d8b1f61538f0c3ecd81eaf004af40378ff7f5a04",
+    "runtime-modern/evidence-final/scanner-runtime/02-block_scan-after-06t.png": "355f1dc6ca684a2166d0112dba75bd4fa62e4cde6749536eeaeb326ba2415e70",
+    "runtime-modern/evidence-final/scanner-runtime/05-offhand_block_scan-after-06t.png": "3dc5b8f10f1a9903ba6cda6ce688f0f533eead845ce859f37fe0401db46de705",
+    "runtime-original/original-pig-passive-unscanned.png": "3641b1c77325f8a4f2f193bda1f3698cb0aa88d228e568d3748ec57658501b22",
+    "runtime-original/original-scan-t0.6.png": "c0e163918956ffc2bb3bcbe57e45325d58644c2e1c89efbb3c37ec852a5cb543",
+    "runtime-original/original-offhand-model.png": "031e703b72433697fca9d39581cb1406b491ec537489854741ed57040734693b"
+  }
+}

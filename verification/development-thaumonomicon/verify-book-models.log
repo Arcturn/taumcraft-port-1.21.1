@@ -1,0 +1,7 @@
+$ python tools/verify_book_models.py --legacy-jar /workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/original-client/game/mods/Thaumcraft-1.12.2-6.1.BETA26.jar
+PASS: 287 model chains; 114 original GUI transforms (65 default-block, 4 custom)
+PASS: 7 metadata regressions and 4 intentionally flat item models
+PASS: 25 world blueprint models, including all 12 directional pillar cells
+PASS: 18 OBJ model selections resolve material names, textures and original UV orientation
+
+exit_code=0

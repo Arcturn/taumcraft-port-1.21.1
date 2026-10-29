@@ -1,0 +1,12 @@
+// Workspace-only fallback for containers without ProcessHandle.info().command().
+// Keeps every project dependency and the game's source/configuration unchanged.
+allprojects {
+    plugins.withId('net.neoforged.moddev') {
+        tasks.configureEach {
+            if (it.hasProperty('neoFormRuntime')) {
+                it.neoFormRuntime.setFrom(files(new File(rootProject.projectDir.parentFile,
+                    'build-support/neoform-runtime-2.0.31-local.jar')))
+            }
+        }
+    }
+}

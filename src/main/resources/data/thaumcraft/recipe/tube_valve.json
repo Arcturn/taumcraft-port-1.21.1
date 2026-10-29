@@ -1,0 +1,22 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "TUBES",
+  "vis": 10,
+  "crystals": {},
+  "pattern": [
+    "TL"
+  ],
+  "key": {
+    "T": {
+      "item": "thaumcraft:tube"
+    },
+    "L": {
+      "item": "minecraft:lever"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:tube_valve",
+    "count": 1
+  },
+  "shapeless": true
+}

@@ -1,0 +1,63 @@
+{
+  "result": "PASS",
+  "minecraft": "1.21.1",
+  "port": "0.1.0-alpha.9.17-dev",
+  "tooltip_cases": 12,
+  "tooltip_all_unscanned": true,
+  "tooltip_all_without_held_thaumometer": true,
+  "inventory_and_chest": true,
+  "gui_scales": [
+    2,
+    1
+  ],
+  "scanner_cases": 6,
+  "scanner_sound_events": 4,
+  "gl_errors": 0,
+  "attack_swing_absent_after_actual_item_use": {
+    "uses": 4,
+    "checks_ticks": [
+      0,
+      2,
+      6
+    ],
+    "all_pass": true
+  },
+  "title_colour_pixels": {
+    "without_shift": {
+      "white_title_pixels": 252,
+      "green_title_pixels": 0
+    },
+    "with_shift": {
+      "white_title_pixels": 252,
+      "green_title_pixels": 0
+    }
+  },
+  "sound_scope": "Actual PlaySoundEvent raw request parameters with initialized OpenAL null output; not an auditory listening test.",
+  "source_scope": "Final compiled main classes/resources, actual integrated Minecraft client/server, isolated fresh flat survival world.",
+  "runtime_inputs_match_current_build_outputs": true,
+  "probe_excluded_from_release": true,
+  "screenshots": {
+    "01-inventory_stone_no_shift.png": "5f0f670359b0b3fe172c5629960e8c04826d5c6b1d86de50bfc0ead24d09f755",
+    "02-inventory_stone_shift_unscanned.png": "5e7a5d4049e3cc191fff8c7a51c25ed9674b5cb303cfcc64422b2125a8e15335",
+    "03-inventory_diamond_shift_unscanned.png": "1b6367e037a6e4196cd7818f03da886f907803db363548af89297d66be8db9b0",
+    "04-inventory_copper_shift_unscanned.png": "5fad4d2549a8b69c346f4ab2a0e69dae3a339096c04cf25202b279609e786b1e",
+    "05-inventory_breeze_shift_unscanned.png": "269ba1fc90919816acdae7d8da9f6cc7d897119e7dd65a7886c7e3df50a519b9",
+    "06-inventory_copper_no_shift.png": "38196eec63d249afad3a1264200c7999a969f27bab6f1c6b813255c7ed7d3ee5",
+    "07-chest_stone_shift_unscanned.png": "c81ddc46f8fc9c567b40914b1be3314c23b4df91050a358a32036918a3e77f19",
+    "08-chest_diamond_shift_unscanned.png": "af6a684a93da55207e7ddd25f23da96da3c0725851eed9fc8a44af9e11bd8a14",
+    "09-chest_copper_shift_unscanned.png": "8be86aff0eee9b8976b7411fde035d2057deb649d2bd608486233d861dda343f",
+    "10-chest_breeze_shift_unscanned.png": "ca88028330872727363a691771e1ded3045165ed7ed49d7c1b1e4a16a58073bf",
+    "11-chest_breeze_no_shift.png": "1ddc9ddbcabf30f3e6fccc43fd7cb611b81628c61efdf8642247d1d00261b806",
+    "12-inventory_copper_shift_gui_scale_1.png": "2d7698b72bc5d39713dff1e496cf31f6dc4953967ea7aade7a65ad3d2ec25169",
+    "scanner-runtime/01-unscanned_pig_billboard_and_highlights.png": "ef0f8c882790b6392fe2b9615649996a587f98def0be7dff56430c6a11687577",
+    "scanner-runtime/02-block_scan-after-02t.png": "88d5ee3e5eea8be395528230d8b1f61538f0c3ecd81eaf004af40378ff7f5a04",
+    "scanner-runtime/02-block_scan-after-06t.png": "355f1dc6ca684a2166d0112dba75bd4fa62e4cde6749536eeaeb326ba2415e70",
+    "scanner-runtime/03-repeat_block_scan-after-02t.png": "7d48b8663ff02cc6657e487e1a6b9742ba470a72bc7460b61e474077cfc6c0b3",
+    "scanner-runtime/03-repeat_block_scan-after-06t.png": "53475c9a2a6efeb2b3a337756b64210ebe5ef74db34255ba2f4b1df40a6d986a",
+    "scanner-runtime/04-miss_scan-after-02t.png": "042d8fd3cc7874a0ca2251bdeeb7628a092cb4121ebac9a2a0e520ecbf4c74ec",
+    "scanner-runtime/04-miss_scan-after-06t.png": "30808f88c31f5d762ac18ee9f38f515e8e615179c406dc3dbf113a7de5cbe67b",
+    "scanner-runtime/05-offhand_block_scan-after-02t.png": "fa3531dcee49b773e996ebcbc34c4a1c8ece907b71e970fe82f3be7e0c4aded0",
+    "scanner-runtime/05-offhand_block_scan-after-06t.png": "3dc5b8f10f1a9903ba6cda6ce688f0f533eead845ce859f37fe0401db46de705",
+    "scanner-runtime/06-put_away_clears_label.png": "a18aebe70ece59d0269f8425424d14f5c5a282837f0c00934ff6c555e613c8af"
+  }
+}

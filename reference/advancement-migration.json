@@ -1,0 +1,1349 @@
+{
+  "source_sha256": "9425f8643581b27ff8845b087c8bc6fc10425a32942f1a3f0e265ce6b38f7b5f",
+  "original_advancement_files": [],
+  "kind": "New Minecraft 1.21.1 advancement tree derived from TC6 research, not a port of nonexistent TC6 achievements.",
+  "research_entries": 148,
+  "category_nodes": 7,
+  "total": 156,
+  "legacy_override_models": 137,
+  "display_items": 156,
+  "records": [
+    {
+      "research": "BASEALCHEMY",
+      "advancement": "thaumcraft:research/basealchemy",
+      "original_icon": "thaumcraft:textures/research/cat_alchemy.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_basealchemy"
+      },
+      "display_parent": "thaumcraft:research/category/alchemy"
+    },
+    {
+      "research": "ALUMENTUM",
+      "advancement": "thaumcraft:research/alumentum",
+      "original_icon": "thaumcraft:textures/items/alumentum.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_alumentum"
+      },
+      "display_parent": "thaumcraft:research/basealchemy"
+    },
+    {
+      "research": "METALLURGY",
+      "advancement": "thaumcraft:research/metallurgy",
+      "original_icon": "thaumcraft:textures/items/ingot_brass.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_metallurgy"
+      },
+      "display_parent": "thaumcraft:research/basealchemy"
+    },
+    {
+      "research": "METALPURIFICATION",
+      "advancement": "thaumcraft:research/metalpurification",
+      "original_icon": "thaumcraft:textures/items/cluster_iron.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_metalpurification"
+      },
+      "display_parent": "thaumcraft:research/metallurgy"
+    },
+    {
+      "research": "HEDGEALCHEMY",
+      "advancement": "thaumcraft:research/hedgealchemy",
+      "original_icon": "thaumcraft:textures/items/tallow.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_hedgealchemy"
+      },
+      "display_parent": "thaumcraft:research/basealchemy"
+    },
+    {
+      "research": "LIQUIDDEATH",
+      "advancement": "thaumcraft:research/liquiddeath",
+      "original_icon": "thaumcraft:textures/items/bucket_death.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_liquiddeath"
+      },
+      "display_parent": "thaumcraft:research/hedgealchemy"
+    },
+    {
+      "research": "BOTTLETAINT",
+      "advancement": "thaumcraft:research/bottletaint",
+      "original_icon": "thaumcraft:bottle_taint",
+      "icon": {
+        "id": "thaumcraft:research_display_research_bottletaint"
+      },
+      "display_parent": "thaumcraft:research/hedgealchemy"
+    },
+    {
+      "research": "BATHSALTS",
+      "advancement": "thaumcraft:research/bathsalts",
+      "original_icon": "thaumcraft:bath_salts",
+      "icon": {
+        "id": "thaumcraft:research_display_research_bathsalts"
+      },
+      "display_parent": "thaumcraft:research/hedgealchemy"
+    },
+    {
+      "research": "SANESOAP",
+      "advancement": "thaumcraft:research/sanesoap",
+      "original_icon": "thaumcraft:sanity_soap",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sanesoap"
+      },
+      "display_parent": "thaumcraft:research/bathsalts"
+    },
+    {
+      "research": "ARCANESPA",
+      "advancement": "thaumcraft:research/arcanespa",
+      "original_icon": "thaumcraft:spa",
+      "icon": {
+        "id": "thaumcraft:research_display_research_arcanespa"
+      },
+      "display_parent": "thaumcraft:research/bathsalts"
+    },
+    {
+      "research": "ESSENTIASMELTER",
+      "advancement": "thaumcraft:research/essentiasmelter",
+      "original_icon": "thaumcraft:smelter_basic",
+      "icon": {
+        "id": "thaumcraft:research_display_research_essentiasmelter"
+      },
+      "display_parent": "thaumcraft:research/alumentum"
+    },
+    {
+      "research": "WARDEDJARS",
+      "advancement": "thaumcraft:research/wardedjars",
+      "original_icon": "thaumcraft:jar_normal",
+      "icon": {
+        "id": "thaumcraft:research_display_research_wardedjars"
+      },
+      "display_parent": "thaumcraft:research/essentiasmelter"
+    },
+    {
+      "research": "TUBES",
+      "advancement": "thaumcraft:research/tubes",
+      "original_icon": "thaumcraft:tube",
+      "icon": {
+        "id": "thaumcraft:research_display_research_tubes"
+      },
+      "display_parent": "thaumcraft:research/wardedjars"
+    },
+    {
+      "research": "ESSENTIASMELTERTHAUMIUM",
+      "advancement": "thaumcraft:research/essentiasmelterthaumium",
+      "original_icon": "thaumcraft:smelter_thaumium",
+      "icon": {
+        "id": "thaumcraft:research_display_research_essentiasmelterthaumium"
+      },
+      "display_parent": "thaumcraft:research/tubes"
+    },
+    {
+      "research": "ESSENTIASMELTERVOID",
+      "advancement": "thaumcraft:research/essentiasmeltervoid",
+      "original_icon": "thaumcraft:smelter_void",
+      "icon": {
+        "id": "thaumcraft:research_display_research_essentiasmeltervoid"
+      },
+      "display_parent": "thaumcraft:research/essentiasmelterthaumium"
+    },
+    {
+      "research": "IMPROVEDSMELTING",
+      "advancement": "thaumcraft:research/improvedsmelting",
+      "original_icon": "thaumcraft:smelter_aux",
+      "icon": {
+        "id": "thaumcraft:research_display_research_improvedsmelting"
+      },
+      "display_parent": "thaumcraft:research/tubes"
+    },
+    {
+      "research": "IMPROVEDSMELTING2",
+      "advancement": "thaumcraft:research/improvedsmelting2",
+      "original_icon": "thaumcraft:smelter_vent",
+      "icon": {
+        "id": "thaumcraft:research_display_research_improvedsmelting2"
+      },
+      "display_parent": "thaumcraft:research/improvedsmelting"
+    },
+    {
+      "research": "CENTRIFUGE",
+      "advancement": "thaumcraft:research/centrifuge",
+      "original_icon": "thaumcraft:centrifuge",
+      "icon": {
+        "id": "thaumcraft:research_display_research_centrifuge"
+      },
+      "display_parent": "thaumcraft:research/tubes"
+    },
+    {
+      "research": "THAUMATORIUM",
+      "advancement": "thaumcraft:research/thaumatorium",
+      "original_icon": "thaumcraft:thaumatorium",
+      "icon": {
+        "id": "thaumcraft:research_display_research_thaumatorium"
+      },
+      "display_parent": "thaumcraft:research/centrifuge"
+    },
+    {
+      "research": "ESSENTIATRANSPORT",
+      "advancement": "thaumcraft:research/essentiatransport",
+      "original_icon": "thaumcraft:essentia_input",
+      "icon": {
+        "id": "thaumcraft:research_display_research_essentiatransport"
+      },
+      "display_parent": "thaumcraft:research/thaumatorium"
+    },
+    {
+      "research": "EVERFULLURN",
+      "advancement": "thaumcraft:research/everfullurn",
+      "original_icon": "thaumcraft:everfull_urn",
+      "icon": {
+        "id": "thaumcraft:research_display_research_everfullurn"
+      },
+      "display_parent": "thaumcraft:research/hedgealchemy"
+    },
+    {
+      "research": "POTIONSPRAYER",
+      "advancement": "thaumcraft:research/potionsprayer",
+      "original_icon": "thaumcraft:potion_sprayer",
+      "icon": {
+        "id": "thaumcraft:research_display_research_potionsprayer"
+      },
+      "display_parent": "thaumcraft:research/hedgealchemy"
+    },
+    {
+      "research": "BASEARTIFICE",
+      "advancement": "thaumcraft:research/baseartifice",
+      "original_icon": "thaumcraft:textures/research/cat_artifice.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_baseartifice"
+      },
+      "display_parent": "thaumcraft:research/category/artifice"
+    },
+    {
+      "research": "HUNGRYCHEST",
+      "advancement": "thaumcraft:research/hungrychest",
+      "original_icon": "thaumcraft:hungry_chest",
+      "icon": {
+        "id": "thaumcraft:research_display_research_hungrychest"
+      },
+      "display_parent": "thaumcraft:research/baseartifice"
+    },
+    {
+      "research": "LEVITATOR",
+      "advancement": "thaumcraft:research/levitator",
+      "original_icon": "thaumcraft:levitator",
+      "icon": {
+        "id": "thaumcraft:research_display_research_levitator"
+      },
+      "display_parent": "thaumcraft:research/hungrychest"
+    },
+    {
+      "research": "INFERNALFURNACE",
+      "advancement": "thaumcraft:research/infernalfurnace",
+      "original_icon": "thaumcraft:infernal_furnace",
+      "icon": {
+        "id": "thaumcraft:research_display_research_infernalfurnace"
+      },
+      "display_parent": "thaumcraft:research/baseartifice"
+    },
+    {
+      "research": "BELLOWS",
+      "advancement": "thaumcraft:research/bellows",
+      "original_icon": "thaumcraft:bellows",
+      "icon": {
+        "id": "thaumcraft:research_display_research_bellows"
+      },
+      "display_parent": "thaumcraft:research/infernalfurnace"
+    },
+    {
+      "research": "REDSTONERELAY",
+      "advancement": "thaumcraft:research/redstonerelay",
+      "original_icon": "thaumcraft:redstone_relay",
+      "icon": {
+        "id": "thaumcraft:research_display_research_redstonerelay"
+      },
+      "display_parent": "thaumcraft:research/baseartifice"
+    },
+    {
+      "research": "ARCANEEAR",
+      "advancement": "thaumcraft:research/arcaneear",
+      "original_icon": "thaumcraft:arcane_ear",
+      "icon": {
+        "id": "thaumcraft:research_display_research_arcaneear"
+      },
+      "display_parent": "thaumcraft:research/redstonerelay"
+    },
+    {
+      "research": "DIOPTRA",
+      "advancement": "thaumcraft:research/dioptra",
+      "original_icon": "thaumcraft:dioptra",
+      "icon": {
+        "id": "thaumcraft:research_display_research_dioptra"
+      },
+      "display_parent": "thaumcraft:research/baseartifice"
+    },
+    {
+      "research": "MIRROR",
+      "advancement": "thaumcraft:research/mirror",
+      "original_icon": "thaumcraft:mirror",
+      "icon": {
+        "id": "thaumcraft:research_display_research_mirror"
+      },
+      "display_parent": "thaumcraft:research/arcanelamp"
+    },
+    {
+      "research": "MIRRORHAND",
+      "advancement": "thaumcraft:research/mirrorhand",
+      "original_icon": "thaumcraft:hand_mirror",
+      "icon": {
+        "id": "thaumcraft:research_display_research_mirrorhand"
+      },
+      "display_parent": "thaumcraft:research/mirror"
+    },
+    {
+      "research": "MIRRORESSENTIA",
+      "advancement": "thaumcraft:research/mirroressentia",
+      "original_icon": "thaumcraft:mirror_essentia",
+      "icon": {
+        "id": "thaumcraft:research_display_research_mirroressentia"
+      },
+      "display_parent": "thaumcraft:research/mirror"
+    },
+    {
+      "research": "ARCANELAMP",
+      "advancement": "thaumcraft:research/arcanelamp",
+      "original_icon": "thaumcraft:lamp_arcane",
+      "icon": {
+        "id": "thaumcraft:research_display_research_arcanelamp"
+      },
+      "display_parent": "thaumcraft:research/baseartifice"
+    },
+    {
+      "research": "LAMPGROWTH",
+      "advancement": "thaumcraft:research/lampgrowth",
+      "original_icon": "thaumcraft:lamp_growth",
+      "icon": {
+        "id": "thaumcraft:research_display_research_lampgrowth"
+      },
+      "display_parent": "thaumcraft:research/arcanelamp"
+    },
+    {
+      "research": "LAMPFERTILITY",
+      "advancement": "thaumcraft:research/lampfertility",
+      "original_icon": "thaumcraft:lamp_fertility",
+      "icon": {
+        "id": "thaumcraft:research_display_research_lampfertility"
+      },
+      "display_parent": "thaumcraft:research/arcanelamp"
+    },
+    {
+      "research": "ARCANEPATTERNCRAFTER",
+      "advancement": "thaumcraft:research/arcanepatterncrafter",
+      "original_icon": "thaumcraft:pattern_crafter",
+      "icon": {
+        "id": "thaumcraft:research_display_research_arcanepatterncrafter"
+      },
+      "display_parent": "thaumcraft:research/dioptra"
+    },
+    {
+      "research": "BASICTURRET",
+      "advancement": "thaumcraft:research/basicturret",
+      "original_icon": "thaumcraft:turret;1;0",
+      "icon": {
+        "id": "thaumcraft:research_display_research_basicturret"
+      },
+      "display_parent": "thaumcraft:research/arcaneear"
+    },
+    {
+      "research": "ADVANCEDTURRET",
+      "advancement": "thaumcraft:research/advancedturret",
+      "original_icon": "thaumcraft:turret;1;1",
+      "icon": {
+        "id": "thaumcraft:research_display_research_advancedturret"
+      },
+      "display_parent": "thaumcraft:research/basicturret"
+    },
+    {
+      "research": "ARCANEBORE",
+      "advancement": "thaumcraft:research/arcanebore",
+      "original_icon": "thaumcraft:turret;1;2",
+      "icon": {
+        "id": "thaumcraft:research_display_research_arcanebore"
+      },
+      "display_parent": "thaumcraft:research/basicturret"
+    },
+    {
+      "research": "GRAPPLEGUN",
+      "advancement": "thaumcraft:research/grapplegun",
+      "original_icon": "thaumcraft:grapple_gun",
+      "icon": {
+        "id": "thaumcraft:research_display_research_grapplegun"
+      },
+      "display_parent": "thaumcraft:research/baseartifice"
+    },
+    {
+      "research": "VISGENERATOR",
+      "advancement": "thaumcraft:research/visgenerator",
+      "original_icon": "thaumcraft:vis_generator",
+      "icon": {
+        "id": "thaumcraft:research_display_research_visgenerator"
+      },
+      "display_parent": "thaumcraft:research/redstonerelay"
+    },
+    {
+      "research": "BASEAUROMANCY",
+      "advancement": "thaumcraft:research/baseauromancy",
+      "original_icon": "thaumcraft:textures/research/cat_auromancy.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_baseauromancy"
+      },
+      "display_parent": "thaumcraft:research/category/auromancy"
+    },
+    {
+      "research": "FOCUSADVANCED",
+      "advancement": "thaumcraft:research/focusadvanced",
+      "original_icon": "thaumcraft:focus_2",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusadvanced"
+      },
+      "display_parent": "thaumcraft:research/baseauromancy"
+    },
+    {
+      "research": "FOCUSGREATER",
+      "advancement": "thaumcraft:research/focusgreater",
+      "original_icon": "thaumcraft:focus_3",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusgreater"
+      },
+      "display_parent": "thaumcraft:research/focusadvanced"
+    },
+    {
+      "research": "FOCUSELEMENTAL",
+      "advancement": "thaumcraft:research/focuselemental",
+      "original_icon": "focus:thaumcraft.AIR",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focuselemental"
+      },
+      "display_parent": "thaumcraft:research/baseauromancy"
+    },
+    {
+      "research": "FOCUSFLUX",
+      "advancement": "thaumcraft:research/focusflux",
+      "original_icon": "focus:thaumcraft.FLUX",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusflux"
+      },
+      "display_parent": "thaumcraft:research/focuselemental"
+    },
+    {
+      "research": "FOCUSHEAL",
+      "advancement": "thaumcraft:research/focusheal",
+      "original_icon": "focus:thaumcraft.HEAL",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusheal"
+      },
+      "display_parent": "thaumcraft:research/focusflux"
+    },
+    {
+      "research": "FOCUSCURSE",
+      "advancement": "thaumcraft:research/focuscurse",
+      "original_icon": "focus:thaumcraft.CURSE",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focuscurse"
+      },
+      "display_parent": "thaumcraft:research/focusflux"
+    },
+    {
+      "research": "FOCUSBREAK",
+      "advancement": "thaumcraft:research/focusbreak",
+      "original_icon": "focus:thaumcraft.BREAK",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusbreak"
+      },
+      "display_parent": "thaumcraft:research/focusflux"
+    },
+    {
+      "research": "FOCUSEXCHANGE",
+      "advancement": "thaumcraft:research/focusexchange",
+      "original_icon": "focus:thaumcraft.EXCHANGE",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusexchange"
+      },
+      "display_parent": "thaumcraft:research/focusflux"
+    },
+    {
+      "research": "FOCUSPLAN",
+      "advancement": "thaumcraft:research/focusplan",
+      "original_icon": "focus:thaumcraft.PLAN",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusplan"
+      },
+      "display_parent": "thaumcraft:research/focusexchange"
+    },
+    {
+      "research": "FOCUSRIFT",
+      "advancement": "thaumcraft:research/focusrift",
+      "original_icon": "focus:thaumcraft.RIFT",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusrift"
+      },
+      "display_parent": "thaumcraft:research/focusbreak"
+    },
+    {
+      "research": "FOCUSPROJECTILE",
+      "advancement": "thaumcraft:research/focusprojectile",
+      "original_icon": "focus:thaumcraft.PROJECTILE",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusprojectile"
+      },
+      "display_parent": "thaumcraft:research/baseauromancy"
+    },
+    {
+      "research": "FOCUSBOLT",
+      "advancement": "thaumcraft:research/focusbolt",
+      "original_icon": "focus:thaumcraft.BOLT",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusbolt"
+      },
+      "display_parent": "thaumcraft:research/focusprojectile"
+    },
+    {
+      "research": "FOCUSSCATTER",
+      "advancement": "thaumcraft:research/focusscatter",
+      "original_icon": "focus:thaumcraft.SCATTER",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusscatter"
+      },
+      "display_parent": "thaumcraft:research/focusbolt"
+    },
+    {
+      "research": "FOCUSMINE",
+      "advancement": "thaumcraft:research/focusmine",
+      "original_icon": "focus:thaumcraft.MINE",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusmine"
+      },
+      "display_parent": "thaumcraft:research/focusprojectile"
+    },
+    {
+      "research": "FOCUSSPELLBAT",
+      "advancement": "thaumcraft:research/focusspellbat",
+      "original_icon": "focus:thaumcraft.SPELLBAT",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focusspellbat"
+      },
+      "display_parent": "thaumcraft:research/focusmine"
+    },
+    {
+      "research": "FOCUSCLOUD",
+      "advancement": "thaumcraft:research/focuscloud",
+      "original_icon": "focus:thaumcraft.CLOUD",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focuscloud"
+      },
+      "display_parent": "thaumcraft:research/focusmine"
+    },
+    {
+      "research": "FOCUSSPLIT",
+      "advancement": "thaumcraft:research/focussplit",
+      "original_icon": "focus:thaumcraft.SPLITTARGET",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focussplit"
+      },
+      "display_parent": "thaumcraft:research/focusscatter"
+    },
+    {
+      "research": "RECHARGEPEDESTAL",
+      "advancement": "thaumcraft:research/rechargepedestal",
+      "original_icon": "thaumcraft:recharge_pedestal",
+      "icon": {
+        "id": "thaumcraft:research_display_research_rechargepedestal"
+      },
+      "display_parent": "thaumcraft:research/baseauromancy"
+    },
+    {
+      "research": "VISAMULET",
+      "advancement": "thaumcraft:research/visamulet",
+      "original_icon": "thaumcraft:amulet_vis;1;1",
+      "icon": {
+        "id": "thaumcraft:research_display_research_visamulet"
+      },
+      "display_parent": "thaumcraft:research/rechargepedestal"
+    },
+    {
+      "research": "WORKBENCHCHARGER",
+      "advancement": "thaumcraft:research/workbenchcharger",
+      "original_icon": "thaumcraft:arcane_workbench_charger",
+      "icon": {
+        "id": "thaumcraft:research_display_research_workbenchcharger"
+      },
+      "display_parent": "thaumcraft:research/rechargepedestal"
+    },
+    {
+      "research": "FOCUSPOUCH",
+      "advancement": "thaumcraft:research/focuspouch",
+      "original_icon": "thaumcraft:focus_pouch",
+      "icon": {
+        "id": "thaumcraft:research_display_research_focuspouch"
+      },
+      "display_parent": "thaumcraft:research/baseauromancy"
+    },
+    {
+      "research": "VISBATTERY",
+      "advancement": "thaumcraft:research/visbattery",
+      "original_icon": "thaumcraft:vis_battery",
+      "icon": {
+        "id": "thaumcraft:research_display_research_visbattery"
+      },
+      "display_parent": "thaumcraft:research/rechargepedestal"
+    },
+    {
+      "research": "FIRSTSTEPS",
+      "advancement": "thaumcraft:research/firststeps",
+      "original_icon": "thaumcraft:textures/items/thaumonomicon.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_firststeps"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "KNOWLEDGETYPES",
+      "advancement": "thaumcraft:research/knowledgetypes",
+      "original_icon": "thaumcraft:textures/research/knowledge_theory.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_knowledgetypes"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "THEORYRESEARCH",
+      "advancement": "thaumcraft:research/theoryresearch",
+      "original_icon": "thaumcraft:textures/research/knowledge_theory.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_theoryresearch"
+      },
+      "display_parent": "thaumcraft:research/knowledgetypes"
+    },
+    {
+      "research": "FLUX",
+      "advancement": "thaumcraft:research/flux",
+      "original_icon": "thaumcraft:textures/research/r_flux.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_flux"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "WARP",
+      "advancement": "thaumcraft:research/warp",
+      "original_icon": "thaumcraft:textures/research/r_warp.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_warp"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "ORE",
+      "advancement": "thaumcraft:research/ore",
+      "original_icon": "minecraft:iron_pickaxe",
+      "icon": {
+        "id": "thaumcraft:research_display_research_ore"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "PLANTS",
+      "advancement": "thaumcraft:research/plants",
+      "original_icon": "thaumcraft:sapling_greatwood",
+      "icon": {
+        "id": "thaumcraft:research_display_research_plants"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "CRYSTALFARMER",
+      "advancement": "thaumcraft:research/crystalfarmer",
+      "original_icon": "thaumcraft:crystal_aer",
+      "icon": {
+        "id": "thaumcraft:research_display_research_crystalfarmer"
+      },
+      "display_parent": "thaumcraft:research/ore"
+    },
+    {
+      "research": "PRIMPEARL",
+      "advancement": "thaumcraft:research/primpearl",
+      "original_icon": "thaumcraft:primordial_pearl",
+      "icon": {
+        "id": "thaumcraft:research_display_research_primpearl"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "UNLOCKALCHEMY",
+      "advancement": "thaumcraft:research/unlockalchemy",
+      "original_icon": "thaumcraft:textures/research/cat_alchemy.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_unlockalchemy"
+      },
+      "display_parent": "thaumcraft:research/firststeps"
+    },
+    {
+      "research": "UNLOCKAUROMANCY",
+      "advancement": "thaumcraft:research/unlockauromancy",
+      "original_icon": "thaumcraft:textures/research/cat_auromancy.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_unlockauromancy"
+      },
+      "display_parent": "thaumcraft:research/unlockalchemy"
+    },
+    {
+      "research": "UNLOCKARTIFICE",
+      "advancement": "thaumcraft:research/unlockartifice",
+      "original_icon": "thaumcraft:textures/research/cat_artifice.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_unlockartifice"
+      },
+      "display_parent": "thaumcraft:research/unlockalchemy"
+    },
+    {
+      "research": "UNLOCKINFUSION",
+      "advancement": "thaumcraft:research/unlockinfusion",
+      "original_icon": "thaumcraft:textures/research/cat_infusion.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_unlockinfusion"
+      },
+      "display_parent": "thaumcraft:research/unlockalchemy"
+    },
+    {
+      "research": "UNLOCKGOLEMANCY",
+      "advancement": "thaumcraft:research/unlockgolemancy",
+      "original_icon": "thaumcraft:textures/research/cat_golemancy.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_unlockgolemancy"
+      },
+      "display_parent": "thaumcraft:research/unlockartifice"
+    },
+    {
+      "research": "CrimsonRites",
+      "advancement": "thaumcraft:research/crimsonrites",
+      "original_icon": "thaumcraft:curio;1;6",
+      "icon": {
+        "id": "thaumcraft:research_display_research_crimsonrites"
+      },
+      "display_parent": "thaumcraft:research/scan/crimsoncultist"
+    },
+    {
+      "research": "UNLOCKELDRITCH",
+      "advancement": "thaumcraft:research/unlockeldritch",
+      "original_icon": "thaumcraft:textures/research/cat_eldritch.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_unlockeldritch"
+      },
+      "display_parent": "thaumcraft:research/crimsonrites"
+    },
+    {
+      "research": "CELESTIALSCANNING",
+      "advancement": "thaumcraft:research/celestialscanning",
+      "original_icon": "thaumcraft:textures/research/r_celestial.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_celestialscanning"
+      },
+      "display_parent": "thaumcraft:research/theoryresearch"
+    },
+    {
+      "research": "FLUXCLEANUP",
+      "advancement": "thaumcraft:research/fluxcleanup",
+      "original_icon": "thaumcraft:condenser",
+      "icon": {
+        "id": "thaumcraft:research_display_research_fluxcleanup"
+      },
+      "display_parent": "thaumcraft:research/flux"
+    },
+    {
+      "research": "FLUXRIFT",
+      "advancement": "thaumcraft:research/fluxrift",
+      "original_icon": "thaumcraft:textures/research/r_fluxrift.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_fluxrift"
+      },
+      "display_parent": "thaumcraft:research/flux"
+    },
+    {
+      "research": "RIFTCLOSER",
+      "advancement": "thaumcraft:research/riftcloser",
+      "original_icon": "thaumcraft:causality_collapser",
+      "icon": {
+        "id": "thaumcraft:research_display_research_riftcloser"
+      },
+      "display_parent": "thaumcraft:research/fluxrift"
+    },
+    {
+      "research": "BASEELDRITCH",
+      "advancement": "thaumcraft:research/baseeldritch",
+      "original_icon": "thaumcraft:void_seed",
+      "icon": {
+        "id": "thaumcraft:research_display_research_baseeldritch"
+      },
+      "display_parent": "thaumcraft:research/category/eldritch"
+    },
+    {
+      "research": "VOIDSIPHON",
+      "advancement": "thaumcraft:research/voidsiphon",
+      "original_icon": "thaumcraft:void_siphon",
+      "icon": {
+        "id": "thaumcraft:research_display_research_voidsiphon"
+      },
+      "display_parent": "thaumcraft:research/baseeldritch"
+    },
+    {
+      "research": "VOIDSEERPEARL",
+      "advancement": "thaumcraft:research/voidseerpearl",
+      "original_icon": "thaumcraft:voidseer_charm",
+      "icon": {
+        "id": "thaumcraft:research_display_research_voidseerpearl"
+      },
+      "display_parent": "thaumcraft:research/baseeldritch"
+    },
+    {
+      "research": "VOIDROBEARMOR",
+      "advancement": "thaumcraft:research/voidrobearmor",
+      "original_icon": "thaumcraft:void_robe_helm",
+      "icon": {
+        "id": "thaumcraft:research_display_research_voidrobearmor"
+      },
+      "display_parent": "thaumcraft:research/baseeldritch"
+    },
+    {
+      "research": "PRIMALCRUSHER",
+      "advancement": "thaumcraft:research/primalcrusher",
+      "original_icon": "thaumcraft:primal_crusher",
+      "icon": {
+        "id": "thaumcraft:research_display_research_primalcrusher"
+      },
+      "display_parent": "thaumcraft:research/baseeldritch"
+    },
+    {
+      "research": "BASEGOLEMANCY",
+      "advancement": "thaumcraft:research/basegolemancy",
+      "original_icon": "thaumcraft:textures/research/cat_golemancy.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_basegolemancy"
+      },
+      "display_parent": "thaumcraft:research/category/golemancy"
+    },
+    {
+      "research": "JARBRAIN",
+      "advancement": "thaumcraft:research/jarbrain",
+      "original_icon": "thaumcraft:jar_brain",
+      "icon": {
+        "id": "thaumcraft:research_display_research_jarbrain"
+      },
+      "display_parent": "thaumcraft:research/basegolemancy"
+    },
+    {
+      "research": "MATSTUDWOOD",
+      "advancement": "thaumcraft:research/matstudwood",
+      "original_icon": "thaumcraft:log_greatwood",
+      "icon": {
+        "id": "thaumcraft:research_display_research_matstudwood"
+      },
+      "display_parent": "thaumcraft:research/category/golemancy"
+    },
+    {
+      "research": "MATSTUDIRON",
+      "advancement": "thaumcraft:research/matstudiron",
+      "original_icon": "thaumcraft:plate;1;1",
+      "icon": {
+        "id": "thaumcraft:research_display_research_matstudiron"
+      },
+      "display_parent": "thaumcraft:research/matstudwood"
+    },
+    {
+      "research": "MATSTUDCLAY",
+      "advancement": "thaumcraft:research/matstudclay",
+      "original_icon": "minecraft:hardened_clay",
+      "icon": {
+        "id": "thaumcraft:research_display_research_matstudclay"
+      },
+      "display_parent": "thaumcraft:research/matstudiron"
+    },
+    {
+      "research": "MATSTUDBRASS",
+      "advancement": "thaumcraft:research/matstudbrass",
+      "original_icon": "thaumcraft:plate",
+      "icon": {
+        "id": "thaumcraft:research_display_research_matstudbrass"
+      },
+      "display_parent": "thaumcraft:research/matstudiron"
+    },
+    {
+      "research": "MATSTUDTHAUMIUM",
+      "advancement": "thaumcraft:research/matstudthaumium",
+      "original_icon": "thaumcraft:plate;1;2",
+      "icon": {
+        "id": "thaumcraft:research_display_research_matstudthaumium"
+      },
+      "display_parent": "thaumcraft:research/matstudbrass"
+    },
+    {
+      "research": "MATSTUDVOID",
+      "advancement": "thaumcraft:research/matstudvoid",
+      "original_icon": "thaumcraft:plate;1;3",
+      "icon": {
+        "id": "thaumcraft:research_display_research_matstudvoid"
+      },
+      "display_parent": "thaumcraft:research/matstudthaumium"
+    },
+    {
+      "research": "MINDCLOCKWORK",
+      "advancement": "thaumcraft:research/mindclockwork",
+      "original_icon": "thaumcraft:mind",
+      "icon": {
+        "id": "thaumcraft:research_display_research_mindclockwork"
+      },
+      "display_parent": "thaumcraft:research/basegolemancy"
+    },
+    {
+      "research": "CONTROLSEALS",
+      "advancement": "thaumcraft:research/controlseals",
+      "original_icon": "thaumcraft:seal",
+      "icon": {
+        "id": "thaumcraft:research_display_research_controlseals"
+      },
+      "display_parent": "thaumcraft:research/mindclockwork"
+    },
+    {
+      "research": "GOLEMDIRECT",
+      "advancement": "thaumcraft:research/golemdirect",
+      "original_icon": "thaumcraft:textures/misc/golem/head_basic.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_golemdirect"
+      },
+      "display_parent": "thaumcraft:research/mindclockwork"
+    },
+    {
+      "research": "GOLEMLOGISTICS",
+      "advancement": "thaumcraft:research/golemlogistics",
+      "original_icon": "thaumcraft:textures/research/golem_logistics.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_golemlogistics"
+      },
+      "display_parent": "thaumcraft:research/sealprovide"
+    },
+    {
+      "research": "MINDBIOTHAUMIC",
+      "advancement": "thaumcraft:research/mindbiothaumic",
+      "original_icon": "thaumcraft:mind;1;1",
+      "icon": {
+        "id": "thaumcraft:research_display_research_mindbiothaumic"
+      },
+      "display_parent": "thaumcraft:research/mindclockwork"
+    },
+    {
+      "research": "SEALCOLLECT",
+      "advancement": "thaumcraft:research/sealcollect",
+      "original_icon": "thaumcraft:textures/items/seals/seal_pickup.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sealcollect"
+      },
+      "display_parent": "thaumcraft:research/controlseals"
+    },
+    {
+      "research": "SEALSTORE",
+      "advancement": "thaumcraft:research/sealstore",
+      "original_icon": "thaumcraft:textures/items/seals/seal_fill.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sealstore"
+      },
+      "display_parent": "thaumcraft:research/sealcollect"
+    },
+    {
+      "research": "SEALEMPTY",
+      "advancement": "thaumcraft:research/sealempty",
+      "original_icon": "thaumcraft:textures/items/seals/seal_empty.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sealempty"
+      },
+      "display_parent": "thaumcraft:research/sealstore"
+    },
+    {
+      "research": "SEALPROVIDE",
+      "advancement": "thaumcraft:research/sealprovide",
+      "original_icon": "thaumcraft:textures/items/seals/seal_provider.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sealprovide"
+      },
+      "display_parent": "thaumcraft:research/sealempty"
+    },
+    {
+      "research": "SEALSTOCK",
+      "advancement": "thaumcraft:research/sealstock",
+      "original_icon": "thaumcraft:textures/items/seals/seal_stock.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sealstock"
+      },
+      "display_parent": "thaumcraft:research/sealprovide"
+    },
+    {
+      "research": "SEALGUARD",
+      "advancement": "thaumcraft:research/sealguard",
+      "original_icon": "thaumcraft:textures/items/seals/seal_guard.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sealguard"
+      },
+      "display_parent": "thaumcraft:research/controlseals"
+    },
+    {
+      "research": "SEALBUTCHER",
+      "advancement": "thaumcraft:research/sealbutcher",
+      "original_icon": "thaumcraft:textures/items/seals/seal_butcher.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sealbutcher"
+      },
+      "display_parent": "thaumcraft:research/sealguard"
+    },
+    {
+      "research": "SEALUSE",
+      "advancement": "thaumcraft:research/sealuse",
+      "original_icon": "thaumcraft:textures/items/seals/seal_use.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sealuse"
+      },
+      "display_parent": "thaumcraft:research/controlseals"
+    },
+    {
+      "research": "SEALHARVEST",
+      "advancement": "thaumcraft:research/sealharvest",
+      "original_icon": "thaumcraft:textures/items/seals/seal_harvest.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sealharvest"
+      },
+      "display_parent": "thaumcraft:research/sealuse"
+    },
+    {
+      "research": "SEALBREAK",
+      "advancement": "thaumcraft:research/sealbreak",
+      "original_icon": "thaumcraft:textures/items/seals/seal_breaker.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_sealbreak"
+      },
+      "display_parent": "thaumcraft:research/controlseals"
+    },
+    {
+      "research": "SEALLUMBER",
+      "advancement": "thaumcraft:research/seallumber",
+      "original_icon": "thaumcraft:textures/items/seals/seal_lumber.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_seallumber"
+      },
+      "display_parent": "thaumcraft:research/sealbreak"
+    },
+    {
+      "research": "GOLEMVISION",
+      "advancement": "thaumcraft:research/golemvision",
+      "original_icon": "thaumcraft:module",
+      "icon": {
+        "id": "thaumcraft:research_display_research_golemvision"
+      },
+      "display_parent": "thaumcraft:research/mindclockwork"
+    },
+    {
+      "research": "GOLEMCLIMBER",
+      "advancement": "thaumcraft:research/golemclimber",
+      "original_icon": "thaumcraft:textures/misc/golem/legs_climber.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_golemclimber"
+      },
+      "display_parent": "thaumcraft:research/mindclockwork"
+    },
+    {
+      "research": "GOLEMFLYER",
+      "advancement": "thaumcraft:research/golemflyer",
+      "original_icon": "thaumcraft:textures/misc/golem/legs_flyer.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_golemflyer"
+      },
+      "display_parent": "thaumcraft:research/golemclimber"
+    },
+    {
+      "research": "GOLEMBREAKER",
+      "advancement": "thaumcraft:research/golembreaker",
+      "original_icon": "thaumcraft:textures/misc/golem/arms_breakers.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_golembreaker"
+      },
+      "display_parent": "thaumcraft:research/mindclockwork"
+    },
+    {
+      "research": "GOLEMCOMBATADV",
+      "advancement": "thaumcraft:research/golemcombatadv",
+      "original_icon": "thaumcraft:textures/misc/golem/addon_fighter.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_golemcombatadv"
+      },
+      "display_parent": "thaumcraft:research/sealguard"
+    },
+    {
+      "research": "BASEINFUSION",
+      "advancement": "thaumcraft:research/baseinfusion",
+      "original_icon": "thaumcraft:textures/research/cat_infusion.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_baseinfusion"
+      },
+      "display_parent": "thaumcraft:research/category/infusion"
+    },
+    {
+      "research": "INFUSION",
+      "advancement": "thaumcraft:research/infusion",
+      "original_icon": "thaumcraft:infusion_matrix",
+      "icon": {
+        "id": "thaumcraft:research_display_research_infusion"
+      },
+      "display_parent": "thaumcraft:research/baseinfusion"
+    },
+    {
+      "research": "INFUSIONSTABLE",
+      "advancement": "thaumcraft:research/infusionstable",
+      "original_icon": "thaumcraft:stabilizer",
+      "icon": {
+        "id": "thaumcraft:research_display_research_infusionstable"
+      },
+      "display_parent": "thaumcraft:research/infusion"
+    },
+    {
+      "research": "INFUSIONBOOST",
+      "advancement": "thaumcraft:research/infusionboost",
+      "original_icon": "thaumcraft:matrix_cost",
+      "icon": {
+        "id": "thaumcraft:research_display_research_infusionboost"
+      },
+      "display_parent": "thaumcraft:research/infusion"
+    },
+    {
+      "research": "INFUSIONANCIENT",
+      "advancement": "thaumcraft:research/infusionancient",
+      "original_icon": "thaumcraft:stone_ancient",
+      "icon": {
+        "id": "thaumcraft:research_display_research_infusionancient"
+      },
+      "display_parent": "thaumcraft:research/infusionboost"
+    },
+    {
+      "research": "INFUSIONELDRITCH",
+      "advancement": "thaumcraft:research/infusioneldritch",
+      "original_icon": "thaumcraft:stone_eldritch_tile",
+      "icon": {
+        "id": "thaumcraft:research_display_research_infusioneldritch"
+      },
+      "display_parent": "thaumcraft:research/infusionboost"
+    },
+    {
+      "research": "PAVINGSTONES",
+      "advancement": "thaumcraft:research/pavingstones",
+      "original_icon": "thaumcraft:paving_stone_barrier",
+      "icon": {
+        "id": "thaumcraft:research_display_research_pavingstones"
+      },
+      "display_parent": "thaumcraft:research/baseinfusion"
+    },
+    {
+      "research": "BOOTSTRAVELLER",
+      "advancement": "thaumcraft:research/bootstraveller",
+      "original_icon": "thaumcraft:traveller_boots",
+      "icon": {
+        "id": "thaumcraft:research_display_research_bootstraveller"
+      },
+      "display_parent": "thaumcraft:research/infusion"
+    },
+    {
+      "research": "ELEMENTALTOOLS",
+      "advancement": "thaumcraft:research/elementaltools",
+      "original_icon": "thaumcraft:elemental_axe",
+      "icon": {
+        "id": "thaumcraft:research_display_research_elementaltools"
+      },
+      "display_parent": "thaumcraft:research/bootstraveller"
+    },
+    {
+      "research": "INFUSIONENCHANTMENT",
+      "advancement": "thaumcraft:research/infusionenchantment",
+      "original_icon": "thaumcraft:textures/research/r_inf_enchant.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_infusionenchantment"
+      },
+      "display_parent": "thaumcraft:research/elementaltools"
+    },
+    {
+      "research": "RUNICSHIELDING",
+      "advancement": "thaumcraft:research/runicshielding",
+      "original_icon": "thaumcraft:textures/research/r_runicupg.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_runicshielding"
+      },
+      "display_parent": "thaumcraft:research/infusionenchantment"
+    },
+    {
+      "research": "ARMORFORTRESS",
+      "advancement": "thaumcraft:research/armorfortress",
+      "original_icon": "thaumcraft:fortress_helm",
+      "icon": {
+        "id": "thaumcraft:research_display_research_armorfortress"
+      },
+      "display_parent": "thaumcraft:research/bootstraveller"
+    },
+    {
+      "research": "FORTRESSMASK",
+      "advancement": "thaumcraft:research/fortressmask",
+      "original_icon": "thaumcraft:textures/research/r_mask0.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_fortressmask"
+      },
+      "display_parent": "thaumcraft:research/armorfortress"
+    },
+    {
+      "research": "CLOUDRING",
+      "advancement": "thaumcraft:research/cloudring",
+      "original_icon": "thaumcraft:cloud_ring",
+      "icon": {
+        "id": "thaumcraft:research_display_research_cloudring"
+      },
+      "display_parent": "thaumcraft:research/infusion"
+    },
+    {
+      "research": "CURIOSITYBAND",
+      "advancement": "thaumcraft:research/curiosityband",
+      "original_icon": "thaumcraft:curiosity_band",
+      "icon": {
+        "id": "thaumcraft:research_display_research_curiosityband"
+      },
+      "display_parent": "thaumcraft:research/cloudring"
+    },
+    {
+      "research": "VERDANTCHARMS",
+      "advancement": "thaumcraft:research/verdantcharms",
+      "original_icon": "thaumcraft:verdant_charm",
+      "icon": {
+        "id": "thaumcraft:research_display_research_verdantcharms"
+      },
+      "display_parent": "thaumcraft:research/cloudring"
+    },
+    {
+      "research": "CHARMUNDYING",
+      "advancement": "thaumcraft:research/charmundying",
+      "original_icon": "thaumcraft:charm_undying",
+      "icon": {
+        "id": "thaumcraft:research_display_research_charmundying"
+      },
+      "display_parent": "thaumcraft:research/cloudring"
+    },
+    {
+      "research": "!Wisp",
+      "advancement": "thaumcraft:research/scan/wisp",
+      "original_icon": "thaumcraft:textures/research/r_wisp.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_wisp"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!Pech",
+      "advancement": "thaumcraft:research/scan/pech",
+      "original_icon": "thaumcraft:textures/research/r_pech.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_pech"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!ThaumSlime",
+      "advancement": "thaumcraft:research/scan/thaumslime",
+      "original_icon": "thaumcraft:textures/research/r_thaumslime.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_thaumslime"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!Firebat",
+      "advancement": "thaumcraft:research/scan/firebat",
+      "original_icon": "thaumcraft:textures/research/r_firebat.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_firebat"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!TaintSeed",
+      "advancement": "thaumcraft:research/scan/taintseed",
+      "original_icon": "thaumcraft:textures/research/r_taintseed.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_taintseed"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!TaintCrawler",
+      "advancement": "thaumcraft:research/scan/taintcrawler",
+      "original_icon": "thaumcraft:textures/research/r_taintcrawler.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_taintcrawler"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!Taintacle",
+      "advancement": "thaumcraft:research/scan/taintacle",
+      "original_icon": "thaumcraft:textures/research/r_taintacle.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_taintacle"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!TaintSwarm",
+      "advancement": "thaumcraft:research/scan/taintswarm",
+      "original_icon": "thaumcraft:textures/research/r_taintswarm.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_taintswarm"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!CrimsonCultist",
+      "advancement": "thaumcraft:research/scan/crimsoncultist",
+      "original_icon": "thaumcraft:textures/research/r_cultist.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_crimsoncultist"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!BrainyZombie",
+      "advancement": "thaumcraft:research/scan/brainyzombie",
+      "original_icon": "thaumcraft:textures/research/r_angryzombie.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_brainyzombie"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!EldritchGuardian",
+      "advancement": "thaumcraft:research/scan/eldritchguardian",
+      "original_icon": "thaumcraft:textures/research/r_eldritchguardian.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_eldritchguardian"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    },
+    {
+      "research": "!EldritchCrab",
+      "advancement": "thaumcraft:research/scan/eldritchcrab",
+      "original_icon": "thaumcraft:textures/research/r_crab.png",
+      "icon": {
+        "id": "thaumcraft:research_display_research_scan_eldritchcrab"
+      },
+      "display_parent": "thaumcraft:research/category/basics"
+    }
+  ],
+  "limitations": [
+    "Unimplemented research mechanics are not completed by displaying advancements.",
+    "Vanilla supports one display parent; all original prerequisites remain enforced by the research system.",
+    "Original icon variants cycle every second; pixel-level parity needs an in-game comparison."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "blocks": 81,
+  "essentia_extension_fixture_checks": 18,
+  "essentia_fixture_checks": 69,
+  "feature_order_cycles": false,
+  "items": 123,
+  "jar_bellows_fixture_checks": 35,
+  "loot_tables_decoded": 94,
+  "machine_fixture_checks": 136,
+  "presentation_fixture_checks": 155,
+  "recipes_decoded": 93,
+  "server_started": false,
+  "templates_decoded": 3,
+  "tree_fixture_checks": 66,
+  "worldgen_registries_loaded": true
+}

@@ -1,0 +1,85 @@
+{
+  "original": "Thaumcraft-1.12.2-6.1.BETA26; reference/legacy-decompiled-sources.zip",
+  "implemented": [
+    {
+      "feature": "Independent PAGE, RESEARCH and POPUP states",
+      "evidence": "PlayerKnowledge.java:177-213,249-320; IPlayerKnowledge.EnumResearchFlag",
+      "details": "Separate per-research EnumSet map. Presentation flag mutations never alter gameplay stages, discoveries, scans, inventory or currency. Completed addendum owners receive PAGE independently of existing RESEARCH."
+    },
+    {
+      "feature": "Exact read acknowledgement boundary",
+      "evidence": "GuiResearchBrowser.java:728-760",
+      "details": "Only opening a known browser node clears PAGE and RESEARCH. Search-result opens and ResearchPageScreen.parse/update do not clear them. Server acknowledgement validates living player, held Thaumonomicon and known catalog entry. No client flags or reward parameters are trusted."
+    },
+    {
+      "feature": "One-shot research popup snapshot and toast",
+      "evidence": "PacketSyncKnowledge.java:45-53,72-83; ResearchToast.java:37-67",
+      "details": "Snapshot serializes POPUP and clears the server pending popup; the client queues one HUD toast then clears the local flag before updating the book. The original HUD artwork, icon path/position and five-second timer remain. Native-size wrapping, dynamic height/slots and repeated central frame strip are the requested font adaptation described in typography-audit.json; the original fitted fractional title is not retained."
+    },
+    {
+      "feature": "Server progress notification semantics",
+      "evidence": "PacketSyncProgressToServer.java:54-57,75-93; GuiResearchBrowser.java:740-742; ResearchManager.java:165-174,205-222",
+      "details": "Regular page requests suppress RESEARCH on the first completion in that request tree; this may be the KNOWLEDGETYPES sibling during FIRSTSTEPS start (POPUP remains). Later sibling completions retain RESEARCH. TERMINAL_NODE validates actual expected stage, stage>1 and terminal stage with identical requirements, and does not suppress completion notification. Five XP per successful catalog transition, zero on duplicate/failure/read. Siblings recurse with shared one-shot notification context."
+    },
+    {
+      "feature": "Persistence and migration",
+      "evidence": "PlayerKnowledge.java serialization stores enum names; previous port schema2 ui_seen markers were lossy",
+      "details": "Schema3 stores research_flags separately, rejects old ui_seen as gameplay flags, uses silent restoration so reload does not replay notifications. UUID keyed SavedData retains progress across entity clone/reconnect. Schema2 exact current read marker is treated read; lower stage produces RESEARCH, increased eligible addenda produces PAGE. Never replay old POPUP because previous schema did not record delivery."
+    },
+    {
+      "feature": "Browser displays both flags and started research",
+      "evidence": "GuiResearchBrowser.java:189-195,295-342,408-428,577-590,715-720,1058-1100; ThaumcraftCapabilities.knowsResearch bytecode calls isResearchKnown",
+      "details": "Two independent node/category badges and hover labels. Category completion and search include known unfinished entries. Search categories match IDs, selected stage is min(length-1,stage+1), direct recipes only, result glyph UV224,48 and truncation label retained; click hitboxes exclude gaps/hidden rows. Search visibility persists while returning to browser."
+    },
+    {
+      "feature": "Browser sounds",
+      "evidence": "GuiResearchBrowser.java:728-768 no open sound; GuiButton subclasses inherit vanilla button sound; unused clack helper814-815",
+      "details": "Opening a node/search result is silent. Category/search buttons use vanilla UI_BUTTON_CLICK in MASTER. Named book sound helper uses LocalPlayer.playSound in PLAYERS with explicit volume/pitch, matching EntityPlayerSP.playSound; one-argument effective volume remains .25."
+    },
+    {
+      "feature": "One-shot addendum completion chat",
+      "evidence": "ResearchManager.java:189-198 sends tc.addaddendum with owning research localized title before PAGE notification",
+      "details": "ResearchState queues transient owner-key completion events, independent of persistent PAGE. ResearchProgress sync/show delivers localized system chat then drains the queue. Codec does not restore these effects, so read acknowledgements and reconnect cannot replay old chat. No Player reference in ResearchState."
+    }
+  ],
+  "migration_limit": "Schema2 stored combined read markers, so exact original independent unread history cannot be recovered. Migration preserves current-read markers and infers only demonstrable stage/addendum changes, without popup replay or gameplay reward.",
+  "validation": {
+    "version": "0.1.0-alpha.9.14-dev",
+    "checkpoint": "Final build after resumed fixes and original vanilla blueprint assets",
+    "junit": {
+      "tests": 1958,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "status": "PASS",
+      "evidence": "junit/summary.json"
+    },
+    "server": {
+      "tests": 31,
+      "failures": 0,
+      "status": "PASS",
+      "evidence": "resume-final-build.log"
+    },
+    "final_build": "final-build-summary.json"
+  },
+  "scope": "Research notification state, synchronization, persistence, browser/search behavior; does not certify whole-mod gameplay parity.",
+  "font": "Explicit requested readability adaptation: native Minecraft1.21.1 font; browser details use full1x BookTooltip. ResearchToast wraps header/title at124px, constructor reserves stable dynamic height/slots, copies original16px top/bottom caps and repeats only central1px row. Icon6,8 and5000ms unchanged. Actual148titles max3lines(RUdefault), RU header133px wraps2lines, maximum native toast59px/2slots. No ellipsis/fractional title scaling.",
+  "explicit_server_adaptation": "TC6 ResearchManager.noFlags was a static mutable flag and could leak beyond a request into unrelated players/actions. Approved adaptation: preserve its first-completion behavior inside one server request tree, but never allow notification suppression to leak across requests or players.",
+  "historical_validation": {
+    "version": "0.1.0-alpha.9.14-dev",
+    "stage": "Earlier notification integration and toast-development notes, before the copied 1950-test successful checkpoint. The temporary tooltip-catalog failure and toast-run pending text below are historical.",
+    "validation": {
+      "junit": "PASS: all 16 ResearchNotificationTest tests, including one-shot addendum chat and no replay on reload. Existing presentation flag assertion also updated; total suite has one unrelated tooltip-catalog issue under another owner.",
+      "gametest": "PASS: build_environment full server run 27/27, including all 7 ResearchProgressGameTests for atomic requirement checks, success consumption, duplicate XP, saved UUID state, terminal intent, acknowledgement authorization, first-completion sibling suppression and exact addendum message args/delivery-once.",
+      "client": "Root/build_environment owns runtime verification. No user-facing files produced.",
+      "compile": "PASS: build_environment coordinated compileJava and compileTestJava for notification/toast/browser integration and all regressions.",
+      "toast_layout": "4 narrow JUnit added: short original32px frame, actual3line RU title, wrapped-header spacing, exhaustive32..160px cap/repeat coverage; coordinated final run pending."
+    }
+  },
+  "font_adaptations": {
+    "report": "typography-audit.json",
+    "user_requested": true,
+    "summary": "Use native Minecraft1.21.1 font metrics and Force Unicode preference. Full-size tooltips, wrapped page headings, pixel-aware decorative labels, and full native-size toast heading/title with stable dynamic slots are intentional readability adaptations.",
+    "evidence_boundary": "Typography audit is asset-derived measurement; final client screenshots and latest-font-fix rerun are tracked separately."
+  }
+}

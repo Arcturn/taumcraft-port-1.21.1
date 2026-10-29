@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "tag": "c:ores/cinnabar"
+  },
+  "result": {
+    "id": "thaumcraft:quicksilver"
+  },
+  "experience": 1.0,
+  "cookingtime": 100
+}

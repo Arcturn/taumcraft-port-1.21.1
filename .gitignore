@@ -1,11 +1,20 @@
 .gradle/
 build/
 runs/
-.idea/
-*.iml
 /run/
 /logs/
 /dist/
 __pycache__/
 *.pyc
 *.class
+.idea/
+*.iml
+
+# Supplemental visual evidence is retained separately from the source repository.
+/verification/**/*.png
+/verification/**/*.ogg
+/verification/**/*.mp4
+/verification/**/*.gif
+/docs/*.docx
+/verification/**/*.dat
+/verification/**/*.zip

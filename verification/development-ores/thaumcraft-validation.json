@@ -1,0 +1,22 @@
+{
+  "advancement_fixture_checks": 1733,
+  "aspect_fixture_checks": 394,
+  "audit_fixture_checks": 18,
+  "blocks": 86,
+  "essentia_extension_fixture_checks": 18,
+  "essentia_fixture_checks": 69,
+  "feature_order_cycles": false,
+  "items": 295,
+  "jar_bellows_fixture_checks": 35,
+  "leaf_color_fixture_checks": 39,
+  "loot_tables_decoded": 99,
+  "machine_fixture_checks": 169,
+  "presentation_fixture_checks": 219,
+  "recipes_decoded": 96,
+  "scan_fixture_checks": 325,
+  "server_started": false,
+  "templates_decoded": 3,
+  "theory_fixture_checks": 239,
+  "tree_fixture_checks": 90,
+  "worldgen_registries_loaded": true
+}

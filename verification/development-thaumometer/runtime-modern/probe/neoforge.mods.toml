@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+[[mods]]
+modId="thaumcraft_tooltip_probe"
+version="1"
+displayName="Thaumcraft tooltip verification probe"
+[[dependencies.thaumcraft_tooltip_probe]]
+modId="thaumcraft"
+type="required"
+versionRange="[0,)"
+ordering="AFTER"
+side="CLIENT"

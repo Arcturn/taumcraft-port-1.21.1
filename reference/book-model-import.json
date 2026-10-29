@@ -1,0 +1,2565 @@
+{
+  "models": 298,
+  "world_models": 25,
+  "world_context_states": 23,
+  "weighted_world_variants": 24,
+  "unresolved": [
+    {
+      "icon": "thaumcraft:leather",
+      "reason": "state leather"
+    }
+  ],
+  "gui_model_count": 121,
+  "gui_transforms": {
+    "alembic_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "amber_block_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "amber_brick_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "amulet_vis_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "arcane_ear_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "arcane_ear_toggle_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "stone_arcane_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "arcane_workbench_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "arcane_workbench_charger_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "baubles_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "baubles_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "baubles_2": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "baubles_4": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "baubles_5": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "baubles_6": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "bellows_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "brain_box_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "centrifuge_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "chunk_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "chunk_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "chunk_2": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "chunk_3": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "chunk_4": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "chunk_5": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "cinderpearl_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "cluster_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "cluster_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "cluster_2": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "cluster_3": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "cluster_4": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "cluster_5": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "cluster_6": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "condenser_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "crucible_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "crystal_essence_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "curio_6": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "dioptra_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "essentia_input_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "essentia_output_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "everfull_urn_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "flesh_block_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "golem_builder_0": {
+      "source": {
+        "gui": {
+          "translation": [
+            0,
+            -0.125,
+            0
+          ],
+          "scale": 0.4,
+          "rotation": [
+            {
+              "x": 30
+            },
+            {
+              "y": 45
+            }
+          ]
+        }
+      },
+      "gui": {
+        "rotation": [
+          30,
+          45,
+          0
+        ],
+        "translation": [
+          0,
+          -2.0,
+          0
+        ],
+        "scale": [
+          0.4,
+          0.4,
+          0.4
+        ]
+      }
+    },
+    "hungry_chest_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "infernal_furnace_0": {
+      "source": {
+        "gui": {
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": 0.275,
+          "rotation": [
+            {
+              "x": 300
+            },
+            {
+              "z": 45
+            }
+          ]
+        }
+      },
+      "gui": {
+        "rotation": [
+          300,
+          0,
+          45
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.275,
+          0.275,
+          0.275
+        ]
+      }
+    },
+    "infusion_matrix_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "ingot_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "ingot_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "ingot_2": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "jar_brain_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "label_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "label_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "lamp_arcane_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "lamp_fertility_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "lamp_growth_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "levitator_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "log_greatwood_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "log_silverwood_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "matrix_cost_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "matrix_speed_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "metal_brass_2": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "metal_thaumium_3": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "metal_alchemical_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "metal_alchemical_advanced_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "metal_brass_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "metal_thaumium_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "metal_void_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "mind_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "mind_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "module_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "module_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "nugget_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "nugget_10": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "nugget_5": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "nugget_6": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "nugget_7": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "nugget_8": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "nugget_9": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "ore_cinnabar_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "pattern_crafter_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "paving_stone_barrier_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "paving_stone_travel_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "pedestal_ancient_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "pedestal_arcane_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "pedestal_eldritch_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "phial_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "phial_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "plank_greatwood_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "plank_silverwood_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "plate_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "plate_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "plate_2": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "plate_3": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "potion_sprayer_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "recharge_pedestal_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "redstone_relay_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "research_table_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "sapling_greatwood_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "sapling_silverwood_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "shimmerleaf_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "smelter_aux_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "smelter_basic_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "smelter_thaumium_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "smelter_vent_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "smelter_void_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "spa_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "stabilizer_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "stone_ancient_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "stone_arcane_brick_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "stone_eldritch_tile_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "table_stone_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "table_wood_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "thaumatorium_0": {
+      "source": {
+        "gui": {
+          "translation": [
+            0,
+            -0.25,
+            0
+          ],
+          "scale": 0.65,
+          "rotation": [
+            {
+              "x": 300
+            },
+            {
+              "z": 45
+            }
+          ]
+        }
+      },
+      "gui": {
+        "rotation": [
+          300,
+          0,
+          45
+        ],
+        "translation": [
+          0,
+          -4.0,
+          0
+        ],
+        "scale": [
+          0.65,
+          0.65,
+          0.65
+        ]
+      }
+    },
+    "thaumometer_0": {
+      "source": {
+        "firstperson": {
+          "translation": [
+            -0.06,
+            0.006,
+            -0.4
+          ],
+          "rotation": [
+            {
+              "x": 90
+            }
+          ]
+        },
+        "firstperson_lefthand": {
+          "translation": [
+            -1.06,
+            0.006,
+            -0.4
+          ],
+          "rotation": [
+            {
+              "x": 90
+            }
+          ]
+        },
+        "thirdperson": {
+          "translation": [
+            0,
+            0,
+            -0.1
+          ],
+          "scale": 0.2,
+          "rotation": [
+            {
+              "y": 90
+            },
+            {
+              "x": 90
+            }
+          ]
+        },
+        "thirdperson_lefthand": {
+          "translation": [
+            0,
+            -0.1,
+            0
+          ],
+          "scale": 0.2,
+          "rotation": [
+            {
+              "y": 90
+            },
+            {
+              "x": 90
+            }
+          ]
+        },
+        "gui": {
+          "translation": [
+            0.175,
+            -0.175,
+            0
+          ],
+          "scale": 0.35,
+          "rotation": [
+            {
+              "x": 90
+            }
+          ]
+        },
+        "ground": {
+          "translation": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "scale": 0.2,
+          "rotation": [
+            {
+              "x": 90
+            }
+          ]
+        },
+        "fixed": {
+          "translation": [
+            0.2,
+            0.2,
+            -0.17
+          ],
+          "scale": 0.4,
+          "rotation": [
+            {
+              "x": -90
+            }
+          ]
+        }
+      },
+      "gui": {
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "translation": [
+          2.8,
+          -2.8,
+          0
+        ],
+        "scale": [
+          0.35,
+          0.35,
+          0.35
+        ]
+      }
+    },
+    "turret_0": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "turret_1": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "turret_2": {
+      "source": "forge:default-item",
+      "gui": {
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "vis_battery_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "vis_generator_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "void_siphon_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    },
+    "wand_workbench_0": {
+      "source": "forge:default-block",
+      "gui": {
+        "rotation": [
+          30,
+          225,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.625,
+          0.625,
+          0.625
+        ]
+      }
+    }
+  },
+  "world_limits": [
+    "Golem builder uses the original static OBJ; TESR moving parts and lava surface are not reproduced here."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thaumcraft:research/r_mask0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 1
+      },
+      "model": "thaumcraft:research/display/research_display_research_fortressmask_1"
+    },
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 2
+      },
+      "model": "thaumcraft:research/display/research_display_research_fortressmask_2"
+    }
+  ]
+}

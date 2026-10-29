@@ -1,0 +1,19 @@
+{
+  "previous": "0.1.0-alpha.8.1",
+  "current": "0.1.0-alpha.8.2",
+  "changed_entries": [
+    "thaumcraft/port/aspect/Aspect.class",
+    "thaumcraft/port/client/ThaumonomiconScreen.class",
+    "thaumcraft/port/content/CrystalItem.class",
+    "thaumcraft/port/essentia/EssentiaItem.class",
+    "thaumcraft/port/essentia/JarBlock.class",
+    "thaumcraft/port/essentia/JarItem.class",
+    "thaumcraft/port/essentia/TubeBlock.class",
+    "thaumcraft/port/machine/CrucibleBlock.class",
+    "thaumcraft/port/research/Scanning.class",
+    "META-INF/neoforge.mods.toml",
+    "assets/thaumcraft/lang/en_us.json",
+    "assets/thaumcraft/lang/ru_ru.json"
+  ],
+  "non_language_resources_unchanged": true
+}

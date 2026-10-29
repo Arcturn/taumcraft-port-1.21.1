@@ -1,0 +1,91 @@
+[
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "16",
+      "274"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "1"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.6
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "680",
+      "351"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "1"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.6
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "968",
+      "276"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "1"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.6
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "900",
+      "630"
+    ]
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "modern-final-ru2-blueprint-infusion.png"
+  }
+]

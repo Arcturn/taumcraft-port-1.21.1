@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.client.BookBlocksTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-26T09:00:38.817Z" hostname="6adda57d248a" time="0.018">
+  <properties/>
+  <testcase name="combinedQuarterTurnsRotateCornersAndQueryTheOriginalFace()" classname="thaumcraft.port.client.BookBlocksTest" time="0.017"/>
+  <testcase name="yawKeepsTheBlockCenterAndDoesNotMutateCachedSourceQuads()" classname="thaumcraft.port.client.BookBlocksTest" time="0.001"/>
+  <testcase name="golemObjGetsItsLegacyHorizontalAnchorWithoutVerticalShift()" classname="thaumcraft.port.client.BookBlocksTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

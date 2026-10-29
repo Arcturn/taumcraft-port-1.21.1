@@ -1,0 +1,5 @@
+PASS: 903 PNG files decode; 25 world aspect bindings match migration records
+PASS: 1162 JSON resources, 123 item models, 81 blocks, 37 aspects, 121 migrated bindings
+PASS: 71 original resource hashes, Curios tags, recipes, locales and model references
+PASS: 411 model/MTL sprites use vanilla atlas directories
+PASS: JAR integrity, 192 Java 21 classes, expanded metadata and current resources

@@ -1,0 +1,80 @@
+{
+  "scope": "Two confirmed Thaumonomicon progression/synchronization fixes found while resuming alpha9.14 work. Does not certify whole-mod gameplay parity or additional rendering hardware.",
+  "original": {
+    "version": "Thaumcraft 6.1.BETA26 / Minecraft 1.12.2",
+    "archive": "reference/legacy-decompiled-sources.zip"
+  },
+  "fixes": [
+    {
+      "id": "research-transition-warp",
+      "problem": "ResearchProgress charged only the outgoing stage. Completing research skipped warp on an automatic requirement-free final stage; a single required stage also lost the original final-stage addition.",
+      "original_source": {
+        "path": "thaumcraft/common/lib/research/ResearchManager.java",
+        "lines": "132-166",
+        "details": "Lines 145-147 read outgoing stage warp; 149-151 select the final stage on completion; 153 adds that stage warp (outgoing again when not completing); 154-164 split positive total into ceil(total/2) permanent and floor(total/2) normal."
+      },
+      "implementation": {
+        "path": "src/main/java/thaumcraft/port/research/ResearchProgress.java",
+        "lines": "92-94,113-139",
+        "details": "applyTransitionWarp is called only after successful requirement validation and once per successful direct or sibling transition. Existing stage/completion guards reject duplicates. Temporary warp is unchanged."
+      },
+      "regressions": [
+        {
+          "test": "ResearchProgressGameTests.skippedFinalStageAwardsItsWarpOnceAfterRequirementsPass",
+          "research": "JARBRAIN",
+          "expected": "Final warp 3 adds permanent 2 / normal 1; missing brain and duplicate request leave warp unchanged; temporary warp and one-time item/XP semantics are preserved."
+        },
+        {
+          "test": "ResearchProgressGameTests.singleRequiredStageAwardsOriginalOutgoingAndFinalWarpOnce",
+          "research": "BOTTLETAINT",
+          "expected": "Outgoing 2 plus final 2 adds permanent 2 / normal 2; knowledge is spent once and duplicate request is inert."
+        },
+        {
+          "test": "ResearchProgressGameTests.outgoingWarpIsNotDoubledWhenAnEmptyFinalStageCompletesResearch",
+          "research": "UNLOCKELDRITCH",
+          "expected": "Outgoing 5 plus final 0 adds permanent 3 / normal 2, with no accidental doubling."
+        }
+      ],
+      "limits": "Restores the transition calculation against the original default behavior. Does not implement unrelated whole-mod warp events, configuration modes, or administrative-command side effects."
+    },
+    {
+      "id": "non-opening-research-action-reply",
+      "problem": "ResearchActionPayload responses called show(), so open=true could reopen the book after the player closed it while a request was in flight.",
+      "original_source": {
+        "path": "thaumcraft/common/lib/network/playerdata/PacketSyncKnowledge.java",
+        "lines": "47-52,63-81",
+        "details": "Original snapshot includes then clears pending POPUP; client handler updates capability state, queues completion toasts and clears local POPUP without opening a GUI."
+      },
+      "implementation": {
+        "path": "src/main/java/thaumcraft/port/network/PortNetwork.java",
+        "lines": "22-25,33-40",
+        "details": "Registered handler dispatches to handleResearchAction on the server main thread. Existing book/cooldown/stage guards remain. Successful or rejected validated actions synchronize with sync(), not show()."
+      },
+      "preserved_behavior": [
+        "Actual item use in ThaumonomiconItem.use still calls show() and opens the book.",
+        "show() records !gotthaumonomicon on the original item use; subsequent action replies preserve this server-owned flag.",
+        "ResearchProgress.sync still calls deliverAddenda and includes pending POPUP in the snapshot.",
+        "ClientJournal.open updates an existing ResearchScreen/ResearchPageScreen even when payload.open is false; a closed screen remains closed."
+      ],
+      "regressions": [
+        {
+          "test": "ResearchProgressGameTests.progressReplyUpdatesKnowledgeWithoutReopeningAClosedBook",
+          "expected": "Capture real outbound JournalPayload through a test packet listener: item use sends open=true and records discovery; the actual server action handler sends open=false plus completed research, POPUP, preserved discovery and spent-knowledge state."
+        }
+      ],
+      "limits": "Packet-level server regression validates the no-reopen contract; it is not a new visual client test or an artificial network latency benchmark."
+    }
+  ],
+  "test_source": "src/main/java/thaumcraft/port/gametest/ResearchProgressGameTests.java",
+  "validation": {
+    "status": "PASS",
+    "owner": "root",
+    "log": "verification/development-thaumonomicon-parity/resume-final-build.log",
+    "new_gametests": 4,
+    "expected_total_gametests": 31,
+    "note": "Observed completed server build: all 31 GameTests passed. Final client-only blueprint changes and all 1958 JUnit are recorded separately in final-build-summary.json.",
+    "junit": 1952,
+    "gametests": 31,
+    "failures": 0
+  }
+}

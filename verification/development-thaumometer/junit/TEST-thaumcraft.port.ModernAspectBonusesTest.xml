@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.ModernAspectBonusesTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-29T01:00:02.620Z" hostname="e54a7cd1abdc" time="0.002">
+  <properties/>
+  <testcase name="distinctModernRolesRemainDistinct()" classname="thaumcraft.port.ModernAspectBonusesTest" time="0.0"/>
+  <testcase name="windAndSoulEnchantmentsRetainOriginalSplitRounding()" classname="thaumcraft.port.ModernAspectBonusesTest" time="0.0"/>
+  <testcase name="severalBonusesMergeByMaximumWithoutInflatingTheBase()" classname="thaumcraft.port.ModernAspectBonusesTest" time="0.0"/>
+  <testcase name="extensionDoesNotReapplyOriginalOrInventThirdPartyEnchantments()" classname="thaumcraft.port.ModernAspectBonusesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

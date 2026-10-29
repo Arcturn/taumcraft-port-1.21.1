@@ -1,0 +1,29 @@
+{
+  "parent": "thaumcraft:block/jar_normal",
+  "overrides": [
+    {
+      "predicate": {
+        "thaumcraft:fill": 0.25
+      },
+      "model": "thaumcraft:block/jar_normal_25"
+    },
+    {
+      "predicate": {
+        "thaumcraft:fill": 0.5
+      },
+      "model": "thaumcraft:block/jar_normal_50"
+    },
+    {
+      "predicate": {
+        "thaumcraft:fill": 0.75
+      },
+      "model": "thaumcraft:block/jar_normal_75"
+    },
+    {
+      "predicate": {
+        "thaumcraft:fill": 1.0
+      },
+      "model": "thaumcraft:block/jar_normal_100"
+    }
+  ]
+}

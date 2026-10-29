@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.CrucibleStateTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T16:36:40.357Z" hostname="bb565e390ffa" time="0.005">
+  <properties/>
+  <testcase name="pollutionPreservesTheSpecialFluxMultiplier()" classname="thaumcraft.port.CrucibleStateTest" time="0.003"/>
+  <testcase name="failedOrUnknownDissolutionDoesNotResetGracePeriod()" classname="thaumcraft.port.CrucibleStateTest" time="0.0"/>
+  <testcase name="boilingRequiresWaterAndHeatStrictlyAbove150()" classname="thaumcraft.port.CrucibleStateTest" time="0.001"/>
+  <testcase name="paymentIsAtomicAndOneCraftUsesFiftyWater()" classname="thaumcraft.port.CrucibleStateTest" time="0.001"/>
+  <testcase name="restoredValuesAndFluidSimulationCannotOverflow()" classname="thaumcraft.port.CrucibleStateTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

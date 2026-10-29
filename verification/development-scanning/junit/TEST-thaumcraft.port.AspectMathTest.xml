@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.AspectMathTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T16:36:40.122Z" hostname="bb565e390ffa" time="0.037">
+  <properties/>
+  <testcase name="cullingPrefersCompoundAspectsAndPreservesFirstInsertionTieRule()" classname="thaumcraft.port.AspectMathTest" time="0.016"/>
+  <testcase name="reusableContainersCannotSubtractMoreThanAnIngredientSupplied()" classname="thaumcraft.port.AspectMathTest" time="0.002"/>
+  <testcase name="legacyFractionalRoundingIsRetained()" classname="thaumcraft.port.AspectMathTest" time="0.0"/>
+  <testcase name="valuesAreCulledBeforeTheFiveHundredCap()" classname="thaumcraft.port.AspectMathTest" time="0.002"/>
+  <testcase name="playerAspectsUseStableNameSeedAndCanAccumulateRepeatedPicks()" classname="thaumcraft.port.AspectMathTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,32 @@
+[
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "640",
+      "360"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "3"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 1.0
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "resume-final-book-map.png"
+  }
+]

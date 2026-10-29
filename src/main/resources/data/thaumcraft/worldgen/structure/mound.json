@@ -1,0 +1,7 @@
+{
+  "type": "thaumcraft:mound",
+  "biomes": "#thaumcraft:has_mound",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none"
+}

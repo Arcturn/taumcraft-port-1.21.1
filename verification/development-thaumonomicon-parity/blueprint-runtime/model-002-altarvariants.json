@@ -1,0 +1,178 @@
+[
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "key",
+      "Escape"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.45
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "key",
+      "Escape"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.45
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "680",
+      "543"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "1"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.6
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "968",
+      "225"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "1"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.6
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "900",
+      "630"
+    ]
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "modern-final-ru2-blueprint-ancient.png"
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "key",
+      "Escape"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.45
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "key",
+      "Escape"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.45
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "584",
+      "543"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "1"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.6
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "968",
+      "225"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "1"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.6
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "900",
+      "630"
+    ]
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "modern-final-ru2-blueprint-eldritch.png"
+  }
+]

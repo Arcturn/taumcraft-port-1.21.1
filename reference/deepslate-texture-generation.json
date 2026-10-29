@@ -1,0 +1,45 @@
+{
+  "mode": "built-in image_gen",
+  "scope": "New artistic deepslate counterparts; the original TC6 had no deepslate variants. Original ordinary textures are unchanged.",
+  "prompt": "Production Minecraft ore tile: preserve recognizable original ore inclusions and palette, use vanilla deepslate as dark stone reference, flat edge-to-edge pixel texture, no text/margins/cube/perspective. One image per material.",
+  "export": "ImageMagick nearest-neighbor resize to16x16 RGB; original generated images retained by the generation service.",
+  "files": [
+    {
+      "material": "amber",
+      "output": "src/main/resources/assets/thaumcraft/textures/block/deepslate_ore_amber.png",
+      "output_sha256": "e77c39a9b9dbfde912c010551cce291646634eff88613b480e5475873df344b2",
+      "original_reference_sha256": "03c230cce33f26ae61504ca7177b795d859f71bc20c170371643bd6cc1501386",
+      "generated_source_file": "exec-d3dc1786-1615-4565-ad4c-e0cfa3ad1910.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha": false
+    },
+    {
+      "material": "cinnabar",
+      "output": "src/main/resources/assets/thaumcraft/textures/block/deepslate_ore_cinnabar.png",
+      "output_sha256": "beba949d24fe877919ddecfcbc8d6f88460c774c3e635813dd86a0151315592a",
+      "original_reference_sha256": "f555d17104a9516cd6c36dd514ff33e3c8b387df50d08e6ea57b625562f660b0",
+      "generated_source_file": "exec-b67d8d8b-a2e6-49a8-af2d-0ecd21765aaa.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha": false
+    },
+    {
+      "material": "quartz",
+      "output": "src/main/resources/assets/thaumcraft/textures/block/deepslate_ore_quartz.png",
+      "output_sha256": "c85a744db77220cdc50625ccaee2f44837302acf1762ca6d3c5c2ef17da2eaa0",
+      "original_reference_sha256": "3f15c5d3a839f87e73b3183d9a78130a1ad0780b86b532ad4d8280f8eb5dc76a",
+      "generated_source_file": "exec-cecffc52-257d-4a99-a237-ab9da79d3a35.png",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha": false
+    }
+  ],
+  "vanilla_deepslate_reference_sha256": "b4c5e7f5538608a371fd4c1f6b398e4b76f723702d10144432636a85a1a61832"
+}

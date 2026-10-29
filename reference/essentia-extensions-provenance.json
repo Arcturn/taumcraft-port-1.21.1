@@ -1,0 +1,90 @@
+{
+  "source_sha256": "9425f8643581b27ff8845b087c8bc6fc10425a32942f1a3f0e265ce6b38f7b5f",
+  "assets": [
+    {
+      "source": "assets/thaumcraft/textures/blocks/tube.png",
+      "target": "assets/thaumcraft/textures/block/tube.png",
+      "sha256": "e4e7a7a0fbbc025a1e3bacce21661e04fd398a79c582c6dae6ab5989271e585d"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/tube_buffer_core.json",
+      "target": "assets/thaumcraft/models/block/tube_buffer_core.json",
+      "transformation": "Original geometry/UVs; singular texture paths and modern cutout render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/bellows.png",
+      "target": "assets/thaumcraft/textures/block/bellows.png",
+      "sha256": "c12887c37a927fa26447cf2a2ffe279d76cc78a82b0e63bc675f161046976d0d"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/bellows.json",
+      "target": "assets/thaumcraft/models/block/bellows.json",
+      "transformation": "Original geometry/UVs; singular texture paths and modern cutout render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_aux_pump.png",
+      "target": "assets/thaumcraft/textures/block/smelter_aux_pump.png",
+      "sha256": "34a7334761b52502f8050b6603e42de53a1877b97c5f747cd74e2288696a3a70"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_aux.png",
+      "target": "assets/thaumcraft/textures/block/smelter_aux.png",
+      "sha256": "ab65a122a87d12ee32994e812864ff605287fbaaa3101d728b38632ad4a34081"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/smelter_aux.json",
+      "target": "assets/thaumcraft/models/block/smelter_aux.json",
+      "transformation": "Original geometry/UVs; singular texture paths and modern cutout render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/smelter_vent.png",
+      "target": "assets/thaumcraft/textures/block/smelter_vent.png",
+      "sha256": "e8c9839e8fbfa34f32ddcf67830be0ac6d021927e73e2357f9d8d454befb4de6"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/smelter_vent.json",
+      "target": "assets/thaumcraft/models/block/smelter_vent.json",
+      "transformation": "Original geometry/UVs; singular texture paths and modern cutout render layer"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/brain_box.png",
+      "target": "assets/thaumcraft/textures/block/brain_box.png",
+      "sha256": "2008a7282194260706693862f62da60f4d3823208e572e6583a428acd526e56c"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/brain_box.json",
+      "target": "assets/thaumcraft/models/block/brain_box.json",
+      "transformation": "Original geometry/UVs; singular texture paths and modern cutout render layer"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/thaumatorium.obj",
+      "target": "assets/thaumcraft/models/block/thaumatorium.obj",
+      "sha256": "89ab66770b7c44ff4522ed17ecfdf5746bfeb363952e910eac7f6635eb9177e6"
+    },
+    {
+      "source": "assets/thaumcraft/textures/blocks/thaumatorium.png",
+      "target": "assets/thaumcraft/textures/block/thaumatorium.png",
+      "sha256": "9481e61415c521e305d35a12a034f8ff2855c349c251d546f14ef8dd33ba976f"
+    },
+    {
+      "source": "assets/thaumcraft/models/block/thaumatorium.mtl",
+      "target": "assets/thaumcraft/models/block/thaumatorium.mtl",
+      "transformation": "Modern singular atlas paths; texture extension removed"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/mind_clockwork.png",
+      "target": "assets/thaumcraft/textures/item/mind_clockwork.png",
+      "sha256": "a5c14fde44ac2eb0fd5a33add38f1012304198b849fa5bc9e0fc05db1252b341"
+    },
+    {
+      "source": "assets/thaumcraft/textures/items/mind_clockwork.png.mcmeta",
+      "target": "assets/thaumcraft/textures/item/mind_clockwork.png.mcmeta",
+      "sha256": "46ce491c9af28e0981d590f95aff1ebf97ca8d843ca427120d4637bdb17d02bd"
+    }
+  ],
+  "notes": [
+    "Thaumatorium uses the original OBJ/UVs through NeoForge OBJ loader. GUI is a modern server-synchronized layout.",
+    "Bellows moving parts use original ModelBellows dimensions and UV offsets. Buffer choke markers use colored original label texture.",
+    "Vanilla furnace acceleration and bellows-to-buffer nozzle visual are not yet ported."
+  ]
+}

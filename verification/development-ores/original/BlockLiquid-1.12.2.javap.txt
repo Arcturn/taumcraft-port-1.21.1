@@ -1,0 +1,1074 @@
+Compiled from "SourceFile"
+public abstract class aru extends aow {
+  public static final axi b;
+
+  protected aru(bcz);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #20                 // Method aow."<init>":(Lbcz;)V
+       5: aload_0
+       6: aload_0
+       7: getfield      #24                 // Field A:Lawu;
+      10: invokevirtual #29                 // Method awu.b:()Lawt;
+      13: getstatic     #31                 // Field b:Laxi;
+      16: iconst_0
+      17: invokestatic  #37                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      20: invokeinterface #43,  3           // InterfaceMethod awt.a:(Laxj;Ljava/lang/Comparable;)Lawt;
+      25: invokevirtual #47                 // Method w:(Lawt;)V
+      28: aload_0
+      29: iconst_1
+      30: invokevirtual #50                 // Method a:(Z)Laow;
+      33: pop
+      34: return
+
+  public bhb b(awt, amy, et);
+    Code:
+       0: getstatic     #59                 // Field j:Lbhb;
+       3: areturn
+
+  public bhb a(awt, amy, et);
+    Code:
+       0: getstatic     #66                 // Field k:Lbhb;
+       3: areturn
+
+  public boolean b(amy, et);
+    Code:
+       0: aload_0
+       1: getfield      #70                 // Field x:Lbcz;
+       4: getstatic     #75                 // Field bcz.i:Lbcz;
+       7: if_acmpeq     14
+      10: iconst_1
+      11: goto          15
+      14: iconst_0
+      15: ireturn
+
+  public static float b(int);
+    Code:
+       0: iload_0
+       1: bipush        8
+       3: if_icmplt     8
+       6: iconst_0
+       7: istore_0
+       8: iload_0
+       9: iconst_1
+      10: iadd
+      11: i2f
+      12: ldc           #77                 // float 9.0f
+      14: fdiv
+      15: freturn
+
+  protected int x(awt);
+    Code:
+       0: aload_1
+       1: invokeinterface #82,  1           // InterfaceMethod awt.a:()Lbcz;
+       6: aload_0
+       7: getfield      #70                 // Field x:Lbcz;
+      10: if_acmpne     29
+      13: aload_1
+      14: getstatic     #31                 // Field b:Laxi;
+      17: invokeinterface #85,  2           // InterfaceMethod awt.c:(Laxj;)Ljava/lang/Comparable;
+      22: checkcast     #33                 // class java/lang/Integer
+      25: invokevirtual #89                 // Method java/lang/Integer.intValue:()I
+      28: ireturn
+      29: iconst_m1
+      30: ireturn
+
+  protected int y(awt);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #92                 // Method x:(Lawt;)I
+       5: istore_2
+       6: iload_2
+       7: bipush        8
+       9: if_icmplt     16
+      12: iconst_0
+      13: goto          17
+      16: iload_2
+      17: ireturn
+
+  public boolean c(awt);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public boolean b(awt);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public boolean a(awt, boolean);
+    Code:
+       0: iload_2
+       1: ifeq          26
+       4: aload_1
+       5: getstatic     #31                 // Field b:Laxi;
+       8: invokeinterface #85,  2           // InterfaceMethod awt.c:(Laxj;)Ljava/lang/Comparable;
+      13: checkcast     #33                 // class java/lang/Integer
+      16: invokevirtual #89                 // Method java/lang/Integer.intValue:()I
+      19: ifne          26
+      22: iconst_1
+      23: goto          27
+      26: iconst_0
+      27: ireturn
+
+  private boolean a(amy, et, fa);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: invokeinterface #102,  2          // InterfaceMethod amy.o:(Let;)Lawt;
+       7: astore        4
+       9: aload         4
+      11: invokeinterface #106,  1          // InterfaceMethod awt.u:()Laow;
+      16: astore        5
+      18: aload         4
+      20: invokeinterface #82,  1           // InterfaceMethod awt.a:()Lbcz;
+      25: astore        6
+      27: aload         6
+      29: aload_0
+      30: getfield      #70                 // Field x:Lbcz;
+      33: if_acmpne     38
+      36: iconst_0
+      37: ireturn
+      38: aload_3
+      39: getstatic     #109                // Field fa.b:Lfa;
+      42: if_acmpne     47
+      45: iconst_1
+      46: ireturn
+      47: aload         6
+      49: getstatic     #111                // Field bcz.w:Lbcz;
+      52: if_acmpne     57
+      55: iconst_0
+      56: ireturn
+      57: aload         5
+      59: invokestatic  #114                // Method c:(Laow;)Z
+      62: ifne          73
+      65: aload         5
+      67: instanceof    #116                // class aud
+      70: ifeq          77
+      73: iconst_1
+      74: goto          78
+      77: iconst_0
+      78: istore        7
+      80: iload         7
+      82: ifne          105
+      85: aload         4
+      87: aload_1
+      88: aload_2
+      89: aload_3
+      90: invokeinterface #120,  4          // InterfaceMethod awt.d:(Lamy;Let;Lfa;)Lawr;
+      95: getstatic     #125                // Field awr.a:Lawr;
+      98: if_acmpne     105
+     101: iconst_1
+     102: goto          106
+     105: iconst_0
+     106: ireturn
+
+  public boolean a(awt, amy, et, fa);
+    Code:
+       0: aload_2
+       1: aload_3
+       2: aload         4
+       4: invokevirtual #130                // Method et.a:(Lfa;)Let;
+       7: invokeinterface #102,  2          // InterfaceMethod amy.o:(Let;)Lawt;
+      12: invokeinterface #82,  1           // InterfaceMethod awt.a:()Lbcz;
+      17: aload_0
+      18: getfield      #70                 // Field x:Lbcz;
+      21: if_acmpne     26
+      24: iconst_0
+      25: ireturn
+      26: aload         4
+      28: getstatic     #109                // Field fa.b:Lfa;
+      31: if_acmpne     36
+      34: iconst_1
+      35: ireturn
+      36: aload_0
+      37: aload_1
+      38: aload_2
+      39: aload_3
+      40: aload         4
+      42: invokespecial #132                // Method aow.a:(Lawt;Lamy;Let;Lfa;)Z
+      45: ireturn
+
+  public boolean c(amy, et);
+    Code:
+       0: iconst_m1
+       1: istore_3
+       2: iload_3
+       3: iconst_1
+       4: if_icmpgt     70
+       7: iconst_m1
+       8: istore        4
+      10: iload         4
+      12: iconst_1
+      13: if_icmpgt     64
+      16: aload_1
+      17: aload_2
+      18: iload_3
+      19: iconst_0
+      20: iload         4
+      22: invokevirtual #135                // Method et.a:(III)Let;
+      25: invokeinterface #102,  2          // InterfaceMethod amy.o:(Let;)Lawt;
+      30: astore        5
+      32: aload         5
+      34: invokeinterface #82,  1           // InterfaceMethod awt.a:()Lbcz;
+      39: aload_0
+      40: getfield      #70                 // Field x:Lbcz;
+      43: if_acmpeq     58
+      46: aload         5
+      48: invokeinterface #138,  1          // InterfaceMethod awt.b:()Z
+      53: ifne          58
+      56: iconst_1
+      57: ireturn
+      58: iinc          4, 1
+      61: goto          10
+      64: iinc          3, 1
+      67: goto          2
+      70: iconst_0
+      71: ireturn
+
+  public atj a(awt);
+    Code:
+       0: getstatic     #144                // Field atj.b:Latj;
+       3: areturn
+
+  public ain a(awt, java.util.Random, int);
+    Code:
+       0: getstatic     #150                // Field air.a:Lain;
+       3: areturn
+
+  public int a(java.util.Random);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  protected bhe a(amy, et, awt);
+    Code:
+       0: dconst_0
+       1: dstore        4
+       3: dconst_0
+       4: dstore        6
+       6: dconst_0
+       7: dstore        8
+       9: aload_0
+      10: aload_3
+      11: invokevirtual #155                // Method y:(Lawt;)I
+      14: istore        10
+      16: invokestatic  #159                // Method et$b.s:()Let$b;
+      19: astore        11
+      21: getstatic     #162                // Field fa$c.a:Lfa$c;
+      24: invokevirtual #166                // Method fa$c.iterator:()Ljava/util/Iterator;
+      27: astore        12
+      29: aload         12
+      31: invokeinterface #171,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      36: ifeq          235
+      39: aload         12
+      41: invokeinterface #175,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      46: checkcast     #14                 // class fa
+      49: astore        13
+      51: aload         11
+      53: aload_2
+      54: invokevirtual #178                // Method et$b.j:(Lfq;)Let$b;
+      57: aload         13
+      59: invokevirtual #181                // Method et$b.d:(Lfa;)Let$b;
+      62: pop
+      63: aload_0
+      64: aload_1
+      65: aload         11
+      67: invokeinterface #102,  2          // InterfaceMethod amy.o:(Let;)Lawt;
+      72: invokevirtual #155                // Method y:(Lawt;)I
+      75: istore        14
+      77: iload         14
+      79: ifge          178
+      82: aload_1
+      83: aload         11
+      85: invokeinterface #102,  2          // InterfaceMethod amy.o:(Let;)Lawt;
+      90: invokeinterface #82,  1           // InterfaceMethod awt.a:()Lbcz;
+      95: invokevirtual #183                // Method bcz.c:()Z
+      98: ifne          232
+     101: aload_0
+     102: aload_1
+     103: aload         11
+     105: invokevirtual #186                // Method et$b.b:()Let;
+     108: invokeinterface #102,  2          // InterfaceMethod amy.o:(Let;)Lawt;
+     113: invokevirtual #155                // Method y:(Lawt;)I
+     116: istore        14
+     118: iload         14
+     120: iflt          232
+     123: iload         14
+     125: iload         10
+     127: bipush        8
+     129: isub
+     130: isub
+     131: istore        15
+     133: dload         4
+     135: aload         13
+     137: invokevirtual #189                // Method fa.g:()I
+     140: iload         15
+     142: imul
+     143: i2d
+     144: dadd
+     145: dstore        4
+     147: dload         6
+     149: aload         13
+     151: invokevirtual #192                // Method fa.h:()I
+     154: iload         15
+     156: imul
+     157: i2d
+     158: dadd
+     159: dstore        6
+     161: dload         8
+     163: aload         13
+     165: invokevirtual #194                // Method fa.i:()I
+     168: iload         15
+     170: imul
+     171: i2d
+     172: dadd
+     173: dstore        8
+     175: goto          232
+     178: iload         14
+     180: iflt          232
+     183: iload         14
+     185: iload         10
+     187: isub
+     188: istore        15
+     190: dload         4
+     192: aload         13
+     194: invokevirtual #189                // Method fa.g:()I
+     197: iload         15
+     199: imul
+     200: i2d
+     201: dadd
+     202: dstore        4
+     204: dload         6
+     206: aload         13
+     208: invokevirtual #192                // Method fa.h:()I
+     211: iload         15
+     213: imul
+     214: i2d
+     215: dadd
+     216: dstore        6
+     218: dload         8
+     220: aload         13
+     222: invokevirtual #194                // Method fa.i:()I
+     225: iload         15
+     227: imul
+     228: i2d
+     229: dadd
+     230: dstore        8
+     232: goto          29
+     235: new           #196                // class bhe
+     238: dup
+     239: dload         4
+     241: dload         6
+     243: dload         8
+     245: invokespecial #199                // Method bhe."<init>":(DDD)V
+     248: astore        12
+     250: aload_3
+     251: getstatic     #31                 // Field b:Laxi;
+     254: invokeinterface #85,  2           // InterfaceMethod awt.c:(Laxj;)Ljava/lang/Comparable;
+     259: checkcast     #33                 // class java/lang/Integer
+     262: invokevirtual #89                 // Method java/lang/Integer.intValue:()I
+     265: bipush        8
+     267: if_icmplt     360
+     270: getstatic     #162                // Field fa$c.a:Lfa$c;
+     273: invokevirtual #166                // Method fa$c.iterator:()Ljava/util/Iterator;
+     276: astore        13
+     278: aload         13
+     280: invokeinterface #171,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     285: ifeq          360
+     288: aload         13
+     290: invokeinterface #175,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     295: checkcast     #14                 // class fa
+     298: astore        14
+     300: aload         11
+     302: aload_2
+     303: invokevirtual #178                // Method et$b.j:(Lfq;)Let$b;
+     306: aload         14
+     308: invokevirtual #181                // Method et$b.d:(Lfa;)Let$b;
+     311: pop
+     312: aload_0
+     313: aload_1
+     314: aload         11
+     316: aload         14
+     318: invokespecial #201                // Method a:(Lamy;Let;Lfa;)Z
+     321: ifne          339
+     324: aload_0
+     325: aload_1
+     326: aload         11
+     328: invokevirtual #203                // Method et$b.a:()Let;
+     331: aload         14
+     333: invokespecial #201                // Method a:(Lamy;Let;Lfa;)Z
+     336: ifeq          357
+     339: aload         12
+     341: invokevirtual #206                // Method bhe.a:()Lbhe;
+     344: dconst_0
+     345: ldc2_w        #207                // double -6.0d
+     348: dconst_0
+     349: invokevirtual #211                // Method bhe.b:(DDD)Lbhe;
+     352: astore        12
+     354: goto          360
+     357: goto          278
+     360: aload         11
+     362: invokevirtual #215                // Method et$b.t:()V
+     365: aload         12
+     367: invokevirtual #206                // Method bhe.a:()Lbhe;
+     370: areturn
+
+  public bhe a(amu, et, vg, bhe);
+    Code:
+       0: aload         4
+       2: aload_0
+       3: aload_1
+       4: aload_2
+       5: aload_1
+       6: aload_2
+       7: invokevirtual #222                // Method amu.o:(Let;)Lawt;
+      10: invokevirtual #224                // Method a:(Lamy;Let;Lawt;)Lbhe;
+      13: invokevirtual #228                // Method bhe.e:(Lbhe;)Lbhe;
+      16: areturn
+
+  public int a(amu);
+    Code:
+       0: aload_0
+       1: getfield      #70                 // Field x:Lbcz;
+       4: getstatic     #233                // Field bcz.h:Lbcz;
+       7: if_acmpne     12
+      10: iconst_5
+      11: ireturn
+      12: aload_0
+      13: getfield      #70                 // Field x:Lbcz;
+      16: getstatic     #75                 // Field bcz.i:Lbcz;
+      19: if_acmpne     40
+      22: aload_1
+      23: getfield      #236                // Field amu.s:Laym;
+      26: invokevirtual #241                // Method aym.n:()Z
+      29: ifeq          37
+      32: bipush        10
+      34: goto          39
+      37: bipush        30
+      39: ireturn
+      40: iconst_0
+      41: ireturn
+
+  public int e(awt, amy, et);
+    Code:
+       0: aload_2
+       1: aload_3
+       2: iconst_0
+       3: invokeinterface #245,  3          // InterfaceMethod amy.b:(Let;I)I
+       8: istore        4
+      10: aload_2
+      11: aload_3
+      12: invokevirtual #246                // Method et.a:()Let;
+      15: iconst_0
+      16: invokeinterface #245,  3          // InterfaceMethod amy.b:(Let;I)I
+      21: istore        5
+      23: iload         4
+      25: sipush        255
+      28: iand
+      29: istore        6
+      31: iload         5
+      33: sipush        255
+      36: iand
+      37: istore        7
+      39: iload         4
+      41: bipush        16
+      43: ishr
+      44: sipush        255
+      47: iand
+      48: istore        8
+      50: iload         5
+      52: bipush        16
+      54: ishr
+      55: sipush        255
+      58: iand
+      59: istore        9
+      61: iload         6
+      63: iload         7
+      65: if_icmple     73
+      68: iload         6
+      70: goto          75
+      73: iload         7
+      75: iload         8
+      77: iload         9
+      79: if_icmple     87
+      82: iload         8
+      84: goto          89
+      87: iload         9
+      89: bipush        16
+      91: ishl
+      92: ior
+      93: ireturn
+
+  public amm f();
+    Code:
+       0: aload_0
+       1: getfield      #70                 // Field x:Lbcz;
+       4: getstatic     #233                // Field bcz.h:Lbcz;
+       7: if_acmpne     16
+      10: getstatic     #253                // Field amm.d:Lamm;
+      13: goto          19
+      16: getstatic     #255                // Field amm.a:Lamm;
+      19: areturn
+
+  public void a(awt, amu, et, java.util.Random);
+    Code:
+       0: aload_3
+       1: invokevirtual #259                // Method et.p:()I
+       4: i2d
+       5: dstore        5
+       7: aload_3
+       8: invokevirtual #262                // Method et.q:()I
+      11: i2d
+      12: dstore        7
+      14: aload_3
+      15: invokevirtual #265                // Method et.r:()I
+      18: i2d
+      19: dstore        9
+      21: aload_0
+      22: getfield      #70                 // Field x:Lbcz;
+      25: getstatic     #233                // Field bcz.h:Lbcz;
+      28: if_acmpne     174
+      31: aload_1
+      32: getstatic     #31                 // Field b:Laxi;
+      35: invokeinterface #85,  2           // InterfaceMethod awt.c:(Laxj;)Ljava/lang/Comparable;
+      40: checkcast     #33                 // class java/lang/Integer
+      43: invokevirtual #89                 // Method java/lang/Integer.intValue:()I
+      46: istore        11
+      48: iload         11
+      50: ifle          124
+      53: iload         11
+      55: bipush        8
+      57: if_icmpge     124
+      60: aload         4
+      62: bipush        64
+      64: invokevirtual #271                // Method java/util/Random.nextInt:(I)I
+      67: ifne          174
+      70: aload_2
+      71: dload         5
+      73: ldc2_w        #272                // double 0.5d
+      76: dadd
+      77: dload         7
+      79: ldc2_w        #272                // double 0.5d
+      82: dadd
+      83: dload         9
+      85: ldc2_w        #272                // double 0.5d
+      88: dadd
+      89: getstatic     #279                // Field qf.iu:Lqe;
+      92: getstatic     #284                // Field qg.e:Lqg;
+      95: aload         4
+      97: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     100: ldc_w         #289                // float 0.25f
+     103: fmul
+     104: ldc_w         #290                // float 0.75f
+     107: fadd
+     108: aload         4
+     110: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     113: ldc_w         #291                // float 0.5f
+     116: fadd
+     117: iconst_0
+     118: invokevirtual #294                // Method amu.a:(DDDLqe;Lqg;FFZ)V
+     121: goto          174
+     124: aload         4
+     126: bipush        10
+     128: invokevirtual #271                // Method java/util/Random.nextInt:(I)I
+     131: ifne          174
+     134: aload_2
+     135: getstatic     #299                // Field fj.h:Lfj;
+     138: dload         5
+     140: aload         4
+     142: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     145: f2d
+     146: dadd
+     147: dload         7
+     149: aload         4
+     151: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     154: f2d
+     155: dadd
+     156: dload         9
+     158: aload         4
+     160: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     163: f2d
+     164: dadd
+     165: dconst_0
+     166: dconst_0
+     167: dconst_0
+     168: iconst_0
+     169: newarray       int
+     171: invokevirtual #302                // Method amu.a:(Lfj;DDDDDD[I)V
+     174: aload_0
+     175: getfield      #70                 // Field x:Lbcz;
+     178: getstatic     #75                 // Field bcz.i:Lbcz;
+     181: if_acmpne     383
+     184: aload_2
+     185: aload_3
+     186: invokevirtual #246                // Method et.a:()Let;
+     189: invokevirtual #222                // Method amu.o:(Let;)Lawt;
+     192: invokeinterface #82,  1           // InterfaceMethod awt.a:()Lbcz;
+     197: getstatic     #304                // Field bcz.a:Lbcz;
+     200: if_acmpne     383
+     203: aload_2
+     204: aload_3
+     205: invokevirtual #246                // Method et.a:()Let;
+     208: invokevirtual #222                // Method amu.o:(Let;)Lawt;
+     211: invokeinterface #306,  1          // InterfaceMethod awt.p:()Z
+     216: ifne          383
+     219: aload         4
+     221: bipush        100
+     223: invokevirtual #271                // Method java/util/Random.nextInt:(I)I
+     226: ifne          329
+     229: dload         5
+     231: aload         4
+     233: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     236: f2d
+     237: dadd
+     238: dstore        11
+     240: dload         7
+     242: aload_1
+     243: aload_2
+     244: aload_3
+     245: invokeinterface #309,  3          // InterfaceMethod awt.e:(Lamy;Let;)Lbhb;
+     250: getfield      #313                // Field bhb.e:D
+     253: dadd
+     254: dstore        13
+     256: dload         9
+     258: aload         4
+     260: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     263: f2d
+     264: dadd
+     265: dstore        15
+     267: aload_2
+     268: getstatic     #316                // Field fj.B:Lfj;
+     271: dload         11
+     273: dload         13
+     275: dload         15
+     277: dconst_0
+     278: dconst_0
+     279: dconst_0
+     280: iconst_0
+     281: newarray       int
+     283: invokevirtual #302                // Method amu.a:(Lfj;DDDDDD[I)V
+     286: aload_2
+     287: dload         11
+     289: dload         13
+     291: dload         15
+     293: getstatic     #319                // Field qf.dF:Lqe;
+     296: getstatic     #284                // Field qg.e:Lqg;
+     299: ldc_w         #320                // float 0.2f
+     302: aload         4
+     304: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     307: ldc_w         #320                // float 0.2f
+     310: fmul
+     311: fadd
+     312: ldc_w         #321                // float 0.9f
+     315: aload         4
+     317: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     320: ldc_w         #322                // float 0.15f
+     323: fmul
+     324: fadd
+     325: iconst_0
+     326: invokevirtual #294                // Method amu.a:(DDDLqe;Lqg;FFZ)V
+     329: aload         4
+     331: sipush        200
+     334: invokevirtual #271                // Method java/util/Random.nextInt:(I)I
+     337: ifne          383
+     340: aload_2
+     341: dload         5
+     343: dload         7
+     345: dload         9
+     347: getstatic     #325                // Field qf.dD:Lqe;
+     350: getstatic     #284                // Field qg.e:Lqg;
+     353: ldc_w         #320                // float 0.2f
+     356: aload         4
+     358: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     361: ldc_w         #320                // float 0.2f
+     364: fmul
+     365: fadd
+     366: ldc_w         #321                // float 0.9f
+     369: aload         4
+     371: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     374: ldc_w         #322                // float 0.15f
+     377: fmul
+     378: fadd
+     379: iconst_0
+     380: invokevirtual #294                // Method amu.a:(DDDLqe;Lqg;FFZ)V
+     383: aload         4
+     385: bipush        10
+     387: invokevirtual #271                // Method java/util/Random.nextInt:(I)I
+     390: ifne          522
+     393: aload_2
+     394: aload_3
+     395: invokevirtual #326                // Method et.b:()Let;
+     398: invokevirtual #222                // Method amu.o:(Let;)Lawt;
+     401: invokeinterface #328,  1          // InterfaceMethod awt.q:()Z
+     406: ifeq          522
+     409: aload_2
+     410: aload_3
+     411: iconst_2
+     412: invokevirtual #331                // Method et.c:(I)Let;
+     415: invokevirtual #222                // Method amu.o:(Let;)Lawt;
+     418: invokeinterface #82,  1           // InterfaceMethod awt.a:()Lbcz;
+     423: astore        11
+     425: aload         11
+     427: invokevirtual #183                // Method bcz.c:()Z
+     430: ifne          522
+     433: aload         11
+     435: invokevirtual #333                // Method bcz.d:()Z
+     438: ifne          522
+     441: dload         5
+     443: aload         4
+     445: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     448: f2d
+     449: dadd
+     450: dstore        12
+     452: dload         7
+     454: ldc2_w        #334                // double 1.05d
+     457: dsub
+     458: dstore        14
+     460: dload         9
+     462: aload         4
+     464: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+     467: f2d
+     468: dadd
+     469: dstore        16
+     471: aload_0
+     472: getfield      #70                 // Field x:Lbcz;
+     475: getstatic     #233                // Field bcz.h:Lbcz;
+     478: if_acmpne     503
+     481: aload_2
+     482: getstatic     #337                // Field fj.s:Lfj;
+     485: dload         12
+     487: dload         14
+     489: dload         16
+     491: dconst_0
+     492: dconst_0
+     493: dconst_0
+     494: iconst_0
+     495: newarray       int
+     497: invokevirtual #302                // Method amu.a:(Lfj;DDDDDD[I)V
+     500: goto          522
+     503: aload_2
+     504: getstatic     #339                // Field fj.t:Lfj;
+     507: dload         12
+     509: dload         14
+     511: dload         16
+     513: dconst_0
+     514: dconst_0
+     515: dconst_0
+     516: iconst_0
+     517: newarray       int
+     519: invokevirtual #302                // Method amu.a:(Lfj;DDDDDD[I)V
+     522: return
+
+  public static float a(amy, et, bcz, awt);
+    Code:
+       0: aload_2
+       1: invokestatic  #343                // Method a:(Lbcz;)Laqe;
+       4: aload_0
+       5: aload_1
+       6: aload_3
+       7: invokevirtual #346                // Method aqe.a:(Lamy;Let;Lawt;)Lbhe;
+      10: astore        4
+      12: aload         4
+      14: getfield      #348                // Field bhe.b:D
+      17: dconst_0
+      18: dcmpl
+      19: ifne          36
+      22: aload         4
+      24: getfield      #350                // Field bhe.d:D
+      27: dconst_0
+      28: dcmpl
+      29: ifne          36
+      32: ldc_w         #351                // float -1000.0f
+      35: freturn
+      36: aload         4
+      38: getfield      #350                // Field bhe.d:D
+      41: aload         4
+      43: getfield      #348                // Field bhe.b:D
+      46: invokestatic  #356                // Method rk.c:(DD)D
+      49: d2f
+      50: ldc_w         #357                // float 1.5707964f
+      53: fsub
+      54: freturn
+
+  public void c(amu, et, awt);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokevirtual #361                // Method e:(Lamu;Let;Lawt;)Z
+       7: pop
+       8: return
+
+  public void a(awt, amu, et, aow, et);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: aload_3
+       3: aload_1
+       4: invokevirtual #361                // Method e:(Lamu;Let;Lawt;)Z
+       7: pop
+       8: return
+
+  public boolean e(amu, et, awt);
+    Code:
+       0: aload_0
+       1: getfield      #70                 // Field x:Lbcz;
+       4: getstatic     #75                 // Field bcz.i:Lbcz;
+       7: if_acmpne     157
+      10: iconst_0
+      11: istore        4
+      13: invokestatic  #366                // Method fa.values:()[Lfa;
+      16: astore        5
+      18: aload         5
+      20: arraylength
+      21: istore        6
+      23: iconst_0
+      24: istore        7
+      26: iload         7
+      28: iload         6
+      30: if_icmpge     81
+      33: aload         5
+      35: iload         7
+      37: aaload
+      38: astore        8
+      40: aload         8
+      42: getstatic     #370                // Field fa.a:Lfa;
+      45: if_acmpeq     75
+      48: aload_1
+      49: aload_2
+      50: aload         8
+      52: invokevirtual #130                // Method et.a:(Lfa;)Let;
+      55: invokevirtual #222                // Method amu.o:(Let;)Lawt;
+      58: invokeinterface #82,  1           // InterfaceMethod awt.a:()Lbcz;
+      63: getstatic     #233                // Field bcz.h:Lbcz;
+      66: if_acmpne     75
+      69: iconst_1
+      70: istore        4
+      72: goto          81
+      75: iinc          7, 1
+      78: goto          26
+      81: iload         4
+      83: ifeq          157
+      86: aload_3
+      87: getstatic     #31                 // Field b:Laxi;
+      90: invokeinterface #85,  2           // InterfaceMethod awt.c:(Laxj;)Ljava/lang/Comparable;
+      95: checkcast     #33                 // class java/lang/Integer
+      98: astore        5
+     100: aload         5
+     102: invokevirtual #89                 // Method java/lang/Integer.intValue:()I
+     105: ifne          128
+     108: aload_1
+     109: aload_2
+     110: getstatic     #374                // Field aox.Z:Laow;
+     113: invokevirtual #376                // Method aow.t:()Lawt;
+     116: invokevirtual #379                // Method amu.a:(Let;Lawt;)Z
+     119: pop
+     120: aload_0
+     121: aload_1
+     122: aload_2
+     123: invokevirtual #382                // Method b:(Lamu;Let;)V
+     126: iconst_1
+     127: ireturn
+     128: aload         5
+     130: invokevirtual #89                 // Method java/lang/Integer.intValue:()I
+     133: iconst_4
+     134: if_icmpgt     157
+     137: aload_1
+     138: aload_2
+     139: getstatic     #384                // Field aox.e:Laow;
+     142: invokevirtual #376                // Method aow.t:()Lawt;
+     145: invokevirtual #379                // Method amu.a:(Let;Lawt;)Z
+     148: pop
+     149: aload_0
+     150: aload_1
+     151: aload_2
+     152: invokevirtual #382                // Method b:(Lamu;Let;)V
+     155: iconst_1
+     156: ireturn
+     157: iconst_0
+     158: ireturn
+
+  protected void b(amu, et);
+    Code:
+       0: aload_2
+       1: invokevirtual #259                // Method et.p:()I
+       4: i2d
+       5: dstore_3
+       6: aload_2
+       7: invokevirtual #262                // Method et.q:()I
+      10: i2d
+      11: dstore        5
+      13: aload_2
+      14: invokevirtual #265                // Method et.r:()I
+      17: i2d
+      18: dstore        7
+      20: aload_1
+      21: aconst_null
+      22: aload_2
+      23: getstatic     #388                // Field qf.dE:Lqe;
+      26: getstatic     #284                // Field qg.e:Lqg;
+      29: ldc_w         #291                // float 0.5f
+      32: ldc_w         #389                // float 2.6f
+      35: aload_1
+      36: getfield      #391                // Field amu.r:Ljava/util/Random;
+      39: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+      42: aload_1
+      43: getfield      #391                // Field amu.r:Ljava/util/Random;
+      46: invokevirtual #288                // Method java/util/Random.nextFloat:()F
+      49: fsub
+      50: ldc_w         #392                // float 0.8f
+      53: fmul
+      54: fadd
+      55: invokevirtual #395                // Method amu.a:(Laed;Let;Lqe;Lqg;FF)V
+      58: iconst_0
+      59: istore        9
+      61: iload         9
+      63: bipush        8
+      65: if_icmpge     104
+      68: aload_1
+      69: getstatic     #398                // Field fj.m:Lfj;
+      72: dload_3
+      73: invokestatic  #404                // Method java/lang/Math.random:()D
+      76: dadd
+      77: dload         5
+      79: ldc2_w        #405                // double 1.2d
+      82: dadd
+      83: dload         7
+      85: invokestatic  #404                // Method java/lang/Math.random:()D
+      88: dadd
+      89: dconst_0
+      90: dconst_0
+      91: dconst_0
+      92: iconst_0
+      93: newarray       int
+      95: invokevirtual #302                // Method amu.a:(Lfj;DDDDDD[I)V
+      98: iinc          9, 1
+     101: goto          61
+     104: return
+
+  public awt a(int);
+    Code:
+       0: aload_0
+       1: invokevirtual #408                // Method t:()Lawt;
+       4: getstatic     #31                 // Field b:Laxi;
+       7: iload_1
+       8: invokestatic  #37                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      11: invokeinterface #43,  3           // InterfaceMethod awt.a:(Laxj;Ljava/lang/Comparable;)Lawt;
+      16: areturn
+
+  public int e(awt);
+    Code:
+       0: aload_1
+       1: getstatic     #31                 // Field b:Laxi;
+       4: invokeinterface #85,  2           // InterfaceMethod awt.c:(Laxj;)Ljava/lang/Comparable;
+       9: checkcast     #33                 // class java/lang/Integer
+      12: invokevirtual #89                 // Method java/lang/Integer.intValue:()I
+      15: ireturn
+
+  protected awu b();
+    Code:
+       0: new           #26                 // class awu
+       3: dup
+       4: aload_0
+       5: iconst_1
+       6: anewarray     #411                // class axj
+       9: dup
+      10: iconst_0
+      11: getstatic     #31                 // Field b:Laxi;
+      14: aastore
+      15: invokespecial #414                // Method awu."<init>":(Laow;[Laxj;)V
+      18: areturn
+
+  public static aqe a(bcz);
+    Code:
+       0: aload_0
+       1: getstatic     #233                // Field bcz.h:Lbcz;
+       4: if_acmpne     11
+       7: getstatic     #417                // Field aox.i:Laqe;
+      10: areturn
+      11: aload_0
+      12: getstatic     #75                 // Field bcz.i:Lbcz;
+      15: if_acmpne     22
+      18: getstatic     #419                // Field aox.k:Laqe;
+      21: areturn
+      22: new           #421                // class java/lang/IllegalArgumentException
+      25: dup
+      26: ldc_w         #423                // String Invalid material
+      29: invokespecial #426                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      32: athrow
+
+  public static auf b(bcz);
+    Code:
+       0: aload_0
+       1: getstatic     #233                // Field bcz.h:Lbcz;
+       4: if_acmpne     11
+       7: getstatic     #430                // Field aox.j:Lauf;
+      10: areturn
+      11: aload_0
+      12: getstatic     #75                 // Field bcz.i:Lbcz;
+      15: if_acmpne     22
+      18: getstatic     #433                // Field aox.l:Lauf;
+      21: areturn
+      22: new           #421                // class java/lang/IllegalArgumentException
+      25: dup
+      26: ldc_w         #423                // String Invalid material
+      29: invokespecial #426                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      32: athrow
+
+  public static float g(awt, amy, et);
+    Code:
+       0: aload_0
+       1: getstatic     #31                 // Field b:Laxi;
+       4: invokeinterface #85,  2           // InterfaceMethod awt.c:(Laxj;)Ljava/lang/Comparable;
+       9: checkcast     #33                 // class java/lang/Integer
+      12: invokevirtual #89                 // Method java/lang/Integer.intValue:()I
+      15: istore_3
+      16: iload_3
+      17: bipush        7
+      19: iand
+      20: ifne          46
+      23: aload_1
+      24: aload_2
+      25: invokevirtual #246                // Method et.a:()Let;
+      28: invokeinterface #102,  2          // InterfaceMethod amy.o:(Let;)Lawt;
+      33: invokeinterface #82,  1           // InterfaceMethod awt.a:()Lbcz;
+      38: getstatic     #233                // Field bcz.h:Lbcz;
+      41: if_acmpne     46
+      44: fconst_1
+      45: freturn
+      46: fconst_1
+      47: iload_3
+      48: invokestatic  #436                // Method b:(I)F
+      51: fsub
+      52: freturn
+
+  public static float h(awt, amy, et);
+    Code:
+       0: aload_2
+       1: invokevirtual #262                // Method et.q:()I
+       4: i2f
+       5: aload_0
+       6: aload_1
+       7: aload_2
+       8: invokestatic  #438                // Method g:(Lawt;Lamy;Let;)F
+      11: fadd
+      12: freturn
+
+  public awr a(amy, awt, et, fa);
+    Code:
+       0: getstatic     #441                // Field awr.i:Lawr;
+       3: areturn
+
+  static {};
+    Code:
+       0: ldc_w         #444                // String level
+       3: iconst_0
+       4: bipush        15
+       6: invokestatic  #449                // Method axi.a:(Ljava/lang/String;II)Laxi;
+       9: putstatic     #31                 // Field b:Laxi;
+      12: return
+}

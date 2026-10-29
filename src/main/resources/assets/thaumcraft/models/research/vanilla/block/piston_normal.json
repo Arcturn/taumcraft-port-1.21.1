@@ -1,0 +1,9 @@
+{
+  "parent": "thaumcraft:research/vanilla/block/piston",
+  "textures": {
+    "bottom": "thaumcraft:research/vanilla/blocks/piston_bottom",
+    "side": "thaumcraft:research/vanilla/blocks/piston_side",
+    "platform": "thaumcraft:research/vanilla/blocks/piston_top_normal"
+  },
+  "render_type": "minecraft:solid"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.BookItemTooltipCatalogTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-28T23:41:14.668Z" hostname="e54a7cd1abdc" time="0.067">
+  <properties/>
+  <testcase name="everyReferencedTcRecipeStackAndStageRequirementHasARealOriginalTooltip()" classname="thaumcraft.port.BookItemTooltipCatalogTest" time="0.007"/>
+  <testcase name="everyCapturedTooltipPreservesTheActualOriginalLinesInBothLanguages()" classname="thaumcraft.port.BookItemTooltipCatalogTest" time="0.046"/>
+  <testcase name="everyTcOreIngredientVariantKeepsItsOriginalTooltipWhileCycling()" classname="thaumcraft.port.BookItemTooltipCatalogTest" time="0.001"/>
+  <testcase name="armorAttributesAndItemEffectsKeepOriginalValuesOrderAndFormatting()" classname="thaumcraft.port.BookItemTooltipCatalogTest" time="0.011"/>
+  <testcase name="quantityAndWildcardDamageDoNotDiscardTheRecipeSpecificModification()" classname="thaumcraft.port.BookItemTooltipCatalogTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

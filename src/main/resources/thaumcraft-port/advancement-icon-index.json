@@ -1,0 +1,563 @@
+{
+  "1": {
+    "source": "thaumcraft:textures/items/thaumonomicon_cheat.png",
+    "model": "thaumcraft:research/advancements/icon_1"
+  },
+  "2": {
+    "source": "thaumcraft:textures/research/cat_auromancy.png",
+    "model": "thaumcraft:research/advancements/icon_2"
+  },
+  "3": {
+    "source": "thaumcraft:textures/research/cat_alchemy.png",
+    "model": "thaumcraft:research/advancements/icon_3"
+  },
+  "4": {
+    "source": "thaumcraft:textures/research/cat_artifice.png",
+    "model": "thaumcraft:research/advancements/icon_4"
+  },
+  "5": {
+    "source": "thaumcraft:textures/research/cat_infusion.png",
+    "model": "thaumcraft:research/advancements/icon_5"
+  },
+  "6": {
+    "source": "thaumcraft:textures/research/cat_golemancy.png",
+    "model": "thaumcraft:research/advancements/icon_6"
+  },
+  "7": {
+    "source": "thaumcraft:textures/research/cat_eldritch.png",
+    "model": "thaumcraft:research/advancements/icon_7"
+  },
+  "8": {
+    "source": "thaumcraft:textures/research/cat_alchemy.png",
+    "model": "thaumcraft:research/advancements/icon_8"
+  },
+  "9": {
+    "source": "thaumcraft:textures/items/alumentum.png",
+    "model": "thaumcraft:research/advancements/icon_9"
+  },
+  "10": {
+    "source": "thaumcraft:textures/items/ingot_brass.png",
+    "model": "thaumcraft:research/advancements/icon_10"
+  },
+  "11": {
+    "source": "thaumcraft:textures/items/cluster_iron.png",
+    "model": "thaumcraft:research/advancements/icon_11"
+  },
+  "12": {
+    "source": "thaumcraft:textures/items/tallow.png",
+    "model": "thaumcraft:research/advancements/icon_12"
+  },
+  "13": {
+    "source": "thaumcraft:textures/items/bucket_death.png",
+    "model": "thaumcraft:research/advancements/icon_13"
+  },
+  "14": {
+    "source": "thaumcraft:bottle_taint",
+    "model": "thaumcraft:research/advancements/icon_14"
+  },
+  "15": {
+    "source": "thaumcraft:bath_salts",
+    "model": "thaumcraft:research/advancements/icon_15"
+  },
+  "16": {
+    "source": "thaumcraft:sanity_soap",
+    "model": "thaumcraft:research/advancements/icon_16"
+  },
+  "17": {
+    "source": "thaumcraft:spa",
+    "model": "thaumcraft:research/advancements/icon_17"
+  },
+  "18": {
+    "source": "thaumcraft:essentia_input",
+    "model": "thaumcraft:research/advancements/icon_18"
+  },
+  "19": {
+    "source": "thaumcraft:everfull_urn",
+    "model": "thaumcraft:research/advancements/icon_19"
+  },
+  "20": {
+    "source": "thaumcraft:potion_sprayer",
+    "model": "thaumcraft:research/advancements/icon_20"
+  },
+  "21": {
+    "source": "thaumcraft:textures/research/cat_artifice.png",
+    "model": "thaumcraft:research/advancements/icon_21"
+  },
+  "22": {
+    "source": "thaumcraft:hungry_chest",
+    "model": "thaumcraft:research/advancements/icon_22"
+  },
+  "23": {
+    "source": "thaumcraft:levitator",
+    "model": "thaumcraft:research/advancements/icon_23"
+  },
+  "24": {
+    "source": "thaumcraft:infernal_furnace",
+    "model": "thaumcraft:research/advancements/icon_24"
+  },
+  "25": {
+    "source": "thaumcraft:redstone_relay",
+    "model": "thaumcraft:research/advancements/icon_25"
+  },
+  "26": {
+    "source": "thaumcraft:arcane_ear",
+    "model": "thaumcraft:research/advancements/icon_26"
+  },
+  "27": {
+    "source": "thaumcraft:dioptra",
+    "model": "thaumcraft:research/advancements/icon_27"
+  },
+  "28": {
+    "source": "thaumcraft:mirror",
+    "model": "thaumcraft:research/advancements/icon_28"
+  },
+  "29": {
+    "source": "thaumcraft:hand_mirror",
+    "model": "thaumcraft:research/advancements/icon_29"
+  },
+  "30": {
+    "source": "thaumcraft:mirror_essentia",
+    "model": "thaumcraft:research/advancements/icon_30"
+  },
+  "31": {
+    "source": "thaumcraft:lamp_arcane",
+    "model": "thaumcraft:research/advancements/icon_31"
+  },
+  "32": {
+    "source": "thaumcraft:lamp_growth",
+    "model": "thaumcraft:research/advancements/icon_32"
+  },
+  "33": {
+    "source": "thaumcraft:lamp_fertility",
+    "model": "thaumcraft:research/advancements/icon_33"
+  },
+  "34": {
+    "source": "thaumcraft:pattern_crafter",
+    "model": "thaumcraft:research/advancements/icon_34"
+  },
+  "35": {
+    "source": "thaumcraft:turret;1;0",
+    "model": "thaumcraft:research/advancements/icon_35"
+  },
+  "36": {
+    "source": "thaumcraft:turret;1;1",
+    "model": "thaumcraft:research/advancements/icon_36"
+  },
+  "37": {
+    "source": "thaumcraft:turret;1;2",
+    "model": "thaumcraft:research/advancements/icon_37"
+  },
+  "38": {
+    "source": "thaumcraft:grapple_gun",
+    "model": "thaumcraft:research/advancements/icon_38"
+  },
+  "39": {
+    "source": "thaumcraft:vis_generator",
+    "model": "thaumcraft:research/advancements/icon_39"
+  },
+  "40": {
+    "source": "thaumcraft:textures/research/cat_auromancy.png",
+    "model": "thaumcraft:research/advancements/icon_40"
+  },
+  "41": {
+    "source": "thaumcraft:focus_2",
+    "model": "thaumcraft:research/advancements/icon_41"
+  },
+  "42": {
+    "source": "thaumcraft:focus_3",
+    "model": "thaumcraft:research/advancements/icon_42"
+  },
+  "43": {
+    "source": "focus:thaumcraft.AIR",
+    "model": "thaumcraft:research/advancements/icon_43",
+    "tint": 16777086
+  },
+  "44": {
+    "source": "focus:thaumcraft.FLUX",
+    "model": "thaumcraft:research/advancements/icon_44",
+    "tint": 8388736
+  },
+  "45": {
+    "source": "focus:thaumcraft.HEAL",
+    "model": "thaumcraft:research/advancements/icon_45",
+    "tint": 14548997
+  },
+  "46": {
+    "source": "focus:thaumcraft.CURSE",
+    "model": "thaumcraft:research/advancements/icon_46",
+    "tint": 6946821
+  },
+  "47": {
+    "source": "focus:thaumcraft.BREAK",
+    "model": "thaumcraft:research/advancements/icon_47",
+    "tint": 9063176
+  },
+  "48": {
+    "source": "focus:thaumcraft.EXCHANGE",
+    "model": "thaumcraft:research/advancements/icon_48",
+    "tint": 5735255
+  },
+  "49": {
+    "source": "focus:thaumcraft.PLAN",
+    "model": "thaumcraft:research/advancements/icon_49",
+    "tint": 8760728
+  },
+  "50": {
+    "source": "focus:thaumcraft.RIFT",
+    "model": "thaumcraft:research/advancements/icon_50",
+    "tint": 3084645
+  },
+  "51": {
+    "source": "focus:thaumcraft.PROJECTILE",
+    "model": "thaumcraft:research/advancements/icon_51",
+    "tint": 11382149
+  },
+  "52": {
+    "source": "focus:thaumcraft.BOLT",
+    "model": "thaumcraft:research/advancements/icon_52",
+    "tint": 11377029
+  },
+  "53": {
+    "source": "focus:thaumcraft.SCATTER",
+    "model": "thaumcraft:research/advancements/icon_53"
+  },
+  "54": {
+    "source": "focus:thaumcraft.MINE",
+    "model": "thaumcraft:research/advancements/icon_54",
+    "tint": 8760709
+  },
+  "55": {
+    "source": "focus:thaumcraft.SPELLBAT",
+    "model": "thaumcraft:research/advancements/icon_55",
+    "tint": 8760748
+  },
+  "56": {
+    "source": "focus:thaumcraft.CLOUD",
+    "model": "thaumcraft:research/advancements/icon_56",
+    "tint": 10071429
+  },
+  "57": {
+    "source": "focus:thaumcraft.SPLITTARGET",
+    "model": "thaumcraft:research/advancements/icon_57"
+  },
+  "58": {
+    "source": "thaumcraft:recharge_pedestal",
+    "model": "thaumcraft:research/advancements/icon_58"
+  },
+  "59": {
+    "source": "thaumcraft:amulet_vis;1;1",
+    "model": "thaumcraft:research/advancements/icon_59"
+  },
+  "60": {
+    "source": "thaumcraft:arcane_workbench_charger",
+    "model": "thaumcraft:research/advancements/icon_60"
+  },
+  "61": {
+    "source": "thaumcraft:focus_pouch",
+    "model": "thaumcraft:research/advancements/icon_61"
+  },
+  "62": {
+    "source": "thaumcraft:vis_battery",
+    "model": "thaumcraft:research/advancements/icon_62"
+  },
+  "63": {
+    "source": "thaumcraft:textures/items/thaumonomicon.png",
+    "model": "thaumcraft:research/advancements/icon_63"
+  },
+  "64": {
+    "source": "thaumcraft:textures/research/knowledge_theory.png",
+    "model": "thaumcraft:research/advancements/icon_64"
+  },
+  "65": {
+    "source": "thaumcraft:textures/research/knowledge_theory.png",
+    "model": "thaumcraft:research/advancements/icon_65"
+  },
+  "66": {
+    "source": "thaumcraft:textures/research/r_flux.png",
+    "model": "thaumcraft:research/advancements/icon_66"
+  },
+  "67": {
+    "source": "thaumcraft:textures/research/r_warp.png",
+    "model": "thaumcraft:research/advancements/icon_67"
+  },
+  "68": {
+    "source": "thaumcraft:textures/research/cat_alchemy.png",
+    "model": "thaumcraft:research/advancements/icon_68"
+  },
+  "69": {
+    "source": "thaumcraft:textures/research/cat_auromancy.png",
+    "model": "thaumcraft:research/advancements/icon_69"
+  },
+  "70": {
+    "source": "thaumcraft:textures/research/cat_artifice.png",
+    "model": "thaumcraft:research/advancements/icon_70"
+  },
+  "71": {
+    "source": "thaumcraft:textures/research/cat_infusion.png",
+    "model": "thaumcraft:research/advancements/icon_71"
+  },
+  "72": {
+    "source": "thaumcraft:textures/research/cat_golemancy.png",
+    "model": "thaumcraft:research/advancements/icon_72"
+  },
+  "73": {
+    "source": "thaumcraft:curio;1;6",
+    "model": "thaumcraft:research/advancements/icon_73"
+  },
+  "74": {
+    "source": "thaumcraft:textures/research/cat_eldritch.png",
+    "model": "thaumcraft:research/advancements/icon_74"
+  },
+  "75": {
+    "source": "thaumcraft:textures/research/r_celestial.png",
+    "model": "thaumcraft:research/advancements/icon_75"
+  },
+  "76": {
+    "source": "thaumcraft:condenser",
+    "model": "thaumcraft:research/advancements/icon_76"
+  },
+  "77": {
+    "source": "thaumcraft:textures/research/r_fluxrift.png",
+    "model": "thaumcraft:research/advancements/icon_77"
+  },
+  "78": {
+    "source": "thaumcraft:causality_collapser",
+    "model": "thaumcraft:research/advancements/icon_78"
+  },
+  "79": {
+    "source": "thaumcraft:void_siphon",
+    "model": "thaumcraft:research/advancements/icon_79"
+  },
+  "80": {
+    "source": "thaumcraft:voidseer_charm",
+    "model": "thaumcraft:research/advancements/icon_80"
+  },
+  "81": {
+    "source": "thaumcraft:void_robe_helm",
+    "model": "thaumcraft:research/advancements/icon_81"
+  },
+  "82": {
+    "source": "thaumcraft:primal_crusher",
+    "model": "thaumcraft:research/advancements/icon_82"
+  },
+  "83": {
+    "source": "thaumcraft:textures/research/cat_golemancy.png",
+    "model": "thaumcraft:research/advancements/icon_83"
+  },
+  "84": {
+    "source": "thaumcraft:jar_brain",
+    "model": "thaumcraft:research/advancements/icon_84"
+  },
+  "85": {
+    "source": "thaumcraft:plate;1;1",
+    "model": "thaumcraft:research/advancements/icon_85"
+  },
+  "86": {
+    "source": "thaumcraft:plate",
+    "model": "thaumcraft:research/advancements/icon_86"
+  },
+  "87": {
+    "source": "thaumcraft:plate;1;2",
+    "model": "thaumcraft:research/advancements/icon_87"
+  },
+  "88": {
+    "source": "thaumcraft:plate;1;3",
+    "model": "thaumcraft:research/advancements/icon_88"
+  },
+  "89": {
+    "source": "thaumcraft:mind",
+    "model": "thaumcraft:research/advancements/icon_89"
+  },
+  "90": {
+    "source": "thaumcraft:seal",
+    "model": "thaumcraft:research/advancements/icon_90"
+  },
+  "91": {
+    "source": "thaumcraft:textures/misc/golem/head_basic.png",
+    "model": "thaumcraft:research/advancements/icon_91"
+  },
+  "92": {
+    "source": "thaumcraft:textures/research/golem_logistics.png",
+    "model": "thaumcraft:research/advancements/icon_92"
+  },
+  "93": {
+    "source": "thaumcraft:mind;1;1",
+    "model": "thaumcraft:research/advancements/icon_93"
+  },
+  "94": {
+    "source": "thaumcraft:textures/items/seals/seal_pickup.png",
+    "model": "thaumcraft:research/advancements/icon_94"
+  },
+  "95": {
+    "source": "thaumcraft:textures/items/seals/seal_fill.png",
+    "model": "thaumcraft:research/advancements/icon_95"
+  },
+  "96": {
+    "source": "thaumcraft:textures/items/seals/seal_empty.png",
+    "model": "thaumcraft:research/advancements/icon_96"
+  },
+  "97": {
+    "source": "thaumcraft:textures/items/seals/seal_provider.png",
+    "model": "thaumcraft:research/advancements/icon_97"
+  },
+  "98": {
+    "source": "thaumcraft:textures/items/seals/seal_stock.png",
+    "model": "thaumcraft:research/advancements/icon_98"
+  },
+  "99": {
+    "source": "thaumcraft:textures/items/seals/seal_guard.png",
+    "model": "thaumcraft:research/advancements/icon_99"
+  },
+  "100": {
+    "source": "thaumcraft:textures/items/seals/seal_butcher.png",
+    "model": "thaumcraft:research/advancements/icon_100"
+  },
+  "101": {
+    "source": "thaumcraft:textures/items/seals/seal_use.png",
+    "model": "thaumcraft:research/advancements/icon_101"
+  },
+  "102": {
+    "source": "thaumcraft:textures/items/seals/seal_harvest.png",
+    "model": "thaumcraft:research/advancements/icon_102"
+  },
+  "103": {
+    "source": "thaumcraft:textures/items/seals/seal_breaker.png",
+    "model": "thaumcraft:research/advancements/icon_103"
+  },
+  "104": {
+    "source": "thaumcraft:textures/items/seals/seal_lumber.png",
+    "model": "thaumcraft:research/advancements/icon_104"
+  },
+  "105": {
+    "source": "thaumcraft:module",
+    "model": "thaumcraft:research/advancements/icon_105"
+  },
+  "106": {
+    "source": "thaumcraft:textures/misc/golem/legs_climber.png",
+    "model": "thaumcraft:research/advancements/icon_106"
+  },
+  "107": {
+    "source": "thaumcraft:textures/misc/golem/legs_flyer.png",
+    "model": "thaumcraft:research/advancements/icon_107"
+  },
+  "108": {
+    "source": "thaumcraft:textures/misc/golem/arms_breakers.png",
+    "model": "thaumcraft:research/advancements/icon_108"
+  },
+  "109": {
+    "source": "thaumcraft:textures/misc/golem/addon_fighter.png",
+    "model": "thaumcraft:research/advancements/icon_109"
+  },
+  "110": {
+    "source": "thaumcraft:textures/research/cat_infusion.png",
+    "model": "thaumcraft:research/advancements/icon_110"
+  },
+  "111": {
+    "source": "thaumcraft:infusion_matrix",
+    "model": "thaumcraft:research/advancements/icon_111"
+  },
+  "112": {
+    "source": "thaumcraft:stabilizer",
+    "model": "thaumcraft:research/advancements/icon_112"
+  },
+  "113": {
+    "source": "thaumcraft:matrix_cost",
+    "model": "thaumcraft:research/advancements/icon_113"
+  },
+  "114": {
+    "source": "thaumcraft:stone_ancient",
+    "model": "thaumcraft:research/advancements/icon_114"
+  },
+  "115": {
+    "source": "thaumcraft:stone_eldritch_tile",
+    "model": "thaumcraft:research/advancements/icon_115"
+  },
+  "116": {
+    "source": "thaumcraft:paving_stone_barrier",
+    "model": "thaumcraft:research/advancements/icon_116"
+  },
+  "117": {
+    "source": "thaumcraft:traveller_boots",
+    "model": "thaumcraft:research/advancements/icon_117"
+  },
+  "118": {
+    "source": "thaumcraft:elemental_axe",
+    "model": "thaumcraft:research/advancements/icon_118"
+  },
+  "119": {
+    "source": "thaumcraft:textures/research/r_inf_enchant.png",
+    "model": "thaumcraft:research/advancements/icon_119"
+  },
+  "120": {
+    "source": "thaumcraft:textures/research/r_runicupg.png",
+    "model": "thaumcraft:research/advancements/icon_120"
+  },
+  "121": {
+    "source": "thaumcraft:fortress_helm",
+    "model": "thaumcraft:research/advancements/icon_121"
+  },
+  "122": {
+    "source": "thaumcraft:textures/research/r_mask0.png",
+    "model": "thaumcraft:research/advancements/icon_122"
+  },
+  "123": {
+    "source": "thaumcraft:cloud_ring",
+    "model": "thaumcraft:research/advancements/icon_123"
+  },
+  "124": {
+    "source": "thaumcraft:curiosity_band",
+    "model": "thaumcraft:research/advancements/icon_124"
+  },
+  "125": {
+    "source": "thaumcraft:verdant_charm",
+    "model": "thaumcraft:research/advancements/icon_125"
+  },
+  "126": {
+    "source": "thaumcraft:textures/research/r_wisp.png",
+    "model": "thaumcraft:research/advancements/icon_126"
+  },
+  "127": {
+    "source": "thaumcraft:textures/research/r_pech.png",
+    "model": "thaumcraft:research/advancements/icon_127"
+  },
+  "128": {
+    "source": "thaumcraft:textures/research/r_thaumslime.png",
+    "model": "thaumcraft:research/advancements/icon_128"
+  },
+  "129": {
+    "source": "thaumcraft:textures/research/r_firebat.png",
+    "model": "thaumcraft:research/advancements/icon_129"
+  },
+  "130": {
+    "source": "thaumcraft:textures/research/r_taintseed.png",
+    "model": "thaumcraft:research/advancements/icon_130"
+  },
+  "131": {
+    "source": "thaumcraft:textures/research/r_taintcrawler.png",
+    "model": "thaumcraft:research/advancements/icon_131"
+  },
+  "132": {
+    "source": "thaumcraft:textures/research/r_taintacle.png",
+    "model": "thaumcraft:research/advancements/icon_132"
+  },
+  "133": {
+    "source": "thaumcraft:textures/research/r_taintswarm.png",
+    "model": "thaumcraft:research/advancements/icon_133"
+  },
+  "134": {
+    "source": "thaumcraft:textures/research/r_cultist.png",
+    "model": "thaumcraft:research/advancements/icon_134"
+  },
+  "135": {
+    "source": "thaumcraft:textures/research/r_angryzombie.png",
+    "model": "thaumcraft:research/advancements/icon_135"
+  },
+  "136": {
+    "source": "thaumcraft:textures/research/r_eldritchguardian.png",
+    "model": "thaumcraft:research/advancements/icon_136"
+  },
+  "137": {
+    "source": "thaumcraft:textures/research/r_crab.png",
+    "model": "thaumcraft:research/advancements/icon_137"
+  }
+}

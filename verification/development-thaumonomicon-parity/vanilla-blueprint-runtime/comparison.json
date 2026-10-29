@@ -1,0 +1,168 @@
+{
+  "result": "PASS",
+  "profile": "modern-ru2",
+  "framebuffer": [
+    1280,
+    720
+  ],
+  "actual_gui_scale": 2,
+  "language": "ru_ru",
+  "force_unicode": false,
+  "render_backend": "software OpenGL/llvmpipe",
+  "interaction": "Actual running Minecraft GUI mouse/key input, using observed prior page coordinates. No injected screen or model. Existing presentation fixture.",
+  "scope": [
+    "legacy vanilla furnace cells",
+    "golem press vanilla cells",
+    "thaumatorium regression",
+    "infusion matrix/context regression",
+    "furnace layer cycling with lava and connected grille",
+    "F3+T from gameplay then reopened GolemPress"
+  ],
+  "runtime_model_audit": {
+    "selections": 936,
+    "problems": 0,
+    "successful_runs": 2,
+    "evidence": "model-audit-runtime-lines.log"
+  },
+  "missing_model_or_texture_log_lines": [],
+  "render_shader_error_log_lines": [],
+  "resource_reload": {
+    "first_attempt_inside_book_triggered_reload": false,
+    "gameplay_f3t_triggered_reload": true,
+    "resource_manager_log_lines": [
+      "[12:01:39] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources, mod/terrablender, mod/curios, mod/thaumcraft, mod/neoforge",
+      "[12:05:00] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources, mod/terrablender, mod/curios, mod/thaumcraft, mod/neoforge"
+    ],
+    "post_reload_golem_model_crop_identical": true,
+    "evidence": "resume-final-golempress-confirmed-reload.png"
+  },
+  "comparison_method": "Diagnostic RGB comparison within explicit central model crops. Dark masks require max(R,G,B)<140; MAE/exact percentages use only pixels dark in both frames. Mask IoU measures threshold-mask agreement, not an independent semantic geometry guarantee. Font/background/book content and animation phases are excluded. Metrics are not full screenshot pixel-parity proof.",
+  "comparisons": [
+    {
+      "blueprint": "infusion",
+      "original": "../blueprint-runtime/original-ru2-blueprint-infusion.png",
+      "modern": "resume-final-blueprint-infusion.png",
+      "crop_xyxy": [
+        500,
+        250,
+        776,
+        500
+      ],
+      "common_dark_pixels": 45116,
+      "dark_threshold_mask_iou": 1.0,
+      "mean_absolute_rgb_channel_error_on_common_dark_pixels": 0.6058826137068889,
+      "exact_pixel_percent_on_common_dark_pixels": 48.5371043532228,
+      "previous_mae": 0.6058826137068889
+    },
+    {
+      "blueprint": "thaumatorium",
+      "original": "../blueprint-runtime/original-ru2-blueprint-thaumatorium.png",
+      "modern": "resume-final-blueprint-thaumatorium.png",
+      "crop_xyxy": [
+        590,
+        250,
+        690,
+        463
+      ],
+      "common_dark_pixels": 16633,
+      "dark_threshold_mask_iou": 0.9987990151924578,
+      "mean_absolute_rgb_channel_error_on_common_dark_pixels": 0.8198160283773221,
+      "exact_pixel_percent_on_common_dark_pixels": 40.497805567245834,
+      "previous_mae": 0.8198160283773221
+    },
+    {
+      "blueprint": "furnace",
+      "original": "../blueprint-runtime/original-ru2-blueprint-furnace.png",
+      "modern": "resume-final-blueprint-furnace.png",
+      "crop_xyxy": [
+        500,
+        210,
+        776,
+        500
+      ],
+      "common_dark_pixels": 62901,
+      "dark_threshold_mask_iou": 1.0,
+      "mean_absolute_rgb_channel_error_on_common_dark_pixels": 0.33712765562815644,
+      "exact_pixel_percent_on_common_dark_pixels": 44.19325606906091,
+      "previous_mae": 7.444136995160324
+    },
+    {
+      "blueprint": "golempress",
+      "original": "../blueprint-runtime/original-ru2-blueprint-golempress.png",
+      "modern": "resume-final-blueprint-golempress.png",
+      "crop_xyxy": [
+        550,
+        290,
+        735,
+        457
+      ],
+      "common_dark_pixels": 16909,
+      "dark_threshold_mask_iou": 0.9992317692944096,
+      "mean_absolute_rgb_channel_error_on_common_dark_pixels": 1.4921639363652492,
+      "exact_pixel_percent_on_common_dark_pixels": 14.926961972913833,
+      "previous_mae": 6.331198355276164
+    }
+  ],
+  "visual_findings": [
+    "Furnace uses original 1.12 nether brick and obsidian; bounds and connected iron grille match inspected reference. Middle slice shows source lava; base layer is complete.",
+    "GolemPress source cells show original piston, cauldron, anvil and iron bars at expected orientation and placement. No missing-texture areas in main model or bookmark.",
+    "Infusion matrix and stone context retain the preceding correct source geometry/lighting; diagnostic crop exactly repeats previous comparison metrics.",
+    "Thaumatorium remains two source brass construct blocks over the hollow crucible; previous correct diagnostic metrics retained.",
+    "GolemPress renders identically within the model crop after confirmed F3+T and reopening."
+  ],
+  "limits": [
+    "This is not full-screen or all-state pixel-perfect parity. Native 1.21 font is intentionally different.",
+    "Dark-mask metrics are diagnostics, not semantic proof of every model face.",
+    "Lighting/rasterization rounding and some edge pixels still differ; lava animation phase is not frame-locked to reference.",
+    "Only the four affected/regression constructions were repeated in this final resource pass. Ancient/Eldritch retained earlier evidence.",
+    "Infrastructure authentication and vanilla recipe-category warnings exist in logs; no missing-model/texture or render shader ERROR was found."
+  ],
+  "files": [
+    "resume-final-furnace-slice-3.png",
+    "resume-final-blueprint-thaumatorium.png",
+    "resume-final-book-map.png",
+    "resume-final-world-after-f3t.png",
+    "resume-final-golempress-confirmed-reload.properties",
+    "resume-final-blueprint-golempress.properties",
+    "resume-final-blueprint-golempress.png",
+    "resume-final-furnace-slice-1.png",
+    "resume-final-blueprint-furnace.png",
+    "resume-final-save-menu.png",
+    "resume-final-golempress-confirmed-reload.png",
+    "resume-final-furnace-slice-4.png",
+    "resume-final-blueprint-infusion.png",
+    "resume-final-furnace-slice-2.png",
+    "resume-final-blueprint-furnace.properties",
+    "resume-final-furnace-slice-0.png",
+    "resume-final-blueprint-thaumatorium.properties",
+    "resume-final-furnace-slice-5.png",
+    "resume-final-furnace-slice-6.png",
+    "resume-final-world-after-f3t.properties",
+    "resume-final-blueprint-infusion.properties",
+    "resume-final-title-saved.png"
+  ],
+  "sha256": {
+    "resume-final-furnace-slice-3.png": "ff8b78be9e31364fde1a33af58d3c4f69bdd66565e125b80ff465f20deb3b344",
+    "resume-final-blueprint-thaumatorium.png": "7fdcae05d663ea1c61c5935e2a6b105db75d3d1cd2f34da15d2909ffa24555e7",
+    "resume-final-book-map.png": "84fe5be1f3f9d94b04f0c4abb725896293cc74dfba5efc5054ceaf9bfe83554e",
+    "resume-final-world-after-f3t.png": "4ec5de56b20e9b0b8c2c9a43fcbac7321bba28a08cb73c9748d603144b2edb55",
+    "resume-final-golempress-confirmed-reload.properties": "c217dc48dc46855c38a7269290b5dc39ca515052b218ae40d326c01fd8bacbbd",
+    "resume-final-blueprint-golempress.properties": "d2c74da80ece2c3e8c7893363be9e3adf9e74a0e7529f7d8c3855f6ad09f4376",
+    "resume-final-blueprint-golempress.png": "a02946a3be857b0bbf7d077c6b01162b633e200b19dcca9f702f3947d6c65712",
+    "resume-final-furnace-slice-1.png": "69fceaf8ddb7f21d2dc6a1713758e1be92217f2fff9b2b304fae276827757694",
+    "resume-final-blueprint-furnace.png": "9ffa17e52efbfe5ed4578d2f8c98992901ad7d0856d35344dda5959a5d7401f8",
+    "resume-final-save-menu.png": "99d4f34e2f44650f167f59063e150b3eeadfb1412234abadd5c48b01d7b43412",
+    "resume-final-golempress-confirmed-reload.png": "5c558966c666ff34d72c55d4fcc8466fe7bd58aa31e3ab5e57cd0e8ea6490f7d",
+    "resume-final-furnace-slice-4.png": "f24561f37a56cb3c4b49b121c4f763863bd49eee55d92f20db0ae64ab3db52d2",
+    "resume-final-blueprint-infusion.png": "d4f7bbaae6e4da95b00592f455e04338cb9673898a52e8805d5d838e510eff01",
+    "resume-final-furnace-slice-2.png": "59675ea67e96134e8af2377a947c372728cfc2d96c86f26f0293df27ef00810c",
+    "resume-final-blueprint-furnace.properties": "9cba68b1c5b95677665593c8fe292780fb57dc34ff6461e32d1b44f689636167",
+    "resume-final-furnace-slice-0.png": "be98010484e3ebf2aa25bdda433105e7e6840a64c8decc19e0f9ff2bfc10f374",
+    "resume-final-blueprint-thaumatorium.properties": "e144da9645ddff9d01349165235dea0f80b26c411297ef5b3eb9b018eb608dcb",
+    "resume-final-furnace-slice-5.png": "f24561f37a56cb3c4b49b121c4f763863bd49eee55d92f20db0ae64ab3db52d2",
+    "resume-final-furnace-slice-6.png": "be98010484e3ebf2aa25bdda433105e7e6840a64c8decc19e0f9ff2bfc10f374",
+    "resume-final-world-after-f3t.properties": "93088e3d4c86c9842d8a5824a6880fbbc80e68836528f15091f615dd43c89de3",
+    "resume-final-blueprint-infusion.properties": "417a7b49ffc763fda07bf4ce8f1eb54ae3c7a18a942dff94bfec4822085d0ccf",
+    "resume-final-title-saved.png": "836699f9e2c0963013f6be6c4bb8fc47a9445ecdb90efe914ccdd080618471ef"
+  }
+}

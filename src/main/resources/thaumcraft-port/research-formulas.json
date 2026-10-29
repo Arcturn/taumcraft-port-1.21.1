@@ -1,0 +1,68 @@
+{
+  "BASICS": {
+    "PLANT": 5,
+    "ORDER": 5,
+    "ENTROPY": 5,
+    "AIR": 5,
+    "FIRE": 5,
+    "EARTH": 3,
+    "WATER": 5
+  },
+  "AUROMANCY": {
+    "AURA": 20,
+    "MAGIC": 20,
+    "FLUX": 15,
+    "CRYSTAL": 5,
+    "COLD": 5,
+    "AIR": 5
+  },
+  "ALCHEMY": {
+    "ALCHEMY": 30,
+    "FLUX": 10,
+    "MAGIC": 10,
+    "LIFE": 5,
+    "AVERSION": 5,
+    "DESIRE": 5,
+    "WATER": 5
+  },
+  "ARTIFICE": {
+    "MECHANISM": 10,
+    "CRAFT": 10,
+    "METAL": 10,
+    "TOOL": 10,
+    "ENERGY": 10,
+    "LIGHT": 5,
+    "FLIGHT": 5,
+    "TRAP": 5,
+    "FIRE": 5
+  },
+  "INFUSION": {
+    "MAGIC": 30,
+    "PROTECT": 10,
+    "TOOL": 10,
+    "FLUX": 5,
+    "CRAFT": 5,
+    "SOUL": 5,
+    "EARTH": 3
+  },
+  "GOLEMANCY": {
+    "MAN": 20,
+    "MOTION": 10,
+    "MIND": 10,
+    "MECHANISM": 10,
+    "EXCHANGE": 5,
+    "SENSES": 5,
+    "BEAST": 5,
+    "ORDER": 5
+  },
+  "ELDRITCH": {
+    "ELDRITCH": 20,
+    "DARKNESS": 10,
+    "MAGIC": 5,
+    "MIND": 5,
+    "VOID": 5,
+    "DEATH": 5,
+    "UNDEAD": 5,
+    "ENTROPY": 5
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "thaumcraft:research/icons/elemental_axe_0",
+  "overrides": [
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 1
+      },
+      "model": "thaumcraft:research/display/research_display_research_elementaltools_1"
+    },
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 2
+      },
+      "model": "thaumcraft:research/display/research_display_research_elementaltools_2"
+    },
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 3
+      },
+      "model": "thaumcraft:research/display/research_display_research_elementaltools_3"
+    },
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 4
+      },
+      "model": "thaumcraft:research/display/research_display_research_elementaltools_4"
+    }
+  ]
+}

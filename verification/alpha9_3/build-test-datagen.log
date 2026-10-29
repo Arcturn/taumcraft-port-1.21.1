@@ -1,0 +1,52 @@
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/workspace/scratch/5f8dd1a26602/work -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=41349 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=41349
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test UP-TO-DATE
+> Task :writeDataLegacyClasspath UP-TO-DATE
+> Task :prepareDataRun UP-TO-DATE
+
+> Task :runData
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/workspace/scratch/5f8dd1a26602/work -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=41349 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=41349
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[07:17:04] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatadev, --assetIndex, 17, --assetsDir, /workspace/scratch/5f8dd1a26602/work/gradle-home/caches/neoformruntime/assets, --gameDir, ., --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.259, --fml.neoFormVersion, 20240808.144430, --mod, thaumcraft, --all, --output, /workspace/scratch/5f8dd1a26602/thaumcraft-port/build/worldgen-checks, --existing, /workspace/scratch/5f8dd1a26602/thaumcraft-port/src/main/resources]
+[07:17:04] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Microsoft OpenJDK 64-Bit Server VM 21.0.13.0.2+1-LTS
+[07:17:04] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.13.0.2 by Microsoft; OS Linux arch amd64 version 6.18.55
+[07:17:04] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatadev
+[07:17:04] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/workspace/scratch/5f8dd1a26602/work/maven/net/fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/sponge-mixin-0.16.4+mixin.0.8.7.jar%23124!/ Service=ModLauncher Env=CLIENT
+[07:17:04] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[07:17:04] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Curios API 9.5.1+1.21.1 (curios)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.259 (neoforge)
+		TerraBlender 4.1.0.8 (terrablender)
+		Thaumcraft — Experimental Port 0.1.0-alpha.9.3 (thaumcraft)
+[07:17:05] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[07:17:05] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[07:17:05] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatadev' with arguments [--gameDir, ., --assetsDir, /workspace/scratch/5f8dd1a26602/work/gradle-home/caches/neoformruntime/assets, --assetIndex, 17, --mod, thaumcraft, --all, --output, /workspace/scratch/5f8dd1a26602/thaumcraft-port/build/worldgen-checks, --existing, /workspace/scratch/5f8dd1a26602/thaumcraft-port/src/main/resources]
+[07:17:05] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender.mixins.json could not be read. If this is a development environment you can ignore this message
+[07:17:05] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender_neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[07:17:05] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[07:17:05] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.mixins.json could not be read. If this is a development environment you can ignore this message
+[07:17:05] [main/INFO] [ne.ne.ne.da.lo.DatagenModLoader/]: Initializing Data Gatherer for mods [thaumcraft]
+[07:17:05] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[07:17:09] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.259, for MC 1.21.1
+[07:17:12] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/workspace/scratch/5f8dd1a26602/thaumcraft-port/build/moddev/artifacts/neoforge-21.1.259.jar%23175!/assets/.mcassetsroot' uses unexpected schema
+[07:17:12] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/workspace/scratch/5f8dd1a26602/thaumcraft-port/build/moddev/artifacts/neoforge-21.1.259.jar%23175!/data/.mcassetsroot' uses unexpected schema
+[07:17:12] [main/INFO] [minecraft/DataGenerator]: Starting provider: Thaumcraft registry, worldgen, loot and structure validation
+[07:17:13] [main/INFO] [minecraft/DataGenerator]: Thaumcraft registry, worldgen, loot and structure validation finished after 780 ms
+[07:17:13] [main/INFO] [minecraft/DataGenerator]: All providers took: 781 ms
+[07:17:13] [main/INFO] [minecraft/HashCache]: Caching: total files: 1, old count: 1, new count: 2, removed stale: 0, written: 1
+
+BUILD SUCCESSFUL in 17s
+8 actionable tasks: 1 executed, 7 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.2.1/userguide/configuration_cache_enabling.html

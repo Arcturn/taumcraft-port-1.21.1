@@ -1,0 +1,40 @@
+{
+  "version": "0.1.0-alpha.9.15-dev",
+  "junit": {
+    "tests": 1965,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "server_game_tests": 35,
+  "tree_fixture_checks": 90,
+  "leaf_color_fixture_checks": 39,
+  "loaded_biomes": 66,
+  "vegetation_registration_duplicates": 0,
+  "jar": {
+    "name": "thaumcraft-port-1.21.1-0.1.0-alpha.9.15-dev.jar",
+    "bytes": 12971562,
+    "sha256": "686f80791fc653c541c5870a2807a83a478ba6145fdda49be1450d96cf64e790",
+    "crc": "pass",
+    "matched_classes": 304,
+    "all_resources_match": true
+  },
+  "baseline": "alpha9.14",
+  "removed_baseline_files": [],
+  "changed_baseline_files_before_docs": [
+    "gradle.properties",
+    "src/main/java/thaumcraft/port/client/ClientEvents.java",
+    "src/main/java/thaumcraft/port/data/TreeFixtures.java",
+    "src/main/java/thaumcraft/port/data/WorldDataChecks.java",
+    "src/main/java/thaumcraft/port/world/MagicTrees.java",
+    "src/main/java/thaumcraft/port/world/VegetationFeature.java"
+  ],
+  "changed_runtime_resources": [],
+  "source_inputs_sha256": "dc5662ecbae8d54fa246abbd5f56a635304958cb1b3a3fe96f5eb2a0b3da77d9",
+  "limits": [
+    "Runtime vegetation sampled on controlled grass plots, not full natural-world density.",
+    "Leaf color tested through actual client registration/color/model pipeline without OpenGL or screenshot comparison.",
+    "Other worldgen differences remain documented.",
+    "Generation changes apply to new chunks; color changes also affect existing leaves."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "textures": {
+    "particle": "thaumcraft:blocks/bellows",
+    "side": "thaumcraft:blocks/bellows"
+  },
+  "parent": "thaumcraft:research/legacy/block/bellows",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    }
+  }
+}

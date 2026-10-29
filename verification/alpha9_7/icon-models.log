@@ -1,0 +1,14 @@
+[09:37:05] [main/INFO]: [STDOUT]: SKIP advancement:60 thaumcraft:research/advancements/icon_60
+[09:37:05] [main/INFO]: [STDOUT]: SKIP original:research_display_research_thaumatorium:0 thaumcraft:item/research_display_research_thaumatorium
+[09:37:05] [main/INFO]: [STDOUT]: SKIP original:research_display_research_workbenchcharger:0 thaumcraft:item/research_display_research_workbenchcharger
+[09:37:05] [main/INFO]: [STDOUT]: SKIP book:arcane_workbench_charger_0 thaumcraft:research/icons/arcane_workbench_charger_0
+[09:37:05] [main/INFO]: [STDOUT]: SKIP book:golem_builder_0 thaumcraft:research/icons/golem_builder_0
+[09:37:05] [main/INFO]: [STDOUT]: SKIP book:thaumatorium_0 thaumcraft:research/icons/thaumatorium_0
+[09:37:05] [main/INFO]: [STDOUT]: SKIP book:thaumometer_0 thaumcraft:research/icons/thaumometer_0
+[09:37:05] [main/INFO]: [STDOUT]: SKIP direct:data/thaumcraft/advancement/research/thaumatorium.json thaumcraft:item/research_display_research_thaumatorium
+[09:37:05] [main/INFO]: [STDOUT]: SKIP direct:data/thaumcraft/advancement/research/workbenchcharger.json thaumcraft:item/research_display_research_workbenchcharger
+[09:37:05] [main/INFO]: [STDOUT]: Baked 744; failed 0; custom skipped 9
+[09:37:05] [main/INFO]: [STDOUT]: Original art variants baked: 171; NeoForge OBJ variants skipped: 2
+[09:37:05] [main/INFO]: [STDOUT]: PASS: 342 original-art frame selections through production property + actual Minecraft ItemOverrides
+[09:37:05] [main/INFO]: [STDOUT]: SKIP NeoForge geometry: thaumcraft:research/advancements/icon_60
+[09:37:05] [main/INFO]: [STDOUT]: PASS: 136 actual CustomModelData override selections plus the default icon

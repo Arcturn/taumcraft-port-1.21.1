@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.client.AspectTooltipTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-29T01:00:02.873Z" hostname="e54a7cd1abdc" time="0.011">
+  <properties/>
+  <testcase name="shiftShowsAllItemAspectsOnlyInUncapturedInventoryScreens()" classname="thaumcraft.port.client.AspectTooltipTest" time="0.008"/>
+  <testcase name="originalShowTagsOptionInvertsShiftRatherThanRequiringResearch()" classname="thaumcraft.port.client.AspectTooltipTest" time="0.0"/>
+  <testcase name="amountSortIsStableAndKeepsTheOriginalSixteenPixelRowGeometry()" classname="thaumcraft.port.client.AspectTooltipTest" time="0.002"/>
+  <testcase name="longModdedAspectRowsWrapWithoutLosingEntriesOrExceedingWidth()" classname="thaumcraft.port.client.AspectTooltipTest" time="0.0"/>
+  <testcase name="emptyRowsReserveNoSpaceAndTooltipDataCannotBeMutatedAfterGathering()" classname="thaumcraft.port.client.AspectTooltipTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

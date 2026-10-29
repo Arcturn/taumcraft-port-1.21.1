@@ -1,0 +1,26 @@
+{
+  "textures": {
+    "end": "thaumcraft:blocks/log_greatwood_top",
+    "side": "thaumcraft:blocks/log_greatwood"
+  },
+  "parent": "minecraft:block/cube_column",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    }
+  }
+}

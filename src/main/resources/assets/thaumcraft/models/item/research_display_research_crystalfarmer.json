@@ -1,0 +1,35 @@
+{
+  "parent": "thaumcraft:research/icons/crystal_aer_0",
+  "overrides": [
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 1
+      },
+      "model": "thaumcraft:research/display/research_display_research_crystalfarmer_1"
+    },
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 2
+      },
+      "model": "thaumcraft:research/display/research_display_research_crystalfarmer_2"
+    },
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 3
+      },
+      "model": "thaumcraft:research/display/research_display_research_crystalfarmer_3"
+    },
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 4
+      },
+      "model": "thaumcraft:research/display/research_display_research_crystalfarmer_4"
+    },
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 5
+      },
+      "model": "thaumcraft:research/display/research_display_research_crystalfarmer_5"
+    }
+  ]
+}

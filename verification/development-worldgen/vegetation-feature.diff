@@ -1,0 +1,43 @@
+--- alpha9.14/src/main/java/thaumcraft/port/world/VegetationFeature.java
++++ alpha9.15/src/main/java/thaumcraft/port/world/VegetationFeature.java
+@@ -24,15 +24,17 @@
+     @Override public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> c){
+         var l=c.level();var r=c.random();if(c.chunkGenerator() instanceof net.minecraft.world.level.levelgen.FlatLevelSource||!WorldConfig.TREES.get()||l.getLevel().dimension()!=Level.OVERWORLD)return false;
+         int x=c.origin().getX()&~15,z=c.origin().getZ()&~15;
+-        var center=surface(l,x+8,z+8);var biome=l.getBiome(center);var affinity=BiomeAffinity.of(biome);
++        var center=surface(l,x+8,z+8);var biome=l.getBiome(center);
+         boolean forest=biome.is(ResourceKey.create(Registries.BIOME,WorldContent.id("magical_forest")));
+         if(forest){
+             if(l.getBlockState(center.below()).is(Blocks.GRASS_BLOCK))l.setBlock(center.below(),WorldContent.block("grass_ambient").defaultBlockState(),2);
+-            for(int i=0;i<6;i++){
++            for(int i=0,n=VegetationRules.magicalForestTreeAttempts(r);i<n;i++){
+                 var p=surface(l,x+r.nextInt(16),z+r.nextInt(16));
+-                if(r.nextInt(18)==0)MagicTrees.silverwood(l,r,p,true,true);
+-                else if(r.nextInt(12)==0)MagicTrees.greatwood(l,r,p,r.nextInt(8)==0);
+-                else MagicTrees.bigMagic(l,r,p);
++                switch(VegetationRules.magicalForestTree(r)){
++                    case SILVERWOOD -> MagicTrees.silverwood(l,r,p,true,true);
++                    case GREATWOOD -> MagicTrees.greatwood(l,r,p,r.nextInt(8)==0);
++                    case BIG_MAGIC -> MagicTrees.bigMagic(l,r,p);
++                }
+             }
+             for(int i=0,n=r.nextInt(3);i<n;i++){
+                 var p=surface(l,x+r.nextInt(16),z+r.nextInt(16)).below();
+@@ -47,8 +49,15 @@
+                 var plant=WorldContent.block("vishroom").defaultBlockState();if(wood&&plant.canSurvive(l,p))l.setBlock(p,plant,2);
+             }
+         }
+-        if(!forest&&r.nextInt(80)==0&&r.nextFloat()<affinity.greatwood()*.5)MagicTrees.silverwood(l,r,center,true,false);
+-        if(!forest&&r.nextInt(25)==0&&r.nextFloat()<affinity.greatwood())MagicTrees.greatwood(l,r,center,r.nextInt(8)==0);
++        // TC6's global vegetation pass also runs in magical forest, after its biome decorator.
++        if(VegetationRules.rollSilverwood(r)){
++            var p=surface(l,VegetationRules.rareTreeCoordinate(x,r),VegetationRules.rareTreeCoordinate(z,r));
++            if(r.nextFloat()<BiomeAffinity.of(l.getBiome(p)).greatwood()*.5)MagicTrees.silverwood(l,r,p,true,false);
++        }
++        if(VegetationRules.rollGreatwood(r)){
++            var p=surface(l,VegetationRules.rareTreeCoordinate(x,r),VegetationRules.rareTreeCoordinate(z,r));
++            if(r.nextFloat()<BiomeAffinity.of(l.getBiome(p)).greatwood())MagicTrees.greatwood(l,r,p,r.nextInt(8)==0);
++        }
+         if(r.nextInt(30)==0&&l.getBlockState(center.below()).is(BlockTags.SAND))flowers(l,r,center,WorldContent.block("cinderpearl"),10);
+         return true;
+     }

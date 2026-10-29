@@ -1,0 +1,158 @@
+{
+  "runtime": {
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.259",
+    "port": "0.1.0-alpha.9.13-dev",
+    "java": "21.0.13+9",
+    "resolution": [
+      1280,
+      720
+    ],
+    "gui_scale": 2,
+    "language": "en_us",
+    "gl": "Mesa llvmpipe OpenGL4.5"
+  },
+  "result": "Normal save/quit, client exit0, runClient BUILD SUCCESSFUL. 914 item/book/advancement/world model selections audited,0problems. No bake or missing-texture warnings.",
+  "checked": [
+    "All7research categories",
+    "TrueINFUSION3Dmatrix vs BASEINFUSION intentional flat rawicon",
+    "Thaumatorium,WorkbenchCharger OBJUV/materials",
+    "GolemPress targetbookmark no magenta UV padding",
+    "All6sourceblueprints:Arcane/Ancient/Eldritch InfusionAltar,Furnace,Thaumatorium,GolemPress",
+    "Furnace layercycling,connectedironbars,visiblelava,netherbrickblockingredient",
+    "Thaumatorium2brassblocks verticalabovecrucible",
+    "GolemPresspistonUP",
+    "INFUSION pagebreak endsprocess. asoriginal",
+    "Original-style dimbackgroundwithout1.21blur",
+    "RobeChest ingredient\u2192EnchantedFabricrecipe\u2192visibleBackarrow+tooltip\u2192mouseclickreturn",
+    "Woolingredientcyclescolors"
+  ],
+  "limitations": [
+    "These are selected rendered gameplay/UI checks, not a manual playthrough of all148research entries or every recipe.",
+    "Pixel-perfect lighting equality is not claimed: legacy and modern lighting still have small pixel differences.",
+    "Original reference world and modern copied test world have different scenery; GUIresolution/language/scale match.",
+    "Offline local test causes expected Mojang public-key/skin DNS failures; no login/EULA/payment was accepted."
+  ],
+  "captures": [
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-golempress.png",
+      "bytes": 262790,
+      "sha256": "dabe36a9098b97e9adfab020658d2f56a45b8de955bf5d57955a3455355fc9e0"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-infernalfurnace-full.png",
+      "bytes": 266016,
+      "sha256": "6fb7e0e7829225b56a8f57f5aeee7edd947230b0bedc6807e79ff354054d97a3"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-infernalfurnace-slice-0.png",
+      "bytes": 267611,
+      "sha256": "993f24835b35ae739af9e8c3b6b7f090438391eef7a6e702becbc8ae21a3a8d9"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-infernalfurnace-slice-1.png",
+      "bytes": 262970,
+      "sha256": "86e94bacca6dfc6f942d9622b2eca0fcfa38134801a4139c913bc6a2660bf056"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-infernalfurnace-slice-2.png",
+      "bytes": 262963,
+      "sha256": "511678fc1fb5813ec42534ff9af14f889fc97b0f5203a12e789913d4fea77a91"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-infernalfurnace-slice-3.png",
+      "bytes": 256195,
+      "sha256": "9b4f64cd573deb35b0ecd3081796583bc91c644357ba5cc092ba869145af9378"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-infernalfurnace-slice-4.png",
+      "bytes": 265836,
+      "sha256": "06d07a9aba7730d4acaaf8b8989f9faac76cf4b5d3e293a513fd3617eaa2b0fe"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-infusionaltar.png",
+      "bytes": 268595,
+      "sha256": "1d57c502595947789cff15515acb19457e27c7937669e3728e08ad62158feaed"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-infusionaltarancient.png",
+      "bytes": 269573,
+      "sha256": "055148533b57c3fcb024dcb6c46100202fb9895353bf8d15088b6e90f2227fd0"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-infusionaltareldritch.png",
+      "bytes": 268396,
+      "sha256": "0e98c094afcee6fff8ad266ff00900cc994ea168ee4cab598a101ebb5c1f5953"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-blueprint-thaumatorium.png",
+      "bytes": 273893,
+      "sha256": "648c273fa2cce4b32c67374538b109882dc6fbbd1279722be6abcf81e185342e"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-category-alchemy.png",
+      "bytes": 560305,
+      "sha256": "1f19bf48cd3b1f6a30606e8bada45068ce9c714e68a571076286825f4f671b2e"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-category-artifice.png",
+      "bytes": 378470,
+      "sha256": "1a7f1ece047e55fc23763e37d9c3468e427620b2a2abf18d4ba88abee45b67c1"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-category-auromancy.png",
+      "bytes": 520643,
+      "sha256": "6bccfea72a1aff797b5495ee401ebb22054af76950a7acd19e6a86218d333130"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-category-basics.png",
+      "bytes": 554788,
+      "sha256": "c1b403c88f2de40fb5a8f84aa348528870389becac48118e94b3d8fce5af9c46"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-category-eldritch.png",
+      "bytes": 516731,
+      "sha256": "01b86aff8461227fed25d78e07065e5baaba51c7c28145e45297b30604c81091"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-category-golemancy.png",
+      "bytes": 491352,
+      "sha256": "83469c8fa76268067d4f0965fca4e91a470f121f8f4eb895aca0c332a6ffd73b"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-category-infusion.png",
+      "bytes": 528510,
+      "sha256": "7feba0afb551e23b3f083b63acefa90f15ca948f98be5fe468d998eb521392e5"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-fabric-reference-history-hover.png",
+      "bytes": 266052,
+      "sha256": "2e9014506eb0de15c9e31a0cd7e99d661efbd720ac790291c48559e05da11634"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-hover-thaumatorium.png",
+      "bytes": 563172,
+      "sha256": "cb35dd58f948276ee11c16c1d0b6a43776b8d69515fb7edf871718fe355adf27"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-hover-workbench-charger.png",
+      "bytes": 521051,
+      "sha256": "dd5932249c7dd3e0566d8fd87c46bbf8e240685970a75ffdb4b492b339b57bd1"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-page-infusion.png",
+      "bytes": 326560,
+      "sha256": "6c94e90bcd994e288d30c9b114cd76ec54a196b646123b5b3550a1e3ba9c8e05"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-robe-reference-mouse-return.png",
+      "bytes": 264087,
+      "sha256": "c1f9fd17fa0e2b1e8b9beae49a2f9b70e2a9659b60d732d660f1fb7cc6d1f1fc"
+    },
+    {
+      "file": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/captures/final-startup.png",
+      "bytes": 43964,
+      "sha256": "e3792343074a03f6f3e82fc36d79c477e49abb61dcee8ea82698f49e5ee28b68"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+╷
+└─ JUnit Jupiter ✔
+   ├─ CrucibleStateTest ✔
+   │  ├─ pollutionPreservesTheSpecialFluxMultiplier() ✔
+   │  ├─ failedOrUnknownDissolutionDoesNotResetGracePeriod() ✔
+   │  ├─ boilingRequiresWaterAndHeatStrictlyAbove150() ✔
+   │  ├─ paymentIsAtomicAndOneCraftUsesFiftyWater() ✔
+   │  └─ restoredValuesAndFluidSimulationCannotOverflow() ✔
+   ├─ AuraCodecTest ✔
+   │  ├─ corruptedAmountsAreClampedOnLoad() ✔
+   │  ├─ incompleteDataFailsInsteadOfPretendingToBeAHealthyChunk() ✔
+   │  └─ persistencePreservesFractionalVisAndFlux() ✔
+   ├─ AspectTest ✔
+   │  ├─ combinationsAreCommutativeAndUnique() ✔
+   │  ├─ keyLegacyCombinationsArePreserved() ✔
+   │  ├─ originalBaseAspectsArePreserved() ✔
+   │  └─ decompositionAlwaysTerminatesAtPrimalAspects() ✔
+   ├─ ResearchProgressTest ✔
+   │  ├─ schemaOneMigrationPreservesScansAndGrantsAspectDiscoveries() ✔
+   │  ├─ originalRecipeAspectRoundingIsRetained() ✔
+   │  ├─ completeStateRoundTripsIncludingWarpAndCrafts() ✔
+   │  ├─ knowledgeSpendingRejectsUnderflowAndUnknownCategory() ✔
+   │  ├─ andOrExpressionsUseRealBooleanSemantics() ✔
+   │  ├─ allOriginalEntriesAndFormulaArePresent() ✔
+   │  └─ hiddenPrerequisitesAndStageReferencesRemainDistinct() ✔
+   ├─ AuraStateTest ✔
+   │  ├─ fluxOccupiesRegenerationCapacity() ✔
+   │  ├─ drainsAreBoundedAndSimulationDoesNotConsume() ✔
+   │  ├─ excessVisConvertsWithoutCreatingEnergy() ✔
+   │  ├─ riftNeedsPollutionThresholdAndSuccessfulRoll() ✔
+   │  ├─ seededGenerationIsStableAcrossUnloadReload() ✔
+   │  ├─ diffusionMovesOneUnitAndConservesEnergy() ✔
+   │  ├─ fullMoonRegeneratesButNewMoonDoesNot() ✔
+   │  ├─ generatedBaseNeverExceedsOriginalRange() ✔
+   │  ├─ saturatedNeighbourCannotReceiveOverflow() ✔
+   │  └─ invalidEnergyCannotPoisonOrCreateAura() ✔
+   └─ ResearchStateTest ✔
+      ├─ loadedProgressSurvivesAndFiltersUnknownAspects() ✔
+      ├─ unknownObjectDoesNotPermanentlyConsumeItsScan() ✔
+      ├─ exposedCollectionsCannotModifyAuthoritativeProgress() ✔
+      └─ duplicateScanCannotAwardAnotherDiscovery() ✔
+
+Test run finished after 306 ms
+[         7 containers found      ]
+[         0 containers skipped    ]
+[         7 containers started    ]
+[         0 containers aborted    ]
+[         7 containers successful ]
+[         0 containers failed     ]
+[        33 tests found           ]
+[         0 tests skipped         ]
+[        33 tests started         ]
+[         0 tests aborted         ]
+[        33 tests successful      ]
+[         0 tests failed          ]
+

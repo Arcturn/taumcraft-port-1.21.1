@@ -1,0 +1,25 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/workspace/scratch/5f8dd1a26602/thaumcraft-port/build.gradle' line: 3
+
+* What went wrong:
+Plugin [id: 'net.neoforged.moddev', version: '2.0.148'] was not found in any of the following sources:
+
+- Gradle Core Plugins (plugin is not in 'org.gradle' namespace)
+- Included Builds (No included builds contain this plugin)
+- Plugin Repositories (could not resolve plugin artifact 'net.neoforged.moddev:net.neoforged.moddev.gradle.plugin:2.0.148')
+  Searched in the following repositories:
+    Gradle Central Plugin Repository
+    maven(https://maven.neoforged.net/releases)
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5s

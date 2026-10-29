@@ -1,0 +1,265 @@
+{
+  "scope": "Book-only source construction previews for six vanilla block types; no world block, item icon, registry, or global Minecraft resource replacement.",
+  "original": {
+    "version": "Minecraft 1.12.2",
+    "jar": "1.12.2.jar",
+    "jar_sha256": "8ada07da5ee77dad3527bd7278fbd05ee1fc8a597813b216a871a2d7d64cc64f",
+    "blockstate_sha256": {
+      "assets/minecraft/blockstates/nether_brick.json": "a9994e4efba78645e3ccdf6880ad987afefc416ab6d18231fb92a6aaf2136189",
+      "assets/minecraft/blockstates/obsidian.json": "7a78ef64277d52cfd4fd4c541f404fffb27ee1960aad1670c677e8eaa7c6f000",
+      "assets/minecraft/blockstates/cauldron.json": "7cea165df3f572e474ef1d8daf940add3addc5b351a36224bfcc54d2bbc12682",
+      "assets/minecraft/blockstates/anvil.json": "78341d94e85c6c85d5f0a88f941efd6c7016ade4fa7779900ec3b592056f3f2c",
+      "assets/minecraft/blockstates/piston.json": "a1f8dd019703b36df4bd7c90e0867efe54e525e8e79778e21173682e4bf03783",
+      "assets/minecraft/blockstates/iron_bars.json": "131175d01c690c9a290a33754009423f1f828733a9a8788c6faf5e9a07484a94"
+    }
+  },
+  "reproduce": "python3 tools/import_book_vanilla_models.py --minecraft-jar /path/to/1.12.2.jar",
+  "index": {
+    "path": "thaumcraft-port/book-vanilla-block-model-index.json",
+    "sha256": "60acbd52aa9afbdf4af85cbdc8343124ec59a0134b2a64a236920eb441bc0d0b"
+  },
+  "atlas": {
+    "path": "assets/minecraft/atlases/blocks.json",
+    "sha256": "481d0043e77fdfd1955e4543adbf20c1f8b7d740a5e9f6a3a60f7f045b8d4936",
+    "sprites": [
+      "thaumcraft:research/vanilla/blocks/anvil_base",
+      "thaumcraft:research/vanilla/blocks/anvil_top_damaged_0",
+      "thaumcraft:research/vanilla/blocks/cauldron_bottom",
+      "thaumcraft:research/vanilla/blocks/cauldron_inner",
+      "thaumcraft:research/vanilla/blocks/cauldron_side",
+      "thaumcraft:research/vanilla/blocks/cauldron_top",
+      "thaumcraft:research/vanilla/blocks/iron_bars",
+      "thaumcraft:research/vanilla/blocks/nether_brick",
+      "thaumcraft:research/vanilla/blocks/obsidian",
+      "thaumcraft:research/vanilla/blocks/piston_bottom",
+      "thaumcraft:research/vanilla/blocks/piston_side",
+      "thaumcraft:research/vanilla/blocks/piston_top_normal"
+    ],
+    "policy": "Append missing exact single sources; preserve every existing atlas source."
+  },
+  "counts": {
+    "blocks": 6,
+    "standalone_models": 11,
+    "model_closure": 16,
+    "textures": 12
+  },
+  "files": [
+    {
+      "source": "assets/minecraft/models/block/anvil.json",
+      "source_sha256": "f416fb0fe0f6e023315382195f6589198b271c41a93b9a5ecc39acc742e09dc1",
+      "target": "assets/thaumcraft/models/research/vanilla/block/anvil.json",
+      "target_sha256": "d837b4c07e97904a5f6cb35632f3e272ad65b57c9686d7271c2ead2022792cb2",
+      "bytes": 5172
+    },
+    {
+      "source": "assets/minecraft/models/block/anvil_undamaged.json",
+      "source_sha256": "918c814c44991be36bd98c59a5feabf7dc5c1a7df1fe59713eef0e41986299cc",
+      "target": "assets/thaumcraft/models/research/vanilla/block/anvil_undamaged.json",
+      "target_sha256": "0ce5578047d687e0814bc05b24b531d32efbaf547f0497fafe8843526d546e6b",
+      "bytes": 309
+    },
+    {
+      "source": "assets/minecraft/models/block/block.json",
+      "source_sha256": "0c73db48811b24b87b0536a6db0cf8feb966d02c1d53fc366e494ac2cdc8cb01",
+      "target": "assets/thaumcraft/models/research/vanilla/block/block.json",
+      "target_sha256": "01ddaaf0e0b123c0c1367834159ce77696b636d87f5c3314341a2ae46e15c47f",
+      "bytes": 1389
+    },
+    {
+      "source": "assets/minecraft/models/block/cauldron_empty.json",
+      "source_sha256": "2049109f86d8c3d1bcc9604cc3c69d93d5b92e3aedee9d2daa3261fa09fbf278",
+      "target": "assets/thaumcraft/models/research/vanilla/block/cauldron_empty.json",
+      "target_sha256": "6e1c2fd0c61bc90b97a5d7e5896f760ee792eba629009760aa5c79d9bdf049c4",
+      "bytes": 7572
+    },
+    {
+      "source": "assets/minecraft/models/block/cube.json",
+      "source_sha256": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+      "target": "assets/thaumcraft/models/research/vanilla/block/cube.json",
+      "target_sha256": "4dccb341ed07f078247abd3225a16ceedb8a03c66ff414b39a0ebeb4253d3eea",
+      "bytes": 794
+    },
+    {
+      "source": "assets/minecraft/models/block/cube_all.json",
+      "source_sha256": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+      "target": "assets/thaumcraft/models/research/vanilla/block/cube_all.json",
+      "target_sha256": "c639827508d89e0ffe8611a82651af60c74a2e14ef2820d4ca3f16a2f3556847",
+      "bytes": 257
+    },
+    {
+      "source": "assets/minecraft/models/block/iron_bars_cap.json",
+      "source_sha256": "bdc00a097042e9b0a0742f6fed875fa4b8577648784f40b004fb2856a529d0a3",
+      "target": "assets/thaumcraft/models/research/vanilla/block/iron_bars_cap.json",
+      "target_sha256": "ef4c5aeb5dec72cef9647d18c6acd3e79df68cccb46f156e480783e9ab012597",
+      "bytes": 1191
+    },
+    {
+      "source": "assets/minecraft/models/block/iron_bars_cap_alt.json",
+      "source_sha256": "a688394f969936743ab42b829839d7945e232bdcf378d8d9b4aad7f679d57cec",
+      "target": "assets/thaumcraft/models/research/vanilla/block/iron_bars_cap_alt.json",
+      "target_sha256": "b9f5aef0e29d4371b7426422cb2194f4f5ea72752964655f1c7d15f2115e11e2",
+      "bytes": 1191
+    },
+    {
+      "source": "assets/minecraft/models/block/iron_bars_post.json",
+      "source_sha256": "744c10ec9bc6e377b65596e716f623aabb283339086a4a2b3c6d955e2fbb97d6",
+      "target": "assets/thaumcraft/models/research/vanilla/block/iron_bars_post.json",
+      "target_sha256": "460fb2d513d23f45735fa87eb1e039c66ef4731fa2eae649dace413508fe8622",
+      "bytes": 1131
+    },
+    {
+      "source": "assets/minecraft/models/block/iron_bars_post_ends.json",
+      "source_sha256": "c9fe0873f34e448e3ccd3fb68866c9245c3767a06c2582093ec030f0138bd3e7",
+      "target": "assets/thaumcraft/models/research/vanilla/block/iron_bars_post_ends.json",
+      "target_sha256": "d848c156035cc6215000e38e55f3215afbb28ce1f319422e7367b47308cc174e",
+      "bytes": 1137
+    },
+    {
+      "source": "assets/minecraft/models/block/iron_bars_side.json",
+      "source_sha256": "b32fd2a8651b00bea0a44b58c48fed15e562eb9a36e25ad28740ca58fa1e2a38",
+      "target": "assets/thaumcraft/models/research/vanilla/block/iron_bars_side.json",
+      "target_sha256": "25e543cf9a5c09a5921df00dcc09afb2ff3b175b2a98c3e048a80ff38dc59325",
+      "bytes": 1978
+    },
+    {
+      "source": "assets/minecraft/models/block/iron_bars_side_alt.json",
+      "source_sha256": "a38fdbd3076cf4542a0517453ea2493653928cae200fd6528db1716c17e402e9",
+      "target": "assets/thaumcraft/models/research/vanilla/block/iron_bars_side_alt.json",
+      "target_sha256": "bd3bcc124aee4c4cfb1f48240c52407dbd5f67a3c9367b3eaf1d9d8d87994ec8",
+      "bytes": 2280
+    },
+    {
+      "source": "assets/minecraft/models/block/nether_brick.json",
+      "source_sha256": "4a99fd23c3920b70c1db9f2fb7dc2ee01c0bac649d7ea3ba915b4af23d3449e8",
+      "target": "assets/thaumcraft/models/research/vanilla/block/nether_brick.json",
+      "target_sha256": "9051298de1dc0803a21dc7b1a25c0272a02b4a37f72bbaff24fdad456698fd48",
+      "bytes": 179
+    },
+    {
+      "source": "assets/minecraft/models/block/obsidian.json",
+      "source_sha256": "f5b4140680c5713b520982ca96de2770b0d18a8bb848f8a8f94b7bf4a6cacee0",
+      "target": "assets/thaumcraft/models/research/vanilla/block/obsidian.json",
+      "target_sha256": "ff6f446621423bd1c1d7dcdacdc55c14552ad032f63ea636bffc20aab8dd0814",
+      "bytes": 175
+    },
+    {
+      "source": "assets/minecraft/models/block/piston.json",
+      "source_sha256": "adf88f91c7272b87d3085c9a44f9ec4ed2788d2e8e84defe4f7b67cdd63eeacd",
+      "target": "assets/thaumcraft/models/research/vanilla/block/piston.json",
+      "target_sha256": "417bbef6ba4a65587243ea78d4c06291d29d37152d08b2e3946e77042c8d1af1",
+      "bytes": 1422
+    },
+    {
+      "source": "assets/minecraft/models/block/piston_normal.json",
+      "source_sha256": "0242c63f84cb0b2d7505ed443013cbe1dcdc82dcdd0303213828f3f58effbb08",
+      "target": "assets/thaumcraft/models/research/vanilla/block/piston_normal.json",
+      "target_sha256": "834b04f05461694a890eaf0194440e08aaeba4ae96a730f3e6b44e611d41c431",
+      "bytes": 315
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/anvil_base.png",
+      "source_sha256": "1cc09bf9b5cda459fb88bd98b179d5273ce0ea50443afdd4d152514a58ee66c5",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/anvil_base.png",
+      "target_sha256": "1cc09bf9b5cda459fb88bd98b179d5273ce0ea50443afdd4d152514a58ee66c5",
+      "bytes": 376
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/anvil_top_damaged_0.png",
+      "source_sha256": "8c5df6f382350ee8d8cee7b7b8c21960236c8f21e08308b3447eb591ec4cf055",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/anvil_top_damaged_0.png",
+      "target_sha256": "8c5df6f382350ee8d8cee7b7b8c21960236c8f21e08308b3447eb591ec4cf055",
+      "bytes": 310
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/cauldron_bottom.png",
+      "source_sha256": "1d4551282a53f19039a5842f86c1cf9e4e444ab350b18658d459f9de5ab0a1f2",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/cauldron_bottom.png",
+      "target_sha256": "1d4551282a53f19039a5842f86c1cf9e4e444ab350b18658d459f9de5ab0a1f2",
+      "bytes": 147
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/cauldron_inner.png",
+      "source_sha256": "b173973b947bae975b31bebbb39ac5dae63cdcf1011c8d2e1022b368c8e8817e",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/cauldron_inner.png",
+      "target_sha256": "b173973b947bae975b31bebbb39ac5dae63cdcf1011c8d2e1022b368c8e8817e",
+      "bytes": 337
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/cauldron_side.png",
+      "source_sha256": "d66f54c8c7d3cd56071eaec118e9530e470447057b8fe217779d872ed8ad2ed2",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/cauldron_side.png",
+      "target_sha256": "d66f54c8c7d3cd56071eaec118e9530e470447057b8fe217779d872ed8ad2ed2",
+      "bytes": 408
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/cauldron_top.png",
+      "source_sha256": "4dc660779a84faa4bf96a9d2e76adaee83d921d26a754773b506e041130bb023",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/cauldron_top.png",
+      "target_sha256": "4dc660779a84faa4bf96a9d2e76adaee83d921d26a754773b506e041130bb023",
+      "bytes": 331
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/iron_bars.png",
+      "source_sha256": "8ea0b87c6f9993233896587af1aeb6dfffd81878872d33be780f2d3a537365e2",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/iron_bars.png",
+      "target_sha256": "8ea0b87c6f9993233896587af1aeb6dfffd81878872d33be780f2d3a537365e2",
+      "bytes": 490
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/nether_brick.png",
+      "source_sha256": "a217f1eb8d6c7196e401e284efddc780c18bc7675ee2c35c2e083c14e2ec24ed",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/nether_brick.png",
+      "target_sha256": "a217f1eb8d6c7196e401e284efddc780c18bc7675ee2c35c2e083c14e2ec24ed",
+      "bytes": 326
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/obsidian.png",
+      "source_sha256": "5456fc99dd15a43e01fc34535ed6dff316795878fe3313fd2b2c2fd86511d5e9",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/obsidian.png",
+      "target_sha256": "5456fc99dd15a43e01fc34535ed6dff316795878fe3313fd2b2c2fd86511d5e9",
+      "bytes": 489
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/piston_bottom.png",
+      "source_sha256": "fc197ab254d72e04b150c45f7ff7950d1e82f7d662ccd63f570ab5aad6dda8a5",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/piston_bottom.png",
+      "target_sha256": "fc197ab254d72e04b150c45f7ff7950d1e82f7d662ccd63f570ab5aad6dda8a5",
+      "bytes": 550
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/piston_side.png",
+      "source_sha256": "e9e13d760031ccece029c7e1661400d6cb5f997d0eaa08a1061f650648e929bc",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/piston_side.png",
+      "target_sha256": "e9e13d760031ccece029c7e1661400d6cb5f997d0eaa08a1061f650648e929bc",
+      "bytes": 604
+    },
+    {
+      "source": "assets/minecraft/textures/blocks/piston_top_normal.png",
+      "source_sha256": "a7cae4895ac1844b9e35e30a87b5df25b844a7f03c1adf2b0cb366384e831aea",
+      "target": "assets/thaumcraft/textures/research/vanilla/blocks/piston_top_normal.png",
+      "target_sha256": "a7cae4895ac1844b9e35e30a87b5df25b844a7f03c1adf2b0cb366384e831aea",
+      "bytes": 388
+    }
+  ],
+  "selection": "Original metadata rotations; original iron-bars multipart predicates evaluated against the complete blueprint's connected state. No vanilla fallback for these supported preview states.",
+  "geometry": "Original JSON elements/faces/UVs are copied unchanged. Only parent/texture locations and explicit NeoForge render_type are adapted. Preserves removed cauldron/anvil faces as well as original art.",
+  "lava": "Not copied or modified: original lava_still/lava_flow RGBA pixels equal modern assets. Animation timing and fluid tessellation remain runtime concerns.",
+  "validation": {
+    "import": "passed",
+    "status": "pending_root_build",
+    "log": "verification/development-thaumonomicon-parity/resume-final-build.log",
+    "deterministic_reimport": "passed; all 28 resource files, index and audit byte-identical",
+    "original_png_byte_comparisons": 12,
+    "original_model_geometry_comparisons": 16,
+    "junit_tests": [
+      "BookVanillaBlueprintTest.everyOriginalVanillaBlueprintCellUsesAnExplicitBookOnlyModel",
+      "BookVanillaBlueprintTest.modelRegistrationIncludesEveryStandalonePartAndAllItsDependenciesAreLocal",
+      "BookVanillaBlueprintTest.multipartBarsSelectOriginalCapsAndSidesForAllSixteenConnectionStates",
+      "BookVanillaBlueprintTest.furnaceAndPressUseConnectedGrilleAndOriginalMetadataOrientations",
+      "BookVanillaBlueprintTest.cauldronAndAnvilRetainFacesRemovedFromModernVanillaModels",
+      "BookVanillaBlueprintTest.allTwelveTextureFilesAreExactOriginal112Bytes"
+    ],
+    "runtime_audit": "IconModelAudit now checks all 11 newly registered standalone models on actual baking and resource reload; root run pending.",
+    "atlas_registration": "passed: all 12 texture sprites registered exactly once; existing sources preserved; reimport byte-identical"
+  }
+}

@@ -1,0 +1,9 @@
+CRYSTAL_SUPPORT valid_rock_faces=96 unsupported_materials=4
+DEEPSLATE_ORE_LOOT paired_seeded_checks=4608 amber_curios_in_512=37
+DEPOSIT_CRYSTAL_BUDGET density=44 upper_budget=28 upper_cluster_units={0=28, 1=26} lower_budget=30 lower_cluster_units={2=26, 3=28}
+DEPOSIT_CRYSTAL_BUDGET density=100 upper_budget=64 upper_cluster_units={0=28, 1=26, 2=28} lower_budget=68 lower_cluster_units={3=28, 4=28, 5=26}
+DEPOSIT_CRYSTAL_BUDGET density=200 upper_budget=128 upper_cluster_units={0=28, 1=26, 2=28, 3=26, 4=26} lower_budget=137 lower_cluster_units={5=26, 6=28, 7=26, 8=26, 9=28, 10=26}
+DEPOSIT_ORE_CANDIDATES density=1 upper_cinnabar=0 lower_cinnabar=0 upper_quartz=0 lower_quartz=0 amber=0 total=0
+DEPOSIT_ORE_CANDIDATES density=50 upper_cinnabar=9 lower_cinnabar=11 upper_quartz=9 lower_quartz=9 amber=10 total=48
+DEPOSIT_ORE_CANDIDATES density=100 upper_cinnabar=18 lower_cinnabar=23 upper_quartz=18 lower_quartz=18 amber=20 total=97
+DEPOSIT_ORE_CANDIDATES density=200 upper_cinnabar=36 lower_cinnabar=45 upper_quartz=36 lower_quartz=36 amber=40 total=193

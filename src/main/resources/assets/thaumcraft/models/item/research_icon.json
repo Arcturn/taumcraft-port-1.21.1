@@ -1,0 +1,830 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thaumcraft:items/thaumonomicon"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "thaumcraft:research/advancements/icon_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "thaumcraft:research/advancements/icon_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "thaumcraft:research/advancements/icon_3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "thaumcraft:research/advancements/icon_4"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "thaumcraft:research/advancements/icon_5"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 6
+      },
+      "model": "thaumcraft:research/advancements/icon_6"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7
+      },
+      "model": "thaumcraft:research/advancements/icon_7"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 8
+      },
+      "model": "thaumcraft:research/advancements/icon_8"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 9
+      },
+      "model": "thaumcraft:research/advancements/icon_9"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10
+      },
+      "model": "thaumcraft:research/advancements/icon_10"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 11
+      },
+      "model": "thaumcraft:research/advancements/icon_11"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 12
+      },
+      "model": "thaumcraft:research/advancements/icon_12"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 13
+      },
+      "model": "thaumcraft:research/advancements/icon_13"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 14
+      },
+      "model": "thaumcraft:research/advancements/icon_14"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 15
+      },
+      "model": "thaumcraft:research/advancements/icon_15"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 16
+      },
+      "model": "thaumcraft:research/advancements/icon_16"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 17
+      },
+      "model": "thaumcraft:research/advancements/icon_17"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 18
+      },
+      "model": "thaumcraft:research/advancements/icon_18"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 19
+      },
+      "model": "thaumcraft:research/advancements/icon_19"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 20
+      },
+      "model": "thaumcraft:research/advancements/icon_20"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 21
+      },
+      "model": "thaumcraft:research/advancements/icon_21"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22
+      },
+      "model": "thaumcraft:research/advancements/icon_22"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 23
+      },
+      "model": "thaumcraft:research/advancements/icon_23"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 24
+      },
+      "model": "thaumcraft:research/advancements/icon_24"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 25
+      },
+      "model": "thaumcraft:research/advancements/icon_25"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 26
+      },
+      "model": "thaumcraft:research/advancements/icon_26"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 27
+      },
+      "model": "thaumcraft:research/advancements/icon_27"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 28
+      },
+      "model": "thaumcraft:research/advancements/icon_28"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 29
+      },
+      "model": "thaumcraft:research/advancements/icon_29"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 30
+      },
+      "model": "thaumcraft:research/advancements/icon_30"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 31
+      },
+      "model": "thaumcraft:research/advancements/icon_31"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 32
+      },
+      "model": "thaumcraft:research/advancements/icon_32"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 33
+      },
+      "model": "thaumcraft:research/advancements/icon_33"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 34
+      },
+      "model": "thaumcraft:research/advancements/icon_34"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 35
+      },
+      "model": "thaumcraft:research/advancements/icon_35"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 36
+      },
+      "model": "thaumcraft:research/advancements/icon_36"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 37
+      },
+      "model": "thaumcraft:research/advancements/icon_37"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 38
+      },
+      "model": "thaumcraft:research/advancements/icon_38"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 39
+      },
+      "model": "thaumcraft:research/advancements/icon_39"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 40
+      },
+      "model": "thaumcraft:research/advancements/icon_40"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 41
+      },
+      "model": "thaumcraft:research/advancements/icon_41"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 42
+      },
+      "model": "thaumcraft:research/advancements/icon_42"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 43
+      },
+      "model": "thaumcraft:research/advancements/icon_43"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 44
+      },
+      "model": "thaumcraft:research/advancements/icon_44"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 45
+      },
+      "model": "thaumcraft:research/advancements/icon_45"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 46
+      },
+      "model": "thaumcraft:research/advancements/icon_46"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 47
+      },
+      "model": "thaumcraft:research/advancements/icon_47"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 48
+      },
+      "model": "thaumcraft:research/advancements/icon_48"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 49
+      },
+      "model": "thaumcraft:research/advancements/icon_49"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 50
+      },
+      "model": "thaumcraft:research/advancements/icon_50"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 51
+      },
+      "model": "thaumcraft:research/advancements/icon_51"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 52
+      },
+      "model": "thaumcraft:research/advancements/icon_52"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 53
+      },
+      "model": "thaumcraft:research/advancements/icon_53"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 54
+      },
+      "model": "thaumcraft:research/advancements/icon_54"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 55
+      },
+      "model": "thaumcraft:research/advancements/icon_55"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 56
+      },
+      "model": "thaumcraft:research/advancements/icon_56"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 57
+      },
+      "model": "thaumcraft:research/advancements/icon_57"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 58
+      },
+      "model": "thaumcraft:research/advancements/icon_58"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 59
+      },
+      "model": "thaumcraft:research/advancements/icon_59"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 60
+      },
+      "model": "thaumcraft:research/advancements/icon_60"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 61
+      },
+      "model": "thaumcraft:research/advancements/icon_61"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 62
+      },
+      "model": "thaumcraft:research/advancements/icon_62"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 63
+      },
+      "model": "thaumcraft:research/advancements/icon_63"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 64
+      },
+      "model": "thaumcraft:research/advancements/icon_64"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 65
+      },
+      "model": "thaumcraft:research/advancements/icon_65"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 66
+      },
+      "model": "thaumcraft:research/advancements/icon_66"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 67
+      },
+      "model": "thaumcraft:research/advancements/icon_67"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 68
+      },
+      "model": "thaumcraft:research/advancements/icon_68"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 69
+      },
+      "model": "thaumcraft:research/advancements/icon_69"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 70
+      },
+      "model": "thaumcraft:research/advancements/icon_70"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 71
+      },
+      "model": "thaumcraft:research/advancements/icon_71"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 72
+      },
+      "model": "thaumcraft:research/advancements/icon_72"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 73
+      },
+      "model": "thaumcraft:research/advancements/icon_73"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 74
+      },
+      "model": "thaumcraft:research/advancements/icon_74"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 75
+      },
+      "model": "thaumcraft:research/advancements/icon_75"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 76
+      },
+      "model": "thaumcraft:research/advancements/icon_76"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 77
+      },
+      "model": "thaumcraft:research/advancements/icon_77"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 78
+      },
+      "model": "thaumcraft:research/advancements/icon_78"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 79
+      },
+      "model": "thaumcraft:research/advancements/icon_79"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 80
+      },
+      "model": "thaumcraft:research/advancements/icon_80"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 81
+      },
+      "model": "thaumcraft:research/advancements/icon_81"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 82
+      },
+      "model": "thaumcraft:research/advancements/icon_82"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 83
+      },
+      "model": "thaumcraft:research/advancements/icon_83"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 84
+      },
+      "model": "thaumcraft:research/advancements/icon_84"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 85
+      },
+      "model": "thaumcraft:research/advancements/icon_85"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 86
+      },
+      "model": "thaumcraft:research/advancements/icon_86"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 87
+      },
+      "model": "thaumcraft:research/advancements/icon_87"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 88
+      },
+      "model": "thaumcraft:research/advancements/icon_88"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 89
+      },
+      "model": "thaumcraft:research/advancements/icon_89"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 90
+      },
+      "model": "thaumcraft:research/advancements/icon_90"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 91
+      },
+      "model": "thaumcraft:research/advancements/icon_91"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 92
+      },
+      "model": "thaumcraft:research/advancements/icon_92"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 93
+      },
+      "model": "thaumcraft:research/advancements/icon_93"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 94
+      },
+      "model": "thaumcraft:research/advancements/icon_94"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 95
+      },
+      "model": "thaumcraft:research/advancements/icon_95"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 96
+      },
+      "model": "thaumcraft:research/advancements/icon_96"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 97
+      },
+      "model": "thaumcraft:research/advancements/icon_97"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 98
+      },
+      "model": "thaumcraft:research/advancements/icon_98"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 99
+      },
+      "model": "thaumcraft:research/advancements/icon_99"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 100
+      },
+      "model": "thaumcraft:research/advancements/icon_100"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 101
+      },
+      "model": "thaumcraft:research/advancements/icon_101"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 102
+      },
+      "model": "thaumcraft:research/advancements/icon_102"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 103
+      },
+      "model": "thaumcraft:research/advancements/icon_103"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 104
+      },
+      "model": "thaumcraft:research/advancements/icon_104"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 105
+      },
+      "model": "thaumcraft:research/advancements/icon_105"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 106
+      },
+      "model": "thaumcraft:research/advancements/icon_106"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 107
+      },
+      "model": "thaumcraft:research/advancements/icon_107"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 108
+      },
+      "model": "thaumcraft:research/advancements/icon_108"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 109
+      },
+      "model": "thaumcraft:research/advancements/icon_109"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 110
+      },
+      "model": "thaumcraft:research/advancements/icon_110"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 111
+      },
+      "model": "thaumcraft:research/advancements/icon_111"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 112
+      },
+      "model": "thaumcraft:research/advancements/icon_112"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 113
+      },
+      "model": "thaumcraft:research/advancements/icon_113"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 114
+      },
+      "model": "thaumcraft:research/advancements/icon_114"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 115
+      },
+      "model": "thaumcraft:research/advancements/icon_115"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 116
+      },
+      "model": "thaumcraft:research/advancements/icon_116"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 117
+      },
+      "model": "thaumcraft:research/advancements/icon_117"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 118
+      },
+      "model": "thaumcraft:research/advancements/icon_118"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 119
+      },
+      "model": "thaumcraft:research/advancements/icon_119"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 120
+      },
+      "model": "thaumcraft:research/advancements/icon_120"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 121
+      },
+      "model": "thaumcraft:research/advancements/icon_121"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 122
+      },
+      "model": "thaumcraft:research/advancements/icon_122"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 123
+      },
+      "model": "thaumcraft:research/advancements/icon_123"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 124
+      },
+      "model": "thaumcraft:research/advancements/icon_124"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 125
+      },
+      "model": "thaumcraft:research/advancements/icon_125"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 126
+      },
+      "model": "thaumcraft:research/advancements/icon_126"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 127
+      },
+      "model": "thaumcraft:research/advancements/icon_127"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 128
+      },
+      "model": "thaumcraft:research/advancements/icon_128"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 129
+      },
+      "model": "thaumcraft:research/advancements/icon_129"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 130
+      },
+      "model": "thaumcraft:research/advancements/icon_130"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 131
+      },
+      "model": "thaumcraft:research/advancements/icon_131"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 132
+      },
+      "model": "thaumcraft:research/advancements/icon_132"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 133
+      },
+      "model": "thaumcraft:research/advancements/icon_133"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 134
+      },
+      "model": "thaumcraft:research/advancements/icon_134"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 135
+      },
+      "model": "thaumcraft:research/advancements/icon_135"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 136
+      },
+      "model": "thaumcraft:research/advancements/icon_136"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 137
+      },
+      "model": "thaumcraft:research/advancements/icon_137"
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "ingredients": {
+    "blockGlass": [
+      "minecraft:glass;1;0",
+      "minecraft:white_stained_glass;1;0",
+      "minecraft:orange_stained_glass;1;0",
+      "minecraft:magenta_stained_glass;1;0",
+      "minecraft:light_blue_stained_glass;1;0",
+      "minecraft:yellow_stained_glass;1;0",
+      "minecraft:lime_stained_glass;1;0",
+      "minecraft:pink_stained_glass;1;0",
+      "minecraft:gray_stained_glass;1;0",
+      "minecraft:light_gray_stained_glass;1;0",
+      "minecraft:cyan_stained_glass;1;0",
+      "minecraft:purple_stained_glass;1;0",
+      "minecraft:blue_stained_glass;1;0",
+      "minecraft:brown_stained_glass;1;0",
+      "minecraft:green_stained_glass;1;0",
+      "minecraft:red_stained_glass;1;0",
+      "minecraft:black_stained_glass;1;0"
+    ],
+    "blockRedstone": [
+      "minecraft:redstone_block;1;0"
+    ],
+    "chest": [
+      "minecraft:chest;1;0",
+      "minecraft:ender_chest;1;0",
+      "minecraft:trapped_chest;1;0"
+    ],
+    "cobblestone": [
+      "minecraft:cobblestone;1;0"
+    ],
+    "dustGlowstone": [
+      "minecraft:glowstone_dust;1;0"
+    ],
+    "dustRedstone": [
+      "minecraft:redstone;1;0"
+    ],
+    "dyeBlack": [
+      "minecraft:ink_sac;1;0"
+    ],
+    "dyeRed": [
+      "minecraft:red_dye;1;0"
+    ],
+    "gemAmber": [
+      "thaumcraft:amber;1;0"
+    ],
+    "gemDiamond": [
+      "minecraft:diamond;1;0"
+    ],
+    "gemQuartz": [
+      "minecraft:quartz;1;0"
+    ],
+    "ingotBrass": [
+      "thaumcraft:ingot;1;2"
+    ],
+    "ingotGold": [
+      "minecraft:gold_ingot;1;0"
+    ],
+    "ingotIron": [
+      "minecraft:iron_ingot;1;0"
+    ],
+    "ingotThaumium": [
+      "thaumcraft:ingot;1;0"
+    ],
+    "ingotVoid": [
+      "thaumcraft:ingot;1;1"
+    ],
+    "leather": [
+      "minecraft:leather;1;0"
+    ],
+    "nitor": [
+      "thaumcraft:nitor_lime;1;0",
+      "thaumcraft:nitor_brown;1;0",
+      "thaumcraft:nitor_white;1;0",
+      "thaumcraft:nitor_pink;1;0",
+      "thaumcraft:nitor_orange;1;0",
+      "thaumcraft:nitor_light_gray;1;0",
+      "thaumcraft:nitor_magenta;1;0",
+      "thaumcraft:nitor_light_blue;1;0",
+      "thaumcraft:nitor_red;1;0",
+      "thaumcraft:nitor_blue;1;0",
+      "thaumcraft:nitor_cyan;1;0",
+      "thaumcraft:nitor_green;1;0",
+      "thaumcraft:nitor_yellow;1;0",
+      "thaumcraft:nitor_black;1;0",
+      "thaumcraft:nitor_gray;1;0",
+      "thaumcraft:nitor_purple;1;0"
+    ],
+    "nuggetBrass": [
+      "thaumcraft:nugget;1;8"
+    ],
+    "nuggetGold": [
+      "minecraft:gold_nugget;1;0"
+    ],
+    "nuggetMeat": [
+      "thaumcraft:chunk;1;0",
+      "thaumcraft:chunk;1;1",
+      "thaumcraft:chunk;1;2",
+      "thaumcraft:chunk;1;3",
+      "thaumcraft:chunk;1;4",
+      "thaumcraft:chunk;1;5"
+    ],
+    "nuggetQuartz": [
+      "thaumcraft:nugget;1;9"
+    ],
+    "nuggetQuicksilver": [
+      "thaumcraft:nugget;1;5"
+    ],
+    "nuggetThaumium": [
+      "thaumcraft:nugget;1;6"
+    ],
+    "nuggetVoid": [
+      "thaumcraft:nugget;1;7"
+    ],
+    "oreCinnabar": [
+      "thaumcraft:ore_cinnabar;1;0"
+    ],
+    "oreCopper": [],
+    "oreGold": [
+      "minecraft:gold_ore;1;0"
+    ],
+    "oreIron": [
+      "minecraft:iron_ore;1;0"
+    ],
+    "oreLead": [],
+    "oreSilver": [],
+    "oreTin": [],
+    "paneGlass": [
+      "minecraft:glass_pane;1;0",
+      "minecraft:white_stained_glass_pane;1;0",
+      "minecraft:orange_stained_glass_pane;1;0",
+      "minecraft:magenta_stained_glass_pane;1;0",
+      "minecraft:light_blue_stained_glass_pane;1;0",
+      "minecraft:yellow_stained_glass_pane;1;0",
+      "minecraft:lime_stained_glass_pane;1;0",
+      "minecraft:pink_stained_glass_pane;1;0",
+      "minecraft:gray_stained_glass_pane;1;0",
+      "minecraft:light_gray_stained_glass_pane;1;0",
+      "minecraft:cyan_stained_glass_pane;1;0",
+      "minecraft:purple_stained_glass_pane;1;0",
+      "minecraft:blue_stained_glass_pane;1;0",
+      "minecraft:brown_stained_glass_pane;1;0",
+      "minecraft:green_stained_glass_pane;1;0",
+      "minecraft:red_stained_glass_pane;1;0",
+      "minecraft:black_stained_glass_pane;1;0"
+    ],
+    "plankWood": [
+      "minecraft:oak_planks;1;0",
+      "minecraft:spruce_planks;1;0",
+      "minecraft:birch_planks;1;0",
+      "minecraft:jungle_planks;1;0",
+      "minecraft:acacia_planks;1;0",
+      "minecraft:dark_oak_planks;1;0",
+      "thaumcraft:plank_greatwood;1;0",
+      "thaumcraft:plank_silverwood;1;0"
+    ],
+    "plateBrass": [
+      "thaumcraft:plate;1;0"
+    ],
+    "plateIron": [
+      "thaumcraft:plate;1;1"
+    ],
+    "plateThaumium": [
+      "thaumcraft:plate;1;2"
+    ],
+    "plateVoid": [
+      "thaumcraft:plate;1;3"
+    ],
+    "slabWood": [
+      "minecraft:oak_slab;1;0",
+      "minecraft:spruce_slab;1;0",
+      "minecraft:birch_slab;1;0",
+      "minecraft:jungle_slab;1;0",
+      "minecraft:acacia_slab;1;0",
+      "minecraft:dark_oak_slab;1;0",
+      "thaumcraft:slab_greatwood;1;0",
+      "thaumcraft:slab_silverwood;1;0"
+    ],
+    "slimeball": [
+      "minecraft:slime_ball;1;0"
+    ],
+    "stickWood": [
+      "minecraft:stick;1;0"
+    ],
+    "stone": [
+      "minecraft:stone;1;0"
+    ],
+    "string": [
+      "minecraft:string;1;0"
+    ],
+    "tallowCandles": [
+      "thaumcraft:candle_lime;1;0",
+      "thaumcraft:candle_brown;1;0",
+      "thaumcraft:candle_white;1;0",
+      "thaumcraft:candle_pink;1;0",
+      "thaumcraft:candle_orange;1;0",
+      "thaumcraft:candle_light_gray;1;0",
+      "thaumcraft:candle_magenta;1;0",
+      "thaumcraft:candle_light_blue;1;0",
+      "thaumcraft:candle_red;1;0",
+      "thaumcraft:candle_blue;1;0",
+      "thaumcraft:candle_cyan;1;0",
+      "thaumcraft:candle_green;1;0",
+      "thaumcraft:candle_yellow;1;0",
+      "thaumcraft:candle_black;1;0",
+      "thaumcraft:candle_gray;1;0",
+      "thaumcraft:candle_purple;1;0"
+    ],
+    "trapdoorWood": [
+      "minecraft:oak_trapdoor;1;0"
+    ],
+    "workbench": [
+      "minecraft:crafting_table;1;0"
+    ]
+  },
+  "raw": {
+    "blockGlass": [
+      "minecraft:glass;1;0",
+      "minecraft:white_stained_glass;1;0"
+    ],
+    "blockRedstone": [
+      "minecraft:redstone_block;1;0"
+    ],
+    "chest": [
+      "minecraft:chest;1;0",
+      "minecraft:ender_chest;1;0",
+      "minecraft:trapped_chest;1;0"
+    ],
+    "cobblestone": [
+      "minecraft:cobblestone;1;0"
+    ],
+    "dustGlowstone": [
+      "minecraft:glowstone_dust;1;0"
+    ],
+    "dustRedstone": [
+      "minecraft:redstone;1;0"
+    ],
+    "dyeBlack": [
+      "minecraft:ink_sac;1;0"
+    ],
+    "dyeRed": [
+      "minecraft:red_dye;1;0"
+    ],
+    "gemAmber": [
+      "thaumcraft:amber;1;0"
+    ],
+    "gemDiamond": [
+      "minecraft:diamond;1;0"
+    ],
+    "gemQuartz": [
+      "minecraft:quartz;1;0"
+    ],
+    "ingotBrass": [
+      "thaumcraft:ingot;1;2"
+    ],
+    "ingotGold": [
+      "minecraft:gold_ingot;1;0"
+    ],
+    "ingotIron": [
+      "minecraft:iron_ingot;1;0"
+    ],
+    "ingotThaumium": [
+      "thaumcraft:ingot;1;0"
+    ],
+    "ingotVoid": [
+      "thaumcraft:ingot;1;1"
+    ],
+    "leather": [
+      "minecraft:leather;1;0"
+    ],
+    "nitor": [
+      "thaumcraft:nitor_lime;1;0",
+      "thaumcraft:nitor_brown;1;0",
+      "thaumcraft:nitor_white;1;0",
+      "thaumcraft:nitor_pink;1;0",
+      "thaumcraft:nitor_orange;1;0",
+      "thaumcraft:nitor_light_gray;1;0",
+      "thaumcraft:nitor_magenta;1;0",
+      "thaumcraft:nitor_light_blue;1;0",
+      "thaumcraft:nitor_red;1;0",
+      "thaumcraft:nitor_blue;1;0",
+      "thaumcraft:nitor_cyan;1;0",
+      "thaumcraft:nitor_green;1;0",
+      "thaumcraft:nitor_yellow;1;0",
+      "thaumcraft:nitor_black;1;0",
+      "thaumcraft:nitor_gray;1;0",
+      "thaumcraft:nitor_purple;1;0"
+    ],
+    "nuggetBrass": [
+      "thaumcraft:nugget;1;8"
+    ],
+    "nuggetGold": [
+      "minecraft:gold_nugget;1;0"
+    ],
+    "nuggetMeat": [
+      "thaumcraft:chunk;1;0",
+      "thaumcraft:chunk;1;1",
+      "thaumcraft:chunk;1;2",
+      "thaumcraft:chunk;1;3",
+      "thaumcraft:chunk;1;4",
+      "thaumcraft:chunk;1;5"
+    ],
+    "nuggetQuartz": [
+      "thaumcraft:nugget;1;9"
+    ],
+    "nuggetQuicksilver": [
+      "thaumcraft:nugget;1;5"
+    ],
+    "nuggetThaumium": [
+      "thaumcraft:nugget;1;6"
+    ],
+    "nuggetVoid": [
+      "thaumcraft:nugget;1;7"
+    ],
+    "oreCinnabar": [
+      "thaumcraft:ore_cinnabar;1;0"
+    ],
+    "oreCopper": [],
+    "oreGold": [
+      "minecraft:gold_ore;1;0"
+    ],
+    "oreIron": [
+      "minecraft:iron_ore;1;0"
+    ],
+    "oreLead": [],
+    "oreSilver": [],
+    "oreTin": [],
+    "paneGlass": [
+      "minecraft:glass_pane;1;0",
+      "minecraft:white_stained_glass_pane;1;0"
+    ],
+    "plankWood": [
+      "minecraft:oak_planks;1;0",
+      "thaumcraft:plank_greatwood;1;0",
+      "thaumcraft:plank_silverwood;1;0"
+    ],
+    "plateBrass": [
+      "thaumcraft:plate;1;0"
+    ],
+    "plateIron": [
+      "thaumcraft:plate;1;1"
+    ],
+    "plateThaumium": [
+      "thaumcraft:plate;1;2"
+    ],
+    "plateVoid": [
+      "thaumcraft:plate;1;3"
+    ],
+    "slabWood": [
+      "minecraft:oak_slab;1;0",
+      "thaumcraft:slab_greatwood;1;0",
+      "thaumcraft:slab_silverwood;1;0"
+    ],
+    "slimeball": [
+      "minecraft:slime_ball;1;0"
+    ],
+    "stickWood": [
+      "minecraft:stick;1;0"
+    ],
+    "stone": [
+      "minecraft:stone;1;0"
+    ],
+    "string": [
+      "minecraft:string;1;0"
+    ],
+    "tallowCandles": [
+      "thaumcraft:candle_lime;1;0",
+      "thaumcraft:candle_brown;1;0",
+      "thaumcraft:candle_white;1;0",
+      "thaumcraft:candle_pink;1;0",
+      "thaumcraft:candle_orange;1;0",
+      "thaumcraft:candle_light_gray;1;0",
+      "thaumcraft:candle_magenta;1;0",
+      "thaumcraft:candle_light_blue;1;0",
+      "thaumcraft:candle_red;1;0",
+      "thaumcraft:candle_blue;1;0",
+      "thaumcraft:candle_cyan;1;0",
+      "thaumcraft:candle_green;1;0",
+      "thaumcraft:candle_yellow;1;0",
+      "thaumcraft:candle_black;1;0",
+      "thaumcraft:candle_gray;1;0",
+      "thaumcraft:candle_purple;1;0"
+    ],
+    "trapdoorWood": [
+      "minecraft:oak_trapdoor;1;0"
+    ],
+    "workbench": [
+      "minecraft:crafting_table;1;0"
+    ]
+  }
+}

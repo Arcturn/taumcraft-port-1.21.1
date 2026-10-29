@@ -1,0 +1,24 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "UNLOCKAUROMANCY@2",
+  "vis": 50,
+  "crystals": {
+    "aer": 1,
+    "aqua": 1
+  },
+  "shapeless": true,
+  "pattern": [
+    "PQ"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:plates/iron"
+    },
+    "Q": {
+      "tag": "c:gems/quartz"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:vis_resonator"
+  }
+}

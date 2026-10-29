@@ -1,0 +1,43 @@
+{
+  "scope": "Greatwood obstruction validation only; no change to spawn rolls, overall terrain, silverwood or big magic tree validation",
+  "original_source": "thaumcraft/common/world/objects/WorldGenGreatwoodTrees.java",
+  "original_source_sha256": "95a3cc7689becdc20896c4683502bebcbb6479549e0ae38d27847a944d56e08f",
+  "evidence": [
+    {
+      "lines": "260-292",
+      "method": "checkBlockLine",
+      "excerpt": "        for (var14 = 0; var14 != var15; var14 += var8) {\n            var13[var5] = par1ArrayOfInteger[var5] + var14;\n            var13[var6] = MathHelper.func_76128_c((double)((double)par1ArrayOfInteger[var6] + (double)var14 * var9));\n            var13[var7] = MathHelper.func_76128_c((double)((double)par1ArrayOfInteger[var7] + (double)var14 * var11));\n            try {\n                Block var16 = this.world.func_180495_p(new BlockPos(var13[0], var13[1], var13[2])).func_177230_c();\n                if (var16 == Blocks.field_150350_a || var16 == BlocksTC.leafGreatwood) continue;\n                break;\n            }\n            catch (Exception exception) {\n                // empty catch block\n            }\n        }\n        return var14 == var15 ? -1 : Math.abs(var14);",
+      "behavior": "Only vanilla air or TC greatwood leaves pass the line check."
+    },
+    {
+      "lines": "295-313",
+      "method": "validTreeLocation",
+      "excerpt": "            int var4 = this.checkBlockLine(var1, var2);\n            if (var4 == -1) {\n                return true;\n            }\n            if (var4 < 6) {\n                return false;\n            }\n            this.heightLimit = var4;\n            return true;",
+      "behavior": "An obstacle at distance <6 fails before writes; an obstacle at distance >=6 shortens heightLimit."
+    }
+  ],
+  "before": "Shared replaceable() let greatwood validate through all leaves, replaceable plants and saplings.",
+  "after": "Greatwood opts into strictGreatwoodLines. Both trunk and branch checkLine use air/its own leaves. Write-time replacement and other tree classes are unchanged.",
+  "validation": {
+    "status": "not_run_yet",
+    "fixture_entry_point": "runData / TreeFixtures.validate",
+    "previous_fixture_count": 66,
+    "new_fixture_count": 90,
+    "new_cases": {
+      "low_foreign_leaves_or_grass_each_trunk_column": 12,
+      "own_greatwood_leaves_each_trunk_column": 4,
+      "high_foreign_leaves_shorten_tree": 4,
+      "silverwood_and_big_magic_foreign_leaf_controls": 4
+    }
+  },
+  "changed_files": {
+    "src/main/java/thaumcraft/port/world/MagicTrees.java": {
+      "sha256": "81e070ba618ea66ef97d131596b4aa53b5ec8c7834da437ab3c6500afb2cc3d7",
+      "bytes": 10245
+    },
+    "src/main/java/thaumcraft/port/data/TreeFixtures.java": {
+      "sha256": "6331a907f9cdaf8968a7b0de12d3f87612813bd727684457e61fc6f21c9f99a1",
+      "bytes": 7412
+    }
+  }
+}

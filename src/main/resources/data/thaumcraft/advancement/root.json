@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "thaumcraft:research_display_root"
+    },
+    "title": {
+      "text": "Thaumcraft"
+    },
+    "description": {
+      "translate": "thaumcraft.advancement.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "thaumcraft:textures/blocks/arcane_stone_1.png"
+  },
+  "criteria": {
+    "completed": {
+      "trigger": "thaumcraft:research",
+      "conditions": {
+        "research": "!gotthaumonomicon"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "completed"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

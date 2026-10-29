@@ -1,0 +1,17 @@
+{
+  "source": "Minecraft 1.12.2 + Forge 14.23.5.2860 + Thaumcraft 6.1.BETA26 + Baubles 1.5.2",
+  "expanded_sha256": "c10b40c02d65b27327c9bcc949633ebec8ea83bd3dc0d34330692611be7e11a9",
+  "raw_sha256": "9fa37b60aa2a141fb9d0177b38c922954f8a203729c907a4da67f50e72bc00ec",
+  "used_names": 46,
+  "expanded_variants": 125,
+  "empty_original_names": [
+    "oreCopper",
+    "oreLead",
+    "oreSilver",
+    "oreTin"
+  ],
+  "order_note": "The captured original runtime order is preserved. TC6 HashMap iteration can change between processes; the variant set is authoritative.",
+  "synthetic_names": {
+    "tallowCandles": "ConfigRecipes.ingredientsFromBlocks(BlocksTC.candles.values()), original EnumDyeColor HashMap order"
+  }
+}

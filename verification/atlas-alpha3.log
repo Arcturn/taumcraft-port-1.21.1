@@ -1,0 +1,4 @@
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+Decoded atlas sprites: 1715
+Thaumcraft sprites loaded: 31; required by models/MTL: 31
+PASS: all referenced Thaumcraft sprites discovered and decoded by Minecraft 1.21.1

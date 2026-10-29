@@ -1,0 +1,335 @@
+{
+  "assets": [
+    {
+      "source": "assets/thaumcraft/research/alchemy.json",
+      "target": "assets/thaumcraft/research/alchemy.json",
+      "sha256": "195b04d9dfa811c765cdcf9b17513bd3358ff942a3cd04df06173fbc876ba5d4"
+    },
+    {
+      "source": "assets/thaumcraft/research/artifice.json",
+      "target": "assets/thaumcraft/research/artifice.json",
+      "sha256": "615ac0c944aa19bf6bb3bf5f02158eb99577aa979bf0767dfd3aef0badc7834c"
+    },
+    {
+      "source": "assets/thaumcraft/research/auromancy.json",
+      "target": "assets/thaumcraft/research/auromancy.json",
+      "sha256": "654e16833b2b8715af74adf3a26b5bc68d874f559c38a56b170628f8a75da604"
+    },
+    {
+      "source": "assets/thaumcraft/research/basics.json",
+      "target": "assets/thaumcraft/research/basics.json",
+      "sha256": "22addef24e9b0d0e0f4b2570d2da2e4ee9393876a341f592cfc2f32586a9d1aa"
+    },
+    {
+      "source": "assets/thaumcraft/research/eldritch.json",
+      "target": "assets/thaumcraft/research/eldritch.json",
+      "sha256": "122f8a547debd0559512d7c0e28a74a087f31a75f49119e9738e56f335fee83e"
+    },
+    {
+      "source": "assets/thaumcraft/research/golemancy.json",
+      "target": "assets/thaumcraft/research/golemancy.json",
+      "sha256": "a574bee623f4597c6bf37de9e020413e1fb2b5f5bdba8c68fcb2cfa77f101268"
+    },
+    {
+      "source": "assets/thaumcraft/research/infusion.json",
+      "target": "assets/thaumcraft/research/infusion.json",
+      "sha256": "54d76698e0f842396e992fd9dec26a18b74f593cf765bcf6eb76211660e85913"
+    },
+    {
+      "source": "assets/thaumcraft/research/scans.json",
+      "target": "assets/thaumcraft/research/scans.json",
+      "sha256": "36bcb8c263effada0a9b746adf09b331f50dc818e93c8c7f7a7d5a29be5c34b5"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_researchbook.png",
+      "target": "assets/thaumcraft/textures/gui/gui_researchbook.png",
+      "sha256": "4db8e4fad6eaf1fdf486374b9402ae26fed402a920aa939c9746f60545d5f4c8"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_researchbook_overlay.png",
+      "target": "assets/thaumcraft/textures/gui/gui_researchbook_overlay.png",
+      "sha256": "43abf7ae4d76f9932f6a1d030fb716abb3028a660a0b847d0bf2c32c692ac70f"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_research_back_1.jpg",
+      "target": "assets/thaumcraft/textures/gui/gui_research_back_1.jpg",
+      "sha256": "4cabe672801b0713bcbb3e0eb839c89e9ec5dd09f5debf0266ad337ca2a0f573"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_research_back_2.jpg",
+      "target": "assets/thaumcraft/textures/gui/gui_research_back_2.jpg",
+      "sha256": "64fa59e7020c156b76e2964b1078a1bc390b0435bf1a8034f718ff91d82d248d"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_research_back_3.jpg",
+      "target": "assets/thaumcraft/textures/gui/gui_research_back_3.jpg",
+      "sha256": "dc824b0275b3dfb7c3a651c52969ff87487ca4d14dbf7b56e7e37c7385041c61"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_research_back_4.jpg",
+      "target": "assets/thaumcraft/textures/gui/gui_research_back_4.jpg",
+      "sha256": "7eadaa7fbcaae70cdf6bff7c8f847c37c219501030f6556c918034e6779c1857"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_research_back_5.jpg",
+      "target": "assets/thaumcraft/textures/gui/gui_research_back_5.jpg",
+      "sha256": "003d295e2a817e55755e2bed80c08b34fa8c6afb18a06d9f57213ce96c89cdfd"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_research_back_6.jpg",
+      "target": "assets/thaumcraft/textures/gui/gui_research_back_6.jpg",
+      "sha256": "e246194929e71e708c36e1938b2d6a2cf8d8229d749a944f9f98156ed5c479a2"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_research_back_7.jpg",
+      "target": "assets/thaumcraft/textures/gui/gui_research_back_7.jpg",
+      "sha256": "c5f7c4b4403b125598411e48d4a6bce25d5e651f24e4e427336416b9483cc054"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_research_back_over.png",
+      "target": "assets/thaumcraft/textures/gui/gui_research_back_over.png",
+      "sha256": "41444751d6cc4367879583fc844c1aad6bca88689c8796167e5e6219f6734046"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_research_browser.png",
+      "target": "assets/thaumcraft/textures/gui/gui_research_browser.png",
+      "sha256": "d79a9f11241943c1534d211fd550ade2f12951e8e98130a9eea3fc9d8abbdce5"
+    },
+    {
+      "source": "assets/thaumcraft/textures/gui/gui_research_table.png",
+      "target": "assets/thaumcraft/textures/gui/gui_research_table.png",
+      "sha256": "aa51f1474d7cb5f8dc774ff150c5c067b4ad0535f8fb120b44728be4120bb6ad"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/cat_alchemy.png",
+      "target": "assets/thaumcraft/textures/research/cat_alchemy.png",
+      "sha256": "625f45f0cd98fbe4bda6067ef8cc7ea838bebda596666cba87a79536571aef96"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/cat_artifice.png",
+      "target": "assets/thaumcraft/textures/research/cat_artifice.png",
+      "sha256": "d92692a32a16957e598a4aa67572c2eb5375aaf739443ff6557931ef9dafe212"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/cat_auromancy.png",
+      "target": "assets/thaumcraft/textures/research/cat_auromancy.png",
+      "sha256": "3e693fcc37c4f24765b56891585663bc4a60dad7aa8666fe2e8e1e9dba5746de"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/cat_eldritch.png",
+      "target": "assets/thaumcraft/textures/research/cat_eldritch.png",
+      "sha256": "c4237a5dfd3843d224ea18f1c655e42064f881d346da248fd97a5315c37115f7"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/cat_golemancy.png",
+      "target": "assets/thaumcraft/textures/research/cat_golemancy.png",
+      "sha256": "1f5c4817b0b58eb056d3c20dceef9960902395e53bd3efefe98da4a1d0f23ad8"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/cat_infusion.png",
+      "target": "assets/thaumcraft/textures/research/cat_infusion.png",
+      "sha256": "fbb4780b2a8de98547d0d23764effdfa702180aeb355a46975b3ab85a4d975c4"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/golem_logistics.png",
+      "target": "assets/thaumcraft/textures/research/golem_logistics.png",
+      "sha256": "6e24f1da7365c4a4c65b33f21479abaf5518c019a14fdfc140f5b1286782df31"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/knowledge_observation.png",
+      "target": "assets/thaumcraft/textures/research/knowledge_observation.png",
+      "sha256": "4e0734be272fb608edc682963208d16303bafa8ec14ae81b56e55b3a09fc2586"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/knowledge_theory.png",
+      "target": "assets/thaumcraft/textures/research/knowledge_theory.png",
+      "sha256": "052e923eba3e873bccafc7222012dc228df267dc7064fb1530f52d9de51d470a"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/quill.png",
+      "target": "assets/thaumcraft/textures/research/quill.png",
+      "sha256": "8563e501f0f12ff839f8ba8e10c101b0cacf4b2d640efb69ff4e93fa520e83a5"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/rd_chest.png",
+      "target": "assets/thaumcraft/textures/research/rd_chest.png",
+      "sha256": "28b01518dc40854c7ce5df3ab893247c41b556ae41e2e412e485fc9e8957e7ae"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/rd_flask.png",
+      "target": "assets/thaumcraft/textures/research/rd_flask.png",
+      "sha256": "3794918324da985e3b41b3d50a7e76dbc9a7508375dff4001a97b96a4d20f260"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/rd_map.png",
+      "target": "assets/thaumcraft/textures/research/rd_map.png",
+      "sha256": "525646f0c537fc4cd3b69abd192d4261a3812392c4a6dbd56f0c370553f24957"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/research1.png",
+      "target": "assets/thaumcraft/textures/research/research1.png",
+      "sha256": "45a66c061c2e05036f0c90a0ec2279564143a2dfffa2fe6b75b38cd3788ab8b8"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/research3.png",
+      "target": "assets/thaumcraft/textures/research/research3.png",
+      "sha256": "f30f78c946876378eafd6643236eacdd0e84d3424efbf49975e066c31580f2cb"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/research4.png",
+      "target": "assets/thaumcraft/textures/research/research4.png",
+      "sha256": "b4145284b614e1169b22fabb1a06fe074d8e2a3a69b61ac19923ad99312cb816"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/research5.png",
+      "target": "assets/thaumcraft/textures/research/research5.png",
+      "sha256": "cc17ff31e1ce25c65f7d77112357b65a991eaa78b677ef0cb6dcaa8865806d5f"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_angryzombie.png",
+      "target": "assets/thaumcraft/textures/research/r_angryzombie.png",
+      "sha256": "894bc5fd61d040474fa67732b49bbaa9dae0ce0a77d3d0f47c2d2ad4dd400cbe"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_celestial.png",
+      "target": "assets/thaumcraft/textures/research/r_celestial.png",
+      "sha256": "d964cb9d6ad17481070258f7386968297ddf5df4bee4f563b227149927d2762b"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_crab.png",
+      "target": "assets/thaumcraft/textures/research/r_crab.png",
+      "sha256": "265144a4a195123074192e298178db3ea0ac9215e923377043ec18c141f42576"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_cultist.png",
+      "target": "assets/thaumcraft/textures/research/r_cultist.png",
+      "sha256": "d35fd278a1bedc3faeeded98c751c38691b70cb5117bd009b55e4d53be401b50"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_eldritchguardian.png",
+      "target": "assets/thaumcraft/textures/research/r_eldritchguardian.png",
+      "sha256": "759ae76c0cf6cfd103e02adb859b89f69d7772e076d78a8446944d2bec8c1d60"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_eldritchmajor.png",
+      "target": "assets/thaumcraft/textures/research/r_eldritchmajor.png",
+      "sha256": "77b1ee3da7c8f1f529c2256022f5b3b7a179997e8d5b9af7305ecd616c8a6722"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_eldritchminor.png",
+      "target": "assets/thaumcraft/textures/research/r_eldritchminor.png",
+      "sha256": "d9e700223a4eb573df7242fd434a3b1be19faf75b6d4326a03c87e694160108b"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_enchant.png",
+      "target": "assets/thaumcraft/textures/research/r_enchant.png",
+      "sha256": "dc07002abee26c44e7de4385de034fdd5c99fa3fc76b062d04473dc1240bf329"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_firebat.png",
+      "target": "assets/thaumcraft/textures/research/r_firebat.png",
+      "sha256": "5aa61657ccc451926a568eb15df0e7f7b78099d447dbb2b7c43f84104fc88d55"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_flux.png",
+      "target": "assets/thaumcraft/textures/research/r_flux.png",
+      "sha256": "d8ccda53b2ad730b8603876da50a625ad44ea042c8468fe1c35994038232ebd9"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_fluxrift.png",
+      "target": "assets/thaumcraft/textures/research/r_fluxrift.png",
+      "sha256": "2439ae053d6f4a95339ccaa165cf8853d6282f9cfe2734e34e1605f17eb0f64e"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_infernalfurnace.png",
+      "target": "assets/thaumcraft/textures/research/r_infernalfurnace.png",
+      "sha256": "d9483042f666a9f62f284a9d8b8611cc4a7dc26f732864ffaa08d74e60a68b79"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_inf_enchant.png",
+      "target": "assets/thaumcraft/textures/research/r_inf_enchant.png",
+      "sha256": "65b929fd5268f3ef55fd4ba8a2a1a8b152ab47df7f39ded9869608e1dffd0a88"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_inf_heart.png",
+      "target": "assets/thaumcraft/textures/research/r_inf_heart.png",
+      "sha256": "32d0e4e083e4a8eb3cea0b12a1f9c98b5f4ae694022f0e20d1556b416b772d25"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_mask0.png",
+      "target": "assets/thaumcraft/textures/research/r_mask0.png",
+      "sha256": "0b67fe39c41822598f01c89098da5852fc931c711d22fd5347defa3dec24c8a1"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_mask1.png",
+      "target": "assets/thaumcraft/textures/research/r_mask1.png",
+      "sha256": "e9c3f14e32cdd298523f5dda4baff7785a0386be62c62b577f186e5f12511cf0"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_mask2.png",
+      "target": "assets/thaumcraft/textures/research/r_mask2.png",
+      "sha256": "c1a0523e3666b779251d9e4dbf6d4e98c9c56550b84fe1fa7d22b2166471f20e"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_nodes.png",
+      "target": "assets/thaumcraft/textures/research/r_nodes.png",
+      "sha256": "1a0e073ab47f5d74480690f1097e70d7354c25f3a3c81320faba989111d8f0a5"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_nodes_2.png",
+      "target": "assets/thaumcraft/textures/research/r_nodes_2.png",
+      "sha256": "8f1b937a19f9c2f8c573bb1bfc5cc2dfabb808d1b5a546a657975102c0517e2b"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_outer.png",
+      "target": "assets/thaumcraft/textures/research/r_outer.png",
+      "sha256": "293fc96e7645539f6606b687f06a33f53cbd3204025301ee68f1631dde4e5d02"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_pech.png",
+      "target": "assets/thaumcraft/textures/research/r_pech.png",
+      "sha256": "bfbcd20d267d9638f35b4cc11a040d8c7d08a7005d8eecbf9d1a992eaa9f71f5"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_runicupg.png",
+      "target": "assets/thaumcraft/textures/research/r_runicupg.png",
+      "sha256": "582ce0c20de107955651b53f5a251340b416aecef57fed91f7c5872c2631af5c"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_taintacle.png",
+      "target": "assets/thaumcraft/textures/research/r_taintacle.png",
+      "sha256": "897b9ec7b09c98b0a02101660bc7b29712b1b606e405efd4fe29c1718b77ecb1"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_taintcrawler.png",
+      "target": "assets/thaumcraft/textures/research/r_taintcrawler.png",
+      "sha256": "b91d9798a6712087a94d42198ee0c76ee16f6e32014fcd1e09e8505bd6b0410b"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_taintseed.png",
+      "target": "assets/thaumcraft/textures/research/r_taintseed.png",
+      "sha256": "2dffb8753b96fc713a6476854f431c0bbeb840104eefdb8bfe9aae0a6079397f"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_taintswarm.png",
+      "target": "assets/thaumcraft/textures/research/r_taintswarm.png",
+      "sha256": "a8529ab5c1a70c5c62213f56fd6e36d6bee7ae5bb7362fbfc22dfe39ec63049b"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_thaumslime.png",
+      "target": "assets/thaumcraft/textures/research/r_thaumslime.png",
+      "sha256": "1a9608ccbecfe4e3b987b13438b5c250a37f1bdc462d9b13dadb856738133a40"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_warp.png",
+      "target": "assets/thaumcraft/textures/research/r_warp.png",
+      "sha256": "e1c49cddffaff18d62ef06ce3052c40435f47c9de161cedfb62d4975d313bb42"
+    },
+    {
+      "source": "assets/thaumcraft/textures/research/r_wisp.png",
+      "target": "assets/thaumcraft/textures/research/r_wisp.png",
+      "sha256": "19e71624b636d2a64dc8e8c6e951b759939e76d6b1131b129897263e789df657"
+    }
+  ],
+  "source_sha256": "9425f8643581b27ff8845b087c8bc6fc10425a32942f1a3f0e265ce6b38f7b5f"
+}

@@ -1,0 +1,26 @@
+[08:50:13] [main/INFO]: [STDOUT]: SKIP 60 thaumcraft:research/advancements/icon_60
+[08:50:13] [main/INFO]: [STDOUT]: SKIP book:arcane_workbench_charger_0 thaumcraft:research/icons/arcane_workbench_charger_0
+[08:50:13] [main/INFO]: [STDOUT]: SKIP book:golem_builder_0 thaumcraft:research/icons/golem_builder_0
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_black_0 {"model":"thaumcraft:research/icons/nitor_black_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_blue_0 {"model":"thaumcraft:research/icons/nitor_blue_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_brown_0 {"model":"thaumcraft:research/icons/nitor_brown_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_cyan_0 {"model":"thaumcraft:research/icons/nitor_cyan_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_gray_0 {"model":"thaumcraft:research/icons/nitor_gray_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_green_0 {"model":"thaumcraft:research/icons/nitor_green_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_light_blue_0 {"model":"thaumcraft:research/icons/nitor_light_blue_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_lime_0 {"model":"thaumcraft:research/icons/nitor_lime_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_magenta_0 {"model":"thaumcraft:research/icons/nitor_magenta_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_orange_0 {"model":"thaumcraft:research/icons/nitor_orange_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_pink_0 {"model":"thaumcraft:research/icons/nitor_pink_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_purple_0 {"model":"thaumcraft:research/icons/nitor_purple_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_red_0 {"model":"thaumcraft:research/icons/nitor_red_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_silver_0 {"model":"thaumcraft:research/icons/nitor_silver_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_white_0 {"model":"thaumcraft:research/icons/nitor_white_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: FAIL book:nitor_yellow_0 {"model":"thaumcraft:research/icons/nitor_yellow_0"} java.lang.AssertionError: Missing-texture quad
+[08:50:13] [main/INFO]: [STDOUT]: SKIP book:thaumatorium_0 thaumcraft:research/icons/thaumatorium_0
+[08:50:13] [main/INFO]: [STDOUT]: SKIP book:thaumometer_0 thaumcraft:research/icons/thaumometer_0
+[08:50:13] [main/INFO]: [STDOUT]: SKIP direct:thaumatorium thaumcraft:item/thaumatorium
+[08:50:13] [main/INFO]: [STDOUT]: SKIP direct:crystalfarmer thaumcraft:item/crystal_aer
+[08:50:13] [main/INFO]: [STDOUT]: Baked 420; failed 16; custom skipped 7
+Exception in thread "main" [08:50:13] [main/INFO]: [STDERR]: java.lang.AssertionError: 16 icons failed
+[08:50:13] [main/INFO]: [STDERR]: 	at IconBakeProbe.main(IconBakeProbe.java:80)

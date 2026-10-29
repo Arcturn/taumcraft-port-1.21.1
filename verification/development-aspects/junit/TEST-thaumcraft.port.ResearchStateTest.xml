@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.ResearchStateTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T16:07:41.385Z" hostname="bb565e390ffa" time="0.006">
+  <properties/>
+  <testcase name="loadedProgressSurvivesAndFiltersUnknownAspects()" classname="thaumcraft.port.ResearchStateTest" time="0.001"/>
+  <testcase name="unknownObjectDoesNotPermanentlyConsumeItsScan()" classname="thaumcraft.port.ResearchStateTest" time="0.001"/>
+  <testcase name="duplicateGenericScanCanRevealAnAspectButCannotRepeatItsDiscoveryReward()" classname="thaumcraft.port.ResearchStateTest" time="0.001"/>
+  <testcase name="exposedCollectionsCannotModifyAuthoritativeProgress()" classname="thaumcraft.port.ResearchStateTest" time="0.001"/>
+  <testcase name="legacyVariantScansMigrateWithoutRegrantingKnowledge()" classname="thaumcraft.port.ResearchStateTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

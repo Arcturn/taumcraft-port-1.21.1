@@ -1,0 +1,42 @@
+{
+  "gui_light": "front",
+  "textures": {
+    "particle": "thaumcraft:foci/split_trajectory",
+    "symbol": "thaumcraft:foci/split_trajectory"
+  },
+  "elements": [
+    {
+      "from": [
+        -4.0,
+        -4.0,
+        8.5
+      ],
+      "to": [
+        20.0,
+        20.0,
+        8.5
+      ],
+      "shade": false,
+      "faces": {
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#symbol"
+        },
+        "north": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#symbol"
+        }
+      }
+    }
+  ]
+}

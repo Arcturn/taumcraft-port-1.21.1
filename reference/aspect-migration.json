@@ -1,0 +1,1121 @@
+[
+  {
+    "legacy": "Zombie",
+    "target": "entity:minecraft:zombie",
+    "aspects": {
+      "exanimis": 20,
+      "humanus": 10,
+      "terra": 5
+    }
+  },
+  {
+    "legacy": "Husk",
+    "target": "entity:minecraft:husk",
+    "aspects": {
+      "exanimis": 20,
+      "humanus": 10,
+      "ignis": 5
+    }
+  },
+  {
+    "legacy": "Giant",
+    "target": "entity:minecraft:giant",
+    "aspects": {
+      "exanimis": 25,
+      "humanus": 15,
+      "terra": 10
+    }
+  },
+  {
+    "legacy": "Skeleton",
+    "target": "entity:minecraft:skeleton",
+    "aspects": {
+      "exanimis": 20,
+      "humanus": 5,
+      "terra": 5
+    }
+  },
+  {
+    "legacy": "WitherSkeleton",
+    "target": "entity:minecraft:wither_skeleton",
+    "aspects": {
+      "exanimis": 25,
+      "humanus": 5,
+      "perditio": 10
+    }
+  },
+  {
+    "legacy": "Creeper",
+    "target": "entity:minecraft:creeper",
+    "aspects": {
+      "herba": 15,
+      "ignis": 15
+    }
+  },
+  {
+    "legacy": "Horse",
+    "target": "entity:minecraft:horse",
+    "aspects": {
+      "bestia": 15,
+      "terra": 5,
+      "aer": 5
+    }
+  },
+  {
+    "legacy": "Donkey",
+    "target": "entity:minecraft:donkey",
+    "aspects": {
+      "bestia": 15,
+      "terra": 5,
+      "aer": 5
+    }
+  },
+  {
+    "legacy": "Mule",
+    "target": "entity:minecraft:mule",
+    "aspects": {
+      "bestia": 15,
+      "terra": 5,
+      "aer": 5
+    }
+  },
+  {
+    "legacy": "SkeletonHorse",
+    "target": "entity:minecraft:skeleton_horse",
+    "aspects": {
+      "bestia": 5,
+      "exanimis": 10,
+      "terra": 5,
+      "aer": 5
+    }
+  },
+  {
+    "legacy": "ZombieHorse",
+    "target": "entity:minecraft:zombie_horse",
+    "aspects": {
+      "bestia": 10,
+      "exanimis": 5,
+      "terra": 5,
+      "aer": 5
+    }
+  },
+  {
+    "legacy": "Pig",
+    "target": "entity:minecraft:pig",
+    "aspects": {
+      "bestia": 10,
+      "terra": 10,
+      "desiderium": 5
+    }
+  },
+  {
+    "legacy": "XPOrb",
+    "target": "entity:minecraft:experience_orb",
+    "aspects": {
+      "cognitio": 10
+    }
+  },
+  {
+    "legacy": "Sheep",
+    "target": "entity:minecraft:sheep",
+    "aspects": {
+      "bestia": 10,
+      "terra": 10
+    }
+  },
+  {
+    "legacy": "Cow",
+    "target": "entity:minecraft:cow",
+    "aspects": {
+      "bestia": 15,
+      "terra": 15
+    }
+  },
+  {
+    "legacy": "MushroomCow",
+    "target": "entity:minecraft:mooshroom",
+    "aspects": {
+      "bestia": 15,
+      "herba": 15,
+      "terra": 15
+    }
+  },
+  {
+    "legacy": "SnowMan",
+    "target": "entity:minecraft:snow_golem",
+    "aspects": {
+      "gelum": 10,
+      "humanus": 5,
+      "machina": 5,
+      "praecantatio": 5
+    }
+  },
+  {
+    "legacy": "Ozelot",
+    "target": "entity:minecraft:ocelot",
+    "aspects": {
+      "bestia": 10,
+      "perditio": 10
+    }
+  },
+  {
+    "legacy": "Chicken",
+    "target": "entity:minecraft:chicken",
+    "aspects": {
+      "bestia": 5,
+      "volatus": 5,
+      "aer": 5
+    }
+  },
+  {
+    "legacy": "Squid",
+    "target": "entity:minecraft:squid",
+    "aspects": {
+      "bestia": 5,
+      "aqua": 10
+    }
+  },
+  {
+    "legacy": "Wolf",
+    "target": "entity:minecraft:wolf",
+    "aspects": {
+      "bestia": 15,
+      "terra": 10,
+      "aversio": 5
+    }
+  },
+  {
+    "legacy": "Bat",
+    "target": "entity:minecraft:bat",
+    "aspects": {
+      "bestia": 5,
+      "volatus": 5,
+      "tenebrae": 5
+    }
+  },
+  {
+    "legacy": "Spider",
+    "target": "entity:minecraft:spider",
+    "aspects": {
+      "bestia": 10,
+      "perditio": 10,
+      "vinculum": 10
+    }
+  },
+  {
+    "legacy": "Slime",
+    "target": "entity:minecraft:slime",
+    "aspects": {
+      "victus": 10,
+      "aqua": 10,
+      "alkimia": 5
+    }
+  },
+  {
+    "legacy": "Ghast",
+    "target": "entity:minecraft:ghast",
+    "aspects": {
+      "exanimis": 15,
+      "ignis": 15
+    }
+  },
+  {
+    "legacy": "PigZombie",
+    "target": "entity:minecraft:zombified_piglin",
+    "aspects": {
+      "exanimis": 15,
+      "ignis": 15,
+      "bestia": 10
+    }
+  },
+  {
+    "legacy": "Enderman",
+    "target": "entity:minecraft:enderman",
+    "aspects": {
+      "alienis": 10,
+      "motus": 15,
+      "desiderium": 5
+    }
+  },
+  {
+    "legacy": "CaveSpider",
+    "target": "entity:minecraft:cave_spider",
+    "aspects": {
+      "bestia": 5,
+      "mortuus": 10,
+      "vinculum": 10
+    }
+  },
+  {
+    "legacy": "Silverfish",
+    "target": "entity:minecraft:silverfish",
+    "aspects": {
+      "bestia": 5,
+      "terra": 10
+    }
+  },
+  {
+    "legacy": "Blaze",
+    "target": "entity:minecraft:blaze",
+    "aspects": {
+      "alienis": 5,
+      "ignis": 15,
+      "volatus": 5
+    }
+  },
+  {
+    "legacy": "LavaSlime",
+    "target": "entity:minecraft:magma_cube",
+    "aspects": {
+      "aqua": 5,
+      "ignis": 10,
+      "alkimia": 5
+    }
+  },
+  {
+    "legacy": "EnderDragon",
+    "target": "entity:minecraft:ender_dragon",
+    "aspects": {
+      "alienis": 50,
+      "bestia": 30,
+      "perditio": 50,
+      "volatus": 10
+    }
+  },
+  {
+    "legacy": "WitherBoss",
+    "target": "entity:minecraft:wither",
+    "aspects": {
+      "exanimis": 50,
+      "perditio": 25,
+      "ignis": 25
+    }
+  },
+  {
+    "legacy": "Witch",
+    "target": "entity:minecraft:witch",
+    "aspects": {
+      "humanus": 15,
+      "praecantatio": 5,
+      "alkimia": 10
+    }
+  },
+  {
+    "legacy": "Villager",
+    "target": "entity:minecraft:villager",
+    "aspects": {
+      "humanus": 15
+    }
+  },
+  {
+    "legacy": "VillagerGolem",
+    "target": "entity:minecraft:iron_golem",
+    "aspects": {
+      "metallum": 15,
+      "humanus": 5,
+      "machina": 5,
+      "praecantatio": 5
+    }
+  },
+  {
+    "legacy": "Guardian",
+    "target": "entity:minecraft:guardian",
+    "aspects": {
+      "bestia": 10,
+      "alienis": 10,
+      "aqua": 10
+    }
+  },
+  {
+    "legacy": "Rabbit",
+    "target": "entity:minecraft:rabbit",
+    "aspects": {
+      "bestia": 5,
+      "terra": 5,
+      "motus": 5
+    }
+  },
+  {
+    "legacy": "Endermite",
+    "target": "entity:minecraft:endermite",
+    "aspects": {
+      "bestia": 5,
+      "alienis": 5,
+      "motus": 5
+    }
+  },
+  {
+    "legacy": "PolarBear",
+    "target": "entity:minecraft:polar_bear",
+    "aspects": {
+      "bestia": 15,
+      "gelum": 10
+    }
+  },
+  {
+    "legacy": "Shulker",
+    "target": "entity:minecraft:shulker",
+    "aspects": {
+      "alienis": 10,
+      "vinculum": 5,
+      "volatus": 5,
+      "praemunio": 5
+    }
+  },
+  {
+    "legacy": "EvocationIllager",
+    "target": "entity:minecraft:evoker",
+    "aspects": {
+      "alienis": 5,
+      "praecantatio": 5,
+      "humanus": 10
+    }
+  },
+  {
+    "legacy": "VindicationIllager",
+    "target": "entity:minecraft:vindicator",
+    "aspects": {
+      "aversio": 5,
+      "praecantatio": 5,
+      "humanus": 10
+    }
+  },
+  {
+    "legacy": "IllusionIllager",
+    "target": "entity:minecraft:illusioner",
+    "aspects": {
+      "sensus": 5,
+      "praecantatio": 5,
+      "humanus": 10
+    }
+  },
+  {
+    "legacy": "Llama",
+    "target": "entity:minecraft:llama",
+    "aspects": {
+      "bestia": 15,
+      "aqua": 5
+    }
+  },
+  {
+    "legacy": "Parrot",
+    "target": "entity:minecraft:parrot",
+    "aspects": {
+      "bestia": 5,
+      "volatus": 5,
+      "sensus": 5
+    }
+  },
+  {
+    "legacy": "Stray",
+    "target": "entity:minecraft:stray",
+    "aspects": {
+      "exanimis": 20,
+      "humanus": 5,
+      "vinculum": 5
+    }
+  },
+  {
+    "legacy": "Vex",
+    "target": "entity:minecraft:vex",
+    "aspects": {
+      "alienis": 5,
+      "volatus": 5,
+      "praecantatio": 5,
+      "humanus": 5
+    }
+  },
+  {
+    "legacy": "Stray",
+    "target": "entity:minecraft:stray",
+    "aspects": {
+      "exanimis": 20,
+      "humanus": 5,
+      "vinculum": 5
+    }
+  },
+  {
+    "legacy": "oreLapis",
+    "target": "tag:c:ores/lapis",
+    "aspects": {
+      "terra": 5,
+      "sensus": 15
+    }
+  },
+  {
+    "legacy": "oreDiamond",
+    "target": "tag:c:ores/diamond",
+    "aspects": {
+      "terra": 5,
+      "desiderium": 15,
+      "vitreus": 15
+    }
+  },
+  {
+    "legacy": "gemDiamond",
+    "target": "tag:c:gems/diamond",
+    "aspects": {
+      "vitreus": 15,
+      "desiderium": 15
+    }
+  },
+  {
+    "legacy": "oreRedstone",
+    "target": "tag:c:ores/redstone",
+    "aspects": {
+      "terra": 5,
+      "potentia": 15
+    }
+  },
+  {
+    "legacy": "oreEmerald",
+    "target": "tag:c:ores/emerald",
+    "aspects": {
+      "terra": 5,
+      "desiderium": 10,
+      "vitreus": 15
+    }
+  },
+  {
+    "legacy": "gemEmerald",
+    "target": "tag:c:gems/emerald",
+    "aspects": {
+      "vitreus": 15,
+      "desiderium": 10
+    }
+  },
+  {
+    "legacy": "oreQuartz",
+    "target": "tag:c:ores/quartz",
+    "aspects": {
+      "terra": 5,
+      "vitreus": 10
+    }
+  },
+  {
+    "legacy": "gemQuartz",
+    "target": "tag:c:gems/quartz",
+    "aspects": {
+      "vitreus": 5
+    }
+  },
+  {
+    "legacy": "oreIron",
+    "target": "tag:c:ores/iron",
+    "aspects": {
+      "terra": 5,
+      "metallum": 15
+    }
+  },
+  {
+    "legacy": "dustIron",
+    "target": "tag:c:dusts/iron",
+    "aspects": {
+      "metallum": 15,
+      "perditio": 1
+    }
+  },
+  {
+    "legacy": "ingotIron",
+    "target": "tag:c:ingots/iron",
+    "aspects": {
+      "metallum": 15
+    }
+  },
+  {
+    "legacy": "oreGold",
+    "target": "tag:c:ores/gold",
+    "aspects": {
+      "terra": 5,
+      "metallum": 10,
+      "desiderium": 10
+    }
+  },
+  {
+    "legacy": "dustGold",
+    "target": "tag:c:dusts/gold",
+    "aspects": {
+      "metallum": 10,
+      "desiderium": 10,
+      "perditio": 1
+    }
+  },
+  {
+    "legacy": "ingotGold",
+    "target": "tag:c:ingots/gold",
+    "aspects": {
+      "metallum": 10,
+      "desiderium": 10
+    }
+  },
+  {
+    "legacy": "dustRedstone",
+    "target": "item:minecraft:redstone",
+    "aspects": {
+      "potentia": 10
+    }
+  },
+  {
+    "legacy": "dustGlowstone",
+    "target": "item:minecraft:glowstone_dust",
+    "aspects": {
+      "sensus": 5,
+      "lux": 10
+    }
+  },
+  {
+    "legacy": "ingotCopper",
+    "target": "tag:c:ingots/copper",
+    "aspects": {
+      "metallum": 10,
+      "permutatio": 5
+    }
+  },
+  {
+    "legacy": "dustCopper",
+    "target": "tag:c:dusts/copper",
+    "aspects": {
+      "metallum": 10,
+      "perditio": 1,
+      "permutatio": 5
+    }
+  },
+  {
+    "legacy": "oreCopper",
+    "target": "tag:c:ores/copper",
+    "aspects": {
+      "metallum": 10,
+      "terra": 5,
+      "permutatio": 5
+    }
+  },
+  {
+    "legacy": "ingotTin",
+    "target": "tag:c:ingots/tin",
+    "aspects": {
+      "metallum": 10,
+      "vitreus": 5
+    }
+  },
+  {
+    "legacy": "dustTin",
+    "target": "tag:c:dusts/tin",
+    "aspects": {
+      "metallum": 10,
+      "perditio": 1,
+      "vitreus": 5
+    }
+  },
+  {
+    "legacy": "oreTin",
+    "target": "tag:c:ores/tin",
+    "aspects": {
+      "metallum": 10,
+      "terra": 5,
+      "vitreus": 5
+    }
+  },
+  {
+    "legacy": "ingotSilver",
+    "target": "tag:c:ingots/silver",
+    "aspects": {
+      "metallum": 10,
+      "desiderium": 5
+    }
+  },
+  {
+    "legacy": "dustSilver",
+    "target": "tag:c:dusts/silver",
+    "aspects": {
+      "metallum": 10,
+      "perditio": 1,
+      "desiderium": 5
+    }
+  },
+  {
+    "legacy": "oreSilver",
+    "target": "tag:c:ores/silver",
+    "aspects": {
+      "metallum": 10,
+      "terra": 5,
+      "desiderium": 5
+    }
+  },
+  {
+    "legacy": "ingotLead",
+    "target": "tag:c:ingots/lead",
+    "aspects": {
+      "metallum": 10,
+      "ordo": 5
+    }
+  },
+  {
+    "legacy": "dustLead",
+    "target": "tag:c:dusts/lead",
+    "aspects": {
+      "metallum": 10,
+      "perditio": 1,
+      "ordo": 5
+    }
+  },
+  {
+    "legacy": "oreLead",
+    "target": "tag:c:ores/lead",
+    "aspects": {
+      "metallum": 10,
+      "terra": 5,
+      "ordo": 5
+    }
+  },
+  {
+    "legacy": "ingotBrass",
+    "target": "tag:c:ingots/brass",
+    "aspects": {
+      "metallum": 10,
+      "instrumentum": 5
+    }
+  },
+  {
+    "legacy": "dustBrass",
+    "target": "tag:c:dusts/brass",
+    "aspects": {
+      "metallum": 10,
+      "perditio": 1,
+      "instrumentum": 5
+    }
+  },
+  {
+    "legacy": "ingotBronze",
+    "target": "tag:c:ingots/bronze",
+    "aspects": {
+      "metallum": 10,
+      "instrumentum": 5
+    }
+  },
+  {
+    "legacy": "dustBronze",
+    "target": "tag:c:dusts/bronze",
+    "aspects": {
+      "metallum": 10,
+      "perditio": 1,
+      "instrumentum": 5
+    }
+  },
+  {
+    "legacy": "oreUranium",
+    "target": "tag:c:ores/uranium",
+    "aspects": {
+      "metallum": 10,
+      "mortuus": 5,
+      "potentia": 10
+    }
+  },
+  {
+    "legacy": "ingotUranium",
+    "target": "tag:c:ingots/uranium",
+    "aspects": {
+      "metallum": 10,
+      "mortuus": 5,
+      "potentia": 10
+    }
+  },
+  {
+    "legacy": "gemRuby",
+    "target": "tag:c:gems/ruby",
+    "aspects": {
+      "vitreus": 10,
+      "desiderium": 10
+    }
+  },
+  {
+    "legacy": "gemSapphire",
+    "target": "tag:c:gems/sapphire",
+    "aspects": {
+      "vitreus": 10,
+      "desiderium": 10
+    }
+  },
+  {
+    "legacy": "ingotSteel",
+    "target": "tag:c:ingots/steel",
+    "aspects": {
+      "metallum": 15,
+      "ordo": 5
+    }
+  },
+  {
+    "legacy": "stone",
+    "target": "item:minecraft:stone",
+    "aspects": {
+      "terra": 5
+    }
+  },
+  {
+    "legacy": "stoneGranite",
+    "target": "item:minecraft:granite",
+    "aspects": {
+      "terra": 5
+    }
+  },
+  {
+    "legacy": "stoneDiorite",
+    "target": "item:minecraft:diorite",
+    "aspects": {
+      "terra": 5
+    }
+  },
+  {
+    "legacy": "stoneAndesite",
+    "target": "item:minecraft:andesite",
+    "aspects": {
+      "terra": 5
+    }
+  },
+  {
+    "legacy": "cobblestone",
+    "target": "item:minecraft:cobblestone",
+    "aspects": {
+      "terra": 5,
+      "perditio": 1
+    }
+  },
+  {
+    "legacy": "dirt",
+    "target": "item:minecraft:dirt",
+    "aspects": {
+      "terra": 5
+    }
+  },
+  {
+    "legacy": "sand",
+    "target": "tag:minecraft:sand",
+    "aspects": {
+      "terra": 5,
+      "perditio": 5
+    }
+  },
+  {
+    "legacy": "grass",
+    "target": "item:minecraft:grass_block",
+    "aspects": {
+      "terra": 5,
+      "herba": 2
+    }
+  },
+  {
+    "legacy": "endstone",
+    "target": "item:minecraft:end_stone",
+    "aspects": {
+      "terra": 5,
+      "tenebrae": 5
+    }
+  },
+  {
+    "legacy": "gravel",
+    "target": "item:minecraft:gravel",
+    "aspects": {
+      "terra": 5,
+      "perditio": 2
+    }
+  },
+  {
+    "legacy": "netherrack",
+    "target": "item:minecraft:netherrack",
+    "aspects": {
+      "terra": 5,
+      "ignis": 2
+    }
+  },
+  {
+    "legacy": "blockGlass",
+    "target": "item:minecraft:glass",
+    "aspects": {
+      "vitreus": 5
+    }
+  },
+  {
+    "legacy": "obsidian",
+    "target": "item:minecraft:obsidian",
+    "aspects": {
+      "terra": 5,
+      "ignis": 5,
+      "tenebrae": 5
+    }
+  },
+  {
+    "legacy": "logWood",
+    "target": "tag:minecraft:logs",
+    "aspects": {
+      "herba": 20
+    }
+  },
+  {
+    "legacy": "treeSapling",
+    "target": "tag:minecraft:saplings",
+    "aspects": {
+      "herba": 15,
+      "victus": 5
+    }
+  },
+  {
+    "legacy": "treeLeaves",
+    "target": "tag:minecraft:leaves",
+    "aspects": {
+      "herba": 5
+    }
+  },
+  {
+    "legacy": "vine",
+    "target": "item:minecraft:vine",
+    "aspects": {
+      "herba": 5
+    }
+  },
+  {
+    "legacy": "cropNetherWart",
+    "target": "item:minecraft:nether_wart",
+    "aspects": {
+      "herba": 1,
+      "vitium": 2,
+      "alkimia": 3
+    }
+  },
+  {
+    "legacy": "blockCactus",
+    "target": "item:minecraft:cactus",
+    "aspects": {
+      "herba": 5,
+      "aqua": 5,
+      "aversio": 1
+    }
+  },
+  {
+    "legacy": "sugarcane",
+    "target": "item:minecraft:sugar_cane",
+    "aspects": {
+      "herba": 5,
+      "aqua": 3,
+      "aer": 2
+    }
+  },
+  {
+    "legacy": "cropWheat",
+    "target": "item:minecraft:wheat",
+    "aspects": {
+      "herba": 5,
+      "victus": 5
+    }
+  },
+  {
+    "legacy": "cropCarrot",
+    "target": "item:minecraft:carrot",
+    "aspects": {
+      "herba": 5,
+      "victus": 5,
+      "sensus": 5
+    }
+  },
+  {
+    "legacy": "cropPotato",
+    "target": "item:minecraft:potato",
+    "aspects": {
+      "herba": 5,
+      "victus": 5,
+      "terra": 5
+    }
+  },
+  {
+    "legacy": "string",
+    "target": "item:minecraft:string",
+    "aspects": {
+      "bestia": 5,
+      "fabrico": 1
+    }
+  },
+  {
+    "legacy": "slimeball",
+    "target": "item:minecraft:slime_ball",
+    "aspects": {
+      "aqua": 5,
+      "victus": 5,
+      "alkimia": 1
+    }
+  },
+  {
+    "legacy": "leather",
+    "target": "item:minecraft:leather",
+    "aspects": {
+      "bestia": 5,
+      "praemunio": 5
+    }
+  },
+  {
+    "legacy": "feather",
+    "target": "item:minecraft:feather",
+    "aspects": {
+      "volatus": 5,
+      "aer": 5
+    }
+  },
+  {
+    "legacy": "bone",
+    "target": "item:minecraft:bone",
+    "aspects": {
+      "mortuus": 5,
+      "victus": 5
+    }
+  },
+  {
+    "legacy": "egg",
+    "target": "item:minecraft:egg",
+    "aspects": {
+      "victus": 5,
+      "bestia": 5
+    }
+  },
+  {
+    "legacy": "gunpowder",
+    "target": "item:minecraft:gunpowder",
+    "aspects": {
+      "ignis": 10,
+      "perditio": 10,
+      "alkimia": 5
+    }
+  },
+  {
+    "legacy": "enderpearl",
+    "target": "item:minecraft:ender_pearl",
+    "aspects": {
+      "alienis": 10,
+      "motus": 15
+    }
+  },
+  {
+    "legacy": "netherStar",
+    "target": "item:minecraft:nether_star",
+    "aspects": {
+      "alienis": 10,
+      "praecantatio": 20,
+      "ordo": 20,
+      "auram": 10
+    }
+  },
+  {
+    "legacy": "oreCinnabar",
+    "target": "item:thaumcraft:ore_cinnabar",
+    "aspects": {
+      "terra": 5,
+      "metallum": 10,
+      "alkimia": 5,
+      "mortuus": 5
+    }
+  },
+  {
+    "legacy": "oreAmber",
+    "target": "item:thaumcraft:ore_amber",
+    "aspects": {
+      "terra": 5,
+      "vinculum": 10,
+      "vitreus": 10
+    }
+  },
+  {
+    "legacy": "quicksilver",
+    "target": "item:thaumcraft:quicksilver",
+    "aspects": {
+      "metallum": 10,
+      "mortuus": 5,
+      "alkimia": 5
+    }
+  },
+  {
+    "legacy": "gemAmber",
+    "target": "item:thaumcraft:amber",
+    "aspects": {
+      "vinculum": 10,
+      "vitreus": 10
+    }
+  },
+  {
+    "legacy": "new ItemStack(ItemsTC.brain)",
+    "target": "item:thaumcraft:brain",
+    "aspects": {
+      "victus": 5,
+      "cognitio": 20,
+      "exanimis": 10
+    },
+    "source": "ConfigAspects.java",
+    "source_line": 536
+  },
+  {
+    "legacy": "new ItemStack(ItemsTC.curio, 1, 0)",
+    "target": "item:thaumcraft:curio_arcane",
+    "aspects": {
+      "cognitio": 15,
+      "praecantatio": 15
+    },
+    "source": "ConfigAspects.java",
+    "source_line": 576
+  },
+  {
+    "legacy": "new ItemStack(ItemsTC.curio, 1, 1)",
+    "target": "item:thaumcraft:curio_preserved",
+    "aspects": {
+      "cognitio": 15,
+      "bestia": 15
+    },
+    "source": "ConfigAspects.java",
+    "source_line": 577
+  },
+  {
+    "legacy": "new ItemStack(ItemsTC.curio, 1, 2)",
+    "target": "item:thaumcraft:curio_ancient",
+    "aspects": {
+      "cognitio": 15,
+      "mortuus": 15
+    },
+    "source": "ConfigAspects.java",
+    "source_line": 578
+  },
+  {
+    "legacy": "new ItemStack(ItemsTC.curio, 1, 3)",
+    "target": "item:thaumcraft:curio_eldritch",
+    "aspects": {
+      "cognitio": 15,
+      "alienis": 15
+    },
+    "source": "ConfigAspects.java",
+    "source_line": 579
+  },
+  {
+    "legacy": "new ItemStack(ItemsTC.curio, 1, 4)",
+    "target": "item:thaumcraft:curio_knowledge",
+    "aspects": {
+      "cognitio": 30
+    },
+    "source": "ConfigAspects.java",
+    "source_line": 580
+  },
+  {
+    "legacy": "new ItemStack(ItemsTC.curio, 1, 5)",
+    "target": "item:thaumcraft:curio_twisted",
+    "aspects": {
+      "cognitio": 15,
+      "vitium": 15
+    },
+    "source": "ConfigAspects.java",
+    "source_line": 581
+  },
+  {
+    "legacy": "new ItemStack(ItemsTC.curio, 1, 6)",
+    "target": "item:thaumcraft:curio_rites",
+    "aspects": {
+      "cognitio": 15,
+      "alienis": 5,
+      "spiritus": 5,
+      "praecantatio": 5
+    },
+    "source": "ConfigAspects.java",
+    "source_line": 582
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "item:thaumcraft:deepslate_ore_amber": {
+    "terra": 5,
+    "vinculum": 10,
+    "vitreus": 10
+  },
+  "item:thaumcraft:deepslate_ore_cinnabar": {
+    "terra": 5,
+    "metallum": 10,
+    "alkimia": 5,
+    "mortuus": 5
+  },
+  "item:thaumcraft:deepslate_ore_quartz": {
+    "terra": 5,
+    "vitreus": 10
+  }
+}

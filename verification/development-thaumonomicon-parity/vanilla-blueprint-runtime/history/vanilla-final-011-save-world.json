@@ -1,0 +1,38 @@
+[
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "640",
+      "444"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "1"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 1
+  },
+  {
+    "action": "wait_log",
+    "target": "modern-ru2",
+    "text": "All dimensions are saved",
+    "seconds": 15
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "resume-final-title-saved.png"
+  }
+]

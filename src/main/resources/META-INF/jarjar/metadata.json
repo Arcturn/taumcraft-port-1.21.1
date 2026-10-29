@@ -1,0 +1,16 @@
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "com.github.glitchfiend",
+        "artifact": "TerraBlender-neoforge"
+      },
+      "version": {
+        "range": "[1.21.1-4.1.0.8,1.21.1-4.2)",
+        "artifactVersion": "1.21.1-4.1.0.8"
+      },
+      "path": "META-INF/jarjar/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "isObfuscated": false
+    }
+  ]
+}

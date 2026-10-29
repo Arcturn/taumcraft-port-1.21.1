@@ -1,0 +1,21 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "TUBES",
+  "vis": 10,
+  "crystals": {
+    "terra": 1
+  },
+  "pattern": [
+    "T"
+  ],
+  "key": {
+    "T": {
+      "item": "thaumcraft:tube"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:tube_restrict",
+    "count": 1
+  },
+  "shapeless": true
+}

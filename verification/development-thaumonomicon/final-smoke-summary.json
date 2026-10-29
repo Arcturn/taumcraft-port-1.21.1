@@ -1,0 +1,75 @@
+{
+  "runtime": {
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.259",
+    "port": "0.1.0-alpha.9.13-dev",
+    "java": "21.0.13+9",
+    "resolution": [
+      1280,
+      720
+    ],
+    "gui_scale": 2,
+    "language": "en_us",
+    "gl": "Mesa llvmpipe OpenGL4.5"
+  },
+  "client_exit_code": 0,
+  "run_client_build": "BUILD SUCCESSFUL",
+  "startup_model_audit": {
+    "selections": 914,
+    "problems": 0,
+    "log": "[08:52:58] [Render thread/INFO] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] Checked 914 item/book/advancement model selections; 0 problems"
+  },
+  "model_bake_error_count": 0,
+  "missing_texture_model_warning_count": 0,
+  "tested_checks": [
+    "All7research categories",
+    "TrueINFUSION3Dmatrix vs BASEINFUSION intentional flat rawicon",
+    "Thaumatorium,WorkbenchCharger OBJUV/materials",
+    "GolemPress targetbookmark no magenta UV padding",
+    "All6sourceblueprints:Arcane/Ancient/Eldritch InfusionAltar,Furnace,Thaumatorium,GolemPress",
+    "Furnace layercycling,connectedironbars,visiblelava,netherbrickblockingredient",
+    "Thaumatorium2brassblocks verticalabovecrucible",
+    "GolemPresspistonUP",
+    "INFUSION pagebreak endsprocess. asoriginal",
+    "Original-style dimbackgroundwithout1.21blur",
+    "RobeChest ingredient→EnchantedFabricrecipe→visibleBackarrow+tooltip→mouseclickreturn",
+    "Woolingredientcyclescolors"
+  ],
+  "final_screenshot_names": [
+    "final-blueprint-golempress.png",
+    "final-blueprint-infernalfurnace-full.png",
+    "final-blueprint-infernalfurnace-slice-0.png",
+    "final-blueprint-infernalfurnace-slice-1.png",
+    "final-blueprint-infernalfurnace-slice-2.png",
+    "final-blueprint-infernalfurnace-slice-3.png",
+    "final-blueprint-infernalfurnace-slice-4.png",
+    "final-blueprint-infusionaltar.png",
+    "final-blueprint-infusionaltarancient.png",
+    "final-blueprint-infusionaltareldritch.png",
+    "final-blueprint-thaumatorium.png",
+    "final-category-alchemy.png",
+    "final-category-artifice.png",
+    "final-category-auromancy.png",
+    "final-category-basics.png",
+    "final-category-eldritch.png",
+    "final-category-golemancy.png",
+    "final-category-infusion.png",
+    "final-fabric-reference-history-hover.png",
+    "final-hover-thaumatorium.png",
+    "final-hover-workbench-charger.png",
+    "final-page-infusion.png",
+    "final-robe-reference-mouse-return.png",
+    "final-startup.png"
+  ],
+  "final_log": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/book-smoke/final-client.log",
+  "original_capture_manifest": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/original-client/capture-manifest.json",
+  "remaining_limits": [
+    "These are selected rendered gameplay/UI checks, not a manual playthrough of all148research entries or every recipe.",
+    "Pixel-perfect lighting equality is not claimed: legacy and modern lighting still have small pixel differences.",
+    "Original reference world and modern copied test world have different scenery; GUIresolution/language/scale match.",
+    "Offline local test causes expected Mojang public-key/skin DNS failures; no login/EULA/payment was accepted.",
+    "Runic Matrix source blueprint is visibly brighter than the original reference (sample pixel640,280:original35gray/final48gray); its complete legacy TESR geometry/animation parity was not independently certified by these screenshots.",
+    "Vanilla sourceworld sprites such as wool/piston/netherbricks use Minecraft1.21.1 resources; no claim that they pixel-matchMinecraft1.12.2 vanilla textures."
+  ],
+  "shutdown": "Used in-game Save and Quit to Title, then Quit Game. Both original1.12.2 and modern1.21.1 local clients exited0."
+}

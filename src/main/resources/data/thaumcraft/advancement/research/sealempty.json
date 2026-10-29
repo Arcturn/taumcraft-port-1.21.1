@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "thaumcraft:research_display_research_sealempty"
+    },
+    "title": {
+      "translate": "research.SEALEMPTY.title"
+    },
+    "description": {
+      "translate": "thaumcraft.advancement.research.description",
+      "with": [
+        {
+          "translate": "research.SEALEMPTY.title"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "completed": {
+      "trigger": "thaumcraft:research",
+      "conditions": {
+        "research": "SEALEMPTY"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "completed"
+    ]
+  ],
+  "sends_telemetry_event": false,
+  "parent": "thaumcraft:research/sealstore"
+}

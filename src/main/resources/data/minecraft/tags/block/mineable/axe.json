@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:log_greatwood",
+    "thaumcraft:plank_greatwood",
+    "thaumcraft:log_silverwood",
+    "thaumcraft:plank_silverwood",
+    "thaumcraft:table_wood",
+    "thaumcraft:research_table"
+  ]
+}

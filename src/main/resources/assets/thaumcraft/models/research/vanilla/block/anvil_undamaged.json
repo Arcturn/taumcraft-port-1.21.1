@@ -1,0 +1,9 @@
+{
+  "parent": "thaumcraft:research/vanilla/block/anvil",
+  "textures": {
+    "particle": "thaumcraft:research/vanilla/blocks/anvil_base",
+    "body": "thaumcraft:research/vanilla/blocks/anvil_base",
+    "top": "thaumcraft:research/vanilla/blocks/anvil_top_damaged_0"
+  },
+  "render_type": "minecraft:solid"
+}

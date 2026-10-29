@@ -1,0 +1,184 @@
+{
+  "blocks": {
+    "minecraft:nether_brick": {
+      "variants": {
+        "0": {
+          "model": "thaumcraft:research/vanilla/block/nether_brick"
+        }
+      }
+    },
+    "minecraft:obsidian": {
+      "variants": {
+        "0": {
+          "model": "thaumcraft:research/vanilla/block/obsidian"
+        }
+      }
+    },
+    "minecraft:cauldron": {
+      "variants": {
+        "0": {
+          "model": "thaumcraft:research/vanilla/block/cauldron_empty"
+        }
+      }
+    },
+    "minecraft:anvil": {
+      "variants": {
+        "0": {
+          "model": "thaumcraft:research/vanilla/block/anvil_undamaged"
+        },
+        "1": {
+          "model": "thaumcraft:research/vanilla/block/anvil_undamaged",
+          "y": 90
+        },
+        "2": {
+          "model": "thaumcraft:research/vanilla/block/anvil_undamaged",
+          "y": 180
+        },
+        "3": {
+          "model": "thaumcraft:research/vanilla/block/anvil_undamaged",
+          "y": 270
+        }
+      }
+    },
+    "minecraft:piston": {
+      "variants": {
+        "0": {
+          "model": "thaumcraft:research/vanilla/block/piston_normal",
+          "x": 90
+        },
+        "1": {
+          "model": "thaumcraft:research/vanilla/block/piston_normal",
+          "x": 270
+        },
+        "2": {
+          "model": "thaumcraft:research/vanilla/block/piston_normal"
+        },
+        "3": {
+          "model": "thaumcraft:research/vanilla/block/piston_normal",
+          "y": 180
+        },
+        "4": {
+          "model": "thaumcraft:research/vanilla/block/piston_normal",
+          "y": 270
+        },
+        "5": {
+          "model": "thaumcraft:research/vanilla/block/piston_normal",
+          "y": 90
+        }
+      }
+    },
+    "minecraft:iron_bars": {
+      "multipart": [
+        {
+          "apply": {
+            "model": "thaumcraft:research/vanilla/block/iron_bars_post_ends"
+          }
+        },
+        {
+          "when": {
+            "north": false,
+            "east": false,
+            "south": false,
+            "west": false
+          },
+          "apply": {
+            "model": "thaumcraft:research/vanilla/block/iron_bars_post"
+          }
+        },
+        {
+          "when": {
+            "north": true,
+            "east": false,
+            "south": false,
+            "west": false
+          },
+          "apply": {
+            "model": "thaumcraft:research/vanilla/block/iron_bars_cap"
+          }
+        },
+        {
+          "when": {
+            "north": false,
+            "east": true,
+            "south": false,
+            "west": false
+          },
+          "apply": {
+            "model": "thaumcraft:research/vanilla/block/iron_bars_cap",
+            "y": 90
+          }
+        },
+        {
+          "when": {
+            "north": false,
+            "east": false,
+            "south": true,
+            "west": false
+          },
+          "apply": {
+            "model": "thaumcraft:research/vanilla/block/iron_bars_cap_alt"
+          }
+        },
+        {
+          "when": {
+            "north": false,
+            "east": false,
+            "south": false,
+            "west": true
+          },
+          "apply": {
+            "model": "thaumcraft:research/vanilla/block/iron_bars_cap_alt",
+            "y": 90
+          }
+        },
+        {
+          "when": {
+            "north": true
+          },
+          "apply": {
+            "model": "thaumcraft:research/vanilla/block/iron_bars_side"
+          }
+        },
+        {
+          "when": {
+            "east": true
+          },
+          "apply": {
+            "model": "thaumcraft:research/vanilla/block/iron_bars_side",
+            "y": 90
+          }
+        },
+        {
+          "when": {
+            "south": true
+          },
+          "apply": {
+            "model": "thaumcraft:research/vanilla/block/iron_bars_side_alt"
+          }
+        },
+        {
+          "when": {
+            "west": true
+          },
+          "apply": {
+            "model": "thaumcraft:research/vanilla/block/iron_bars_side_alt",
+            "y": 90
+          }
+        }
+      ]
+    }
+  },
+  "models": [
+    "thaumcraft:research/vanilla/block/anvil_undamaged",
+    "thaumcraft:research/vanilla/block/cauldron_empty",
+    "thaumcraft:research/vanilla/block/iron_bars_cap",
+    "thaumcraft:research/vanilla/block/iron_bars_cap_alt",
+    "thaumcraft:research/vanilla/block/iron_bars_post",
+    "thaumcraft:research/vanilla/block/iron_bars_post_ends",
+    "thaumcraft:research/vanilla/block/iron_bars_side",
+    "thaumcraft:research/vanilla/block/iron_bars_side_alt",
+    "thaumcraft:research/vanilla/block/nether_brick",
+    "thaumcraft:research/vanilla/block/obsidian",
+    "thaumcraft:research/vanilla/block/piston_normal"
+  ]
+}

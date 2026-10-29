@@ -1,0 +1,655 @@
+{
+  "stone_arcane": {
+    "source_class": "thaumcraft.common.blocks.basic.BlockStoneTC",
+    "opaque": true,
+    "full_cube": true,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": false
+  },
+  "stone_ancient": {
+    "source_class": "thaumcraft.common.blocks.basic.BlockStoneTC",
+    "opaque": true,
+    "full_cube": true,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": false
+  },
+  "stone_eldritch_tile": {
+    "source_class": "thaumcraft.common.blocks.basic.BlockStoneTC",
+    "opaque": true,
+    "full_cube": true,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": false
+  },
+  "metal_alchemical": {
+    "source_class": "thaumcraft.common.blocks.basic.BlockMetalTC",
+    "opaque": true,
+    "full_cube": true,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": false
+  },
+  "pedestal_arcane": {
+    "source_class": "thaumcraft.common.blocks.devices.BlockPedestal",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "undefined",
+    "light": 0,
+    "invisible": false
+  },
+  "pedestal_ancient": {
+    "source_class": "thaumcraft.common.blocks.devices.BlockPedestal",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "undefined",
+    "light": 0,
+    "invisible": false
+  },
+  "pedestal_eldritch": {
+    "source_class": "thaumcraft.common.blocks.devices.BlockPedestal",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "undefined",
+    "light": 0,
+    "invisible": false
+  },
+  "pillar_arcane": {
+    "source_class": "thaumcraft.common.blocks.basic.BlockPillar",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      0.5,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        2,
+        1
+      ]
+    ],
+    "face_shape": "undefined",
+    "light": 0,
+    "invisible": false
+  },
+  "pillar_ancient": {
+    "source_class": "thaumcraft.common.blocks.basic.BlockPillar",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      0.5,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        2,
+        1
+      ]
+    ],
+    "face_shape": "undefined",
+    "light": 0,
+    "invisible": false
+  },
+  "pillar_eldritch": {
+    "source_class": "thaumcraft.common.blocks.basic.BlockPillar",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      0.5,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        2,
+        1
+      ]
+    ],
+    "face_shape": "undefined",
+    "light": 0,
+    "invisible": false
+  },
+  "infusion_matrix": {
+    "source_class": "thaumcraft.common.blocks.crafting.BlockInfusionMatrix",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "undefined",
+    "light": 0,
+    "invisible": true
+  },
+  "table_stone": {
+    "source_class": "thaumcraft.common.blocks.basic.BlockTable",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "undefined",
+    "light": 0,
+    "invisible": false
+  },
+  "crucible": {
+    "source_class": "thaumcraft.common.blocks.crafting.BlockCrucible",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0.3125,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0.125
+      ],
+      [
+        0,
+        0,
+        0.875,
+        1,
+        1,
+        1
+      ],
+      [
+        0.875,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0.125,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": false
+  },
+  "infernal_furnace": {
+    "source_class": "thaumcraft.common.blocks.devices.BlockInfernalFurnace",
+    "opaque": true,
+    "full_cube": true,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      0.5,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0.5,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 13,
+    "invisible": false
+  },
+  "thaumatorium": {
+    "source_class": "thaumcraft.common.blocks.crafting.BlockThaumatorium",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "undefined",
+    "light": 0,
+    "invisible": false
+  },
+  "thaumatorium_top": {
+    "source_class": "thaumcraft.common.blocks.crafting.BlockThaumatorium",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "undefined",
+    "light": 0,
+    "invisible": true
+  },
+  "golem_builder": {
+    "source_class": "thaumcraft.common.blocks.crafting.BlockGolemBuilder",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": true
+  },
+  "placeholder_brick": {
+    "source_class": "thaumcraft.common.blocks.misc.BlockPlaceholder",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": true
+  },
+  "placeholder_obsidian": {
+    "source_class": "thaumcraft.common.blocks.misc.BlockPlaceholder",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": true
+  },
+  "placeholder_bars": {
+    "source_class": "thaumcraft.common.blocks.misc.BlockPlaceholder",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": true
+  },
+  "placeholder_anvil": {
+    "source_class": "thaumcraft.common.blocks.misc.BlockPlaceholder",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": true
+  },
+  "placeholder_cauldron": {
+    "source_class": "thaumcraft.common.blocks.misc.BlockPlaceholder",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 13,
+    "invisible": true
+  },
+  "placeholder_table": {
+    "source_class": "thaumcraft.common.blocks.misc.BlockPlaceholder",
+    "opaque": false,
+    "full_cube": false,
+    "material_solid": true,
+    "shape": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "collision": [
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "face_shape": "solid",
+    "light": 0,
+    "invisible": true
+  }
+}

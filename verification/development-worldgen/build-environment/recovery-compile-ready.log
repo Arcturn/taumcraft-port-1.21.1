@@ -1,0 +1,83 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/truststore.jks -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=43551 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=43551
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :createMinecraftArtifacts
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/truststore.jks -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=43551 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=43551
+Loaded 131 artifacts from /workspace/scratch/5f8dd1a26602/work/dust-animation/thaumcraft-port/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+*** Started working on downloadJson
+ ✓ Completed downloadJson in 0.02s
+*** Started working on downloadServer
+*** Started working on downloadClient
+*** Started working on downloadClientMappings
+ ✓ Completed downloadClientMappings in 0.02s
+ ✓ Completed downloadServer in 0.02s
+ ✓ Completed downloadClient in 0.02s
+*** Started working on stripClient
+*** Started working on mergeMappings
+ ♻ Used cache of mergeMappings in 0.00s
+*** Started working on extractServer
+ ♻ Used cache of extractServer in 0.00s
+*** Started working on stripServer
+ ✓ Completed stripServer in 1.45s
+ ✓ Completed stripClient in 2.17s
+*** Started working on merge
+ ♻ Used cache of merge in 0.00s
+*** Started working on rename
+ ♻ Used cache of rename in 0.00s
+*** Started working on decompile
+ ♻ Used cache of decompile in 0.00s
+*** Started working on inject
+ ✓ Completed inject in 2.22s
+*** Started working on patch
+ ↳ Running external tool io.codechicken:DiffPatch:2.0.0.36:all
+ ✓ Completed patch in 1.59s
+*** Started working on applyNeoforgePatches
+ ↳ Running external tool io.codechicken:DiffPatch:2.0.0.36:all
+ ✓ Completed applyNeoforgePatches in 1.59s
+*** Started working on transformSources
+ ↳ Running external tool net.neoforged.jst:jst-cli-bundle:2.0.11
+ ✓ Completed transformSources in 4.29s
+*** Started working on recompile
+ 96 items on the compile classpath
+ 0 items on the sourcepath
+*** Started working on sourcesWithNeoForge
+ Compiling 5364 source files
+ ✓ Completed sourcesWithNeoForge in 2.67s
+Copied 0 resource files
+ ✓ Completed recompile in 29.21s
+*** Started working on compiledWithNeoForge
+ ✓ Completed compiledWithNeoForge in 4.95s
+*** Started working on sourcesAndCompiledWithNeoForge
+ ✓ Completed sourcesAndCompiledWithNeoForge in 2.61s
+Total runtime: 49.64s
+
+
+> Task :compileJava
+/workspace/scratch/5f8dd1a26602/work/dust-animation/thaumcraft-port/src/main/java/thaumcraft/port/client/ClientEvents.java:13: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = ThaumcraftPort.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+                                                   ^
+/workspace/scratch/5f8dd1a26602/work/dust-animation/thaumcraft-port/src/main/java/thaumcraft/port/client/ClientEvents.java:13: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = ThaumcraftPort.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+                                                                           ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2 warnings
+
+> Task :processResources
+> Task :classes
+
+> Task :compileTestJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+[Incubating] Problems report is available at: file:///workspace/scratch/5f8dd1a26602/work/dust-animation/thaumcraft-port/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1m 37s
+4 actionable tasks: 4 executed

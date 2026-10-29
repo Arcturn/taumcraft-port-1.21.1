@@ -1,0 +1,31 @@
+[
+  {
+    "action": "xdotool",
+    "target": "migration-alpha913",
+    "args": [
+      "key",
+      "Escape"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.45
+  },
+  {
+    "action": "xdotool",
+    "target": "migration-alpha913",
+    "args": [
+      "key",
+      "Escape"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.45
+  },
+  {
+    "action": "screenshot",
+    "target": "migration-alpha913",
+    "name": "migration-save-menu.png"
+  }
+]

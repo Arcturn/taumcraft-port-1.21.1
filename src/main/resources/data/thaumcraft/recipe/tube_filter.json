@@ -1,0 +1,22 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "TUBES",
+  "vis": 10,
+  "crystals": {},
+  "pattern": [
+    "TF"
+  ],
+  "key": {
+    "T": {
+      "item": "thaumcraft:tube"
+    },
+    "F": {
+      "item": "thaumcraft:filter"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:tube_filter",
+    "count": 1
+  },
+  "shapeless": true
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.theory.TheorySessionTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-10-29T01:00:07.306Z" hostname="e54a7cd1abdc" time="0.159">
+  <properties/>
+  <testcase name="requirementsDistinguishPresenceAndConsumption()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.011"/>
+  <testcase name="bonusDrawIsConsumedOnceAndCannotReroll()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.01"/>
+  <testcase name="lastCardAndHistoryArePreservedWithoutRepeatedApplication()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.016"/>
+  <testcase name="originalCardArithmeticGoldenCases()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.015"/>
+  <testcase name="exactRegistryAndWeightedAids()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.0"/>
+  <testcase name="celestialAlwaysRequiresTwoDifferentNotes()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.004"/>
+  <testcase name="allRegisteredCardsHaveTheirOriginalConditionsAndEffects()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.015"/>
+  <testcase name="drawingLocksCategoriesAndNeverReturnsDuplicateCardKinds()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.021"/>
+  <testcase name="initializationGuards()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.001"/>
+  <testcase name="seededRequirementsSurviveRestart()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.016"/>
+  <testcase name="experienceIsValidatedBeforeAnyTheoryMutation()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.005"/>
+  <testcase name="aspectValuationRefreshesAfterRecipeReloadWithoutRerollingTheItem()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.007"/>
+  <testcase name="zeroAndNegativeInspirationCostsAreReal()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.006"/>
+  <testcase name="inspirationAndAidCosts()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.004"/>
+  <testcase name="rawKnowledgeRoundingPenaltyAndTieOrder()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.0"/>
+  <testcase name="synergyDrainsExactlyFifteenIncludingExhaustedCategories()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.003"/>
+  <testcase name="malformedSaveIsRejected()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.001"/>
+  <testcase name="aidCardsCanTeachLockedCategoriesButRespectRejection()" classname="thaumcraft.port.theory.TheorySessionTest" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

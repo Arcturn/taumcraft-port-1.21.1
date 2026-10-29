@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0-alpha.9.13-dev",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.259",
+  "protocol": 6,
+  "junit": {
+    "tests": 134,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "server_gametests": {
+    "passed": 20,
+    "log": "build-test-server.log",
+    "later_changes": "client presentation, book lookup/pagination, models, documentation; gameplay/server handlers unchanged"
+  },
+  "datagen": "pass in build-test-server.log",
+  "original_client": {
+    "minecraft": "1.12.2",
+    "forge": "14.23.5.2860",
+    "thaumcraft": "6.1.BETA26",
+    "baubles": "1.5.2",
+    "exit_code": 0,
+    "captured_categories": 7,
+    "saved_reference_images": 16
+  },
+  "modern_client": {
+    "exit_code": 0,
+    "categories": 7,
+    "blueprints": 6,
+    "model_audit": {
+      "selections": 914,
+      "problems": 0,
+      "log": "[08:52:58] [Render thread/INFO] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] Checked 914 item/book/advancement model selections; 0 problems"
+    },
+    "final_screenshots": 24,
+    "details": "final-smoke-summary.json"
+  },
+  "limitations": [
+    "Not a full playthrough of 148 research entries and every recipe.",
+    "Source blueprint Infusion Matrix still uses original inventory geometry instead of legacy idle TESR; cube gaps, rune layout and lighting differ.",
+    "Independent RESEARCH/PAGE unread flags remain represented by shared ui_seen state.",
+    "Some unavailable non-full blueprint blocks have approximate neighbor occlusion.",
+    "Vanilla Minecraft sprites and rendering differ between engine versions; pixel-perfect parity is not claimed."
+  ],
+  "source_model_audit": "model-audit.json",
+  "page_audit": "page-audit.json",
+  "manual_check": "../../docs/THAUMONOMICON-alpha9.13-CHECK.ru.md"
+}

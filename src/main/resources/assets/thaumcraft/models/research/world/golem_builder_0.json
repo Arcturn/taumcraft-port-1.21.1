@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "texture": "thaumcraft:blocks/golembuilder"
+  },
+  "loader": "neoforge:obj",
+  "model": "thaumcraft:models/research/obj/golembuilder.obj",
+  "flip_v": false,
+  "automatic_culling": false,
+  "parent": "minecraft:block/block"
+}

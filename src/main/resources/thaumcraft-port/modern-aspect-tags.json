@@ -1,0 +1,1039 @@
+{
+  "item:minecraft:deepslate": {
+    "terra": 5
+  },
+  "item:minecraft:cobbled_deepslate": {
+    "terra": 5,
+    "perditio": 1
+  },
+  "item:minecraft:calcite": {
+    "terra": 5,
+    "vitreus": 1
+  },
+  "item:minecraft:tuff": {
+    "terra": 5,
+    "ignis": 2
+  },
+  "item:minecraft:basalt": {
+    "terra": 5,
+    "ignis": 2
+  },
+  "item:minecraft:blackstone": {
+    "terra": 5,
+    "tenebrae": 2
+  },
+  "item:minecraft:gilded_blackstone": {
+    "terra": 5,
+    "metallum": 5,
+    "desiderium": 5
+  },
+  "item:minecraft:nether_gold_ore": {
+    "terra": 5,
+    "metallum": 5,
+    "desiderium": 5,
+    "ignis": 2
+  },
+  "tag:c:ores/coal": {
+    "terra": 5,
+    "potentia": 15,
+    "ignis": 15
+  },
+  "tag:c:raw_materials/iron": {
+    "terra": 2,
+    "metallum": 15
+  },
+  "tag:c:raw_materials/gold": {
+    "terra": 2,
+    "metallum": 10,
+    "desiderium": 10
+  },
+  "tag:c:raw_materials/copper": {
+    "terra": 2,
+    "metallum": 10,
+    "permutatio": 5
+  },
+  "item:minecraft:ancient_debris": {
+    "terra": 5,
+    "metallum": 15,
+    "ignis": 5,
+    "ordo": 5
+  },
+  "item:minecraft:crying_obsidian": {
+    "terra": 5,
+    "ignis": 5,
+    "tenebrae": 5,
+    "praecantatio": 5
+  },
+  "item:minecraft:soul_soil": {
+    "terra": 3,
+    "spiritus": 3
+  },
+  "item:minecraft:rooted_dirt": {
+    "terra": 5,
+    "herba": 1
+  },
+  "item:minecraft:mud": {
+    "terra": 5,
+    "aqua": 3
+  },
+  "item:minecraft:dripstone_block": {
+    "terra": 5,
+    "aqua": 1
+  },
+  "item:minecraft:pointed_dripstone": {
+    "terra": 5,
+    "aqua": 1
+  },
+  "item:minecraft:amethyst_shard": {
+    "vitreus": 10,
+    "sensus": 5
+  },
+  "item:minecraft:budding_amethyst": {
+    "vitreus": 20,
+    "victus": 5
+  },
+  "item:minecraft:small_amethyst_bud": {
+    "vitreus": 2,
+    "sensus": 1
+  },
+  "item:minecraft:medium_amethyst_bud": {
+    "vitreus": 4,
+    "sensus": 1
+  },
+  "item:minecraft:large_amethyst_bud": {
+    "vitreus": 6,
+    "sensus": 1
+  },
+  "item:minecraft:amethyst_cluster": {
+    "vitreus": 10,
+    "sensus": 5
+  },
+  "item:minecraft:bamboo": {
+    "herba": 5
+  },
+  "item:minecraft:mangrove_roots": {
+    "herba": 10,
+    "aqua": 5
+  },
+  "item:minecraft:hanging_roots": {
+    "herba": 5,
+    "terra": 1
+  },
+  "item:minecraft:azalea": {
+    "herba": 15,
+    "victus": 5
+  },
+  "item:minecraft:flowering_azalea": {
+    "herba": 15,
+    "victus": 5,
+    "sensus": 5
+  },
+  "item:minecraft:moss_block": {
+    "herba": 5,
+    "terra": 2,
+    "aqua": 1
+  },
+  "item:minecraft:big_dripleaf": {
+    "herba": 5,
+    "aqua": 2,
+    "motus": 1
+  },
+  "item:minecraft:small_dripleaf": {
+    "herba": 5,
+    "aqua": 2,
+    "motus": 1
+  },
+  "item:minecraft:spore_blossom": {
+    "herba": 5,
+    "aer": 2,
+    "sensus": 5
+  },
+  "item:minecraft:glow_lichen": {
+    "herba": 3,
+    "lux": 3
+  },
+  "item:minecraft:glow_berries": {
+    "herba": 5,
+    "victus": 5,
+    "lux": 3
+  },
+  "item:minecraft:sweet_berries": {
+    "herba": 5,
+    "victus": 5,
+    "aversio": 1
+  },
+  "item:minecraft:cornflower": {
+    "herba": 5,
+    "victus": 1,
+    "sensus": 5
+  },
+  "item:minecraft:lily_of_the_valley": {
+    "herba": 5,
+    "victus": 1,
+    "sensus": 5
+  },
+  "item:minecraft:torchflower": {
+    "herba": 5,
+    "victus": 1,
+    "sensus": 5
+  },
+  "item:minecraft:wither_rose": {
+    "herba": 5,
+    "mortuus": 5,
+    "perditio": 2
+  },
+  "item:minecraft:pitcher_plant": {
+    "herba": 5,
+    "aqua": 2,
+    "sensus": 5
+  },
+  "item:minecraft:torchflower_seeds": {
+    "herba": 5,
+    "victus": 1,
+    "cognitio": 1
+  },
+  "item:minecraft:pitcher_pod": {
+    "herba": 5,
+    "victus": 1,
+    "cognitio": 1
+  },
+  "item:minecraft:pink_petals": {
+    "herba": 2,
+    "sensus": 2
+  },
+  "item:minecraft:kelp": {
+    "herba": 5,
+    "aqua": 3
+  },
+  "item:minecraft:seagrass": {
+    "herba": 3,
+    "aqua": 3
+  },
+  "block:minecraft:tall_seagrass": {
+    "herba": 5,
+    "aqua": 3
+  },
+  "item:minecraft:sea_pickle": {
+    "herba": 3,
+    "aqua": 3,
+    "lux": 3
+  },
+  "item:minecraft:tube_coral": {
+    "bestia": 5,
+    "aqua": 5,
+    "victus": 2
+  },
+  "item:minecraft:tube_coral_fan": {
+    "bestia": 5,
+    "aqua": 5,
+    "victus": 2
+  },
+  "item:minecraft:tube_coral_block": {
+    "bestia": 10,
+    "aqua": 5,
+    "victus": 5
+  },
+  "item:minecraft:dead_tube_coral": {
+    "bestia": 2,
+    "terra": 3,
+    "mortuus": 2
+  },
+  "item:minecraft:dead_tube_coral_fan": {
+    "bestia": 2,
+    "terra": 3,
+    "mortuus": 2
+  },
+  "item:minecraft:dead_tube_coral_block": {
+    "bestia": 5,
+    "terra": 5,
+    "mortuus": 5
+  },
+  "item:minecraft:brain_coral": {
+    "bestia": 5,
+    "aqua": 5,
+    "victus": 2
+  },
+  "item:minecraft:brain_coral_fan": {
+    "bestia": 5,
+    "aqua": 5,
+    "victus": 2
+  },
+  "item:minecraft:brain_coral_block": {
+    "bestia": 10,
+    "aqua": 5,
+    "victus": 5
+  },
+  "item:minecraft:dead_brain_coral": {
+    "bestia": 2,
+    "terra": 3,
+    "mortuus": 2
+  },
+  "item:minecraft:dead_brain_coral_fan": {
+    "bestia": 2,
+    "terra": 3,
+    "mortuus": 2
+  },
+  "item:minecraft:dead_brain_coral_block": {
+    "bestia": 5,
+    "terra": 5,
+    "mortuus": 5
+  },
+  "item:minecraft:bubble_coral": {
+    "bestia": 5,
+    "aqua": 5,
+    "victus": 2
+  },
+  "item:minecraft:bubble_coral_fan": {
+    "bestia": 5,
+    "aqua": 5,
+    "victus": 2
+  },
+  "item:minecraft:bubble_coral_block": {
+    "bestia": 10,
+    "aqua": 5,
+    "victus": 5
+  },
+  "item:minecraft:dead_bubble_coral": {
+    "bestia": 2,
+    "terra": 3,
+    "mortuus": 2
+  },
+  "item:minecraft:dead_bubble_coral_fan": {
+    "bestia": 2,
+    "terra": 3,
+    "mortuus": 2
+  },
+  "item:minecraft:dead_bubble_coral_block": {
+    "bestia": 5,
+    "terra": 5,
+    "mortuus": 5
+  },
+  "item:minecraft:fire_coral": {
+    "bestia": 5,
+    "aqua": 5,
+    "victus": 2
+  },
+  "item:minecraft:fire_coral_fan": {
+    "bestia": 5,
+    "aqua": 5,
+    "victus": 2
+  },
+  "item:minecraft:fire_coral_block": {
+    "bestia": 10,
+    "aqua": 5,
+    "victus": 5
+  },
+  "item:minecraft:dead_fire_coral": {
+    "bestia": 2,
+    "terra": 3,
+    "mortuus": 2
+  },
+  "item:minecraft:dead_fire_coral_fan": {
+    "bestia": 2,
+    "terra": 3,
+    "mortuus": 2
+  },
+  "item:minecraft:dead_fire_coral_block": {
+    "bestia": 5,
+    "terra": 5,
+    "mortuus": 5
+  },
+  "item:minecraft:horn_coral": {
+    "bestia": 5,
+    "aqua": 5,
+    "victus": 2
+  },
+  "item:minecraft:horn_coral_fan": {
+    "bestia": 5,
+    "aqua": 5,
+    "victus": 2
+  },
+  "item:minecraft:horn_coral_block": {
+    "bestia": 10,
+    "aqua": 5,
+    "victus": 5
+  },
+  "item:minecraft:dead_horn_coral": {
+    "bestia": 2,
+    "terra": 3,
+    "mortuus": 2
+  },
+  "item:minecraft:dead_horn_coral_fan": {
+    "bestia": 2,
+    "terra": 3,
+    "mortuus": 2
+  },
+  "item:minecraft:dead_horn_coral_block": {
+    "bestia": 5,
+    "terra": 5,
+    "mortuus": 5
+  },
+  "item:minecraft:crimson_nylium": {
+    "terra": 5,
+    "ignis": 2,
+    "herba": 2
+  },
+  "item:minecraft:warped_nylium": {
+    "terra": 5,
+    "alienis": 2,
+    "herba": 2
+  },
+  "item:minecraft:crimson_fungus": {
+    "herba": 5,
+    "tenebrae": 2,
+    "ignis": 2
+  },
+  "item:minecraft:warped_fungus": {
+    "herba": 5,
+    "tenebrae": 2,
+    "alienis": 2
+  },
+  "item:minecraft:crimson_roots": {
+    "herba": 5,
+    "ignis": 1
+  },
+  "item:minecraft:weeping_vines": {
+    "herba": 5,
+    "ignis": 1
+  },
+  "item:minecraft:warped_roots": {
+    "herba": 5,
+    "alienis": 1
+  },
+  "item:minecraft:twisting_vines": {
+    "herba": 5,
+    "alienis": 1
+  },
+  "item:minecraft:nether_sprouts": {
+    "herba": 5,
+    "alienis": 1
+  },
+  "item:minecraft:warped_wart_block": {
+    "herba": 10,
+    "alienis": 5
+  },
+  "item:minecraft:shroomlight": {
+    "herba": 5,
+    "lux": 15
+  },
+  "item:minecraft:ochre_froglight": {
+    "lux": 15,
+    "bestia": 5
+  },
+  "item:minecraft:verdant_froglight": {
+    "lux": 15,
+    "bestia": 5
+  },
+  "item:minecraft:pearlescent_froglight": {
+    "lux": 15,
+    "bestia": 5
+  },
+  "item:minecraft:bee_nest": {
+    "herba": 10,
+    "bestia": 5,
+    "vinculum": 5
+  },
+  "item:minecraft:honeycomb": {
+    "bestia": 3,
+    "victus": 3,
+    "fabrico": 3
+  },
+  "item:minecraft:nautilus_shell": {
+    "bestia": 5,
+    "aqua": 5,
+    "praemunio": 5
+  },
+  "item:minecraft:heart_of_the_sea": {
+    "aqua": 20,
+    "praecantatio": 10,
+    "victus": 10
+  },
+  "item:minecraft:turtle_scute": {
+    "bestia": 5,
+    "praemunio": 5
+  },
+  "item:minecraft:armadillo_scute": {
+    "bestia": 5,
+    "praemunio": 5
+  },
+  "item:minecraft:turtle_egg": {
+    "bestia": 5,
+    "victus": 5,
+    "aqua": 5
+  },
+  "item:minecraft:frogspawn": {
+    "bestia": 5,
+    "victus": 5,
+    "aqua": 5
+  },
+  "item:minecraft:sniffer_egg": {
+    "bestia": 10,
+    "victus": 10,
+    "cognitio": 5
+  },
+  "item:minecraft:phantom_membrane": {
+    "exanimis": 5,
+    "volatus": 10,
+    "alkimia": 5
+  },
+  "item:minecraft:goat_horn": {
+    "bestia": 5,
+    "sensus": 10,
+    "aer": 5
+  },
+  "item:minecraft:glow_ink_sac": {
+    "aqua": 2,
+    "bestia": 2,
+    "sensus": 5,
+    "lux": 5
+  },
+  "item:minecraft:trident": {
+    "metallum": 15,
+    "aqua": 10
+  },
+  "item:minecraft:bell": {
+    "metallum": 15,
+    "sensus": 15
+  },
+  "item:minecraft:echo_shard": {
+    "vitreus": 5,
+    "spiritus": 5,
+    "sensus": 5
+  },
+  "item:minecraft:sculk": {
+    "tenebrae": 5,
+    "spiritus": 5,
+    "victus": 3
+  },
+  "item:minecraft:sculk_vein": {
+    "tenebrae": 2,
+    "spiritus": 2
+  },
+  "item:minecraft:sculk_catalyst": {
+    "spiritus": 10,
+    "mortuus": 10,
+    "victus": 5
+  },
+  "item:minecraft:sculk_sensor": {
+    "spiritus": 5,
+    "sensus": 10,
+    "motus": 5
+  },
+  "item:minecraft:sculk_shrieker": {
+    "spiritus": 5,
+    "sensus": 10,
+    "tenebrae": 10
+  },
+  "item:minecraft:reinforced_deepslate": {
+    "terra": 25,
+    "praemunio": 25,
+    "spiritus": 10
+  },
+  "item:minecraft:breeze_rod": {
+    "aer": 15,
+    "motus": 5
+  },
+  "item:minecraft:heavy_core": {
+    "metallum": 20,
+    "terra": 10,
+    "ordo": 10
+  },
+  "item:minecraft:trial_key": {
+    "metallum": 5,
+    "vinculum": 5,
+    "machina": 5
+  },
+  "item:minecraft:ominous_trial_key": {
+    "metallum": 5,
+    "vinculum": 5,
+    "machina": 5,
+    "praecantatio": 5
+  },
+  "item:minecraft:ominous_bottle": {
+    "vitreus": 5,
+    "praecantatio": 5,
+    "aversio": 5
+  },
+  "item:minecraft:trial_spawner": {
+    "bestia": 20,
+    "motus": 20,
+    "exanimis": 20,
+    "praecantatio": 20,
+    "ordo": 10
+  },
+  "item:minecraft:vault": {
+    "metallum": 20,
+    "vinculum": 20,
+    "desiderium": 20,
+    "praecantatio": 10
+  },
+  "item:minecraft:piglin_head": {
+    "mortuus": 10,
+    "spiritus": 10,
+    "bestia": 5,
+    "humanus": 5
+  },
+  "item:minecraft:angler_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:archer_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:arms_up_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:blade_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:brewer_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:burn_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:danger_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:explorer_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:flow_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:friend_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:guster_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:heart_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:heartbreak_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:howl_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:miner_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:mourner_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:plenty_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:prize_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:scrape_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:sheaf_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:shelter_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:skull_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:snort_pottery_sherd": {
+    "terra": 5,
+    "cognitio": 5,
+    "sensus": 5
+  },
+  "item:minecraft:sentry_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:dune_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:coast_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:wild_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:ward_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:eye_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:vex_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:tide_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:snout_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:rib_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:spire_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:wayfinder_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:shaper_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:silence_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:raiser_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:host_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:flow_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:bolt_armor_trim_smithing_template": {
+    "cognitio": 5,
+    "fabrico": 5,
+    "sensus": 5
+  },
+  "item:minecraft:netherite_upgrade_smithing_template": {
+    "cognitio": 10,
+    "fabrico": 5,
+    "ordo": 5
+  },
+  "item:minecraft:globe_banner_pattern": {
+    "cognitio": 5,
+    "sensus": 5,
+    "terra": 5
+  },
+  "item:minecraft:piglin_banner_pattern": {
+    "cognitio": 5,
+    "sensus": 5,
+    "bestia": 5
+  },
+  "item:minecraft:flow_banner_pattern": {
+    "cognitio": 5,
+    "sensus": 5,
+    "motus": 5
+  },
+  "item:minecraft:guster_banner_pattern": {
+    "cognitio": 5,
+    "sensus": 5,
+    "aer": 5
+  },
+  "item:minecraft:music_disc_pigstep": {
+    "sensus": 15,
+    "aer": 5,
+    "desiderium": 10,
+    "ignis": 5
+  },
+  "item:minecraft:music_disc_otherside": {
+    "sensus": 15,
+    "aer": 5,
+    "desiderium": 10,
+    "alienis": 5
+  },
+  "item:minecraft:music_disc_relic": {
+    "sensus": 15,
+    "aer": 5,
+    "desiderium": 10,
+    "cognitio": 5
+  },
+  "item:minecraft:music_disc_5": {
+    "sensus": 15,
+    "aer": 5,
+    "desiderium": 10,
+    "spiritus": 5
+  },
+  "item:minecraft:music_disc_creator": {
+    "sensus": 15,
+    "aer": 5,
+    "desiderium": 10,
+    "fabrico": 5
+  },
+  "item:minecraft:music_disc_creator_music_box": {
+    "sensus": 15,
+    "aer": 5,
+    "desiderium": 10,
+    "machina": 5
+  },
+  "item:minecraft:music_disc_precipice": {
+    "sensus": 15,
+    "aer": 5,
+    "desiderium": 10,
+    "motus": 5
+  },
+  "item:minecraft:disc_fragment_5": {
+    "sensus": 3,
+    "spiritus": 1,
+    "desiderium": 2
+  },
+  "item:minecraft:suspicious_sand": {
+    "terra": 5,
+    "perditio": 5,
+    "cognitio": 1
+  },
+  "item:minecraft:suspicious_gravel": {
+    "terra": 5,
+    "perditio": 2,
+    "cognitio": 1
+  },
+  "block:minecraft:powder_snow": {
+    "gelum": 20
+  },
+  "block:minecraft:soul_fire": {
+    "ignis": 20,
+    "spiritus": 5
+  },
+  "entity:minecraft:allay": {
+    "aer": 5,
+    "volatus": 10,
+    "spiritus": 10,
+    "permutatio": 5
+  },
+  "entity:minecraft:armadillo": {
+    "bestia": 10,
+    "terra": 5,
+    "praemunio": 10
+  },
+  "entity:minecraft:axolotl": {
+    "bestia": 10,
+    "aqua": 10,
+    "victus": 5
+  },
+  "entity:minecraft:bee": {
+    "bestia": 5,
+    "volatus": 5,
+    "herba": 5
+  },
+  "entity:minecraft:bogged": {
+    "exanimis": 20,
+    "humanus": 5,
+    "herba": 5,
+    "mortuus": 5
+  },
+  "entity:minecraft:breeze": {
+    "aer": 15,
+    "motus": 15,
+    "volatus": 5
+  },
+  "entity:minecraft:camel": {
+    "bestia": 15,
+    "terra": 10,
+    "aer": 5
+  },
+  "entity:minecraft:cat": {
+    "bestia": 10,
+    "perditio": 10
+  },
+  "entity:minecraft:cod": {
+    "bestia": 5,
+    "aqua": 10
+  },
+  "entity:minecraft:salmon": {
+    "bestia": 5,
+    "aqua": 10
+  },
+  "entity:minecraft:tropical_fish": {
+    "bestia": 5,
+    "aqua": 10
+  },
+  "entity:minecraft:pufferfish": {
+    "bestia": 5,
+    "aqua": 10,
+    "mortuus": 5,
+    "praemunio": 5
+  },
+  "entity:minecraft:dolphin": {
+    "bestia": 10,
+    "aqua": 10,
+    "motus": 5
+  },
+  "entity:minecraft:drowned": {
+    "exanimis": 20,
+    "humanus": 10,
+    "aqua": 5
+  },
+  "entity:minecraft:fox": {
+    "bestia": 10,
+    "terra": 5,
+    "desiderium": 5
+  },
+  "entity:minecraft:frog": {
+    "bestia": 5,
+    "aqua": 5,
+    "motus": 5
+  },
+  "entity:minecraft:glow_squid": {
+    "bestia": 5,
+    "aqua": 10,
+    "lux": 5
+  },
+  "entity:minecraft:goat": {
+    "bestia": 10,
+    "terra": 5,
+    "motus": 5,
+    "aversio": 5
+  },
+  "entity:minecraft:hoglin": {
+    "bestia": 20,
+    "ignis": 5,
+    "aversio": 5
+  },
+  "entity:minecraft:panda": {
+    "bestia": 15,
+    "terra": 10,
+    "herba": 5
+  },
+  "entity:minecraft:phantom": {
+    "exanimis": 15,
+    "volatus": 10,
+    "tenebrae": 5
+  },
+  "entity:minecraft:piglin": {
+    "humanus": 10,
+    "bestia": 10,
+    "desiderium": 10
+  },
+  "entity:minecraft:piglin_brute": {
+    "humanus": 10,
+    "bestia": 10,
+    "desiderium": 10,
+    "aversio": 10
+  },
+  "entity:minecraft:pillager": {
+    "humanus": 10,
+    "aversio": 10
+  },
+  "entity:minecraft:ravager": {
+    "bestia": 25,
+    "aversio": 15,
+    "perditio": 10
+  },
+  "entity:minecraft:sniffer": {
+    "bestia": 15,
+    "herba": 10,
+    "cognitio": 5
+  },
+  "entity:minecraft:strider": {
+    "bestia": 10,
+    "ignis": 15,
+    "motus": 5
+  },
+  "entity:minecraft:tadpole": {
+    "bestia": 3,
+    "aqua": 5,
+    "victus": 5
+  },
+  "entity:minecraft:trader_llama": {
+    "bestia": 15,
+    "aqua": 5
+  },
+  "entity:minecraft:turtle": {
+    "bestia": 10,
+    "aqua": 10,
+    "praemunio": 10
+  },
+  "entity:minecraft:wandering_trader": {
+    "humanus": 15,
+    "permutatio": 5,
+    "desiderium": 5
+  },
+  "entity:minecraft:warden": {
+    "bestia": 30,
+    "spiritus": 20,
+    "sensus": 20,
+    "tenebrae": 20
+  },
+  "entity:minecraft:zoglin": {
+    "bestia": 15,
+    "exanimis": 15,
+    "aversio": 5
+  },
+  "item:minecraft:mushroom_stem": {
+    "herba": 5,
+    "tenebrae": 2
+  }
+}

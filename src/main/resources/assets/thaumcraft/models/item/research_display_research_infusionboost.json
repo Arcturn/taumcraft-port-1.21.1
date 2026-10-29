@@ -1,0 +1,11 @@
+{
+  "parent": "thaumcraft:research/icons/matrix_cost_0",
+  "overrides": [
+    {
+      "predicate": {
+        "thaumcraft:research_frame": 1
+      },
+      "model": "thaumcraft:research/display/research_display_research_infusionboost_1"
+    }
+  ]
+}

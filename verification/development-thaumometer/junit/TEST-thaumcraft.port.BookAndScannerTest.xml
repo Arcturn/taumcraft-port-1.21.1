@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.BookAndScannerTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2026-10-29T01:00:00.992Z" hostname="e54a7cd1abdc" time="0.351">
+  <properties/>
+  <testcase name="multiblockTabsKeepCompletedTargetsAndOriginalDisplayStackException()" classname="thaumcraft.port.BookAndScannerTest" time="0.067"/>
+  <testcase name="dailySkyFlagsSurviveSavingAndOldDaysArePruned()" classname="thaumcraft.port.BookAndScannerTest" time="0.022"/>
+  <testcase name="recipeGatesAllowPartialStagesAndRequireBothAdvancedSealResearches()" classname="thaumcraft.port.BookAndScannerTest" time="0.012"/>
+  <testcase name="everyOriginalLocalizedPageParsesIncludingInlineIllustrations()" classname="thaumcraft.port.BookAndScannerTest" time="0.153"/>
+  <testcase name="markupProducesImagesRatherThanResourcePathText()" classname="thaumcraft.port.BookAndScannerTest" time="0.002"/>
+  <testcase name="ingredientDrilldownRetainsGroupVariantWithoutRequiringOwningEntryCompletion()" classname="thaumcraft.port.BookAndScannerTest" time="0.023"/>
+  <testcase name="wrappedOriginalFormattingKeepsUnderlineAndHonorsReset()" classname="thaumcraft.port.BookAndScannerTest" time="0.002"/>
+  <testcase name="administrativeCompletionIncludesHiddenRecordsAndSurvivesReloadWithoutFakeScans()" classname="thaumcraft.port.BookAndScannerTest" time="0.021"/>
+  <testcase name="hiddenParagraphMarkerParticipatesInWrappingBeforeItIsRemoved()" classname="thaumcraft.port.BookAndScannerTest" time="0.001"/>
+  <testcase name="pageBreaksAndReservedRequirementAreaDoNotLoseContent()" classname="thaumcraft.port.BookAndScannerTest" time="0.002"/>
+  <testcase name="legacyWispSubtypesDoNotAwardFreshGenericScans()" classname="thaumcraft.port.BookAndScannerTest" time="0.001"/>
+  <testcase name="knowledgeTableAndRequirementsReserveTheOriginalFirstColumnHeight()" classname="thaumcraft.port.BookAndScannerTest" time="0.001"/>
+  <testcase name="originalCategoryGatesRemainInPlace()" classname="thaumcraft.port.BookAndScannerTest" time="0.001"/>
+  <testcase name="heavenlyTargetUsesOriginalTolerancesAndFourStarDirections()" classname="thaumcraft.port.BookAndScannerTest" time="0.001"/>
+  <testcase name="fractionalIllustrationDimensionsMatchOriginalIntegerTruncation()" classname="thaumcraft.port.BookAndScannerTest" time="0.0"/>
+  <testcase name="wildcardWoolIngredientsRetainAllColorsAndFixedBlackBannerStaysBlack()" classname="thaumcraft.port.BookAndScannerTest" time="0.008"/>
+  <testcase name="referenceSearchUsesStageRecipesWithoutAddingAddenda()" classname="thaumcraft.port.BookAndScannerTest" time="0.017"/>
+  <testcase name="hiddenResearchWithSatisfiedParentsBecomesReachable()" classname="thaumcraft.port.BookAndScannerTest" time="0.002"/>
+  <testcase name="oversizedForCurrentColumnIllustrationsWaitWhileLaterTextFillsIt()" classname="thaumcraft.port.BookAndScannerTest" time="0.001"/>
+  <testcase name="lockedFirstDirectRecipeStopsBeforeAnUnlockedAlternative()" classname="thaumcraft.port.BookAndScannerTest" time="0.003"/>
+  <testcase name="paragraphSpacingStaysAttachedToTheLineAcrossPageBoundaries()" classname="thaumcraft.port.BookAndScannerTest" time="0.0"/>
+  <testcase name="presentationFlagsCannotCompleteResearch()" classname="thaumcraft.port.BookAndScannerTest" time="0.0"/>
+  <testcase name="explicitPageBreakPlacesWaitingIllustrationBeforeFollowingText()" classname="thaumcraft.port.BookAndScannerTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

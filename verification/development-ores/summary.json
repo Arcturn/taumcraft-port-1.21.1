@@ -1,0 +1,185 @@
+{
+  "version": "0.1.0-alpha.9.16-dev",
+  "result": "PASS",
+  "validation_log": "full-validation.log",
+  "junit": {
+    "tests": 1976,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "suite_count": 34,
+    "focused_reports": [
+      {
+        "class": "thaumcraft.port.world.DepositRulesTest",
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "methods": [
+          "oldHeightWorldAddsNoDeepAttemptsAndShortWorldClipsTheBands()",
+          "crystalLowerBandScalesAttemptsAndBudgetTogether()",
+          "modernDepthAddsDensityWithoutDilutingOriginalUpperBands()",
+          "originalUpperCountsUseNearestRoundingAtEverySupportedDensity()"
+        ],
+        "report": "junit/TEST-thaumcraft.port.world.DepositRulesTest.xml"
+      },
+      {
+        "class": "thaumcraft.port.world.CrystalBiomeAffinityTest",
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "methods": [
+          "aliasTagsDoNotMultiplyOneLegacyType()",
+          "coldForestKeepsBothOriginalTypeAspectsInsteadOfFirstTagWinning()",
+          "dryUsesTheFinalOriginalEntropyEntryAndHotIsStillSelectable()",
+          "aquaticAndOceanTypeWeightsAreNotCollapsedToOneAspectEntry()",
+          "unmappedBiomeReturnsNullWithoutInventingAnAirBiasOrConsumingRandomness()",
+          "rareTypeRetainsItsOriginalRandomPrimalFallbackChance()",
+          "taigaRetainsBothForestAndConiferousEarthTypeWeights()"
+        ],
+        "report": "junit/TEST-thaumcraft.port.world.CrystalBiomeAffinityTest.xml"
+      }
+    ]
+  },
+  "gametests": {
+    "required_tests": 45,
+    "passed": 45,
+    "failed": 0,
+    "scope": "Real Minecraft/NeoForge GameTest server. Deposits tests invoke the registered PlacedFeature against a bounded controlled WorldGenLevel proxy with real server registries; crystal support and deepslate loot/integration tests use loaded server data.",
+    "focused_test_methods": {
+      "DepositsGameTests": 4,
+      "DeepslateOreGameTests": 3,
+      "CrystalSupportGameTests": 3
+    },
+    "runtime_markers": [
+      "CRYSTAL_SUPPORT valid_rock_faces=96 unsupported_materials=4",
+      "DEEPSLATE_ORE_LOOT paired_seeded_checks=4608 amber_curios_in_512=37",
+      "DEPOSIT_CRYSTAL_BUDGET density=44 upper_budget=28 upper_cluster_units={0=28, 1=26} lower_budget=30 lower_cluster_units={2=26, 3=28}",
+      "DEPOSIT_CRYSTAL_BUDGET density=100 upper_budget=64 upper_cluster_units={0=28, 1=26, 2=28} lower_budget=68 lower_cluster_units={3=28, 4=28, 5=26}",
+      "DEPOSIT_CRYSTAL_BUDGET density=200 upper_budget=128 upper_cluster_units={0=28, 1=26, 2=28, 3=26, 4=26} lower_budget=137 lower_cluster_units={5=26, 6=28, 7=26, 8=26, 9=28, 10=26}",
+      "DEPOSIT_ORE_CANDIDATES density=1 upper_cinnabar=0 lower_cinnabar=0 upper_quartz=0 lower_quartz=0 amber=0 total=0",
+      "DEPOSIT_ORE_CANDIDATES density=50 upper_cinnabar=9 lower_cinnabar=11 upper_quartz=9 lower_quartz=9 amber=10 total=48",
+      "DEPOSIT_ORE_CANDIDATES density=100 upper_cinnabar=18 lower_cinnabar=23 upper_quartz=18 lower_quartz=18 amber=20 total=97",
+      "DEPOSIT_ORE_CANDIDATES density=200 upper_cinnabar=36 lower_cinnabar=45 upper_quartz=36 lower_quartz=36 amber=40 total=193"
+    ]
+  },
+  "ore_candidate_checks": {
+    "scope": "Candidate attempts on controlled solid hosts, before natural terrain, other ores, cavities, fluids, or repeated-coordinate replacement can reduce successful placements.",
+    "density_percent_samples": [
+      {
+        "density": 1,
+        "upper_cinnabar": 0,
+        "lower_cinnabar": 0,
+        "upper_quartz": 0,
+        "lower_quartz": 0,
+        "amber": 0,
+        "total": 0
+      },
+      {
+        "density": 50,
+        "upper_cinnabar": 9,
+        "lower_cinnabar": 11,
+        "upper_quartz": 9,
+        "lower_quartz": 9,
+        "amber": 10,
+        "total": 48
+      },
+      {
+        "density": 100,
+        "upper_cinnabar": 18,
+        "lower_cinnabar": 23,
+        "upper_quartz": 18,
+        "lower_quartz": 18,
+        "amber": 20,
+        "total": 97
+      },
+      {
+        "density": 200,
+        "upper_cinnabar": 36,
+        "lower_cinnabar": 45,
+        "upper_quartz": 36,
+        "lower_quartz": 36,
+        "amber": 40,
+        "total": 193
+      }
+    ],
+    "default_modern_height_world": {
+      "min_y": -64,
+      "upper_cinnabar": 18,
+      "lower_cinnabar": 23,
+      "total_cinnabar": 41,
+      "upper_quartz": 18,
+      "lower_quartz": 18,
+      "total_quartz": 36,
+      "surface_amber": 20
+    },
+    "legacy_min_y_zero_no_extra_lower_attempts": true,
+    "variant_uses_host_block_not_altitude": true,
+    "protects_non_replaceable_blocks": true
+  },
+  "crystal_checks": {
+    "scope": "Controlled checkerboard air/rock caves and deterministic random selection validate SIZE-unit budgets, full final cube completion, density scaling, upper/lower coverage, support, bounds, empty/fluid rejection, and Nether exclusion.",
+    "density_percent_samples": [
+      44,
+      100,
+      200
+    ],
+    "default_band_attempts": {
+      "upper": 8,
+      "lower": 9
+    },
+    "default_band_size_budgets": {
+      "upper": 64,
+      "lower": 68
+    },
+    "budget_may_be_exceeded_by_finishing_last_cube": true,
+    "valid_rock_faces": 96,
+    "unsupported_materials": 4,
+    "biome_affinity_junit_tests": 7
+  },
+  "deepslate_checks": {
+    "paired_seeded_loot_comparisons": 4608,
+    "amber_curios_in_512_seeded_checks": 37,
+    "integration": "Loaded loot tables, Fortune/Silk Touch, mining properties, aspects/research, furnace/blast furnace and metal purification."
+  },
+  "datagen": {
+    "report": "thaumcraft-validation.json",
+    "results": {
+      "advancement_fixture_checks": 1733,
+      "aspect_fixture_checks": 394,
+      "audit_fixture_checks": 18,
+      "blocks": 86,
+      "essentia_extension_fixture_checks": 18,
+      "essentia_fixture_checks": 69,
+      "feature_order_cycles": false,
+      "items": 295,
+      "jar_bellows_fixture_checks": 35,
+      "leaf_color_fixture_checks": 39,
+      "loot_tables_decoded": 99,
+      "machine_fixture_checks": 169,
+      "presentation_fixture_checks": 219,
+      "recipes_decoded": 96,
+      "scan_fixture_checks": 325,
+      "server_started": false,
+      "templates_decoded": 3,
+      "theory_fixture_checks": 239,
+      "tree_fixture_checks": 90,
+      "worldgen_registries_loaded": true
+    }
+  },
+  "resource_verification": {
+    "result": "PASS",
+    "report": "resources.log",
+    "checks_built_jar": true
+  },
+  "artifact_verification": "artifact.json",
+  "limits": [
+    "No statistical full-world natural terrain ore/crystal density survey or long exploration run was performed. Actual successful placements depend on host rock, cave geometry, local surface height, biome and random draws.",
+    "Reported ore counts are configured candidate attempts per feature/chunk at each density, not a guaranteed number of unique ore blocks.",
+    "Crystal attempts and SIZE budgets are control parameters; they do not promise a fixed number of clusters, blocks or dropped essence. The full final cluster can exceed its SIZE budget.",
+    "Datagen registry validation is separate from the runtime GameTest server; its server_started=false field is expected.",
+    "Validation establishes the current built artifact and controlled runtime behavior; it does not backfill already-generated chunks."
+  ],
+  "dependency_alignment_report": "dependency-alignment.json"
+}

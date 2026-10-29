@@ -1,0 +1,7 @@
+{
+  "parent": "thaumcraft:research/vanilla/block/cube_all",
+  "textures": {
+    "all": "thaumcraft:research/vanilla/blocks/obsidian"
+  },
+  "render_type": "minecraft:solid"
+}

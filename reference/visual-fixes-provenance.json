@@ -1,0 +1,21 @@
+{
+  "source_sha256": "9425f8643581b27ff8845b087c8bc6fc10425a32942f1a3f0e265ce6b38f7b5f",
+  "assets": [
+    {
+      "source": "assets/thaumcraft/models/obj/crystal.obj",
+      "target": "assets/thaumcraft/models/obj/crystal.obj",
+      "sha256": "8221ea1f3001ae7abb41f2f87a007c652b77cd138b2d29d707a06253faec23c6"
+    },
+    {
+      "source": "assets/thaumcraft/models/obj/crystal.mtl",
+      "target": "assets/thaumcraft/models/obj/crystal.mtl",
+      "transformation": "Modern atlas path, tint index 0; white material matches TC6 MeshPart vertex colors"
+    }
+  ],
+  "notes": [
+    "Original eight crystal mesh parts and UVs, no generated cuboid substitute.",
+    "Nitor world model is empty as in TC6; every-client-tick flames and original white core use the original particle sheet.",
+    "Minecraft BlockModelRotation uses negative X/Y angles; face metadata now matches transformed geometry.",
+    "Screens render their background once, before content; Screen.render would blur custom content a second time."
+  ]
+}

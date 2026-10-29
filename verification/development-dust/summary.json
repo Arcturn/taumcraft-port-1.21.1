@@ -1,0 +1,72 @@
+{
+  "version": "0.1.0-alpha.9.10-dev",
+  "date": "2026-10-26",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.259",
+  "java": "21.0.13+9",
+  "gradle": "9.2.1",
+  "protocol": 6,
+  "scope": "Salis Mundus delayed visuals, sounds and conversion lifecycle for the four implemented dust targets",
+  "build": {
+    "command": "test runData runGameTestServer",
+    "result": "BUILD SUCCESSFUL",
+    "log": "validation-final.log",
+    "compileJava": "passed",
+    "compileTestJava": "passed"
+  },
+  "junit": {
+    "tests": 108,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "gametest": {
+    "required": 18,
+    "passed": 18,
+    "failed": 0,
+    "new_salis_tests": 11,
+    "existing_tests": 7,
+    "mock_players": "NeoForge FakePlayer with actual Curios datapack slots",
+    "real_connected_clients": false
+  },
+  "datagen": {
+    "advancement_fixture_checks": 1733,
+    "aspect_fixture_checks": 394,
+    "audit_fixture_checks": 18,
+    "blocks": 83,
+    "essentia_extension_fixture_checks": 18,
+    "essentia_fixture_checks": 69,
+    "feature_order_cycles": false,
+    "items": 292,
+    "jar_bellows_fixture_checks": 35,
+    "loot_tables_decoded": 96,
+    "machine_fixture_checks": 169,
+    "presentation_fixture_checks": 219,
+    "recipes_decoded": 96,
+    "scan_fixture_checks": 325,
+    "server_started": false,
+    "templates_decoded": 3,
+    "theory_fixture_checks": 239,
+    "tree_fixture_checks": 66,
+    "worldgen_registries_loaded": true
+  },
+  "resources": {
+    "result": "passed",
+    "log": "resources.log",
+    "legacy_particle_atlas_unchanged": true,
+    "legacy_particle_atlas_sha256": "3c31a3bed7a007ef4d671745bd627112c79d1ac70049e23194a1454929f17000"
+  },
+  "first_attempt": {
+    "log": "validation.log",
+    "result": "failed",
+    "reason": "Old vanilla mock server player triggered Curios custom payload sync without an actual client connection. Test fixture changed to NeoForge FakePlayer; final run passed."
+  },
+  "limitations": [
+    "No graphical Minecraft client/OpenGL run or in-game audio comparison",
+    "No two-real-client network test",
+    "Queue persistence covered by NBT roundtrip, not a full stop/restart cycle",
+    "Automated tests do not establish complete one-to-one mod parity",
+    "Infernal furnace, infusion altar variants and golem press remain outside the implemented dust targets"
+  ],
+  "delivery": "Source checkpoint only; no compiled port JAR"
+}

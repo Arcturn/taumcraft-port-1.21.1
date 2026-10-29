@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "player.totalExperience": true,
+    "playerUuid": true,
+    "research.discovered": true,
+    "research.permanentWarp": true,
+    "research.researchFlags": true,
+    "research.stages": true
+  },
+  "keepInventory": true,
+  "result": "PASS"
+}

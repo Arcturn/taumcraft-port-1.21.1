@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "thaumcraft:research_display_research_arcanepatterncrafter"
+    },
+    "title": {
+      "translate": "research.ARCANEPATTERNCRAFTER.title"
+    },
+    "description": {
+      "translate": "thaumcraft.advancement.research.description",
+      "with": [
+        {
+          "translate": "research.ARCANEPATTERNCRAFTER.title"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "completed": {
+      "trigger": "thaumcraft:research",
+      "conditions": {
+        "research": "ARCANEPATTERNCRAFTER"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "completed"
+    ]
+  ],
+  "sends_telemetry_event": false,
+  "parent": "thaumcraft:research/dioptra"
+}

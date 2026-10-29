@@ -1,0 +1,448 @@
+[03:45:26] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:45:26] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:45:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:45:26] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2860 for Minecraft 1.12.2 loading
+[03:45:26] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_502, running on Linux:amd64:6.18.55, installed at /workspace/scratch/5f8dd1a26602/work/thaumometer-audit/runtime-original/sysroot/usr/lib/jvm/java-8-openjdk-amd64/jre
+[03:45:26] [main/INFO] [FML]: Searching /workspace/scratch/5f8dd1a26602/work/thaumometer-audit/runtime-original/game/mods for mods
+[03:45:26] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[03:45:26] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[03:45:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[03:45:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[03:45:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[03:45:27] [main/INFO] [FML]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+[03:45:27] [main/INFO] [FML]: Found valid fingerprint for Minecraft. Certificate fingerprint cd99959656f753dc28d863b46769f7f8fbaefcfc
+[03:45:27] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[03:45:27] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[03:45:27] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[03:45:27] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[03:45:27] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[03:45:28] [Client thread/INFO] [minecraft/Minecraft]: Setting user: Reference
+[03:45:30] [Client thread/INFO] [minecraft/Minecraft]: LWJGL Version: 2.9.4
+[03:45:30] [Client thread/INFO] [FML]: Could not load splash.properties, will create a default one
+[03:45:30] [Client thread/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 6.18.55
+	Java Version: 1.8.0_502, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 184825912 bytes (176 MB) / 514850816 bytes (491 MB) up to 954728448 bytes (910 MB)
+	JVM Flags: 2 total; -Xmx1024m -XX:ActiveProcessorCount=2
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Mesa' Version: '4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.2' Renderer: 'llvmpipe (LLVM 20.1.2, 256 bits)'
+[03:45:30] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2860 Initialized
+[03:45:30] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[03:45:30] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[03:45:31] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[03:45:31] [Client thread/INFO] [FML]: Searching /workspace/scratch/5f8dd1a26602/work/thaumometer-audit/runtime-original/game/mods for mods
+[03:45:31] [Client thread/INFO] [FML]: Forge Mod Loader has identified 7 mods to load
+[03:45:32] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, baubles, tc_reference_probe, thaumcraft] at CLIENT
+[03:45:32] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, baubles, tc_reference_probe, thaumcraft] at SERVER
+[03:45:32] [Client thread/INFO] [minecraft/SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Baubles, FMLFileResourcePack:TC Reference Probe, FMLFileResourcePack:Thaumcraft
+[03:45:32] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[03:45:32] [Client thread/INFO] [FML]: Found 1169 ObjectHolder annotations
+[03:45:32] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[03:45:32] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[03:45:32] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[03:45:32] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[03:45:32] [Client thread/INFO] [FML]: OBJLoader: Domain thaumcraft has been added.
+[03:45:33] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 431736001 nanos
+[03:45:33] [Client thread/INFO] [FML]: Applying holder lookups
+[03:45:33] [Client thread/INFO] [FML]: Holder lookups applied
+[03:45:33] [Client thread/INFO] [FML]: Applying holder lookups
+[03:45:33] [Client thread/INFO] [FML]: Holder lookups applied
+[03:45:33] [Client thread/INFO] [FML]: Applying holder lookups
+[03:45:33] [Client thread/INFO] [FML]: Holder lookups applied
+[03:45:33] [Client thread/INFO] [FML]: Applying holder lookups
+[03:45:33] [Client thread/INFO] [FML]: Holder lookups applied
+[03:45:33] [Client thread/INFO] [FML]: Injecting itemstacks
+[03:45:33] [Client thread/INFO] [FML]: Itemstack injection complete
+[03:45:33] [Client thread/WARN] [minecraft/SoundManager]: Missing sound for event: thaumcraft:runicshieldcharge
+[03:45:33] [Sound Library Loader/INFO] [minecraft/SoundManager]: Starting up SoundSystem...
+[03:45:34] [Thread-4/INFO] [minecraft/SoundManager]: Initializing LWJGL OpenAL
+[03:45:34] [Thread-4/INFO] [minecraft/SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[03:45:34] [Thread-4/INFO] [minecraft/SoundManager]: OpenAL initialized.
+[03:45:34] [Sound Library Loader/INFO] [minecraft/SoundManager]: Sound engine started
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'thaumcraft:models/block/arcane_workbench_charger.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'thaumcraft:models/block/arcane_workbench_charger.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Tf' (model: 'thaumcraft:models/block/arcane_workbench_charger.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'illum' (model: 'thaumcraft:models/block/arcane_workbench_charger.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJModel: A color has already been defined for material 'texture' in 'thaumcraft:models/block/arcane_workbench_charger.mtl'. The color defined by key 'Ks' will not be applied!
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'thaumcraft:models/block/arcane_workbench_charger.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'thaumcraft:models/block/pillar.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'thaumcraft:models/block/pillar.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Tf' (model: 'thaumcraft:models/block/pillar.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'illum' (model: 'thaumcraft:models/block/pillar.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJModel: A color has already been defined for material 'texture' in 'thaumcraft:models/block/pillar.mtl'. The color defined by key 'Ks' will not be applied!
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'thaumcraft:models/block/pillar.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'thaumcraft:models/block/thaumatorium.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'thaumcraft:models/block/thaumatorium.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Tf' (model: 'thaumcraft:models/block/thaumatorium.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'illum' (model: 'thaumcraft:models/block/thaumatorium.mtl') is not currently supported, skipping
+[03:45:34] [Client thread/INFO] [FML]: OBJModel: A color has already been defined for material 'texture' in 'thaumcraft:models/block/thaumatorium.mtl'. The color defined by key 'Ks' will not be applied!
+[03:45:34] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'thaumcraft:models/block/thaumatorium.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'thaumcraft:models/block/golembuilder.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'thaumcraft:models/block/golembuilder.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Tf' (model: 'thaumcraft:models/block/golembuilder.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'illum' (model: 'thaumcraft:models/block/golembuilder.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJModel: A color has already been defined for material 'texture' in 'thaumcraft:models/block/golembuilder.mtl'. The color defined by key 'Ks' will not be applied!
+[03:45:35] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'thaumcraft:models/block/golembuilder.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'thaumcraft:models/item/scanner.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'thaumcraft:models/item/scanner.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Tf' (model: 'thaumcraft:models/item/scanner.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'illum' (model: 'thaumcraft:models/item/scanner.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJModel: A color has already been defined for material 'body' in 'thaumcraft:models/item/scanner.mtl'. The color defined by key 'Ks' will not be applied!
+[03:45:35] [Client thread/INFO] [FML]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'thaumcraft:models/item/scanner.mtl') is not currently supported, skipping
+[03:45:35] [Client thread/INFO] [FML]: OBJModel: A color has already been defined for material 'pane' in 'thaumcraft:models/item/scanner.mtl'. The color defined by key 'Ks' will not be applied!
+[03:45:35] [Client thread/INFO] [FML]: Max texture size: 16384
+[03:45:36] [Client thread/INFO] [minecraft/TextureMap]: Created: 1024x512 textures-atlas
+[03:45:36] [Client thread/INFO] [THAUMCRAFT]: Checking for mod & oredict compatibilities
+[03:45:36] [Client thread/INFO] [THAUMCRAFT]: Adding entities to MFR safari net blacklist.
+[03:45:37] [Client thread/INFO] [FML]: Applying holder lookups
+[03:45:37] [Client thread/INFO] [FML]: Holder lookups applied
+[03:45:37] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:init:20]: TCPROBE_INIT
+[03:45:37] [Client thread/INFO] [FML]: Injecting itemstacks
+[03:45:37] [Client thread/INFO] [FML]: Itemstack injection complete
+[03:45:37] [Client thread/INFO] [THAUMCRAFT]: Loaded 22 research entries from thaumcraft:research/alchemy
+[03:45:37] [Client thread/INFO] [THAUMCRAFT]: Loaded 5 research entries from thaumcraft:research/eldritch
+[03:45:37] [Client thread/INFO] [THAUMCRAFT]: Loaded 20 research entries from thaumcraft:research/basics
+[03:45:37] [Client thread/INFO] [THAUMCRAFT]: Loaded 23 research entries from thaumcraft:research/auromancy
+[03:45:37] [Client thread/INFO] [THAUMCRAFT]: Loaded 12 research entries from thaumcraft:research/scans
+[03:45:37] [Client thread/INFO] [THAUMCRAFT]: Loaded 20 research entries from thaumcraft:research/artifice
+[03:45:37] [Client thread/INFO] [THAUMCRAFT]: Loaded 17 research entries from thaumcraft:research/infusion
+[03:45:37] [Client thread/INFO] [THAUMCRAFT]: Loaded 29 research entries from thaumcraft:research/golemancy
+[03:45:37] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 7 mods
+[03:45:37] [Client thread/INFO] [mojang/NarratorLinux]: Narrator library successfully loaded
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: The following texture errors were found.
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: ==================================================
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:   DOMAIN minecraft
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: --------------------------------------------------
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:   domain minecraft is missing 3 textures
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:     domain minecraft has 2 locations:
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       unknown resourcepack type net.minecraft.client.resources.DefaultResourcePack : Default
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       mod thaumcraft resources at /workspace/scratch/5f8dd1a26602/work/thaumometer-audit/runtime-original/game/mods/Thaumcraft-1.12.2-6.1.BETA26.jar
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: -------------------------
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:     The missing resources for domain minecraft are:
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       textures/\thaumcraft\thaumcraft110\bin\assets\thaumcraft\textures\blocks\golembuilder.png.png
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       textures/\thaumcraft\thaumcraft110\src\main\resources\assets\thaumcraft\textures\blocks\arcane_workbench_charger.png.png
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       textures/\thaumcraft\thaumcraft110\src\main\resources\assets\thaumcraft\textures\blocks\thaumatorium.png.png
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: -------------------------
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:     No other errors exist for domain minecraft
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: ==================================================
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: ==================================================
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:   DOMAIN thaumcraft
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: --------------------------------------------------
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:   domain thaumcraft is missing 2 textures
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:     domain thaumcraft has 1 location:
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       mod thaumcraft resources at /workspace/scratch/5f8dd1a26602/work/thaumometer-audit/runtime-original/game/mods/Thaumcraft-1.12.2-6.1.BETA26.jar
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: -------------------------
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:     The missing resources for domain thaumcraft are:
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       textures/items\scanscreen.png.png
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       textures/items\scanner.png.png
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: -------------------------
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]:     No other errors exist for domain thaumcraft
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: ==================================================
+[03:45:37] [Client thread/ERROR] [FML.TEXTURE_ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+[03:45:41] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE CREATE_DISPOSABLE_WORLD
+[03:45:42] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[03:45:42] [Server thread/INFO] [minecraft/IntegratedServer]: Generating keypair
+[03:45:42] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[03:45:42] [Server thread/INFO] [FML]: Applying holder lookups
+[03:45:42] [Server thread/INFO] [FML]: Holder lookups applied
+[03:45:42] [Server thread/INFO] [FML]: Loading dimension 0 (Thaumometer Reference) (net.minecraft.server.integrated.IntegratedServer@662d65c5)
+[03:45:43] [Server thread/INFO] [minecraft/AdvancementList]: Loaded 488 advancements
+[03:45:43] [Server thread/INFO] [FML]: Loading dimension -1 (Thaumometer Reference) (net.minecraft.server.integrated.IntegratedServer@662d65c5)
+[03:45:43] [Server thread/INFO] [THAUMCRAFT]: Creating aura cache for world -1
+[03:45:43] [Server thread/INFO] [FML]: Loading dimension 1 (Thaumometer Reference) (net.minecraft.server.integrated.IntegratedServer@662d65c5)
+[03:45:43] [Server thread/INFO] [THAUMCRAFT]: Creating aura cache for world 1
+[03:45:43] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for level 0
+[03:45:44] [Thread-8/INFO] [THAUMCRAFT]: Starting aura thread for dim 0
+[03:45:44] [Thread-9/INFO] [THAUMCRAFT]: Starting aura thread for dim -1
+[03:45:44] [Thread-10/INFO] [THAUMCRAFT]: Starting aura thread for dim 1
+[03:45:44] [Server thread/INFO] [THAUMCRAFT]: Removing aura cache for world -1
+[03:45:44] [Server thread/INFO] [FML]: Unloading dimension -1
+[03:45:44] [Server thread/INFO] [THAUMCRAFT]: Removing aura cache for world 1
+[03:45:44] [Server thread/INFO] [FML]: Unloading dimension 1
+[03:45:44] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 4, from 10
+Oct 29, 2026 3:45:44 AM io.netty.util.internal.MacAddressUtil defaultMachineId
+WARNING: Failed to find a usable hardware address from the network interfaces; using random bytes: 7f:71:72:45:99:87:43:df
+[03:45:44] [Client thread/WARN] [mojang/YggdrasilMinecraftSessionService]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6a8e8a2c[id=83f28346-bc2e-30d9-ae12-aa2026235362,name=Reference,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:85) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:173) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.func_71371_a(Minecraft.java:2421) [bib.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_502]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_502]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_502]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_502]
+	at tcprobe.ReferenceProbe.call(ReferenceProbe.java:23) [ReferenceProbe.class:?]
+	at tcprobe.ReferenceProbe.tick(ReferenceProbe.java:36) [ReferenceProbe.class:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_96_ReferenceProbe_tick_ClientTickEvent.invoke(.dynamic) [?:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90) [ASMEventHandler.class:?]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182) [EventBus.class:?]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:349) [FMLCommonHandler.class:?]
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1911) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1098) [bib.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:398) [bib.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:123) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_502]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_502]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_502]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_502]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.net.UnknownHostException: sessionserver.mojang.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_502]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_502]
+	at java.net.Socket.connect(Socket.java:607) ~[?:1.8.0_502]
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:293) ~[?:1.8.0_502]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[?:1.8.0_502]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465) ~[?:1.8.0_502]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560) ~[?:1.8.0_502]
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:1.8.0_502]
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367) ~[?:1.8.0_502]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:203) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1224) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1063) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1061) ~[?:1.8.0_502]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_502]
+	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:784) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1060) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007) ~[?:1.8.0_502]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:189) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1589) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.access$200(HttpURLConnection.java:94) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1509) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1507) ~[?:1.8.0_502]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_502]
+	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:784) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1506) ~[?:1.8.0_502]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268) ~[?:1.8.0_502]
+	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:130) ~[HttpAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:66) ~[YggdrasilAuthenticationService.class:?]
+	... 23 more
+[03:45:44] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[03:45:44] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[03:45:44] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 7 mods : minecraft@1.12.2,tc_reference_probe@1,thaumcraft@6.1.BETA26,FML@8.0.99.99,forge@14.23.5.2860,baubles@1.5.2,mcp@9.42
+[03:45:44] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[03:45:44] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[03:45:44] [Server thread/INFO] [minecraft/PlayerList]: Reference[local:E:ecd7d89b] logged in with entity id 0 at (-291.5, 4.0, -666.5)
+[03:45:44] [Server thread/INFO] [minecraft/MinecraftServer]: Reference joined the game
+[03:45:45] [Server thread/INFO] [minecraft/IntegratedServer]: Saving and pausing game...
+[03:45:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'Thaumometer Reference'/overworld
+[03:45:45] [pool-2-thread-1/WARN] [mojang/YggdrasilMinecraftSessionService]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@7d2c1385[id=83f28346-bc2e-30d9-ae12-aa2026235362,name=Reference,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:85) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.func_181037_M(Minecraft.java:3001) [bib.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SourceFile:110) [cex$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_502]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_502]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_502]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_502]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_502]
+Caused by: java.net.UnknownHostException: sessionserver.mojang.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_502]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_502]
+	at java.net.Socket.connect(Socket.java:607) ~[?:1.8.0_502]
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:293) ~[?:1.8.0_502]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[?:1.8.0_502]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465) ~[?:1.8.0_502]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560) ~[?:1.8.0_502]
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:1.8.0_502]
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367) ~[?:1.8.0_502]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:203) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1224) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1063) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1061) ~[?:1.8.0_502]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_502]
+	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:784) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1060) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007) ~[?:1.8.0_502]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:189) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1589) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.access$200(HttpURLConnection.java:94) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1509) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1507) ~[?:1.8.0_502]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_502]
+	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:784) ~[?:1.8.0_502]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1506) ~[?:1.8.0_502]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268) ~[?:1.8.0_502]
+	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:130) ~[HttpAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:66) ~[YggdrasilAuthenticationService.class:?]
+	... 19 more
+[03:45:46] [Thread-9/INFO] [THAUMCRAFT]: Stopping aura thread for dim -1
+[03:45:46] [Thread-10/INFO] [THAUMCRAFT]: Stopping aura thread for dim 1
+[03:45:47] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /gamerule doDaylightCycle false
+[03:45:47] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Game rule doDaylightCycle has been updated to false]
+[03:45:47] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Game rule doDaylightCycle has been updated to false
+[03:45:47] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /time set 6000
+[03:45:47] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Set the time to 6000]
+[03:45:47] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Set the time to 6000
+[03:45:47] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /difficulty peaceful
+[03:45:47] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Set game difficulty to Peaceful]
+[03:45:47] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Set game difficulty to Peaceful
+[03:45:48] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /gamerule doMobSpawning false
+[03:45:48] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Game rule doMobSpawning has been updated to false]
+[03:45:48] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Game rule doMobSpawning has been updated to false
+[03:45:48] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /tp @p 0.5 4 0.5 0 0
+[03:45:48] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Teleported Reference to 0.5, 4.0, 0.5]
+[03:45:48] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Teleported Reference to 0.5, 4.0, 0.5
+[03:45:48] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /setblock 0 5 3 minecraft:stone
+[03:45:48] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Block placed]
+[03:45:48] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Block placed
+[03:45:49] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /setblock -1 5 3 minecraft:diamond_block
+[03:45:49] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Block placed]
+[03:45:49] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Block placed
+[03:45:49] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /setblock 1 5 3 minecraft:gold_block
+[03:45:49] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Block placed]
+[03:45:49] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Block placed
+[03:45:49] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /replaceitem entity @p slot.hotbar.0 thaumcraft:thaumometer 1
+[03:45:49] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Replaced slot slot.hotbar.0 with 1 * [Thaumometer]]
+[03:45:49] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Replaced slot slot.hotbar.0 with 1 * [Thaumometer]
+[03:45:49] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /replaceitem entity @p slot.hotbar.1 minecraft:diamond 1
+[03:45:49] [Server thread/INFO] [minecraft/MinecraftServer]: Reference has made the advancement [Diamonds!]
+[03:45:49] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Replaced slot slot.hotbar.1 with 1 * [Diamond]]
+[03:45:50] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Reference has made the advancement [Diamonds!]
+[03:45:50] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Replaced slot slot.hotbar.1 with 1 * [Diamond]
+[03:45:50] [Client thread/INFO] [minecraft/AdvancementList]: Loaded 19 advancements
+[03:45:50] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /replaceitem entity @p slot.hotbar.2 minecraft:iron_ingot 1
+[03:45:50] [Server thread/INFO] [minecraft/MinecraftServer]: Reference has made the advancement [Acquire Hardware]
+[03:45:50] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Replaced slot slot.hotbar.2 with 1 * [Iron Ingot]]
+[03:45:50] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Reference has made the advancement [Acquire Hardware]
+[03:45:50] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Replaced slot slot.hotbar.2 with 1 * [Iron Ingot]
+[03:45:50] [Client thread/INFO] [minecraft/AdvancementList]: Loaded 42 advancements
+[03:45:51] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE READY ticks=224
+[03:45:51] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SNAPSHOT fresh research=[] item=1xitem.thaumometer@0
+[03:45:51] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=0 sensus=10,auram=10,metallum=30,desiderium=30,praecantatio=3,
+[03:45:51] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=1 vitreus=15,desiderium=15,
+[03:45:51] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=2 metallum=15,
+[03:46:09] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION slot 8
+[03:46:09] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION inventory
+[03:46:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION snapshot tooltip-fresh-emptyhand
+[03:46:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SNAPSHOT tooltip-fresh-emptyhand research=[] item=1xtile.air@0
+[03:46:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=0 sensus=10,auram=10,metallum=30,desiderium=30,praecantatio=3,
+[03:46:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=1 vitreus=15,desiderium=15,
+[03:46:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=2 metallum=15,
+[03:47:46] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION close
+[03:47:46] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /gamemode 0
+[03:47:46] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /gamemode 0
+[03:47:46] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Set own game mode to Survival Mode]
+[03:47:46] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Your game mode has been updated to Survival Mode
+[03:47:47] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /replaceitem entity @p slot.hotbar.0 minecraft:air 1
+[03:47:47] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /replaceitem entity @p slot.hotbar.0 minecraft:air 1
+[03:47:47] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Replaced slot slot.hotbar.0 with 1 * Air]
+[03:47:47] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Replaced slot slot.hotbar.0 with 1 * Air
+[03:47:47] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /replaceitem entity @p slot.weapon.offhand minecraft:air 1
+[03:47:47] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /replaceitem entity @p slot.weapon.offhand minecraft:air 1
+[03:47:47] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Replaced slot slot.weapon.offhand with 1 * Air]
+[03:47:47] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Replaced slot slot.weapon.offhand with 1 * Air
+[03:47:47] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION inventory
+[03:47:52] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION snapshot survival-shift-no-owned-thaumometer
+[03:47:52] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SNAPSHOT survival-shift-no-owned-thaumometer research=[] item=1xtile.air@0
+[03:47:52] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=0 
+[03:47:52] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=1 vitreus=15,desiderium=15,
+[03:47:52] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=2 metallum=15,
+[03:49:31] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION close
+[03:49:31] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /fill -8 80 -8 8 80 12 minecraft:stone
+[03:49:31] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /fill -8 80 -8 8 80 12 minecraft:stone
+[03:49:32] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /fill -3 81 8 3 85 8 minecraft:stone
+[03:49:32] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /fill -3 81 8 3 85 8 minecraft:stone
+[03:49:32] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /setblock 2 82 3 minecraft:stone
+[03:49:32] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /setblock 2 82 3 minecraft:stone
+[03:49:32] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: 357 blocks filled]
+[03:49:32] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] 357 blocks filled
+[03:49:32] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: 35 blocks filled]
+[03:49:32] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Block placed]
+[03:49:32] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] 35 blocks filled
+[03:49:32] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Block placed
+[03:49:32] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /summon pig 0.5 81 5.5 {NoAI:1b,Invulnerable:1b,PersistenceRequired:1b}
+[03:49:32] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /summon pig 0.5 81 5.5 {NoAI:1b,Invulnerable:1b,PersistenceRequired:1b}
+[03:49:32] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Object successfully summoned]
+[03:49:32] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Object successfully summoned
+[03:49:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /tp @p 0.5 81 0.5 0 10
+[03:49:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /tp @p 0.5 81 0.5 0 10
+[03:49:33] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Teleported Reference to 0.5, 81.0, 0.5]
+[03:49:33] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Teleported Reference to 0.5, 81.0, 0.5
+[03:49:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /replaceitem entity @p slot.hotbar.0 thaumcraft:thaumometer 1
+[03:49:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /replaceitem entity @p slot.hotbar.0 thaumcraft:thaumometer 1
+[03:49:33] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Replaced slot slot.hotbar.0 with 1 * [Thaumometer]]
+[03:49:33] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Replaced slot slot.hotbar.0 with 1 * [Thaumometer]
+[03:49:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION slot 0
+[03:49:34] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION snapshot passive-unscanned-pig
+[03:49:34] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SNAPSHOT passive-unscanned-pig research=[] item=1xitem.thaumometer@0
+[03:49:34] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=0 sensus=10,auram=10,metallum=30,desiderium=30,praecantatio=3,
+[03:49:34] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=1 vitreus=15,desiderium=15,
+[03:49:34] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=2 metallum=15,
+[03:50:55] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION close
+[03:50:55] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /tp @p 0.5 81 0.5 0 10
+[03:50:55] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /tp @p 0.5 81 0.5 0 10
+[03:50:55] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Teleported Reference to 0.5, 81.0, 0.5]
+[03:50:55] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Teleported Reference to 0.5, 81.0, 0.5
+[03:50:57] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /tp @p 0.5 81 0.5 -33.69 1.9
+[03:50:57] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /tp @p 0.5 81 0.5 -33.69 1.9
+[03:50:57] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Teleported Reference to 0.5, 81.0, 0.5]
+[03:50:57] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Teleported Reference to 0.5, 81.0, 0.5
+[03:50:58] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION snapshot before-block-scan
+[03:50:58] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SNAPSHOT before-block-scan research=[] item=1xitem.thaumometer@0
+[03:50:58] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=0 sensus=10,auram=10,metallum=30,desiderium=30,praecantatio=3,
+[03:50:58] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=1 vitreus=15,desiderium=15,
+[03:50:58] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=2 metallum=15,
+[03:50:58] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:51:01] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION snapshot after-block-scan
+[03:51:01] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SNAPSHOT after-block-scan research=[!terra, !minecraft:stone0] item=1xitem.thaumometer@0
+[03:51:01] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=0 sensus=10,auram=10,metallum=30,desiderium=30,praecantatio=3,
+[03:51:01] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=1 vitreus=15,desiderium=15,
+[03:51:01] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=2 metallum=15,
+[03:54:21] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:54:21] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:54:21] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:54:22] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:54:22] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:54:22] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:54:22] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:54:22] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:54:24] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION snapshot after-repeat-hold
+[03:54:24] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SNAPSHOT after-repeat-hold research=[!terra, !minecraft:stone0] item=1xitem.thaumometer@0
+[03:54:24] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=0 sensus=10,auram=10,metallum=30,desiderium=30,praecantatio=3,
+[03:54:24] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=1 vitreus=15,desiderium=15,
+[03:54:24] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=2 metallum=15,
+[03:54:24] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /tp @p 0.5 81 0.5 0 -90
+[03:54:24] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /tp @p 0.5 81 0.5 0 -90
+[03:54:24] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Teleported Reference to 0.5, 81.0, 0.5]
+[03:54:24] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Teleported Reference to 0.5, 81.0, 0.5
+[03:54:25] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:54:28] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION snapshot after-sky-miss
+[03:54:28] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SNAPSHOT after-sky-miss research=[!terra, !minecraft:stone0] item=1xitem.thaumometer@0
+[03:54:28] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=0 sensus=10,auram=10,metallum=30,desiderium=30,praecantatio=3,
+[03:54:28] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=1 vitreus=15,desiderium=15,
+[03:54:28] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=2 metallum=15,
+[03:54:28] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /replaceitem entity @p slot.weapon.offhand thaumcraft:thaumometer 1
+[03:54:28] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /replaceitem entity @p slot.weapon.offhand thaumcraft:thaumometer 1
+[03:54:28] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Replaced slot slot.weapon.offhand with 1 * [Thaumometer]]
+[03:54:28] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Replaced slot slot.weapon.offhand with 1 * [Thaumometer]
+[03:54:28] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION slot 8
+[03:54:29] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION chat /tp @p 0.5 81 0.5 -33.69 1.9
+[03:54:29] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE COMMAND /tp @p 0.5 81 0.5 -33.69 1.9
+[03:54:29] [Server thread/INFO] [minecraft/MinecraftServer]: [Reference: Teleported Reference to 0.5, 81.0, 0.5]
+[03:54:29] [Client thread/INFO] [minecraft/GuiNewChat]: [CHAT] Teleported Reference to 0.5, 81.0, 0.5
+[03:54:30] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SOUND_PROBE_ERROR java.lang.reflect.InvocationTargetException
+[03:54:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ACTION snapshot after-offhand
+[03:54:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE SNAPSHOT after-offhand research=[!terra, !minecraft:stone0] item=1xtile.air@0
+[03:54:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=0 sensus=10,auram=10,metallum=30,desiderium=30,praecantatio=3,
+[03:54:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=1 vitreus=15,desiderium=15,
+[03:54:33] [Client thread/INFO] [STDOUT]: [tcprobe.ReferenceProbe:log:25]: TCPROBE ASPECTS slot=2 metallum=15,

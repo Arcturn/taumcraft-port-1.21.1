@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.ScanObservationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-28T23:41:14.900Z" hostname="e54a7cd1abdc" time="0.007">
+  <properties/>
+  <testcase name="newPotionEffectOnKnownBottleIsStillASuccessfulScan()" classname="thaumcraft.port.ScanObservationTest" time="0.003"/>
+  <testcase name="scanningCannotRepeatTheGenericOrAspectCurrencyRewards()" classname="thaumcraft.port.ScanObservationTest" time="0.0"/>
+  <testcase name="oldIncorrectFlagsMigrateWithoutRemovingKnowledgeOrOldFlags()" classname="thaumcraft.port.ScanObservationTest" time="0.0"/>
+  <testcase name="addonNamespacesDoNotCollideWithVanillaNames()" classname="thaumcraft.port.ScanObservationTest" time="0.0"/>
+  <testcase name="specialDiscoveriesWorkWhenNoAspectsAreAssigned()" classname="thaumcraft.port.ScanObservationTest" time="0.0"/>
+  <testcase name="observationsDoNotRetainMutableInputCollections()" classname="thaumcraft.port.ScanObservationTest" time="0.001"/>
+  <testcase name="completedDiscoveryPagesAreNotReportedAsNew()" classname="thaumcraft.port.ScanObservationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

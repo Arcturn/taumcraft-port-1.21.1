@@ -1,0 +1,87 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thaumcraft:items/celestial/sheet",
+    "layer1": "thaumcraft:items/celestial/sun"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "thaumcraft:celestial": 0
+      },
+      "model": "thaumcraft:item/variants/celestial_sun"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 1
+      },
+      "model": "thaumcraft:item/variants/celestial_stars1"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 2
+      },
+      "model": "thaumcraft:item/variants/celestial_stars2"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 3
+      },
+      "model": "thaumcraft:item/variants/celestial_stars3"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 4
+      },
+      "model": "thaumcraft:item/variants/celestial_stars4"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 5
+      },
+      "model": "thaumcraft:item/variants/celestial_moon1"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 6
+      },
+      "model": "thaumcraft:item/variants/celestial_moon2"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 7
+      },
+      "model": "thaumcraft:item/variants/celestial_moon3"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 8
+      },
+      "model": "thaumcraft:item/variants/celestial_moon4"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 9
+      },
+      "model": "thaumcraft:item/variants/celestial_moon5"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 10
+      },
+      "model": "thaumcraft:item/variants/celestial_moon6"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 11
+      },
+      "model": "thaumcraft:item/variants/celestial_moon7"
+    },
+    {
+      "predicate": {
+        "thaumcraft:celestial": 12
+      },
+      "model": "thaumcraft:item/variants/celestial_moon8"
+    }
+  ]
+}

@@ -1,0 +1,2173 @@
+{
+  "minecraft": "1.12.2",
+  "forge": "14.23.5.2860",
+  "thaumcraft": "6.1.BETA26",
+  "phase": "FMLLoadCompleteEvent",
+  "method": "new OreIngredient(name).getMatchingStacks(), original wildcard expansion, ordered runtime arrays",
+  "ore_names": 196,
+  "entries": 354,
+  "ores": {
+    "blockBrass": [
+      {
+        "item": "thaumcraft:metal_brass",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockCactus": [
+      {
+        "item": "minecraft:cactus",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockCoal": [
+      {
+        "item": "minecraft:coal_block",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockDiamond": [
+      {
+        "item": "minecraft:diamond_block",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockEmerald": [
+      {
+        "item": "minecraft:emerald_block",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockGlass": [
+      {
+        "item": "minecraft:glass",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 3
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 4
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 5
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 6
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 7
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 8
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 9
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 10
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 11
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 12
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 13
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 14
+      },
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 15
+      }
+    ],
+    "blockGlassBlack": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 15
+      }
+    ],
+    "blockGlassBlue": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 11
+      }
+    ],
+    "blockGlassBrown": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 12
+      }
+    ],
+    "blockGlassColorless": [
+      {
+        "item": "minecraft:glass",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockGlassCyan": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 9
+      }
+    ],
+    "blockGlassGray": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 7
+      }
+    ],
+    "blockGlassGreen": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 13
+      }
+    ],
+    "blockGlassLightBlue": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 3
+      }
+    ],
+    "blockGlassLightGray": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 8
+      }
+    ],
+    "blockGlassLime": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 5
+      }
+    ],
+    "blockGlassMagenta": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "blockGlassOrange": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "blockGlassPink": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 6
+      }
+    ],
+    "blockGlassPurple": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 10
+      }
+    ],
+    "blockGlassRed": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 14
+      }
+    ],
+    "blockGlassWhite": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockGlassYellow": [
+      {
+        "item": "minecraft:stained_glass",
+        "count": 1,
+        "metadata": 4
+      }
+    ],
+    "blockGold": [
+      {
+        "item": "minecraft:gold_block",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockIron": [
+      {
+        "item": "minecraft:iron_block",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockLapis": [
+      {
+        "item": "minecraft:lapis_block",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockPrismarine": [
+      {
+        "item": "minecraft:prismarine",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockPrismarineBrick": [
+      {
+        "item": "minecraft:prismarine",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "blockPrismarineDark": [
+      {
+        "item": "minecraft:prismarine",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "blockQuartz": [
+      {
+        "item": "minecraft:quartz_block",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockRedstone": [
+      {
+        "item": "minecraft:redstone_block",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockSlime": [
+      {
+        "item": "minecraft:slime",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockThaumium": [
+      {
+        "item": "thaumcraft:metal_thaumium",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "blockVoid": [
+      {
+        "item": "thaumcraft:metal_void",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "bone": [
+      {
+        "item": "minecraft:bone",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "chest": [
+      {
+        "item": "minecraft:chest",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:ender_chest",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:trapped_chest",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "chestEnder": [
+      {
+        "item": "minecraft:ender_chest",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "chestTrapped": [
+      {
+        "item": "minecraft:trapped_chest",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "chestWood": [
+      {
+        "item": "minecraft:chest",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "clusterCinnabar": [
+      {
+        "item": "thaumcraft:cluster",
+        "count": 1,
+        "metadata": 6
+      }
+    ],
+    "clusterCopper": [
+      {
+        "item": "thaumcraft:cluster",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "clusterGold": [
+      {
+        "item": "thaumcraft:cluster",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "clusterIron": [
+      {
+        "item": "thaumcraft:cluster",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "clusterLead": [
+      {
+        "item": "thaumcraft:cluster",
+        "count": 1,
+        "metadata": 5
+      }
+    ],
+    "clusterQuartz": [
+      {
+        "item": "thaumcraft:cluster",
+        "count": 1,
+        "metadata": 7
+      }
+    ],
+    "clusterSilver": [
+      {
+        "item": "thaumcraft:cluster",
+        "count": 1,
+        "metadata": 4
+      }
+    ],
+    "clusterTin": [
+      {
+        "item": "thaumcraft:cluster",
+        "count": 1,
+        "metadata": 3
+      }
+    ],
+    "cobblestone": [
+      {
+        "item": "minecraft:cobblestone",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "cropCarrot": [
+      {
+        "item": "minecraft:carrot",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "cropNetherWart": [
+      {
+        "item": "minecraft:nether_wart",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "cropPotato": [
+      {
+        "item": "minecraft:potato",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "cropWheat": [
+      {
+        "item": "minecraft:wheat",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "dirt": [
+      {
+        "item": "minecraft:dirt",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "doorWood": [
+      {
+        "item": "minecraft:acacia_door",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:birch_door",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:dark_oak_door",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:wooden_door",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:jungle_door",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:spruce_door",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "dustGlowstone": [
+      {
+        "item": "minecraft:glowstone_dust",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "dustPrismarine": [
+      {
+        "item": "minecraft:prismarine_crystals",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "dustRedstone": [
+      {
+        "item": "minecraft:redstone",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "dye": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 3
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 4
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 5
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 6
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 7
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 8
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 9
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 10
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 11
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 12
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 13
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 14
+      },
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 15
+      }
+    ],
+    "dyeBlack": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "dyeBlue": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 4
+      }
+    ],
+    "dyeBrown": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 3
+      }
+    ],
+    "dyeCyan": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 6
+      }
+    ],
+    "dyeGray": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 8
+      }
+    ],
+    "dyeGreen": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "dyeLightBlue": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 12
+      }
+    ],
+    "dyeLightGray": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 7
+      }
+    ],
+    "dyeLime": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 10
+      }
+    ],
+    "dyeMagenta": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 13
+      }
+    ],
+    "dyeOrange": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 14
+      }
+    ],
+    "dyePink": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 9
+      }
+    ],
+    "dyePurple": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 5
+      }
+    ],
+    "dyeRed": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "dyeWhite": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 15
+      }
+    ],
+    "dyeYellow": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 11
+      }
+    ],
+    "egg": [
+      {
+        "item": "minecraft:egg",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "enderpearl": [
+      {
+        "item": "minecraft:ender_pearl",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "endstone": [
+      {
+        "item": "minecraft:end_stone",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "feather": [
+      {
+        "item": "minecraft:feather",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "fenceGateWood": [
+      {
+        "item": "minecraft:fence_gate",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:spruce_fence_gate",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:birch_fence_gate",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:jungle_fence_gate",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:dark_oak_fence_gate",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:acacia_fence_gate",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "fenceWood": [
+      {
+        "item": "minecraft:fence",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:spruce_fence",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:birch_fence",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:jungle_fence",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:dark_oak_fence",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:acacia_fence",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "gemAmber": [
+      {
+        "item": "thaumcraft:amber",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "gemDiamond": [
+      {
+        "item": "minecraft:diamond",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "gemEmerald": [
+      {
+        "item": "minecraft:emerald",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "gemLapis": [
+      {
+        "item": "minecraft:dye",
+        "count": 1,
+        "metadata": 4
+      }
+    ],
+    "gemPrismarine": [
+      {
+        "item": "minecraft:prismarine_shard",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "gemQuartz": [
+      {
+        "item": "minecraft:quartz",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "glowstone": [
+      {
+        "item": "minecraft:glowstone",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "grass": [
+      {
+        "item": "minecraft:grass",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "gravel": [
+      {
+        "item": "minecraft:gravel",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "gunpowder": [
+      {
+        "item": "minecraft:gunpowder",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "ingotBrass": [
+      {
+        "item": "thaumcraft:ingot",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "ingotBrick": [
+      {
+        "item": "minecraft:brick",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "ingotBrickNether": [
+      {
+        "item": "minecraft:netherbrick",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "ingotGold": [
+      {
+        "item": "minecraft:gold_ingot",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "ingotIron": [
+      {
+        "item": "minecraft:iron_ingot",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "ingotThaumium": [
+      {
+        "item": "thaumcraft:ingot",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "ingotVoid": [
+      {
+        "item": "thaumcraft:ingot",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "leather": [
+      {
+        "item": "minecraft:leather",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "logWood": [
+      {
+        "item": "minecraft:log",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:log",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:log",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "minecraft:log",
+        "count": 1,
+        "metadata": 3
+      },
+      {
+        "item": "minecraft:log2",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:log2",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "thaumcraft:log_greatwood",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:log_silverwood",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "netherStar": [
+      {
+        "item": "minecraft:nether_star",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "netherrack": [
+      {
+        "item": "minecraft:netherrack",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "nitor": [
+      {
+        "item": "thaumcraft:nitor_lime",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_brown",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_white",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_pink",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_orange",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_silver",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_magenta",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_lightblue",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_red",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_blue",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_cyan",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_green",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_yellow",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_black",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_gray",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nitor_purple",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "nuggetBrass": [
+      {
+        "item": "thaumcraft:nugget",
+        "count": 1,
+        "metadata": 8
+      }
+    ],
+    "nuggetCopper": [
+      {
+        "item": "thaumcraft:nugget",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "nuggetGold": [
+      {
+        "item": "minecraft:gold_nugget",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "nuggetIron": [
+      {
+        "item": "minecraft:iron_nugget",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:nugget",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "nuggetLead": [
+      {
+        "item": "thaumcraft:nugget",
+        "count": 1,
+        "metadata": 4
+      }
+    ],
+    "nuggetMeat": [
+      {
+        "item": "thaumcraft:chunk",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:chunk",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "thaumcraft:chunk",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "thaumcraft:chunk",
+        "count": 1,
+        "metadata": 3
+      },
+      {
+        "item": "thaumcraft:chunk",
+        "count": 1,
+        "metadata": 4
+      },
+      {
+        "item": "thaumcraft:chunk",
+        "count": 1,
+        "metadata": 5
+      }
+    ],
+    "nuggetQuartz": [
+      {
+        "item": "thaumcraft:nugget",
+        "count": 1,
+        "metadata": 9
+      }
+    ],
+    "nuggetQuicksilver": [
+      {
+        "item": "thaumcraft:nugget",
+        "count": 1,
+        "metadata": 5
+      }
+    ],
+    "nuggetSilver": [
+      {
+        "item": "thaumcraft:nugget",
+        "count": 1,
+        "metadata": 3
+      }
+    ],
+    "nuggetThaumium": [
+      {
+        "item": "thaumcraft:nugget",
+        "count": 1,
+        "metadata": 6
+      }
+    ],
+    "nuggetTin": [
+      {
+        "item": "thaumcraft:nugget",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "nuggetVoid": [
+      {
+        "item": "thaumcraft:nugget",
+        "count": 1,
+        "metadata": 7
+      }
+    ],
+    "obsidian": [
+      {
+        "item": "minecraft:obsidian",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreAmber": [
+      {
+        "item": "thaumcraft:ore_amber",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreCinnabar": [
+      {
+        "item": "thaumcraft:ore_cinnabar",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreCoal": [
+      {
+        "item": "minecraft:coal_ore",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreCrystalAir": [
+      {
+        "item": "thaumcraft:crystal_aer",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreCrystalEarth": [
+      {
+        "item": "thaumcraft:crystal_terra",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreCrystalEntropy": [
+      {
+        "item": "thaumcraft:crystal_perditio",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreCrystalFire": [
+      {
+        "item": "thaumcraft:crystal_ignis",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreCrystalOrder": [
+      {
+        "item": "thaumcraft:crystal_ordo",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreCrystalTaint": [
+      {
+        "item": "thaumcraft:crystal_vitium",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreCrystalWater": [
+      {
+        "item": "thaumcraft:crystal_aqua",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreDiamond": [
+      {
+        "item": "minecraft:diamond_ore",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreEmerald": [
+      {
+        "item": "minecraft:emerald_ore",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreGold": [
+      {
+        "item": "minecraft:gold_ore",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreIron": [
+      {
+        "item": "minecraft:iron_ore",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreLapis": [
+      {
+        "item": "minecraft:lapis_ore",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreQuartz": [
+      {
+        "item": "minecraft:quartz_ore",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:ore_quartz",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "oreRedstone": [
+      {
+        "item": "minecraft:redstone_ore",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "paneGlass": [
+      {
+        "item": "minecraft:glass_pane",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 3
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 4
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 5
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 6
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 7
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 8
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 9
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 10
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 11
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 12
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 13
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 14
+      },
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 15
+      }
+    ],
+    "paneGlassBlack": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 15
+      }
+    ],
+    "paneGlassBlue": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 11
+      }
+    ],
+    "paneGlassBrown": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 12
+      }
+    ],
+    "paneGlassColorless": [
+      {
+        "item": "minecraft:glass_pane",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "paneGlassCyan": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 9
+      }
+    ],
+    "paneGlassGray": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 7
+      }
+    ],
+    "paneGlassGreen": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 13
+      }
+    ],
+    "paneGlassLightBlue": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 3
+      }
+    ],
+    "paneGlassLightGray": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 8
+      }
+    ],
+    "paneGlassLime": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 5
+      }
+    ],
+    "paneGlassMagenta": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "paneGlassOrange": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "paneGlassPink": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 6
+      }
+    ],
+    "paneGlassPurple": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 10
+      }
+    ],
+    "paneGlassRed": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 14
+      }
+    ],
+    "paneGlassWhite": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "paneGlassYellow": [
+      {
+        "item": "minecraft:stained_glass_pane",
+        "count": 1,
+        "metadata": 4
+      }
+    ],
+    "paper": [
+      {
+        "item": "minecraft:paper",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "plankWood": [
+      {
+        "item": "minecraft:planks",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:planks",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:planks",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "minecraft:planks",
+        "count": 1,
+        "metadata": 3
+      },
+      {
+        "item": "minecraft:planks",
+        "count": 1,
+        "metadata": 4
+      },
+      {
+        "item": "minecraft:planks",
+        "count": 1,
+        "metadata": 5
+      },
+      {
+        "item": "thaumcraft:plank_greatwood",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:plank_silverwood",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "plateBrass": [
+      {
+        "item": "thaumcraft:plate",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "plateIron": [
+      {
+        "item": "thaumcraft:plate",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "plateThaumium": [
+      {
+        "item": "thaumcraft:plate",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "plateVoid": [
+      {
+        "item": "thaumcraft:plate",
+        "count": 1,
+        "metadata": 3
+      }
+    ],
+    "quicksilver": [
+      {
+        "item": "thaumcraft:quicksilver",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "record": [
+      {
+        "item": "minecraft:record_13",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_cat",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_blocks",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_chirp",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_far",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_mall",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_mellohi",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_stal",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_strad",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_ward",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_11",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:record_wait",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "sand": [
+      {
+        "item": "minecraft:sand",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:sand",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "sandstone": [
+      {
+        "item": "minecraft:sandstone",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:sandstone",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:sandstone",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "minecraft:red_sandstone",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:red_sandstone",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:red_sandstone",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "slabWood": [
+      {
+        "item": "minecraft:wooden_slab",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:wooden_slab",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:wooden_slab",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "minecraft:wooden_slab",
+        "count": 1,
+        "metadata": 3
+      },
+      {
+        "item": "minecraft:wooden_slab",
+        "count": 1,
+        "metadata": 4
+      },
+      {
+        "item": "minecraft:wooden_slab",
+        "count": 1,
+        "metadata": 5
+      },
+      {
+        "item": "thaumcraft:slab_greatwood",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:slab_silverwood",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "slimeball": [
+      {
+        "item": "minecraft:slime_ball",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "stairWood": [
+      {
+        "item": "minecraft:oak_stairs",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:spruce_stairs",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:birch_stairs",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:jungle_stairs",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:acacia_stairs",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:dark_oak_stairs",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "stickWood": [
+      {
+        "item": "minecraft:stick",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "stone": [
+      {
+        "item": "minecraft:stone",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "stoneAndesite": [
+      {
+        "item": "minecraft:stone",
+        "count": 1,
+        "metadata": 5
+      }
+    ],
+    "stoneAndesitePolished": [
+      {
+        "item": "minecraft:stone",
+        "count": 1,
+        "metadata": 6
+      }
+    ],
+    "stoneDiorite": [
+      {
+        "item": "minecraft:stone",
+        "count": 1,
+        "metadata": 3
+      }
+    ],
+    "stoneDioritePolished": [
+      {
+        "item": "minecraft:stone",
+        "count": 1,
+        "metadata": 4
+      }
+    ],
+    "stoneGranite": [
+      {
+        "item": "minecraft:stone",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "stoneGranitePolished": [
+      {
+        "item": "minecraft:stone",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "string": [
+      {
+        "item": "minecraft:string",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "sugarcane": [
+      {
+        "item": "minecraft:reeds",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "torch": [
+      {
+        "item": "minecraft:torch",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "trapdoorWood": [
+      {
+        "item": "minecraft:trapdoor",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "treeLeaves": [
+      {
+        "item": "minecraft:leaves",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:leaves",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:leaves",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "minecraft:leaves",
+        "count": 1,
+        "metadata": 3
+      },
+      {
+        "item": "minecraft:leaves2",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:leaves2",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "thaumcraft:leaves_greatwood",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:leaves_silverwood",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "treeSapling": [
+      {
+        "item": "minecraft:sapling",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:sapling",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:sapling",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "minecraft:sapling",
+        "count": 1,
+        "metadata": 3
+      },
+      {
+        "item": "minecraft:sapling",
+        "count": 1,
+        "metadata": 4
+      },
+      {
+        "item": "minecraft:sapling",
+        "count": 1,
+        "metadata": 5
+      },
+      {
+        "item": "thaumcraft:sapling_greatwood",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "thaumcraft:sapling_silverwood",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "vine": [
+      {
+        "item": "minecraft:vine",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "wool": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 0
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 1
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 2
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 3
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 4
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 5
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 6
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 7
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 8
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 9
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 10
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 11
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 12
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 13
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 14
+      },
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 15
+      }
+    ],
+    "woolBlack": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 15
+      }
+    ],
+    "woolBlue": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 11
+      }
+    ],
+    "woolBrown": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 12
+      }
+    ],
+    "woolCyan": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 9
+      }
+    ],
+    "woolGray": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 7
+      }
+    ],
+    "woolGreen": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 13
+      }
+    ],
+    "woolLightBlue": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 3
+      }
+    ],
+    "woolLightGray": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 8
+      }
+    ],
+    "woolLime": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 5
+      }
+    ],
+    "woolMagenta": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 2
+      }
+    ],
+    "woolOrange": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 1
+      }
+    ],
+    "woolPink": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 6
+      }
+    ],
+    "woolPurple": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 10
+      }
+    ],
+    "woolRed": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 14
+      }
+    ],
+    "woolWhite": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 0
+      }
+    ],
+    "woolYellow": [
+      {
+        "item": "minecraft:wool",
+        "count": 1,
+        "metadata": 4
+      }
+    ],
+    "workbench": [
+      {
+        "item": "minecraft:crafting_table",
+        "count": 1,
+        "metadata": 0
+      }
+    ]
+  }
+}

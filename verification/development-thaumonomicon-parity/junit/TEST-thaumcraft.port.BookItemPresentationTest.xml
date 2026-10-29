@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.BookItemPresentationTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-26T09:00:34.616Z" hostname="6adda57d248a" time="0.519">
+  <properties/>
+  <testcase name="voidseerFallbackAddsNbtWarpToTheCurrentPlayerValueOnlyOnce()" classname="thaumcraft.port.BookItemPresentationTest" time="0.457"/>
+  <testcase name="everyMappedRecipeDescriptorHasAnOriginalTranslationWithEnglishFallback()" classname="thaumcraft.port.BookItemPresentationTest" time="0.032"/>
+  <testcase name="baublesSlotComesLastAndRetainsOriginalSlotTranslationKeys()" classname="thaumcraft.port.BookItemPresentationTest" time="0.009"/>
+  <testcase name="originalMetadataNamesDoNotCollapseIntoRegistryIds()" classname="thaumcraft.port.BookItemPresentationTest" time="0.001"/>
+  <testcase name="voidseerTooltipUsesCurrentPermanentWarpWithOriginalThresholdsAndOrdering()" classname="thaumcraft.port.BookItemPresentationTest" time="0.006"/>
+  <testcase name="sealKeySelectsTheActualOriginalVariantAndNotThePseudoRegistryName()" classname="thaumcraft.port.BookItemPresentationTest" time="0.001"/>
+  <testcase name="essentiaContainerNamesUseLatinAspectAndOriginalUncoloredAmountLine()" classname="thaumcraft.port.BookItemPresentationTest" time="0.002"/>
+  <testcase name="itemSpecificAndGlobalDetailsPreserveOriginalStyleWithoutInventingStatistics()" classname="thaumcraft.port.BookItemPresentationTest" time="0.0"/>
+  <testcase name="infusionModificationsSurviveImportOnlyOnTheResult()" classname="thaumcraft.port.BookItemPresentationTest" time="0.004"/>
+  <testcase name="enchantedRequirementKeepsItsInstructionAndExactEnchantment()" classname="thaumcraft.port.BookItemPresentationTest" time="0.002"/>
+  <system-out><![CDATA[WARN StatusConsoleListener Advanced terminal features are not available in this environment
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

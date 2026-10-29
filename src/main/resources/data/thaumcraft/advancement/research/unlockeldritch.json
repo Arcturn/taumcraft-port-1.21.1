@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "thaumcraft:research_display_research_unlockeldritch"
+    },
+    "title": {
+      "translate": "research.UNLOCKELDRITCH.title"
+    },
+    "description": {
+      "translate": "thaumcraft.advancement.research.description",
+      "with": [
+        {
+          "translate": "research.UNLOCKELDRITCH.title"
+        }
+      ]
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "completed": {
+      "trigger": "thaumcraft:research",
+      "conditions": {
+        "research": "UNLOCKELDRITCH"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "completed"
+    ]
+  ],
+  "sends_telemetry_event": false,
+  "parent": "thaumcraft:research/crimsonrites"
+}

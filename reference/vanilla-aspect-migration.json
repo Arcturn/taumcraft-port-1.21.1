@@ -1,0 +1,1268 @@
+{
+  "bindings": [
+    {
+      "legacy": "lit_redstone_ore",
+      "meta": "0",
+      "target": "item:minecraft:redstone_ore",
+      "aspects": {
+        "terra": 5,
+        "potentia": 15
+      }
+    },
+    {
+      "legacy": "coal_ore",
+      "meta": "0",
+      "target": "item:minecraft:coal_ore",
+      "aspects": {
+        "terra": 5,
+        "potentia": 15,
+        "ignis": 15
+      }
+    },
+    {
+      "legacy": "coal",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:coal",
+      "aspects": {
+        "potentia": 10,
+        "ignis": 10
+      }
+    },
+    {
+      "legacy": "coal",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:charcoal",
+      "aspects": {
+        "potentia": 10,
+        "ignis": 10
+      }
+    },
+    {
+      "legacy": "bedrock",
+      "meta": "0",
+      "target": "item:minecraft:bedrock",
+      "aspects": {
+        "vacuos": 25,
+        "perditio": 25,
+        "terra": 25,
+        "tenebrae": 25
+      }
+    },
+    {
+      "legacy": "dirt",
+      "meta": "2",
+      "target": "item:minecraft:podzol",
+      "aspects": {
+        "terra": 5,
+        "herba": 1
+      }
+    },
+    {
+      "legacy": "farmland",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:farmland",
+      "aspects": {
+        "terra": 5,
+        "aqua": 2,
+        "ordo": 2
+      }
+    },
+    {
+      "legacy": "grass_path",
+      "meta": "0",
+      "target": "item:minecraft:dirt_path",
+      "aspects": {
+        "terra": 5,
+        "herba": 2,
+        "ordo": 2
+      }
+    },
+    {
+      "legacy": "mycelium",
+      "meta": "0",
+      "target": "item:minecraft:mycelium",
+      "aspects": {
+        "terra": 5,
+        "herba": 1,
+        "vitium": 1
+      }
+    },
+    {
+      "legacy": "clay_ball",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:clay_ball",
+      "aspects": {
+        "aqua": 5,
+        "terra": 5
+      }
+    },
+    {
+      "legacy": "soul_sand",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:soul_sand",
+      "aspects": {
+        "terra": 3,
+        "vinculum": 1,
+        "spiritus": 3
+      }
+    },
+    {
+      "legacy": "mossy_cobblestone",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:mossy_cobblestone",
+      "aspects": {
+        "terra": 5,
+        "herba": 3,
+        "perditio": 1
+      }
+    },
+    {
+      "legacy": "tallgrass",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:dead_bush",
+      "aspects": {
+        "herba": 5,
+        "aer": 1
+      }
+    },
+    {
+      "legacy": "tallgrass",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:short_grass",
+      "aspects": {
+        "herba": 5,
+        "aer": 1
+      }
+    },
+    {
+      "legacy": "tallgrass",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:fern",
+      "aspects": {
+        "herba": 5,
+        "aer": 1
+      }
+    },
+    {
+      "legacy": "double_plant",
+      "meta": "0",
+      "target": "item:minecraft:sunflower",
+      "aspects": {
+        "herba": 5,
+        "aer": 1,
+        "sensus": 5,
+        "victus": 1
+      }
+    },
+    {
+      "legacy": "double_plant",
+      "meta": "1",
+      "target": "item:minecraft:lilac",
+      "aspects": {
+        "herba": 5,
+        "aer": 1,
+        "sensus": 5,
+        "victus": 1
+      }
+    },
+    {
+      "legacy": "double_plant",
+      "meta": "2",
+      "target": "item:minecraft:tall_grass",
+      "aspects": {
+        "herba": 5,
+        "aer": 1
+      }
+    },
+    {
+      "legacy": "double_plant",
+      "meta": "3",
+      "target": "item:minecraft:large_fern",
+      "aspects": {
+        "herba": 5,
+        "aer": 1
+      }
+    },
+    {
+      "legacy": "double_plant",
+      "meta": "4",
+      "target": "item:minecraft:rose_bush",
+      "aspects": {
+        "herba": 5,
+        "aer": 1,
+        "sensus": 5,
+        "victus": 1
+      }
+    },
+    {
+      "legacy": "double_plant",
+      "meta": "5",
+      "target": "item:minecraft:peony",
+      "aspects": {
+        "herba": 5,
+        "aer": 1,
+        "sensus": 5,
+        "victus": 1
+      }
+    },
+    {
+      "legacy": "waterlily",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:lily_pad",
+      "aspects": {
+        "herba": 5,
+        "aqua": 1
+      }
+    },
+    {
+      "legacy": "deadbush",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:dead_bush",
+      "aspects": {
+        "herba": 5,
+        "perditio": 1
+      }
+    },
+    {
+      "legacy": "wheat_seeds",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:wheat_seeds",
+      "aspects": {
+        "herba": 5,
+        "victus": 1
+      }
+    },
+    {
+      "legacy": "melon_seeds",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:melon_seeds",
+      "aspects": {
+        "herba": 5,
+        "victus": 1
+      }
+    },
+    {
+      "legacy": "pumpkin_seeds",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:pumpkin_seeds",
+      "aspects": {
+        "herba": 5,
+        "victus": 1
+      }
+    },
+    {
+      "legacy": "beetroot_seeds",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:beetroot_seeds",
+      "aspects": {
+        "herba": 5,
+        "victus": 1
+      }
+    },
+    {
+      "legacy": "red_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:poppy",
+      "aspects": {
+        "herba": 5,
+        "victus": 1,
+        "sensus": 5
+      }
+    },
+    {
+      "legacy": "red_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:blue_orchid",
+      "aspects": {
+        "herba": 5,
+        "victus": 1,
+        "sensus": 5
+      }
+    },
+    {
+      "legacy": "red_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:allium",
+      "aspects": {
+        "herba": 5,
+        "victus": 1,
+        "sensus": 5
+      }
+    },
+    {
+      "legacy": "red_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:azure_bluet",
+      "aspects": {
+        "herba": 5,
+        "victus": 1,
+        "sensus": 5
+      }
+    },
+    {
+      "legacy": "red_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:red_tulip",
+      "aspects": {
+        "herba": 5,
+        "victus": 1,
+        "sensus": 5
+      }
+    },
+    {
+      "legacy": "red_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:orange_tulip",
+      "aspects": {
+        "herba": 5,
+        "victus": 1,
+        "sensus": 5
+      }
+    },
+    {
+      "legacy": "red_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:white_tulip",
+      "aspects": {
+        "herba": 5,
+        "victus": 1,
+        "sensus": 5
+      }
+    },
+    {
+      "legacy": "red_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:pink_tulip",
+      "aspects": {
+        "herba": 5,
+        "victus": 1,
+        "sensus": 5
+      }
+    },
+    {
+      "legacy": "red_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:oxeye_daisy",
+      "aspects": {
+        "herba": 5,
+        "victus": 1,
+        "sensus": 5
+      }
+    },
+    {
+      "legacy": "yellow_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:dandelion",
+      "aspects": {
+        "herba": 5,
+        "victus": 1,
+        "sensus": 5
+      }
+    },
+    {
+      "legacy": "brown_mushroom",
+      "meta": "0",
+      "target": "item:minecraft:brown_mushroom",
+      "aspects": {
+        "herba": 5,
+        "tenebrae": 2,
+        "terra": 2
+      }
+    },
+    {
+      "legacy": "red_mushroom",
+      "meta": "0",
+      "target": "item:minecraft:red_mushroom",
+      "aspects": {
+        "herba": 5,
+        "tenebrae": 2,
+        "ignis": 2
+      }
+    },
+    {
+      "legacy": "brown_mushroom_block",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:brown_mushroom_block",
+      "aspects": {
+        "herba": 5,
+        "tenebrae": 2,
+        "terra": 2
+      }
+    },
+    {
+      "legacy": "red_mushroom_block",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:red_mushroom_block",
+      "aspects": {
+        "herba": 5,
+        "tenebrae": 2,
+        "ignis": 2
+      }
+    },
+    {
+      "legacy": "apple",
+      "meta": "0",
+      "target": "item:minecraft:apple",
+      "aspects": {
+        "herba": 5,
+        "victus": 5
+      }
+    },
+    {
+      "legacy": "beetroot",
+      "meta": "0",
+      "target": "item:minecraft:beetroot",
+      "aspects": {
+        "herba": 5,
+        "victus": 5,
+        "desiderium": 1
+      }
+    },
+    {
+      "legacy": "baked_potato",
+      "meta": "0",
+      "target": "item:minecraft:baked_potato",
+      "aspects": {
+        "herba": 5,
+        "victus": 5
+      }
+    },
+    {
+      "legacy": "poisonous_potato",
+      "meta": "0",
+      "target": "item:minecraft:poisonous_potato",
+      "aspects": {
+        "herba": 5,
+        "mortuus": 5
+      }
+    },
+    {
+      "legacy": "pumpkin",
+      "meta": "0",
+      "target": "item:minecraft:pumpkin",
+      "aspects": {
+        "herba": 10
+      }
+    },
+    {
+      "legacy": "melon",
+      "meta": "0",
+      "target": "item:minecraft:melon_slice",
+      "aspects": {
+        "herba": 1
+      }
+    },
+    {
+      "legacy": "sponge",
+      "meta": "0",
+      "target": "item:minecraft:sponge",
+      "aspects": {
+        "terra": 5,
+        "vinculum": 5,
+        "vacuos": 5
+      }
+    },
+    {
+      "legacy": "sponge",
+      "meta": "1",
+      "target": "item:minecraft:wet_sponge",
+      "aspects": {
+        "terra": 5,
+        "vinculum": 5,
+        "aqua": 5
+      }
+    },
+    {
+      "legacy": "wool",
+      "meta": "0",
+      "target": "item:minecraft:white_wool",
+      "aspects": {
+        "bestia": 15,
+        "fabrico": 5
+      }
+    },
+    {
+      "legacy": "experience_bottle",
+      "meta": "0",
+      "target": "item:minecraft:experience_bottle",
+      "aspects": {
+        "cognitio": 20
+      }
+    },
+    {
+      "legacy": "name_tag",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:name_tag",
+      "aspects": {
+        "cognitio": 10,
+        "bestia": 10
+      }
+    },
+    {
+      "legacy": "iron_horse_armor",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:iron_horse_armor",
+      "aspects": {
+        "metallum": 15,
+        "praemunio": 10,
+        "bestia": 5
+      }
+    },
+    {
+      "legacy": "golden_horse_armor",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:golden_horse_armor",
+      "aspects": {
+        "metallum": 10,
+        "praemunio": 15,
+        "bestia": 5
+      }
+    },
+    {
+      "legacy": "diamond_horse_armor",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:diamond_horse_armor",
+      "aspects": {
+        "vitreus": 15,
+        "praemunio": 20,
+        "bestia": 5
+      }
+    },
+    {
+      "legacy": "fire",
+      "meta": "Short.MAX_VALUE",
+      "target": "block:minecraft:fire",
+      "aspects": {
+        "ignis": 20
+      }
+    },
+    {
+      "legacy": "magma",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:magma_block",
+      "aspects": {
+        "ignis": 10,
+        "terra": 5
+      }
+    },
+    {
+      "legacy": "chorus_flower",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:chorus_flower",
+      "aspects": {
+        "alienis": 5,
+        "sensus": 5,
+        "herba": 5
+      }
+    },
+    {
+      "legacy": "chorus_plant",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:chorus_plant",
+      "aspects": {
+        "alienis": 5,
+        "herba": 5
+      }
+    },
+    {
+      "legacy": "chorus_fruit",
+      "meta": "0",
+      "target": "item:minecraft:chorus_fruit",
+      "aspects": {
+        "alienis": 5,
+        "sensus": 5,
+        "herba": 5
+      }
+    },
+    {
+      "legacy": "chorus_fruit_popped",
+      "meta": "0",
+      "target": "item:minecraft:popped_chorus_fruit",
+      "aspects": {
+        "alienis": 5,
+        "sensus": 5,
+        "herba": 4,
+        "ignis": 1
+      }
+    },
+    {
+      "legacy": "ice",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:ice",
+      "aspects": {
+        "gelum": 20
+      }
+    },
+    {
+      "legacy": "packed_ice",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:packed_ice",
+      "aspects": {
+        "gelum": 15,
+        "ordo": 5
+      }
+    },
+    {
+      "legacy": "snowball",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:snowball",
+      "aspects": {
+        "gelum": 1
+      }
+    },
+    {
+      "legacy": "potionitem",
+      "meta": "0",
+      "target": "item:minecraft:potion",
+      "aspects": {
+        "aqua": 5,
+        "vitreus": 5
+      }
+    },
+    {
+      "legacy": "web",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:cobweb",
+      "aspects": {
+        "vinculum": 5,
+        "bestia": 1
+      }
+    },
+    {
+      "legacy": "flint",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:flint",
+      "aspects": {
+        "terra": 5,
+        "instrumentum": 5
+      }
+    },
+    {
+      "legacy": "rotten_flesh",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:rotten_flesh",
+      "aspects": {
+        "humanus": 5,
+        "victus": 5,
+        "perditio": 5
+      }
+    },
+    {
+      "legacy": "spider_eye",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:spider_eye",
+      "aspects": {
+        "sensus": 5,
+        "bestia": 5,
+        "mortuus": 5
+      }
+    },
+    {
+      "legacy": "fish",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:cod",
+      "aspects": {
+        "bestia": 5,
+        "victus": 5,
+        "aqua": 5
+      }
+    },
+    {
+      "legacy": "fish",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:salmon",
+      "aspects": {
+        "bestia": 5,
+        "victus": 5,
+        "aqua": 5
+      }
+    },
+    {
+      "legacy": "fish",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:tropical_fish",
+      "aspects": {
+        "bestia": 5,
+        "victus": 5,
+        "aqua": 5
+      }
+    },
+    {
+      "legacy": "fish",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:pufferfish",
+      "aspects": {
+        "bestia": 5,
+        "victus": 5,
+        "aqua": 5
+      }
+    },
+    {
+      "legacy": "cooked_fish",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:cooked_cod",
+      "aspects": {
+        "fabrico": 1,
+        "bestia": 5,
+        "victus": 5
+      }
+    },
+    {
+      "legacy": "cooked_fish",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:cooked_salmon",
+      "aspects": {
+        "fabrico": 1,
+        "bestia": 5,
+        "victus": 5
+      }
+    },
+    {
+      "legacy": "chicken",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:chicken",
+      "aspects": {
+        "bestia": 5,
+        "victus": 5,
+        "aer": 5
+      }
+    },
+    {
+      "legacy": "cooked_chicken",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:cooked_chicken",
+      "aspects": {
+        "fabrico": 1,
+        "bestia": 5,
+        "victus": 5
+      }
+    },
+    {
+      "legacy": "porkchop",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:porkchop",
+      "aspects": {
+        "bestia": 5,
+        "victus": 5,
+        "terra": 5
+      }
+    },
+    {
+      "legacy": "cooked_porkchop",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:cooked_porkchop",
+      "aspects": {
+        "fabrico": 1,
+        "bestia": 5,
+        "victus": 5
+      }
+    },
+    {
+      "legacy": "beef",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:beef",
+      "aspects": {
+        "bestia": 5,
+        "victus": 5,
+        "terra": 5
+      }
+    },
+    {
+      "legacy": "cooked_beef",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:cooked_beef",
+      "aspects": {
+        "fabrico": 1,
+        "bestia": 5,
+        "victus": 5
+      }
+    },
+    {
+      "legacy": "mutton",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:mutton",
+      "aspects": {
+        "bestia": 5,
+        "victus": 5,
+        "terra": 5
+      }
+    },
+    {
+      "legacy": "cooked_mutton",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:cooked_mutton",
+      "aspects": {
+        "fabrico": 1,
+        "bestia": 5,
+        "victus": 5
+      }
+    },
+    {
+      "legacy": "rabbit",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:rabbit",
+      "aspects": {
+        "bestia": 5,
+        "victus": 5,
+        "terra": 5
+      }
+    },
+    {
+      "legacy": "cooked_rabbit",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:cooked_rabbit",
+      "aspects": {
+        "fabrico": 1,
+        "bestia": 5,
+        "victus": 5
+      }
+    },
+    {
+      "legacy": "rabbit_hide",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:rabbit_hide",
+      "aspects": {
+        "bestia": 5,
+        "praemunio": 2
+      }
+    },
+    {
+      "legacy": "rabbit_foot",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:rabbit_foot",
+      "aspects": {
+        "bestia": 5,
+        "praemunio": 5,
+        "motus": 10,
+        "alkimia": 5
+      }
+    },
+    {
+      "legacy": "blaze_rod",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:blaze_rod",
+      "aspects": {
+        "ignis": 15,
+        "potentia": 5
+      }
+    },
+    {
+      "legacy": "saddle",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:saddle",
+      "aspects": {
+        "bestia": 10,
+        "motus": 10,
+        "ordo": 5
+      }
+    },
+    {
+      "legacy": "ghast_tear",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:ghast_tear",
+      "aspects": {
+        "exanimis": 5,
+        "spiritus": 10,
+        "alkimia": 10
+      }
+    },
+    {
+      "legacy": "skull",
+      "meta": "0",
+      "target": "item:minecraft:skeleton_skull",
+      "aspects": {
+        "mortuus": 10,
+        "spiritus": 10,
+        "exanimis": 10
+      }
+    },
+    {
+      "legacy": "skull",
+      "meta": "1",
+      "target": "item:minecraft:wither_skeleton_skull",
+      "aspects": {
+        "mortuus": 10,
+        "spiritus": 10,
+        "exanimis": 10
+      }
+    },
+    {
+      "legacy": "skull",
+      "meta": "2",
+      "target": "item:minecraft:zombie_head",
+      "aspects": {
+        "mortuus": 10,
+        "spiritus": 10,
+        "humanus": 10
+      }
+    },
+    {
+      "legacy": "skull",
+      "meta": "3",
+      "target": "item:minecraft:player_head",
+      "aspects": {
+        "mortuus": 10,
+        "spiritus": 10,
+        "humanus": 10
+      }
+    },
+    {
+      "legacy": "skull",
+      "meta": "4",
+      "target": "item:minecraft:creeper_head",
+      "aspects": {
+        "mortuus": 10,
+        "spiritus": 10,
+        "perditio": 5,
+        "ignis": 5
+      }
+    },
+    {
+      "legacy": "skull",
+      "meta": "5",
+      "target": "item:minecraft:dragon_head",
+      "aspects": {
+        "mortuus": 10,
+        "spiritus": 10,
+        "ignis": 10,
+        "tenebrae": 10
+      }
+    },
+    {
+      "legacy": "dragon_breath",
+      "meta": "0",
+      "target": "item:minecraft:dragon_breath",
+      "aspects": {
+        "tenebrae": 10,
+        "perditio": 10,
+        "ignis": 10,
+        "alkimia": 10
+      }
+    },
+    {
+      "legacy": "totem_of_undying",
+      "meta": "0",
+      "target": "item:minecraft:totem_of_undying",
+      "aspects": {
+        "ordo": 10,
+        "perditio": 10,
+        "victus": 25,
+        "exanimis": 10
+      }
+    },
+    {
+      "legacy": "shulker_shell",
+      "meta": "0",
+      "target": "item:minecraft:shulker_shell",
+      "aspects": {
+        "praemunio": 10,
+        "alienis": 5,
+        "bestia": 5,
+        "vacuos": 5
+      }
+    },
+    {
+      "legacy": "record_11",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_11",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "desiderium": 15
+      }
+    },
+    {
+      "legacy": "record_13",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_13",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "aqua": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "record_cat",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_cat",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "bestia": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "record_chirp",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_chirp",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "terra": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "record_far",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_far",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "alienis": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "record_mall",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_mall",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "humanus": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "record_mellohi",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_mellohi",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "fabrico": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "record_stal",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_stal",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "tenebrae": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "record_strad",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_strad",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "potentia": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "record_ward",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_ward",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "victus": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "record_blocks",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_blocks",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "instrumentum": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "record_wait",
+      "meta": "0",
+      "target": "item:minecraft:music_disc_wait",
+      "aspects": {
+        "sensus": 15,
+        "aer": 5,
+        "vinculum": 5,
+        "desiderium": 10
+      }
+    },
+    {
+      "legacy": "chainmail_helmet",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:chainmail_helmet",
+      "aspects": {
+        "metallum": 42
+      }
+    },
+    {
+      "legacy": "chainmail_chestplate",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:chainmail_chestplate",
+      "aspects": {
+        "metallum": 67
+      }
+    },
+    {
+      "legacy": "chainmail_leggings",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:chainmail_leggings",
+      "aspects": {
+        "metallum": 58
+      }
+    },
+    {
+      "legacy": "chainmail_boots",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:chainmail_boots",
+      "aspects": {
+        "metallum": 33
+      }
+    },
+    {
+      "legacy": "dragon_egg",
+      "meta": "0",
+      "target": "item:minecraft:dragon_egg",
+      "aspects": {
+        "alienis": 15,
+        "bestia": 15,
+        "tenebrae": 15,
+        "motus": 15,
+        "praecantatio": 5
+      }
+    },
+    {
+      "legacy": "portal",
+      "meta": "Short.MAX_VALUE",
+      "target": "block:minecraft:nether_portal",
+      "aspects": {
+        "ignis": 10,
+        "motus": 20,
+        "praecantatio": 10
+      }
+    },
+    {
+      "legacy": "end_portal",
+      "meta": "Short.MAX_VALUE",
+      "target": "block:minecraft:end_portal",
+      "aspects": {
+        "alienis": 10,
+        "motus": 20,
+        "praecantatio": 10
+      }
+    },
+    {
+      "legacy": "end_portal_frame",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:end_portal_frame",
+      "aspects": {
+        "alienis": 10,
+        "potentia": 10,
+        "motus": 10,
+        "praecantatio": 5
+      }
+    },
+    {
+      "legacy": "mob_spawner",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:spawner",
+      "aspects": {
+        "bestia": 20,
+        "motus": 20,
+        "exanimis": 20,
+        "praecantatio": 20
+      }
+    },
+    {
+      "legacy": "prismarine_shard",
+      "meta": "0",
+      "target": "item:minecraft:prismarine_shard",
+      "aspects": {
+        "aqua": 5,
+        "terra": 5
+      }
+    },
+    {
+      "legacy": "prismarine_crystals",
+      "meta": "0",
+      "target": "item:minecraft:prismarine_crystals",
+      "aspects": {
+        "aqua": 5,
+        "vitreus": 5,
+        "lux": 5
+      }
+    },
+    {
+      "legacy": "elytra",
+      "meta": "0",
+      "target": "item:minecraft:elytra",
+      "aspects": {
+        "volatus": 20,
+        "motus": 15
+      }
+    },
+    {
+      "legacy": "end_rod",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:end_rod",
+      "aspects": {
+        "ignis": 1,
+        "lux": 5
+      }
+    },
+    {
+      "legacy": "tripwire_hook",
+      "meta": "Short.MAX_VALUE",
+      "target": "item:minecraft:tripwire_hook",
+      "aspects": {
+        "sensus": 5,
+        "machina": 5,
+        "vinculum": 5
+      }
+    },
+    {
+      "legacy": "dye",
+      "meta": "0",
+      "target": "item:minecraft:ink_sac",
+      "aspects": {
+        "aqua": 2,
+        "bestia": 2
+      }
+    },
+    {
+      "legacy": "dye",
+      "meta": "3",
+      "target": "item:minecraft:cocoa_beans",
+      "aspects": {
+        "desiderium": 2,
+        "potentia": 2
+      }
+    },
+    {
+      "legacy": "dye",
+      "meta": "4",
+      "target": "item:minecraft:lapis_lazuli",
+      "aspects": {
+        "terra": 2,
+        "desiderium": 2
+      }
+    },
+    {
+      "legacy": "dye",
+      "meta": "15",
+      "target": "item:minecraft:bone_meal",
+      "aspects": {
+        "victus": 2,
+        "mortuus": 1,
+        "herba": 1
+      }
+    }
+  ],
+  "unresolved_simple_registrations": [],
+  "scope": "Explicit vanilla ItemStack + literal AspectList.add registrations; derived/loop/potion registrations handled separately."
+}

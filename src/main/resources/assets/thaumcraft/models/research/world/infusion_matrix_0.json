@@ -1,0 +1,7 @@
+{
+  "textures": {
+    "particle": "thaumcraft:blocks/infuser_normal",
+    "side": "thaumcraft:blocks/infuser_normal"
+  },
+  "parent": "thaumcraft:research/legacy/block/infusion_matrix"
+}

@@ -1,0 +1,61 @@
+{
+  "baseline": "alpha.9.8 JAR and source_sha256 manifest",
+  "status": "development_only",
+  "junit": {
+    "tests": 97,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "aspect_fixture_checks": 394,
+  "source_rules": 160,
+  "unique_rule_targets": 159,
+  "new_main_code_and_resources": [
+    "src/main/java/thaumcraft/port/aspect/AspectRecipeRules.java",
+    "src/main/java/thaumcraft/port/aspect/PotionAspects.java",
+    "src/main/java/thaumcraft/port/aspect/ItemAspectBonuses.java",
+    "src/main/java/thaumcraft/port/aspect/AspectMath.java",
+    "src/main/java/thaumcraft/port/data/AspectFixtures.java",
+    "src/main/resources/thaumcraft-port/aspect-recipe-rules.json",
+    "src/main/resources/thaumcraft-port/additional-aspect-tags.json"
+  ],
+  "changed_main_code_and_resources": [
+    "src/main/java/thaumcraft/port/client/ClientScanner.java",
+    "src/main/java/thaumcraft/port/aspect/RecipeAspects.java",
+    "src/main/java/thaumcraft/port/aspect/AspectTags.java",
+    "src/main/java/thaumcraft/port/data/WorldDataChecks.java",
+    "src/main/java/thaumcraft/port/research/ResearchProgress.java",
+    "src/main/java/thaumcraft/port/research/Scanning.java",
+    "src/main/java/thaumcraft/port/research/ScanDiscoveries.java",
+    "src/main/java/thaumcraft/port/research/ResearchState.java",
+    "src/main/java/thaumcraft/port/research/Scanner.java",
+    "src/main/java/thaumcraft/port/crafting/CrucibleRecipe.java",
+    "src/main/resources/META-INF/accesstransformer.cfg"
+  ],
+  "removed_main_sources": [],
+  "textures_models_sounds_recipes_world_data_unchanged": true,
+  "client_rendered": false,
+  "server_started": false,
+  "mod_jar_created": false,
+  "mod_jar_delivered": false,
+  "source_sha256": {
+    "src/main/java/thaumcraft/port/aspect/AspectRecipeRules.java": "0a0c730e91478193fb8f69c5986f4bfd8fc547ff45461c5046a2464364208f45",
+    "src/main/java/thaumcraft/port/aspect/PotionAspects.java": "ef1ba658118b49cc8acfeff782df49fb3f98c7aed19a6bebbc5856e0c2cce812",
+    "src/main/java/thaumcraft/port/aspect/ItemAspectBonuses.java": "cbcea8eb55b330f026607a75734e2b70482026b329a079038c6e4555b1dde69b",
+    "src/main/java/thaumcraft/port/aspect/AspectMath.java": "4462107842b0db00357cf9def5c4e6b2da847832f3802830accc12fe4247f42e",
+    "src/main/java/thaumcraft/port/data/AspectFixtures.java": "e605e353864c8b3cd20b947a55dcf51aaaecbd85436a5d5ce4d6260d5a6a32d7",
+    "src/main/resources/thaumcraft-port/aspect-recipe-rules.json": "f43fff09724db0dc7493f0ed38291dfc16c96f8326788d3df9a5a01328eac24b",
+    "src/main/resources/thaumcraft-port/additional-aspect-tags.json": "59b0b77f058845e76ea9e01cb986fae9b4ccd2b943581b58d36f3d6c20c08469",
+    "src/main/java/thaumcraft/port/client/ClientScanner.java": "6f8dd7c4c3cdac9a4ba2792405dcf2a73837029569339337c139c80bb21f915c",
+    "src/main/java/thaumcraft/port/aspect/RecipeAspects.java": "d30718e5d41df2980c20419ec618cd9872fe5f4c8d40476a7cb4f288ecc228ff",
+    "src/main/java/thaumcraft/port/aspect/AspectTags.java": "ddc22f74f8f61e0a1d239efb8bb89e1c17f41c2697a3b4867106f2129b1eae99",
+    "src/main/java/thaumcraft/port/data/WorldDataChecks.java": "623fa742fa8a9efe8e61c6b40ad2132c73837794cd7d269ff59df2b11e8fb6af",
+    "src/main/java/thaumcraft/port/research/ResearchProgress.java": "e247e1fddcc39fa4104ad558ae8af7a3a0d092d1d4a373b8ce625d8d35cf61e3",
+    "src/main/java/thaumcraft/port/research/Scanning.java": "bafc69c0ab6c42149e2f4f6c9f9faa115e6370de9849c2781b43245a2a1d0d8e",
+    "src/main/java/thaumcraft/port/research/ScanDiscoveries.java": "abf422598fbce8ad09f815871324af89525c5ea8ec270bc7b04257b46f6d5188",
+    "src/main/java/thaumcraft/port/research/ResearchState.java": "c91a73cef8d27386f3c517fc102e79b6752563d7876e18ecf4cc06696f3f1626",
+    "src/main/java/thaumcraft/port/research/Scanner.java": "82dd1540e046eec29fc204ad74e8c0cb423dcc6e5a7f5ef71a5726d649b93ab6",
+    "src/main/java/thaumcraft/port/crafting/CrucibleRecipe.java": "04fdfd6f0970de43bb9311722ca525208c7cb37bbf3f068d4891a57ce7e114f3",
+    "src/main/resources/META-INF/accesstransformer.cfg": "c336b195d085ee8d43c3cdceefc67994f7112b401b8dc5d815ff95b19e5252df"
+  }
+}

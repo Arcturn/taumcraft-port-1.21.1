@@ -1,0 +1,228 @@
+[
+  {
+    "target": "item:thaumcraft:crystal_aer",
+    "aspects": {
+      "aer": 15,
+      "vitreus": 10
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.crystalAir, 1, Short.MAX_VALUE), new AspectList().add(Aspect.AIR, 15).add(Aspect.CRYSTAL, 10));"
+  },
+  {
+    "target": "item:thaumcraft:crystal_ignis",
+    "aspects": {
+      "ignis": 15,
+      "vitreus": 10
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.crystalFire, 1, Short.MAX_VALUE), new AspectList().add(Aspect.FIRE, 15).add(Aspect.CRYSTAL, 10));"
+  },
+  {
+    "target": "item:thaumcraft:crystal_aqua",
+    "aspects": {
+      "aqua": 15,
+      "vitreus": 10
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.crystalWater, 1, Short.MAX_VALUE), new AspectList().add(Aspect.WATER, 15).add(Aspect.CRYSTAL, 10));"
+  },
+  {
+    "target": "item:thaumcraft:crystal_terra",
+    "aspects": {
+      "terra": 15,
+      "vitreus": 10
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.crystalEarth, 1, Short.MAX_VALUE), new AspectList().add(Aspect.EARTH, 15).add(Aspect.CRYSTAL, 10));"
+  },
+  {
+    "target": "item:thaumcraft:crystal_ordo",
+    "aspects": {
+      "ordo": 15,
+      "vitreus": 10
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.crystalOrder, 1, Short.MAX_VALUE), new AspectList().add(Aspect.ORDER, 15).add(Aspect.CRYSTAL, 10));"
+  },
+  {
+    "target": "item:thaumcraft:crystal_perditio",
+    "aspects": {
+      "perditio": 15,
+      "vitreus": 10
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.crystalEntropy, 1, Short.MAX_VALUE), new AspectList().add(Aspect.ENTROPY, 15).add(Aspect.CRYSTAL, 10));"
+  },
+  {
+    "target": "item:thaumcraft:crystal_vitium",
+    "aspects": {
+      "vitium": 15,
+      "vitreus": 10
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.crystalTaint, 1, Short.MAX_VALUE), new AspectList().add(Aspect.FLUX, 15).add(Aspect.CRYSTAL, 10));"
+  },
+  {
+    "target": "item:thaumcraft:taint_fibre",
+    "aspects": {
+      "herba": 5,
+      "vitium": 10
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.taintFibre), new AspectList().add(Aspect.PLANT, 5).add(Aspect.FLUX, 10));"
+  },
+  {
+    "target": "item:thaumcraft:taint_crust",
+    "aspects": {
+      "victus": 5,
+      "vitium": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.taintCrust), new AspectList().add(Aspect.LIFE, 5).add(Aspect.FLUX, 5));"
+  },
+  {
+    "target": "item:thaumcraft:taint_soil",
+    "aspects": {
+      "terra": 5,
+      "vitium": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.taintSoil), new AspectList().add(Aspect.EARTH, 5).add(Aspect.FLUX, 5));"
+  },
+  {
+    "target": "item:thaumcraft:taint_rock",
+    "aspects": {
+      "terra": 10,
+      "vitium": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.taintRock), new AspectList().add(Aspect.EARTH, 10).add(Aspect.FLUX, 5));"
+  },
+  {
+    "target": "item:thaumcraft:taint_log",
+    "aspects": {
+      "herba": 5,
+      "vitium": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.taintLog, 1, 0), new AspectList().add(Aspect.PLANT, 5).add(Aspect.FLUX, 5));"
+  },
+  {
+    "target": "item:thaumcraft:log_greatwood",
+    "aspects": {
+      "herba": 20,
+      "victus": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.logGreatwood), new AspectList().add(Aspect.PLANT, 20).add(Aspect.LIFE, 5));"
+  },
+  {
+    "target": "item:thaumcraft:log_silverwood",
+    "aspects": {
+      "herba": 20,
+      "auram": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.logSilverwood), new AspectList().add(Aspect.PLANT, 20).add(Aspect.AURA, 5));"
+  },
+  {
+    "target": "item:thaumcraft:leaves_greatwood",
+    "aspects": {
+      "herba": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.leafGreatwood), new AspectList().add(Aspect.PLANT, 5));"
+  },
+  {
+    "target": "item:thaumcraft:leaves_silverwood",
+    "aspects": {
+      "herba": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.leafSilverwood), new AspectList().add(Aspect.PLANT, 5));"
+  },
+  {
+    "target": "item:thaumcraft:sapling_greatwood",
+    "aspects": {
+      "herba": 15,
+      "victus": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.saplingGreatwood), new AspectList().add(Aspect.PLANT, 15).add(Aspect.LIFE, 5));"
+  },
+  {
+    "target": "item:thaumcraft:sapling_silverwood",
+    "aspects": {
+      "herba": 15,
+      "auram": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.saplingSilverwood), new AspectList().add(Aspect.PLANT, 15).add(Aspect.AURA, 5));"
+  },
+  {
+    "target": "item:thaumcraft:shimmerleaf",
+    "aspects": {
+      "herba": 5,
+      "auram": 10,
+      "potentia": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.shimmerleaf), new AspectList().add(Aspect.PLANT, 5).add(Aspect.AURA, 10).add(Aspect.ENERGY, 5));"
+  },
+  {
+    "target": "item:thaumcraft:cinderpearl",
+    "aspects": {
+      "herba": 5,
+      "auram": 5,
+      "ignis": 10
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.cinderpearl), new AspectList().add(Aspect.PLANT, 5).add(Aspect.AURA, 5).add(Aspect.FIRE, 10));"
+  },
+  {
+    "target": "item:thaumcraft:vishroom",
+    "aspects": {
+      "herba": 2,
+      "mortuus": 1,
+      "praecantatio": 1,
+      "perditio": 1
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.vishroom), new AspectList().add(Aspect.PLANT, 2).add(Aspect.DEATH, 1).add(Aspect.MAGIC, 1).add(Aspect.ENTROPY, 1));"
+  },
+  {
+    "target": "item:thaumcraft:stone_porous",
+    "aspects": {
+      "terra": 5,
+      "vacuos": 5
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.stonePorous), new AspectList().add(Aspect.EARTH, 5).add(Aspect.VOID, 5));"
+  },
+  {
+    "target": "item:thaumcraft:primordial_pearl",
+    "aspects": {
+      "aer": 10,
+      "ignis": 10,
+      "aqua": 10,
+      "terra": 10,
+      "ordo": 10,
+      "perditio": 10
+    },
+    "source": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.primordialPearl, 1, Short.MAX_VALUE), new AspectList().add(Aspect.AIR, 10).add(Aspect.FIRE, 10).add(Aspect.WATER, 10).add(Aspect.EARTH, 10).add(Aspect.ORDER, 10).add(Aspect.ENTROPY, 10));"
+  },
+  {
+    "target": "entity:thaumcraft:taint_seed",
+    "aspects": {
+      "vitium": 20,
+      "auram": 10,
+      "herba": 5
+    },
+    "source": "ThaumcraftApi.registerEntityTag(\"Thaumcraft.TaintSeed\", new AspectList().add(Aspect.FLUX, 20).add(Aspect.AURA, 10).add(Aspect.PLANT, 5), new ThaumcraftApi.EntityTagsNBT[0]);"
+  },
+  {
+    "target": "entity:thaumcraft:taint_seed",
+    "aspects": {
+      "herba": 20,
+      "bestia": 20,
+      "vitium": 20
+    },
+    "source": "ThaumcraftApi.registerEntityTag(\"Thaumcraft.TaintSeed\", new AspectList().add(Aspect.PLANT, 20).add(Aspect.BEAST, 20).add(Aspect.FLUX, 20), new ThaumcraftApi.EntityTagsNBT[0]);"
+  },
+  {
+    "target": "entity:thaumcraft:taint_seed_prime",
+    "aspects": {
+      "vitium": 25,
+      "auram": 15,
+      "herba": 5
+    },
+    "source": "ThaumcraftApi.registerEntityTag(\"Thaumcraft.TaintSeedPrime\", new AspectList().add(Aspect.FLUX, 25).add(Aspect.AURA, 15).add(Aspect.PLANT, 5), new ThaumcraftApi.EntityTagsNBT[0]);"
+  },
+  {
+    "target": "entity:thaumcraft:taint_seed_prime",
+    "aspects": {
+      "herba": 30,
+      "bestia": 30,
+      "vitium": 30
+    },
+    "source": "ThaumcraftApi.registerEntityTag(\"Thaumcraft.TaintSeedPrime\", new AspectList().add(Aspect.PLANT, 30).add(Aspect.BEAST, 30).add(Aspect.FLUX, 30), new ThaumcraftApi.EntityTagsNBT[0]);"
+  }
+]

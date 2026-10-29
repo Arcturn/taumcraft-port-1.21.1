@@ -1,0 +1,124 @@
+[
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "808",
+      "568"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "1"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.15
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "900",
+      "630"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "resume-final-furnace-slice-0.png"
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "resume-final-furnace-slice-1.png"
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "resume-final-furnace-slice-2.png"
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "resume-final-furnace-slice-3.png"
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "resume-final-furnace-slice-4.png"
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "resume-final-furnace-slice-5.png"
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "resume-final-furnace-slice-6.png"
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "808",
+      "568"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.4
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "click",
+      "1"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 0.15
+  }
+]

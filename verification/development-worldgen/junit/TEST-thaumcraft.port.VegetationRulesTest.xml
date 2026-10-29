@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.VegetationRulesTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-28T23:41:14.907Z" hostname="e54a7cd1abdc" time="0.114">
+  <properties/>
+  <testcase name="forestSelectionMatchesOriginalJavaRandomIncludingConsumedDraws()" classname="thaumcraft.port.VegetationRulesTest" time="0.028"/>
+  <testcase name="rareTreesUseOriginalCenteredNineByNineAreaIncludingNegativeChunks()" classname="thaumcraft.port.VegetationRulesTest" time="0.009"/>
+  <testcase name="speciesMixPreservesConditionalGreatwoodProbability()" classname="thaumcraft.port.VegetationRulesTest" time="0.019"/>
+  <testcase name="ordinaryForestGlobalRollsKeepOriginalRarity()" classname="thaumcraft.port.VegetationRulesTest" time="0.018"/>
+  <testcase name="globalGateAndOffsetSequenceMatchesLegacyExpressions()" classname="thaumcraft.port.VegetationRulesTest" time="0.027"/>
+  <testcase name="forestBudgetHasTwoTreesAndTenPercentThirdTree()" classname="thaumcraft.port.VegetationRulesTest" time="0.007"/>
+  <testcase name="extraTreeUsesOriginalStrictFloatThreshold()" classname="thaumcraft.port.VegetationRulesTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

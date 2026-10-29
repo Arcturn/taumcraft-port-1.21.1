@@ -1,0 +1,509 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:directory",
+      "source": "items",
+      "prefix": "items/"
+    },
+    {
+      "type": "minecraft:directory",
+      "source": "blocks",
+      "prefix": "blocks/"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:entity/armor/caster_advanced",
+      "sprite": "thaumcraft:entity/armor/caster_advanced"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:entity/armor/caster_basic",
+      "sprite": "thaumcraft:entity/armor/caster_basic"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:models/chesthungry",
+      "sprite": "thaumcraft:models/chesthungry"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/_effect",
+      "sprite": "thaumcraft:foci/_effect"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/_medium",
+      "sprite": "thaumcraft:foci/_medium"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/air",
+      "sprite": "thaumcraft:foci/air"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/bolt",
+      "sprite": "thaumcraft:foci/bolt"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/break",
+      "sprite": "thaumcraft:foci/break"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/cloud",
+      "sprite": "thaumcraft:foci/cloud"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/curse",
+      "sprite": "thaumcraft:foci/curse"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/exchange",
+      "sprite": "thaumcraft:foci/exchange"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/flux",
+      "sprite": "thaumcraft:foci/flux"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/heal",
+      "sprite": "thaumcraft:foci/heal"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/mine",
+      "sprite": "thaumcraft:foci/mine"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/plan",
+      "sprite": "thaumcraft:foci/plan"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/projectile",
+      "sprite": "thaumcraft:foci/projectile"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/rift",
+      "sprite": "thaumcraft:foci/rift"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/scatter",
+      "sprite": "thaumcraft:foci/scatter"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/spellbat",
+      "sprite": "thaumcraft:foci/spellbat"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/split_target",
+      "sprite": "thaumcraft:foci/split_target"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/alumentum",
+      "sprite": "thaumcraft:items/alumentum"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/bucket_death",
+      "sprite": "thaumcraft:items/bucket_death"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/cluster_iron",
+      "sprite": "thaumcraft:items/cluster_iron"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/ingot_brass",
+      "sprite": "thaumcraft:items/ingot_brass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_breaker",
+      "sprite": "thaumcraft:items/seals/seal_breaker"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_butcher",
+      "sprite": "thaumcraft:items/seals/seal_butcher"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_empty",
+      "sprite": "thaumcraft:items/seals/seal_empty"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_fill",
+      "sprite": "thaumcraft:items/seals/seal_fill"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_guard",
+      "sprite": "thaumcraft:items/seals/seal_guard"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_harvest",
+      "sprite": "thaumcraft:items/seals/seal_harvest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_lumber",
+      "sprite": "thaumcraft:items/seals/seal_lumber"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_pickup",
+      "sprite": "thaumcraft:items/seals/seal_pickup"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_provider",
+      "sprite": "thaumcraft:items/seals/seal_provider"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_stock",
+      "sprite": "thaumcraft:items/seals/seal_stock"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/seals/seal_use",
+      "sprite": "thaumcraft:items/seals/seal_use"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/tallow",
+      "sprite": "thaumcraft:items/tallow"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/thaumonomicon",
+      "sprite": "thaumcraft:items/thaumonomicon"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:items/thaumonomicon_cheat",
+      "sprite": "thaumcraft:items/thaumonomicon_cheat"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:misc/golem/addon_fighter",
+      "sprite": "thaumcraft:misc/golem/addon_fighter"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:misc/golem/arms_breakers",
+      "sprite": "thaumcraft:misc/golem/arms_breakers"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:misc/golem/head_basic",
+      "sprite": "thaumcraft:misc/golem/head_basic"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:misc/golem/legs_climber",
+      "sprite": "thaumcraft:misc/golem/legs_climber"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:misc/golem/legs_flyer",
+      "sprite": "thaumcraft:misc/golem/legs_flyer"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/cat_alchemy",
+      "sprite": "thaumcraft:research/cat_alchemy"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/cat_artifice",
+      "sprite": "thaumcraft:research/cat_artifice"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/cat_auromancy",
+      "sprite": "thaumcraft:research/cat_auromancy"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/cat_eldritch",
+      "sprite": "thaumcraft:research/cat_eldritch"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/cat_golemancy",
+      "sprite": "thaumcraft:research/cat_golemancy"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/cat_infusion",
+      "sprite": "thaumcraft:research/cat_infusion"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/golem_logistics",
+      "sprite": "thaumcraft:research/golem_logistics"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/knowledge_theory",
+      "sprite": "thaumcraft:research/knowledge_theory"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_angryzombie",
+      "sprite": "thaumcraft:research/r_angryzombie"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_celestial",
+      "sprite": "thaumcraft:research/r_celestial"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_crab",
+      "sprite": "thaumcraft:research/r_crab"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_cultist",
+      "sprite": "thaumcraft:research/r_cultist"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_eldritchguardian",
+      "sprite": "thaumcraft:research/r_eldritchguardian"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_firebat",
+      "sprite": "thaumcraft:research/r_firebat"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_flux",
+      "sprite": "thaumcraft:research/r_flux"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_fluxrift",
+      "sprite": "thaumcraft:research/r_fluxrift"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_inf_enchant",
+      "sprite": "thaumcraft:research/r_inf_enchant"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_mask0",
+      "sprite": "thaumcraft:research/r_mask0"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_pech",
+      "sprite": "thaumcraft:research/r_pech"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_runicupg",
+      "sprite": "thaumcraft:research/r_runicupg"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_taintacle",
+      "sprite": "thaumcraft:research/r_taintacle"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_taintcrawler",
+      "sprite": "thaumcraft:research/r_taintcrawler"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_taintseed",
+      "sprite": "thaumcraft:research/r_taintseed"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_taintswarm",
+      "sprite": "thaumcraft:research/r_taintswarm"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_thaumslime",
+      "sprite": "thaumcraft:research/r_thaumslime"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_warp",
+      "sprite": "thaumcraft:research/r_warp"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_wisp",
+      "sprite": "thaumcraft:research/r_wisp"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/quill",
+      "sprite": "thaumcraft:research/quill"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/earth",
+      "sprite": "thaumcraft:foci/earth"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/frost",
+      "sprite": "thaumcraft:foci/frost"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:foci/split_trajectory",
+      "sprite": "thaumcraft:foci/split_trajectory"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_breaker",
+      "sprite": "thaumcraft:research/display_icons/seal_breaker"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_butcher",
+      "sprite": "thaumcraft:research/display_icons/seal_butcher"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_empty",
+      "sprite": "thaumcraft:research/display_icons/seal_empty"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_fill",
+      "sprite": "thaumcraft:research/display_icons/seal_fill"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_guard",
+      "sprite": "thaumcraft:research/display_icons/seal_guard"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_harvest",
+      "sprite": "thaumcraft:research/display_icons/seal_harvest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_lumber",
+      "sprite": "thaumcraft:research/display_icons/seal_lumber"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_pickup",
+      "sprite": "thaumcraft:research/display_icons/seal_pickup"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_provider",
+      "sprite": "thaumcraft:research/display_icons/seal_provider"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_stock",
+      "sprite": "thaumcraft:research/display_icons/seal_stock"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/display_icons/seal_use",
+      "sprite": "thaumcraft:research/display_icons/seal_use"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_mask1",
+      "sprite": "thaumcraft:research/r_mask1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/r_mask2",
+      "sprite": "thaumcraft:research/r_mask2"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/anvil_base",
+      "sprite": "thaumcraft:research/vanilla/blocks/anvil_base"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/anvil_top_damaged_0",
+      "sprite": "thaumcraft:research/vanilla/blocks/anvil_top_damaged_0"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/cauldron_bottom",
+      "sprite": "thaumcraft:research/vanilla/blocks/cauldron_bottom"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/cauldron_inner",
+      "sprite": "thaumcraft:research/vanilla/blocks/cauldron_inner"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/cauldron_side",
+      "sprite": "thaumcraft:research/vanilla/blocks/cauldron_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/cauldron_top",
+      "sprite": "thaumcraft:research/vanilla/blocks/cauldron_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/iron_bars",
+      "sprite": "thaumcraft:research/vanilla/blocks/iron_bars"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/nether_brick",
+      "sprite": "thaumcraft:research/vanilla/blocks/nether_brick"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/obsidian",
+      "sprite": "thaumcraft:research/vanilla/blocks/obsidian"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/piston_bottom",
+      "sprite": "thaumcraft:research/vanilla/blocks/piston_bottom"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/piston_side",
+      "sprite": "thaumcraft:research/vanilla/blocks/piston_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:research/vanilla/blocks/piston_top_normal",
+      "sprite": "thaumcraft:research/vanilla/blocks/piston_top_normal"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "audit": "Read-only original book sound resources and selected GUI sound call parameters",
+  "source": {
+    "artifact": "../build-support/original-client/game/mods/Thaumcraft-1.12.2-6.1.BETA26.jar",
+    "sha256": "9425f8643581b27ff8845b087c8bc6fc10425a32942f1a3f0e265ce6b38f7b5f",
+    "decompiled_sources": "reference/legacy-decompiled-sources.zip",
+    "original_gui": "thaumcraft/client/gui/GuiResearchPage.java"
+  },
+  "scope": {
+    "events": 7,
+    "ogg_samples": 12,
+    "checked_gui_action_groups": 5
+  },
+  "event_mappings": {
+    "page": {
+      "original_samples": [
+        "thaumcraft:page1",
+        "thaumcraft:page2"
+      ],
+      "port_samples": [
+        "thaumcraft:page1",
+        "thaumcraft:page2"
+      ],
+      "sample_mapping_identical": true,
+      "original_legacy_json_category": "master",
+      "port_legacy_json_category": null
+    },
+    "clack": {
+      "original_samples": [
+        "thaumcraft:clack1",
+        "thaumcraft:clack2",
+        "thaumcraft:clack3"
+      ],
+      "port_samples": [
+        "thaumcraft:clack1",
+        "thaumcraft:clack2",
+        "thaumcraft:clack3"
+      ],
+      "sample_mapping_identical": true,
+      "original_legacy_json_category": "ambient",
+      "port_legacy_json_category": null
+    },
+    "write": {
+      "original_samples": [
+        "thaumcraft:write1",
+        "thaumcraft:write2"
+      ],
+      "port_samples": [
+        "thaumcraft:write1",
+        "thaumcraft:write2"
+      ],
+      "sample_mapping_identical": true,
+      "original_legacy_json_category": "master",
+      "port_legacy_json_category": null
+    },
+    "pageturn": {
+      "original_samples": [
+        "thaumcraft:pageturn"
+      ],
+      "port_samples": [
+        "thaumcraft:pageturn"
+      ],
+      "sample_mapping_identical": true,
+      "original_legacy_json_category": "master",
+      "port_legacy_json_category": null
+    },
+    "learn": {
+      "original_samples": [
+        {
+          "name": "thaumcraft:learn",
+          "stream": false
+        }
+      ],
+      "port_samples": [
+        {
+          "name": "thaumcraft:learn",
+          "stream": false
+        }
+      ],
+      "sample_mapping_identical": true,
+      "original_legacy_json_category": "master",
+      "port_legacy_json_category": null
+    },
+    "scan": {
+      "original_samples": [
+        {
+          "name": "thaumcraft:scan",
+          "stream": false
+        }
+      ],
+      "port_samples": [
+        {
+          "name": "thaumcraft:scan",
+          "stream": false
+        }
+      ],
+      "sample_mapping_identical": true,
+      "original_legacy_json_category": "master",
+      "port_legacy_json_category": null
+    },
+    "wind": {
+      "original_samples": [
+        "thaumcraft:wind1",
+        "thaumcraft:wind2"
+      ],
+      "port_samples": [
+        "thaumcraft:wind1",
+        "thaumcraft:wind2"
+      ],
+      "sample_mapping_identical": true,
+      "original_legacy_json_category": "ambient",
+      "port_legacy_json_category": null
+    }
+  },
+  "samples": [
+    {
+      "event": "page",
+      "original_zip_path": "assets/thaumcraft/sounds/page1.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/page1.ogg",
+      "bytes": 7947,
+      "original_sha256": "8d62f3fabd9dce6ed9719c1b2fcc30a077601889ff8f1d987d8a9dcdffc65e92",
+      "port_sha256": "8d62f3fabd9dce6ed9719c1b2fcc30a077601889ff8f1d987d8a9dcdffc65e92",
+      "byte_identical": true
+    },
+    {
+      "event": "page",
+      "original_zip_path": "assets/thaumcraft/sounds/page2.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/page2.ogg",
+      "bytes": 8178,
+      "original_sha256": "48eb123a22715349f3ab5a5c8f823e6853065b16e59f90aab921fcbb059f894c",
+      "port_sha256": "48eb123a22715349f3ab5a5c8f823e6853065b16e59f90aab921fcbb059f894c",
+      "byte_identical": true
+    },
+    {
+      "event": "clack",
+      "original_zip_path": "assets/thaumcraft/sounds/clack1.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/clack1.ogg",
+      "bytes": 4316,
+      "original_sha256": "7b32223b64a5d6d7f2f72d5d256c1c0e02e173fa973c18a9cbde526cf93b77b8",
+      "port_sha256": "7b32223b64a5d6d7f2f72d5d256c1c0e02e173fa973c18a9cbde526cf93b77b8",
+      "byte_identical": true
+    },
+    {
+      "event": "clack",
+      "original_zip_path": "assets/thaumcraft/sounds/clack2.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/clack2.ogg",
+      "bytes": 4459,
+      "original_sha256": "39b314f655aaf3531c03770aced7a0b5c49a9351f0eb60920135d8b60138b583",
+      "port_sha256": "39b314f655aaf3531c03770aced7a0b5c49a9351f0eb60920135d8b60138b583",
+      "byte_identical": true
+    },
+    {
+      "event": "clack",
+      "original_zip_path": "assets/thaumcraft/sounds/clack3.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/clack3.ogg",
+      "bytes": 4189,
+      "original_sha256": "0d3d9f71203aa03f182e880a75dff6c68a6f4b47d87b08cc55027ab3c6caaf6a",
+      "port_sha256": "0d3d9f71203aa03f182e880a75dff6c68a6f4b47d87b08cc55027ab3c6caaf6a",
+      "byte_identical": true
+    },
+    {
+      "event": "write",
+      "original_zip_path": "assets/thaumcraft/sounds/write1.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/write1.ogg",
+      "bytes": 7161,
+      "original_sha256": "e2cc016f613a4e88e7d3ea1c2e274304ab6d79d998dfc4f60a0b8115867035b2",
+      "port_sha256": "e2cc016f613a4e88e7d3ea1c2e274304ab6d79d998dfc4f60a0b8115867035b2",
+      "byte_identical": true
+    },
+    {
+      "event": "write",
+      "original_zip_path": "assets/thaumcraft/sounds/write2.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/write2.ogg",
+      "bytes": 6984,
+      "original_sha256": "d9ebb81390e80f9ae5eeb4b88682f572a83e363f70af40f4e864279eab7314e6",
+      "port_sha256": "d9ebb81390e80f9ae5eeb4b88682f572a83e363f70af40f4e864279eab7314e6",
+      "byte_identical": true
+    },
+    {
+      "event": "pageturn",
+      "original_zip_path": "assets/thaumcraft/sounds/pageturn.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/pageturn.ogg",
+      "bytes": 20044,
+      "original_sha256": "7f376278c4e7da446529c11db80bc479476bc1d7d882274fa17bffdde00632bc",
+      "port_sha256": "7f376278c4e7da446529c11db80bc479476bc1d7d882274fa17bffdde00632bc",
+      "byte_identical": true
+    },
+    {
+      "event": "learn",
+      "original_zip_path": "assets/thaumcraft/sounds/learn.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/learn.ogg",
+      "bytes": 9789,
+      "original_sha256": "dc2fec19574704c5dd8ae05bc90f642a4e847ae95405b4d3b103678251a40112",
+      "port_sha256": "dc2fec19574704c5dd8ae05bc90f642a4e847ae95405b4d3b103678251a40112",
+      "byte_identical": true
+    },
+    {
+      "event": "scan",
+      "original_zip_path": "assets/thaumcraft/sounds/scan.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/scan.ogg",
+      "bytes": 6658,
+      "original_sha256": "6dba5438b6ca6778bb9a8ffde9e5a1966eae3e03e8dc2b2d29e98e6bc12c9bc3",
+      "port_sha256": "6dba5438b6ca6778bb9a8ffde9e5a1966eae3e03e8dc2b2d29e98e6bc12c9bc3",
+      "byte_identical": true
+    },
+    {
+      "event": "wind",
+      "original_zip_path": "assets/thaumcraft/sounds/wind1.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/wind1.ogg",
+      "bytes": 22930,
+      "original_sha256": "9157693e4d3a65055a782593f45c6bcf61cbe1f28d64c2ac66b373acacb1d420",
+      "port_sha256": "9157693e4d3a65055a782593f45c6bcf61cbe1f28d64c2ac66b373acacb1d420",
+      "byte_identical": true
+    },
+    {
+      "event": "wind",
+      "original_zip_path": "assets/thaumcraft/sounds/wind2.ogg",
+      "port_path": "src/main/resources/assets/thaumcraft/sounds/wind2.ogg",
+      "bytes": 22464,
+      "original_sha256": "6729e4920ceb7b460f9ca4351efb60b3e893438ed0f8c7a27752b86ea5c8e39b",
+      "port_sha256": "6729e4920ceb7b460f9ca4351efb60b3e893438ed0f8c7a27752b86ea5c8e39b",
+      "byte_identical": true
+    }
+  ],
+  "checked_calls": [
+    {
+      "action": "turn page / previous recipe / ingredient drilldown",
+      "event": "page",
+      "original_volume": 0.66,
+      "port_volume": 0.66,
+      "original_pitch": 1.0,
+      "port_pitch": 1.0,
+      "original_method": "GuiResearchPage.nextPage, prevPage, goBack, mouseClicked reference branch",
+      "port_method": "ResearchPageScreen.turnPage, previousRecipe, mouseClicked recipe reference",
+      "status": "source parameters match"
+    },
+    {
+      "action": "aspect / knowledge / recipe insert tab and variant arrows",
+      "event": "page",
+      "original_volume": 0.7,
+      "port_volume": 0.7,
+      "original_pitch": 0.9,
+      "port_pitch": 0.9,
+      "original_method": "GuiResearchPage.mouseClicked tab/recipePage branches",
+      "port_method": "ResearchPageScreen.mouseClicked tab/recipeVariant/aspectPage branches",
+      "status": "source parameters match"
+    },
+    {
+      "action": "close open insert using Escape or inventory key",
+      "event": "page",
+      "original_volume": 0.4,
+      "port_volume": 0.4,
+      "original_pitch": 1.1,
+      "port_pitch": 1.1,
+      "original_method": "GuiResearchPage.keyTyped",
+      "port_method": "ResearchPageScreen.keyPressed",
+      "status": "source parameters match"
+    },
+    {
+      "action": "advance research stage button",
+      "event": "write",
+      "original_volume": 0.66,
+      "port_volume": 0.66,
+      "original_pitch": 1.0,
+      "port_pitch": 1.0,
+      "original_method": "GuiResearchPage.mouseClicked research-requisites branch",
+      "port_method": "ResearchPageScreen.mouseClicked canAdvance branch",
+      "status": "source parameters match"
+    },
+    {
+      "action": "toggle blueprint layer cycling",
+      "event": "clack",
+      "original_volume": 0.66,
+      "port_volume": 0.66,
+      "original_pitch": 1.0,
+      "port_pitch": 1.0,
+      "original_method": "GuiResearchPage.mouseClicked renderingCompound branch",
+      "port_method": "RecipeBook.BlueprintView.click",
+      "status": "source parameters match"
+    }
+  ],
+  "dispatch": {
+    "original": "EntityPlayerSP.playSound(SoundEvent, volume, pitch)",
+    "port": "ResearchScreen.sound calls Minecraft.getInstance().player.playSound(PortSounds.get(name),volume,pitch)",
+    "note": "Legacy sounds.json category fields are recorded as source metadata, not used here as evidence of the effective runtime sound category; the playback call controls that."
+  },
+  "limits": [
+    "This verifies source samples, event mapping and selected GUI call parameters. It does not prove audible output, device routing, OpenAL mixing, runtime category/master-volume settings or actual PCM equivalence.",
+    "Actual output recording is assigned to build_environment and is not supplied by this source audit.",
+    "Learn, wind, pageturn and scan are included in byte/event checks only; their gameplay/HUD/knowledge gain trigger coverage and volume/category/pitch equivalence were not established by the selected book GUI call audit.",
+    "Original GuiResearchBrowser.playButtonClick contains clack0.4/pitch1 but has no call site in that class; this unused helper is not treated as a missing audible behavior.",
+    "Resource packs may override both sample definitions and audio files at runtime."
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "schema": 1,
+  "source_release": "TC6 6.1.BETA26",
+  "target_release": "alpha.9.8",
+  "scenarios": [
+    {
+      "id": "P01",
+      "phase": 1,
+      "name": "Инвентаризация и стенд",
+      "scope": "Сопоставить регистрации, варианты, исходники, ресурсы, рецепты и их достижимость; запустить парные клиенты/серверы.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P02",
+      "phase": 2,
+      "name": "Аспекты и прогресс",
+      "scope": "Сравнить предметы, зелья, зачарования, составные рецепты; смерть, смену измерений, сохранение знаний и искажения.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P03",
+      "phase": 3,
+      "name": "Книга, сканирование и теории",
+      "scope": "Начальный и открытый каталоги; 148 исследований; руки таумометра, сканирование, 33 карты, 14 помощников; расходы, анимации, звуки.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P04",
+      "phase": 4,
+      "name": "Верстак",
+      "scope": "Кристаллы, Vis, зарядник, скидки, клик/Shift-клик, два игрока, GUI и перезагрузка.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P05",
+      "phase": 5,
+      "name": "Алхимия",
+      "scope": "Вода, нагрев, катализаторы, все рецепты, распад, Flux, жидкости, эффекты и звук.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P06",
+      "phase": 6,
+      "name": "Эссенция",
+      "scope": "Тяга и конфликты во всех направлениях, приборы и банки, автоматизация, редстоун, GUI/пар/звук, сохранение.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P07",
+      "phase": 7,
+      "name": "Фокусы",
+      "scope": "21 зарегистрированный элемент, допустимые сочетания, стоимость и ограничения, попадания, руки, эффекты и звук.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P08",
+      "phase": 8,
+      "name": "Наполнение",
+      "scope": "Условия конструкции, стабильность, сбои, расходы, процесс и его прерывание, звуки и анимации.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P09",
+      "phase": 9,
+      "name": "Экипировка",
+      "scope": "Характеристики и рецепты всего набора, эффекты Curios, щит, ремонт, скидки, модели и анимации.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P10",
+      "phase": 10,
+      "name": "Устройства",
+      "scope": "Все режимы каждого устройства, интерфейсы, стороны, редстоун, сохранение, звук и движение.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P11",
+      "phase": 11,
+      "name": "Мир",
+      "scope": "Биомы и условия генерации; аура, разломы, заражение, существа, торговля, добыча и настройки.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P12",
+      "phase": 12,
+      "name": "Големы",
+      "scope": "Все материалы/части/свойства, сборка, владелец, путь, бой, перенос, модели/анимации и сохранение.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P13",
+      "phase": 13,
+      "name": "Печати",
+      "scope": "16 типов, фильтры, области и приоритеты, конкуренция големов, редстоун и отмена задания.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P14",
+      "phase": 14,
+      "name": "Искажение и древние",
+      "scope": "Все достижимые исходные события, исследования, существа, ритуалы, добыча и аудиовизуальные эффекты.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P15",
+      "phase": 15,
+      "name": "Интеграции",
+      "scope": "API, настройки, теги, Curios, TerraBlender, автоматизация, перезагрузка datapack и прежние сохранения.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    },
+    {
+      "id": "P16",
+      "phase": 16,
+      "name": "Полное прохождение",
+      "scope": "Новый персонаж без выдачи; отдельный сервер и два игрока; смерть, выход, выгрузка, переходы, обновление; сравнение со всем оригиналом.",
+      "original_result": null,
+      "port_result": null,
+      "game_status": "not_run",
+      "differences": [],
+      "evidence": []
+    }
+  ]
+}

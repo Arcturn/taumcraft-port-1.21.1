@@ -1,0 +1,89 @@
+{
+  "source": "thaumcraft/common/config/ConfigAspects.java",
+  "sha256": "4df8b05799a672877d329e0b901c4496baeb687318cc6a36d8db2b6a3008d349",
+  "rules": 160,
+  "pending_named_rules": [
+    {
+      "line": 469,
+      "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(Blocks.field_150473_bD, 1, Short.MAX_VALUE), new AspectList().merge(Aspect.SENSES, 5).merge(Aspect.MECHANISM, 5).merge(Aspect.TRAP, 5));"
+    },
+    {
+      "line": 489,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(BlocksTC.grassAmbient), new AspectList(new ItemStack((Block)Blocks.field_150349_c)).add(Aspect.LIGHT, 5));"
+    },
+    {
+      "line": 491,
+      "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(BlocksTC.tableStone), new AspectList().add(Aspect.TOOL, 1));"
+    },
+    {
+      "line": 553,
+      "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(BlocksTC.pedestalArcane, 1, 0), new AspectList().add(Aspect.MAGIC, 3).add(Aspect.AIR, 3));"
+    },
+    {
+      "line": 554,
+      "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(BlocksTC.pedestalAncient, 1, 1), new AspectList().add(Aspect.MAGIC, 3).add(Aspect.ELDRITCH, 3));"
+    },
+    {
+      "line": 555,
+      "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(BlocksTC.pedestalEldritch, 1, 2), new AspectList().add(Aspect.MAGIC, 3).add(Aspect.ELDRITCH, 3));"
+    },
+    {
+      "line": 557,
+      "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ItemsTC.goggles, 1, Short.MAX_VALUE), new AspectList().merge(Aspect.SENSES, 10).merge(Aspect.AURA, 10));"
+    },
+    {
+      "line": 558,
+      "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(BlocksTC.arcaneEar), new AspectList().add(Aspect.SENSES, 20));"
+    },
+    {
+      "line": 561,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonPlateChest, 1, Short.MAX_VALUE), new AspectList(new ItemStack((Item)Items.field_151030_Z)).add(Aspect.ELDRITCH, 5));"
+    },
+    {
+      "line": 562,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonPraetorChest, 1, Short.MAX_VALUE), new AspectList(new ItemStack((Item)Items.field_151030_Z)).add(Aspect.ELDRITCH, 10));"
+    },
+    {
+      "line": 563,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonRobeChest, 1, Short.MAX_VALUE), new AspectList(new ItemStack((Item)Items.field_151027_R)).add(Aspect.MAGIC, 5).add(Aspect.ELDRITCH, 5));"
+    },
+    {
+      "line": 564,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonPlateLegs, 1, Short.MAX_VALUE), new AspectList(new ItemStack((Item)Items.field_151165_aa)).add(Aspect.ELDRITCH, 5));"
+    },
+    {
+      "line": 565,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonPraetorLegs, 1, Short.MAX_VALUE), new AspectList(new ItemStack((Item)Items.field_151165_aa)).add(Aspect.ELDRITCH, 10));"
+    },
+    {
+      "line": 566,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonRobeLegs, 1, Short.MAX_VALUE), new AspectList(new ItemStack((Item)Items.field_151026_S)).add(Aspect.MAGIC, 5).add(Aspect.ELDRITCH, 5));"
+    },
+    {
+      "line": 567,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonPlateHelm, 1, Short.MAX_VALUE), new AspectList(new ItemStack((Item)Items.field_151028_Y)).add(Aspect.ELDRITCH, 5));"
+    },
+    {
+      "line": 568,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonPraetorHelm, 1, Short.MAX_VALUE), new AspectList(new ItemStack((Item)Items.field_151028_Y)).add(Aspect.ELDRITCH, 10));"
+    },
+    {
+      "line": 569,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonRobeHelm, 1, Short.MAX_VALUE), new AspectList(new ItemStack((Item)Items.field_151024_Q)).add(Aspect.MAGIC, 5).add(Aspect.ELDRITCH, 5));"
+    },
+    {
+      "line": 570,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonBoots, 1, Short.MAX_VALUE), new AspectList(new ItemStack((Item)Items.field_151167_ab)).add(Aspect.ELDRITCH, 5));"
+    },
+    {
+      "line": 571,
+      "expression": "ThaumcraftApi.registerObjectTag(new ItemStack(ItemsTC.crimsonBlade, 1, Short.MAX_VALUE), new AspectList(new ItemStack(Items.field_151040_l)).add(Aspect.ELDRITCH, 10).add(Aspect.DEATH, 10));"
+    }
+  ],
+  "not_expanded": [
+    "variable-target loops",
+    "ore-dictionary complex rules",
+    "historical eager-registration side effects"
+  ],
+  "celestial_notes_source_line": 584
+}

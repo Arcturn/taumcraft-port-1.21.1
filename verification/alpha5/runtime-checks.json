@@ -1,0 +1,12 @@
+{
+  "blocks": 60,
+  "feature_order_cycles": false,
+  "items": 89,
+  "loot_tables_decoded": 73,
+  "machine_fixture_checks": 136,
+  "recipes_decoded": 59,
+  "server_started": false,
+  "templates_decoded": 3,
+  "tree_fixture_checks": 66,
+  "worldgen_registries_loaded": true
+}

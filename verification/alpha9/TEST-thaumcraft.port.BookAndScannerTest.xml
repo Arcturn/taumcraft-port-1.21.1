@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.BookAndScannerTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T10:17:59.897Z" hostname="bb565e390ffa" time="0.145">
+  <properties/>
+  <testcase name="dailySkyFlagsSurviveSavingAndOldDaysArePruned()" classname="thaumcraft.port.BookAndScannerTest" time="0.039"/>
+  <testcase name="everyOriginalLocalizedPageParsesIncludingInlineIllustrations()" classname="thaumcraft.port.BookAndScannerTest" time="0.092"/>
+  <testcase name="markupProducesImagesRatherThanResourcePathText()" classname="thaumcraft.port.BookAndScannerTest" time="0.001"/>
+  <testcase name="presentationReadMarkersCannotCompleteResearch()" classname="thaumcraft.port.BookAndScannerTest" time="0.005"/>
+  <testcase name="pageBreaksAndReservedRequirementAreaDoNotLoseContent()" classname="thaumcraft.port.BookAndScannerTest" time="0.003"/>
+  <testcase name="legacyWispSubtypesDoNotAwardFreshGenericScans()" classname="thaumcraft.port.BookAndScannerTest" time="0.0"/>
+  <testcase name="originalCategoryGatesRemainInPlace()" classname="thaumcraft.port.BookAndScannerTest" time="0.001"/>
+  <testcase name="heavenlyTargetUsesOriginalTolerancesAndFourStarDirections()" classname="thaumcraft.port.BookAndScannerTest" time="0.001"/>
+  <testcase name="hiddenResearchWithSatisfiedParentsBecomesReachable()" classname="thaumcraft.port.BookAndScannerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

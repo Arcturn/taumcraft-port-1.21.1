@@ -1,0 +1,166 @@
+Minecraft 1.12.2 vanilla right-click dispatch, verified from actual client bytecode.
+Method names are resolved using Forge 14.23.5.2860 deobfuscation_data-1.12.2.lzma.
+Minecraft.rightClickMouse = bib.aB = func_147121_ag.
+EntityPlayerSP.swingArm = bud.a(EnumHand) = func_184609_a.
+ItemRenderer.resetEquippedProgress = buu.a(EnumHand) = func_187460_a.
+PlayerControllerMP.processRightClick = bsa.a(EntityPlayer,World,EnumHand) = func_187101_a.
+Block-use SUCCESS branch invokes swingArm at bytecode 267.
+Ordinary item-use SUCCESS branch (bytecode 319-354) invokes only resetEquippedProgress at 351, then returns.
+This establishes absence of an arm swing, not absence of the held-item equip transition.
+
+  private void aB();
+    Code:
+       0: aload_0
+       1: getfield      #1897               // Field c:Lbsa;
+       4: invokevirtual #1941               // Method bsa.m:()Z
+       7: ifeq          11
+      10: return
+      11: aload_0
+      12: iconst_4
+      13: putfield      #1943               // Field as:I
+      16: aload_0
+      17: getfield      #1512               // Field h:Lbud;
+      20: invokevirtual #1924               // Method bud.L:()Z
+      23: ifeq          27
+      26: return
+      27: aload_0
+      28: getfield      #1872               // Field s:Lbhc;
+      31: ifnonnull     45
+      34: getstatic     #461                // Field J:Lorg/apache/logging/log4j/Logger;
+      37: ldc_w         #1920               // String Null returned as \'hitResult\', this shouldn\'t happen!
+      40: invokeinterface #1946,  2         // InterfaceMethod org/apache/logging/log4j/Logger.warn:(Ljava/lang/String;)V
+      45: invokestatic  #1950               // Method ub.values:()[Lub;
+      48: astore_1
+      49: aload_1
+      50: arraylength
+      51: istore_2
+      52: iconst_0
+      53: istore_3
+      54: iload_3
+      55: iload_2
+      56: if_icmpge     361
+      59: aload_1
+      60: iload_3
+      61: aaload
+      62: astore        4
+      64: aload_0
+      65: getfield      #1512               // Field h:Lbud;
+      68: aload         4
+      70: invokevirtual #1955               // Method bud.b:(Lub;)Laip;
+      73: astore        5
+      75: aload_0
+      76: getfield      #1872               // Field s:Lbhc;
+      79: ifnull        311
+      82: getstatic     #1926               // Field bib$8.a:[I
+      85: aload_0
+      86: getfield      #1872               // Field s:Lbhc;
+      89: getfield      #1875               // Field bhc.a:Lbhc$a;
+      92: invokevirtual #1929               // Method bhc$a.ordinal:()I
+      95: iaload
+      96: lookupswitch  { // 2
+                     1: 124
+                     2: 182
+               default: 311
+          }
+     124: aload_0
+     125: getfield      #1897               // Field c:Lbsa;
+     128: aload_0
+     129: getfield      #1512               // Field h:Lbud;
+     132: aload_0
+     133: getfield      #1872               // Field s:Lbhc;
+     136: getfield      #1931               // Field bhc.d:Lvg;
+     139: aload_0
+     140: getfield      #1872               // Field s:Lbhc;
+     143: aload         4
+     145: invokevirtual #1960               // Method bsa.a:(Laed;Lvg;Lbhc;Lub;)Lud;
+     148: getstatic     #1965               // Field ud.a:Lud;
+     151: if_acmpne     155
+     154: return
+     155: aload_0
+     156: getfield      #1897               // Field c:Lbsa;
+     159: aload_0
+     160: getfield      #1512               // Field h:Lbud;
+     163: aload_0
+     164: getfield      #1872               // Field s:Lbhc;
+     167: getfield      #1931               // Field bhc.d:Lvg;
+     170: aload         4
+     172: invokevirtual #1968               // Method bsa.a:(Laed;Lvg;Lub;)Lud;
+     175: getstatic     #1965               // Field ud.a:Lud;
+     178: if_acmpne     311
+     181: return
+     182: aload_0
+     183: getfield      #1872               // Field s:Lbhc;
+     186: invokevirtual #1880               // Method bhc.a:()Let;
+     189: astore        6
+     191: aload_0
+     192: getfield      #943                // Field f:Lbsb;
+     195: aload         6
+     197: invokevirtual #1885               // Method bsb.o:(Let;)Lawt;
+     200: invokeinterface #1890,  1         // InterfaceMethod awt.a:()Lbcz;
+     205: getstatic     #1895               // Field bcz.a:Lbcz;
+     208: if_acmpeq     311
+     211: aload         5
+     213: invokevirtual #1970               // Method aip.E:()I
+     216: istore        7
+     218: aload_0
+     219: getfield      #1897               // Field c:Lbsa;
+     222: aload_0
+     223: getfield      #1512               // Field h:Lbud;
+     226: aload_0
+     227: getfield      #943                // Field f:Lbsb;
+     230: aload         6
+     232: aload_0
+     233: getfield      #1872               // Field s:Lbhc;
+     236: getfield      #1900               // Field bhc.b:Lfa;
+     239: aload_0
+     240: getfield      #1872               // Field s:Lbhc;
+     243: getfield      #1973               // Field bhc.c:Lbhe;
+     246: aload         4
+     248: invokevirtual #1976               // Method bsa.a:(Lbud;Lbsb;Let;Lfa;Lbhe;Lub;)Lud;
+     251: astore        8
+     253: aload         8
+     255: getstatic     #1965               // Field ud.a:Lud;
+     258: if_acmpne     311
+     261: aload_0
+     262: getfield      #1512               // Field h:Lbud;
+     265: aload         4
+     267: invokevirtual #1916               // Method bud.a:(Lub;)V
+     270: aload         5
+     272: invokevirtual #1977               // Method aip.b:()Z
+     275: ifne          310
+     278: aload         5
+     280: invokevirtual #1970               // Method aip.E:()I
+     283: iload         7
+     285: if_icmpne     298
+     288: aload_0
+     289: getfield      #1897               // Field c:Lbsa;
+     292: invokevirtual #1979               // Method bsa.h:()Z
+     295: ifeq          310
+     298: aload_0
+     299: getfield      #919                // Field o:Lbuq;
+     302: getfield      #1981               // Field buq.c:Lbuu;
+     305: aload         4
+     307: invokevirtual #1982               // Method buu.a:(Lub;)V
+     310: return
+     311: aload         5
+     313: invokevirtual #1977               // Method aip.b:()Z
+     316: ifne          355
+     319: aload_0
+     320: getfield      #1897               // Field c:Lbsa;
+     323: aload_0
+     324: getfield      #1512               // Field h:Lbud;
+     327: aload_0
+     328: getfield      #943                // Field f:Lbsb;
+     331: aload         4
+     333: invokevirtual #1985               // Method bsa.a:(Laed;Lamu;Lub;)Lud;
+     336: getstatic     #1965               // Field ud.a:Lud;
+     339: if_acmpne     355
+     342: aload_0
+     343: getfield      #919                // Field o:Lbuq;
+     346: getfield      #1981               // Field buq.c:Lbuu;
+     349: aload         4
+     351: invokevirtual #1982               // Method buu.a:(Lub;)V
+     354: return
+     355: iinc          3, 1
+     358: goto          54
+     361: return

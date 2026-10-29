@@ -1,0 +1,31 @@
+{
+  "textures": {
+    "north": "thaumcraft:blocks/spa_side",
+    "south": "thaumcraft:blocks/spa_side",
+    "east": "thaumcraft:blocks/spa_side",
+    "west": "thaumcraft:blocks/spa_side",
+    "particle": "thaumcraft:blocks/spa_side",
+    "up": "thaumcraft:blocks/spa_top",
+    "down": "minecraft:block/furnace_top"
+  },
+  "parent": "minecraft:block/cube",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    }
+  }
+}

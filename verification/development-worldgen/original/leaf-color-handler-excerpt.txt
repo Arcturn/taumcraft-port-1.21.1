@@ -1,0 +1,39 @@
+99:             }
+100:             return ColorizerFoliage.func_77468_c();
+101:         };
+102:         blockColors.func_186722_a(leafColourHandler, new Block[]{BlocksTC.leafGreatwood, BlocksTC.leafSilverwood});
+103:         IBlockColor crystalColourHandler = (state, blockAccess, pos, tintIndex) -> {
+104:             if (state.func_177230_c() instanceof BlockCrystal) {
+105:                 return ((BlockCrystal)state.func_177230_c()).aspect.getColor();
+106:             }
+107:             return 0xFFFFFF;
+108:         };
+109:         blockColors.func_186722_a(crystalColourHandler, new Block[]{BlocksTC.crystalAir, BlocksTC.crystalEarth, BlocksTC.crystalFire, BlocksTC.crystalWater, BlocksTC.crystalEntropy, BlocksTC.crystalOrder, BlocksTC.crystalTaint});
+110:         IBlockColor tubeFilterColourHandler = (state, blockAccess, pos, tintIndex) -> {
+144:             IBlockState state = ((ItemBlock)stack.func_77973_b()).func_179223_d().func_176203_a(stack.func_77960_j());
+145:             return blockColors.func_186724_a(state, null, null, tintIndex);
+146:         };
+147:         Block[] basicBlocks = new Block[BlocksTC.candles.size() + BlocksTC.nitor.size() + 3];
+148:         int i = 0;
+149:         Iterator<Block> iterator = BlocksTC.candles.values().iterator();
+150:         while (iterator.hasNext()) {
+151:             basicBlocks[i] = b = iterator.next();
+152:             ++i;
+153:         }
+154:         iterator = BlocksTC.nitor.values().iterator();
+155:         while (iterator.hasNext()) {
+156:             basicBlocks[i] = b = iterator.next();
+157:             ++i;
+158:         }
+159:         basicBlocks[i] = BlocksTC.leafGreatwood;
+160:         basicBlocks[++i] = BlocksTC.leafSilverwood;
+161:         basicBlocks[++i] = BlocksTC.grassAmbient;
+162:         ++i;
+163:         itemColors.func_186731_a(itemBlockColourHandler, basicBlocks);
+164:         IItemColor itemEssentiaColourHandler = (stack, tintIndex) -> {
+165:             ItemGenericEssentiaContainer item = (ItemGenericEssentiaContainer)stack.func_77973_b();
+166:             try {
+167:                 if (item != null && item.getAspects(stack) != null) {
+168:                     return item.getAspects(stack).getAspects()[0].getColor();
+169:                 }
+170:             }

@@ -1,0 +1,27 @@
+[15:26:55.295] [main/INFO] [Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.neoForgeVersion, 21.1.264, --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430, --nogui] 
+[15:26:55.297] [main/INFO] [Launcher/MODLAUNCHER]: JVM identified as Microsoft OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS 
+[15:26:55.299] [main/INFO] [Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Microsoft; OS Linux arch amd64 version 6.18.55 
+[15:26:55.388] [main/INFO] [loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver 
+[15:26:55.434] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/workspace/scratch/5f8dd1a26602/work/test-server/libraries/net/fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/sponge-mixin-0.16.4+mixin.0.8.7.jar%2373!/ Service=ModLauncher Env=SERVER 
+[15:26:55.731] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "server-1.21.1-20240808.144430-srg.jar" [locator: production server provider +net.neoforged:neoforge:21.1.264:server] 
+[15:26:55.752] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.264-universal.jar" [locator: PathBasedLocator[name=neoforge, paths=[libraries/net/neoforged/neoforge/21.1.264/neoforge-21.1.264-universal.jar]], reader: mod manifest] 
+[15:26:55.761] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "curios-neoforge-9.5.1+1.21.1.jar" [locator: {mods folder locator at /workspace/scratch/5f8dd1a26602/work/test-server/mods}, reader: mod manifest] 
+[15:26:55.765] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "thaumcraft-port-1.21.1-0.1.0-alpha.1.jar" [locator: {mods folder locator at /workspace/scratch/5f8dd1a26602/work/test-server/mods}, reader: mod manifest] 
+[15:26:55.857] [main/INFO] [loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection 
+[15:26:55.858] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.5.jar" [parent: neoforge-21.1.264-universal.jar, locator: jarinjar, reader: mod manifest] 
+[15:26:55.858] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.264.jar" [parent: neoforge-21.1.264-universal.jar, locator: jarinjar, reader: mod manifest] 
+[15:26:55.859] [main/INFO] [loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Curios API 9.5.1+1.21.1 (curios)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.264 (neoforge)
+		Thaumcraft — Experimental Port 0.1.0-alpha.1 (thaumcraft) 
+[15:26:56.243] [main/INFO] [mixin/]: Compatibility level set to JAVA_21 
+[15:26:56.253] [main/INFO] [LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [--nogui] 
+[15:26:56.288] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message 
+[15:26:56.289] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.mixins.json could not be read. If this is a development environment you can ignore this message 
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[15:26:56] [main/WARN] [minecraft/Eula]: Failed to load eula.txt
+[15:26:56] [main/INFO] [minecraft/Main]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.ResearchIconTimingTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-26T04:56:26.679Z" hostname="6adda57d248a" time="0.003">
+  <properties/>
+  <testcase name="changesOnSecondBoundaryAndWraps()" classname="thaumcraft.port.ResearchIconTimingTest" time="0.001"/>
+  <testcase name="emptySequenceCannotBecomeAValidIcon()" classname="thaumcraft.port.ResearchIconTimingTest" time="0.001"/>
+  <testcase name="sixCrystalVariantsRemainReachableAtRealWallClockTimes()" classname="thaumcraft.port.ResearchIconTimingTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

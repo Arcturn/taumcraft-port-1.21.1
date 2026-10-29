@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "thaumcraft:ingot_thaumium"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:plate_thaumium",
+    "count": 3
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "legacy_client_sha1": "0f275bc1547d01fa5f56ba34bdc87d981ee12daf",
+  "modern_client_sha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+  "legacy_client_source": "Mojang 1.12.2 version manifest, downloads.client",
+  "source_api": [
+    "thaumcraft/common/lib/research/ScanEnchantment.java:getResearchKey",
+    "thaumcraft/common/lib/research/ScanPotion.java:getResearchKey"
+  ],
+  "mappings": {
+    "enchantments": [
+      {
+        "id": "minecraft:aqua_affinity",
+        "legacy_key": "enchantment.waterWorker",
+        "english_name": "Aqua Affinity"
+      },
+      {
+        "id": "minecraft:bane_of_arthropods",
+        "legacy_key": "enchantment.damage.arthropods",
+        "english_name": "Bane of Arthropods"
+      },
+      {
+        "id": "minecraft:binding_curse",
+        "legacy_key": "enchantment.binding_curse",
+        "english_name": "Curse of Binding"
+      },
+      {
+        "id": "minecraft:blast_protection",
+        "legacy_key": "enchantment.protect.explosion",
+        "english_name": "Blast Protection"
+      },
+      {
+        "id": "minecraft:depth_strider",
+        "legacy_key": "enchantment.waterWalker",
+        "english_name": "Depth Strider"
+      },
+      {
+        "id": "minecraft:efficiency",
+        "legacy_key": "enchantment.digging",
+        "english_name": "Efficiency"
+      },
+      {
+        "id": "minecraft:feather_falling",
+        "legacy_key": "enchantment.protect.fall",
+        "english_name": "Feather Falling"
+      },
+      {
+        "id": "minecraft:fire_aspect",
+        "legacy_key": "enchantment.fire",
+        "english_name": "Fire Aspect"
+      },
+      {
+        "id": "minecraft:fire_protection",
+        "legacy_key": "enchantment.protect.fire",
+        "english_name": "Fire Protection"
+      },
+      {
+        "id": "minecraft:flame",
+        "legacy_key": "enchantment.arrowFire",
+        "english_name": "Flame"
+      },
+      {
+        "id": "minecraft:fortune",
+        "legacy_key": "enchantment.lootBonusDigger",
+        "english_name": "Fortune"
+      },
+      {
+        "id": "minecraft:frost_walker",
+        "legacy_key": "enchantment.frostWalker",
+        "english_name": "Frost Walker"
+      },
+      {
+        "id": "minecraft:infinity",
+        "legacy_key": "enchantment.arrowInfinite",
+        "english_name": "Infinity"
+      },
+      {
+        "id": "minecraft:knockback",
+        "legacy_key": "enchantment.knockback",
+        "english_name": "Knockback"
+      },
+      {
+        "id": "minecraft:looting",
+        "legacy_key": "enchantment.lootBonus",
+        "english_name": "Looting"
+      },
+      {
+        "id": "minecraft:luck_of_the_sea",
+        "legacy_key": "enchantment.lootBonusFishing",
+        "english_name": "Luck of the Sea"
+      },
+      {
+        "id": "minecraft:lure",
+        "legacy_key": "enchantment.fishingSpeed",
+        "english_name": "Lure"
+      },
+      {
+        "id": "minecraft:mending",
+        "legacy_key": "enchantment.mending",
+        "english_name": "Mending"
+      },
+      {
+        "id": "minecraft:power",
+        "legacy_key": "enchantment.arrowDamage",
+        "english_name": "Power"
+      },
+      {
+        "id": "minecraft:projectile_protection",
+        "legacy_key": "enchantment.protect.projectile",
+        "english_name": "Projectile Protection"
+      },
+      {
+        "id": "minecraft:protection",
+        "legacy_key": "enchantment.protect.all",
+        "english_name": "Protection"
+      },
+      {
+        "id": "minecraft:punch",
+        "legacy_key": "enchantment.arrowKnockback",
+        "english_name": "Punch"
+      },
+      {
+        "id": "minecraft:respiration",
+        "legacy_key": "enchantment.oxygen",
+        "english_name": "Respiration"
+      },
+      {
+        "id": "minecraft:sharpness",
+        "legacy_key": "enchantment.damage.all",
+        "english_name": "Sharpness"
+      },
+      {
+        "id": "minecraft:silk_touch",
+        "legacy_key": "enchantment.untouching",
+        "english_name": "Silk Touch"
+      },
+      {
+        "id": "minecraft:smite",
+        "legacy_key": "enchantment.damage.undead",
+        "english_name": "Smite"
+      },
+      {
+        "id": "minecraft:sweeping_edge",
+        "legacy_key": "enchantment.sweeping",
+        "english_name": "Sweeping Edge"
+      },
+      {
+        "id": "minecraft:thorns",
+        "legacy_key": "enchantment.thorns",
+        "english_name": "Thorns"
+      },
+      {
+        "id": "minecraft:unbreaking",
+        "legacy_key": "enchantment.durability",
+        "english_name": "Unbreaking"
+      },
+      {
+        "id": "minecraft:vanishing_curse",
+        "legacy_key": "enchantment.vanishing_curse",
+        "english_name": "Curse of Vanishing"
+      }
+    ],
+    "effects": [
+      {
+        "id": "minecraft:absorption",
+        "legacy_key": "effect.absorption",
+        "english_name": "Absorption"
+      },
+      {
+        "id": "minecraft:blindness",
+        "legacy_key": "effect.blindness",
+        "english_name": "Blindness"
+      },
+      {
+        "id": "minecraft:fire_resistance",
+        "legacy_key": "effect.fireResistance",
+        "english_name": "Fire Resistance"
+      },
+      {
+        "id": "minecraft:glowing",
+        "legacy_key": "effect.glowing",
+        "english_name": "Glowing"
+      },
+      {
+        "id": "minecraft:haste",
+        "legacy_key": "effect.digSpeed",
+        "english_name": "Haste"
+      },
+      {
+        "id": "minecraft:health_boost",
+        "legacy_key": "effect.healthBoost",
+        "english_name": "Health Boost"
+      },
+      {
+        "id": "minecraft:hunger",
+        "legacy_key": "effect.hunger",
+        "english_name": "Hunger"
+      },
+      {
+        "id": "minecraft:instant_damage",
+        "legacy_key": "effect.harm",
+        "english_name": "Instant Damage"
+      },
+      {
+        "id": "minecraft:instant_health",
+        "legacy_key": "effect.heal",
+        "english_name": "Instant Health"
+      },
+      {
+        "id": "minecraft:invisibility",
+        "legacy_key": "effect.invisibility",
+        "english_name": "Invisibility"
+      },
+      {
+        "id": "minecraft:jump_boost",
+        "legacy_key": "effect.jump",
+        "english_name": "Jump Boost"
+      },
+      {
+        "id": "minecraft:levitation",
+        "legacy_key": "effect.levitation",
+        "english_name": "Levitation"
+      },
+      {
+        "id": "minecraft:luck",
+        "legacy_key": "effect.luck",
+        "english_name": "Luck"
+      },
+      {
+        "id": "minecraft:mining_fatigue",
+        "legacy_key": "effect.digSlowDown",
+        "english_name": "Mining Fatigue"
+      },
+      {
+        "id": "minecraft:nausea",
+        "legacy_key": "effect.confusion",
+        "english_name": "Nausea"
+      },
+      {
+        "id": "minecraft:night_vision",
+        "legacy_key": "effect.nightVision",
+        "english_name": "Night Vision"
+      },
+      {
+        "id": "minecraft:poison",
+        "legacy_key": "effect.poison",
+        "english_name": "Poison"
+      },
+      {
+        "id": "minecraft:regeneration",
+        "legacy_key": "effect.regeneration",
+        "english_name": "Regeneration"
+      },
+      {
+        "id": "minecraft:resistance",
+        "legacy_key": "effect.resistance",
+        "english_name": "Resistance"
+      },
+      {
+        "id": "minecraft:saturation",
+        "legacy_key": "effect.saturation",
+        "english_name": "Saturation"
+      },
+      {
+        "id": "minecraft:slowness",
+        "legacy_key": "effect.moveSlowdown",
+        "english_name": "Slowness"
+      },
+      {
+        "id": "minecraft:speed",
+        "legacy_key": "effect.moveSpeed",
+        "english_name": "Speed"
+      },
+      {
+        "id": "minecraft:strength",
+        "legacy_key": "effect.damageBoost",
+        "english_name": "Strength"
+      },
+      {
+        "id": "minecraft:unluck",
+        "legacy_key": "effect.unluck",
+        "english_name": "Bad Luck"
+      },
+      {
+        "id": "minecraft:water_breathing",
+        "legacy_key": "effect.waterBreathing",
+        "english_name": "Water Breathing"
+      },
+      {
+        "id": "minecraft:weakness",
+        "legacy_key": "effect.weakness",
+        "english_name": "Weakness"
+      },
+      {
+        "id": "minecraft:wither",
+        "legacy_key": "effect.wither",
+        "english_name": "Wither"
+      }
+    ]
+  }
+}

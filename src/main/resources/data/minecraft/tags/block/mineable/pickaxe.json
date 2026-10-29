@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:metal_brass",
+    "thaumcraft:metal_thaumium",
+    "thaumcraft:metal_void",
+    "thaumcraft:ore_amber",
+    "thaumcraft:ore_cinnabar",
+    "thaumcraft:ore_quartz",
+    "thaumcraft:amber_block",
+    "thaumcraft:amber_brick",
+    "thaumcraft:stone_porous",
+    "thaumcraft:deepslate_ore_amber",
+    "thaumcraft:deepslate_ore_cinnabar",
+    "thaumcraft:deepslate_ore_quartz"
+  ]
+}

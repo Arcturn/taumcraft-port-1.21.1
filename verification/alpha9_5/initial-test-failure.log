@@ -1,0 +1,49 @@
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/workspace/scratch/5f8dd1a26602/work -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=34941 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=34941
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+/workspace/scratch/5f8dd1a26602/thaumcraft-port/src/main/java/thaumcraft/port/client/ClientEvents.java:13: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = ThaumcraftPort.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+                                                   ^
+/workspace/scratch/5f8dd1a26602/thaumcraft-port/src/main/java/thaumcraft/port/client/ClientEvents.java:13: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid = ThaumcraftPort.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+                                                                           ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2 warnings
+
+> Task :processResources
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test FAILED
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/workspace/scratch/5f8dd1a26602/work -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=34941 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=34941
+
+TheorySessionTest > inspirationAndAidCosts() FAILED
+    org.opentest4j.AssertionFailedError at TheorySessionTest.java:18
+
+85 tests completed, 1 failed
+
+[Incubating] Problems report is available at: file:///workspace/scratch/5f8dd1a26602/thaumcraft-port/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///workspace/scratch/5f8dd1a26602/thaumcraft-port/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to generate a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 11s
+5 actionable tasks: 4 executed, 1 up-to-date

@@ -1,0 +1,228 @@
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[04:02:14] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.259, --assetIndex, 17, --assetsDir, /workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/assets, --gameDir, /workspace/scratch/5f8dd1a26602/work/thaumometer-audit/runtime-modern/profile, --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.259, --fml.neoFormVersion, 20240808.144430, --username, ThaumometerTest, --uuid, 00000000000000000000000000000917, --accessToken, ❄❄❄❄❄❄❄❄, --userType, legacy, --width, 1280, --height, 720]
+[04:02:14] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.13+9-LTS
+[04:02:14] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.13 by Eclipse Adoptium; OS Linux arch amd64 version 6.18.55
+[04:02:15] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[04:02:15] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[04:02:15] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.5
+[04:02:15] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.5 got version 4.5
+[04:02:15] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/26d01f0567ab46e9ca0d2ed89d0ecc11aadbd433/sponge-mixin-0.16.4+mixin.0.8.7.jar%23126!/ Service=ModLauncher Env=CLIENT
+[04:02:15] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: llvmpipe (LLVM 20.1.2, 256 bits) GL version 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2, Mesa
+[04:02:15] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[04:02:15] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Curios API 9.5.1+1.21.1 (curios)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.259 (neoforge)
+		TerraBlender 4.1.0.8 (terrablender)
+		Thaumcraft tooltip verification probe 1 (thaumcraft_tooltip_probe)
+		Thaumcraft — Experimental Port 0.1.0-alpha.9.17-dev (thaumcraft)
+[04:02:15] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[04:02:15] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[04:02:15] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.259, --gameDir, /workspace/scratch/5f8dd1a26602/work/thaumometer-audit/runtime-modern/profile, --assetsDir, /workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/assets, --uuid, 00000000000000000000000000000917, --assetIndex, 17, --username, ThaumometerTest, --accessToken, ❄❄❄❄❄❄❄❄, --userType, legacy, --width, 1280, --height, 720]
+[04:02:15] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender.mixins.json could not be read. If this is a development environment you can ignore this message
+[04:02:16] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender_neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[04:02:16] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[04:02:16] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.mixins.json could not be read. If this is a development environment you can ignore this message
+[04:02:16] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[04:02:17] [Datafixer Bootstrap/INFO] [mojang/DataFixerBuilder]: 229 Datafixer optimizations took 277 milliseconds
+[04:02:22] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04:02:22] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04:02:22] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[04:02:22] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[04:02:22] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04:02:22] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/workspace/scratch/5f8dd1a26602/work/dust-animation/thaumcraft-port/build/moddev/artifacts/neoforge-21.1.259.jar%23180!/assets/.mcassetsroot' uses unexpected schema
+[04:02:22] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/workspace/scratch/5f8dd1a26602/work/dust-animation/thaumcraft-port/build/moddev/artifacts/neoforge-21.1.259.jar%23180!/data/.mcassetsroot' uses unexpected schema
+[04:02:22] [Render thread/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[04:02:22] [Render thread/INFO] [minecraft/Minecraft]: Setting user: ThaumometerTest
+[04:02:22] [Render thread/ERROR] [minecraft/Options]: Error parsing option value 2 for option Simulation Distance: Value 2 outside of range [5:33]
+[04:02:22] [Render thread/INFO] [minecraft/Minecraft]: Backend library: LWJGL version 3.3.3+5
+[04:02:22] [Download-1/WARN] [mojang/YggdrasilMinecraftSessionService]: Couldn't look up profile properties for 00000000-0000-0000-0000-000000000917
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://sessionserver.mojang.com/session/minecraft/profile/00000000000000000000000000000917?unsigned=false due to sessionserver.mojang.com
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:108) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fetchProfileUncached(YggdrasilMinecraftSessionService.java:201) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fetchProfile(YggdrasilMinecraftSessionService.java:171) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.lambda$new$1(Minecraft.java:426) ~[neoforge-21.1.259.jar%23180!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?] {}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+Caused by: java.net.UnknownHostException: sessionserver.mojang.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?] {}
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:351) ~[?:?] {}
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?] {}
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?] {}
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:539) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:644) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:378) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:196) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1305) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1146) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1075) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:181) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1707) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1632) ~[?:?] {}
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:84) ~[authlib-6.0.54.jar%23104!/:?] {}
+	... 8 more
+[04:02:22] [Yggdrasil Key Fetcher/ERROR] [mojang/YggdrasilServicesKeyInfo]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to api.minecraftservices.com
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:108) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-6.0.54.jar%23104!/:?] {}
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?] {}
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?] {}
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?] {}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+Caused by: java.net.UnknownHostException: api.minecraftservices.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?] {}
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:351) ~[?:?] {}
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?] {}
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?] {}
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:539) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:644) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:378) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:196) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1305) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1146) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1075) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:181) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1707) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1632) ~[?:?] {}
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?] {}
+	at MC-BOOTSTRAP/authlib@6.0.54/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:84) ~[authlib-6.0.54.jar%23104!/:?] {}
+	... 9 more
+[04:02:22] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.259, for MC 1.21.1
+[04:02:26] [Render thread/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: []
+[04:02:26] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources, mod/terrablender, mod/curios, mod/thaumcraft, mod/thaumcraft_tooltip_probe, mod/neoforge
+[04:02:27] [Render thread/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[04:02:27] [Render thread/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[04:02:27] [Render thread/INFO] [terrablender/]: Registered region thaumcraft:magical_forest to index 1 for type OVERWORLD
+[04:02:27] [Worker-Main-1/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.1.05.hex, loading
+[04:02:27] [Worker-Main-1/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-15.1.05.hex, loading
+[04:02:29] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[04:02:29] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[04:02:29] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device No Output
+[04:02:29] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[04:02:29] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[04:02:29] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[04:02:29] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[04:02:29] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[04:02:29] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[04:02:29] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[04:02:29] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[04:02:29] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[04:02:29] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[04:02:29] [Render thread/INFO] [th.po.cl.IconModelAudit/]: [Thaumcraft icon audit] Checked 939 item/book/advancement model selections; 0 problems
+[04:02:30] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 2048x1024x0 minecraft:textures/atlas/particles.png-atlas
+[04:02:30] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[04:02:30] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[04:02:30] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[04:02:30] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[04:02:30] [Render thread/WARN] [minecraft/ShaderInstance]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[04:02:30] [Render thread/INFO] [ne.ne.ne.cl.en.an.js.AnimationLoader/]: Loaded 0 entity animations
+[04:02:33] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 1386 recipes
+[04:02:33] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 1555 advancements
+[04:02:33] [Render thread/INFO] [Curios API/]: Loaded 10 curio slots
+[04:02:33] [Render thread/INFO] [Curios API/]: Loaded 1 curio entities
+[04:02:36] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.21.1
+[04:02:36] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[04:02:36] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:the_nether
+[04:02:37] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[04:02:37] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[04:02:37] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[04:02:37] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 302 ms
+[04:02:37] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 2, from 10
+[04:02:37] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 12, from 0
+[04:02:37] [Render thread/WARN] [io.ne.ut.in.MacAddressUtil/]: Failed to find a usable hardware address from the network interfaces; using random bytes: 88:82:41:eb:93:a3:f6:6f
+[04:02:38] [Server thread/INFO] [minecraft/PlayerList]: ThaumometerTest[local:E:ea1f4f97] logged in with entity id 1 at (-1.5, -60.0, -0.5)
+[04:02:38] [Server thread/INFO] [minecraft/MinecraftServer]: ThaumometerTest joined the game
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:smelter_thaumium
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:metal_alchemical
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:jar_void
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:vis_resonator
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:tube_valve
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:filter
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:alembic
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:tube_filter
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:smelter_vent
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:tube_buffer
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:brain_box
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:smelter_basic
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:tube_oneway
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:smelter_aux
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:smelter_void
+[04:02:38] [Render thread/WARN] [minecraft/ClientRecipeBook]: Unknown recipe category: thaumcraft:arcane/thaumcraft:tube_restrict
+[04:02:38] [Render thread/WARN] [minecraft/ClientPacketListener]: Ignoring chat session from ThaumometerTest due to missing Services public key
+[04:02:38] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 2 advancements
+[04:02:38] [Server thread/INFO] [minecraft/MinecraftServer]: ThaumometerTest has made the advancement [Diamonds!]
+[04:02:39] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] ThaumometerTest has made the advancement [Diamonds!]
+[04:02:39] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 42 advancements
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:stone","screen":"InventoryScreen","shift":false,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":false,"visibility_pass":true,"shown_aspects":{},"amounts_pass":true}
+SHIFT_ASPECTS_RUNTIME {"phase":"render","item":"minecraft:stone","shift":false,"render_components":0,"sizes":[]}
+SHIFT_ASPECTS_CASE {"case":"inventory_stone_no_shift","item":"minecraft:stone","gui_scale":2,"mouse_pixels":[496.0,378.0],"slot_coordinates":[8,84],"shift":false,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"terra":5},"shown_aspects":{},"aspect_row_present":false,"pass":true,"screenshot":"01-inventory_stone_no_shift.png","screen":"InventoryScreen"}
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:stone","screen":"InventoryScreen","shift":true,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":true,"visibility_pass":true,"shown_aspects":{"terra":5},"amounts_pass":true}
+SHIFT_ASPECTS_RUNTIME {"phase":"render","item":"minecraft:stone","shift":true,"render_components":1,"sizes":["18x18"]}
+SHIFT_ASPECTS_CASE {"case":"inventory_stone_shift_unscanned","item":"minecraft:stone","gui_scale":2,"mouse_pixels":[496.0,378.0],"slot_coordinates":[8,84],"shift":true,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"terra":5},"shown_aspects":{"terra":5},"aspect_row_present":true,"pass":true,"screenshot":"02-inventory_stone_shift_unscanned.png","screen":"InventoryScreen"}
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:diamond","screen":"InventoryScreen","shift":true,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":true,"visibility_pass":true,"shown_aspects":{"vitreus":15,"desiderium":15},"amounts_pass":true}
+SHIFT_ASPECTS_RUNTIME {"phase":"render","item":"minecraft:diamond","shift":true,"render_components":1,"sizes":["36x18"]}
+SHIFT_ASPECTS_CASE {"case":"inventory_diamond_shift_unscanned","item":"minecraft:diamond","gui_scale":2,"mouse_pixels":[532.0,378.0],"slot_coordinates":[26,84],"shift":true,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"vitreus":15,"desiderium":15},"shown_aspects":{"vitreus":15,"desiderium":15},"aspect_row_present":true,"pass":true,"screenshot":"03-inventory_diamond_shift_unscanned.png","screen":"InventoryScreen"}
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:copper_ingot","screen":"InventoryScreen","shift":true,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":true,"visibility_pass":true,"shown_aspects":{"metallum":10,"permutatio":5},"amounts_pass":true}
+SHIFT_ASPECTS_RUNTIME {"phase":"render","item":"minecraft:copper_ingot","shift":true,"render_components":1,"sizes":["36x18"]}
+SHIFT_ASPECTS_CASE {"case":"inventory_copper_shift_unscanned","item":"minecraft:copper_ingot","gui_scale":2,"mouse_pixels":[568.0,378.0],"slot_coordinates":[44,84],"shift":true,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"metallum":10,"permutatio":5},"shown_aspects":{"metallum":10,"permutatio":5},"aspect_row_present":true,"pass":true,"screenshot":"04-inventory_copper_shift_unscanned.png","screen":"InventoryScreen"}
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:breeze_rod","screen":"InventoryScreen","shift":true,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":true,"visibility_pass":true,"shown_aspects":{"aer":15,"motus":5},"amounts_pass":true}
+SHIFT_ASPECTS_RUNTIME {"phase":"render","item":"minecraft:breeze_rod","shift":true,"render_components":1,"sizes":["36x18"]}
+SHIFT_ASPECTS_CASE {"case":"inventory_breeze_shift_unscanned","item":"minecraft:breeze_rod","gui_scale":2,"mouse_pixels":[604.0,378.0],"slot_coordinates":[62,84],"shift":true,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"aer":15,"motus":5},"shown_aspects":{"aer":15,"motus":5},"aspect_row_present":true,"pass":true,"screenshot":"05-inventory_breeze_shift_unscanned.png","screen":"InventoryScreen"}
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:copper_ingot","screen":"InventoryScreen","shift":false,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":false,"visibility_pass":true,"shown_aspects":{},"amounts_pass":true}
+SHIFT_ASPECTS_RUNTIME {"phase":"render","item":"minecraft:copper_ingot","shift":false,"render_components":0,"sizes":[]}
+SHIFT_ASPECTS_CASE {"case":"inventory_copper_no_shift","item":"minecraft:copper_ingot","gui_scale":2,"mouse_pixels":[568.0,378.0],"slot_coordinates":[44,84],"shift":false,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"metallum":10,"permutatio":5},"shown_aspects":{},"aspect_row_present":false,"pass":true,"screenshot":"06-inventory_copper_no_shift.png","screen":"InventoryScreen"}
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:stone","screen":"ContainerScreen","shift":true,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":true,"visibility_pass":true,"shown_aspects":{"terra":5},"amounts_pass":true}
+SHIFT_ASPECTS_CASE {"case":"chest_stone_shift_unscanned","item":"minecraft:stone","gui_scale":2,"mouse_pixels":[496.0,244.0],"slot_coordinates":[8,18],"shift":true,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"terra":5},"shown_aspects":{"terra":5},"aspect_row_present":true,"pass":true,"screenshot":"07-chest_stone_shift_unscanned.png","screen":"ContainerScreen"}
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:diamond","screen":"ContainerScreen","shift":true,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":true,"visibility_pass":true,"shown_aspects":{"vitreus":15,"desiderium":15},"amounts_pass":true}
+SHIFT_ASPECTS_CASE {"case":"chest_diamond_shift_unscanned","item":"minecraft:diamond","gui_scale":2,"mouse_pixels":[532.0,244.0],"slot_coordinates":[26,18],"shift":true,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"vitreus":15,"desiderium":15},"shown_aspects":{"vitreus":15,"desiderium":15},"aspect_row_present":true,"pass":true,"screenshot":"08-chest_diamond_shift_unscanned.png","screen":"ContainerScreen"}
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:copper_ingot","screen":"ContainerScreen","shift":true,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":true,"visibility_pass":true,"shown_aspects":{"metallum":10,"permutatio":5},"amounts_pass":true}
+SHIFT_ASPECTS_CASE {"case":"chest_copper_shift_unscanned","item":"minecraft:copper_ingot","gui_scale":2,"mouse_pixels":[568.0,244.0],"slot_coordinates":[44,18],"shift":true,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"metallum":10,"permutatio":5},"shown_aspects":{"metallum":10,"permutatio":5},"aspect_row_present":true,"pass":true,"screenshot":"09-chest_copper_shift_unscanned.png","screen":"ContainerScreen"}
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:breeze_rod","screen":"ContainerScreen","shift":true,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":true,"visibility_pass":true,"shown_aspects":{"aer":15,"motus":5},"amounts_pass":true}
+SHIFT_ASPECTS_CASE {"case":"chest_breeze_shift_unscanned","item":"minecraft:breeze_rod","gui_scale":2,"mouse_pixels":[604.0,244.0],"slot_coordinates":[62,18],"shift":true,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"aer":15,"motus":5},"shown_aspects":{"aer":15,"motus":5},"aspect_row_present":true,"pass":true,"screenshot":"10-chest_breeze_shift_unscanned.png","screen":"ContainerScreen"}
+SHIFT_ASPECTS_RUNTIME {"phase":"gather","item":"minecraft:breeze_rod","screen":"ContainerScreen","shift":false,"show_tags":false,"scanned_subjects":0,"discovered_aspects":0,"held_thaumometer":false,"aspect_row_present":false,"visibility_pass":true,"shown_aspects":{},"amounts_pass":true}
+SHIFT_ASPECTS_RUNTIME {"phase":"render","item":"minecraft:breeze_rod","shift":false,"render_components":0,"sizes":[]}
+SHIFT_ASPECTS_CASE {"case":"chest_breeze_no_shift","item":"minecraft:breeze_rod","gui_scale":2,"mouse_pixels":[604.0,244.0],"slot_coordinates":[62,18],"shift":false,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"aer":15,"motus":5},"shown_aspects":{},"aspect_row_present":false,"pass":true,"screenshot":"11-chest_breeze_no_shift.png","screen":"ContainerScreen"}
+SHIFT_ASPECTS_CASE {"case":"inventory_copper_shift_gui_scale_1","item":"minecraft:copper_ingot","gui_scale":1,"mouse_pixels":[604.0,369.0],"slot_coordinates":[44,84],"shift":true,"no_held_thaumometer":true,"scanned_subjects":0,"discovered_aspects":0,"calculated_aspects":{"metallum":10,"permutatio":5},"shown_aspects":{"metallum":10,"permutatio":5},"aspect_row_present":true,"pass":true,"screenshot":"12-inventory_copper_shift_gui_scale_1.png","screen":"InventoryScreen"}
+SHIFT_ASPECTS_COMPLETE cases=12 passed=12
+THAUMOMETER_CASE {"case":"unscanned_pig_billboard_and_highlights","start_tick":101,"scanned_subjects":0,"aspects":"{BEAST\u003d10, EARTH\u003d10, DESIRE\u003d5}","client_readout_target":true,"tag_scale":0.26499993,"highlight_particles":215,"gl_error":0,"screenshot":"01-unscanned_pig_billboard_and_highlights.png","pass":true}
+THAUMOMETER_SOUND {"phase":"block_scan","tick":153,"event":"thaumcraft:scan","volume":0.5,"pitch":1.0,"source":"player","scope":"raw request volume/pitch before PlaySoundEvent resolves the sound; original scan sound has unit multipliers"}
+THAUMOMETER_CASE {"case":"block_scan","start_tick":133,"runes_added_immediately":10,"sounds_added_immediately":1,"swinging_immediately":false,"hit_result":"BLOCK","item_cooldown":false,"sound":{"phase":"block_scan","tick":153,"event":"thaumcraft:scan","volume":0.5,"pitch":1.0,"source":"player","scope":"raw request volume/pitch before PlaySoundEvent resolves the sound; original scan sound has unit multipliers"},"new_runes":[{"age":0,"lifetime":45,"x":3.009999990463257,"y":82.88844147324562,"z":3.294949233531952,"alpha":0.0},{"age":0,"lifetime":45,"x":3.009999990463257,"y":82.86995840072632,"z":3.230163276195526,"alpha":0.0},{"age":0,"lifetime":45,"x":2.445319712162018,"y":82.88858991861343,"z":2.990000009536743,"alpha":0.0},{"age":0,"lifetime":45,"x":3.009999990463257,"y":82.93023435771465,"z":3.708833336830139,"alpha":0.0},{"age":0,"lifetime":45,"x":2.4413071870803833,"y":82.76050209999084,"z":2.990000009536743,"alpha":0.0},{"age":0,"lifetime":45,"x":2.393049269914627,"y":82.75300387153402,"z":2.990000009536743,"alpha":0.0},{"age":0,"lifetime":45,"x":2.413713574409485,"y":82.92158380150795,"z":2.990000009536743,"alpha":0.0},{"age":0,"lifetime":45,"x":2.215891182422638,"y":82.94768059253693,"z":2.990000009536743,"alpha":0.0},{"age":0,"lifetime":45,"x":3.009999990463257,"y":82.75685656070709,"z":3.307071417570114,"alpha":0.0},{"age":0,"lifetime":45,"x":1.9900000095367432,"y":82.77807625569403,"z":3.3775310814380646,"alpha":0.0}],"gl_error":0,"swinging_after_2_ticks":false,"screenshot_after_2_ticks":"02-block_scan-after-02t.png","swinging_after_6_ticks":false,"screenshot":"02-block_scan-after-06t.png","pass":true}
+THAUMOMETER_SOUND {"phase":"repeat_block_scan","tick":189,"event":"thaumcraft:scan","volume":0.5,"pitch":1.0,"source":"player","scope":"raw request volume/pitch before PlaySoundEvent resolves the sound; original scan sound has unit multipliers"}
+THAUMOMETER_CASE {"case":"repeat_block_scan","start_tick":169,"runes_added_immediately":10,"sounds_added_immediately":1,"swinging_immediately":false,"hit_result":"BLOCK","item_cooldown":false,"sound":{"phase":"repeat_block_scan","tick":189,"event":"thaumcraft:scan","volume":0.5,"pitch":1.0,"source":"player","scope":"raw request volume/pitch before PlaySoundEvent resolves the sound; original scan sound has unit multipliers"},"new_runes":[{"age":35,"lifetime":45,"x":2.413713574409485,"y":82.16558381840585,"z":2.990000009536743,"alpha":0.12222222},{"age":35,"lifetime":45,"x":2.4413071870803833,"y":82.00450211688874,"z":2.990000009536743,"alpha":0.12222222},{"age":0,"lifetime":45,"x":2.799309551715851,"y":82.80011265352368,"z":2.990000009536743,"alpha":0.0},{"age":0,"lifetime":45,"x":2.593812257051468,"y":82.87505231797695,"z":4.009999990463257,"alpha":0.0},{"age":0,"lifetime":45,"x":3.009999990463257,"y":82.90837801992893,"z":3.2801942229270935,"alpha":0.0},{"age":0,"lifetime":45,"x":2.2248796820640564,"y":82.89640466868877,"z":4.009999990463257,"alpha":0.0},{"age":0,"lifetime":45,"x":2.499255806207657,"y":82.8673518076539,"z":2.990000009536743,"alpha":0.0},{"age":0,"lifetime":45,"x":3.009999990463257,"y":82.93364731967449,"z":3.441163033246994,"alpha":0.0},{"age":0,"lifetime":45,"x":2.4794685542583466,"y":82.90753535926342,"z":4.009999990463257,"alpha":0.0},{"age":35,"lifetime":45,"x":3.009999990463257,"y":82.13244149014352,"z":3.294949233531952,"alpha":0.12222222},{"age":35,"lifetime":45,"x":3.009999990463257,"y":82.00085657760499,"z":3.307071417570114,"alpha":0.12222222},{"age":0,"lifetime":45,"x":3.009999990463257,"y":82.94662754237652,"z":3.765633910894394,"alpha":0.0},{"age":35,"lifetime":45,"x":3.009999990463257,"y":82.11395841762422,"z":3.230163276195526,"alpha":0.12222222},{"age":35,"lifetime":45,"x":2.445319712162018,"y":82.13258993551133,"z":2.990000009536743,"alpha":0.12222222},{"age":0,"lifetime":45,"x":2.4777757823467255,"y":82.78392792865634,"z":4.009999990463257,"alpha":0.0},{"age":35,"lifetime":45,"x":2.393049269914627,"y":81.99700388843192,"z":2.990000009536743,"alpha":0.12222222},{"age":35,"lifetime":45,"x":2.215891182422638,"y":82.19168060943483,"z":2.990000009536743,"alpha":0.12222222},{"age":35,"lifetime":45,"x":3.009999990463257,"y":82.17423437461255,"z":3.708833336830139,"alpha":0.12222222},{"age":35,"lifetime":45,"x":1.9900000095367432,"y":82.02207627259193,"z":3.3775310814380646,"alpha":0.12222222},{"age":0,"lifetime":45,"x":2.648572102189064,"y":82.91721574962139,"z":2.990000009536743,"alpha":0.0}],"gl_error":0,"swinging_after_2_ticks":false,"screenshot_after_2_ticks":"03-repeat_block_scan-after-02t.png","swinging_after_6_ticks":false,"screenshot":"03-repeat_block_scan-after-06t.png","pass":true}
+THAUMOMETER_SOUND {"phase":"miss_scan","tick":225,"event":"thaumcraft:scan","volume":0.5,"pitch":1.0,"source":"player","scope":"raw request volume/pitch before PlaySoundEvent resolves the sound; original scan sound has unit multipliers"}
+THAUMOMETER_CASE {"case":"miss_scan","start_tick":205,"runes_added_immediately":0,"sounds_added_immediately":1,"swinging_immediately":false,"hit_result":"MISS","item_cooldown":false,"sound":{"phase":"miss_scan","tick":225,"event":"thaumcraft:scan","volume":0.5,"pitch":1.0,"source":"player","scope":"raw request volume/pitch before PlaySoundEvent resolves the sound; original scan sound has unit multipliers"},"new_runes":[{"age":35,"lifetime":45,"x":2.799309551715851,"y":82.04411267042158,"z":2.990000009536743,"alpha":0.12222222},{"age":35,"lifetime":45,"x":2.593812257051468,"y":82.11905233487485,"z":4.009999990463257,"alpha":0.12222222},{"age":35,"lifetime":45,"x":3.009999990463257,"y":82.15237803682683,"z":3.2801942229270935,"alpha":0.12222222},{"age":35,"lifetime":45,"x":2.2248796820640564,"y":82.14040468558667,"z":4.009999990463257,"alpha":0.12222222},{"age":35,"lifetime":45,"x":2.499255806207657,"y":82.1113518245518,"z":2.990000009536743,"alpha":0.12222222},{"age":35,"lifetime":45,"x":3.009999990463257,"y":82.17764733657239,"z":3.441163033246994,"alpha":0.12222222},{"age":35,"lifetime":45,"x":2.4794685542583466,"y":82.15153537616132,"z":4.009999990463257,"alpha":0.12222222},{"age":35,"lifetime":45,"x":3.009999990463257,"y":82.19062755927442,"z":3.765633910894394,"alpha":0.12222222},{"age":35,"lifetime":45,"x":2.4777757823467255,"y":82.02792794555424,"z":4.009999990463257,"alpha":0.12222222},{"age":35,"lifetime":45,"x":2.648572102189064,"y":82.16121576651929,"z":2.990000009536743,"alpha":0.12222222}],"gl_error":0,"swinging_after_2_ticks":false,"screenshot_after_2_ticks":"04-miss_scan-after-02t.png","swinging_after_6_ticks":false,"screenshot":"04-miss_scan-after-06t.png","pass":true}
+THAUMOMETER_SOUND {"phase":"offhand_block_scan","tick":271,"event":"thaumcraft:scan","volume":0.5,"pitch":1.0,"source":"player","scope":"raw request volume/pitch before PlaySoundEvent resolves the sound; original scan sound has unit multipliers"}
+THAUMOMETER_CASE {"case":"offhand_block_scan","start_tick":241,"runes_added_immediately":10,"sounds_added_immediately":1,"swinging_immediately":false,"hit_result":"BLOCK","item_cooldown":false,"sound":{"phase":"offhand_block_scan","tick":271,"event":"thaumcraft:scan","volume":0.5,"pitch":1.0,"source":"player","scope":"raw request volume/pitch before PlaySoundEvent resolves the sound; original scan sound has unit multipliers"},"new_runes":[{"age":0,"lifetime":45,"x":1.9900000095367432,"y":82.85040586441755,"z":3.6321097910404205,"alpha":0.0},{"age":0,"lifetime":45,"x":3.009999990463257,"y":82.7934402115643,"z":3.41215518116951,"alpha":0.0},{"age":0,"lifetime":45,"x":2.33347250521183,"y":82.8023120649159,"z":4.009999990463257,"alpha":0.0},{"age":0,"lifetime":45,"x":2.4417605847120285,"y":82.92893415689468,"z":4.009999990463257,"alpha":0.0},{"age":0,"lifetime":45,"x":2.3680421710014343,"y":82.9394723623991,"z":4.009999990463257,"alpha":0.0},{"age":0,"lifetime":45,"x":2.741694748401642,"y":82.83104504644871,"z":4.009999990463257,"alpha":0.0},{"age":0,"lifetime":45,"x":2.316234678030014,"y":82.89841094613075,"z":2.990000009536743,"alpha":0.0},{"age":0,"lifetime":45,"x":2.34671089053154,"y":82.87202280759811,"z":4.009999990463257,"alpha":0.0},{"age":0,"lifetime":45,"x":2.392614185810089,"y":82.87542720139027,"z":2.990000009536743,"alpha":0.0},{"age":0,"lifetime":45,"x":2.7433488368988037,"y":82.79648661613464,"z":4.009999990463257,"alpha":0.0}],"gl_error":0,"swinging_after_2_ticks":false,"screenshot_after_2_ticks":"05-offhand_block_scan-after-02t.png","swinging_after_6_ticks":false,"screenshot":"05-offhand_block_scan-after-06t.png","pass":true}
+THAUMOMETER_CASE {"case":"put_away_clears_label","start_tick":287,"readout_cleared":true,"gl_error":0,"screenshot":"06-put_away_clears_label.png","pass":true}
+THAUMOMETER_COMPLETE cases=6 sounds=4
+[04:03:12] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
+[04:03:12] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: ThaumometerTest lost connection: Disconnected
+[04:03:12] [Server thread/INFO] [minecraft/MinecraftServer]: ThaumometerTest left the game
+[04:03:12] [Server thread/INFO] [minecraft/ServerCommonPacketListenerImpl]: Stopping singleplayer server as player logged out
+[04:03:12] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[04:03:12] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[04:03:12] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[04:03:12] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Thaumometer parity]'/minecraft:overworld
+[04:03:13] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Thaumometer parity]'/minecraft:the_nether
+[04:03:13] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Thaumometer parity]'/minecraft:the_end
+[04:03:13] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (thaumometer-parity-1793235752337): All chunks are saved
+[04:03:13] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04:03:13] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[04:03:13] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved

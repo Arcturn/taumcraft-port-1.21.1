@@ -1,0 +1,38 @@
+{
+  "source_sha256": "9425f8643581b27ff8845b087c8bc6fc10425a32942f1a3f0e265ce6b38f7b5f",
+  "assets": [
+    {
+      "source": "assets/thaumcraft/textures/items/jar_brace.png",
+      "target": "assets/thaumcraft/textures/item/jar_brace.png",
+      "sha256": "ee447bf4d1d64ff2536ed8876409a7a156d83b7c9228ef2db0ef8f83e4961260"
+    },
+    {
+      "source": "assets/thaumcraft/textures/models/jarbrine.png",
+      "target": "assets/thaumcraft/textures/models/jarbrine.png",
+      "sha256": "b144fee475b95c0caad137984fa91b11bece1e4aa95ddb8f39e23ef82ebcd90d"
+    },
+    {
+      "source": "assets/thaumcraft/textures/models/bore.png",
+      "target": "assets/thaumcraft/textures/models/bore.png",
+      "sha256": "44169d14e6f90d68ab1e6dea7b2e6a381b0bac5fa46579541c2fee538a57663b"
+    },
+    {
+      "source": "assets/thaumcraft/models/item/jar_brace.json",
+      "target": "assets/thaumcraft/models/item/jar_brace.json",
+      "transformation": "Original item model; singular texture path"
+    }
+  ],
+  "mechanic_sources": [
+    "TileJarFillable.java:isBlocked",
+    "BlockJar.java:spawnFilledJar/onBlockActivated",
+    "BlockJarItem.java:onItemUseFirst",
+    "TileBellows.java:update",
+    "ModelJar.java",
+    "ModelBoreBase.java:Nozzle1/Nozzle2"
+  ],
+  "notes": [
+    "Jar braces block remote source access, not pipe/phial access.",
+    "Braces drop separately when a jar drops; portable jar data retains contents and filter.",
+    "Modern furnace duration replaces hardcoded 199; vanilla completes outputs and records XP."
+  ]
+}

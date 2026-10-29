@@ -1,0 +1,277 @@
+{
+  "infusion_matrix_0": {
+    "model": "thaumcraft:research/world/infusion_matrix_0",
+    "x": 0,
+    "y": 0
+  },
+  "stone_arcane_0": {
+    "model": "thaumcraft:research/world/stone_arcane_0",
+    "x": 0,
+    "y": 0,
+    "variants": [
+      {
+        "model": "thaumcraft:research/world/stone_arcane_0",
+        "x": 0,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_arcane_0",
+        "x": 90,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_arcane_0",
+        "x": 0,
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_arcane_0",
+        "x": 90,
+        "y": 90,
+        "weight": 1
+      }
+    ]
+  },
+  "stone_ancient_0": {
+    "model": "thaumcraft:research/world/stone_ancient_0",
+    "x": 0,
+    "y": 0,
+    "variants": [
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 0,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 90,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 180,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 270,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 0,
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 0,
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 0,
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 90,
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 180,
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 270,
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 90,
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 180,
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 270,
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 90,
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 180,
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_ancient_0",
+        "x": 270,
+        "y": 270,
+        "weight": 1
+      }
+    ]
+  },
+  "stone_eldritch_tile_0": {
+    "model": "thaumcraft:research/world/stone_eldritch_tile_0",
+    "x": 0,
+    "y": 0,
+    "variants": [
+      {
+        "model": "thaumcraft:research/world/stone_eldritch_tile_0",
+        "x": 0,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_eldritch_tile_0",
+        "x": 90,
+        "y": 0,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_eldritch_tile_0",
+        "x": 0,
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "thaumcraft:research/world/stone_eldritch_tile_0",
+        "x": 90,
+        "y": 90,
+        "weight": 1
+      }
+    ]
+  },
+  "pedestal_arcane_0": {
+    "model": "thaumcraft:research/world/pedestal_arcane_0",
+    "x": 0,
+    "y": 0
+  },
+  "metal_alchemical_0": {
+    "model": "thaumcraft:research/world/metal_alchemical_0",
+    "x": 0,
+    "y": 0
+  },
+  "crucible_0": {
+    "model": "thaumcraft:research/world/crucible_0",
+    "x": 0,
+    "y": 0
+  },
+  "table_stone_0": {
+    "model": "thaumcraft:research/world/table_stone_0",
+    "x": 0,
+    "y": 0
+  },
+  "infernal_furnace_0": {
+    "model": "thaumcraft:research/world/infernal_furnace_0",
+    "x": 0,
+    "y": 0
+  },
+  "thaumatorium_0": {
+    "model": "thaumcraft:research/world/thaumatorium_0",
+    "x": 90,
+    "y": 90
+  },
+  "golem_builder_0": {
+    "model": "thaumcraft:research/world/golem_builder_0",
+    "x": 0,
+    "y": 0
+  },
+  "pedestal_ancient_2": {
+    "model": "thaumcraft:research/world/pedestal_ancient_2",
+    "x": 0,
+    "y": 0
+  },
+  "pedestal_eldritch_1": {
+    "model": "thaumcraft:research/world/pedestal_eldritch_1",
+    "x": 0,
+    "y": 0
+  },
+  "pillar_arcane_0": {
+    "model": "thaumcraft:research/world/pillar_arcane_0",
+    "x": 0,
+    "y": 180
+  },
+  "pillar_arcane_1": {
+    "model": "thaumcraft:research/world/pillar_arcane_1",
+    "x": 0,
+    "y": 270
+  },
+  "pillar_arcane_2": {
+    "model": "thaumcraft:research/world/pillar_arcane_2",
+    "x": 0,
+    "y": 0
+  },
+  "pillar_arcane_3": {
+    "model": "thaumcraft:research/world/pillar_arcane_3",
+    "x": 0,
+    "y": 90
+  },
+  "pillar_ancient_0": {
+    "model": "thaumcraft:research/world/pillar_ancient_0",
+    "x": 0,
+    "y": 180
+  },
+  "pillar_ancient_1": {
+    "model": "thaumcraft:research/world/pillar_ancient_1",
+    "x": 0,
+    "y": 270
+  },
+  "pillar_ancient_2": {
+    "model": "thaumcraft:research/world/pillar_ancient_2",
+    "x": 0,
+    "y": 0
+  },
+  "pillar_ancient_3": {
+    "model": "thaumcraft:research/world/pillar_ancient_3",
+    "x": 0,
+    "y": 90
+  },
+  "pillar_eldritch_0": {
+    "model": "thaumcraft:research/world/pillar_eldritch_0",
+    "x": 0,
+    "y": 180
+  },
+  "pillar_eldritch_1": {
+    "model": "thaumcraft:research/world/pillar_eldritch_1",
+    "x": 0,
+    "y": 270
+  },
+  "pillar_eldritch_2": {
+    "model": "thaumcraft:research/world/pillar_eldritch_2",
+    "x": 0,
+    "y": 0
+  },
+  "pillar_eldritch_3": {
+    "model": "thaumcraft:research/world/pillar_eldritch_3",
+    "x": 0,
+    "y": 90
+  }
+}

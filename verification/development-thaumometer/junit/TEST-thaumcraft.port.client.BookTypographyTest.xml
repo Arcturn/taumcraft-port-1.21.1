@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="thaumcraft.port.client.BookTypographyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-29T01:00:06.449Z" hostname="e54a7cd1abdc" time="0.003">
+  <properties/>
+  <testcase name="decorativeNumbersKeepWholePhysicalPixelsAtCommonGuiScales()" classname="thaumcraft.port.client.BookTypographyTest" time="0.0"/>
+  <testcase name="suffixPolishNeverAddsRowsOrRewrapsAnAlreadyCompleteSuffix()" classname="thaumcraft.port.client.BookTypographyTest" time="0.001"/>
+  <testcase name="russianImprovedSmeltingKeepsItsPartSuffixAtTheWidestFittingWidth()" classname="thaumcraft.port.client.BookTypographyTest" time="0.0"/>
+  <testcase name="invalidWindowScalesFallBackToNativeSize()" classname="thaumcraft.port.client.BookTypographyTest" time="0.0"/>
+  <testcase name="fabricoComponentsStayReadableAtGuiOneWithoutMovingOtherGuiScales()" classname="thaumcraft.port.client.BookTypographyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

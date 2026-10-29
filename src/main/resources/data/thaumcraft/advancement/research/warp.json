@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "thaumcraft:research_display_research_warp"
+    },
+    "title": {
+      "translate": "research.WARP.title"
+    },
+    "description": {
+      "translate": "thaumcraft.advancement.research.description",
+      "with": [
+        {
+          "translate": "research.WARP.title"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "completed": {
+      "trigger": "thaumcraft:research",
+      "conditions": {
+        "research": "WARP"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "completed"
+    ]
+  ],
+  "sends_telemetry_event": false,
+  "parent": "thaumcraft:research/category/basics"
+}

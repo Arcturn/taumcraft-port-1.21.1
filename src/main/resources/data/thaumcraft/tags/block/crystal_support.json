@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:base_stone_overworld",
+    "#minecraft:stone_bricks",
+    "#minecraft:terracotta",
+    "minecraft:cobblestone",
+    "minecraft:mossy_cobblestone",
+    "minecraft:obsidian",
+    "thaumcraft:stone_porous",
+    "#minecraft:base_stone_nether",
+    "#c:ores",
+    "minecraft:bedrock",
+    "thaumcraft:ore_amber",
+    "thaumcraft:ore_cinnabar",
+    "thaumcraft:ore_quartz",
+    "thaumcraft:deepslate_ore_amber",
+    "thaumcraft:deepslate_ore_cinnabar",
+    "thaumcraft:deepslate_ore_quartz"
+  ]
+}

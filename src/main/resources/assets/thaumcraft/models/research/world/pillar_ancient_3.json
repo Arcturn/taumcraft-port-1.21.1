@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "texture": "thaumcraft:blocks/pillar_ancient"
+  },
+  "loader": "neoforge:obj",
+  "model": "thaumcraft:models/research/obj/pillar.obj",
+  "flip_v": false,
+  "automatic_culling": false,
+  "parent": "minecraft:block/block"
+}

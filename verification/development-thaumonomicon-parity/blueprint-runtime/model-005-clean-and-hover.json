@@ -1,0 +1,56 @@
+[
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "900",
+      "630"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 1
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "modern-final-ru2-blueprint-golempress.png"
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "968",
+      "225"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 1
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "modern-final-ru2-blueprint-golempress-bookmark.png"
+  },
+  {
+    "action": "xdotool",
+    "target": "modern-ru2",
+    "args": [
+      "mousemove",
+      "554",
+      "555"
+    ]
+  },
+  {
+    "action": "sleep",
+    "seconds": 1
+  },
+  {
+    "action": "screenshot",
+    "target": "modern-ru2",
+    "name": "modern-final-ru2-blueprint-golempress-piston-tooltip.png"
+  }
+]

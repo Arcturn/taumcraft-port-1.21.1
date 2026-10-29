@@ -1,0 +1,667 @@
+{
+  "scope": "Current development parity work: duplicate vanilla advancement toast after restoring original ResearchToast; not an alpha9.13 result",
+  "finding": "TC6 BETA26 research completion produces ResearchToast only. The port added a second vanilla advancement toast for the same completion.",
+  "original": {
+    "artifact": "Thaumcraft-1.12.2-6.1.BETA26.jar",
+    "sha256": "9425f8643581b27ff8845b087c8bc6fc10425a32942f1a3f0e265ce6b38f7b5f",
+    "advancement_json_count": 0,
+    "java_files_scanned": 903,
+    "custom_criterion_registration_matches": [],
+    "only_vanilla_criteria_call": {
+      "file": "thaumcraft/common/lib/events/PlayerEvents.java",
+      "line": 468,
+      "text": "CriteriaTriggers.field_193130_A.func_193187_a(entityplayermp, BaublesApi.getBaubles((EntityPlayer)player).func_70301_a(slot));"
+    },
+    "only_vanilla_criteria_call_context": "PlayerEvents.onDeath invokes vanilla used_totem for Charm of Undying, unrelated to research completion",
+    "research_toast": {
+      "file": "thaumcraft/common/lib/network/playerdata/PacketSyncKnowledge.java",
+      "lines": [
+        74,
+        77
+      ],
+      "source_excerpt": "                    if (pk.hasResearchFlag(key, IPlayerKnowledge.EnumResearchFlag.POPUP) && (ri = ResearchCategories.getResearch(key)) != null) {\n                        Minecraft.func_71410_x().func_193033_an().func_192988_a((IToast)new ResearchToast(ri));\n                    }\n                    pk.clearResearchFlag(key, IPlayerKnowledge.EnumResearchFlag.POPUP);"
+    }
+  },
+  "port_before": {
+    "duplicate_example": "FIRSTSTEPS first open completes sibling KNOWLEDGETYPES: ResearchToast and vanilla Advancement Made: Types of Knowledge appear together",
+    "research_toast_path": "ClientJournal.open adds ResearchToast for POPUP flags",
+    "vanilla_path": "ResearchEvents.tick invokes the thaumcraft:research trigger every 20 ticks; generated leaves had show_toast=true"
+  },
+  "change": {
+    "leaf_count": 148,
+    "before_show_toast": true,
+    "after_show_toast": false,
+    "generator": "Explicit toast=False on the generated research-leaf call only; helper default toast=True retained",
+    "preserved": "Nodes, icons, parent links, criteria, requirements, descriptions and progress are unchanged. No generic toast handler or nonresearch advancement is disabled."
+  },
+  "hash_format": "SHA-256 of recursively key-sorted compact UTF-8 JSON; leaf hash excludes only display.show_toast",
+  "leaves": {
+    "data/thaumcraft/advancement/research/advancedturret.json": {
+      "research": "ADVANCEDTURRET",
+      "preserved_content_sha256": "a3b2c1b0d517ab8292b1f562690b08b02051da3edf95c99222f807d214180a3e"
+    },
+    "data/thaumcraft/advancement/research/alumentum.json": {
+      "research": "ALUMENTUM",
+      "preserved_content_sha256": "581bc5ee4d03e4fc4812031067981a179889e58571e7680be17d065e1d401af8"
+    },
+    "data/thaumcraft/advancement/research/arcanebore.json": {
+      "research": "ARCANEBORE",
+      "preserved_content_sha256": "d6ad1ab351bffb0de5e3f797b0eb14f3ca7f53979a319e2e787b0b74ff4d8fcf"
+    },
+    "data/thaumcraft/advancement/research/arcaneear.json": {
+      "research": "ARCANEEAR",
+      "preserved_content_sha256": "1f64f54e53cd89cb884df09a176fa44d0b340f2c2db98ee0102b323a7eb916c9"
+    },
+    "data/thaumcraft/advancement/research/arcanelamp.json": {
+      "research": "ARCANELAMP",
+      "preserved_content_sha256": "eb26dbc90edb48c5f0023d95a113521f0d1d88436c0730185fce971d02054975"
+    },
+    "data/thaumcraft/advancement/research/arcanepatterncrafter.json": {
+      "research": "ARCANEPATTERNCRAFTER",
+      "preserved_content_sha256": "a8137e919e520b61bfadcae24e9f5a2f5e9fbea6e4f62720fb07c59a5fb6a9fd"
+    },
+    "data/thaumcraft/advancement/research/arcanespa.json": {
+      "research": "ARCANESPA",
+      "preserved_content_sha256": "7585d76c1902d8c1d0a1b7552902e4ff66199e44b580ccb28420024c19b0480f"
+    },
+    "data/thaumcraft/advancement/research/armorfortress.json": {
+      "research": "ARMORFORTRESS",
+      "preserved_content_sha256": "d8a410326f6acb7a36fabc6dbab760ebf2b82100392503c72cb9aba79560638e"
+    },
+    "data/thaumcraft/advancement/research/basealchemy.json": {
+      "research": "BASEALCHEMY",
+      "preserved_content_sha256": "672eb3da9c20bf87be1205ec230ba083a5981a54e32c47b98f65fc5b132437c4"
+    },
+    "data/thaumcraft/advancement/research/baseartifice.json": {
+      "research": "BASEARTIFICE",
+      "preserved_content_sha256": "967eda4cb98194997d9192b28466f4209c1270ee19ded555c79f5c992df3aa7a"
+    },
+    "data/thaumcraft/advancement/research/baseauromancy.json": {
+      "research": "BASEAUROMANCY",
+      "preserved_content_sha256": "a96d1bc477e8e688bc45bf8499644d973df782577a0a02e9a17f8dc53348aebc"
+    },
+    "data/thaumcraft/advancement/research/baseeldritch.json": {
+      "research": "BASEELDRITCH",
+      "preserved_content_sha256": "14bcfd39ef2c796955d2907971887beddc6deb29dc86dbc317a6b505c8b65805"
+    },
+    "data/thaumcraft/advancement/research/basegolemancy.json": {
+      "research": "BASEGOLEMANCY",
+      "preserved_content_sha256": "620402d928d422404c749b3471b613d62a7e226bf33b511fedcde8d564e92697"
+    },
+    "data/thaumcraft/advancement/research/baseinfusion.json": {
+      "research": "BASEINFUSION",
+      "preserved_content_sha256": "a989c14f56c7c815ca8d2b18a76ec5ded525e96dd25aa6a91fab56359bbfb1bd"
+    },
+    "data/thaumcraft/advancement/research/basicturret.json": {
+      "research": "BASICTURRET",
+      "preserved_content_sha256": "6651ead912757273132d18d9b68da15582f6a644795b341f26881b104a24a9a4"
+    },
+    "data/thaumcraft/advancement/research/bathsalts.json": {
+      "research": "BATHSALTS",
+      "preserved_content_sha256": "cb91bb706918db2a85f346a6d31e9093d277f94b87db576b1d24e1998c47dd0c"
+    },
+    "data/thaumcraft/advancement/research/bellows.json": {
+      "research": "BELLOWS",
+      "preserved_content_sha256": "d153358bbdd55f4af95dbb1add5a8f0de97bc9f8e06009085b7db3bcb77a4032"
+    },
+    "data/thaumcraft/advancement/research/bootstraveller.json": {
+      "research": "BOOTSTRAVELLER",
+      "preserved_content_sha256": "c9bef7948e4c9a233da0e8ebbdc4ccff084de5b4eb1d3eb7feb514249e2e2f53"
+    },
+    "data/thaumcraft/advancement/research/bottletaint.json": {
+      "research": "BOTTLETAINT",
+      "preserved_content_sha256": "b30dd0fd408e461e821c71536d6f88503195dc06246c0d3081fd6486f06fa4a9"
+    },
+    "data/thaumcraft/advancement/research/celestialscanning.json": {
+      "research": "CELESTIALSCANNING",
+      "preserved_content_sha256": "87264cdf4fd96ce08753a29069b33a72fe6c97c941db46d12776656a7414c35b"
+    },
+    "data/thaumcraft/advancement/research/centrifuge.json": {
+      "research": "CENTRIFUGE",
+      "preserved_content_sha256": "dd463f167f179d71cd74def7dacca191c2d146064282c7d16c8996762dec93d8"
+    },
+    "data/thaumcraft/advancement/research/charmundying.json": {
+      "research": "CHARMUNDYING",
+      "preserved_content_sha256": "6696bf368606f0380ac3faf5ecfae732df2aefb0fcfdd25d4190d53e84b89692"
+    },
+    "data/thaumcraft/advancement/research/cloudring.json": {
+      "research": "CLOUDRING",
+      "preserved_content_sha256": "340f62be7df88991332b0a0455b01ca7fdd701769c53136106a98983dfccd000"
+    },
+    "data/thaumcraft/advancement/research/controlseals.json": {
+      "research": "CONTROLSEALS",
+      "preserved_content_sha256": "276cfff292d8051aba2bbedd47f89e13108c90da103b4a33365b10d4a53a303c"
+    },
+    "data/thaumcraft/advancement/research/crimsonrites.json": {
+      "research": "CrimsonRites",
+      "preserved_content_sha256": "8e1abbfe409bad797d0cc96e0b14a9397b61612b84ca5ffd88bf21cff6d9f3e0"
+    },
+    "data/thaumcraft/advancement/research/crystalfarmer.json": {
+      "research": "CRYSTALFARMER",
+      "preserved_content_sha256": "ebffcf4b8f7ff62f0e32aee8e916d54bf602f3277489000f07743a8de0426c68"
+    },
+    "data/thaumcraft/advancement/research/curiosityband.json": {
+      "research": "CURIOSITYBAND",
+      "preserved_content_sha256": "dfc41bbe8a83471a80e1fa53cdfdda01579cab61dcb6da7a0aa2e8def6379de6"
+    },
+    "data/thaumcraft/advancement/research/dioptra.json": {
+      "research": "DIOPTRA",
+      "preserved_content_sha256": "27db82f1279589c2b8abe1998140bf19afe557573c76e93babb24f2538f12196"
+    },
+    "data/thaumcraft/advancement/research/elementaltools.json": {
+      "research": "ELEMENTALTOOLS",
+      "preserved_content_sha256": "d115d8270de1aa2345342e5c254413736cbbc9320fa5341e6b9a03306f6c072a"
+    },
+    "data/thaumcraft/advancement/research/essentiasmelter.json": {
+      "research": "ESSENTIASMELTER",
+      "preserved_content_sha256": "9e75bbee62f5302a35432f1219416b2a0c1d272f21222c29d269035b49ff1ff9"
+    },
+    "data/thaumcraft/advancement/research/essentiasmelterthaumium.json": {
+      "research": "ESSENTIASMELTERTHAUMIUM",
+      "preserved_content_sha256": "3d7a00a3fe09a08dd60b66184b971d15dcb49f7749bd2b4457c7147f79919294"
+    },
+    "data/thaumcraft/advancement/research/essentiasmeltervoid.json": {
+      "research": "ESSENTIASMELTERVOID",
+      "preserved_content_sha256": "38089c1c47d9021518da17c25291647e7f78a24a531107b5fbe38def78ca604b"
+    },
+    "data/thaumcraft/advancement/research/essentiatransport.json": {
+      "research": "ESSENTIATRANSPORT",
+      "preserved_content_sha256": "7f1cd6dd4aa7b6ba69c8ff1c80575468e4ec8eacb96d420a9171e360a4dcbcc9"
+    },
+    "data/thaumcraft/advancement/research/everfullurn.json": {
+      "research": "EVERFULLURN",
+      "preserved_content_sha256": "fccaad6f97baf3eb9a59593c76472bf4eb5ab4d68172fed67d285e21205c82a9"
+    },
+    "data/thaumcraft/advancement/research/firststeps.json": {
+      "research": "FIRSTSTEPS",
+      "preserved_content_sha256": "99afdd64743e1d9ca510b18488a5aae1b28c15c45ead6613c90f474ae6bfd87e"
+    },
+    "data/thaumcraft/advancement/research/flux.json": {
+      "research": "FLUX",
+      "preserved_content_sha256": "2e368b58b271129bb890f0a35026b6bf7dba59885fac745e1b326b5aa5a8f872"
+    },
+    "data/thaumcraft/advancement/research/fluxcleanup.json": {
+      "research": "FLUXCLEANUP",
+      "preserved_content_sha256": "62e2237449542694d991607e6a860edd20e317178d11e7e853b8d764bc7fb943"
+    },
+    "data/thaumcraft/advancement/research/fluxrift.json": {
+      "research": "FLUXRIFT",
+      "preserved_content_sha256": "5bdaae83cb086a3613c27247d27f244eaad7e58d052f641ba2eb734072d2e740"
+    },
+    "data/thaumcraft/advancement/research/focusadvanced.json": {
+      "research": "FOCUSADVANCED",
+      "preserved_content_sha256": "fdebe74d7d914257242f51dea76720b10ada2f75fa22a9aebab99677853cd7d5"
+    },
+    "data/thaumcraft/advancement/research/focusbolt.json": {
+      "research": "FOCUSBOLT",
+      "preserved_content_sha256": "d792b30b83e55eb833e689763d901794c5cb3494a84f4d5320628e05b70443d7"
+    },
+    "data/thaumcraft/advancement/research/focusbreak.json": {
+      "research": "FOCUSBREAK",
+      "preserved_content_sha256": "ca0299586cef5369b8f1bf22994ce0cc62c96ab99803809dc1d24e1397ad57be"
+    },
+    "data/thaumcraft/advancement/research/focuscloud.json": {
+      "research": "FOCUSCLOUD",
+      "preserved_content_sha256": "75b34e8fcff0bdedbe714696add6a56472248a5a613d45d918ba3a4a098c395c"
+    },
+    "data/thaumcraft/advancement/research/focuscurse.json": {
+      "research": "FOCUSCURSE",
+      "preserved_content_sha256": "8965a801fc02b0fd690bfd2b673d64fd476f6e79a2c2b2c06530c31559c834b6"
+    },
+    "data/thaumcraft/advancement/research/focuselemental.json": {
+      "research": "FOCUSELEMENTAL",
+      "preserved_content_sha256": "1da0bbafa5e6c5f48a4a9057faca081afe8e995ca503fa6f3cc638424addc128"
+    },
+    "data/thaumcraft/advancement/research/focusexchange.json": {
+      "research": "FOCUSEXCHANGE",
+      "preserved_content_sha256": "664852317c199e36327b8bc034220300eba88498bb0954614dd7db1c6ca4b441"
+    },
+    "data/thaumcraft/advancement/research/focusflux.json": {
+      "research": "FOCUSFLUX",
+      "preserved_content_sha256": "9bf921ca5668fab29a526ef47313e1562ea56e96526758c555b4c4c79018f1b7"
+    },
+    "data/thaumcraft/advancement/research/focusgreater.json": {
+      "research": "FOCUSGREATER",
+      "preserved_content_sha256": "9be2f494bfedc70267cadc957059abc9c018c3273545e8fa199ee34aefd92e5c"
+    },
+    "data/thaumcraft/advancement/research/focusheal.json": {
+      "research": "FOCUSHEAL",
+      "preserved_content_sha256": "865cd8ab963dbbc2cb35ac22d4bddc797af9744a9d5f6d8b4403759b2fce48e0"
+    },
+    "data/thaumcraft/advancement/research/focusmine.json": {
+      "research": "FOCUSMINE",
+      "preserved_content_sha256": "52508694f3dffe19c32f6f69555dd3d8fb6e9798727640f1b0a1387c091913db"
+    },
+    "data/thaumcraft/advancement/research/focusplan.json": {
+      "research": "FOCUSPLAN",
+      "preserved_content_sha256": "97791a82a667168b24cf3a7c6959bb75be86f9b7d3810c6847089a587dac52e3"
+    },
+    "data/thaumcraft/advancement/research/focuspouch.json": {
+      "research": "FOCUSPOUCH",
+      "preserved_content_sha256": "4a7aa8786a0cf57ba30a61ed69b3aaba6b745835530f4d1da499f12dba789eee"
+    },
+    "data/thaumcraft/advancement/research/focusprojectile.json": {
+      "research": "FOCUSPROJECTILE",
+      "preserved_content_sha256": "39eff0ca998a17831522f4032bd255d74595fbe3261596a2c6e1e2521f939df8"
+    },
+    "data/thaumcraft/advancement/research/focusrift.json": {
+      "research": "FOCUSRIFT",
+      "preserved_content_sha256": "3a922ea1d18d2841fcf9136d540fdaee11c91cf6a7890485d32bce9c62df69f8"
+    },
+    "data/thaumcraft/advancement/research/focusscatter.json": {
+      "research": "FOCUSSCATTER",
+      "preserved_content_sha256": "67f260b585c4f9efe957b274784b5166d08d12dadc94e178330f2ddabbfca9f3"
+    },
+    "data/thaumcraft/advancement/research/focusspellbat.json": {
+      "research": "FOCUSSPELLBAT",
+      "preserved_content_sha256": "8c4bbee5596d8d91f667b36cc04c7d6d5322e274d02d65db7a5ab383f350013a"
+    },
+    "data/thaumcraft/advancement/research/focussplit.json": {
+      "research": "FOCUSSPLIT",
+      "preserved_content_sha256": "f386f9d0be16a8aa932f93119cc6aecdda22678d2c5da59375d5f8e3448e599f"
+    },
+    "data/thaumcraft/advancement/research/fortressmask.json": {
+      "research": "FORTRESSMASK",
+      "preserved_content_sha256": "4fb961324d3a1eb7ca5d8cc2f94c8a64b1ef981c4191a727a9ee090bc0123901"
+    },
+    "data/thaumcraft/advancement/research/golembreaker.json": {
+      "research": "GOLEMBREAKER",
+      "preserved_content_sha256": "da2e089ee290d3118619168b813d71debd62e69b98073c70d9821a3f0d586579"
+    },
+    "data/thaumcraft/advancement/research/golemclimber.json": {
+      "research": "GOLEMCLIMBER",
+      "preserved_content_sha256": "3721eb2fb5871cd21d348131000d4ad9812ec5c1a0fbe6d9562168f7d1a5c128"
+    },
+    "data/thaumcraft/advancement/research/golemcombatadv.json": {
+      "research": "GOLEMCOMBATADV",
+      "preserved_content_sha256": "a88bc14110baf1b67947d3be04c80bc7bdfb10de6d7358f5f1b7333554889f0c"
+    },
+    "data/thaumcraft/advancement/research/golemdirect.json": {
+      "research": "GOLEMDIRECT",
+      "preserved_content_sha256": "9d57362e6e488c9545bf12badc41326d7debf962cfc94aacf7ffce0ee2e4f680"
+    },
+    "data/thaumcraft/advancement/research/golemflyer.json": {
+      "research": "GOLEMFLYER",
+      "preserved_content_sha256": "f8023da32c7c0963d7355bd453f88c850b38c6eaa6765b27415e42339d84ddd6"
+    },
+    "data/thaumcraft/advancement/research/golemlogistics.json": {
+      "research": "GOLEMLOGISTICS",
+      "preserved_content_sha256": "f12d48fe33a6f2914171913dbb3fbf2e25c3ac1716a67d32640de6c0f60c54d7"
+    },
+    "data/thaumcraft/advancement/research/golemvision.json": {
+      "research": "GOLEMVISION",
+      "preserved_content_sha256": "891b0d12f5f12d35917d15f51949ebd34d7f617543f1b004d558edee5fae4628"
+    },
+    "data/thaumcraft/advancement/research/grapplegun.json": {
+      "research": "GRAPPLEGUN",
+      "preserved_content_sha256": "b06dc42f3310d929e35f1098db4f2e65040210b07dd4ac036dcea24245ba9143"
+    },
+    "data/thaumcraft/advancement/research/hedgealchemy.json": {
+      "research": "HEDGEALCHEMY",
+      "preserved_content_sha256": "ecfd96b299f780c82e44f4418150a770631823d7e20d4f5e34795a6830f257b9"
+    },
+    "data/thaumcraft/advancement/research/hungrychest.json": {
+      "research": "HUNGRYCHEST",
+      "preserved_content_sha256": "4e6cff64a985f3f3564aaf4bd1c9d40076ceaec6835e731b0d1a770ef01c0093"
+    },
+    "data/thaumcraft/advancement/research/improvedsmelting.json": {
+      "research": "IMPROVEDSMELTING",
+      "preserved_content_sha256": "c5dbe6569c4e65c824b56a9c24915db361dd494f501271f198d2d7fb4e8f9dbe"
+    },
+    "data/thaumcraft/advancement/research/improvedsmelting2.json": {
+      "research": "IMPROVEDSMELTING2",
+      "preserved_content_sha256": "bde0c2d357b96a5a922120dd06f0b3c55357fa3b68ea01039c4b96eece84fe9f"
+    },
+    "data/thaumcraft/advancement/research/infernalfurnace.json": {
+      "research": "INFERNALFURNACE",
+      "preserved_content_sha256": "04556f1e7e0a12182af7c405dd7bdfe5607db0bc1a690db1e1a62ad1f806acb9"
+    },
+    "data/thaumcraft/advancement/research/infusion.json": {
+      "research": "INFUSION",
+      "preserved_content_sha256": "5da8094137dbc17f1c5e9c57368025b442a37c1846f8b3013c20d365dce3704e"
+    },
+    "data/thaumcraft/advancement/research/infusionancient.json": {
+      "research": "INFUSIONANCIENT",
+      "preserved_content_sha256": "372a63214ca2a91b90584326c9ec74b4cc2ff67450fc6b58df910254f06a7526"
+    },
+    "data/thaumcraft/advancement/research/infusionboost.json": {
+      "research": "INFUSIONBOOST",
+      "preserved_content_sha256": "5adfdf9839527778899d20f6653d47bc0100162fb2daf6267cfbc1fa7beab124"
+    },
+    "data/thaumcraft/advancement/research/infusioneldritch.json": {
+      "research": "INFUSIONELDRITCH",
+      "preserved_content_sha256": "b5fd1cc7eced6002dcf2a435cb10bf2de744c093df11af41554cc2f627ef0e7e"
+    },
+    "data/thaumcraft/advancement/research/infusionenchantment.json": {
+      "research": "INFUSIONENCHANTMENT",
+      "preserved_content_sha256": "8faf29e6b77cfd0cd75bfd6910e306152e8c4a0b6ddf8264a0e7adf334307d04"
+    },
+    "data/thaumcraft/advancement/research/infusionstable.json": {
+      "research": "INFUSIONSTABLE",
+      "preserved_content_sha256": "f292de4ef18d6deef26875e3ab13325fde91140925699af1ef1da2bd36f7a9d7"
+    },
+    "data/thaumcraft/advancement/research/jarbrain.json": {
+      "research": "JARBRAIN",
+      "preserved_content_sha256": "c0abfecbd93e33b5c6a113684eb0d6446cebb45a3137f8b22d958249db7f532b"
+    },
+    "data/thaumcraft/advancement/research/knowledgetypes.json": {
+      "research": "KNOWLEDGETYPES",
+      "preserved_content_sha256": "4b1bd9b0063d1920a11d7e2239192c72bddfa0a022630de18313e766514662fb"
+    },
+    "data/thaumcraft/advancement/research/lampfertility.json": {
+      "research": "LAMPFERTILITY",
+      "preserved_content_sha256": "846f5ecc91b4ba630b3e89812a6e04c047cf428f979b2f4a1f8fc733b4912e68"
+    },
+    "data/thaumcraft/advancement/research/lampgrowth.json": {
+      "research": "LAMPGROWTH",
+      "preserved_content_sha256": "a2e5b58cb6edc88a911b5eca1c7c69e293473b5026127410c1dad30c4697dbb9"
+    },
+    "data/thaumcraft/advancement/research/levitator.json": {
+      "research": "LEVITATOR",
+      "preserved_content_sha256": "4cf86fa6e41140eb03fb3fee9cb848e76af370506632c446bacef0c4a8d44203"
+    },
+    "data/thaumcraft/advancement/research/liquiddeath.json": {
+      "research": "LIQUIDDEATH",
+      "preserved_content_sha256": "3a4ae2ea6c2a93d9cf38763f2ccb5f8a57e6c2b3d8d986680c0ba525fc0302aa"
+    },
+    "data/thaumcraft/advancement/research/matstudbrass.json": {
+      "research": "MATSTUDBRASS",
+      "preserved_content_sha256": "2d54763efcf032fa4bf39663f3ff15cb9f304f5f62c0ce488010c39da773993e"
+    },
+    "data/thaumcraft/advancement/research/matstudclay.json": {
+      "research": "MATSTUDCLAY",
+      "preserved_content_sha256": "a7078bcc75fee8670ff2b7455aeb209de0386067c3db1fcb1ee9f2d367591774"
+    },
+    "data/thaumcraft/advancement/research/matstudiron.json": {
+      "research": "MATSTUDIRON",
+      "preserved_content_sha256": "1d6a3992142873267062053e8071e85f1e5c3cdb333e002423b28e67398788b8"
+    },
+    "data/thaumcraft/advancement/research/matstudthaumium.json": {
+      "research": "MATSTUDTHAUMIUM",
+      "preserved_content_sha256": "e58c418c2518836115b7b6dfcdbe5f1f6154d874aea6b57956db4fd20701068a"
+    },
+    "data/thaumcraft/advancement/research/matstudvoid.json": {
+      "research": "MATSTUDVOID",
+      "preserved_content_sha256": "ae6384f93e17ff31e53ea94d006f920e9556bdee5b6bf1fec21efd6d73b3e7a4"
+    },
+    "data/thaumcraft/advancement/research/matstudwood.json": {
+      "research": "MATSTUDWOOD",
+      "preserved_content_sha256": "eec46716880f9e95bc872e61d718c702828f218e85cacd9382cef38eb71b3bf1"
+    },
+    "data/thaumcraft/advancement/research/metallurgy.json": {
+      "research": "METALLURGY",
+      "preserved_content_sha256": "6c6650b796750b159f9cb9d35565bd01b9d82e6110cdccf13c90e1106db46870"
+    },
+    "data/thaumcraft/advancement/research/metalpurification.json": {
+      "research": "METALPURIFICATION",
+      "preserved_content_sha256": "358acf231a00b19e32d777d8cb8459282fd7cf79d54b8489aba7c473ddc070de"
+    },
+    "data/thaumcraft/advancement/research/mindbiothaumic.json": {
+      "research": "MINDBIOTHAUMIC",
+      "preserved_content_sha256": "03ed66f92860edee82570edd82908ecae15627de9afc55b36e3c54d674fe6103"
+    },
+    "data/thaumcraft/advancement/research/mindclockwork.json": {
+      "research": "MINDCLOCKWORK",
+      "preserved_content_sha256": "24a8cfa24c6ec2202f9b33585a38c7d4d7a0617d7ce322deb9c3d1cbb8b406ed"
+    },
+    "data/thaumcraft/advancement/research/mirror.json": {
+      "research": "MIRROR",
+      "preserved_content_sha256": "a3f9e23da13f95a4c73267981b45347963cb3ca5f6f66fd050027a84553b83f3"
+    },
+    "data/thaumcraft/advancement/research/mirroressentia.json": {
+      "research": "MIRRORESSENTIA",
+      "preserved_content_sha256": "6877afdfd67a4a4be088274d083230ab1b20b0ba0956af7f6c32c46064c9982a"
+    },
+    "data/thaumcraft/advancement/research/mirrorhand.json": {
+      "research": "MIRRORHAND",
+      "preserved_content_sha256": "4df73e4881d0cdd44a3ed4d7f781e5176754874a545f7cc8fb1e9b00c440eb4f"
+    },
+    "data/thaumcraft/advancement/research/ore.json": {
+      "research": "ORE",
+      "preserved_content_sha256": "d3629cb0a7d570dc01668568748c02c393df7d5bb2146e810f1dee8ef04e54d9"
+    },
+    "data/thaumcraft/advancement/research/pavingstones.json": {
+      "research": "PAVINGSTONES",
+      "preserved_content_sha256": "beed9bdcb776747072a2f067fe71dbf07068fed1bf254e7d2dff175a8c555bd0"
+    },
+    "data/thaumcraft/advancement/research/plants.json": {
+      "research": "PLANTS",
+      "preserved_content_sha256": "bc2620d0ca757cf47a67f40a83a4b11ccea42cffb23a0d5a45f34eeecad4fbb1"
+    },
+    "data/thaumcraft/advancement/research/potionsprayer.json": {
+      "research": "POTIONSPRAYER",
+      "preserved_content_sha256": "6d168f3ee411b8ff82f481b0c4fabaaf2c201b9741c5ca1f722119fbe1dd39fc"
+    },
+    "data/thaumcraft/advancement/research/primalcrusher.json": {
+      "research": "PRIMALCRUSHER",
+      "preserved_content_sha256": "50ae73d972a11069917aa715d7a84d9bf699f1125fb5a6b8c0deb14fc236b90c"
+    },
+    "data/thaumcraft/advancement/research/primpearl.json": {
+      "research": "PRIMPEARL",
+      "preserved_content_sha256": "4ff5666338c97f3973df24ded2783f895d361e42a099fcaff5745e88ff5ca063"
+    },
+    "data/thaumcraft/advancement/research/rechargepedestal.json": {
+      "research": "RECHARGEPEDESTAL",
+      "preserved_content_sha256": "86207261336fc3b113f82853c5e3e62033fefe9f38e5369a4e48624c5913390c"
+    },
+    "data/thaumcraft/advancement/research/redstonerelay.json": {
+      "research": "REDSTONERELAY",
+      "preserved_content_sha256": "0441b1b2983862f05d8f91139d1e2dae2bf8ecd7f25cdd18dcc49855522ec5b6"
+    },
+    "data/thaumcraft/advancement/research/riftcloser.json": {
+      "research": "RIFTCLOSER",
+      "preserved_content_sha256": "118c0c7d0be8b3426fe6fcbb150d70e3668f5cdcc8eb2ae08ea1c795e6cafb9a"
+    },
+    "data/thaumcraft/advancement/research/runicshielding.json": {
+      "research": "RUNICSHIELDING",
+      "preserved_content_sha256": "a5a32c06f1523367502898d305d389ddc04659a0d4b42f85736bae2b915fc998"
+    },
+    "data/thaumcraft/advancement/research/sanesoap.json": {
+      "research": "SANESOAP",
+      "preserved_content_sha256": "ac109f62bcb43e58567fb718086e9d6b8231e424137cfd13a1b11a6f39737e6a"
+    },
+    "data/thaumcraft/advancement/research/scan/brainyzombie.json": {
+      "research": "!BrainyZombie",
+      "preserved_content_sha256": "413b3d2ffe2ce520fffd02d13be3f87a2816fe591a4c18d42922a2710c9197ca"
+    },
+    "data/thaumcraft/advancement/research/scan/crimsoncultist.json": {
+      "research": "!CrimsonCultist",
+      "preserved_content_sha256": "9fd1662581536ac7e5b5de5083ccf6dc68e909bb04a8e148e9ad0bebb99e9490"
+    },
+    "data/thaumcraft/advancement/research/scan/eldritchcrab.json": {
+      "research": "!EldritchCrab",
+      "preserved_content_sha256": "10aa40ef628b54fcb20c0d41837cf139592ee537d1ad31c0ac1ff25f2f90f103"
+    },
+    "data/thaumcraft/advancement/research/scan/eldritchguardian.json": {
+      "research": "!EldritchGuardian",
+      "preserved_content_sha256": "ae5b262d633d1fcc037f34678f087b985a7c5e677e1d5fed2bf71d7880b83ade"
+    },
+    "data/thaumcraft/advancement/research/scan/firebat.json": {
+      "research": "!Firebat",
+      "preserved_content_sha256": "7d11519555e4d8e3b544f0464a581de9e0992276080330025feaf128272dd33f"
+    },
+    "data/thaumcraft/advancement/research/scan/pech.json": {
+      "research": "!Pech",
+      "preserved_content_sha256": "72bb9ea63722d9072164f94d4b4c3a2b377bdc6e235cec7f6c713ebb12a4d27e"
+    },
+    "data/thaumcraft/advancement/research/scan/taintacle.json": {
+      "research": "!Taintacle",
+      "preserved_content_sha256": "e4e36c6b353631adce6147b2f34a3e27c88bb674cbb804633731e3a9ae38e2b0"
+    },
+    "data/thaumcraft/advancement/research/scan/taintcrawler.json": {
+      "research": "!TaintCrawler",
+      "preserved_content_sha256": "a651c9675ff8fd92dc23175211cdabf4c67557b6dc3f9428fcc788db52563c25"
+    },
+    "data/thaumcraft/advancement/research/scan/taintseed.json": {
+      "research": "!TaintSeed",
+      "preserved_content_sha256": "53c142bf733b3fb62fee31812eae5c10d623d6da57259fd75afc4e654d775dad"
+    },
+    "data/thaumcraft/advancement/research/scan/taintswarm.json": {
+      "research": "!TaintSwarm",
+      "preserved_content_sha256": "53d9f3c319e1ad5ebdd91cb6794194173a502a70820883d27e21ee328d31932a"
+    },
+    "data/thaumcraft/advancement/research/scan/thaumslime.json": {
+      "research": "!ThaumSlime",
+      "preserved_content_sha256": "4f153741f8f87c5349081b82e12b4ebdb1032650d3b3b7f8ba64a26a5e1afed8"
+    },
+    "data/thaumcraft/advancement/research/scan/wisp.json": {
+      "research": "!Wisp",
+      "preserved_content_sha256": "bf0330ad983e3a943e95207afff7898357b240a31ce898fb76dba38646c6bbc2"
+    },
+    "data/thaumcraft/advancement/research/sealbreak.json": {
+      "research": "SEALBREAK",
+      "preserved_content_sha256": "9688166a39b5c82333249d66e89a8c1e8b43e09b4f857bead0efc817ead61496"
+    },
+    "data/thaumcraft/advancement/research/sealbutcher.json": {
+      "research": "SEALBUTCHER",
+      "preserved_content_sha256": "866c213d7e0f2e9f56433a63a4d5d8c115135c85a68c67d6c0a4dec4f67bb0a5"
+    },
+    "data/thaumcraft/advancement/research/sealcollect.json": {
+      "research": "SEALCOLLECT",
+      "preserved_content_sha256": "5647fa335e1943840d9c9b5f54ea046fcc9b344e0c7aea158b4f3e5cfbb67ae1"
+    },
+    "data/thaumcraft/advancement/research/sealempty.json": {
+      "research": "SEALEMPTY",
+      "preserved_content_sha256": "b21fdc10d5637ae908a45ad0039492305922089938b1486c7ea9a53f64225284"
+    },
+    "data/thaumcraft/advancement/research/sealguard.json": {
+      "research": "SEALGUARD",
+      "preserved_content_sha256": "a0b5f74192ef3800503f87174ef5a2807d46937f3fbb1e652727c93aa9c1b6f1"
+    },
+    "data/thaumcraft/advancement/research/sealharvest.json": {
+      "research": "SEALHARVEST",
+      "preserved_content_sha256": "89dac75645f1f962b449b3fc7841e28e06dbf9241871a4f37af0f299eddf068f"
+    },
+    "data/thaumcraft/advancement/research/seallumber.json": {
+      "research": "SEALLUMBER",
+      "preserved_content_sha256": "82ab1232402d08b2737f40cf413956f22e07862279e85af5e69009f9164260d9"
+    },
+    "data/thaumcraft/advancement/research/sealprovide.json": {
+      "research": "SEALPROVIDE",
+      "preserved_content_sha256": "19420daddbe098ce4ee029c209250d54273e76410e1256c577a62aa755400bf1"
+    },
+    "data/thaumcraft/advancement/research/sealstock.json": {
+      "research": "SEALSTOCK",
+      "preserved_content_sha256": "299b16323865938a203397e816c135c8a3a5c86dead9172d0e628bfef388030e"
+    },
+    "data/thaumcraft/advancement/research/sealstore.json": {
+      "research": "SEALSTORE",
+      "preserved_content_sha256": "0f71774c61ec742e85afedd3273813ed1113f08e864bbb7e656795c042c7437c"
+    },
+    "data/thaumcraft/advancement/research/sealuse.json": {
+      "research": "SEALUSE",
+      "preserved_content_sha256": "f1175cb46e5a296e94e991933c037f4a6e04a13c3b3df2eb0ee55434604eec7f"
+    },
+    "data/thaumcraft/advancement/research/thaumatorium.json": {
+      "research": "THAUMATORIUM",
+      "preserved_content_sha256": "f0e7eeff341c058ca2ff063d2634348fa13f04c36e8cb7e0f12d9b8f13fe5e2e"
+    },
+    "data/thaumcraft/advancement/research/theoryresearch.json": {
+      "research": "THEORYRESEARCH",
+      "preserved_content_sha256": "7743ecaedacac8c64026ea67243fb001489bc8d1abee47be48eb797875706355"
+    },
+    "data/thaumcraft/advancement/research/tubes.json": {
+      "research": "TUBES",
+      "preserved_content_sha256": "76089cb26cbe37003edc441f4238422bccfea5cbebe5ff706f79dc65e6977b47"
+    },
+    "data/thaumcraft/advancement/research/unlockalchemy.json": {
+      "research": "UNLOCKALCHEMY",
+      "preserved_content_sha256": "041f3d91b9d741c66a679fc07b2d6930cd113076f1a61664dc6a3f723e48202c"
+    },
+    "data/thaumcraft/advancement/research/unlockartifice.json": {
+      "research": "UNLOCKARTIFICE",
+      "preserved_content_sha256": "52cc2d560f7d2c6d598261c84850d6dd81bdb333829bb47dbc33052aaaf67280"
+    },
+    "data/thaumcraft/advancement/research/unlockauromancy.json": {
+      "research": "UNLOCKAUROMANCY",
+      "preserved_content_sha256": "333aaccfd2f79df761f4d423404d0e45ae1baca171f1245f3953aeb1dd3c5e22"
+    },
+    "data/thaumcraft/advancement/research/unlockeldritch.json": {
+      "research": "UNLOCKELDRITCH",
+      "preserved_content_sha256": "94ef422b61204c854b69f1c21cd6f4ae698e21bd7546d78faa60160088c8f536"
+    },
+    "data/thaumcraft/advancement/research/unlockgolemancy.json": {
+      "research": "UNLOCKGOLEMANCY",
+      "preserved_content_sha256": "939d3e12dcfe0dc2715bddce18849e1f63b142e816528355963aeb9e2ead325d"
+    },
+    "data/thaumcraft/advancement/research/unlockinfusion.json": {
+      "research": "UNLOCKINFUSION",
+      "preserved_content_sha256": "66a66a163b9d569811b899512ea02d0fadd02289c970778001240c3d360e04d3"
+    },
+    "data/thaumcraft/advancement/research/verdantcharms.json": {
+      "research": "VERDANTCHARMS",
+      "preserved_content_sha256": "44741470c25be73d91b903539ff2ed7b04f125d128adc04419a7185e0bbff361"
+    },
+    "data/thaumcraft/advancement/research/visamulet.json": {
+      "research": "VISAMULET",
+      "preserved_content_sha256": "a86767cf05783b9dcb7fdd9bc350b6775eef6a98425c9f4bd65aabcc4b1c2c4f"
+    },
+    "data/thaumcraft/advancement/research/visbattery.json": {
+      "research": "VISBATTERY",
+      "preserved_content_sha256": "71d3911b56303a345fd50a69b008ec318101717ea2627dda16574fca19d04fd8"
+    },
+    "data/thaumcraft/advancement/research/visgenerator.json": {
+      "research": "VISGENERATOR",
+      "preserved_content_sha256": "d8b1acb6c2049394dc8e9560eb666c641524aa29f71ad4826b0aecf9da68bbae"
+    },
+    "data/thaumcraft/advancement/research/voidrobearmor.json": {
+      "research": "VOIDROBEARMOR",
+      "preserved_content_sha256": "0f7bd3621f83c2235af58443a0b8b081f47b554e3a13f53d1fc1247c611401fc"
+    },
+    "data/thaumcraft/advancement/research/voidseerpearl.json": {
+      "research": "VOIDSEERPEARL",
+      "preserved_content_sha256": "8c2d245f48fce9d0f5d3b8a404efab4183b7859fa49e04bde3f0415de3617fd1"
+    },
+    "data/thaumcraft/advancement/research/voidsiphon.json": {
+      "research": "VOIDSIPHON",
+      "preserved_content_sha256": "85b6711cccf02b7e6c15b8face39719ad355717db52e90901dfb39e836a7110a"
+    },
+    "data/thaumcraft/advancement/research/wardedjars.json": {
+      "research": "WARDEDJARS",
+      "preserved_content_sha256": "39a1f8cc8885a0f95946563f852db495e2dd952b28d46d82ad4471574a8524a9"
+    },
+    "data/thaumcraft/advancement/research/warp.json": {
+      "research": "WARP",
+      "preserved_content_sha256": "0eb195cb42aa48098f361703bde168ffe3467cfc9ee630a086777df80feb3e75"
+    },
+    "data/thaumcraft/advancement/research/workbenchcharger.json": {
+      "research": "WORKBENCHCHARGER",
+      "preserved_content_sha256": "8fce8cf0e24215009ebb1cfa4ea0e8e630dbba48e6abfcde380612cf659d4aa8"
+    }
+  },
+  "untouched_advancements": {
+    "data/thaumcraft/advancement/research/category/alchemy.json": {
+      "content_sha256": "cd54f311b2ceec40650785e008acc587f5fbf3de3a3fb741b9d0f23131d4ef1d",
+      "show_toast": false
+    },
+    "data/thaumcraft/advancement/research/category/artifice.json": {
+      "content_sha256": "09ec9c1a8a920749542f9dda1759a97df2af95d5a98e976f9afa79de9ab0693f",
+      "show_toast": false
+    },
+    "data/thaumcraft/advancement/research/category/auromancy.json": {
+      "content_sha256": "0feb693a8600eac4685a83a16e12540fdf189b53a5a7e826ec86737f2d2ecd50",
+      "show_toast": false
+    },
+    "data/thaumcraft/advancement/research/category/basics.json": {
+      "content_sha256": "55e4f950330c02ba1d9b62bbdf0bf7038b091205c6b42371fade639d7261e077",
+      "show_toast": false
+    },
+    "data/thaumcraft/advancement/research/category/eldritch.json": {
+      "content_sha256": "5e570404b7a00bbdf4c11538434be52dd76d7f514411a27991cecf7538c34c43",
+      "show_toast": false
+    },
+    "data/thaumcraft/advancement/research/category/golemancy.json": {
+      "content_sha256": "47ed0f262f12c367ff4b8f8f88de33d9ab6bcf02229f7a2ecf8072fe36071fc7",
+      "show_toast": false
+    },
+    "data/thaumcraft/advancement/research/category/infusion.json": {
+      "content_sha256": "69a1c640d45850e77efe04f6c0e1a4067666c6b9ce87e249e5f6761751b58f10",
+      "show_toast": false
+    },
+    "data/thaumcraft/advancement/root.json": {
+      "content_sha256": "704141d9d51123d68ef695cb05edbe772def11bffe79a71b454259a6e965a241",
+      "show_toast": false
+    }
+  },
+  "validation": "ResearchAdvancementToastTest checks all 148 generated leaves, original POPUP availability, preserved-content hashes and untouched advancement hashes. Final integration execution is coordinated separately."
+}

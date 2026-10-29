@@ -1,0 +1,4330 @@
+{
+  "schema_version": 1,
+  "measured_at_utc": "2026-10-26T07:52:51.761051+00:00",
+  "scope": "Minecraft 1.21.1 native font asset-derived typography audit for the current Thaumonomicon EN/RU strings",
+  "modern_font_exception": {
+    "user_requested": true,
+    "policy": "Use the active native Minecraft 1.21.1 font and honor Force Unicode Font. No legacy 1.12 font provider, glyph-size binary, or legacy font texture is introduced. Historical artwork remains separate from this font exception."
+  },
+  "method": {
+    "classification": "Offline Python reconstruction from actual local native font assets, not a live Minecraft 1.21.1 Font-engine execution or screenshot validation.",
+    "bitmap_advance": "floor(0.5 + rightmost_nontransparent_column_exclusive * (provider_height / source_cell_height)) + 1; first applicable native bitmap provider wins.",
+    "unihex_advance": "floor(nonempty_horizontal_span / 2) + 1; Latin/Cyrillic measured here use no CJK size override.",
+    "space_advance": 4,
+    "bold_advance_addition": {
+      "bitmap": 1,
+      "unihex": 0.5
+    },
+    "style_processing": "Legacy section-sign formatting is decoded; color/reset clears bold; bold adds provider-specific offset; @@ legacy tooltip markers are removed. Italic changes ink projection but not measured advance.",
+    "wrapping": "Minecraft StringSplitter.LineBreakFinder-style greedy codepoint accumulation: overflow only after at least one nonzero-width glyph; break at last ASCII space when possible; preserve blank tooltip lines. Widths are logical GUI units, not physical pixels.",
+    "limits": [
+      "Default vanilla 1.21.1 assets and current bundled EN/RU strings only; replacement resource-pack glyph metrics can differ.",
+      "Text advance boxes are measured, not GPU ink coverage.",
+      "Selected live-client screenshots separately validate layout; full catalog statistics remain offline reconstructions.",
+      "Same-language resource reload is verified; arbitrary resource-pack replacement glyph shapes are outside these screenshots."
+    ],
+    "missing_glyphs": [],
+    "modern_source_evidence": {
+      "net/minecraft/client/gui/font/providers/BitmapProvider.java": {
+        "source_archive": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/intermediate_results/sourcesAndCompiledWithNeoForge_e3c1fa5bb4c216cfcb3e4710378e8ef88570a2b7_output.jar",
+        "sha256": "f188a476743e0976fb092f3ea56b4a817ee22d84d00f1731b2b2e580b231bfc5"
+      },
+      "net/minecraft/client/gui/font/providers/UnihexProvider.java": {
+        "source_archive": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/intermediate_results/sourcesAndCompiledWithNeoForge_e3c1fa5bb4c216cfcb3e4710378e8ef88570a2b7_output.jar",
+        "sha256": "b6f8d381521e4bfbf8c116839ac709abe48ba70d5f833dca0e81ef68829bac2a"
+      },
+      "net/minecraft/client/StringSplitter.java": {
+        "source_archive": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/intermediate_results/sourcesAndCompiledWithNeoForge_e3c1fa5bb4c216cfcb3e4710378e8ef88570a2b7_output.jar",
+        "sha256": "32839b9adfb10250247c1e56f2b17dfbc371d46a5b858d871f86f64590d8a0e7"
+      },
+      "net/minecraft/client/gui/screens/LoadingOverlay.java": {
+        "source_archive": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/intermediate_results/sourcesAndCompiledWithNeoForge_e3c1fa5bb4c216cfcb3e4710378e8ef88570a2b7_output.jar",
+        "sha256": "126858904297f1ded0cfa25d8669fc8eaa264902f4abd120f9ef6589e2c72a73"
+      }
+    }
+  },
+  "provenance": {
+    "native_resources": [
+      {
+        "resource": "minecraft/font/include/default.json",
+        "bytes": 19118,
+        "sha256": "e17f8a4289db15bf662df3ab623ad4dd9bda9d2b2e3e9e9e743234ff186bd0c4",
+        "storage": "Minecraft 1.21.1 client JAR",
+        "path": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar",
+        "entry": "assets/minecraft/font/include/default.json"
+      },
+      {
+        "resource": "minecraft/font/default.json",
+        "bytes": 398,
+        "sha256": "32942032bb9cc9a482088dcbd617a9ce339fb9b722e9696c6cac13bac5949832",
+        "storage": "Minecraft 1.21.1 client JAR",
+        "path": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar",
+        "entry": "assets/minecraft/font/default.json"
+      },
+      {
+        "resource": "minecraft/font/uniform.json",
+        "bytes": 226,
+        "sha256": "bfa7b4b599c0ee8a66d2c3ea655b4b679308fabf5ed92765022e96fa9197bad4",
+        "storage": "Minecraft 1.21.1 client JAR",
+        "path": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar",
+        "entry": "assets/minecraft/font/uniform.json"
+      },
+      {
+        "resource": "minecraft/font/include/space.json",
+        "bytes": 170,
+        "sha256": "f87f46eca8c1731f0452ca539035ebdfbc52be3024fc74a910721832496d1ee1",
+        "storage": "Minecraft 1.21.1 client JAR",
+        "path": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar",
+        "entry": "assets/minecraft/font/include/space.json"
+      },
+      {
+        "resource": "minecraft/font/include/unifont.json",
+        "bytes": 3994,
+        "sha256": "131bb55b46fcdeb6982a01bc4446e12a7b3bfb1a8c772094742e60589524bca6",
+        "storage": "Minecraft asset-index object",
+        "path": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/assets/objects/f4/f40266672fa6cd5c678cbfd5a7fdcfe06e30c629",
+        "asset_index_sha1": "f40266672fa6cd5c678cbfd5a7fdcfe06e30c629",
+        "observed_sha1": "f40266672fa6cd5c678cbfd5a7fdcfe06e30c629"
+      },
+      {
+        "resource": "minecraft/textures/font/nonlatin_european.png",
+        "bytes": 4879,
+        "sha256": "d9f7367c97aef7146a08d14398e7431d214eea813b8a52f3c27bc87677d33eb5",
+        "storage": "Minecraft 1.21.1 client JAR",
+        "path": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar",
+        "entry": "assets/minecraft/textures/font/nonlatin_european.png"
+      },
+      {
+        "resource": "minecraft/textures/font/accented.png",
+        "bytes": 7694,
+        "sha256": "b9088c6e0496eba5df8733848a9d034381e5a656da08a6f70b9a77d178a0d0ba",
+        "storage": "Minecraft 1.21.1 client JAR",
+        "path": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar",
+        "entry": "assets/minecraft/textures/font/accented.png"
+      },
+      {
+        "resource": "minecraft/textures/font/ascii.png",
+        "bytes": 810,
+        "sha256": "e8646f1ed1f4bfd597d262cca3d8fac88ceaaa62807bbd5e607b2e3fe41c928a",
+        "storage": "Minecraft 1.21.1 client JAR",
+        "path": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar",
+        "entry": "assets/minecraft/textures/font/ascii.png"
+      },
+      {
+        "resource": "minecraft/font/unifont.zip",
+        "bytes": 1496916,
+        "sha256": "8f6a12f09a805b3e6c2e412050a14912c74f6ff31b157dc08f38eb10144c4643",
+        "storage": "Minecraft asset-index object",
+        "path": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/assets/objects/66/666999116c467f10622db1527a06ddc0a6efad2a",
+        "asset_index_sha1": "666999116c467f10622db1527a06ddc0a6efad2a",
+        "observed_sha1": "666999116c467f10622db1527a06ddc0a6efad2a"
+      }
+    ],
+    "bitmap_providers": [
+      {
+        "provider": "minecraft:font/nonlatin_european.png",
+        "image_size": [
+          128,
+          536
+        ],
+        "source_cell_size": [
+          8,
+          8
+        ],
+        "logical_height": 8,
+        "ascent": 7,
+        "logical_units_per_source_pixel": 1.0
+      },
+      {
+        "provider": "minecraft:font/accented.png",
+        "image_size": [
+          144,
+          900
+        ],
+        "source_cell_size": [
+          9,
+          12
+        ],
+        "logical_height": 12,
+        "ascent": 10,
+        "logical_units_per_source_pixel": 1.0
+      },
+      {
+        "provider": "minecraft:font/ascii.png",
+        "image_size": [
+          128,
+          128
+        ],
+        "source_cell_size": [
+          8,
+          8
+        ],
+        "logical_height": 8,
+        "ascent": 7,
+        "logical_units_per_source_pixel": 1.0
+      }
+    ],
+    "unifont_hex_entries": [
+      {
+        "entry": "unifont_all_no_pua-15.1.05.hex",
+        "bytes": 7771248,
+        "sha256": "6aec24bc291501b0b6aa661b421cc5ab8a23b1d10a5e0ec7396ea3394a6f5245"
+      }
+    ],
+    "asset_index": {
+      "path": "/workspace/scratch/5f8dd1a26602/work/dust-animation/build-support/gradle-home/caches/neoformruntime/assets/indexes/17.json",
+      "sha256": "5cf41f68f7045fbf53cc0e030c7edf3190956b945eb0df36aafaecfacd72ec8d"
+    },
+    "research_sources": [
+      {
+        "path": "src/main/resources/assets/thaumcraft/research/basics.json",
+        "sha256": "22addef24e9b0d0e0f4b2570d2da2e4ee9393876a341f592cfc2f32586a9d1aa"
+      },
+      {
+        "path": "src/main/resources/assets/thaumcraft/research/alchemy.json",
+        "sha256": "195b04d9dfa811c765cdcf9b17513bd3358ff942a3cd04df06173fbc876ba5d4"
+      },
+      {
+        "path": "src/main/resources/assets/thaumcraft/research/auromancy.json",
+        "sha256": "654e16833b2b8715af74adf3a26b5bc68d874f559c38a56b170628f8a75da604"
+      },
+      {
+        "path": "src/main/resources/assets/thaumcraft/research/artifice.json",
+        "sha256": "615ac0c944aa19bf6bb3bf5f02158eb99577aa979bf0767dfd3aef0badc7834c"
+      },
+      {
+        "path": "src/main/resources/assets/thaumcraft/research/infusion.json",
+        "sha256": "54d76698e0f842396e992fd9dec26a18b74f593cf765bcf6eb76211660e85913"
+      },
+      {
+        "path": "src/main/resources/assets/thaumcraft/research/golemancy.json",
+        "sha256": "a574bee623f4597c6bf37de9e020413e1fb2b5f5bdba8c68fcb2cfa77f101268"
+      },
+      {
+        "path": "src/main/resources/assets/thaumcraft/research/eldritch.json",
+        "sha256": "122f8a547debd0559512d7c0e28a74a087f31a75f49119e9738e56f335fee83e"
+      },
+      {
+        "path": "src/main/resources/assets/thaumcraft/research/scans.json",
+        "sha256": "36bcb8c263effada0a9b746adf09b331f50dc818e93c8c7f7a7d5a29be5c34b5"
+      }
+    ],
+    "languages": [
+      {
+        "language": "en_us",
+        "path": "src/main/resources/assets/thaumcraft/lang/en_us.json",
+        "sha256": "c7360b0c95cfc4e9de07fc919a908e7c67143c6e31c792eb777104b92bc8f079"
+      },
+      {
+        "language": "ru_ru",
+        "path": "src/main/resources/assets/thaumcraft/lang/ru_ru.json",
+        "sha256": "49b7239e0d486b58e6a342d6d758a0f2bd424ca0fc40e39a8e48ee96b249259c"
+      }
+    ],
+    "original_tooltip_runtime_captures": [
+      {
+        "language": "en_us",
+        "path": "/workspace/scratch/5f8dd1a26602/work/testing/original-item-tooltips-full-en_us-runtime.json",
+        "sha256": "9a160898ad97bb03d6e0f4e596d63627cf91feefb6c66feca7057620a465e919",
+        "cases": 451,
+        "capture_method": "Original ItemStack.getTooltip(actual client player, ITooltipFlag.TooltipFlags.NORMAL); raw strings, no GUI rarity prefix added",
+        "capture_engine": "Original Minecraft 1.12.2 / Thaumcraft 6 runtime strings; NOT Minecraft 1.21.1 font measurements"
+      },
+      {
+        "language": "ru_ru",
+        "path": "/workspace/scratch/5f8dd1a26602/work/testing/original-item-tooltips-full-ru_ru-runtime.json",
+        "sha256": "f2d3e038f0b15455402c82d04772aa27c5bce46b94ab3ff8b1ea22e9a3e514dd",
+        "cases": 451,
+        "capture_method": "Original ItemStack.getTooltip(actual client player, ITooltipFlag.TooltipFlags.NORMAL); raw strings, no GUI rarity prefix added",
+        "capture_engine": "Original Minecraft 1.12.2 / Thaumcraft 6 runtime strings; NOT Minecraft 1.21.1 font measurements"
+      }
+    ]
+  },
+  "research_titles_140": {
+    "en_us": {
+      "default": {
+        "wrap_width": 140,
+        "cases": 148,
+        "line_count_distribution": {
+          "1": 143,
+          "2": 5
+        },
+        "maximum_lines": 2,
+        "maximum_line_examples": [
+          {
+            "key": "IMPROVEDSMELTING",
+            "text": "Improved Essentia Distillation (part 1)",
+            "unwrapped_width": 190,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Improved Essentia",
+                "width": 92
+              },
+              {
+                "text": "Distillation (part 1)",
+                "width": 94
+              }
+            ]
+          },
+          {
+            "key": "IMPROVEDSMELTING2",
+            "text": "Improved Essentia Distillation (part 2)",
+            "unwrapped_width": 190,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Improved Essentia",
+                "width": 92
+              },
+              {
+                "text": "Distillation (part 2)",
+                "width": 94
+              }
+            ]
+          },
+          {
+            "key": "ESSENTIATRANSPORT",
+            "text": "Advanced Essentia Transport",
+            "unwrapped_width": 150,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Advanced Essentia",
+                "width": 94
+              },
+              {
+                "text": "Transport",
+                "width": 52
+              }
+            ]
+          },
+          {
+            "key": "ADVANCEDTURRET",
+            "text": "Advanced Automated Crossbow",
+            "unwrapped_width": 154,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Advanced Automated",
+                "width": 102
+              },
+              {
+                "text": "Crossbow",
+                "width": 48
+              }
+            ]
+          },
+          {
+            "key": "GOLEMBREAKER",
+            "text": "Golem Manipulation: Block Breaking",
+            "unwrapped_width": 169,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Golem Manipulation: Block",
+                "width": 122
+              },
+              {
+                "text": "Breaking",
+                "width": 43
+              }
+            ]
+          }
+        ],
+        "longest_unwrapped": {
+          "key": "IMPROVEDSMELTING",
+          "text": "Improved Essentia Distillation (part 1)",
+          "unwrapped_width": 190,
+          "line_count": 2,
+          "lines": [
+            {
+              "text": "Improved Essentia",
+              "width": 92
+            },
+            {
+              "text": "Distillation (part 1)",
+              "width": 94
+            }
+          ]
+        }
+      },
+      "uniform": {
+        "wrap_width": 140,
+        "cases": 148,
+        "line_count_distribution": {
+          "1": 147,
+          "2": 1
+        },
+        "maximum_lines": 2,
+        "maximum_line_examples": [
+          {
+            "key": "IMPROVEDSMELTING2",
+            "text": "Improved Essentia Distillation (part 2)",
+            "unwrapped_width": 141.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Improved Essentia Distillation (part",
+                "width": 131.0
+              },
+              {
+                "text": "2)",
+                "width": 6.0
+              }
+            ]
+          }
+        ],
+        "longest_unwrapped": {
+          "key": "IMPROVEDSMELTING2",
+          "text": "Improved Essentia Distillation (part 2)",
+          "unwrapped_width": 141.0,
+          "line_count": 2,
+          "lines": [
+            {
+              "text": "Improved Essentia Distillation (part",
+              "width": 131.0
+            },
+            {
+              "text": "2)",
+              "width": 6.0
+            }
+          ]
+        }
+      }
+    },
+    "ru_ru": {
+      "default": {
+        "wrap_width": 140,
+        "cases": 148,
+        "line_count_distribution": {
+          "1": 102,
+          "2": 43,
+          "3": 3
+        },
+        "maximum_lines": 3,
+        "maximum_line_examples": [
+          {
+            "key": "IMPROVEDSMELTING",
+            "text": "Улучшение процесса очистки эссенций (Часть 1)",
+            "unwrapped_width": 255,
+            "line_count": 3,
+            "lines": [
+              {
+                "text": "Улучшение процесса",
+                "width": 106
+              },
+              {
+                "text": "очистки эссенций (Часть",
+                "width": 131
+              },
+              {
+                "text": "1)",
+                "width": 10
+              }
+            ]
+          },
+          {
+            "key": "IMPROVEDSMELTING2",
+            "text": "Улучшение процесса очистки эссенций (Часть 2)",
+            "unwrapped_width": 255,
+            "line_count": 3,
+            "lines": [
+              {
+                "text": "Улучшение процесса",
+                "width": 106
+              },
+              {
+                "text": "очистки эссенций (Часть",
+                "width": 131
+              },
+              {
+                "text": "2)",
+                "width": 10
+              }
+            ]
+          },
+          {
+            "key": "ESSENTIATRANSPORT",
+            "text": "Продвинутая транспортировка эссенции",
+            "unwrapped_width": 212,
+            "line_count": 3,
+            "lines": [
+              {
+                "text": "Продвинутая",
+                "width": 67
+              },
+              {
+                "text": "транспортировка",
+                "width": 89
+              },
+              {
+                "text": "эссенции",
+                "width": 48
+              }
+            ]
+          }
+        ],
+        "longest_unwrapped": {
+          "key": "IMPROVEDSMELTING",
+          "text": "Улучшение процесса очистки эссенций (Часть 1)",
+          "unwrapped_width": 255,
+          "line_count": 3,
+          "lines": [
+            {
+              "text": "Улучшение процесса",
+              "width": 106
+            },
+            {
+              "text": "очистки эссенций (Часть",
+              "width": 131
+            },
+            {
+              "text": "1)",
+              "width": 10
+            }
+          ]
+        }
+      },
+      "uniform": {
+        "wrap_width": 140,
+        "cases": 148,
+        "line_count_distribution": {
+          "1": 140,
+          "2": 8
+        },
+        "maximum_lines": 2,
+        "maximum_line_examples": [
+          {
+            "key": "ESSENTIASMELTERVOID",
+            "text": "Плавильня эссенции из пустотного металла",
+            "unwrapped_width": 160.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Плавильня эссенции из пустотного",
+                "width": 128.0
+              },
+              {
+                "text": "металла",
+                "width": 28.0
+              }
+            ]
+          },
+          {
+            "key": "IMPROVEDSMELTING",
+            "text": "Улучшение процесса очистки эссенций (Часть 1)",
+            "unwrapped_width": 175.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Улучшение процесса очистки эссенций",
+                "width": 140.0
+              },
+              {
+                "text": "(Часть 1)",
+                "width": 31.0
+              }
+            ]
+          },
+          {
+            "key": "IMPROVEDSMELTING2",
+            "text": "Улучшение процесса очистки эссенций (Часть 2)",
+            "unwrapped_width": 176.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Улучшение процесса очистки эссенций",
+                "width": 140.0
+              },
+              {
+                "text": "(Часть 2)",
+                "width": 32.0
+              }
+            ]
+          },
+          {
+            "key": "ESSENTIATRANSPORT",
+            "text": "Продвинутая транспортировка эссенции",
+            "unwrapped_width": 144.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Продвинутая транспортировка",
+                "width": 108.0
+              },
+              {
+                "text": "эссенции",
+                "width": 32.0
+              }
+            ]
+          },
+          {
+            "key": "FOCUSMINE",
+            "text": "Метод действия линзы: Магическая мина",
+            "unwrapped_width": 146.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Метод действия линзы: Магическая",
+                "width": 126.0
+              },
+              {
+                "text": "мина",
+                "width": 16.0
+              }
+            ]
+          }
+        ],
+        "longest_unwrapped": {
+          "key": "IMPROVEDSMELTING2",
+          "text": "Улучшение процесса очистки эссенций (Часть 2)",
+          "unwrapped_width": 176.0,
+          "line_count": 2,
+          "lines": [
+            {
+              "text": "Улучшение процесса очистки эссенций",
+              "width": 140.0
+            },
+            {
+              "text": "(Часть 2)",
+              "width": 32.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "parenthesized_suffix_wrap_fixtures": [
+    {
+      "language": "en_us",
+      "font": "default",
+      "key": "IMPROVEDSMELTING",
+      "source": "Improved Essentia Distillation (part 1)",
+      "suffix": "(part 1)",
+      "baseline_at_140": [
+        {
+          "text": "Improved Essentia",
+          "width": 92
+        },
+        {
+          "text": "Distillation (part 1)",
+          "width": 94
+        }
+      ],
+      "widest_successful_width": 140,
+      "successful_lines": [
+        {
+          "text": "Improved Essentia",
+          "width": 92
+        },
+        {
+          "text": "Distillation (part 1)",
+          "width": 94
+        }
+      ],
+      "candidate_plus_one": null
+    },
+    {
+      "language": "en_us",
+      "font": "uniform",
+      "key": "IMPROVEDSMELTING",
+      "source": "Improved Essentia Distillation (part 1)",
+      "suffix": "(part 1)",
+      "baseline_at_140": [
+        {
+          "text": "Improved Essentia Distillation (part 1)",
+          "width": 140.0
+        }
+      ],
+      "widest_successful_width": 140,
+      "successful_lines": [
+        {
+          "text": "Improved Essentia Distillation (part 1)",
+          "width": 140.0
+        }
+      ],
+      "candidate_plus_one": null
+    },
+    {
+      "language": "en_us",
+      "font": "default",
+      "key": "IMPROVEDSMELTING2",
+      "source": "Improved Essentia Distillation (part 2)",
+      "suffix": "(part 2)",
+      "baseline_at_140": [
+        {
+          "text": "Improved Essentia",
+          "width": 92
+        },
+        {
+          "text": "Distillation (part 2)",
+          "width": 94
+        }
+      ],
+      "widest_successful_width": 140,
+      "successful_lines": [
+        {
+          "text": "Improved Essentia",
+          "width": 92
+        },
+        {
+          "text": "Distillation (part 2)",
+          "width": 94
+        }
+      ],
+      "candidate_plus_one": null
+    },
+    {
+      "language": "en_us",
+      "font": "uniform",
+      "key": "IMPROVEDSMELTING2",
+      "source": "Improved Essentia Distillation (part 2)",
+      "suffix": "(part 2)",
+      "baseline_at_140": [
+        {
+          "text": "Improved Essentia Distillation (part",
+          "width": 131.0
+        },
+        {
+          "text": "2)",
+          "width": 6.0
+        }
+      ],
+      "widest_successful_width": 130,
+      "successful_lines": [
+        {
+          "text": "Improved Essentia Distillation",
+          "width": 110.0
+        },
+        {
+          "text": "(part 2)",
+          "width": 27.0
+        }
+      ],
+      "candidate_plus_one": {
+        "width": 131,
+        "lines": [
+          {
+            "text": "Improved Essentia Distillation (part",
+            "width": 131.0
+          },
+          {
+            "text": "2)",
+            "width": 6.0
+          }
+        ]
+      }
+    },
+    {
+      "language": "ru_ru",
+      "font": "default",
+      "key": "IMPROVEDSMELTING",
+      "source": "Улучшение процесса очистки эссенций (Часть 1)",
+      "suffix": "(Часть 1)",
+      "baseline_at_140": [
+        {
+          "text": "Улучшение процесса",
+          "width": 106
+        },
+        {
+          "text": "очистки эссенций (Часть",
+          "width": 131
+        },
+        {
+          "text": "1)",
+          "width": 10
+        }
+      ],
+      "widest_successful_width": 130,
+      "successful_lines": [
+        {
+          "text": "Улучшение процесса",
+          "width": 106
+        },
+        {
+          "text": "очистки эссенций",
+          "width": 93
+        },
+        {
+          "text": "(Часть 1)",
+          "width": 48
+        }
+      ],
+      "candidate_plus_one": {
+        "width": 131,
+        "lines": [
+          {
+            "text": "Улучшение процесса",
+            "width": 106
+          },
+          {
+            "text": "очистки эссенций (Часть",
+            "width": 131
+          },
+          {
+            "text": "1)",
+            "width": 10
+          }
+        ]
+      }
+    },
+    {
+      "language": "ru_ru",
+      "font": "uniform",
+      "key": "IMPROVEDSMELTING",
+      "source": "Улучшение процесса очистки эссенций (Часть 1)",
+      "suffix": "(Часть 1)",
+      "baseline_at_140": [
+        {
+          "text": "Улучшение процесса очистки эссенций",
+          "width": 140.0
+        },
+        {
+          "text": "(Часть 1)",
+          "width": 31.0
+        }
+      ],
+      "widest_successful_width": 140,
+      "successful_lines": [
+        {
+          "text": "Улучшение процесса очистки эссенций",
+          "width": 140.0
+        },
+        {
+          "text": "(Часть 1)",
+          "width": 31.0
+        }
+      ],
+      "candidate_plus_one": null
+    },
+    {
+      "language": "ru_ru",
+      "font": "default",
+      "key": "IMPROVEDSMELTING2",
+      "source": "Улучшение процесса очистки эссенций (Часть 2)",
+      "suffix": "(Часть 2)",
+      "baseline_at_140": [
+        {
+          "text": "Улучшение процесса",
+          "width": 106
+        },
+        {
+          "text": "очистки эссенций (Часть",
+          "width": 131
+        },
+        {
+          "text": "2)",
+          "width": 10
+        }
+      ],
+      "widest_successful_width": 130,
+      "successful_lines": [
+        {
+          "text": "Улучшение процесса",
+          "width": 106
+        },
+        {
+          "text": "очистки эссенций",
+          "width": 93
+        },
+        {
+          "text": "(Часть 2)",
+          "width": 48
+        }
+      ],
+      "candidate_plus_one": {
+        "width": 131,
+        "lines": [
+          {
+            "text": "Улучшение процесса",
+            "width": 106
+          },
+          {
+            "text": "очистки эссенций (Часть",
+            "width": 131
+          },
+          {
+            "text": "2)",
+            "width": 10
+          }
+        ]
+      }
+    },
+    {
+      "language": "ru_ru",
+      "font": "uniform",
+      "key": "IMPROVEDSMELTING2",
+      "source": "Улучшение процесса очистки эссенций (Часть 2)",
+      "suffix": "(Часть 2)",
+      "baseline_at_140": [
+        {
+          "text": "Улучшение процесса очистки эссенций",
+          "width": 140.0
+        },
+        {
+          "text": "(Часть 2)",
+          "width": 32.0
+        }
+      ],
+      "widest_successful_width": 140,
+      "successful_lines": [
+        {
+          "text": "Улучшение процесса очистки эссенций",
+          "width": 140.0
+        },
+        {
+          "text": "(Часть 2)",
+          "width": 32.0
+        }
+      ],
+      "candidate_plus_one": null
+    }
+  ],
+  "tooltips": {
+    "en_us": {
+      "default": {
+        "120": {
+          "tooltip": {
+            "maximum_lines": 8,
+            "line_count_distribution": {
+              "1": 237,
+              "2": 140,
+              "3": 27,
+              "4": 6,
+              "5": 15,
+              "6": 21,
+              "7": 4,
+              "8": 1
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 8,
+                "maximum_original_line_width": 136
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 116
+              },
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 116
+              },
+              {
+                "id": "thaumcraft:goggles;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 108
+              },
+              {
+                "id": "thaumcraft:void_sword;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 90
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 6,
+              "maximum_original_line_width": 389,
+              "lines": [
+                {
+                  "text": "Voidseer's Pearl",
+                  "width": 83
+                },
+                {
+                  "text": "You peer into the inky",
+                  "width": 111
+                },
+                {
+                  "text": "blackness... you think",
+                  "width": 105
+                },
+                {
+                  "text": "you see something",
+                  "width": 92
+                },
+                {
+                  "text": "staring back...",
+                  "width": 69
+                },
+                {
+                  "text": "Bauble (Charm)",
+                  "width": 75
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_legs;1;0",
+              "line_count": 8,
+              "maximum_original_line_width": 136,
+              "lines": [
+                {
+                  "text": "Void Thaumaturge",
+                  "width": 88
+                },
+                {
+                  "text": "Leggings",
+                  "width": 44
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "When on legs:",
+                  "width": 67
+                },
+                {
+                  "text": " +2 Armor Toughness",
+                  "width": 108
+                },
+                {
+                  "text": " +7 Armor",
+                  "width": 50
+                },
+                {
+                  "text": "Warping 3",
+                  "width": 48
+                },
+                {
+                  "text": "Vis discount: 5%",
+                  "width": 78
+                }
+              ]
+            }
+          },
+          "tooltip_advanced": {
+            "maximum_lines": 10,
+            "line_count_distribution": {
+              "2": 71,
+              "3": 133,
+              "4": 101,
+              "5": 49,
+              "6": 51,
+              "7": 14,
+              "8": 22,
+              "9": 3,
+              "10": 7
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 10,
+                "maximum_original_line_width": 178
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{goggles:1b}",
+                "line_count": 10,
+                "maximum_original_line_width": 161
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:0}",
+                "line_count": 10,
+                "maximum_original_line_width": 161
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:1}",
+                "line_count": 10,
+                "maximum_original_line_width": 161
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:2}",
+                "line_count": 10,
+                "maximum_original_line_width": 161
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 9,
+              "maximum_original_line_width": 389,
+              "lines": [
+                {
+                  "text": "Voidseer's Pearl",
+                  "width": 83
+                },
+                {
+                  "text": "(#4384)",
+                  "width": 38
+                },
+                {
+                  "text": "You peer into the inky",
+                  "width": 111
+                },
+                {
+                  "text": "blackness... you think",
+                  "width": 105
+                },
+                {
+                  "text": "you see something",
+                  "width": 92
+                },
+                {
+                  "text": "staring back...",
+                  "width": 69
+                },
+                {
+                  "text": "thaumcraft:voidseer_ch",
+                  "width": 119
+                },
+                {
+                  "text": "arm",
+                  "width": 18
+                },
+                {
+                  "text": "Bauble (Charm)",
+                  "width": 75
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_legs;1;0",
+              "line_count": 10,
+              "maximum_original_line_width": 178,
+              "lines": [
+                {
+                  "text": "Void Thaumaturge",
+                  "width": 88
+                },
+                {
+                  "text": "Leggings (#4369)",
+                  "width": 86
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "When on legs:",
+                  "width": 67
+                },
+                {
+                  "text": " +2 Armor Toughness",
+                  "width": 108
+                },
+                {
+                  "text": " +7 Armor",
+                  "width": 50
+                },
+                {
+                  "text": "thaumcraft:void_robe_l",
+                  "width": 116
+                },
+                {
+                  "text": "egs",
+                  "width": 18
+                },
+                {
+                  "text": "Warping 3",
+                  "width": 48
+                },
+                {
+                  "text": "Vis discount: 5%",
+                  "width": 78
+                }
+              ]
+            }
+          },
+          "clickthrough": {
+            "text": "Click for recipe",
+            "unwrapped_width": 79,
+            "additional_lines": 1,
+            "lines": [
+              {
+                "text": "Click for recipe",
+                "width": 79
+              }
+            ]
+          },
+          "advanced_plus_clickthrough_bound": {
+            "visual_lines": 11,
+            "text_box_height": 110,
+            "outer_frame_height": 118
+          }
+        },
+        "240": {
+          "tooltip": {
+            "maximum_lines": 7,
+            "line_count_distribution": {
+              "1": 259,
+              "2": 144,
+              "3": 6,
+              "4": 3,
+              "5": 17,
+              "6": 17,
+              "7": 5
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 136
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 116
+              },
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 116
+              },
+              {
+                "id": "thaumcraft:goggles;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 108
+              },
+              {
+                "id": "thaumcraft:void_sword;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 90
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 4,
+              "maximum_original_line_width": 389,
+              "lines": [
+                {
+                  "text": "Voidseer's Pearl",
+                  "width": 83
+                },
+                {
+                  "text": "You peer into the inky blackness... you think",
+                  "width": 220
+                },
+                {
+                  "text": "you see something staring back...",
+                  "width": 165
+                },
+                {
+                  "text": "Bauble (Charm)",
+                  "width": 75
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_legs;1;0",
+              "line_count": 7,
+              "maximum_original_line_width": 136,
+              "lines": [
+                {
+                  "text": "Void Thaumaturge Leggings",
+                  "width": 136
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "When on legs:",
+                  "width": 67
+                },
+                {
+                  "text": " +2 Armor Toughness",
+                  "width": 108
+                },
+                {
+                  "text": " +7 Armor",
+                  "width": 50
+                },
+                {
+                  "text": "Warping 3",
+                  "width": 48
+                },
+                {
+                  "text": "Vis discount: 5%",
+                  "width": 78
+                }
+              ]
+            }
+          },
+          "tooltip_advanced": {
+            "maximum_lines": 8,
+            "line_count_distribution": {
+              "2": 257,
+              "3": 14,
+              "4": 134,
+              "5": 5,
+              "6": 19,
+              "7": 13,
+              "8": 9
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 8,
+                "maximum_original_line_width": 178
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{goggles:1b}",
+                "line_count": 8,
+                "maximum_original_line_width": 161
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:0}",
+                "line_count": 8,
+                "maximum_original_line_width": 161
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:1}",
+                "line_count": 8,
+                "maximum_original_line_width": 161
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:2}",
+                "line_count": 8,
+                "maximum_original_line_width": 161
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 5,
+              "maximum_original_line_width": 389,
+              "lines": [
+                {
+                  "text": "Voidseer's Pearl (#4384)",
+                  "width": 125
+                },
+                {
+                  "text": "You peer into the inky blackness... you think",
+                  "width": 220
+                },
+                {
+                  "text": "you see something staring back...",
+                  "width": 165
+                },
+                {
+                  "text": "thaumcraft:voidseer_charm",
+                  "width": 137
+                },
+                {
+                  "text": "Bauble (Charm)",
+                  "width": 75
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_legs;1;0",
+              "line_count": 8,
+              "maximum_original_line_width": 178,
+              "lines": [
+                {
+                  "text": "Void Thaumaturge Leggings (#4369)",
+                  "width": 178
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "When on legs:",
+                  "width": 67
+                },
+                {
+                  "text": " +2 Armor Toughness",
+                  "width": 108
+                },
+                {
+                  "text": " +7 Armor",
+                  "width": 50
+                },
+                {
+                  "text": "thaumcraft:void_robe_legs",
+                  "width": 134
+                },
+                {
+                  "text": "Warping 3",
+                  "width": 48
+                },
+                {
+                  "text": "Vis discount: 5%",
+                  "width": 78
+                }
+              ]
+            }
+          },
+          "clickthrough": {
+            "text": "Click for recipe",
+            "unwrapped_width": 79,
+            "additional_lines": 1,
+            "lines": [
+              {
+                "text": "Click for recipe",
+                "width": 79
+              }
+            ]
+          },
+          "advanced_plus_clickthrough_bound": {
+            "visual_lines": 9,
+            "text_box_height": 90,
+            "outer_frame_height": 98
+          }
+        }
+      },
+      "uniform": {
+        "120": {
+          "tooltip": {
+            "maximum_lines": 7,
+            "line_count_distribution": {
+              "1": 258,
+              "2": 145,
+              "3": 1,
+              "4": 7,
+              "5": 18,
+              "6": 17,
+              "7": 5
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 97.0
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 82.0
+              },
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 82.0
+              },
+              {
+                "id": "thaumcraft:goggles;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 76.0
+              },
+              {
+                "id": "thaumcraft:void_sword;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 68.0
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 5,
+              "maximum_original_line_width": 293.0,
+              "lines": [
+                {
+                  "text": "Voidseer's Pearl",
+                  "width": 59.0
+                },
+                {
+                  "text": "You peer into the inky",
+                  "width": 84.0
+                },
+                {
+                  "text": "blackness... you think you see",
+                  "width": 111.0
+                },
+                {
+                  "text": "something staring back...",
+                  "width": 90.0
+                },
+                {
+                  "text": "Bauble (Charm)",
+                  "width": 51.0
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_legs;1;0",
+              "line_count": 7,
+              "maximum_original_line_width": 97.0,
+              "lines": [
+                {
+                  "text": "Void Thaumaturge Leggings",
+                  "width": 97.0
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "When on legs:",
+                  "width": 49.0
+                },
+                {
+                  "text": " +2 Armor Toughness",
+                  "width": 76.0
+                },
+                {
+                  "text": " +7 Armor",
+                  "width": 36.0
+                },
+                {
+                  "text": "Warping 3",
+                  "width": 35.0
+                },
+                {
+                  "text": "Vis discount: 5%",
+                  "width": 59.0
+                }
+              ]
+            }
+          },
+          "tooltip_advanced": {
+            "maximum_lines": 9,
+            "line_count_distribution": {
+              "2": 237,
+              "3": 32,
+              "4": 101,
+              "5": 35,
+              "6": 22,
+              "7": 15,
+              "8": 8,
+              "9": 1
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 9,
+                "maximum_original_line_width": 125.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{goggles:1b}",
+                "line_count": 8,
+                "maximum_original_line_width": 113.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:0}",
+                "line_count": 8,
+                "maximum_original_line_width": 113.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:1}",
+                "line_count": 8,
+                "maximum_original_line_width": 113.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:2}",
+                "line_count": 8,
+                "maximum_original_line_width": 113.0
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 6,
+              "maximum_original_line_width": 293.0,
+              "lines": [
+                {
+                  "text": "Voidseer's Pearl (#4384)",
+                  "width": 87.0
+                },
+                {
+                  "text": "You peer into the inky",
+                  "width": 84.0
+                },
+                {
+                  "text": "blackness... you think you see",
+                  "width": 111.0
+                },
+                {
+                  "text": "something staring back...",
+                  "width": 90.0
+                },
+                {
+                  "text": "thaumcraft:voidseer_charm",
+                  "width": 94.0
+                },
+                {
+                  "text": "Bauble (Charm)",
+                  "width": 51.0
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_legs;1;0",
+              "line_count": 9,
+              "maximum_original_line_width": 125.0,
+              "lines": [
+                {
+                  "text": "Void Thaumaturge Leggings",
+                  "width": 97.0
+                },
+                {
+                  "text": "(#4369)",
+                  "width": 24.0
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "When on legs:",
+                  "width": 49.0
+                },
+                {
+                  "text": " +2 Armor Toughness",
+                  "width": 76.0
+                },
+                {
+                  "text": " +7 Armor",
+                  "width": 36.0
+                },
+                {
+                  "text": "thaumcraft:void_robe_legs",
+                  "width": 93.0
+                },
+                {
+                  "text": "Warping 3",
+                  "width": 35.0
+                },
+                {
+                  "text": "Vis discount: 5%",
+                  "width": 59.0
+                }
+              ]
+            }
+          },
+          "clickthrough": {
+            "text": "Click for recipe",
+            "unwrapped_width": 60.0,
+            "additional_lines": 1,
+            "lines": [
+              {
+                "text": "Click for recipe",
+                "width": 60.0
+              }
+            ]
+          },
+          "advanced_plus_clickthrough_bound": {
+            "visual_lines": 10,
+            "text_box_height": 100,
+            "outer_frame_height": 108
+          }
+        },
+        "240": {
+          "tooltip": {
+            "maximum_lines": 7,
+            "line_count_distribution": {
+              "1": 259,
+              "2": 144,
+              "3": 6,
+              "4": 3,
+              "5": 17,
+              "6": 17,
+              "7": 5
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 97.0
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 82.0
+              },
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 82.0
+              },
+              {
+                "id": "thaumcraft:goggles;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 76.0
+              },
+              {
+                "id": "thaumcraft:void_sword;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 68.0
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 4,
+              "maximum_original_line_width": 293.0,
+              "lines": [
+                {
+                  "text": "Voidseer's Pearl",
+                  "width": 59.0
+                },
+                {
+                  "text": "You peer into the inky blackness... you think you see something",
+                  "width": 237.0
+                },
+                {
+                  "text": "staring back...",
+                  "width": 52.0
+                },
+                {
+                  "text": "Bauble (Charm)",
+                  "width": 51.0
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_legs;1;0",
+              "line_count": 7,
+              "maximum_original_line_width": 97.0,
+              "lines": [
+                {
+                  "text": "Void Thaumaturge Leggings",
+                  "width": 97.0
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "When on legs:",
+                  "width": 49.0
+                },
+                {
+                  "text": " +2 Armor Toughness",
+                  "width": 76.0
+                },
+                {
+                  "text": " +7 Armor",
+                  "width": 36.0
+                },
+                {
+                  "text": "Warping 3",
+                  "width": 35.0
+                },
+                {
+                  "text": "Vis discount: 5%",
+                  "width": 59.0
+                }
+              ]
+            }
+          },
+          "tooltip_advanced": {
+            "maximum_lines": 8,
+            "line_count_distribution": {
+              "2": 258,
+              "3": 13,
+              "4": 134,
+              "5": 5,
+              "6": 19,
+              "7": 13,
+              "8": 9
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 8,
+                "maximum_original_line_width": 125.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{goggles:1b}",
+                "line_count": 8,
+                "maximum_original_line_width": 113.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:0}",
+                "line_count": 8,
+                "maximum_original_line_width": 113.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:1}",
+                "line_count": 8,
+                "maximum_original_line_width": 113.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:2}",
+                "line_count": 8,
+                "maximum_original_line_width": 113.0
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 5,
+              "maximum_original_line_width": 293.0,
+              "lines": [
+                {
+                  "text": "Voidseer's Pearl (#4384)",
+                  "width": 87.0
+                },
+                {
+                  "text": "You peer into the inky blackness... you think you see something",
+                  "width": 237.0
+                },
+                {
+                  "text": "staring back...",
+                  "width": 52.0
+                },
+                {
+                  "text": "thaumcraft:voidseer_charm",
+                  "width": 94.0
+                },
+                {
+                  "text": "Bauble (Charm)",
+                  "width": 51.0
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_legs;1;0",
+              "line_count": 8,
+              "maximum_original_line_width": 125.0,
+              "lines": [
+                {
+                  "text": "Void Thaumaturge Leggings (#4369)",
+                  "width": 125.0
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "When on legs:",
+                  "width": 49.0
+                },
+                {
+                  "text": " +2 Armor Toughness",
+                  "width": 76.0
+                },
+                {
+                  "text": " +7 Armor",
+                  "width": 36.0
+                },
+                {
+                  "text": "thaumcraft:void_robe_legs",
+                  "width": 93.0
+                },
+                {
+                  "text": "Warping 3",
+                  "width": 35.0
+                },
+                {
+                  "text": "Vis discount: 5%",
+                  "width": 59.0
+                }
+              ]
+            }
+          },
+          "clickthrough": {
+            "text": "Click for recipe",
+            "unwrapped_width": 60.0,
+            "additional_lines": 1,
+            "lines": [
+              {
+                "text": "Click for recipe",
+                "width": 60.0
+              }
+            ]
+          },
+          "advanced_plus_clickthrough_bound": {
+            "visual_lines": 9,
+            "text_box_height": 90,
+            "outer_frame_height": 98
+          }
+        }
+      }
+    },
+    "ru_ru": {
+      "default": {
+        "120": {
+          "tooltip": {
+            "maximum_lines": 10,
+            "line_count_distribution": {
+              "1": 151,
+              "2": 194,
+              "3": 58,
+              "4": 1,
+              "5": 13,
+              "6": 17,
+              "7": 8,
+              "8": 3,
+              "9": 5,
+              "10": 1
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 10,
+                "maximum_original_line_width": 165
+              },
+              {
+                "id": "thaumcraft:voidseer_charm;1;0",
+                "line_count": 9,
+                "maximum_original_line_width": 610
+              },
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 9,
+                "maximum_original_line_width": 158
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 9,
+                "maximum_original_line_width": 157
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:1}",
+                "line_count": 9,
+                "maximum_original_line_width": 152
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 9,
+              "maximum_original_line_width": 610,
+              "lines": [
+                {
+                  "text": "Пустотная жемчужина",
+                  "width": 112
+                },
+                {
+                  "text": "провидца",
+                  "width": 49
+                },
+                {
+                  "text": "Вы вглядываетесь в",
+                  "width": 106
+                },
+                {
+                  "text": "чернильную темноту...",
+                  "width": 114
+                },
+                {
+                  "text": "И можете поклясться,",
+                  "width": 111
+                },
+                {
+                  "text": "что видели, как нечто",
+                  "width": 115
+                },
+                {
+                  "text": "посмотрело на Вас в",
+                  "width": 108
+                },
+                {
+                  "text": "ответ...",
+                  "width": 36
+                },
+                {
+                  "text": "Бижутерия (Брелок)",
+                  "width": 101
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_helm;1;0",
+              "line_count": 10,
+              "maximum_original_line_width": 165,
+              "lines": [
+                {
+                  "text": "Пустотный капюшон",
+                  "width": 102
+                },
+                {
+                  "text": "тауматурга",
+                  "width": 59
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "Когда надето на",
+                  "width": 87
+                },
+                {
+                  "text": "голову:",
+                  "width": 37
+                },
+                {
+                  "text": " +2 Твёрдость брони",
+                  "width": 109
+                },
+                {
+                  "text": " +4 Броня",
+                  "width": 50
+                },
+                {
+                  "text": "Искажение 3",
+                  "width": 63
+                },
+                {
+                  "text": "Уменьшение затрат",
+                  "width": 100
+                },
+                {
+                  "text": "Вис: 5%",
+                  "width": 36
+                }
+              ]
+            }
+          },
+          "tooltip_advanced": {
+            "maximum_lines": 12,
+            "line_count_distribution": {
+              "2": 32,
+              "3": 126,
+              "4": 89,
+              "5": 103,
+              "6": 54,
+              "7": 2,
+              "8": 22,
+              "9": 13,
+              "10": 1,
+              "11": 7,
+              "12": 2
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 12,
+                "maximum_original_line_width": 207
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:1}",
+                "line_count": 12,
+                "maximum_original_line_width": 194
+              },
+              {
+                "id": "thaumcraft:voidseer_charm;1;0",
+                "line_count": 11,
+                "maximum_original_line_width": 610
+              },
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 11,
+                "maximum_original_line_width": 200
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 11,
+                "maximum_original_line_width": 199
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 11,
+              "maximum_original_line_width": 610,
+              "lines": [
+                {
+                  "text": "Пустотная жемчужина",
+                  "width": 112
+                },
+                {
+                  "text": "провидца (#4384)",
+                  "width": 91
+                },
+                {
+                  "text": "Вы вглядываетесь в",
+                  "width": 106
+                },
+                {
+                  "text": "чернильную темноту...",
+                  "width": 114
+                },
+                {
+                  "text": "И можете поклясться,",
+                  "width": 111
+                },
+                {
+                  "text": "что видели, как нечто",
+                  "width": 115
+                },
+                {
+                  "text": "посмотрело на Вас в",
+                  "width": 108
+                },
+                {
+                  "text": "ответ...",
+                  "width": 36
+                },
+                {
+                  "text": "thaumcraft:voidseer_ch",
+                  "width": 119
+                },
+                {
+                  "text": "arm",
+                  "width": 18
+                },
+                {
+                  "text": "Бижутерия (Брелок)",
+                  "width": 101
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_helm;1;0",
+              "line_count": 12,
+              "maximum_original_line_width": 207,
+              "lines": [
+                {
+                  "text": "Пустотный капюшон",
+                  "width": 102
+                },
+                {
+                  "text": "тауматурга (#4367)",
+                  "width": 101
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "Когда надето на",
+                  "width": 87
+                },
+                {
+                  "text": "голову:",
+                  "width": 37
+                },
+                {
+                  "text": " +2 Твёрдость брони",
+                  "width": 109
+                },
+                {
+                  "text": " +4 Броня",
+                  "width": 50
+                },
+                {
+                  "text": "thaumcraft:void_robe_h",
+                  "width": 119
+                },
+                {
+                  "text": "elm",
+                  "width": 15
+                },
+                {
+                  "text": "Искажение 3",
+                  "width": 63
+                },
+                {
+                  "text": "Уменьшение затрат",
+                  "width": 100
+                },
+                {
+                  "text": "Вис: 5%",
+                  "width": 36
+                }
+              ]
+            }
+          },
+          "clickthrough": {
+            "text": "Нажмите для просмотра рецепта",
+            "unwrapped_width": 169,
+            "additional_lines": 2,
+            "lines": [
+              {
+                "text": "Нажмите для",
+                "width": 65
+              },
+              {
+                "text": "просмотра рецепта",
+                "width": 100
+              }
+            ]
+          },
+          "advanced_plus_clickthrough_bound": {
+            "visual_lines": 14,
+            "text_box_height": 140,
+            "outer_frame_height": 148
+          }
+        },
+        "240": {
+          "tooltip": {
+            "maximum_lines": 7,
+            "line_count_distribution": {
+              "1": 259,
+              "2": 144,
+              "3": 1,
+              "4": 7,
+              "5": 18,
+              "6": 17,
+              "7": 5
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 165
+              },
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 158
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 157
+              },
+              {
+                "id": "thaumcraft:goggles;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 140
+              },
+              {
+                "id": "thaumcraft:void_sword;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 117
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 5,
+              "maximum_original_line_width": 610,
+              "lines": [
+                {
+                  "text": "Пустотная жемчужина провидца",
+                  "width": 165
+                },
+                {
+                  "text": "Вы вглядываетесь в чернильную темноту... И",
+                  "width": 234
+                },
+                {
+                  "text": "можете поклясться, что видели, как нечто",
+                  "width": 220
+                },
+                {
+                  "text": "посмотрело на Вас в ответ...",
+                  "width": 148
+                },
+                {
+                  "text": "Бижутерия (Брелок)",
+                  "width": 101
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_helm;1;0",
+              "line_count": 7,
+              "maximum_original_line_width": 165,
+              "lines": [
+                {
+                  "text": "Пустотный капюшон тауматурга",
+                  "width": 165
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "Когда надето на голову:",
+                  "width": 128
+                },
+                {
+                  "text": " +2 Твёрдость брони",
+                  "width": 109
+                },
+                {
+                  "text": " +4 Броня",
+                  "width": 50
+                },
+                {
+                  "text": "Искажение 3",
+                  "width": 63
+                },
+                {
+                  "text": "Уменьшение затрат Вис: 5%",
+                  "width": 140
+                }
+              ]
+            }
+          },
+          "tooltip_advanced": {
+            "maximum_lines": 8,
+            "line_count_distribution": {
+              "2": 244,
+              "3": 27,
+              "4": 133,
+              "5": 1,
+              "6": 23,
+              "7": 14,
+              "8": 9
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 8,
+                "maximum_original_line_width": 207
+              },
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 8,
+                "maximum_original_line_width": 200
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 8,
+                "maximum_original_line_width": 199
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{goggles:1b}",
+                "line_count": 8,
+                "maximum_original_line_width": 194
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:0}",
+                "line_count": 8,
+                "maximum_original_line_width": 194
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 6,
+              "maximum_original_line_width": 610,
+              "lines": [
+                {
+                  "text": "Пустотная жемчужина провидца (#4384)",
+                  "width": 207
+                },
+                {
+                  "text": "Вы вглядываетесь в чернильную темноту... И",
+                  "width": 234
+                },
+                {
+                  "text": "можете поклясться, что видели, как нечто",
+                  "width": 220
+                },
+                {
+                  "text": "посмотрело на Вас в ответ...",
+                  "width": 148
+                },
+                {
+                  "text": "thaumcraft:voidseer_charm",
+                  "width": 137
+                },
+                {
+                  "text": "Бижутерия (Брелок)",
+                  "width": 101
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_helm;1;0",
+              "line_count": 8,
+              "maximum_original_line_width": 207,
+              "lines": [
+                {
+                  "text": "Пустотный капюшон тауматурга (#4367)",
+                  "width": 207
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "Когда надето на голову:",
+                  "width": 128
+                },
+                {
+                  "text": " +2 Твёрдость брони",
+                  "width": 109
+                },
+                {
+                  "text": " +4 Броня",
+                  "width": 50
+                },
+                {
+                  "text": "thaumcraft:void_robe_helm",
+                  "width": 134
+                },
+                {
+                  "text": "Искажение 3",
+                  "width": 63
+                },
+                {
+                  "text": "Уменьшение затрат Вис: 5%",
+                  "width": 140
+                }
+              ]
+            }
+          },
+          "clickthrough": {
+            "text": "Нажмите для просмотра рецепта",
+            "unwrapped_width": 169,
+            "additional_lines": 1,
+            "lines": [
+              {
+                "text": "Нажмите для просмотра рецепта",
+                "width": 169
+              }
+            ]
+          },
+          "advanced_plus_clickthrough_bound": {
+            "visual_lines": 9,
+            "text_box_height": 90,
+            "outer_frame_height": 98
+          }
+        }
+      },
+      "uniform": {
+        "120": {
+          "tooltip": {
+            "maximum_lines": 7,
+            "line_count_distribution": {
+              "1": 234,
+              "2": 166,
+              "3": 4,
+              "4": 6,
+              "5": 17,
+              "6": 19,
+              "7": 5
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 112.0
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 108.0
+              },
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 108.0
+              },
+              {
+                "id": "thaumcraft:goggles;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 98.0
+              },
+              {
+                "id": "thaumcraft:void_sword;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 83.0
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 6,
+              "maximum_original_line_width": 432.0,
+              "lines": [
+                {
+                  "text": "Пустотная жемчужина провидца",
+                  "width": 112.0
+                },
+                {
+                  "text": "Вы вглядываетесь в чернильную",
+                  "width": 116.0
+                },
+                {
+                  "text": "темноту... И можете поклясться,",
+                  "width": 116.0
+                },
+                {
+                  "text": "что видели, как нечто",
+                  "width": 82.0
+                },
+                {
+                  "text": "посмотрело на Вас в ответ...",
+                  "width": 106.0
+                },
+                {
+                  "text": "Бижутерия (Брелок)",
+                  "width": 68.0
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_helm;1;0",
+              "line_count": 7,
+              "maximum_original_line_width": 112.0,
+              "lines": [
+                {
+                  "text": "Пустотный капюшон тауматурга",
+                  "width": 112.0
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "Когда надето на голову:",
+                  "width": 90.0
+                },
+                {
+                  "text": " +2 Твёрдость брони",
+                  "width": 76.0
+                },
+                {
+                  "text": " +4 Броня",
+                  "width": 36.0
+                },
+                {
+                  "text": "Искажение 3",
+                  "width": 44.0
+                },
+                {
+                  "text": "Уменьшение затрат Вис: 5%",
+                  "width": 98.0
+                }
+              ]
+            }
+          },
+          "tooltip_advanced": {
+            "maximum_lines": 9,
+            "line_count_distribution": {
+              "2": 169,
+              "3": 97,
+              "4": 94,
+              "5": 44,
+              "6": 17,
+              "7": 20,
+              "8": 3,
+              "9": 7
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 9,
+                "maximum_original_line_width": 140.0
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 9,
+                "maximum_original_line_width": 136.0
+              },
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 9,
+                "maximum_original_line_width": 136.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{goggles:1b}",
+                "line_count": 9,
+                "maximum_original_line_width": 132.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:0}",
+                "line_count": 9,
+                "maximum_original_line_width": 132.0
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 8,
+              "maximum_original_line_width": 432.0,
+              "lines": [
+                {
+                  "text": "Пустотная жемчужина провидца",
+                  "width": 112.0
+                },
+                {
+                  "text": "(#4384)",
+                  "width": 24.0
+                },
+                {
+                  "text": "Вы вглядываетесь в чернильную",
+                  "width": 116.0
+                },
+                {
+                  "text": "темноту... И можете поклясться,",
+                  "width": 116.0
+                },
+                {
+                  "text": "что видели, как нечто",
+                  "width": 82.0
+                },
+                {
+                  "text": "посмотрело на Вас в ответ...",
+                  "width": 106.0
+                },
+                {
+                  "text": "thaumcraft:voidseer_charm",
+                  "width": 94.0
+                },
+                {
+                  "text": "Бижутерия (Брелок)",
+                  "width": 68.0
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_helm;1;0",
+              "line_count": 9,
+              "maximum_original_line_width": 140.0,
+              "lines": [
+                {
+                  "text": "Пустотный капюшон тауматурга",
+                  "width": 112.0
+                },
+                {
+                  "text": "(#4367)",
+                  "width": 24.0
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "Когда надето на голову:",
+                  "width": 90.0
+                },
+                {
+                  "text": " +2 Твёрдость брони",
+                  "width": 76.0
+                },
+                {
+                  "text": " +4 Броня",
+                  "width": 36.0
+                },
+                {
+                  "text": "thaumcraft:void_robe_helm",
+                  "width": 93.0
+                },
+                {
+                  "text": "Искажение 3",
+                  "width": 44.0
+                },
+                {
+                  "text": "Уменьшение затрат Вис: 5%",
+                  "width": 98.0
+                }
+              ]
+            }
+          },
+          "clickthrough": {
+            "text": "Нажмите для просмотра рецепта",
+            "unwrapped_width": 116.0,
+            "additional_lines": 1,
+            "lines": [
+              {
+                "text": "Нажмите для просмотра рецепта",
+                "width": 116.0
+              }
+            ]
+          },
+          "advanced_plus_clickthrough_bound": {
+            "visual_lines": 10,
+            "text_box_height": 100,
+            "outer_frame_height": 108
+          }
+        },
+        "240": {
+          "tooltip": {
+            "maximum_lines": 7,
+            "line_count_distribution": {
+              "1": 259,
+              "2": 144,
+              "3": 5,
+              "4": 4,
+              "5": 17,
+              "6": 17,
+              "7": 5
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 112.0
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 108.0
+              },
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 108.0
+              },
+              {
+                "id": "thaumcraft:goggles;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 98.0
+              },
+              {
+                "id": "thaumcraft:void_sword;1;0",
+                "line_count": 7,
+                "maximum_original_line_width": 83.0
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 4,
+              "maximum_original_line_width": 432.0,
+              "lines": [
+                {
+                  "text": "Пустотная жемчужина провидца",
+                  "width": 112.0
+                },
+                {
+                  "text": "Вы вглядываетесь в чернильную темноту... И можете поклясться,",
+                  "width": 236.0
+                },
+                {
+                  "text": "что видели, как нечто посмотрело на Вас в ответ...",
+                  "width": 192.0
+                },
+                {
+                  "text": "Бижутерия (Брелок)",
+                  "width": 68.0
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_helm;1;0",
+              "line_count": 7,
+              "maximum_original_line_width": 112.0,
+              "lines": [
+                {
+                  "text": "Пустотный капюшон тауматурга",
+                  "width": 112.0
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "Когда надето на голову:",
+                  "width": 90.0
+                },
+                {
+                  "text": " +2 Твёрдость брони",
+                  "width": 76.0
+                },
+                {
+                  "text": " +4 Броня",
+                  "width": 36.0
+                },
+                {
+                  "text": "Искажение 3",
+                  "width": 44.0
+                },
+                {
+                  "text": "Уменьшение затрат Вис: 5%",
+                  "width": 98.0
+                }
+              ]
+            }
+          },
+          "tooltip_advanced": {
+            "maximum_lines": 8,
+            "line_count_distribution": {
+              "2": 258,
+              "3": 13,
+              "4": 133,
+              "5": 6,
+              "6": 19,
+              "7": 13,
+              "8": 9
+            },
+            "top_five": [
+              {
+                "id": "thaumcraft:void_robe_helm;1;0",
+                "line_count": 8,
+                "maximum_original_line_width": 140.0
+              },
+              {
+                "id": "thaumcraft:void_robe_chest;1;0",
+                "line_count": 8,
+                "maximum_original_line_width": 136.0
+              },
+              {
+                "id": "thaumcraft:void_robe_legs;1;0",
+                "line_count": 8,
+                "maximum_original_line_width": 136.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{goggles:1b}",
+                "line_count": 8,
+                "maximum_original_line_width": 132.0
+              },
+              {
+                "id": "thaumcraft:fortress_helm;1;0;{mask:0}",
+                "line_count": 8,
+                "maximum_original_line_width": 132.0
+              }
+            ],
+            "longest_source_line_case": {
+              "id": "thaumcraft:voidseer_charm;1;0",
+              "line_count": 5,
+              "maximum_original_line_width": 432.0,
+              "lines": [
+                {
+                  "text": "Пустотная жемчужина провидца (#4384)",
+                  "width": 140.0
+                },
+                {
+                  "text": "Вы вглядываетесь в чернильную темноту... И можете поклясться,",
+                  "width": 236.0
+                },
+                {
+                  "text": "что видели, как нечто посмотрело на Вас в ответ...",
+                  "width": 192.0
+                },
+                {
+                  "text": "thaumcraft:voidseer_charm",
+                  "width": 94.0
+                },
+                {
+                  "text": "Бижутерия (Брелок)",
+                  "width": 68.0
+                }
+              ]
+            },
+            "worst_wrapped_example": {
+              "id": "thaumcraft:void_robe_helm;1;0",
+              "line_count": 8,
+              "maximum_original_line_width": 140.0,
+              "lines": [
+                {
+                  "text": "Пустотный капюшон тауматурга (#4367)",
+                  "width": 140.0
+                },
+                {
+                  "text": "",
+                  "width": 0
+                },
+                {
+                  "text": "Когда надето на голову:",
+                  "width": 90.0
+                },
+                {
+                  "text": " +2 Твёрдость брони",
+                  "width": 76.0
+                },
+                {
+                  "text": " +4 Броня",
+                  "width": 36.0
+                },
+                {
+                  "text": "thaumcraft:void_robe_helm",
+                  "width": 93.0
+                },
+                {
+                  "text": "Искажение 3",
+                  "width": 44.0
+                },
+                {
+                  "text": "Уменьшение затрат Вис: 5%",
+                  "width": 98.0
+                }
+              ]
+            }
+          },
+          "clickthrough": {
+            "text": "Нажмите для просмотра рецепта",
+            "unwrapped_width": 116.0,
+            "additional_lines": 1,
+            "lines": [
+              {
+                "text": "Нажмите для просмотра рецепта",
+                "width": 116.0
+              }
+            ]
+          },
+          "advanced_plus_clickthrough_bound": {
+            "visual_lines": 9,
+            "text_box_height": 90,
+            "outer_frame_height": 98
+          }
+        }
+      }
+    }
+  },
+  "tooltip_worst_bound": {
+    "language": "ru_ru",
+    "font": "default",
+    "wrap_width": 120,
+    "advanced_lines": 12,
+    "clickthrough_lines": 2,
+    "total_visual_lines": 14,
+    "text_box_height": 140,
+    "outer_frame_height": 148,
+    "reference_screen_heights": [
+      {
+        "physical_resolution": [
+          1920,
+          1080
+        ],
+        "gui_scale": 4,
+        "logical_height": 270
+      },
+      {
+        "physical_resolution": [
+          1280,
+          720
+        ],
+        "gui_scale": 3,
+        "logical_height": 240
+      }
+    ]
+  },
+  "recipe_type_labels": {
+    "en_us": [
+      {
+        "key": "recipe.type.workbench",
+        "text": "Workbench",
+        "widths": {
+          "default": 53,
+          "uniform": 36.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Workbench",
+              "width": 53
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Workbench",
+              "width": 36.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.smelting",
+        "text": "Smelting",
+        "widths": {
+          "default": 39,
+          "uniform": 29.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Smelting",
+              "width": 39
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Smelting",
+              "width": 29.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.workbenchshapeless",
+        "text": "Workbench (Shapeless)",
+        "widths": {
+          "default": 116,
+          "uniform": 79.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Workbench (Shapeless)",
+              "width": 116
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Workbench (Shapeless)",
+              "width": 79.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.arcane",
+        "text": "Arcane Workbench",
+        "widths": {
+          "default": 93,
+          "uniform": 64.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Arcane Workbench",
+              "width": 93
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Arcane Workbench",
+              "width": 64.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.arcane.shapeless",
+        "text": "Arcane Workbench (Shapeless)",
+        "widths": {
+          "default": 156,
+          "uniform": 107.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Arcane Workbench (Shapeless)",
+              "width": 156
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Arcane Workbench (Shapeless)",
+              "width": 107.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.crucible",
+        "text": "Crucible",
+        "widths": {
+          "default": 41,
+          "uniform": 30.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Crucible",
+              "width": 41
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Crucible",
+              "width": 30.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.infusion",
+        "text": "Arcane Infusion",
+        "widths": {
+          "default": 81,
+          "uniform": 57.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Arcane Infusion",
+              "width": 81
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Arcane Infusion",
+              "width": 57.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.construct",
+        "text": "Mystical Construct",
+        "widths": {
+          "default": 93,
+          "uniform": 67.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Mystical Construct",
+              "width": 93
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Mystical Construct",
+              "width": 67.0
+            }
+          ]
+        }
+      }
+    ],
+    "ru_ru": [
+      {
+        "key": "recipe.type.workbench",
+        "text": "Верстак",
+        "widths": {
+          "default": 41,
+          "uniform": 28.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Верстак",
+              "width": 41
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Верстак",
+              "width": 28.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.smelting",
+        "text": "Выплавка",
+        "widths": {
+          "default": 48,
+          "uniform": 32.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Выплавка",
+              "width": 48
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Выплавка",
+              "width": 32.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.workbenchshapeless",
+        "text": "Верстак (Бесформенный)",
+        "widths": {
+          "default": 126,
+          "uniform": 84.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Верстак (Бесформенный)",
+              "width": 126
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Верстак (Бесформенный)",
+              "width": 84.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.arcane",
+        "text": "Мистический верстак",
+        "widths": {
+          "default": 110,
+          "uniform": 76.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Мистический верстак",
+              "width": 110
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Мистический верстак",
+              "width": 76.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.arcane.shapeless",
+        "text": "Мистический верстак (Бесформенный)",
+        "widths": {
+          "default": 195,
+          "uniform": 132.0
+        },
+        "exceeds_nominal_186": {
+          "default": true,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Мистический верстак",
+              "width": 110
+            },
+            {
+              "text": "(Бесформенный)",
+              "width": 81
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Мистический верстак (Бесформенный)",
+              "width": 132.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.crucible",
+        "text": "Тигель",
+        "widths": {
+          "default": 35,
+          "uniform": 24.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Тигель",
+              "width": 35
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Тигель",
+              "width": 24.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.infusion",
+        "text": "Мистическое наполнение",
+        "widths": {
+          "default": 129,
+          "uniform": 88.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Мистическое наполнение",
+              "width": 129
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Мистическое наполнение",
+              "width": 88.0
+            }
+          ]
+        }
+      },
+      {
+        "key": "recipe.type.construct",
+        "text": "Мистическая конструкция",
+        "widths": {
+          "default": 133,
+          "uniform": 92.0
+        },
+        "exceeds_nominal_186": {
+          "default": false,
+          "uniform": false
+        },
+        "wrap_186": {
+          "default": [
+            {
+              "text": "Мистическая конструкция",
+              "width": 133
+            }
+          ],
+          "uniform": [
+            {
+              "text": "Мистическая конструкция",
+              "width": 92.0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "recipe_label_nominal_width": 186,
+  "instability": {
+    "separator_note": "The current source concatenates tc.inst + one literal space + tc.inst.N. tc.inst already ends with a space in both EN/RU; measured output therefore contains TWO spaces. Section-sign color codes have zero advance.",
+    "by_language": {
+      "en_us": [
+        {
+          "level": 0,
+          "formatted_source": "Instability:  §1Negligible§0",
+          "plain_text": "Instability:  Negligible",
+          "widths": {
+            "default": 105,
+            "uniform": 84.0
+          }
+        },
+        {
+          "level": 1,
+          "formatted_source": "Instability:  §9Minor§0",
+          "plain_text": "Instability:  Minor",
+          "widths": {
+            "default": 85,
+            "uniform": 67.0
+          }
+        },
+        {
+          "level": 2,
+          "formatted_source": "Instability:  §5Moderate§0",
+          "plain_text": "Instability:  Moderate",
+          "widths": {
+            "default": 105,
+            "uniform": 79.0
+          }
+        },
+        {
+          "level": 3,
+          "formatted_source": "Instability:  §eHigh§0",
+          "plain_text": "Instability:  High",
+          "widths": {
+            "default": 79,
+            "uniform": 63.0
+          }
+        },
+        {
+          "level": 4,
+          "formatted_source": "Instability:  §6Very High§0",
+          "plain_text": "Instability:  Very High",
+          "widths": {
+            "default": 107,
+            "uniform": 83.0
+          }
+        },
+        {
+          "level": 5,
+          "formatted_source": "Instability:  §4Dangerous§0",
+          "plain_text": "Instability:  Dangerous",
+          "widths": {
+            "default": 113,
+            "uniform": 84.0
+          }
+        }
+      ],
+      "ru_ru": [
+        {
+          "level": 0,
+          "formatted_source": "Нестабильность:  §1Незначительная§0",
+          "plain_text": "Нестабильность:  Незначительная",
+          "widths": {
+            "default": 178,
+            "uniform": 122.0
+          }
+        },
+        {
+          "level": 1,
+          "formatted_source": "Нестабильность:  §9Слабая§0",
+          "plain_text": "Нестабильность:  Слабая",
+          "widths": {
+            "default": 130,
+            "uniform": 90.0
+          }
+        },
+        {
+          "level": 2,
+          "formatted_source": "Нестабильность:  §5Средняя§0",
+          "plain_text": "Нестабильность:  Средняя",
+          "widths": {
+            "default": 137,
+            "uniform": 94.0
+          }
+        },
+        {
+          "level": 3,
+          "formatted_source": "Нестабильность:  §eВысокая§0",
+          "plain_text": "Нестабильность:  Высокая",
+          "widths": {
+            "default": 136,
+            "uniform": 94.0
+          }
+        },
+        {
+          "level": 4,
+          "formatted_source": "Нестабильность:  §6Очень высокая§0",
+          "plain_text": "Нестабильность:  Очень высокая",
+          "widths": {
+            "default": 170,
+            "uniform": 118.0
+          }
+        },
+        {
+          "level": 5,
+          "formatted_source": "Нестабильность:  §4Опасная§0",
+          "plain_text": "Нестабильность:  Опасная",
+          "widths": {
+            "default": 136,
+            "uniform": 94.0
+          }
+        }
+      ]
+    }
+  },
+  "toast_titles_124": {
+    "en_us": {
+      "default": {
+        "wrap_width": 124,
+        "cases": 148,
+        "line_count_distribution": {
+          "1": 134,
+          "2": 14
+        },
+        "maximum_lines": 2,
+        "maximum_line_examples": [
+          {
+            "key": "ESSENTIASMELTERTHAUMIUM",
+            "text": "Thaumium Essentia Smelter",
+            "unwrapped_width": 131,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Thaumium Essentia",
+                "width": 90
+              },
+              {
+                "text": "Smelter",
+                "width": 37
+              }
+            ]
+          },
+          {
+            "key": "ESSENTIASMELTERVOID",
+            "text": "Void Metal Essentia Smelter",
+            "unwrapped_width": 136,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Void Metal Essentia",
+                "width": 95
+              },
+              {
+                "text": "Smelter",
+                "width": 37
+              }
+            ]
+          },
+          {
+            "key": "IMPROVEDSMELTING",
+            "text": "Improved Essentia Distillation (part 1)",
+            "unwrapped_width": 190,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Improved Essentia",
+                "width": 92
+              },
+              {
+                "text": "Distillation (part 1)",
+                "width": 94
+              }
+            ]
+          },
+          {
+            "key": "IMPROVEDSMELTING2",
+            "text": "Improved Essentia Distillation (part 2)",
+            "unwrapped_width": 190,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Improved Essentia",
+                "width": 92
+              },
+              {
+                "text": "Distillation (part 2)",
+                "width": 94
+              }
+            ]
+          },
+          {
+            "key": "ESSENTIATRANSPORT",
+            "text": "Advanced Essentia Transport",
+            "unwrapped_width": 150,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Advanced Essentia",
+                "width": 94
+              },
+              {
+                "text": "Transport",
+                "width": 52
+              }
+            ]
+          }
+        ],
+        "longest_unwrapped": {
+          "key": "IMPROVEDSMELTING",
+          "text": "Improved Essentia Distillation (part 1)",
+          "unwrapped_width": 190,
+          "line_count": 2,
+          "lines": [
+            {
+              "text": "Improved Essentia",
+              "width": 92
+            },
+            {
+              "text": "Distillation (part 1)",
+              "width": 94
+            }
+          ]
+        },
+        "header": {
+          "key": "research.complete",
+          "text": "Research Completed!",
+          "unwrapped_width": 103,
+          "line_count": 1,
+          "lines": [
+            {
+              "text": "Research Completed!",
+              "width": 103
+            }
+          ]
+        }
+      },
+      "uniform": {
+        "wrap_width": 124,
+        "cases": 148,
+        "line_count_distribution": {
+          "1": 145,
+          "2": 3
+        },
+        "maximum_lines": 2,
+        "maximum_line_examples": [
+          {
+            "key": "IMPROVEDSMELTING",
+            "text": "Improved Essentia Distillation (part 1)",
+            "unwrapped_width": 140.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Improved Essentia Distillation",
+                "width": 110.0
+              },
+              {
+                "text": "(part 1)",
+                "width": 26.0
+              }
+            ]
+          },
+          {
+            "key": "IMPROVEDSMELTING2",
+            "text": "Improved Essentia Distillation (part 2)",
+            "unwrapped_width": 141.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Improved Essentia Distillation",
+                "width": 110.0
+              },
+              {
+                "text": "(part 2)",
+                "width": 27.0
+              }
+            ]
+          },
+          {
+            "key": "GOLEMBREAKER",
+            "text": "Golem Manipulation: Block Breaking",
+            "unwrapped_width": 127.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Golem Manipulation: Block",
+                "width": 92.0
+              },
+              {
+                "text": "Breaking",
+                "width": 31.0
+              }
+            ]
+          }
+        ],
+        "longest_unwrapped": {
+          "key": "IMPROVEDSMELTING2",
+          "text": "Improved Essentia Distillation (part 2)",
+          "unwrapped_width": 141.0,
+          "line_count": 2,
+          "lines": [
+            {
+              "text": "Improved Essentia Distillation",
+              "width": 110.0
+            },
+            {
+              "text": "(part 2)",
+              "width": 27.0
+            }
+          ]
+        },
+        "header": {
+          "key": "research.complete",
+          "text": "Research Completed!",
+          "unwrapped_width": 71.0,
+          "line_count": 1,
+          "lines": [
+            {
+              "text": "Research Completed!",
+              "width": 71.0
+            }
+          ]
+        }
+      }
+    },
+    "ru_ru": {
+      "default": {
+        "wrap_width": 124,
+        "cases": 148,
+        "line_count_distribution": {
+          "1": 83,
+          "2": 60,
+          "3": 5
+        },
+        "maximum_lines": 3,
+        "maximum_line_examples": [
+          {
+            "key": "IMPROVEDSMELTING",
+            "text": "Улучшение процесса очистки эссенций (Часть 1)",
+            "unwrapped_width": 255,
+            "line_count": 3,
+            "lines": [
+              {
+                "text": "Улучшение процесса",
+                "width": 106
+              },
+              {
+                "text": "очистки эссенций",
+                "width": 93
+              },
+              {
+                "text": "(Часть 1)",
+                "width": 48
+              }
+            ]
+          },
+          {
+            "key": "IMPROVEDSMELTING2",
+            "text": "Улучшение процесса очистки эссенций (Часть 2)",
+            "unwrapped_width": 255,
+            "line_count": 3,
+            "lines": [
+              {
+                "text": "Улучшение процесса",
+                "width": 106
+              },
+              {
+                "text": "очистки эссенций",
+                "width": 93
+              },
+              {
+                "text": "(Часть 2)",
+                "width": 48
+              }
+            ]
+          },
+          {
+            "key": "ESSENTIATRANSPORT",
+            "text": "Продвинутая транспортировка эссенции",
+            "unwrapped_width": 212,
+            "line_count": 3,
+            "lines": [
+              {
+                "text": "Продвинутая",
+                "width": 67
+              },
+              {
+                "text": "транспортировка",
+                "width": 89
+              },
+              {
+                "text": "эссенции",
+                "width": 48
+              }
+            ]
+          },
+          {
+            "key": "FOCUSSPELLBAT",
+            "text": "Опция Линзы: Магическая Летучая Мышь",
+            "unwrapped_width": 204,
+            "line_count": 3,
+            "lines": [
+              {
+                "text": "Опция Линзы:",
+                "width": 67
+              },
+              {
+                "text": "Магическая Летучая",
+                "width": 104
+              },
+              {
+                "text": "Мышь",
+                "width": 25
+              }
+            ]
+          },
+          {
+            "key": "ADVANCEDTURRET",
+            "text": "Продвинутый автоматический арбалет",
+            "unwrapped_width": 201,
+            "line_count": 3,
+            "lines": [
+              {
+                "text": "Продвинутый",
+                "width": 68
+              },
+              {
+                "text": "автоматический",
+                "width": 83
+              },
+              {
+                "text": "арбалет",
+                "width": 42
+              }
+            ]
+          }
+        ],
+        "longest_unwrapped": {
+          "key": "IMPROVEDSMELTING",
+          "text": "Улучшение процесса очистки эссенций (Часть 1)",
+          "unwrapped_width": 255,
+          "line_count": 3,
+          "lines": [
+            {
+              "text": "Улучшение процесса",
+              "width": 106
+            },
+            {
+              "text": "очистки эссенций",
+              "width": 93
+            },
+            {
+              "text": "(Часть 1)",
+              "width": 48
+            }
+          ]
+        },
+        "header": {
+          "key": "research.complete",
+          "text": "Исследование завершено!",
+          "unwrapped_width": 133,
+          "line_count": 2,
+          "lines": [
+            {
+              "text": "Исследование",
+              "width": 73
+            },
+            {
+              "text": "завершено!",
+              "width": 56
+            }
+          ]
+        }
+      },
+      "uniform": {
+        "wrap_width": 124,
+        "cases": 148,
+        "line_count_distribution": {
+          "1": 136,
+          "2": 12
+        },
+        "maximum_lines": 2,
+        "maximum_line_examples": [
+          {
+            "key": "ESSENTIASMELTERVOID",
+            "text": "Плавильня эссенции из пустотного металла",
+            "unwrapped_width": 160.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Плавильня эссенции из",
+                "width": 84.0
+              },
+              {
+                "text": "пустотного металла",
+                "width": 72.0
+              }
+            ]
+          },
+          {
+            "key": "IMPROVEDSMELTING",
+            "text": "Улучшение процесса очистки эссенций (Часть 1)",
+            "unwrapped_width": 175.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Улучшение процесса очистки",
+                "width": 104.0
+              },
+              {
+                "text": "эссенций (Часть 1)",
+                "width": 67.0
+              }
+            ]
+          },
+          {
+            "key": "IMPROVEDSMELTING2",
+            "text": "Улучшение процесса очистки эссенций (Часть 2)",
+            "unwrapped_width": 176.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Улучшение процесса очистки",
+                "width": 104.0
+              },
+              {
+                "text": "эссенций (Часть 2)",
+                "width": 68.0
+              }
+            ]
+          },
+          {
+            "key": "ESSENTIATRANSPORT",
+            "text": "Продвинутая транспортировка эссенции",
+            "unwrapped_width": 144.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Продвинутая транспортировка",
+                "width": 108.0
+              },
+              {
+                "text": "эссенции",
+                "width": 32.0
+              }
+            ]
+          },
+          {
+            "key": "FOCUSMINE",
+            "text": "Метод действия линзы: Магическая мина",
+            "unwrapped_width": 146.0,
+            "line_count": 2,
+            "lines": [
+              {
+                "text": "Метод действия линзы:",
+                "width": 82.0
+              },
+              {
+                "text": "Магическая мина",
+                "width": 60.0
+              }
+            ]
+          }
+        ],
+        "longest_unwrapped": {
+          "key": "IMPROVEDSMELTING2",
+          "text": "Улучшение процесса очистки эссенций (Часть 2)",
+          "unwrapped_width": 176.0,
+          "line_count": 2,
+          "lines": [
+            {
+              "text": "Улучшение процесса очистки",
+              "width": 104.0
+            },
+            {
+              "text": "эссенций (Часть 2)",
+              "width": 68.0
+            }
+          ]
+        },
+        "header": {
+          "key": "research.complete",
+          "text": "Исследование завершено!",
+          "unwrapped_width": 89.0,
+          "line_count": 1,
+          "lines": [
+            {
+              "text": "Исследование завершено!",
+              "width": 89.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "aspect_labels": {
+    "default_gui_1": {
+      "font": "default",
+      "text_scale": 1,
+      "compound_pairs": 31,
+      "minimum_main_to_first_component_gap": 3.0,
+      "old_overlapping_pairs": [
+        {
+          "aspect": "Alkimia",
+          "components": [
+            "Praecantatio",
+            "Aqua"
+          ],
+          "widths": [
+            64,
+            24
+          ],
+          "scaled_sum_of_half_widths": 44.0,
+          "old_center_spacing": 42,
+          "old_advance_box_overlap": 2.0,
+          "current_component_spacing": 48,
+          "current_advance_box_gap": 4.0,
+          "main_to_first_component_gap": 9.0,
+          "pair_shift_left": 0
+        },
+        {
+          "aspect": "Vitium",
+          "components": [
+            "Perditio",
+            "Praecantatio"
+          ],
+          "widths": [
+            38,
+            64
+          ],
+          "scaled_sum_of_half_widths": 51.0,
+          "old_center_spacing": 42,
+          "old_advance_box_overlap": 9.0,
+          "current_component_spacing": 55,
+          "current_advance_box_gap": 4.0,
+          "main_to_first_component_gap": 24.0,
+          "pair_shift_left": 0
+        },
+        {
+          "aspect": "Fabrico",
+          "components": [
+            "Permutatio",
+            "Instrumentum"
+          ],
+          "widths": [
+            52,
+            66
+          ],
+          "scaled_sum_of_half_widths": 59.0,
+          "old_center_spacing": 42,
+          "old_advance_box_overlap": 17.0,
+          "current_component_spacing": 63,
+          "current_advance_box_gap": 4.0,
+          "main_to_first_component_gap": 4,
+          "pair_shift_left": 7
+        },
+        {
+          "aspect": "Machina",
+          "components": [
+            "Motus",
+            "Instrumentum"
+          ],
+          "widths": [
+            28,
+            66
+          ],
+          "scaled_sum_of_half_widths": 47.0,
+          "old_center_spacing": 42,
+          "old_advance_box_overlap": 5.0,
+          "current_component_spacing": 51,
+          "current_advance_box_gap": 4.0,
+          "main_to_first_component_gap": 23.0,
+          "pair_shift_left": 0
+        }
+      ],
+      "tightest_pair": {
+        "aspect": "Alienis",
+        "components": [
+          "Vacuos",
+          "Tenebrae"
+        ],
+        "widths": [
+          36,
+          48
+        ],
+        "scaled_sum_of_half_widths": 42.0,
+        "old_center_spacing": 42,
+        "old_advance_box_overlap": 0,
+        "current_component_spacing": 42,
+        "current_advance_box_gap": 0.0,
+        "main_to_first_component_gap": 22.5
+      },
+      "fabrico": {
+        "aspect": "Fabrico",
+        "components": [
+          "Permutatio",
+          "Instrumentum"
+        ],
+        "widths": [
+          52,
+          66
+        ],
+        "scaled_sum_of_half_widths": 59.0,
+        "old_center_spacing": 42,
+        "old_advance_box_overlap": 17.0,
+        "current_component_spacing": 63,
+        "current_advance_box_gap": 4.0,
+        "main_to_first_component_gap": 4,
+        "pair_shift_left": 7
+      },
+      "minimum_main_to_first_component_case": {
+        "aspect": "Instrumentum",
+        "first_component": "Metallum",
+        "native_default_widths": [
+          66,
+          40
+        ],
+        "center_distance": 56,
+        "advance_gap": 3,
+        "note": "Both widths are even, so Java integer division does not change this existing gap. The final Fabrico pair shift has a separate 4px main-to-first gap."
+      }
+    },
+    "default_gui_2": {
+      "font": "default",
+      "text_scale": 0.5,
+      "compound_pairs": 31,
+      "minimum_main_to_first_component_gap": 29.5,
+      "old_overlapping_pairs": [],
+      "tightest_pair": {
+        "aspect": "Fabrico",
+        "components": [
+          "Permutatio",
+          "Instrumentum"
+        ],
+        "widths": [
+          52,
+          66
+        ],
+        "scaled_sum_of_half_widths": 29.5,
+        "old_center_spacing": 42,
+        "old_advance_box_overlap": 0,
+        "current_component_spacing": 42,
+        "current_advance_box_gap": 12.5,
+        "main_to_first_component_gap": 33.5
+      },
+      "fabrico": {
+        "aspect": "Fabrico",
+        "components": [
+          "Permutatio",
+          "Instrumentum"
+        ],
+        "widths": [
+          52,
+          66
+        ],
+        "scaled_sum_of_half_widths": 29.5,
+        "old_center_spacing": 42,
+        "old_advance_box_overlap": 0,
+        "current_component_spacing": 42,
+        "current_advance_box_gap": 12.5,
+        "main_to_first_component_gap": 33.5
+      }
+    },
+    "default_gui_3": {
+      "font": "default",
+      "text_scale": 0.6666666666666666,
+      "compound_pairs": 31,
+      "minimum_main_to_first_component_gap": 20.66666666666667,
+      "old_overlapping_pairs": [],
+      "tightest_pair": {
+        "aspect": "Fabrico",
+        "components": [
+          "Permutatio",
+          "Instrumentum"
+        ],
+        "widths": [
+          52,
+          66
+        ],
+        "scaled_sum_of_half_widths": 39.33333333333333,
+        "old_center_spacing": 42,
+        "old_advance_box_overlap": 0,
+        "current_component_spacing": 42,
+        "current_advance_box_gap": 2.6666666666666714,
+        "main_to_first_component_gap": 26.0
+      },
+      "fabrico": {
+        "aspect": "Fabrico",
+        "components": [
+          "Permutatio",
+          "Instrumentum"
+        ],
+        "widths": [
+          52,
+          66
+        ],
+        "scaled_sum_of_half_widths": 39.33333333333333,
+        "old_center_spacing": 42,
+        "old_advance_box_overlap": 0,
+        "current_component_spacing": 42,
+        "current_advance_box_gap": 2.6666666666666714,
+        "main_to_first_component_gap": 26.0
+      }
+    },
+    "default_gui_4": {
+      "font": "default",
+      "text_scale": 0.5,
+      "compound_pairs": 31,
+      "minimum_main_to_first_component_gap": 29.5,
+      "old_overlapping_pairs": [],
+      "tightest_pair": {
+        "aspect": "Fabrico",
+        "components": [
+          "Permutatio",
+          "Instrumentum"
+        ],
+        "widths": [
+          52,
+          66
+        ],
+        "scaled_sum_of_half_widths": 29.5,
+        "old_center_spacing": 42,
+        "old_advance_box_overlap": 0,
+        "current_component_spacing": 42,
+        "current_advance_box_gap": 12.5,
+        "main_to_first_component_gap": 33.5
+      },
+      "fabrico": {
+        "aspect": "Fabrico",
+        "components": [
+          "Permutatio",
+          "Instrumentum"
+        ],
+        "widths": [
+          52,
+          66
+        ],
+        "scaled_sum_of_half_widths": 29.5,
+        "old_center_spacing": 42,
+        "old_advance_box_overlap": 0,
+        "current_component_spacing": 42,
+        "current_advance_box_gap": 12.5,
+        "main_to_first_component_gap": 33.5
+      }
+    },
+    "uniform_all_gui_scales": {
+      "font": "uniform",
+      "text_scale": 1,
+      "compound_pairs": 31,
+      "minimum_main_to_first_component_gap": 19.0,
+      "old_overlapping_pairs": [],
+      "tightest_pair": {
+        "aspect": "Fabrico",
+        "components": [
+          "Permutatio",
+          "Instrumentum"
+        ],
+        "widths": [
+          37.0,
+          45.0
+        ],
+        "scaled_sum_of_half_widths": 41.0,
+        "old_center_spacing": 42,
+        "old_advance_box_overlap": 0,
+        "current_component_spacing": 42,
+        "current_advance_box_gap": 1.0,
+        "main_to_first_component_gap": 24.0
+      },
+      "fabrico": {
+        "aspect": "Fabrico",
+        "components": [
+          "Permutatio",
+          "Instrumentum"
+        ],
+        "widths": [
+          37.0,
+          45.0
+        ],
+        "scaled_sum_of_half_widths": 41.0,
+        "old_center_spacing": 42,
+        "old_advance_box_overlap": 0,
+        "current_component_spacing": 42,
+        "current_advance_box_gap": 1.0,
+        "main_to_first_component_gap": 24.0
+      }
+    }
+  },
+  "fabrico_gui_1_geometry": {
+    "source_component_names": [
+      "Permutatio",
+      "Instrumentum"
+    ],
+    "native_default_widths": [
+      52,
+      66
+    ],
+    "main_name": "Fabrico",
+    "main_width": 38,
+    "text_scale": 1,
+    "old_center_spacing": 42,
+    "old_advance_box_overlap": 17,
+    "new_center_spacing": 63,
+    "new_advance_box_gap": 4,
+    "pre_final_shift_right_edge": 100,
+    "opaque_parchment_right_bound_relative_to_screen_center_x": 93,
+    "pair_shift_left": 7,
+    "main_center_relative_to_screen_center_x": -52,
+    "first_center_relative_to_screen_center_x": -3,
+    "second_center_relative_to_screen_center_x": 60,
+    "main_to_first_component_gap": 4,
+    "second_label_right_advance_edge_relative_to_screen_center_x": 93,
+    "paper_quad_right_bound_relative_to_screen_center_x": 127,
+    "note": "The final shift clamps against the real opaque parchment edge +93, not the transparent texture quad +127. Font.width already includes the last glyph advance. Both component icons/labels and the plus sign move together; the main aspect remains fixed.",
+    "default_gui_2_3_4_and_uniform_pair_shift": 0,
+    "runtime_status": "final capture pending; diagnostic retained separately"
+  },
+  "native_pixel_grid": {
+    "scale_formula": "Default decorative scale = ceil(guiScale * 0.5) / guiScale; forced Unicode decorative scale = 1.",
+    "samples": [
+      {
+        "gui_scale": 1,
+        "default_decorative_scale": 1.0,
+        "default_body_source_pixel_physical_width": 1,
+        "default_decorative_source_pixel_physical_width": 1,
+        "uniform_decorative_scale": 1,
+        "uniform_source_pixel_physical_width": 0.5
+      },
+      {
+        "gui_scale": 2,
+        "default_decorative_scale": 0.5,
+        "default_body_source_pixel_physical_width": 2,
+        "default_decorative_source_pixel_physical_width": 1,
+        "uniform_decorative_scale": 1,
+        "uniform_source_pixel_physical_width": 1.0
+      },
+      {
+        "gui_scale": 3,
+        "default_decorative_scale": 0.6666666666666666,
+        "default_body_source_pixel_physical_width": 3,
+        "default_decorative_source_pixel_physical_width": 2,
+        "uniform_decorative_scale": 1,
+        "uniform_source_pixel_physical_width": 1.5
+      },
+      {
+        "gui_scale": 4,
+        "default_decorative_scale": 0.5,
+        "default_body_source_pixel_physical_width": 4,
+        "default_decorative_source_pixel_physical_width": 2,
+        "uniform_decorative_scale": 1,
+        "uniform_source_pixel_physical_width": 2.0
+      }
+    ],
+    "note": "Native unihex has 2x oversampling, so GUI scale 3 retains native 1.5px source-pixel mapping. No extra half-size transform is applied to forced-Unicode text."
+  },
+  "runtime_visual_checks": [
+    {
+      "image": "typography-runtime/modern-final-ru2-long-title.png",
+      "sha256": "ea4ed4a5a08f317471947c7063e60e64eba3c2830f8f8f0043822ec604698dc3",
+      "metadata": "typography-runtime/modern-final-ru2-long-title.metadata.json",
+      "actual_gui_scale": 2,
+      "force_unicode": false,
+      "visual_result": "pass",
+      "observed": "IMPROVEDSMELTING native title keeps the whole (Часть 1) suffix; title, divider and body are separated."
+    },
+    {
+      "image": "typography-runtime/modern-final-ru4-long-title.png",
+      "sha256": "199ce4f43faf74a8effd129713654efa6638651685aa0eca24ab6da77b46cf10",
+      "metadata": "typography-runtime/modern-final-ru4-long-title.metadata.json",
+      "actual_gui_scale": 4,
+      "force_unicode": false,
+      "visual_result": "pass",
+      "observed": "Same long title remains inside the paper at actual GUI scale 4; native bitmap glyphs use a four-physical-pixel grid."
+    },
+    {
+      "image": "typography-runtime/modern-final-ru3-long-title-before-reload.png",
+      "sha256": "0f81c87906f63e7087c2b6f05f90dad9a99f1f302320346202df66d84503b4b7",
+      "metadata": "typography-runtime/modern-final-ru3-long-title-before-reload.metadata.json",
+      "actual_gui_scale": 3,
+      "force_unicode": false,
+      "visual_result": "pass",
+      "observed": "Native title and body fit at GUI scale 3. This is a baseline screenshot, not proof that the earlier F3T keypress triggered reload."
+    },
+    {
+      "image": "typography-runtime/modern-final-ru4-unicode-advanced-tooltip.png",
+      "sha256": "17a4daecd702e8c341fc29469616362fb82d4217b47ab0e74d635029d534c987",
+      "metadata": "typography-runtime/modern-final-ru4-unicode-advanced-tooltip.metadata.json",
+      "actual_gui_scale": 4,
+      "force_unicode": true,
+      "visual_result": "pass",
+      "observed": "Advanced fortress-helmet tooltip, including attributes, NBT and registry identifier, is readable and fits inside the viewport with forced Unicode."
+    },
+    {
+      "image": "typography-runtime/modern-final-gui3-page-open-native-reload.png",
+      "sha256": "1b7b7cb12898ce2131b63f2cdc4a48b4fbb5d21671788d3a2a670f6b9a2590e7",
+      "metadata": "typography-runtime/modern-final-gui3-page-open-native-reload.metadata.json",
+      "actual_gui_scale": 3,
+      "force_unicode": false,
+      "visual_result": "pass",
+      "observed": "Same-language native resource reload while ResearchPageScreen remained open; layout epoch is 2 and the recipe tooltip is readable without clipping."
+    },
+    {
+      "image": "typography-runtime/diagnostic-before-pair-shift-gui1-fabrico.png",
+      "sha256": "1820b00716cc9b88aae752266afd6510b6fc4d1d95df04218c2a948bc21e1a7a",
+      "actual_gui_scale": 1,
+      "force_unicode": false,
+      "visual_result": "diagnosed_and_fixed_in_source",
+      "observed": "Before the final 7px pair shift: labels no longer overlap one another, but Instrumentum extends beyond the opaque parchment. This image is not final verification.",
+      "final_runtime_verification": "pending build coordinator final capture"
+    }
+  ],
+  "production_adaptations": [
+    {
+      "files": [
+        "src/main/java/thaumcraft/port/client/BookTooltip.java"
+      ],
+      "change": "Native 1x style-aware tooltip text, removal of legacy @@ scale markers, original TC6 frame colors, width wrapping and viewport clamping. Actual measured catalogs fit; no arbitrary scrolling or font replacement introduced."
+    },
+    {
+      "files": [
+        "src/main/java/thaumcraft/port/client/BookTypography.java",
+        "src/main/java/thaumcraft/port/client/ResearchPageScreen.java"
+      ],
+      "change": "Native title wrapping preserves a short trailing parenthesized suffix where possible without adding lines; reserve native title height. Decorative scale rounds to whole physical pixels and forced Unicode remains 1x. GUI1 component labels spread only for actual overlap, then shift only for opaque paper overflow."
+    },
+    {
+      "files": [
+        "src/main/java/thaumcraft/port/client/ResearchPageScreen.java",
+        "src/main/java/thaumcraft/port/client/BookDocument.java"
+      ],
+      "change": "Native styled font-width pagination is cached by text/layout/resource/language/uniform state; screen init forcibly invalidates the cache after resource reload."
+    },
+    {
+      "files": [
+        "src/main/java/thaumcraft/port/client/RecipeBook.java"
+      ],
+      "change": "Recipe header uses native wrapping at 186 GUI px, keeping the last line at its original y and placing extra lines upward so the output slot is not obscured. Only the default RU shapeless arcane label exceeds 186px in the bundled catalog."
+    },
+    {
+      "files": [
+        "src/main/java/thaumcraft/port/client/ResearchToast.java"
+      ],
+      "change": "Long research title and completion header remain native-size with wrapped lines and a vertically extended original HUD frame instead of fractional text shrinking."
+    }
+  ],
+  "focused_test_sources": [
+    "src/test/java/thaumcraft/port/client/BookTypographyTest.java",
+    "src/test/java/thaumcraft/port/client/BookTooltipTest.java"
+  ]
+}

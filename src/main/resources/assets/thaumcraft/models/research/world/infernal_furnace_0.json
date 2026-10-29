@@ -1,0 +1,5 @@
+{
+  "textures": {},
+  "parent": "thaumcraft:research/legacy/block/infernal_furnace",
+  "render_type": "minecraft:cutout_mipped"
+}
