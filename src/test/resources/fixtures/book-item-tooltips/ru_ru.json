@@ -1,0 +1,5805 @@
+{
+  "language": "ru_ru",
+  "resolved": 451,
+  "unresolved": [],
+  "answers": [
+    {
+      "id": "thaumcraft:activator_rail;1;0",
+      "resolved_item": "thaumcraft:activator_rail",
+      "tooltip": [
+        "Мистические активирующие рельсы§r"
+      ],
+      "tooltip_advanced": [
+        "Мистические активирующие рельсы§r (#4268)",
+        "§8thaumcraft:activator_rail"
+      ]
+    },
+    {
+      "id": "thaumcraft:alembic;1;0",
+      "resolved_item": "thaumcraft:alembic",
+      "tooltip": [
+        "Перегонный куб§r"
+      ],
+      "tooltip_advanced": [
+        "Перегонный куб§r (#4240)",
+        "§8thaumcraft:alembic"
+      ]
+    },
+    {
+      "id": "thaumcraft:alumentum;1;0",
+      "resolved_item": "thaumcraft:alumentum",
+      "tooltip": [
+        "Алюментум§r"
+      ],
+      "tooltip_advanced": [
+        "Алюментум§r (#4319/0)",
+        "§8thaumcraft:alumentum"
+      ]
+    },
+    {
+      "id": "thaumcraft:amber;1;0",
+      "resolved_item": "thaumcraft:amber",
+      "tooltip": [
+        "Янтарь§r"
+      ],
+      "tooltip_advanced": [
+        "Янтарь§r (#4295)",
+        "§8thaumcraft:amber"
+      ]
+    },
+    {
+      "id": "thaumcraft:amber_block;1;0",
+      "resolved_item": "thaumcraft:amber_block",
+      "tooltip": [
+        "Янтарный блок§r"
+      ],
+      "tooltip_advanced": [
+        "Янтарный блок§r (#4137)",
+        "§8thaumcraft:amber_block"
+      ]
+    },
+    {
+      "id": "thaumcraft:amber_brick;1;0",
+      "resolved_item": "thaumcraft:amber_brick",
+      "tooltip": [
+        "Янтарные кирпичи§r"
+      ],
+      "tooltip_advanced": [
+        "Янтарные кирпичи§r (#4138)",
+        "§8thaumcraft:amber_brick"
+      ]
+    },
+    {
+      "id": "thaumcraft:amulet_vis;1;1",
+      "resolved_item": "thaumcraft:amulet_vis",
+      "tooltip": [
+        "Вис-амулет§r",
+        "§bПерезаряжает броню, аксессуары и предметы из панели быстрого доступа",
+        "§6Бижутерия (Амулет)"
+      ],
+      "tooltip_advanced": [
+        "Вис-амулет§r (#4381/1)",
+        "§bПерезаряжает броню, аксессуары и предметы из панели быстрого доступа",
+        "§8thaumcraft:amulet_vis",
+        "§6Бижутерия (Амулет)"
+      ]
+    },
+    {
+      "id": "thaumcraft:arcane_brick;1;0",
+      "resolved_item": "thaumcraft:stone_arcane_brick",
+      "tooltip": [
+        "Кирпичи из мистического камня§r"
+      ],
+      "tooltip_advanced": [
+        "Кирпичи из мистического камня§r (#4107)",
+        "§8thaumcraft:stone_arcane_brick"
+      ]
+    },
+    {
+      "id": "thaumcraft:arcane_ear;1;0",
+      "resolved_item": "thaumcraft:arcane_ear",
+      "tooltip": [
+        "Мистическое ухо§r"
+      ],
+      "tooltip_advanced": [
+        "Мистическое ухо§r (#4227)",
+        "§8thaumcraft:arcane_ear"
+      ]
+    },
+    {
+      "id": "thaumcraft:arcane_ear_toggle;1;0",
+      "resolved_item": "thaumcraft:arcane_ear_toggle",
+      "tooltip": [
+        "Мистическое ухо (Переключённое)§r"
+      ],
+      "tooltip_advanced": [
+        "Мистическое ухо (Переключённое)§r (#4228)",
+        "§8thaumcraft:arcane_ear_toggle"
+      ]
+    },
+    {
+      "id": "thaumcraft:arcane_stone;1;0",
+      "resolved_item": "thaumcraft:stone_arcane",
+      "tooltip": [
+        "Мистический камень§r"
+      ],
+      "tooltip_advanced": [
+        "Мистический камень§r (#4106)",
+        "§8thaumcraft:stone_arcane"
+      ]
+    },
+    {
+      "id": "thaumcraft:arcane_workbench;1;0",
+      "resolved_item": "thaumcraft:arcane_workbench",
+      "tooltip": [
+        "Мистический верстак§r"
+      ],
+      "tooltip_advanced": [
+        "Мистический верстак§r (#4222)",
+        "§8thaumcraft:arcane_workbench"
+      ]
+    },
+    {
+      "id": "thaumcraft:arcane_workbench_charger;1;0",
+      "resolved_item": "thaumcraft:arcane_workbench_charger",
+      "tooltip": [
+        "Заряжатель мистического верстака§r"
+      ],
+      "tooltip_advanced": [
+        "Заряжатель мистического верстака§r (#4223)",
+        "§8thaumcraft:arcane_workbench_charger"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_black;1;0",
+      "resolved_item": "thaumcraft:banner_black",
+      "tooltip": [
+        "Чёрное знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Чёрное знамя§r (#4202)",
+        "§8thaumcraft:banner_black"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_blue;1;0",
+      "resolved_item": "thaumcraft:banner_blue",
+      "tooltip": [
+        "Синее знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Синее знамя§r (#4198)",
+        "§8thaumcraft:banner_blue"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_brown;1;0",
+      "resolved_item": "thaumcraft:banner_brown",
+      "tooltip": [
+        "Коричневое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Коричневое знамя§r (#4199)",
+        "§8thaumcraft:banner_brown"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_cyan;1;0",
+      "resolved_item": "thaumcraft:banner_cyan",
+      "tooltip": [
+        "Бирюзовое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Бирюзовое знамя§r (#4196)",
+        "§8thaumcraft:banner_cyan"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_gray;1;0",
+      "resolved_item": "thaumcraft:banner_gray",
+      "tooltip": [
+        "Серое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Серое знамя§r (#4194)",
+        "§8thaumcraft:banner_gray"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_green;1;0",
+      "resolved_item": "thaumcraft:banner_green",
+      "tooltip": [
+        "Зелёное знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Зелёное знамя§r (#4200)",
+        "§8thaumcraft:banner_green"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_light_blue;1;0",
+      "resolved_item": "thaumcraft:banner_lightblue",
+      "tooltip": [
+        "Голубое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Голубое знамя§r (#4190)",
+        "§8thaumcraft:banner_lightblue"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_lime;1;0",
+      "resolved_item": "thaumcraft:banner_lime",
+      "tooltip": [
+        "Лаймовое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Лаймовое знамя§r (#4192)",
+        "§8thaumcraft:banner_lime"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_magenta;1;0",
+      "resolved_item": "thaumcraft:banner_magenta",
+      "tooltip": [
+        "Пурпурное знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Пурпурное знамя§r (#4189)",
+        "§8thaumcraft:banner_magenta"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_orange;1;0",
+      "resolved_item": "thaumcraft:banner_orange",
+      "tooltip": [
+        "Оранжевое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Оранжевое знамя§r (#4188)",
+        "§8thaumcraft:banner_orange"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_pink;1;0",
+      "resolved_item": "thaumcraft:banner_pink",
+      "tooltip": [
+        "Розовое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Розовое знамя§r (#4193)",
+        "§8thaumcraft:banner_pink"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_purple;1;0",
+      "resolved_item": "thaumcraft:banner_purple",
+      "tooltip": [
+        "Фиолетовое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Фиолетовое знамя§r (#4197)",
+        "§8thaumcraft:banner_purple"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_red;1;0",
+      "resolved_item": "thaumcraft:banner_red",
+      "tooltip": [
+        "Красное знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Красное знамя§r (#4201)",
+        "§8thaumcraft:banner_red"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_silver;1;0",
+      "resolved_item": "thaumcraft:banner_silver",
+      "tooltip": [
+        "Светло-серое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Светло-серое знамя§r (#4195)",
+        "§8thaumcraft:banner_silver"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_white;1;0",
+      "resolved_item": "thaumcraft:banner_white",
+      "tooltip": [
+        "Белое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Белое знамя§r (#4187)",
+        "§8thaumcraft:banner_white"
+      ]
+    },
+    {
+      "id": "thaumcraft:banner_yellow;1;0",
+      "resolved_item": "thaumcraft:banner_yellow",
+      "tooltip": [
+        "Жёлтое знамя§r"
+      ],
+      "tooltip_advanced": [
+        "Жёлтое знамя§r (#4191)",
+        "§8thaumcraft:banner_yellow"
+      ]
+    },
+    {
+      "id": "thaumcraft:bath_salts;1;0",
+      "resolved_item": "thaumcraft:bath_salts",
+      "tooltip": [
+        "Очищающие соли для ванн§r"
+      ],
+      "tooltip_advanced": [
+        "Очищающие соли для ванн§r (#4323)",
+        "§8thaumcraft:bath_salts"
+      ]
+    },
+    {
+      "id": "thaumcraft:baubles;1;0",
+      "resolved_item": "thaumcraft:baubles",
+      "tooltip": [
+        "Обычный амулет§r",
+        "§6Бижутерия (Амулет)"
+      ],
+      "tooltip_advanced": [
+        "Обычный амулет§r (#4380/0)",
+        "§8thaumcraft:baubles",
+        "§6Бижутерия (Амулет)"
+      ]
+    },
+    {
+      "id": "thaumcraft:baubles;1;1",
+      "resolved_item": "thaumcraft:baubles",
+      "tooltip": [
+        "Обычное кольцо§r",
+        "§6Бижутерия (Кольцо)"
+      ],
+      "tooltip_advanced": [
+        "Обычное кольцо§r (#4380/1)",
+        "§8thaumcraft:baubles",
+        "§6Бижутерия (Кольцо)"
+      ]
+    },
+    {
+      "id": "thaumcraft:baubles;1;2",
+      "resolved_item": "thaumcraft:baubles",
+      "tooltip": [
+        "Обычный пояс§r",
+        "§6Бижутерия (Пояс)"
+      ],
+      "tooltip_advanced": [
+        "Обычный пояс§r (#4380/2)",
+        "§8thaumcraft:baubles",
+        "§6Бижутерия (Пояс)"
+      ]
+    },
+    {
+      "id": "thaumcraft:baubles;1;4",
+      "resolved_item": "thaumcraft:baubles",
+      "tooltip": [
+        "Шикарный амулет§r",
+        "§6Бижутерия (Амулет)"
+      ],
+      "tooltip_advanced": [
+        "Шикарный амулет§r (#4380/4)",
+        "§8thaumcraft:baubles",
+        "§6Бижутерия (Амулет)"
+      ]
+    },
+    {
+      "id": "thaumcraft:baubles;1;5",
+      "resolved_item": "thaumcraft:baubles",
+      "tooltip": [
+        "Шикарное кольцо§r",
+        "§6Бижутерия (Кольцо)"
+      ],
+      "tooltip_advanced": [
+        "Шикарное кольцо§r (#4380/5)",
+        "§8thaumcraft:baubles",
+        "§6Бижутерия (Кольцо)"
+      ]
+    },
+    {
+      "id": "thaumcraft:baubles;1;6",
+      "resolved_item": "thaumcraft:baubles",
+      "tooltip": [
+        "Шикарный пояс§r",
+        "§6Бижутерия (Пояс)"
+      ],
+      "tooltip_advanced": [
+        "Шикарный пояс§r (#4380/6)",
+        "§8thaumcraft:baubles",
+        "§6Бижутерия (Пояс)"
+      ]
+    },
+    {
+      "id": "thaumcraft:bellows;1;0",
+      "resolved_item": "thaumcraft:bellows",
+      "tooltip": [
+        "Мистические меха§r"
+      ],
+      "tooltip_advanced": [
+        "Мистические меха§r (#4234)",
+        "§8thaumcraft:bellows"
+      ]
+    },
+    {
+      "id": "thaumcraft:bottle_taint;1;0",
+      "resolved_item": "thaumcraft:bottle_taint",
+      "tooltip": [
+        "Бутылка с заражением§r"
+      ],
+      "tooltip_advanced": [
+        "Бутылка с заражением§r (#4321)",
+        "§8thaumcraft:bottle_taint"
+      ]
+    },
+    {
+      "id": "thaumcraft:brain;1;0",
+      "resolved_item": "thaumcraft:brain",
+      "tooltip": [
+        "Мозг зомби§r"
+      ],
+      "tooltip_advanced": [
+        "Мозг зомби§r (#4316)",
+        "§8thaumcraft:brain"
+      ]
+    },
+    {
+      "id": "thaumcraft:brain_box;1;0",
+      "resolved_item": "thaumcraft:brain_box",
+      "tooltip": [
+        "Мнемоническая матрица§r"
+      ],
+      "tooltip_advanced": [
+        "Мнемоническая матрица§r (#4258)",
+        "§8thaumcraft:brain_box"
+      ]
+    },
+    {
+      "id": "thaumcraft:bucket_death;1;0",
+      "resolved_item": "forge:bucketfilled",
+      "tooltip": [
+        "Жидкая смерть Bucket§r"
+      ],
+      "tooltip_advanced": [
+        "Жидкая смерть Bucket§r (#4287)",
+        "§8forge:bucketfilled",
+        "§8NBT: 2 тег(ов)"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_black;1;0",
+      "resolved_item": "thaumcraft:candle_black",
+      "tooltip": [
+        "Чёрная сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Чёрная сальная свеча§r (#4186)",
+        "§8thaumcraft:candle_black"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_blue;1;0",
+      "resolved_item": "thaumcraft:candle_blue",
+      "tooltip": [
+        "Синяя сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Синяя сальная свеча§r (#4182)",
+        "§8thaumcraft:candle_blue"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_brown;1;0",
+      "resolved_item": "thaumcraft:candle_brown",
+      "tooltip": [
+        "Коричневая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Коричневая сальная свеча§r (#4183)",
+        "§8thaumcraft:candle_brown"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_cyan;1;0",
+      "resolved_item": "thaumcraft:candle_cyan",
+      "tooltip": [
+        "Бирюзовая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Бирюзовая сальная свеча§r (#4180)",
+        "§8thaumcraft:candle_cyan"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_gray;1;0",
+      "resolved_item": "thaumcraft:candle_gray",
+      "tooltip": [
+        "Серая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Серая сальная свеча§r (#4178)",
+        "§8thaumcraft:candle_gray"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_green;1;0",
+      "resolved_item": "thaumcraft:candle_green",
+      "tooltip": [
+        "Зелёная сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Зелёная сальная свеча§r (#4184)",
+        "§8thaumcraft:candle_green"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_light_blue;1;0",
+      "resolved_item": "thaumcraft:candle_lightblue",
+      "tooltip": [
+        "Голубая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Голубая сальная свеча§r (#4174)",
+        "§8thaumcraft:candle_lightblue"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_lime;1;0",
+      "resolved_item": "thaumcraft:candle_lime",
+      "tooltip": [
+        "Лаймовая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Лаймовая сальная свеча§r (#4176)",
+        "§8thaumcraft:candle_lime"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_magenta;1;0",
+      "resolved_item": "thaumcraft:candle_magenta",
+      "tooltip": [
+        "Пурпурная сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Пурпурная сальная свеча§r (#4173)",
+        "§8thaumcraft:candle_magenta"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_orange;1;0",
+      "resolved_item": "thaumcraft:candle_orange",
+      "tooltip": [
+        "Оранжевая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Оранжевая сальная свеча§r (#4172)",
+        "§8thaumcraft:candle_orange"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_pink;1;0",
+      "resolved_item": "thaumcraft:candle_pink",
+      "tooltip": [
+        "Розовая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Розовая сальная свеча§r (#4177)",
+        "§8thaumcraft:candle_pink"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_purple;1;0",
+      "resolved_item": "thaumcraft:candle_purple",
+      "tooltip": [
+        "Фиолетовая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Фиолетовая сальная свеча§r (#4181)",
+        "§8thaumcraft:candle_purple"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_red;1;0",
+      "resolved_item": "thaumcraft:candle_red",
+      "tooltip": [
+        "Красная сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Красная сальная свеча§r (#4185)",
+        "§8thaumcraft:candle_red"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_silver;1;0",
+      "resolved_item": "thaumcraft:candle_silver",
+      "tooltip": [
+        "Светло-серая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Светло-серая сальная свеча§r (#4179)",
+        "§8thaumcraft:candle_silver"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_white;1;0",
+      "resolved_item": "thaumcraft:candle_white",
+      "tooltip": [
+        "Белая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Белая сальная свеча§r (#4171)",
+        "§8thaumcraft:candle_white"
+      ]
+    },
+    {
+      "id": "thaumcraft:candle_yellow;1;0",
+      "resolved_item": "thaumcraft:candle_yellow",
+      "tooltip": [
+        "Жёлтая сальная свеча§r"
+      ],
+      "tooltip_advanced": [
+        "Жёлтая сальная свеча§r (#4175)",
+        "§8thaumcraft:candle_yellow"
+      ]
+    },
+    {
+      "id": "thaumcraft:caster_basic;1;0",
+      "resolved_item": "thaumcraft:caster_basic",
+      "tooltip": [
+        "Перчатка Заклинателя§r"
+      ],
+      "tooltip_advanced": [
+        "Перчатка Заклинателя§r (#4389)",
+        "§8thaumcraft:caster_basic"
+      ]
+    },
+    {
+      "id": "thaumcraft:causality_collapser;1;0",
+      "resolved_item": "thaumcraft:causality_collapser",
+      "tooltip": [
+        "Разрушитель причинных связей§r"
+      ],
+      "tooltip_advanced": [
+        "Разрушитель причинных связей§r (#4325)",
+        "§8thaumcraft:causality_collapser"
+      ]
+    },
+    {
+      "id": "thaumcraft:centrifuge;1;0",
+      "resolved_item": "thaumcraft:centrifuge",
+      "tooltip": [
+        "Центрифуга эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Центрифуга эссенции§r (#4233)",
+        "§8thaumcraft:centrifuge"
+      ]
+    },
+    {
+      "id": "thaumcraft:charm_undying;1;0",
+      "resolved_item": "thaumcraft:charm_undying",
+      "tooltip": [
+        "Амулет бессмертия§r",
+        "§6Бижутерия (Брелок)"
+      ],
+      "tooltip_advanced": [
+        "Амулет бессмертия§r (#4386)",
+        "§8thaumcraft:charm_undying",
+        "§6Бижутерия (Брелок)"
+      ]
+    },
+    {
+      "id": "thaumcraft:chunk;1;0",
+      "resolved_item": "thaumcraft:chunk",
+      "tooltip": [
+        "Кусочек говядины§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек говядины§r (#4314/0)",
+        "§8thaumcraft:chunk"
+      ]
+    },
+    {
+      "id": "thaumcraft:chunk;1;1",
+      "resolved_item": "thaumcraft:chunk",
+      "tooltip": [
+        "Кусочек курицы§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек курицы§r (#4314/1)",
+        "§8thaumcraft:chunk"
+      ]
+    },
+    {
+      "id": "thaumcraft:chunk;1;2",
+      "resolved_item": "thaumcraft:chunk",
+      "tooltip": [
+        "Кусочек свинины§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек свинины§r (#4314/2)",
+        "§8thaumcraft:chunk"
+      ]
+    },
+    {
+      "id": "thaumcraft:chunk;1;3",
+      "resolved_item": "thaumcraft:chunk",
+      "tooltip": [
+        "Кусочек рыбы§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек рыбы§r (#4314/3)",
+        "§8thaumcraft:chunk"
+      ]
+    },
+    {
+      "id": "thaumcraft:chunk;1;4",
+      "resolved_item": "thaumcraft:chunk",
+      "tooltip": [
+        "Кусочек кролика§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек кролика§r (#4314/4)",
+        "§8thaumcraft:chunk"
+      ]
+    },
+    {
+      "id": "thaumcraft:chunk;1;5",
+      "resolved_item": "thaumcraft:chunk",
+      "tooltip": [
+        "Кусочек баранины§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек баранины§r (#4314/5)",
+        "§8thaumcraft:chunk"
+      ]
+    },
+    {
+      "id": "thaumcraft:cinderpearl;1;0",
+      "resolved_item": "thaumcraft:cinderpearl",
+      "tooltip": [
+        "Тлеющая жемчужина§r"
+      ],
+      "tooltip_advanced": [
+        "Тлеющая жемчужина§r (#4129)",
+        "§8thaumcraft:cinderpearl"
+      ]
+    },
+    {
+      "id": "thaumcraft:cloth_boots;1;0",
+      "resolved_item": "thaumcraft:cloth_boots",
+      "tooltip": [
+        "Ботинки тауматурга§r",
+        "",
+        "Когда обуто:",
+        "§9 +1 Твёрдость брони",
+        "§9 +1 Броня",
+        "§5Уменьшение затрат Вис: 2%"
+      ],
+      "tooltip_advanced": [
+        "Ботинки тауматурга§r (#4358)",
+        "",
+        "Когда обуто:",
+        "§9 +1 Твёрдость брони",
+        "§9 +1 Броня",
+        "§8thaumcraft:cloth_boots",
+        "§5Уменьшение затрат Вис: 2%"
+      ]
+    },
+    {
+      "id": "thaumcraft:cloth_chest;1;0",
+      "resolved_item": "thaumcraft:cloth_chest",
+      "tooltip": [
+        "Мантия тауматурга§r",
+        "",
+        "Когда надето:",
+        "§9 +1 Твёрдость брони",
+        "§9 +3 Броня",
+        "§5Уменьшение затрат Вис: 3%"
+      ],
+      "tooltip_advanced": [
+        "Мантия тауматурга§r (#4356)",
+        "",
+        "Когда надето:",
+        "§9 +1 Твёрдость брони",
+        "§9 +3 Броня",
+        "§8thaumcraft:cloth_chest",
+        "§5Уменьшение затрат Вис: 3%"
+      ]
+    },
+    {
+      "id": "thaumcraft:cloth_legs;1;0",
+      "resolved_item": "thaumcraft:cloth_legs",
+      "tooltip": [
+        "Поножи тауматурга§r",
+        "",
+        "Когда надето на ноги:",
+        "§9 +1 Твёрдость брони",
+        "§9 +2 Броня",
+        "§5Уменьшение затрат Вис: 3%"
+      ],
+      "tooltip_advanced": [
+        "Поножи тауматурга§r (#4357)",
+        "",
+        "Когда надето на ноги:",
+        "§9 +1 Твёрдость брони",
+        "§9 +2 Броня",
+        "§8thaumcraft:cloth_legs",
+        "§5Уменьшение затрат Вис: 3%"
+      ]
+    },
+    {
+      "id": "thaumcraft:cloud_ring;1;0",
+      "resolved_item": "thaumcraft:cloud_ring",
+      "tooltip": [
+        "Кольцо шагающего по облакам§r",
+        "§6Бижутерия (Кольцо)"
+      ],
+      "tooltip_advanced": [
+        "Кольцо шагающего по облакам§r (#4385)",
+        "§8thaumcraft:cloud_ring",
+        "§6Бижутерия (Кольцо)"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster;1;0",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер железа§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер железа§r (#4299/0)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster;1;1",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер золота§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер золота§r (#4299/1)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster;1;2",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер меди§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер меди§r (#4299/2)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster;1;3",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер олова§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер олова§r (#4299/3)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster;1;4",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер серебра§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер серебра§r (#4299/4)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster;1;5",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер свинца§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер свинца§r (#4299/5)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster;1;6",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер киновари§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер киновари§r (#4299/6)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster_cinnabar;1;0",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер киновари§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер киновари§r (#4299/6)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster_copper;1;0",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер меди§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер меди§r (#4299/2)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster_gold;1;0",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер золота§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер золота§r (#4299/1)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:cluster_iron;1;0",
+      "resolved_item": "thaumcraft:cluster",
+      "tooltip": [
+        "Самородный кластер железа§r"
+      ],
+      "tooltip_advanced": [
+        "Самородный кластер железа§r (#4299/0)",
+        "§8thaumcraft:cluster"
+      ]
+    },
+    {
+      "id": "thaumcraft:condenser;1;0",
+      "resolved_item": "thaumcraft:condenser",
+      "tooltip": [
+        "Конденсатор Выбросов§r"
+      ],
+      "tooltip_advanced": [
+        "Конденсатор Выбросов§r (#4271)",
+        "§8thaumcraft:condenser"
+      ]
+    },
+    {
+      "id": "thaumcraft:condenser_lattice_dirty;1;0",
+      "resolved_item": "thaumcraft:condenser_lattice_dirty",
+      "tooltip": [
+        "Засоренная решётка конденсатора Выбросов§r"
+      ],
+      "tooltip_advanced": [
+        "Засоренная решётка конденсатора Выбросов§r (#4273)",
+        "§8thaumcraft:condenser_lattice_dirty"
+      ]
+    },
+    {
+      "id": "thaumcraft:crucible;1;0",
+      "resolved_item": "thaumcraft:crucible",
+      "tooltip": [
+        "Тигель§r"
+      ],
+      "tooltip_advanced": [
+        "Тигель§r (#4226)",
+        "§8thaumcraft:crucible"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_aer;1;0",
+      "resolved_item": "thaumcraft:crystal_aer",
+      "tooltip": [
+        "Кристалл воздуха§r"
+      ],
+      "tooltip_advanced": [
+        "Кристалл воздуха§r (#4099)",
+        "§8thaumcraft:crystal_aer"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_aqua;1;0",
+      "resolved_item": "thaumcraft:crystal_aqua",
+      "tooltip": [
+        "Кристалл воды§r"
+      ],
+      "tooltip_advanced": [
+        "Кристалл воды§r (#4101)",
+        "§8thaumcraft:crystal_aqua"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл %s§r"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл %s§r (#4313)",
+        "§8thaumcraft:crystal_essence"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aer'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Aer§r",
+        "Aer x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Aer§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Aer x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aqua'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Aqua§r",
+        "Aqua x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Aqua§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Aqua x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'gelum'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Gelum§r",
+        "Gelum x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Gelum§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Gelum x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ignis'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Ignis§r",
+        "Ignis x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Ignis§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Ignis x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'lux'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Lux§r",
+        "Lux x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Lux§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Lux x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'metallum'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Metallum§r",
+        "Metallum x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Metallum§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Metallum x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'mortuus'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Mortuus§r",
+        "Mortuus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Mortuus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Mortuus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'motus'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Motus§r",
+        "Motus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Motus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Motus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'ordo'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Ordo§r",
+        "Ordo x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Ordo§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Ordo x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'perditio'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Perditio§r",
+        "Perditio x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Perditio§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Perditio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'permutatio'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Permutatio§r",
+        "Permutatio x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Permutatio§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Permutatio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'potentia'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Potentia§r",
+        "Potentia x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Potentia§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Potentia x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'terra'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Terra§r",
+        "Terra x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Terra§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Terra x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'vacuos'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Vacuos§r",
+        "Vacuos x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Vacuos§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Vacuos x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'victus'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Victus§r",
+        "Victus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Victus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Victus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'vitreus'}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Vitreus§r",
+        "Vitreus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Vitreus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Vitreus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"aer\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Aer§r",
+        "Aer x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Aer§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Aer x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"alienis\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Alienis§r",
+        "Alienis x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Alienis§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Alienis x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"alkimia\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Alkimia§r",
+        "Alkimia x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Alkimia§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Alkimia x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"aqua\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Aqua§r",
+        "Aqua x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Aqua§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Aqua x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"auram\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Auram§r",
+        "Auram x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Auram§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Auram x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"aversio\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Aversio§r",
+        "Aversio x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Aversio§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Aversio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"bestia\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Bestia§r",
+        "Bestia x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Bestia§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Bestia x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"cognitio\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Cognitio§r",
+        "Cognitio x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Cognitio§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Cognitio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"desiderium\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Desiderium§r",
+        "Desiderium x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Desiderium§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Desiderium x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"exanimis\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Exanimis§r",
+        "Exanimis x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Exanimis§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Exanimis x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"fabrico\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Fabrico§r",
+        "Fabrico x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Fabrico§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Fabrico x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"gelum\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Gelum§r",
+        "Gelum x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Gelum§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Gelum x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"herba\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Herba§r",
+        "Herba x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Herba§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Herba x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"humanus\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Humanus§r",
+        "Humanus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Humanus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Humanus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"ignis\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Ignis§r",
+        "Ignis x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Ignis§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Ignis x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"instrumentum\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Instrumentum§r",
+        "Instrumentum x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Instrumentum§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Instrumentum x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"lux\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Lux§r",
+        "Lux x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Lux§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Lux x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"machina\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Machina§r",
+        "Machina x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Machina§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Machina x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"metallum\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Metallum§r",
+        "Metallum x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Metallum§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Metallum x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"mortuus\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Mortuus§r",
+        "Mortuus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Mortuus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Mortuus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"motus\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Motus§r",
+        "Motus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Motus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Motus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"ordo\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Ordo§r",
+        "Ordo x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Ordo§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Ordo x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"perditio\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Perditio§r",
+        "Perditio x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Perditio§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Perditio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"permutatio\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Permutatio§r",
+        "Permutatio x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Permutatio§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Permutatio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"potentia\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Potentia§r",
+        "Potentia x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Potentia§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Potentia x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"praecantatio\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Praecantatio§r",
+        "Praecantatio x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Praecantatio§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Praecantatio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"praemunio\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Praemunio§r",
+        "Praemunio x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Praemunio§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Praemunio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"sensus\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Sensus§r",
+        "Sensus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Sensus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Sensus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"spiritus\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Spiritus§r",
+        "Spiritus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Spiritus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Spiritus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"tenebrae\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Tenebrae§r",
+        "Tenebrae x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Tenebrae§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Tenebrae x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"terra\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Terra§r",
+        "Terra x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Terra§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Terra x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vacuos\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Vacuos§r",
+        "Vacuos x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Vacuos§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Vacuos x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"victus\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Victus§r",
+        "Victus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Victus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Victus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vinculum\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Vinculum§r",
+        "Vinculum x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Vinculum§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Vinculum x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vitium\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Vitium§r",
+        "Vitium x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Vitium§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Vitium x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"vitreus\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Vitreus§r",
+        "Vitreus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Vitreus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Vitreus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_essence;1;0;{Aspects:[{key:\"volatus\",amount:1}]}",
+      "resolved_item": "thaumcraft:crystal_essence",
+      "tooltip": [
+        "Вис-кристалл Volatus§r",
+        "Volatus x1"
+      ],
+      "tooltip_advanced": [
+        "Вис-кристалл Volatus§r (#4313)",
+        "§8thaumcraft:crystal_essence",
+        "§8NBT: 1 тег(ов)",
+        "Volatus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_ignis;1;0",
+      "resolved_item": "thaumcraft:crystal_ignis",
+      "tooltip": [
+        "Кристалл огня§r"
+      ],
+      "tooltip_advanced": [
+        "Кристалл огня§r (#4100)",
+        "§8thaumcraft:crystal_ignis"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_ordo;1;0",
+      "resolved_item": "thaumcraft:crystal_ordo",
+      "tooltip": [
+        "Кристалл порядка§r"
+      ],
+      "tooltip_advanced": [
+        "Кристалл порядка§r (#4103)",
+        "§8thaumcraft:crystal_ordo"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_perditio;1;0",
+      "resolved_item": "thaumcraft:crystal_perditio",
+      "tooltip": [
+        "Кристалл энтропии§r"
+      ],
+      "tooltip_advanced": [
+        "Кристалл энтропии§r (#4104)",
+        "§8thaumcraft:crystal_perditio"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_terra;1;0",
+      "resolved_item": "thaumcraft:crystal_terra",
+      "tooltip": [
+        "Кристалл земли§r"
+      ],
+      "tooltip_advanced": [
+        "Кристалл земли§r (#4102)",
+        "§8thaumcraft:crystal_terra"
+      ]
+    },
+    {
+      "id": "thaumcraft:crystal_vitium;1;0",
+      "resolved_item": "thaumcraft:crystal_vitium",
+      "tooltip": [
+        "Кристалл Выбросов§r"
+      ],
+      "tooltip_advanced": [
+        "Кристалл Выбросов§r (#4105)",
+        "§8thaumcraft:crystal_vitium"
+      ]
+    },
+    {
+      "id": "thaumcraft:curio;1;6",
+      "resolved_item": "thaumcraft:curio",
+      "tooltip": [
+        "Багровые ритуалы§r",
+        "Какие же секреты здесь спрятаны?"
+      ],
+      "tooltip_advanced": [
+        "Багровые ритуалы§r (#4290/6)",
+        "Какие же секреты здесь спрятаны?",
+        "§8thaumcraft:curio"
+      ]
+    },
+    {
+      "id": "thaumcraft:curiosity_band;1;0",
+      "resolved_item": "thaumcraft:curiosity_band",
+      "tooltip": [
+        "Повязка реликвий§r",
+        "§6Бижутерия (Голова)"
+      ],
+      "tooltip_advanced": [
+        "Повязка реликвий§r (#4383)",
+        "§8thaumcraft:curiosity_band",
+        "§6Бижутерия (Голова)"
+      ]
+    },
+    {
+      "id": "thaumcraft:dioptra;1;0",
+      "resolved_item": "thaumcraft:dioptra",
+      "tooltip": [
+        "Таумическая диоптрия§r"
+      ],
+      "tooltip_advanced": [
+        "Таумическая диоптрия§r (#4224)",
+        "§8thaumcraft:dioptra"
+      ]
+    },
+    {
+      "id": "thaumcraft:elemental_axe;1;0",
+      "resolved_item": "thaumcraft:elemental_axe",
+      "tooltip": [
+        "Топор потока§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 9 Урон"
+      ],
+      "tooltip_advanced": [
+        "Топор потока§r (#4341)",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 9 Урон",
+        "§8thaumcraft:elemental_axe"
+      ]
+    },
+    {
+      "id": "thaumcraft:elemental_hoe;1;0",
+      "resolved_item": "thaumcraft:elemental_hoe",
+      "tooltip": [
+        "Мотыга взращивания§r",
+        "",
+        "Когда в ведущей руке:",
+        " 4 Скорость атаки",
+        " 1 Урон"
+      ],
+      "tooltip_advanced": [
+        "Мотыга взращивания§r (#4345)",
+        "",
+        "Когда в ведущей руке:",
+        " 4 Скорость атаки",
+        " 1 Урон",
+        "§8thaumcraft:elemental_hoe"
+      ]
+    },
+    {
+      "id": "thaumcraft:elemental_pick;1;0",
+      "resolved_item": "thaumcraft:elemental_pick",
+      "tooltip": [
+        "Кирка сущности§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1.2 Скорость атаки",
+        " 5 Урон"
+      ],
+      "tooltip_advanced": [
+        "Кирка сущности§r (#4344)",
+        "",
+        "Когда в ведущей руке:",
+        " 1.2 Скорость атаки",
+        " 5 Урон",
+        "§8thaumcraft:elemental_pick"
+      ]
+    },
+    {
+      "id": "thaumcraft:elemental_shovel;1;0",
+      "resolved_item": "thaumcraft:elemental_shovel",
+      "tooltip": [
+        "Лопата землероя§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 5.5 Урон"
+      ],
+      "tooltip_advanced": [
+        "Лопата землероя§r (#4343)",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 5.5 Урон",
+        "§8thaumcraft:elemental_shovel"
+      ]
+    },
+    {
+      "id": "thaumcraft:elemental_sword;1;0",
+      "resolved_item": "thaumcraft:elemental_sword",
+      "tooltip": [
+        "Меч западных ветров§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1.6 Скорость атаки",
+        " 7 Урон"
+      ],
+      "tooltip_advanced": [
+        "Меч западных ветров§r (#4342)",
+        "",
+        "Когда в ведущей руке:",
+        " 1.6 Скорость атаки",
+        " 7 Урон",
+        "§8thaumcraft:elemental_sword"
+      ]
+    },
+    {
+      "id": "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:0s,lvl:1s}]}",
+      "resolved_item": "thaumcraft:enchanted_placeholder",
+      "tooltip": [
+        "Любой зачарованный предмет§r",
+        "§o§3Должен иметь хотя бы одно с зачарований ниже:",
+        "Защита I"
+      ],
+      "tooltip_advanced": [
+        "Любой зачарованный предмет§r (#4388)",
+        "§o§3Должен иметь хотя бы одно с зачарований ниже:",
+        "Защита I",
+        "§8thaumcraft:enchanted_placeholder",
+        "§8NBT: 1 тег(ов)"
+      ]
+    },
+    {
+      "id": "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:16s,lvl:1s}]}",
+      "resolved_item": "thaumcraft:enchanted_placeholder",
+      "tooltip": [
+        "Любой зачарованный предмет§r",
+        "§o§3Должен иметь хотя бы одно с зачарований ниже:",
+        "Острота I"
+      ],
+      "tooltip_advanced": [
+        "Любой зачарованный предмет§r (#4388)",
+        "§o§3Должен иметь хотя бы одно с зачарований ниже:",
+        "Острота I",
+        "§8thaumcraft:enchanted_placeholder",
+        "§8NBT: 1 тег(ов)"
+      ]
+    },
+    {
+      "id": "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:33s,lvl:1s}]}",
+      "resolved_item": "thaumcraft:enchanted_placeholder",
+      "tooltip": [
+        "Любой зачарованный предмет§r",
+        "§o§3Должен иметь хотя бы одно с зачарований ниже:",
+        "Шёлковое касание"
+      ],
+      "tooltip_advanced": [
+        "Любой зачарованный предмет§r (#4388)",
+        "§o§3Должен иметь хотя бы одно с зачарований ниже:",
+        "Шёлковое касание",
+        "§8thaumcraft:enchanted_placeholder",
+        "§8NBT: 1 тег(ов)"
+      ]
+    },
+    {
+      "id": "thaumcraft:enchanted_placeholder;1;0;{ench:[{id:35s,lvl:1s}]}",
+      "resolved_item": "thaumcraft:enchanted_placeholder",
+      "tooltip": [
+        "Любой зачарованный предмет§r",
+        "§o§3Должен иметь хотя бы одно с зачарований ниже:",
+        "Удача I"
+      ],
+      "tooltip_advanced": [
+        "Любой зачарованный предмет§r (#4388)",
+        "§o§3Должен иметь хотя бы одно с зачарований ниже:",
+        "Удача I",
+        "§8thaumcraft:enchanted_placeholder",
+        "§8NBT: 1 тег(ов)"
+      ]
+    },
+    {
+      "id": "thaumcraft:essentia_input;1;0",
+      "resolved_item": "thaumcraft:essentia_input",
+      "tooltip": [
+        "Наполняющий передатчик эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Наполняющий передатчик эссенции§r (#4263)",
+        "§8thaumcraft:essentia_input"
+      ]
+    },
+    {
+      "id": "thaumcraft:essentia_output;1;0",
+      "resolved_item": "thaumcraft:essentia_output",
+      "tooltip": [
+        "Опустошающий передатчик эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Опустошающий передатчик эссенции§r (#4264)",
+        "§8thaumcraft:essentia_output"
+      ]
+    },
+    {
+      "id": "thaumcraft:everfull_urn;1;0",
+      "resolved_item": "thaumcraft:everfull_urn",
+      "tooltip": [
+        "Неиссякающая урна§r"
+      ],
+      "tooltip_advanced": [
+        "Неиссякающая урна§r (#4255)",
+        "§8thaumcraft:everfull_urn"
+      ]
+    },
+    {
+      "id": "thaumcraft:fabric;1;0",
+      "resolved_item": "thaumcraft:fabric",
+      "tooltip": [
+        "Заколдованная ткань§r"
+      ],
+      "tooltip_advanced": [
+        "Заколдованная ткань§r (#4300)",
+        "§8thaumcraft:fabric"
+      ]
+    },
+    {
+      "id": "thaumcraft:filter;1;0",
+      "resolved_item": "thaumcraft:filter",
+      "tooltip": [
+        "Фильтр эссенций§r"
+      ],
+      "tooltip_advanced": [
+        "Фильтр эссенций§r (#4306)",
+        "§8thaumcraft:filter"
+      ]
+    },
+    {
+      "id": "thaumcraft:flesh_block;1;0",
+      "resolved_item": "thaumcraft:flesh_block",
+      "tooltip": [
+        "Блок плоти§r"
+      ],
+      "tooltip_advanced": [
+        "Блок плоти§r (#4139)",
+        "§8thaumcraft:flesh_block"
+      ]
+    },
+    {
+      "id": "thaumcraft:focus_1;1;0",
+      "resolved_item": "thaumcraft:focus_1",
+      "tooltip": [
+        "Малая ненастроенная линза§r"
+      ],
+      "tooltip_advanced": [
+        "Малая ненастроенная линза§r (#4390)",
+        "§8thaumcraft:focus_1"
+      ]
+    },
+    {
+      "id": "thaumcraft:focus_2;1;0",
+      "resolved_item": "thaumcraft:focus_2",
+      "tooltip": [
+        "Продвинутая ненастроенная линза§r"
+      ],
+      "tooltip_advanced": [
+        "Продвинутая ненастроенная линза§r (#4391)",
+        "§8thaumcraft:focus_2"
+      ]
+    },
+    {
+      "id": "thaumcraft:focus_3;1;0",
+      "resolved_item": "thaumcraft:focus_3",
+      "tooltip": [
+        "Большая ненастроенная линза§r"
+      ],
+      "tooltip_advanced": [
+        "Большая ненастроенная линза§r (#4392)",
+        "§8thaumcraft:focus_3"
+      ]
+    },
+    {
+      "id": "thaumcraft:focus_pouch;1;0",
+      "resolved_item": "thaumcraft:focus_pouch",
+      "tooltip": [
+        "Сумка для линз§r",
+        "§6Бижутерия (Пояс)"
+      ],
+      "tooltip_advanced": [
+        "Сумка для линз§r (#4393)",
+        "§8thaumcraft:focus_pouch",
+        "§6Бижутерия (Пояс)"
+      ]
+    },
+    {
+      "id": "thaumcraft:fortress_chest;1;0",
+      "resolved_item": "thaumcraft:fortress_chest",
+      "tooltip": [
+        "Штурмовые латы из таумиума§r",
+        "",
+        "Когда надето:",
+        "§9 +3 Твёрдость брони",
+        "§9 +7 Броня"
+      ],
+      "tooltip_advanced": [
+        "Штурмовые латы из таумиума§r (#4361)",
+        "",
+        "Когда надето:",
+        "§9 +3 Твёрдость брони",
+        "§9 +7 Броня",
+        "§8thaumcraft:fortress_chest"
+      ]
+    },
+    {
+      "id": "thaumcraft:fortress_helm;1;0",
+      "resolved_item": "thaumcraft:fortress_helm",
+      "tooltip": [
+        "Штурмовой шлем из таумиума§r",
+        "",
+        "Когда надето на голову:",
+        "§9 +3 Твёрдость брони",
+        "§9 +3 Броня"
+      ],
+      "tooltip_advanced": [
+        "Штурмовой шлем из таумиума§r (#4360)",
+        "",
+        "Когда надето на голову:",
+        "§9 +3 Твёрдость брони",
+        "§9 +3 Броня",
+        "§8thaumcraft:fortress_helm"
+      ]
+    },
+    {
+      "id": "thaumcraft:fortress_helm;1;0;{goggles:1b}",
+      "resolved_item": "thaumcraft:fortress_helm",
+      "tooltip": [
+        "Штурмовой шлем из таумиума§r",
+        "§5Очки откровения",
+        "",
+        "Когда надето на голову:",
+        "§9 +3 Твёрдость брони",
+        "§9 +3 Броня"
+      ],
+      "tooltip_advanced": [
+        "Штурмовой шлем из таумиума§r (#4360)",
+        "§5Очки откровения",
+        "",
+        "Когда надето на голову:",
+        "§9 +3 Твёрдость брони",
+        "§9 +3 Броня",
+        "§8thaumcraft:fortress_helm",
+        "§8NBT: 1 тег(ов)"
+      ]
+    },
+    {
+      "id": "thaumcraft:fortress_helm;1;0;{mask:0}",
+      "resolved_item": "thaumcraft:fortress_helm",
+      "tooltip": [
+        "Штурмовой шлем из таумиума§r",
+        "§6Ухмыляющийся дьявол",
+        "",
+        "Когда надето на голову:",
+        "§9 +3 Твёрдость брони",
+        "§9 +3 Броня"
+      ],
+      "tooltip_advanced": [
+        "Штурмовой шлем из таумиума§r (#4360)",
+        "§6Ухмыляющийся дьявол",
+        "",
+        "Когда надето на голову:",
+        "§9 +3 Твёрдость брони",
+        "§9 +3 Броня",
+        "§8thaumcraft:fortress_helm",
+        "§8NBT: 1 тег(ов)"
+      ]
+    },
+    {
+      "id": "thaumcraft:fortress_helm;1;0;{mask:1}",
+      "resolved_item": "thaumcraft:fortress_helm",
+      "tooltip": [
+        "Штурмовой шлем из таумиума§r",
+        "§6Разгневанное привидение",
+        "",
+        "Когда надето на голову:",
+        "§9 +3 Твёрдость брони",
+        "§9 +3 Броня"
+      ],
+      "tooltip_advanced": [
+        "Штурмовой шлем из таумиума§r (#4360)",
+        "§6Разгневанное привидение",
+        "",
+        "Когда надето на голову:",
+        "§9 +3 Твёрдость брони",
+        "§9 +3 Броня",
+        "§8thaumcraft:fortress_helm",
+        "§8NBT: 1 тег(ов)"
+      ]
+    },
+    {
+      "id": "thaumcraft:fortress_helm;1;0;{mask:2}",
+      "resolved_item": "thaumcraft:fortress_helm",
+      "tooltip": [
+        "Штурмовой шлем из таумиума§r",
+        "§6Истощающий бес",
+        "",
+        "Когда надето на голову:",
+        "§9 +3 Твёрдость брони",
+        "§9 +3 Броня"
+      ],
+      "tooltip_advanced": [
+        "Штурмовой шлем из таумиума§r (#4360)",
+        "§6Истощающий бес",
+        "",
+        "Когда надето на голову:",
+        "§9 +3 Твёрдость брони",
+        "§9 +3 Броня",
+        "§8thaumcraft:fortress_helm",
+        "§8NBT: 1 тег(ов)"
+      ]
+    },
+    {
+      "id": "thaumcraft:fortress_legs;1;0",
+      "resolved_item": "thaumcraft:fortress_legs",
+      "tooltip": [
+        "Штурмовые набедренники из таумиума§r",
+        "",
+        "Когда надето на ноги:",
+        "§9 +3 Твёрдость брони",
+        "§9 +6 Броня"
+      ],
+      "tooltip_advanced": [
+        "Штурмовые набедренники из таумиума§r (#4362)",
+        "",
+        "Когда надето на ноги:",
+        "§9 +3 Твёрдость брони",
+        "§9 +6 Броня",
+        "§8thaumcraft:fortress_legs"
+      ]
+    },
+    {
+      "id": "thaumcraft:goggles;1;0",
+      "resolved_item": "thaumcraft:goggles",
+      "tooltip": [
+        "Очки откровения§r",
+        "",
+        "Когда надето на голову:",
+        "§9 +1 Твёрдость брони",
+        "§9 +1 Броня",
+        "§5Уменьшение затрат Вис: 5%",
+        "§6Бижутерия (Голова)"
+      ],
+      "tooltip_advanced": [
+        "Очки откровения§r (#4351)",
+        "",
+        "Когда надето на голову:",
+        "§9 +1 Твёрдость брони",
+        "§9 +1 Броня",
+        "§8thaumcraft:goggles",
+        "§5Уменьшение затрат Вис: 5%",
+        "§6Бижутерия (Голова)"
+      ]
+    },
+    {
+      "id": "thaumcraft:golem_bell;1;0",
+      "resolved_item": "thaumcraft:golem_bell",
+      "tooltip": [
+        "Колокольчик големостроителя§r"
+      ],
+      "tooltip_advanced": [
+        "Колокольчик големостроителя§r (#4394)",
+        "§8thaumcraft:golem_bell"
+      ]
+    },
+    {
+      "id": "thaumcraft:golem_builder;1;0",
+      "resolved_item": "thaumcraft:golem_builder",
+      "tooltip": [
+        "Пресс големов§r"
+      ],
+      "tooltip_advanced": [
+        "Пресс големов§r (#4260)",
+        "§8thaumcraft:golem_builder"
+      ]
+    },
+    {
+      "id": "thaumcraft:grapple_gun;1;0",
+      "resolved_item": "thaumcraft:grapple_gun",
+      "tooltip": [
+        "Мистический хвататель§r",
+        "§eВис заряд: 0"
+      ],
+      "tooltip_advanced": [
+        "Мистический хвататель§r (#4348)",
+        "§8thaumcraft:grapple_gun",
+        "§eВис заряд: 0"
+      ]
+    },
+    {
+      "id": "thaumcraft:grapple_gun_spool;1;0",
+      "resolved_item": "thaumcraft:grapple_gun_spool",
+      "tooltip": [
+        "Катушка хватателя§r"
+      ],
+      "tooltip_advanced": [
+        "Катушка хватателя§r (#4350)",
+        "§8thaumcraft:grapple_gun_spool"
+      ]
+    },
+    {
+      "id": "thaumcraft:grapple_gun_tip;1;0",
+      "resolved_item": "thaumcraft:grapple_gun_tip",
+      "tooltip": [
+        "Наконечник хватателя§r"
+      ],
+      "tooltip_advanced": [
+        "Наконечник хватателя§r (#4349)",
+        "§8thaumcraft:grapple_gun_tip"
+      ]
+    },
+    {
+      "id": "thaumcraft:hand_mirror;1;0",
+      "resolved_item": "thaumcraft:hand_mirror",
+      "tooltip": [
+        "Волшебное ручное зеркальце§r"
+      ],
+      "tooltip_advanced": [
+        "Волшебное ручное зеркальце§r (#4330)",
+        "§8thaumcraft:hand_mirror"
+      ]
+    },
+    {
+      "id": "thaumcraft:hungry_chest;1;0",
+      "resolved_item": "thaumcraft:hungry_chest",
+      "tooltip": [
+        "Голодный сундук§r"
+      ],
+      "tooltip_advanced": [
+        "Голодный сундук§r (#4243)",
+        "§8thaumcraft:hungry_chest"
+      ]
+    },
+    {
+      "id": "thaumcraft:infusion_matrix;1;0",
+      "resolved_item": "thaumcraft:infusion_matrix",
+      "tooltip": [
+        "Руническая матрица§r"
+      ],
+      "tooltip_advanced": [
+        "Руническая матрица§r (#4253)",
+        "§8thaumcraft:infusion_matrix"
+      ]
+    },
+    {
+      "id": "thaumcraft:ingot;1;0",
+      "resolved_item": "thaumcraft:ingot",
+      "tooltip": [
+        "Слиток таумиума§r"
+      ],
+      "tooltip_advanced": [
+        "Слиток таумиума§r (#4297/0)",
+        "§8thaumcraft:ingot"
+      ]
+    },
+    {
+      "id": "thaumcraft:ingot;1;1",
+      "resolved_item": "thaumcraft:ingot",
+      "tooltip": [
+        "Слиток пустотного металла§r"
+      ],
+      "tooltip_advanced": [
+        "Слиток пустотного металла§r (#4297/1)",
+        "§8thaumcraft:ingot"
+      ]
+    },
+    {
+      "id": "thaumcraft:ingot;1;2",
+      "resolved_item": "thaumcraft:ingot",
+      "tooltip": [
+        "Слиток алхимической латуни§r"
+      ],
+      "tooltip_advanced": [
+        "Слиток алхимической латуни§r (#4297/2)",
+        "§8thaumcraft:ingot"
+      ]
+    },
+    {
+      "id": "thaumcraft:ingot_brass;1;0",
+      "resolved_item": "thaumcraft:ingot",
+      "tooltip": [
+        "Слиток алхимической латуни§r"
+      ],
+      "tooltip_advanced": [
+        "Слиток алхимической латуни§r (#4297/2)",
+        "§8thaumcraft:ingot"
+      ]
+    },
+    {
+      "id": "thaumcraft:ingot_thaumium;1;0",
+      "resolved_item": "thaumcraft:ingot",
+      "tooltip": [
+        "Слиток таумиума§r"
+      ],
+      "tooltip_advanced": [
+        "Слиток таумиума§r (#4297/0)",
+        "§8thaumcraft:ingot"
+      ]
+    },
+    {
+      "id": "thaumcraft:ingot_void;1;0",
+      "resolved_item": "thaumcraft:ingot",
+      "tooltip": [
+        "Слиток пустотного металла§r"
+      ],
+      "tooltip_advanced": [
+        "Слиток пустотного металла§r (#4297/1)",
+        "§8thaumcraft:ingot"
+      ]
+    },
+    {
+      "id": "thaumcraft:inlay;1;0",
+      "resolved_item": "thaumcraft:inlay",
+      "tooltip": [
+        "Redstone Inlay§r"
+      ],
+      "tooltip_advanced": [
+        "Redstone Inlay§r (#4221)",
+        "§8thaumcraft:inlay"
+      ]
+    },
+    {
+      "id": "thaumcraft:jar_brace;1;0",
+      "resolved_item": "thaumcraft:jar_brace",
+      "tooltip": [
+        "Латунная крышка§r"
+      ],
+      "tooltip_advanced": [
+        "Латунная крышка§r (#4320)",
+        "§8thaumcraft:jar_brace"
+      ]
+    },
+    {
+      "id": "thaumcraft:jar_brain;1;0",
+      "resolved_item": "thaumcraft:jar_brain",
+      "tooltip": [
+        "Мозг в банке§r"
+      ],
+      "tooltip_advanced": [
+        "Мозг в банке§r (#4252)",
+        "§8thaumcraft:jar_brain"
+      ]
+    },
+    {
+      "id": "thaumcraft:jar_normal;1;0",
+      "resolved_item": "thaumcraft:jar_normal",
+      "tooltip": [
+        "Банка§r"
+      ],
+      "tooltip_advanced": [
+        "Банка§r (#4250)",
+        "§8thaumcraft:jar_normal"
+      ]
+    },
+    {
+      "id": "thaumcraft:jar_void;1;0",
+      "resolved_item": "thaumcraft:jar_void",
+      "tooltip": [
+        "Пустотная банка§r"
+      ],
+      "tooltip_advanced": [
+        "Пустотная банка§r (#4251)",
+        "§8thaumcraft:jar_void"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;0",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Пустая бирка§r"
+      ],
+      "tooltip_advanced": [
+        "Пустая бирка§r (#4317/0)",
+        "§8thaumcraft:label"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"aer\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Aer x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Aer x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"alienis\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Alienis x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Alienis x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"alkimia\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Alkimia x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Alkimia x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"aqua\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Aqua x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Aqua x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"auram\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Auram x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Auram x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"aversio\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Aversio x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Aversio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"bestia\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Bestia x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Bestia x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"cognitio\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Cognitio x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Cognitio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"desiderium\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Desiderium x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Desiderium x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"exanimis\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Exanimis x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Exanimis x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"fabrico\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Fabrico x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Fabrico x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"gelum\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Gelum x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Gelum x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"herba\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Herba x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Herba x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"humanus\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Humanus x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Humanus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"ignis\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Ignis x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Ignis x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"instrumentum\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Instrumentum x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Instrumentum x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"lux\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Lux x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Lux x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"machina\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Machina x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Machina x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"metallum\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Metallum x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Metallum x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"mortuus\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Mortuus x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Mortuus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"motus\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Motus x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Motus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"ordo\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Ordo x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Ordo x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"perditio\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Perditio x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Perditio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"permutatio\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Permutatio x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Permutatio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"potentia\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Potentia x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Potentia x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"praecantatio\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Praecantatio x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Praecantatio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"praemunio\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Praemunio x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Praemunio x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"sensus\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Sensus x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Sensus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"spiritus\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Spiritus x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Spiritus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"tenebrae\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Tenebrae x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Tenebrae x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"terra\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Terra x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Terra x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"vacuos\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Vacuos x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Vacuos x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"victus\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Victus x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Victus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"vinculum\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Vinculum x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Vinculum x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"vitium\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Vitium x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Vitium x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"vitreus\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Vitreus x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Vitreus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:label;1;1;{Aspects:[{key:\"volatus\",amount:1}]}",
+      "resolved_item": "thaumcraft:label",
+      "tooltip": [
+        "Помеченная бирка§r",
+        "Volatus x1"
+      ],
+      "tooltip_advanced": [
+        "Помеченная бирка§r (#4317/1)",
+        "§8thaumcraft:label",
+        "§8NBT: 1 тег(ов)",
+        "Volatus x1"
+      ]
+    },
+    {
+      "id": "thaumcraft:lamp_arcane;1;0",
+      "resolved_item": "thaumcraft:lamp_arcane",
+      "tooltip": [
+        "Мистический светильник§r"
+      ],
+      "tooltip_advanced": [
+        "Мистический светильник§r (#4229)",
+        "§8thaumcraft:lamp_arcane"
+      ]
+    },
+    {
+      "id": "thaumcraft:lamp_fertility;1;0",
+      "resolved_item": "thaumcraft:lamp_fertility",
+      "tooltip": [
+        "Светильник скрещивания§r"
+      ],
+      "tooltip_advanced": [
+        "Светильник скрещивания§r (#4230)",
+        "§8thaumcraft:lamp_fertility"
+      ]
+    },
+    {
+      "id": "thaumcraft:lamp_growth;1;0",
+      "resolved_item": "thaumcraft:lamp_growth",
+      "tooltip": [
+        "Светильник роста§r"
+      ],
+      "tooltip_advanced": [
+        "Светильник роста§r (#4231)",
+        "§8thaumcraft:lamp_growth"
+      ]
+    },
+    {
+      "id": "thaumcraft:leather;1;0",
+      "resolved_item": "minecraft:leather",
+      "tooltip": [
+        "Кожа§r"
+      ],
+      "tooltip_advanced": [
+        "Кожа§r (#0334)",
+        "§8minecraft:leather"
+      ]
+    },
+    {
+      "id": "thaumcraft:levitator;1;0",
+      "resolved_item": "thaumcraft:levitator",
+      "tooltip": [
+        "Мистический подъёмник§r"
+      ],
+      "tooltip_advanced": [
+        "Мистический подъёмник§r (#4232)",
+        "§8thaumcraft:levitator"
+      ]
+    },
+    {
+      "id": "thaumcraft:log_greatwood;1;0",
+      "resolved_item": "thaumcraft:log_greatwood",
+      "tooltip": [
+        "Бревно великого дерева§r"
+      ],
+      "tooltip_advanced": [
+        "Бревно великого дерева§r (#4124)",
+        "§8thaumcraft:log_greatwood"
+      ]
+    },
+    {
+      "id": "thaumcraft:log_silverwood;1;0",
+      "resolved_item": "thaumcraft:log_silverwood",
+      "tooltip": [
+        "Бревно серебряного дерева§r"
+      ],
+      "tooltip_advanced": [
+        "Бревно серебряного дерева§r (#4125)",
+        "§8thaumcraft:log_silverwood"
+      ]
+    },
+    {
+      "id": "thaumcraft:matrix_cost;1;0",
+      "resolved_item": "thaumcraft:matrix_cost",
+      "tooltip": [
+        "Наполняющий камень затрат§r"
+      ],
+      "tooltip_advanced": [
+        "Наполняющий камень затрат§r (#4170)",
+        "§8thaumcraft:matrix_cost"
+      ]
+    },
+    {
+      "id": "thaumcraft:matrix_speed;1;0",
+      "resolved_item": "thaumcraft:matrix_speed",
+      "tooltip": [
+        "Наполняющий камень скорости§r"
+      ],
+      "tooltip_advanced": [
+        "Наполняющий камень скорости§r (#4169)",
+        "§8thaumcraft:matrix_speed"
+      ]
+    },
+    {
+      "id": "thaumcraft:mechanism_complex;1;0",
+      "resolved_item": "thaumcraft:mechanism_complex",
+      "tooltip": [
+        "Сложный мистический механизм§r"
+      ],
+      "tooltip_advanced": [
+        "Сложный мистический механизм§r (#4304)",
+        "§8thaumcraft:mechanism_complex"
+      ]
+    },
+    {
+      "id": "thaumcraft:mechanism_simple;1;0",
+      "resolved_item": "thaumcraft:mechanism_simple",
+      "tooltip": [
+        "Простой мистический механизм§r"
+      ],
+      "tooltip_advanced": [
+        "Простой мистический механизм§r (#4303)",
+        "§8thaumcraft:mechanism_simple"
+      ]
+    },
+    {
+      "id": "thaumcraft:metal;1;2",
+      "resolved_item": "thaumcraft:metal_brass",
+      "tooltip": [
+        "Латунный блок§r"
+      ],
+      "tooltip_advanced": [
+        "Латунный блок§r (#4159)",
+        "§8thaumcraft:metal_brass"
+      ]
+    },
+    {
+      "id": "thaumcraft:metal;1;3",
+      "resolved_item": "thaumcraft:metal_thaumium",
+      "tooltip": [
+        "Блок таумиума§r"
+      ],
+      "tooltip_advanced": [
+        "Блок таумиума§r (#4160)",
+        "§8thaumcraft:metal_thaumium"
+      ]
+    },
+    {
+      "id": "thaumcraft:metal_alchemical;1;0",
+      "resolved_item": "thaumcraft:metal_alchemical",
+      "tooltip": [
+        "Алхимическая конструкция§r"
+      ],
+      "tooltip_advanced": [
+        "Алхимическая конструкция§r (#4162)",
+        "§8thaumcraft:metal_alchemical"
+      ]
+    },
+    {
+      "id": "thaumcraft:metal_alchemical_advanced;1;0",
+      "resolved_item": "thaumcraft:metal_alchemical_advanced",
+      "tooltip": [
+        "Продвинутая алхимическая конструкция§r"
+      ],
+      "tooltip_advanced": [
+        "Продвинутая алхимическая конструкция§r (#4163)",
+        "§8thaumcraft:metal_alchemical_advanced"
+      ]
+    },
+    {
+      "id": "thaumcraft:metal_brass;1;0",
+      "resolved_item": "thaumcraft:metal_brass",
+      "tooltip": [
+        "Латунный блок§r"
+      ],
+      "tooltip_advanced": [
+        "Латунный блок§r (#4159)",
+        "§8thaumcraft:metal_brass"
+      ]
+    },
+    {
+      "id": "thaumcraft:metal_thaumium;1;0",
+      "resolved_item": "thaumcraft:metal_thaumium",
+      "tooltip": [
+        "Блок таумиума§r"
+      ],
+      "tooltip_advanced": [
+        "Блок таумиума§r (#4160)",
+        "§8thaumcraft:metal_thaumium"
+      ]
+    },
+    {
+      "id": "thaumcraft:metal_void;1;0",
+      "resolved_item": "thaumcraft:metal_void",
+      "tooltip": [
+        "Блок пустотного металла§r"
+      ],
+      "tooltip_advanced": [
+        "Блок пустотного металла§r (#4161)",
+        "§8thaumcraft:metal_void"
+      ]
+    },
+    {
+      "id": "thaumcraft:mind;1;0",
+      "resolved_item": "thaumcraft:mind",
+      "tooltip": [
+        "Часовой разум§r"
+      ],
+      "tooltip_advanced": [
+        "Часовой разум§r (#4311/0)",
+        "§8thaumcraft:mind"
+      ]
+    },
+    {
+      "id": "thaumcraft:mind;1;1",
+      "resolved_item": "thaumcraft:mind",
+      "tooltip": [
+        "Биотаумиевый разум§r"
+      ],
+      "tooltip_advanced": [
+        "Биотаумиевый разум§r (#4311/1)",
+        "§8thaumcraft:mind"
+      ]
+    },
+    {
+      "id": "thaumcraft:mind_clockwork;1;0",
+      "resolved_item": "thaumcraft:mind",
+      "tooltip": [
+        "Часовой разум§r"
+      ],
+      "tooltip_advanced": [
+        "Часовой разум§r (#4311/0)",
+        "§8thaumcraft:mind"
+      ]
+    },
+    {
+      "id": "thaumcraft:mirror;1;0",
+      "resolved_item": "thaumcraft:mirror",
+      "tooltip": [
+        "Магическое зеркало§r"
+      ],
+      "tooltip_advanced": [
+        "Магическое зеркало§r (#4261)",
+        "§8thaumcraft:mirror"
+      ]
+    },
+    {
+      "id": "thaumcraft:mirror_essentia;1;0",
+      "resolved_item": "thaumcraft:mirror_essentia",
+      "tooltip": [
+        "Зеркало эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Зеркало эссенции§r (#4262)",
+        "§8thaumcraft:mirror_essentia"
+      ]
+    },
+    {
+      "id": "thaumcraft:mirrored_glass;1;0",
+      "resolved_item": "thaumcraft:mirrored_glass",
+      "tooltip": [
+        "Отражающее стекло§r"
+      ],
+      "tooltip_advanced": [
+        "Отражающее стекло§r (#4309)",
+        "§8thaumcraft:mirrored_glass"
+      ]
+    },
+    {
+      "id": "thaumcraft:module;1;0",
+      "resolved_item": "thaumcraft:module",
+      "tooltip": [
+        "Модуль зрения§r"
+      ],
+      "tooltip_advanced": [
+        "Модуль зрения§r (#4312/0)",
+        "§8thaumcraft:module"
+      ]
+    },
+    {
+      "id": "thaumcraft:module;1;1",
+      "resolved_item": "thaumcraft:module",
+      "tooltip": [
+        "Модуль агрессии§r"
+      ],
+      "tooltip_advanced": [
+        "Модуль агрессии§r (#4312/1)",
+        "§8thaumcraft:module"
+      ]
+    },
+    {
+      "id": "thaumcraft:morphic_resonator;1;0",
+      "resolved_item": "thaumcraft:morphic_resonator",
+      "tooltip": [
+        "Морфический резонатор§r"
+      ],
+      "tooltip_advanced": [
+        "Морфический резонатор§r (#4307)",
+        "§8thaumcraft:morphic_resonator"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor;1;4",
+      "resolved_item": "thaumcraft:nitor_yellow",
+      "tooltip": [
+        "Жёлтый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Жёлтый нитор§r (#4208)",
+        "§8thaumcraft:nitor_yellow"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_black;1;0",
+      "resolved_item": "thaumcraft:nitor_black",
+      "tooltip": [
+        "Чёрный нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Чёрный нитор§r (#4219)",
+        "§8thaumcraft:nitor_black"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_blue;1;0",
+      "resolved_item": "thaumcraft:nitor_blue",
+      "tooltip": [
+        "Синий нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Синий нитор§r (#4215)",
+        "§8thaumcraft:nitor_blue"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_brown;1;0",
+      "resolved_item": "thaumcraft:nitor_brown",
+      "tooltip": [
+        "Коричневый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Коричневый нитор§r (#4216)",
+        "§8thaumcraft:nitor_brown"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_cyan;1;0",
+      "resolved_item": "thaumcraft:nitor_cyan",
+      "tooltip": [
+        "Бирюзовый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Бирюзовый нитор§r (#4213)",
+        "§8thaumcraft:nitor_cyan"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_gray;1;0",
+      "resolved_item": "thaumcraft:nitor_gray",
+      "tooltip": [
+        "Серый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Серый нитор§r (#4211)",
+        "§8thaumcraft:nitor_gray"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_green;1;0",
+      "resolved_item": "thaumcraft:nitor_green",
+      "tooltip": [
+        "Зелёный нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Зелёный нитор§r (#4217)",
+        "§8thaumcraft:nitor_green"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_light_blue;1;0",
+      "resolved_item": "thaumcraft:nitor_lightblue",
+      "tooltip": [
+        "Голубой нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Голубой нитор§r (#4207)",
+        "§8thaumcraft:nitor_lightblue"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_light_gray;1;0",
+      "resolved_item": "thaumcraft:nitor_silver",
+      "tooltip": [
+        "Светло-серый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Светло-серый нитор§r (#4212)",
+        "§8thaumcraft:nitor_silver"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_lightblue;1;0",
+      "resolved_item": "thaumcraft:nitor_lightblue",
+      "tooltip": [
+        "Голубой нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Голубой нитор§r (#4207)",
+        "§8thaumcraft:nitor_lightblue"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_lime;1;0",
+      "resolved_item": "thaumcraft:nitor_lime",
+      "tooltip": [
+        "Лаймовый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Лаймовый нитор§r (#4209)",
+        "§8thaumcraft:nitor_lime"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_magenta;1;0",
+      "resolved_item": "thaumcraft:nitor_magenta",
+      "tooltip": [
+        "Пурпурный нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Пурпурный нитор§r (#4206)",
+        "§8thaumcraft:nitor_magenta"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_orange;1;0",
+      "resolved_item": "thaumcraft:nitor_orange",
+      "tooltip": [
+        "Оранжевый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Оранжевый нитор§r (#4205)",
+        "§8thaumcraft:nitor_orange"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_pink;1;0",
+      "resolved_item": "thaumcraft:nitor_pink",
+      "tooltip": [
+        "Розовый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Розовый нитор§r (#4210)",
+        "§8thaumcraft:nitor_pink"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_purple;1;0",
+      "resolved_item": "thaumcraft:nitor_purple",
+      "tooltip": [
+        "Фиолетовый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Фиолетовый нитор§r (#4214)",
+        "§8thaumcraft:nitor_purple"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_red;1;0",
+      "resolved_item": "thaumcraft:nitor_red",
+      "tooltip": [
+        "Красный нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Красный нитор§r (#4218)",
+        "§8thaumcraft:nitor_red"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_silver;1;0",
+      "resolved_item": "thaumcraft:nitor_silver",
+      "tooltip": [
+        "Светло-серый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Светло-серый нитор§r (#4212)",
+        "§8thaumcraft:nitor_silver"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_white;1;0",
+      "resolved_item": "thaumcraft:nitor_white",
+      "tooltip": [
+        "Белый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Белый нитор§r (#4204)",
+        "§8thaumcraft:nitor_white"
+      ]
+    },
+    {
+      "id": "thaumcraft:nitor_yellow;1;0",
+      "resolved_item": "thaumcraft:nitor_yellow",
+      "tooltip": [
+        "Жёлтый нитор§r"
+      ],
+      "tooltip_advanced": [
+        "Жёлтый нитор§r (#4208)",
+        "§8thaumcraft:nitor_yellow"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget;1;0",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Кусочек железа§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек железа§r (#4298/0)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget;1;10",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Кусочек редкоземельного элемента§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек редкоземельного элемента§r (#4298/10)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget;1;5",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Капля ртути§r"
+      ],
+      "tooltip_advanced": [
+        "Капля ртути§r (#4298/5)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget;1;6",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Кусочек таумиума§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек таумиума§r (#4298/6)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget;1;7",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Кусочек пустотного металла§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек пустотного металла§r (#4298/7)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget;1;8",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Кусочек алхимической латуни§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек алхимической латуни§r (#4298/8)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget;1;9",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Кварцевый осколок§r"
+      ],
+      "tooltip_advanced": [
+        "Кварцевый осколок§r (#4298/9)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget_brass;1;0",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Кусочек алхимической латуни§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек алхимической латуни§r (#4298/8)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget_quartz;1;0",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Кварцевый осколок§r"
+      ],
+      "tooltip_advanced": [
+        "Кварцевый осколок§r (#4298/9)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget_quicksilver;1;0",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Капля ртути§r"
+      ],
+      "tooltip_advanced": [
+        "Капля ртути§r (#4298/5)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget_thaumium;1;0",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Кусочек таумиума§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек таумиума§r (#4298/6)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:nugget_void;1;0",
+      "resolved_item": "thaumcraft:nugget",
+      "tooltip": [
+        "Кусочек пустотного металла§r"
+      ],
+      "tooltip_advanced": [
+        "Кусочек пустотного металла§r (#4298/7)",
+        "§8thaumcraft:nugget"
+      ]
+    },
+    {
+      "id": "thaumcraft:ore_cinnabar;1;0",
+      "resolved_item": "thaumcraft:ore_cinnabar",
+      "tooltip": [
+        "Киноварь§r"
+      ],
+      "tooltip_advanced": [
+        "Киноварь§r (#4097)",
+        "§8thaumcraft:ore_cinnabar"
+      ]
+    },
+    {
+      "id": "thaumcraft:pattern_crafter;1;0",
+      "resolved_item": "thaumcraft:pattern_crafter",
+      "tooltip": [
+        "Мистический шаблонный сборщик§r"
+      ],
+      "tooltip_advanced": [
+        "Мистический шаблонный сборщик§r (#4266)",
+        "§8thaumcraft:pattern_crafter"
+      ]
+    },
+    {
+      "id": "thaumcraft:paving_stone_barrier;1;0",
+      "resolved_item": "thaumcraft:paving_stone_barrier",
+      "tooltip": [
+        "Камень-барьер§r"
+      ],
+      "tooltip_advanced": [
+        "Камень-барьер§r (#4165)",
+        "§8thaumcraft:paving_stone_barrier"
+      ]
+    },
+    {
+      "id": "thaumcraft:paving_stone_travel;1;0",
+      "resolved_item": "thaumcraft:paving_stone_travel",
+      "tooltip": [
+        "Брусчатка путешественника§r"
+      ],
+      "tooltip_advanced": [
+        "Брусчатка путешественника§r (#4164)",
+        "§8thaumcraft:paving_stone_travel"
+      ]
+    },
+    {
+      "id": "thaumcraft:pedestal_ancient;1;0",
+      "resolved_item": "thaumcraft:pedestal_ancient",
+      "tooltip": [
+        "Древний пьедестал§r"
+      ],
+      "tooltip_advanced": [
+        "Древний пьедестал§r (#4157)",
+        "§8thaumcraft:pedestal_ancient"
+      ]
+    },
+    {
+      "id": "thaumcraft:pedestal_arcane;1;0",
+      "resolved_item": "thaumcraft:pedestal_arcane",
+      "tooltip": [
+        "Мистический пьедестал§r"
+      ],
+      "tooltip_advanced": [
+        "Мистический пьедестал§r (#4156)",
+        "§8thaumcraft:pedestal_arcane"
+      ]
+    },
+    {
+      "id": "thaumcraft:pedestal_eldritch;1;0",
+      "resolved_item": "thaumcraft:pedestal_eldritch",
+      "tooltip": [
+        "Потусторонний пьедестал§r"
+      ],
+      "tooltip_advanced": [
+        "Потусторонний пьедестал§r (#4158)",
+        "§8thaumcraft:pedestal_eldritch"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;0",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Стеклянный пузырёк§r"
+      ],
+      "tooltip_advanced": [
+        "Стеклянный пузырёк§r (#4318/0)",
+        "§8thaumcraft:phial"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'aer'}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Aer§r",
+        "Aer x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Aer§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Aer x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'alienis'}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Alienis§r",
+        "Alienis x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Alienis§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Alienis x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'alkimia'}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Alkimia§r",
+        "Alkimia x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Alkimia§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Alkimia x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'vinculum'}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Vinculum§r",
+        "Vinculum x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Vinculum§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Vinculum x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'vitium'}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Vitium§r",
+        "Vitium x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Vitium§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Vitium x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"aer\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Aer§r",
+        "Aer x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Aer§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Aer x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"alienis\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Alienis§r",
+        "Alienis x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Alienis§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Alienis x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"alkimia\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Alkimia§r",
+        "Alkimia x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Alkimia§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Alkimia x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"aqua\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Aqua§r",
+        "Aqua x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Aqua§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Aqua x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"auram\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Auram§r",
+        "Auram x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Auram§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Auram x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"aversio\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Aversio§r",
+        "Aversio x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Aversio§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Aversio x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"bestia\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Bestia§r",
+        "Bestia x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Bestia§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Bestia x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"cognitio\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Cognitio§r",
+        "Cognitio x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Cognitio§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Cognitio x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"desiderium\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Desiderium§r",
+        "Desiderium x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Desiderium§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Desiderium x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"exanimis\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Exanimis§r",
+        "Exanimis x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Exanimis§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Exanimis x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"fabrico\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Fabrico§r",
+        "Fabrico x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Fabrico§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Fabrico x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"gelum\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Gelum§r",
+        "Gelum x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Gelum§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Gelum x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"herba\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Herba§r",
+        "Herba x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Herba§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Herba x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"humanus\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Humanus§r",
+        "Humanus x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Humanus§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Humanus x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"ignis\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Ignis§r",
+        "Ignis x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Ignis§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Ignis x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"instrumentum\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Instrumentum§r",
+        "Instrumentum x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Instrumentum§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Instrumentum x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"lux\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Lux§r",
+        "Lux x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Lux§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Lux x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"machina\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Machina§r",
+        "Machina x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Machina§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Machina x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"metallum\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Metallum§r",
+        "Metallum x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Metallum§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Metallum x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"mortuus\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Mortuus§r",
+        "Mortuus x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Mortuus§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Mortuus x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"motus\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Motus§r",
+        "Motus x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Motus§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Motus x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"ordo\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Ordo§r",
+        "Ordo x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Ordo§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Ordo x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"perditio\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Perditio§r",
+        "Perditio x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Perditio§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Perditio x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"permutatio\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Permutatio§r",
+        "Permutatio x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Permutatio§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Permutatio x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"potentia\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Potentia§r",
+        "Potentia x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Potentia§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Potentia x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"praecantatio\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Praecantatio§r",
+        "Praecantatio x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Praecantatio§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Praecantatio x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"praemunio\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Praemunio§r",
+        "Praemunio x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Praemunio§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Praemunio x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"sensus\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Sensus§r",
+        "Sensus x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Sensus§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Sensus x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"spiritus\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Spiritus§r",
+        "Spiritus x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Spiritus§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Spiritus x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"tenebrae\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Tenebrae§r",
+        "Tenebrae x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Tenebrae§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Tenebrae x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"terra\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Terra§r",
+        "Terra x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Terra§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Terra x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"vacuos\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Vacuos§r",
+        "Vacuos x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Vacuos§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Vacuos x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"victus\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Victus§r",
+        "Victus x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Victus§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Victus x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"vinculum\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Vinculum§r",
+        "Vinculum x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Vinculum§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Vinculum x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"vitium\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Vitium§r",
+        "Vitium x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Vitium§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Vitium x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"vitreus\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Vitreus§r",
+        "Vitreus x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Vitreus§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Vitreus x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:phial;1;1;{Aspects:[{key:\"volatus\",amount:10}]}",
+      "resolved_item": "thaumcraft:phial",
+      "tooltip": [
+        "Пузырёк с эссенцией Volatus§r",
+        "Volatus x10"
+      ],
+      "tooltip_advanced": [
+        "Пузырёк с эссенцией Volatus§r (#4318/1)",
+        "§8thaumcraft:phial",
+        "§8NBT: 1 тег(ов)",
+        "Volatus x10"
+      ]
+    },
+    {
+      "id": "thaumcraft:plank_greatwood;1;0",
+      "resolved_item": "thaumcraft:plank_greatwood",
+      "tooltip": [
+        "Доски из великого дерева§r"
+      ],
+      "tooltip_advanced": [
+        "Доски из великого дерева§r (#4131)",
+        "§8thaumcraft:plank_greatwood"
+      ]
+    },
+    {
+      "id": "thaumcraft:plank_silverwood;1;0",
+      "resolved_item": "thaumcraft:plank_silverwood",
+      "tooltip": [
+        "Доски из серебряного дерева§r"
+      ],
+      "tooltip_advanced": [
+        "Доски из серебряного дерева§r (#4132)",
+        "§8thaumcraft:plank_silverwood"
+      ]
+    },
+    {
+      "id": "thaumcraft:plate;1;0",
+      "resolved_item": "thaumcraft:plate",
+      "tooltip": [
+        "Латунная пластина§r"
+      ],
+      "tooltip_advanced": [
+        "Латунная пластина§r (#4305/0)",
+        "§8thaumcraft:plate"
+      ]
+    },
+    {
+      "id": "thaumcraft:plate;1;1",
+      "resolved_item": "thaumcraft:plate",
+      "tooltip": [
+        "Железная пластина§r"
+      ],
+      "tooltip_advanced": [
+        "Железная пластина§r (#4305/1)",
+        "§8thaumcraft:plate"
+      ]
+    },
+    {
+      "id": "thaumcraft:plate;1;2",
+      "resolved_item": "thaumcraft:plate",
+      "tooltip": [
+        "Пластина из таумиума§r"
+      ],
+      "tooltip_advanced": [
+        "Пластина из таумиума§r (#4305/2)",
+        "§8thaumcraft:plate"
+      ]
+    },
+    {
+      "id": "thaumcraft:plate;1;3",
+      "resolved_item": "thaumcraft:plate",
+      "tooltip": [
+        "Пластина из пустотного металла§r"
+      ],
+      "tooltip_advanced": [
+        "Пластина из пустотного металла§r (#4305/3)",
+        "§8thaumcraft:plate"
+      ]
+    },
+    {
+      "id": "thaumcraft:plate_brass;1;0",
+      "resolved_item": "thaumcraft:plate",
+      "tooltip": [
+        "Латунная пластина§r"
+      ],
+      "tooltip_advanced": [
+        "Латунная пластина§r (#4305/0)",
+        "§8thaumcraft:plate"
+      ]
+    },
+    {
+      "id": "thaumcraft:plate_iron;1;0",
+      "resolved_item": "thaumcraft:plate",
+      "tooltip": [
+        "Железная пластина§r"
+      ],
+      "tooltip_advanced": [
+        "Железная пластина§r (#4305/1)",
+        "§8thaumcraft:plate"
+      ]
+    },
+    {
+      "id": "thaumcraft:plate_thaumium;1;0",
+      "resolved_item": "thaumcraft:plate",
+      "tooltip": [
+        "Пластина из таумиума§r"
+      ],
+      "tooltip_advanced": [
+        "Пластина из таумиума§r (#4305/2)",
+        "§8thaumcraft:plate"
+      ]
+    },
+    {
+      "id": "thaumcraft:plate_void;1;0",
+      "resolved_item": "thaumcraft:plate",
+      "tooltip": [
+        "Пластина из пустотного металла§r"
+      ],
+      "tooltip_advanced": [
+        "Пластина из пустотного металла§r (#4305/3)",
+        "§8thaumcraft:plate"
+      ]
+    },
+    {
+      "id": "thaumcraft:potion_sprayer;1;0",
+      "resolved_item": "thaumcraft:potion_sprayer",
+      "tooltip": [
+        "Разбрызгиватель зелий§r"
+      ],
+      "tooltip_advanced": [
+        "Разбрызгиватель зелий§r (#4267)",
+        "§8thaumcraft:potion_sprayer"
+      ]
+    },
+    {
+      "id": "thaumcraft:primal_crusher;1;0",
+      "resolved_item": "thaumcraft:primal_crusher",
+      "tooltip": [
+        "Первичный дробитель§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1.2 Скорость атаки",
+        " 8.5 Урон",
+        "§5Искажение 2"
+      ],
+      "tooltip_advanced": [
+        "Первичный дробитель§r (#4346)",
+        "",
+        "Когда в ведущей руке:",
+        " 1.2 Скорость атаки",
+        " 8.5 Урон",
+        "§8thaumcraft:primal_crusher",
+        "§5Искажение 2"
+      ]
+    },
+    {
+      "id": "thaumcraft:primordial_pearl;1;0",
+      "resolved_item": "thaumcraft:primordial_pearl",
+      "tooltip": [
+        "Первобытный жемчуг§r"
+      ],
+      "tooltip_advanced": [
+        "Первобытный жемчуг§r (#4292)",
+        "§8thaumcraft:primordial_pearl"
+      ]
+    },
+    {
+      "id": "thaumcraft:quicksilver;1;0",
+      "resolved_item": "thaumcraft:quicksilver",
+      "tooltip": [
+        "Ртуть§r"
+      ],
+      "tooltip_advanced": [
+        "Ртуть§r (#4296)",
+        "§8thaumcraft:quicksilver"
+      ]
+    },
+    {
+      "id": "thaumcraft:recharge_pedestal;1;0",
+      "resolved_item": "thaumcraft:recharge_pedestal",
+      "tooltip": [
+        "Пьедестал подзарядки§r"
+      ],
+      "tooltip_advanced": [
+        "Пьедестал подзарядки§r (#4241)",
+        "§8thaumcraft:recharge_pedestal"
+      ]
+    },
+    {
+      "id": "thaumcraft:redstone_relay;1;0",
+      "resolved_item": "thaumcraft:redstone_relay",
+      "tooltip": [
+        "Редстоуновое реле§r"
+      ],
+      "tooltip_advanced": [
+        "Редстоуновое реле§r (#4265)",
+        "§8thaumcraft:redstone_relay"
+      ]
+    },
+    {
+      "id": "thaumcraft:research_table;1;0",
+      "resolved_item": "thaumcraft:research_table",
+      "tooltip": [
+        "Стол исследований§r"
+      ],
+      "tooltip_advanced": [
+        "Стол исследований§r (#4225)",
+        "§8thaumcraft:research_table"
+      ]
+    },
+    {
+      "id": "thaumcraft:resonator;1;0",
+      "resolved_item": "thaumcraft:resonator",
+      "tooltip": [
+        "Резонатор эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Резонатор эссенции§r (#4328)",
+        "§8thaumcraft:resonator"
+      ]
+    },
+    {
+      "id": "thaumcraft:salis_mundus;1;0",
+      "resolved_item": "thaumcraft:salis_mundus",
+      "tooltip": [
+        "Salis Mundus§r"
+      ],
+      "tooltip_advanced": [
+        "Salis Mundus§r (#4308)",
+        "§8thaumcraft:salis_mundus"
+      ]
+    },
+    {
+      "id": "thaumcraft:sanity_checker;1;0",
+      "resolved_item": "thaumcraft:sanity_checker",
+      "tooltip": [
+        "Счётчик рассудка§r"
+      ],
+      "tooltip_advanced": [
+        "Счётчик рассудка§r (#4329)",
+        "§8thaumcraft:sanity_checker"
+      ]
+    },
+    {
+      "id": "thaumcraft:sanity_soap;1;0",
+      "resolved_item": "thaumcraft:sanity_soap",
+      "tooltip": [
+        "Дезинфицирующее мыло§r"
+      ],
+      "tooltip_advanced": [
+        "Дезинфицирующее мыло§r (#4322)",
+        "§8thaumcraft:sanity_soap"
+      ]
+    },
+    {
+      "id": "thaumcraft:scribing_tools;1;0",
+      "resolved_item": "thaumcraft:scribing_tools",
+      "tooltip": [
+        "Письменные принадлежности§r"
+      ],
+      "tooltip_advanced": [
+        "Письменные принадлежности§r (#4326)",
+        "§8thaumcraft:scribing_tools"
+      ]
+    },
+    {
+      "id": "thaumcraft:seal;1;0",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Пустая печать§r"
+      ],
+      "tooltip_advanced": [
+        "Пустая печать§r (#4396/0)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:breaker",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Разрушение Блоков§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Разрушение Блоков§r (#4396/12)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:breaker_advanced",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Control Seal: Advanced Block Breaker§r"
+      ],
+      "tooltip_advanced": [
+        "Control Seal: Advanced Block Breaker§r (#4396/16)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:butcher",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Забивание§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Забивание§r (#4396/8)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:empty",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Опустошение§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Опустошение§r (#4396/5)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:empty_advanced",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Продвинутая печать контроля: Опустошение§r"
+      ],
+      "tooltip_advanced": [
+        "Продвинутая печать контроля: Опустошение§r (#4396/6)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:fill",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Наполнение§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Наполнение§r (#4396/3)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:fill_advanced",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Продвинутая печать контроля: Наполнение§r"
+      ],
+      "tooltip_advanced": [
+        "Продвинутая печать контроля: Наполнение§r (#4396/4)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:guard",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Охрана§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Охрана§r (#4396/9)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:guard_advanced",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Продвинутая печать контроля: Охрана§r"
+      ],
+      "tooltip_advanced": [
+        "Продвинутая печать контроля: Охрана§r (#4396/10)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:harvest",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Жатва§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Жатва§r (#4396/7)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:lumber",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Рубка§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Рубка§r (#4396/11)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:pickup",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Сбор§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Сбор§r (#4396/1)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:pickup_advanced",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Продвинутая печать контроля: Сбор§r"
+      ],
+      "tooltip_advanced": [
+        "Продвинутая печать контроля: Сбор§r (#4396/2)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:provider",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Снабжение§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Снабжение§r (#4396/14)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:stock",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Запас§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Запас§r (#4396/15)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:seals;1;0;thaumcraft:use",
+      "resolved_item": "thaumcraft:seal",
+      "tooltip": [
+        "Печать контроля: Использование§r"
+      ],
+      "tooltip_advanced": [
+        "Печать контроля: Использование§r (#4396/13)",
+        "§8thaumcraft:seal"
+      ]
+    },
+    {
+      "id": "thaumcraft:shimmerleaf;1;0",
+      "resolved_item": "thaumcraft:shimmerleaf",
+      "tooltip": [
+        "Мерцающий лист§r"
+      ],
+      "tooltip_advanced": [
+        "Мерцающий лист§r (#4128)",
+        "§8thaumcraft:shimmerleaf"
+      ]
+    },
+    {
+      "id": "thaumcraft:slab_ancient;1;0",
+      "resolved_item": "thaumcraft:slab_ancient",
+      "tooltip": [
+        "Плита из древнего камня§r"
+      ],
+      "tooltip_advanced": [
+        "Плита из древнего камня§r (#4120/0)",
+        "§8thaumcraft:slab_ancient"
+      ]
+    },
+    {
+      "id": "thaumcraft:slab_arcane_brick;1;0",
+      "resolved_item": "thaumcraft:slab_arcane_brick",
+      "tooltip": [
+        "Плита из кирпичей мистического камня§r"
+      ],
+      "tooltip_advanced": [
+        "Плита из кирпичей мистического камня§r (#4119/0)",
+        "§8thaumcraft:slab_arcane_brick"
+      ]
+    },
+    {
+      "id": "thaumcraft:slab_arcane_stone;1;0",
+      "resolved_item": "thaumcraft:slab_arcane_stone",
+      "tooltip": [
+        "Плита из мистического камня§r"
+      ],
+      "tooltip_advanced": [
+        "Плита из мистического камня§r (#4118/0)",
+        "§8thaumcraft:slab_arcane_stone"
+      ]
+    },
+    {
+      "id": "thaumcraft:slab_eldritch;1;0",
+      "resolved_item": "thaumcraft:slab_eldritch",
+      "tooltip": [
+        "Плита из потустороннего камня§r"
+      ],
+      "tooltip_advanced": [
+        "Плита из потустороннего камня§r (#4121/0)",
+        "§8thaumcraft:slab_eldritch"
+      ]
+    },
+    {
+      "id": "thaumcraft:slab_greatwood;1;0",
+      "resolved_item": "thaumcraft:slab_greatwood",
+      "tooltip": [
+        "Плита из великого дерева§r"
+      ],
+      "tooltip_advanced": [
+        "Плита из великого дерева§r (#4135/0)",
+        "§8thaumcraft:slab_greatwood"
+      ]
+    },
+    {
+      "id": "thaumcraft:slab_silverwood;1;0",
+      "resolved_item": "thaumcraft:slab_silverwood",
+      "tooltip": [
+        "Плита из серебряного дерева§r"
+      ],
+      "tooltip_advanced": [
+        "Плита из серебряного дерева§r (#4136/0)",
+        "§8thaumcraft:slab_silverwood"
+      ]
+    },
+    {
+      "id": "thaumcraft:smelter_aux;1;0",
+      "resolved_item": "thaumcraft:smelter_aux",
+      "tooltip": [
+        "Вспомогательный жидкостный насос§r"
+      ],
+      "tooltip_advanced": [
+        "Вспомогательный жидкостный насос§r (#4238)",
+        "§8thaumcraft:smelter_aux"
+      ]
+    },
+    {
+      "id": "thaumcraft:smelter_basic;1;0",
+      "resolved_item": "thaumcraft:smelter_basic",
+      "tooltip": [
+        "Плавильня эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Плавильня эссенции§r (#4235)",
+        "§8thaumcraft:smelter_basic"
+      ]
+    },
+    {
+      "id": "thaumcraft:smelter_thaumium;1;0",
+      "resolved_item": "thaumcraft:smelter_thaumium",
+      "tooltip": [
+        "Плавильня эссенции из таумиума§r"
+      ],
+      "tooltip_advanced": [
+        "Плавильня эссенции из таумиума§r (#4236)",
+        "§8thaumcraft:smelter_thaumium"
+      ]
+    },
+    {
+      "id": "thaumcraft:smelter_vent;1;0",
+      "resolved_item": "thaumcraft:smelter_vent",
+      "tooltip": [
+        "Вспомогательный вентиляционный порт§r"
+      ],
+      "tooltip_advanced": [
+        "Вспомогательный вентиляционный порт§r (#4239)",
+        "§8thaumcraft:smelter_vent"
+      ]
+    },
+    {
+      "id": "thaumcraft:smelter_void;1;0",
+      "resolved_item": "thaumcraft:smelter_void",
+      "tooltip": [
+        "Плавильня эссенции из пустотного металла§r"
+      ],
+      "tooltip_advanced": [
+        "Плавильня эссенции из пустотного металла§r (#4237)",
+        "§8thaumcraft:smelter_void"
+      ]
+    },
+    {
+      "id": "thaumcraft:spa;1;0",
+      "resolved_item": "thaumcraft:spa",
+      "tooltip": [
+        "Мистическая ванна§r"
+      ],
+      "tooltip_advanced": [
+        "Мистическая ванна§r (#4259)",
+        "§8thaumcraft:spa"
+      ]
+    },
+    {
+      "id": "thaumcraft:stabilizer;1;0",
+      "resolved_item": "thaumcraft:stabilizer",
+      "tooltip": [
+        "Стабилизатор§r"
+      ],
+      "tooltip_advanced": [
+        "Стабилизатор§r (#4269)",
+        "§8thaumcraft:stabilizer"
+      ]
+    },
+    {
+      "id": "thaumcraft:stairs_ancient;1;0",
+      "resolved_item": "thaumcraft:stairs_ancient",
+      "tooltip": [
+        "Ступеньки из древнего камня§r"
+      ],
+      "tooltip_advanced": [
+        "Ступеньки из древнего камня§r (#4117)",
+        "§8thaumcraft:stairs_ancient"
+      ]
+    },
+    {
+      "id": "thaumcraft:stairs_arcane;1;0",
+      "resolved_item": "thaumcraft:stairs_arcane",
+      "tooltip": [
+        "Ступеньки из мистического камня§r"
+      ],
+      "tooltip_advanced": [
+        "Ступеньки из мистического камня§r (#4115)",
+        "§8thaumcraft:stairs_arcane"
+      ]
+    },
+    {
+      "id": "thaumcraft:stairs_arcane_brick;1;0",
+      "resolved_item": "thaumcraft:stairs_arcane_brick",
+      "tooltip": [
+        "Ступеньки из кирпичей мистического камня§r"
+      ],
+      "tooltip_advanced": [
+        "Ступеньки из кирпичей мистического камня§r (#4116)",
+        "§8thaumcraft:stairs_arcane_brick"
+      ]
+    },
+    {
+      "id": "thaumcraft:stairs_greatwood;1;0",
+      "resolved_item": "thaumcraft:stairs_greatwood",
+      "tooltip": [
+        "Ступеньки из великого дерева§r"
+      ],
+      "tooltip_advanced": [
+        "Ступеньки из великого дерева§r (#4133)",
+        "§8thaumcraft:stairs_greatwood"
+      ]
+    },
+    {
+      "id": "thaumcraft:stairs_silverwood;1;0",
+      "resolved_item": "thaumcraft:stairs_silverwood",
+      "tooltip": [
+        "Ступеньки из серебряного дерева§r"
+      ],
+      "tooltip_advanced": [
+        "Ступеньки из серебряного дерева§r (#4134)",
+        "§8thaumcraft:stairs_silverwood"
+      ]
+    },
+    {
+      "id": "thaumcraft:stone_ancient;1;0",
+      "resolved_item": "thaumcraft:stone_ancient",
+      "tooltip": [
+        "Древний камень§r"
+      ],
+      "tooltip_advanced": [
+        "Древний камень§r (#4108)",
+        "§8thaumcraft:stone_ancient"
+      ]
+    },
+    {
+      "id": "thaumcraft:stone_arcane;1;0",
+      "resolved_item": "thaumcraft:stone_arcane",
+      "tooltip": [
+        "Мистический камень§r"
+      ],
+      "tooltip_advanced": [
+        "Мистический камень§r (#4106)",
+        "§8thaumcraft:stone_arcane"
+      ]
+    },
+    {
+      "id": "thaumcraft:stone_arcane_brick;1;0",
+      "resolved_item": "thaumcraft:stone_arcane_brick",
+      "tooltip": [
+        "Кирпичи из мистического камня§r"
+      ],
+      "tooltip_advanced": [
+        "Кирпичи из мистического камня§r (#4107)",
+        "§8thaumcraft:stone_arcane_brick"
+      ]
+    },
+    {
+      "id": "thaumcraft:stone_eldritch_tile;1;0",
+      "resolved_item": "thaumcraft:stone_eldritch_tile",
+      "tooltip": [
+        "Потусторонний камень§r"
+      ],
+      "tooltip_advanced": [
+        "Потусторонний камень§r (#4113)",
+        "§8thaumcraft:stone_eldritch_tile"
+      ]
+    },
+    {
+      "id": "thaumcraft:table_stone;1;0",
+      "resolved_item": "thaumcraft:table_stone",
+      "tooltip": [
+        "Каменный стол§r"
+      ],
+      "tooltip_advanced": [
+        "Каменный стол§r (#4155)",
+        "§8thaumcraft:table_stone"
+      ]
+    },
+    {
+      "id": "thaumcraft:table_wood;1;0",
+      "resolved_item": "thaumcraft:table_wood",
+      "tooltip": [
+        "Деревянный стол§r"
+      ],
+      "tooltip_advanced": [
+        "Деревянный стол§r (#4154)",
+        "§8thaumcraft:table_wood"
+      ]
+    },
+    {
+      "id": "thaumcraft:tallow;1;0",
+      "resolved_item": "thaumcraft:tallow",
+      "tooltip": [
+        "Магический жир§r"
+      ],
+      "tooltip_advanced": [
+        "Магический жир§r (#4302)",
+        "§8thaumcraft:tallow"
+      ]
+    },
+    {
+      "id": "thaumcraft:thaumium_axe;1;0",
+      "resolved_item": "thaumcraft:thaumium_axe",
+      "tooltip": [
+        "Топор из таумиума§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 9 Урон"
+      ],
+      "tooltip_advanced": [
+        "Топор из таумиума§r (#4331)",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 9 Урон",
+        "§8thaumcraft:thaumium_axe"
+      ]
+    },
+    {
+      "id": "thaumcraft:thaumium_boots;1;0",
+      "resolved_item": "thaumcraft:thaumium_boots",
+      "tooltip": [
+        "Ботинки из таумиума§r",
+        "",
+        "Когда обуто:",
+        "§9 +1 Твёрдость брони",
+        "§9 +2 Броня"
+      ],
+      "tooltip_advanced": [
+        "Ботинки из таумиума§r (#4355)",
+        "",
+        "Когда обуто:",
+        "§9 +1 Твёрдость брони",
+        "§9 +2 Броня",
+        "§8thaumcraft:thaumium_boots"
+      ]
+    },
+    {
+      "id": "thaumcraft:thaumium_chest;1;0",
+      "resolved_item": "thaumcraft:thaumium_chest",
+      "tooltip": [
+        "Нагрудник из таумиума§r",
+        "",
+        "Когда надето:",
+        "§9 +1 Твёрдость брони",
+        "§9 +6 Броня"
+      ],
+      "tooltip_advanced": [
+        "Нагрудник из таумиума§r (#4353)",
+        "",
+        "Когда надето:",
+        "§9 +1 Твёрдость брони",
+        "§9 +6 Броня",
+        "§8thaumcraft:thaumium_chest"
+      ]
+    },
+    {
+      "id": "thaumcraft:thaumium_helm;1;0",
+      "resolved_item": "thaumcraft:thaumium_helm",
+      "tooltip": [
+        "Шлем из таумиума§r",
+        "",
+        "Когда надето на голову:",
+        "§9 +1 Твёрдость брони",
+        "§9 +2 Броня"
+      ],
+      "tooltip_advanced": [
+        "Шлем из таумиума§r (#4352)",
+        "",
+        "Когда надето на голову:",
+        "§9 +1 Твёрдость брони",
+        "§9 +2 Броня",
+        "§8thaumcraft:thaumium_helm"
+      ]
+    },
+    {
+      "id": "thaumcraft:thaumium_hoe;1;0",
+      "resolved_item": "thaumcraft:thaumium_hoe",
+      "tooltip": [
+        "Мотыга из таумиума§r",
+        "",
+        "Когда в ведущей руке:",
+        " 3.5 Скорость атаки",
+        " 1 Урон"
+      ],
+      "tooltip_advanced": [
+        "Мотыга из таумиума§r (#4335)",
+        "",
+        "Когда в ведущей руке:",
+        " 3.5 Скорость атаки",
+        " 1 Урон",
+        "§8thaumcraft:thaumium_hoe"
+      ]
+    },
+    {
+      "id": "thaumcraft:thaumium_legs;1;0",
+      "resolved_item": "thaumcraft:thaumium_legs",
+      "tooltip": [
+        "Поножи из таумиума§r",
+        "",
+        "Когда надето на ноги:",
+        "§9 +1 Твёрдость брони",
+        "§9 +5 Броня"
+      ],
+      "tooltip_advanced": [
+        "Поножи из таумиума§r (#4354)",
+        "",
+        "Когда надето на ноги:",
+        "§9 +1 Твёрдость брони",
+        "§9 +5 Броня",
+        "§8thaumcraft:thaumium_legs"
+      ]
+    },
+    {
+      "id": "thaumcraft:thaumium_pick;1;0",
+      "resolved_item": "thaumcraft:thaumium_pick",
+      "tooltip": [
+        "Кирка из таумиума§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1.2 Скорость атаки",
+        " 4.5 Урон"
+      ],
+      "tooltip_advanced": [
+        "Кирка из таумиума§r (#4334)",
+        "",
+        "Когда в ведущей руке:",
+        " 1.2 Скорость атаки",
+        " 4.5 Урон",
+        "§8thaumcraft:thaumium_pick"
+      ]
+    },
+    {
+      "id": "thaumcraft:thaumium_shovel;1;0",
+      "resolved_item": "thaumcraft:thaumium_shovel",
+      "tooltip": [
+        "Лопата из таумиума§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 5 Урон"
+      ],
+      "tooltip_advanced": [
+        "Лопата из таумиума§r (#4333)",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 5 Урон",
+        "§8thaumcraft:thaumium_shovel"
+      ]
+    },
+    {
+      "id": "thaumcraft:thaumium_sword;1;0",
+      "resolved_item": "thaumcraft:thaumium_sword",
+      "tooltip": [
+        "Меч из таумиума§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1.6 Скорость атаки",
+        " 6.5 Урон"
+      ],
+      "tooltip_advanced": [
+        "Меч из таумиума§r (#4332)",
+        "",
+        "Когда в ведущей руке:",
+        " 1.6 Скорость атаки",
+        " 6.5 Урон",
+        "§8thaumcraft:thaumium_sword"
+      ]
+    },
+    {
+      "id": "thaumcraft:thaumometer;1;0",
+      "resolved_item": "thaumcraft:thaumometer",
+      "tooltip": [
+        "Таумометр§r"
+      ],
+      "tooltip_advanced": [
+        "Таумометр§r (#4327)",
+        "§8thaumcraft:thaumometer"
+      ]
+    },
+    {
+      "id": "thaumcraft:traveller_boots;1;0",
+      "resolved_item": "thaumcraft:traveller_boots",
+      "tooltip": [
+        "Сапоги путешественника§r",
+        "",
+        "Когда обуто:",
+        "§9 +1 Твёрдость брони",
+        "§9 +1 Броня",
+        "§eВис заряд: 0"
+      ],
+      "tooltip_advanced": [
+        "Сапоги путешественника§r (#4359)",
+        "",
+        "Когда обуто:",
+        "§9 +1 Твёрдость брони",
+        "§9 +1 Броня",
+        "§8thaumcraft:traveller_boots",
+        "§eВис заряд: 0"
+      ]
+    },
+    {
+      "id": "thaumcraft:triple_meat_treat;1;0",
+      "resolved_item": "thaumcraft:triple_meat_treat",
+      "tooltip": [
+        "Лакомство из тройного мяса§r"
+      ],
+      "tooltip_advanced": [
+        "Лакомство из тройного мяса§r (#4315)",
+        "§8thaumcraft:triple_meat_treat"
+      ]
+    },
+    {
+      "id": "thaumcraft:tube;1;0",
+      "resolved_item": "thaumcraft:tube",
+      "tooltip": [
+        "Труба для эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Труба для эссенции§r (#4244)",
+        "§8thaumcraft:tube"
+      ]
+    },
+    {
+      "id": "thaumcraft:tube_buffer;1;0",
+      "resolved_item": "thaumcraft:tube_buffer",
+      "tooltip": [
+        "Буфер для эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Буфер для эссенции§r (#4249)",
+        "§8thaumcraft:tube_buffer"
+      ]
+    },
+    {
+      "id": "thaumcraft:tube_filter;1;0",
+      "resolved_item": "thaumcraft:tube_filter",
+      "tooltip": [
+        "Фильтрующая труба для эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Фильтрующая труба для эссенции§r (#4248)",
+        "§8thaumcraft:tube_filter"
+      ]
+    },
+    {
+      "id": "thaumcraft:tube_oneway;1;0",
+      "resolved_item": "thaumcraft:tube_oneway",
+      "tooltip": [
+        "Направляющая труба для эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Направляющая труба для эссенции§r (#4247)",
+        "§8thaumcraft:tube_oneway"
+      ]
+    },
+    {
+      "id": "thaumcraft:tube_restrict;1;0",
+      "resolved_item": "thaumcraft:tube_restrict",
+      "tooltip": [
+        "Ограничивающая труба для эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Ограничивающая труба для эссенции§r (#4246)",
+        "§8thaumcraft:tube_restrict"
+      ]
+    },
+    {
+      "id": "thaumcraft:tube_valve;1;0",
+      "resolved_item": "thaumcraft:tube_valve",
+      "tooltip": [
+        "Клапан трубы для эссенции§r"
+      ],
+      "tooltip_advanced": [
+        "Клапан трубы для эссенции§r (#4245)",
+        "§8thaumcraft:tube_valve"
+      ]
+    },
+    {
+      "id": "thaumcraft:turret;1;0",
+      "resolved_item": "thaumcraft:turret",
+      "tooltip": [
+        "Автоматический арбалет§r"
+      ],
+      "tooltip_advanced": [
+        "Автоматический арбалет§r (#4324/0)",
+        "§8thaumcraft:turret"
+      ]
+    },
+    {
+      "id": "thaumcraft:turret;1;1",
+      "resolved_item": "thaumcraft:turret",
+      "tooltip": [
+        "Продвинутый автоматический арбалет§r"
+      ],
+      "tooltip_advanced": [
+        "Продвинутый автоматический арбалет§r (#4324/1)",
+        "§8thaumcraft:turret"
+      ]
+    },
+    {
+      "id": "thaumcraft:turret;1;2",
+      "resolved_item": "thaumcraft:turret",
+      "tooltip": [
+        "Мистический бур§r"
+      ],
+      "tooltip_advanced": [
+        "Мистический бур§r (#4324/2)",
+        "§8thaumcraft:turret"
+      ]
+    },
+    {
+      "id": "thaumcraft:verdant_charm;1;0",
+      "resolved_item": "thaumcraft:verdant_charm",
+      "tooltip": [
+        "Кольцо жизненной силы§r",
+        "§eВис заряд: 0",
+        "§6Бижутерия (Брелок)"
+      ],
+      "tooltip_advanced": [
+        "Кольцо жизненной силы§r (#4382)",
+        "§8thaumcraft:verdant_charm",
+        "§eВис заряд: 0",
+        "§6Бижутерия (Брелок)"
+      ]
+    },
+    {
+      "id": "thaumcraft:verdant_charm;1;0;{type:1b}",
+      "resolved_item": "thaumcraft:verdant_charm",
+      "tooltip": [
+        "Кольцо жизненной силы§r",
+        "§6Дарующий жизнь",
+        "§eВис заряд: 0",
+        "§6Бижутерия (Брелок)"
+      ],
+      "tooltip_advanced": [
+        "Кольцо жизненной силы§r (#4382)",
+        "§6Дарующий жизнь",
+        "§8thaumcraft:verdant_charm",
+        "§8NBT: 1 тег(ов)",
+        "§eВис заряд: 0",
+        "§6Бижутерия (Брелок)"
+      ]
+    },
+    {
+      "id": "thaumcraft:verdant_charm;1;0;{type:2b}",
+      "resolved_item": "thaumcraft:verdant_charm",
+      "tooltip": [
+        "Кольцо жизненной силы§r",
+        "§6Поддерживающий жизнь",
+        "§eВис заряд: 0",
+        "§6Бижутерия (Брелок)"
+      ],
+      "tooltip_advanced": [
+        "Кольцо жизненной силы§r (#4382)",
+        "§6Поддерживающий жизнь",
+        "§8thaumcraft:verdant_charm",
+        "§8NBT: 1 тег(ов)",
+        "§eВис заряд: 0",
+        "§6Бижутерия (Брелок)"
+      ]
+    },
+    {
+      "id": "thaumcraft:vis_battery;1;0",
+      "resolved_item": "thaumcraft:vis_battery",
+      "tooltip": [
+        "Вис-батарея§r"
+      ],
+      "tooltip_advanced": [
+        "Вис-батарея§r (#4220)",
+        "§8thaumcraft:vis_battery"
+      ]
+    },
+    {
+      "id": "thaumcraft:vis_generator;1;0",
+      "resolved_item": "thaumcraft:vis_generator",
+      "tooltip": [
+        "Генератор Вис§r"
+      ],
+      "tooltip_advanced": [
+        "Генератор Вис§r (#4270)",
+        "§8thaumcraft:vis_generator"
+      ]
+    },
+    {
+      "id": "thaumcraft:vis_resonator;1;0",
+      "resolved_item": "thaumcraft:vis_resonator",
+      "tooltip": [
+        "Вис-резонатор§r"
+      ],
+      "tooltip_advanced": [
+        "Вис-резонатор§r (#4301)",
+        "§8thaumcraft:vis_resonator"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_axe;1;0",
+      "resolved_item": "thaumcraft:void_axe",
+      "tooltip": [
+        "Пустотный топор§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 9 Урон",
+        "§5Искажение 1"
+      ],
+      "tooltip_advanced": [
+        "Пустотный топор§r (#4336)",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 9 Урон",
+        "§8thaumcraft:void_axe",
+        "§5Искажение 1"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_boots;1;0",
+      "resolved_item": "thaumcraft:void_boots",
+      "tooltip": [
+        "Пустотные ботинки§r",
+        "",
+        "Когда обуто:",
+        "§9 +1 Твёрдость брони",
+        "§9 +3 Броня",
+        "§5Искажение 1"
+      ],
+      "tooltip_advanced": [
+        "Пустотные ботинки§r (#4366)",
+        "",
+        "Когда обуто:",
+        "§9 +1 Твёрдость брони",
+        "§9 +3 Броня",
+        "§8thaumcraft:void_boots",
+        "§5Искажение 1"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_chest;1;0",
+      "resolved_item": "thaumcraft:void_chest",
+      "tooltip": [
+        "Пустотная кираса§r",
+        "",
+        "Когда надето:",
+        "§9 +1 Твёрдость брони",
+        "§9 +8 Броня",
+        "§5Искажение 1"
+      ],
+      "tooltip_advanced": [
+        "Пустотная кираса§r (#4364)",
+        "",
+        "Когда надето:",
+        "§9 +1 Твёрдость брони",
+        "§9 +8 Броня",
+        "§8thaumcraft:void_chest",
+        "§5Искажение 1"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_helm;1;0",
+      "resolved_item": "thaumcraft:void_helm",
+      "tooltip": [
+        "Пустотный шлем§r",
+        "",
+        "Когда надето на голову:",
+        "§9 +1 Твёрдость брони",
+        "§9 +3 Броня",
+        "§5Искажение 1"
+      ],
+      "tooltip_advanced": [
+        "Пустотный шлем§r (#4363)",
+        "",
+        "Когда надето на голову:",
+        "§9 +1 Твёрдость брони",
+        "§9 +3 Броня",
+        "§8thaumcraft:void_helm",
+        "§5Искажение 1"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_hoe;1;0",
+      "resolved_item": "thaumcraft:void_hoe",
+      "tooltip": [
+        "Пустотная мотыга§r",
+        "",
+        "Когда в ведущей руке:",
+        " 4 Скорость атаки",
+        " 1 Урон",
+        "§5Искажение 1"
+      ],
+      "tooltip_advanced": [
+        "Пустотная мотыга§r (#4340)",
+        "",
+        "Когда в ведущей руке:",
+        " 4 Скорость атаки",
+        " 1 Урон",
+        "§8thaumcraft:void_hoe",
+        "§5Искажение 1"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_legs;1;0",
+      "resolved_item": "thaumcraft:void_legs",
+      "tooltip": [
+        "Пустотные поножи§r",
+        "",
+        "Когда надето на ноги:",
+        "§9 +1 Твёрдость брони",
+        "§9 +6 Броня",
+        "§5Искажение 1"
+      ],
+      "tooltip_advanced": [
+        "Пустотные поножи§r (#4365)",
+        "",
+        "Когда надето на ноги:",
+        "§9 +1 Твёрдость брони",
+        "§9 +6 Броня",
+        "§8thaumcraft:void_legs",
+        "§5Искажение 1"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_pick;1;0",
+      "resolved_item": "thaumcraft:void_pick",
+      "tooltip": [
+        "Пустотная кирка§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1.2 Скорость атаки",
+        " 5 Урон",
+        "§5Искажение 1"
+      ],
+      "tooltip_advanced": [
+        "Пустотная кирка§r (#4339)",
+        "",
+        "Когда в ведущей руке:",
+        " 1.2 Скорость атаки",
+        " 5 Урон",
+        "§8thaumcraft:void_pick",
+        "§5Искажение 1"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_robe_chest;1;0",
+      "resolved_item": "thaumcraft:void_robe_chest",
+      "tooltip": [
+        "Пустотная мантия тауматурга§r",
+        "",
+        "Когда надето:",
+        "§9 +2 Твёрдость брони",
+        "§9 +9 Броня",
+        "§5Искажение 3",
+        "§5Уменьшение затрат Вис: 5%"
+      ],
+      "tooltip_advanced": [
+        "Пустотная мантия тауматурга§r (#4368)",
+        "",
+        "Когда надето:",
+        "§9 +2 Твёрдость брони",
+        "§9 +9 Броня",
+        "§8thaumcraft:void_robe_chest",
+        "§5Искажение 3",
+        "§5Уменьшение затрат Вис: 5%"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_robe_helm;1;0",
+      "resolved_item": "thaumcraft:void_robe_helm",
+      "tooltip": [
+        "Пустотный капюшон тауматурга§r",
+        "",
+        "Когда надето на голову:",
+        "§9 +2 Твёрдость брони",
+        "§9 +4 Броня",
+        "§5Искажение 3",
+        "§5Уменьшение затрат Вис: 5%"
+      ],
+      "tooltip_advanced": [
+        "Пустотный капюшон тауматурга§r (#4367)",
+        "",
+        "Когда надето на голову:",
+        "§9 +2 Твёрдость брони",
+        "§9 +4 Броня",
+        "§8thaumcraft:void_robe_helm",
+        "§5Искажение 3",
+        "§5Уменьшение затрат Вис: 5%"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_robe_legs;1;0",
+      "resolved_item": "thaumcraft:void_robe_legs",
+      "tooltip": [
+        "Пустотные поножи тауматурга§r",
+        "",
+        "Когда надето на ноги:",
+        "§9 +2 Твёрдость брони",
+        "§9 +7 Броня",
+        "§5Искажение 3",
+        "§5Уменьшение затрат Вис: 5%"
+      ],
+      "tooltip_advanced": [
+        "Пустотные поножи тауматурга§r (#4369)",
+        "",
+        "Когда надето на ноги:",
+        "§9 +2 Твёрдость брони",
+        "§9 +7 Броня",
+        "§8thaumcraft:void_robe_legs",
+        "§5Искажение 3",
+        "§5Уменьшение затрат Вис: 5%"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_seed;1;0",
+      "resolved_item": "thaumcraft:void_seed",
+      "tooltip": [
+        "Семя пустоты§r"
+      ],
+      "tooltip_advanced": [
+        "Семя пустоты§r (#4310)",
+        "§8thaumcraft:void_seed"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_shovel;1;0",
+      "resolved_item": "thaumcraft:void_shovel",
+      "tooltip": [
+        "Пустотная лопата§r",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 5.5 Урон",
+        "§5Искажение 1"
+      ],
+      "tooltip_advanced": [
+        "Пустотная лопата§r (#4338)",
+        "",
+        "Когда в ведущей руке:",
+        " 1 Скорость атаки",
+        " 5.5 Урон",
+        "§8thaumcraft:void_shovel",
+        "§5Искажение 1"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_siphon;1;0",
+      "resolved_item": "thaumcraft:void_siphon",
+      "tooltip": [
+        "Пустотный сифон§r"
+      ],
+      "tooltip_advanced": [
+        "Пустотный сифон§r (#4274)",
+        "§8thaumcraft:void_siphon"
+      ]
+    },
+    {
+      "id": "thaumcraft:void_sword;1;0",
+      "resolved_item": "thaumcraft:void_sword",
+      "tooltip": [
+        "Пустотный меч§r",
+        "§6Слабое истощение",
+        "",
+        "Когда в ведущей руке:",
+        " 1.6 Скорость атаки",
+        " 7 Урон",
+        "§5Искажение 1"
+      ],
+      "tooltip_advanced": [
+        "Пустотный меч§r (#4337)",
+        "§6Слабое истощение",
+        "",
+        "Когда в ведущей руке:",
+        " 1.6 Скорость атаки",
+        " 7 Урон",
+        "§8thaumcraft:void_sword",
+        "§5Искажение 1"
+      ]
+    },
+    {
+      "id": "thaumcraft:voidseer_charm;1;0",
+      "resolved_item": "thaumcraft:voidseer_charm",
+      "tooltip": [
+        "Пустотная жемчужина провидца§r",
+        "§1§oВы вглядываетесь в чернильную темноту... И можете поклясться, что видели, как нечто посмотрело на Вас в ответ...",
+        "§6Бижутерия (Брелок)"
+      ],
+      "tooltip_advanced": [
+        "Пустотная жемчужина провидца§r (#4384)",
+        "§1§oВы вглядываетесь в чернильную темноту... И можете поклясться, что видели, как нечто посмотрело на Вас в ответ...",
+        "§8thaumcraft:voidseer_charm",
+        "§6Бижутерия (Брелок)"
+      ]
+    },
+    {
+      "id": "thaumcraft:wand_workbench;1;0",
+      "resolved_item": "thaumcraft:wand_workbench",
+      "tooltip": [
+        "Конфигуратор линз§r"
+      ],
+      "tooltip_advanced": [
+        "Конфигуратор линз§r (#4242)",
+        "§8thaumcraft:wand_workbench"
+      ]
+    }
+  ]
+}

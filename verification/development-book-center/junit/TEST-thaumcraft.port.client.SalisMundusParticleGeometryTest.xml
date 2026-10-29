@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="thaumcraft.port.client.SalisMundusParticleGeometryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-26T04:56:27.341Z" hostname="6adda57d248a" time="0.014">
-  <properties/>
-  <testcase name="textureCornersRemainAlignedAndKeepVisibleColourAndLight()" classname="thaumcraft.port.client.SalisMundusParticleGeometryTest" time="0.013"/>
-  <testcase name="emittedTrianglesFaceTheCameraAtDifferentAnglesAndRolls()" classname="thaumcraft.port.client.SalisMundusParticleGeometryTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

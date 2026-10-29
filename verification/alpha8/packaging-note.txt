@@ -1,1 +1,0 @@
-The initial archive from the combined build/runData invocation failed ZIP validation (truncated in textures/research/research3.png). It was discarded and the Gradle jar task run again after datagen. The final standalone Gradle archive passed ZIP CRC, resources, nested JAR, Java version and class byte comparisons. See alpha8-package.log and alpha8-resources.log.

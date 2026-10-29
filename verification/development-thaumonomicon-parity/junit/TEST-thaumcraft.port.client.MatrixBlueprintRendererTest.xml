@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="thaumcraft.port.client.MatrixBlueprintRendererTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-26T09:00:38.861Z" hostname="6adda57d248a" time="0.008">
-  <properties/>
-  <testcase name="legacyLightsRotateWithThePreviewAndDoNotUseWorldLightOrAnExtraItemShade()" classname="thaumcraft.port.client.MatrixBlueprintRendererTest" time="0.005"/>
-  <testcase name="idlePreviewContainsEightSeparatedCubesWithTheOriginalCentersAndSize()" classname="thaumcraft.port.client.MatrixBlueprintRendererTest" time="0.002"/>
-  <testcase name="runeUvsAndPerCubeQuarterTurnsFollowTheOriginalModelCube()" classname="thaumcraft.port.client.MatrixBlueprintRendererTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

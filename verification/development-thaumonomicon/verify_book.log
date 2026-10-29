@@ -1,3 +1,0 @@
-PASS: 7 PNG backgrounds preserve every decoded RGB pixel of the original JPG
-PASS: 855 original presentation hashes; all 148 research icon sets resolve; 287 standalone models; 381 original recipe variants; all 203 book references accounted for (4 stale original IDs documented)
-PASS: scanner display conversion and animated lens; visual in-game comparison remains pending

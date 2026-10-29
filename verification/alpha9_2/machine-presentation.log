@@ -1,4 +1,0 @@
-PASS: 7 original model geometries/UVs; 17 byte-identical TC6 textures, including both GUI atlases
-PASS: 25 item model texture references resolve against actual Minecraft 1.21.1; all four block display transforms match vanilla
-PASS: all three smelter tiers have correct facing/lit variants; ordinary smelter bottom points to the current furnace_top texture
-GPU rendering and multiplayer crafting remain unverified

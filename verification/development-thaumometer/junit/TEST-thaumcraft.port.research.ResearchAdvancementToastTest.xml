@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="thaumcraft.port.research.ResearchAdvancementToastTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-29T01:00:07.239Z" hostname="e54a7cd1abdc" time="0.052">
-  <properties/>
-  <testcase name="generatedResearchLeavesKeepTheirContentAndProgressWithoutDuplicatingTheOriginalToast()" classname="thaumcraft.port.research.ResearchAdvancementToastTest" time="0.05"/>
-  <testcase name="theChangeDoesNotMuteOrRewriteAnyOtherAdvancement()" classname="thaumcraft.port.research.ResearchAdvancementToastTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -10,11 +10,10 @@ __pycache__/
 .idea/
 *.iml
 
-# Supplemental visual evidence is retained separately from the source repository.
-/verification/**/*.png
-/verification/**/*.ogg
-/verification/**/*.mp4
-/verification/**/*.gif
-/docs/*.docx
-/verification/**/*.dat
-/verification/**/*.zip
+# Comparison material and import staging stay outside the buildable source repository.
+/verification/
+/reference/
+/docs/
+/.source-import/
+/IMPORT_STATUS.md
+/SOURCE-MANIFEST.json

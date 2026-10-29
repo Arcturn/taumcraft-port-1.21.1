@@ -2,10 +2,6 @@ package thaumcraft.port;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -19,16 +15,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /** Oracle: real TC6 BETA26 ItemStack.getTooltip, not modern substitute-item statistics. */
 class BookItemTooltipCatalogTest {
-    private static final Path EVIDENCE = Path.of("verification/development-thaumonomicon-parity/item-tooltips");
-
-    @Test void everyCapturedTooltipPreservesTheActualOriginalLinesInBothLanguages() throws IOException {
+    @Test void everyCapturedTooltipPreservesTheActualOriginalLinesInBothLanguages() {
         var catalog = ResearchCatalog.read("/thaumcraft-port/book-item-tooltips.json");
         var index = catalog.getAsJsonObject("entries");
         assertEquals(451, index.size(), "Update the actual original-client corpus when book inputs change");
         assertNotNull(catalog.getAsJsonObject("advanced_entries"), "Import the original ADVANCED snapshots as well as NORMAL");
         assertEquals(index.keySet(), catalog.getAsJsonObject("advanced_entries").keySet());
         for (String language : List.of("en_us", "ru_ru")) {
-            var original = JsonParser.parseString(Files.readString(EVIDENCE.resolve(language + "-runtime.json"))).getAsJsonObject();
+            var original = ResearchCatalog.read("/fixtures/book-item-tooltips/" + language + ".json");
             assertEquals(language, original.get("language").getAsString());
             assertEquals(index.size(), original.get("resolved").getAsInt());
             assertTrue(original.getAsJsonArray("unresolved").isEmpty());

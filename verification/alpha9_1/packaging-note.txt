@@ -1,1 +1,0 @@
-Initial Gradle jar output reported success but was truncated at 406542 bytes and failed ZIP/CRC checks. It was excluded. Removed only the failed generated JAR and ran Gradle jar again; the final 12300696-byte JAR passed ZIP/CRC, NativeImage, resource and class-byte checks. Final jar.log is the successful packaging run.

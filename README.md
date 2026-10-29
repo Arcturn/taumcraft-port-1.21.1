@@ -1,14 +1,34 @@
-> **Перенос ещё выполняется:** два крупных файла загружаются отдельно. Состояние: [IMPORT_STATUS.md](IMPORT_STATUS.md).
+# Thaumcraft port — Minecraft 1.21.1
 
-# Thaumcraft port for Minecraft 1.21.1
+Экспериментальный неофициальный перенос Thaumcraft 6 на NeoForge. Текущая версия: **0.1.0-alpha.9.17-dev**. Перенос игровых систем ещё продолжается.
 
-Экспериментальный неофициальный перенос Thaumcraft 6.1.BETA26 на NeoForge. Текущая версия — **0.1.0-alpha.9.17-dev**. Полный перенос игровых систем ещё не завершён; оригинальные механики и ресурсы принадлежат Azanor.
+## Сборка
 
-- [Описание, реализованные изменения и история](README.ru.md)
-- [Получение исходников и сборка](RESTORE.ru.md)
-- [Проверки таумометра и аспектов alpha.9.17](docs/THAUMOMETER-alpha9.17-CHECK.ru.md)
-- [Состояние переноса](PORTING-16.md)
-- [Порядок выдачи исходников и сборок](DELIVERY.md)
-- [Сторонние компоненты и атрибуция](THIRD_PARTY_NOTICES.md)
+Нужны **JDK 21**, Git и интернет для загрузки зависимостей.
 
-Для сборки нужны JDK 21 и доступ к репозиториям зависимостей. Gradle Wrapper включён в проект.
+```sh
+git clone https://github.com/Arcturn/taumcraft-port-1.21.1.git
+cd taumcraft-port-1.21.1
+```
+
+Windows PowerShell:
+
+```powershell
+.\gradlew.bat build
+```
+
+Linux / macOS:
+
+```sh
+./gradlew build
+```
+
+`build` компилирует мод и запускает JUnit-тесты. Готовый мод: `build/libs/thaumcraft-port-1.21.1-0.1.0-alpha.9.17-dev.jar`. Для установки нужен основной JAR без суффикса `-sources`.
+
+Для игры установите **NeoForge 21.1.259** и **Curios 9.5.1+1.21.1**. TerraBlender 1.21.1-4.1.0.8 включается в JAR автоматически. Клиент и сервер должны использовать одинаковую версию порта.
+
+Для запуска клиента из исходников: `./gradlew runClient` (Windows: `.\gradlew.bat runClient`). Дополнительные проверки: `./gradlew runData runGameTestServer`.
+
+В репозитории находятся код, игровые ресурсы, тесты и файлы сборки. Отчёты сравнений, эталонный архив TC6, снимки экрана и видео сюда не включаются. Исходники ведутся в GitHub; пользователю выдаётся готовый JAR.
+
+Оригинальные материалы Thaumcraft принадлежат Azanor. Атрибуция и условия сторонних компонентов: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

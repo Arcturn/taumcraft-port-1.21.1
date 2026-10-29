@@ -3,11 +3,7 @@ package thaumcraft.port.research;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashSet;
@@ -19,9 +15,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /** Original PacketSyncKnowledge only schedules ResearchToast, never a research advancement toast. */
 class ResearchAdvancementToastTest {
-    private static JsonObject audit() throws IOException {
-        return JsonParser.parseString(Files.readString(Path.of(
-                "verification/development-thaumonomicon-parity/research-toast-advancement-audit.json"))).getAsJsonObject();
+    private static JsonObject audit() {
+        return ResearchCatalog.read("/fixtures/research-advancements.json");
     }
 
     @Test void generatedResearchLeavesKeepTheirContentAndProgressWithoutDuplicatingTheOriginalToast() throws Exception {

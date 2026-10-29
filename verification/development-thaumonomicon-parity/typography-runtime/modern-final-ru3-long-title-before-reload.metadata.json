@@ -1,7 +1,0 @@
-{
-  "getGuiScale": 3,
-  "forceUnicode": false,
-  "language": "ru_ru",
-  "evidence": "Actual scale reported by the live client probe through build_environment; this image has no individual properties sidecar.",
-  "isReloadEvidence": false
-}
