@@ -66,6 +66,12 @@ public final class AuraSystem {
         var a=get(l,p); if(a==null)return;
         if(flux)a.addFlux(amount);else a.addVis(amount); dirty(l,p);
     }
+    /** TC6 pollution optionally emits smoke independently of the stored flux amount. */
+    public static void pollute(ServerLevel level,BlockPos pos,float amount,boolean showEffect) {
+        if(!(amount>0))return;
+        add(level,pos,amount,true);
+        if(showEffect)thaumcraft.port.network.PollutionFxPayload.send(level,pos,amount);
+    }
     public static float drain(ServerLevel l,BlockPos p,float amount,boolean flux,boolean simulate) {
         if(!WorldConfig.AURA.get())return 0;
         var a=get(l,p); if(a==null)return 0;

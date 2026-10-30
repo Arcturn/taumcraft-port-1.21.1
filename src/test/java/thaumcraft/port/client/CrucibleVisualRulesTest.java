@@ -12,6 +12,37 @@ import static org.junit.jupiter.api.Assertions.*;
 class CrucibleVisualRulesTest {
     private static final float EPS = .000001f;
 
+    @Test void pollutionCloudsStartInsideTheBlockAndRiseAtOriginalSpeedForFiveToEightSeconds() {
+        var random = RandomSource.create(11226);
+        int minimumLife = Integer.MAX_VALUE, maximumLife = 0;
+        double horizontalMotion = 0;
+        for (int i = 0; i < 2000; i++) {
+            var cloud = CrucibleVisualRules.pollution(random);
+            for (double coordinate : new double[]{cloud.offset().x, cloud.offset().y, cloud.offset().z})
+                assertTrue(coordinate >= .2f && coordinate < .8f);
+            assertEquals(.02, cloud.velocity().y);
+            assertTrue(Math.abs(cloud.velocity().x) < .005);
+            assertTrue(Math.abs(cloud.velocity().z) < .005);
+            horizontalMotion += cloud.velocity().x;
+            minimumLife = Math.min(minimumLife, cloud.lifetime());
+            maximumLife = Math.max(maximumLife, cloud.lifetime());
+        }
+        assertEquals(100, minimumLife);
+        assertEquals(159, maximumLife);
+        assertEquals(0, horizontalMotion / 2000, .0002);
+    }
+
+    @Test void pollutionKeepsTheOriginalCloudSpritePinkColourGrowthAndFade() {
+        assertEquals(16, CrucibleVisualRules.POLLUTION_GRID);
+        assertEquals(56, CrucibleVisualRules.POLLUTION_FRAME);
+        assertEquals(new CrucibleVisualRules.Colour(1, .3f, .9f), CrucibleVisualRules.POLLUTION_COLOUR);
+        assertEquals(.2f, CrucibleVisualRules.POLLUTION_START_SIZE);
+        assertEquals(.5f, CrucibleVisualRules.POLLUTION_END_SIZE);
+        assertEquals(.5f, CrucibleVisualRules.POLLUTION_ALPHA);
+        assertEquals(1, CrucibleVisualRules.POLLUTION_SLOWDOWN);
+        assertEquals(.001, CrucibleVisualRules.POLLUTION_WIND);
+    }
+
     @Test void contentsModulateOriginalBlueWaterInsteadOfBiomeColour() {
         assertEquals(new CrucibleVisualRules.Colour(1,1,1), CrucibleVisualRules.fluidColour(0));
         var one = CrucibleVisualRules.fluidColour(1);

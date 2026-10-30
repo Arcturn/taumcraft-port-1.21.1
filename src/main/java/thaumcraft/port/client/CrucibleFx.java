@@ -3,6 +3,7 @@ package thaumcraft.port.client;
 import java.util.ArrayList;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.phys.Vec3;
@@ -13,6 +14,24 @@ import thaumcraft.port.machine.CrucibleEntity;
 
 /** The original continuous froth and block-event splashes, with no server particle spam. */
 public final class CrucibleFx {
+    /** PacketFXPollute presentation, also usable after the source block has been removed. */
+    public static void pollution(BlockPos pos, int count) {
+        var game = Minecraft.getInstance();
+        var level = game.level;
+        if (level == null || game.player == null || count <= 0
+                || game.player.position().distanceToSqr(Vec3.atLowerCornerOf(pos)) > 32 * 32) return;
+        for (int i = 0; i < Math.min(40, count); i++) {
+            var preset = CrucibleVisualRules.pollution(level.random);
+            var point = Vec3.atLowerCornerOf(pos).add(preset.offset());
+            var velocity = preset.velocity();
+            // Reuse the unmodified TC6 atlas and alpha particle layer.
+            var particle = game.particleEngine.createParticle(PortParticles.get("salis_mundus"),
+                    point.x, point.y, point.z, velocity.x, velocity.y, velocity.z);
+            if (particle instanceof SalisMundusParticle smoke) smoke.pollution(preset);
+        }
+        // Periodic leaks have no sound in TC6; manual emptying separately sends event 2.
+    }
+
     public static void tick(CrucibleEntity be) {
         if (!(be.getLevel() instanceof ClientLevel level) || be.state.water() <= 0) return;
         var random = level.random;

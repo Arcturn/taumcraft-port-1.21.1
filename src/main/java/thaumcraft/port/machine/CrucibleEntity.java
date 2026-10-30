@@ -64,7 +64,7 @@ public final class CrucibleEntity extends BlockEntity {
         if(be.lastWater!=be.state.water()||be.lastTotal!=be.state.total()||!be.lastAspects.equals(be.state.aspects())||
             be.lastHeat/10!=be.state.heat()/10||(be.lastHeat>150)!=(be.state.heat()>150))be.sync();
     }
-    private void spill(ServerLevel server){AuraSystem.add(server,worldPosition,state.spill(server.random.nextInt(state.aspects().size())),true);}
+    private void spill(ServerLevel server){AuraSystem.pollute(server,worldPosition,state.spill(server.random.nextInt(state.aspects().size())),true);}
 
     /** Process one collision batch. TC6's shrinking loop consumes ceil(stack/2) each collision. */
     public boolean acceptItem(ItemStack stack,ServerPlayer player){
@@ -116,7 +116,12 @@ public final class CrucibleEntity extends BlockEntity {
     }
     public void empty(){
         if(level instanceof ServerLevel server&&(state.water()>0||state.total()>0)){
-            AuraSystem.add(server,worldPosition,state.empty(),true);sync();
+            // Only the base pollution is visible; Vitium's extra flux has no second smoke burst.
+            float visiblePollution=state.total()*.25f;
+            float pollution=state.empty();
+            AuraSystem.pollute(server,worldPosition,visiblePollution,true);
+            AuraSystem.pollute(server,worldPosition,pollution-visiblePollution,false);
+            sync();
             server.blockEvent(worldPosition,getBlockState().getBlock(),2,5);
         }
     }

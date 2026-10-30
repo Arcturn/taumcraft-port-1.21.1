@@ -156,6 +156,24 @@ public final class SalisMundusParticle extends TextureSheetParticle {
         alpha = 1;
     }
 
+    /** Long-lived, silent pollution smoke; this is not the short BAMF craft explosion. */
+    public void pollution(CrucibleVisualRules.Pollution preset) {
+        lifetime = preset.lifetime();
+        grid = CrucibleVisualRules.POLLUTION_GRID;
+        firstFrame = CrucibleVisualRules.POLLUTION_FRAME;
+        frameCount = 1; loop = false; additive = false; hasPhysics = true;
+        var colour = CrucibleVisualRules.POLLUTION_COLOUR;
+        colours(colour.red(), colour.green(), colour.blue(), colour.red(), colour.green(), colour.blue());
+        alphaKeys = new float[]{CrucibleVisualRules.POLLUTION_ALPHA, 0};
+        alpha = CrucibleVisualRules.POLLUTION_ALPHA;
+        startSize = CrucibleVisualRules.POLLUTION_START_SIZE;
+        endSize = CrucibleVisualRules.POLLUTION_END_SIZE;
+        quadSize = startSize;
+        slowdown = CrucibleVisualRules.POLLUTION_SLOWDOWN;
+        wind(CrucibleVisualRules.POLLUTION_WIND);
+        rotation(level.random.nextFloat(), level.random.nextBoolean() ? -1 : 1);
+    }
+
     public void flash() {
         var r = level.random;
         lifetime = 10 + r.nextInt(5);
