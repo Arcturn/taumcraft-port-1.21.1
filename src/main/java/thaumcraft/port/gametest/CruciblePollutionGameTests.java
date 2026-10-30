@@ -11,6 +11,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.protocol.common.ClientboundCustomPayloadPacket;
 import net.minecraft.network.protocol.game.ClientboundBlockEventPacket;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.network.CommonListenerCookie;
 import net.minecraft.server.network.ServerGamePacketListenerImpl;
@@ -111,8 +112,9 @@ public final class CruciblePollutionGameTests {
             near.close();
             throw failure;
         }
-        // Unlike custom smoke, vanilla block events are queued until the server ticks them.
-        helper.runAfterDelay(2, () -> {
+        // Keep the observer across the server's twenty-tick time synchronization too.
+        // The channel-less capture listener must survive that ordinary broadcast before cleanup.
+        helper.runAfterDelay(22, () -> {
             try (near) {
                 helper.assertValueEqual(near.connection.events.size(), 1, "Cleanup lost or duplicated its queued spill event");
                 var event = near.connection.events.getFirst();
@@ -179,6 +181,11 @@ public final class CruciblePollutionGameTests {
             super(player.getServer(), new Connection(PacketFlow.SERVERBOUND), player,
                     CommonListenerCookie.createInitial(player.getGameProfile(), false));
             this.source = source.immutable();
+        }
+        @Override public boolean hasChannel(ResourceLocation payloadId) {
+            // This capture-only recipient has no login or negotiated Netty channels.
+            // NeoForge also asks this during periodic vanilla time synchronization.
+            return false;
         }
         @Override public void send(Packet<?> packet) {
             if (packet instanceof ClientboundCustomPayloadPacket custom

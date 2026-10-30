@@ -31,7 +31,7 @@ public final class MachineContent {
         PortContent.ITEMS.registerSimpleBlockItem("arcane_workbench",WORKBENCH);
         PortContent.ITEMS.registerSimpleBlockItem("crucible",CRUCIBLE);
         for(var color:net.minecraft.world.item.DyeColor.values()){
-            String name="nitor_"+color.getName();var block=PortContent.BLOCKS.register(name,()->new NitorBlock(color,BlockBehaviour.Properties.of().strength(0).noCollission().noOcclusion().lightLevel(s->15)));
+            String name="nitor_"+color.getName();var block=PortContent.BLOCKS.register(name,()->new NitorBlock(color,BlockBehaviour.Properties.of().strength(.1f).noCollission().noOcclusion().lightLevel(s->15)));
             NITOR.put(name,block);PortContent.ITEMS.registerSimpleBlockItem(name,block);
         }
         PortContent.ITEMS.registerSimpleItem("tallow");

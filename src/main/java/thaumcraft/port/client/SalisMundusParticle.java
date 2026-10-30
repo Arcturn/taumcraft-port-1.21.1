@@ -174,6 +174,22 @@ public final class SalisMundusParticle extends TextureSheetParticle {
         rotation(level.random.nextFloat(), level.random.nextBoolean() ? -1 : 1);
     }
 
+    static ParticleRenderType legacyLayer(boolean additive) { return additive ? GLOW : SMOKE; }
+
+    public void wispMote(int colour) {
+        lifetime=10+level.random.nextInt(5); firstFrame=264; frameCount=8; loop=true;
+        startSize=(1+level.random.nextFloat()*.25f)*.1f; endSize=.005f;
+        colours(((colour>>16)&255)/255f,((colour>>8)&255)/255f,(colour&255)/255f,
+                ((colour>>16)&255)/255f,((colour>>8)&255)/255f,(colour&255)/255f);
+        alphaKeys=new float[]{.5f}; alpha=.5f; quadSize=startSize;
+        randomX=randomZ=.0025; wind(.00025);
+    }
+
+    public void wispBurst(float size) {
+        lifetime=31; grid=16; firstFrame=208; frameCount=31; loop=false;
+        startSize=endSize=size*.1f; quadSize=startSize; alphaKeys=new float[]{1}; alpha=1;
+    }
+
     public void flash() {
         var r = level.random;
         lifetime = 10 + r.nextInt(5);

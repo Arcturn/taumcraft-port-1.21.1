@@ -17,6 +17,8 @@ public final class ClientEvents {
     @SubscribeEvent public static void bookModels(net.neoforged.neoforge.client.event.ModelEvent.RegisterAdditional e){BookAssets.registerModels(e);e.register(ResearchTableRenderer.QUILL);}
     @SubscribeEvent public static void menus(net.neoforged.neoforge.client.event.RegisterMenuScreensEvent e){e.register(thaumcraft.port.theory.TheoryContent.MENU.get(),TheoryScreen::new);e.register(thaumcraft.port.machine.MachineContent.WORKBENCH_MENU.get(),WorkbenchScreen::new);e.register(thaumcraft.port.essentia.EssentiaContent.SMELTER_MENU.get(),SmelterScreen::new);e.register(thaumcraft.port.essentia.EssentiaContent.THAUMATORIUM_MENU.get(),ThaumatoriumScreen::new);}
     @SubscribeEvent public static void setup(net.neoforged.fml.event.lifecycle.FMLClientSetupEvent e){e.enqueueWork(()->{
+        thaumcraft.port.world.WispVisualBridge.tick=WispFx::tick;
+        thaumcraft.port.world.WispVisualBridge.death=WispFx::death;
         thaumcraft.port.machine.CrucibleVisualBridge.tick=CrucibleFx::tick;
         thaumcraft.port.machine.CrucibleVisualBridge.event=CrucibleFx::blockEvent;
         PortContent.RESEARCH_DISPLAY_ICONS.values().forEach(item->net.minecraft.client.renderer.item.ItemProperties.register(item.get(),net.minecraft.resources.ResourceLocation.parse("thaumcraft:research_frame"),new ResearchFrameProperty(item.get().variants().size(),System::currentTimeMillis)));

@@ -5,9 +5,9 @@ license="All Rights Reserved; original Thaumcraft assets and logic by Azanor"
 [[mods]]
 modId="thaumcraft"
 version="${version}"
-displayName="Thaumcraft — Experimental Port"
+displayName="Thaumcraft: Renaissance"
 authors="Azanor (original); unofficial migration project"
-description='''An incomplete, unofficial Thaumcraft 6 migration to Minecraft 1.21.1. See README.ru.md for implemented and missing systems.'''
+description='''Thaumcraft: Renaissance is an in-progress, unofficial Thaumcraft 6 migration to Minecraft 1.21.1. See README.md for build and installation instructions.'''
 
 [[dependencies.thaumcraft]]
 modId="neoforge"

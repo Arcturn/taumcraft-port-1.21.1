@@ -1,42 +1,66 @@
 package thaumcraft.port.client;
 
-import com.mojang.blaze3d.platform.GlStateManager;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.*;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
-import net.minecraft.client.renderer.GameRenderer;
-import net.minecraft.client.renderer.texture.*;
+import net.minecraft.core.Direction;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.phys.shapes.Shapes;
 
-/** Original frames 264–271 (additive flame) and 457 (white alpha-blended core). */
+/** BETA26 FXGeneric: frame 457 alpha core, then additive flames 264–271. */
 public final class NitorParticle extends TextureSheetParticle {
-    private static final ParticleRenderType GLOW=new ParticleRenderType(){
-        public BufferBuilder begin(Tesselator tessellator,TextureManager textures){
-            RenderSystem.depthMask(false);RenderSystem.enableBlend();
-            RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA,GlStateManager.DestFactor.ONE);
-            RenderSystem.setShader(GameRenderer::getParticleShader);RenderSystem.setShaderTexture(0,TextureAtlas.LOCATION_PARTICLES);
-            return tessellator.begin(VertexFormat.Mode.QUADS,DefaultVertexFormat.PARTICLE);
-        }
-        public String toString(){return "THAUMCRAFT_NITOR_GLOW";}
-    };
     private final boolean core;
-    private final float initialSize,corePulse;
+    private final float[] scaleFrames;
     public NitorParticle(String kind,ClientLevel level,double x,double y,double z,double vx,double vy,double vz){
-        super(level,x,y,z,vx,vy,vz);core=kind.equals("nitor_core");hasPhysics=false;friction=.98f;xd=vx;yd=vy;zd=vz;
-        lifetime=core?10:10+random.nextInt(5);initialSize=core?.1f:.3f+random.nextFloat()*.1f;corePulse=(float)random.nextGaussian()*.1f;quadSize=initialSize;alpha=core?1:.66f;
-        if(!core){int color=DyeColor.byName(kind.substring(6),DyeColor.YELLOW).getMapColor().col;setColor(((color>>16)&255)/255f,((color>>8)&255)/255f,(color&255)/255f);}
+        super(level,x,y,z);
+        core=kind.equals("nitor_core");
+        setSize(.1f,.1f);setPos(x,y,z);
+        hasPhysics=true;xd=vx;yd=vy;zd=vz;
+        var preset=NitorVisualRules.preset(level.random,core);
+        lifetime=preset.lifetime();alpha=preset.alpha();scaleFrames=preset.scaleFrames();quadSize=scaleFrames[0];
+        if(!core){
+            int colour=DyeColor.byName(kind.substring(6),DyeColor.YELLOW).getMapColor().col;
+            setColor(((colour>>16)&255)/255f,((colour>>8)&255)/255f,(colour&255)/255f);
+        }
     }
-    private int frame(){return core?457:264+age%8;}
-    @Override protected float getU0(){return sprite.getU((frame()%64+.01f)/64);}
-    @Override protected float getU1(){return sprite.getU((frame()%64+.99f)/64);}
-    @Override protected float getV0(){return sprite.getV((frame()/64+.01f)/64);}
-    @Override protected float getV1(){return sprite.getV((frame()/64+.99f)/64);}
-    @Override public float getQuadSize(float partial){float t=Math.min(1,(age+partial)/lifetime);return core?initialSize*(1+corePulse*(1-Math.abs(2*t-1))):initialSize+(.005f-initialSize)*t;}
-    @Override public void tick(){super.tick();float motion=core?.0002f:.0025f;xd+=(random.nextFloat()-random.nextFloat())*motion;zd+=(random.nextFloat()-random.nextFloat())*motion;if(core)yd+=(random.nextFloat()-random.nextFloat())*motion;}
-    @Override protected int getLightColor(float partial){return 0xf000f0;}
-    @Override public ParticleRenderType getRenderType(){return core?ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT:GLOW;}
+    private int frame(){return NitorVisualRules.frame(core,age);}
+    @Override protected float getU0(){return sprite.getU(NitorVisualRules.u0(frame()));}
+    @Override protected float getU1(){return sprite.getU(NitorVisualRules.u1(frame()));}
+    @Override protected float getV0(){return sprite.getV(NitorVisualRules.v0(frame()));}
+    @Override protected float getV1(){return sprite.getV(NitorVisualRules.v1(frame()));}
+    // Original position interpolation uses partial ticks; scale and atlas frame use whole particle age.
+    @Override public float getQuadSize(float partial){return NitorVisualRules.size(scaleFrames,age);}
+    @Override public void tick(){
+        xo=x;yo=y;zo=z;
+        if(age++>=lifetime)remove();
+        oRoll=roll;
+        move(xd,yd,zd);
+        xd*=NitorVisualRules.SLOWDOWN;yd*=NitorVisualRules.SLOWDOWN;zd*=NitorVisualRules.SLOWDOWN;
+        float motion=core?NitorVisualRules.CORE_MOVEMENT:NitorVisualRules.FLAME_MOVEMENT;
+        // FXGeneric draws all three Gaussian samples even when the flame's Y multiplier is zero.
+        xd+=level.random.nextGaussian()*motion;
+        yd+=level.random.nextGaussian()*(core?motion:0);
+        zd+=level.random.nextGaussian()*motion;
+        if(onGround){xd*=.7f;zd*=.7f;}
+    }
+    @Override public void move(double mx,double my,double mz){
+        // 1.12 Particle clips Y, X, then Z on every call. Modern Particle.move latches
+        // stoppedByCollision after vertical contact, freezing flames against ceilings.
+        double requestedX=mx,requestedY=my,requestedZ=mz;
+        var bounds=getBoundingBox();
+        if(hasPhysics){
+            var collisions=level.getBlockCollisions(null,bounds.expandTowards(mx,my,mz));
+            my=Shapes.collide(Direction.Axis.Y,bounds,collisions,my);bounds=bounds.move(0,my,0);
+            mx=Shapes.collide(Direction.Axis.X,bounds,collisions,mx);bounds=bounds.move(mx,0,0);
+            mz=Shapes.collide(Direction.Axis.Z,bounds,collisions,mz);bounds=bounds.move(0,0,mz);
+        }else bounds=bounds.move(mx,my,mz);
+        setBoundingBox(bounds);setLocationFromBoundingbox();
+        onGround=requestedY!=my&&requestedY<0;
+        if(requestedX!=mx)xd=0;
+        if(requestedZ!=mz)zd=0;
+    }
+    // FXGeneric inherits world light sampling: the placed block supplies its own level-15 light.
+    @Override public ParticleRenderType getRenderType(){return SalisMundusParticle.legacyLayer(!core);}
     public record Provider(String kind) implements ParticleProvider.Sprite<SimpleParticleType>{
         public TextureSheetParticle createParticle(SimpleParticleType type,ClientLevel level,double x,double y,double z,double vx,double vy,double vz){return new NitorParticle(kind,level,x,y,z,vx,vy,vz);}
     }
