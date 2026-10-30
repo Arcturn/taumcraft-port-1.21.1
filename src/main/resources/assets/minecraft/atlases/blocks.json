@@ -504,6 +504,11 @@
       "type": "minecraft:single",
       "resource": "thaumcraft:research/vanilla/blocks/piston_top_normal",
       "sprite": "thaumcraft:research/vanilla/blocks/piston_top_normal"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:block/crucible_water",
+      "sprite": "thaumcraft:block/crucible_water"
     }
   ]
 }

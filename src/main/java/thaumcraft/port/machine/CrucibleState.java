@@ -13,12 +13,24 @@ public final class CrucibleState {
     public Map<Aspect,Integer> aspects(){return Collections.unmodifiableMap(aspects);}
     public int total(){return aspects.values().stream().mapToInt(Integer::intValue).sum();}
     public boolean boiling(){return water>0&&heat>150;}
+    public float fluidHeight(){
+        float base=.3f+.5f*water/1000f;
+        float height=base+total()/500f*(1-base);
+        return height>1?1.001f:height==1?.9999f:height;
+    }
+    public int comparatorSignal(){return Math.min(15,(int)Math.floor(total()/500f*14)+(total()>0?1:0));}
     public int fill(int amount,boolean simulate){int n=Math.clamp(amount,0,1000-water);if(!simulate)water+=n;return n;}
     public int drain(int amount,boolean simulate){int n=Math.clamp(amount,0,water);if(!simulate)water-=n;return n;}
     public boolean tick(boolean heated){int previous=heat;heat=Math.clamp(heat+(heated&&water>0?1:-1),0,200);timer++;return heat!=previous;}
-    public boolean spillDue(){if(timer>=100){timer=0;return true;}return total()>500;}
+    /** The overflow leak is independent of the periodic leak; both can occur on one tick. */
+    public boolean periodicSpillDue(){if(timer>=100){timer=0;return true;}return false;}
+    public boolean spillDue(){boolean periodic=periodicSpillDue();return periodic||total()>500;}
     public boolean dissolve(Map<Aspect,Integer> values){
-        if(!boiling()||values.isEmpty()||values.values().stream().anyMatch(n->n<=0||n>10000)||total()+values.values().stream().mapToInt(Integer::intValue).sum()>100000)return false;
+        return boiling()&&dissolveInBatch(values);
+    }
+    // TC6 checks water/heat when an item enters, not again for dissolution within that batch.
+    boolean dissolveInBatch(Map<Aspect,Integer> values){
+        if(values.isEmpty()||values.values().stream().anyMatch(n->n<=0||n>10000)||total()+values.values().stream().mapToInt(Integer::intValue).sum()>100000)return false;
         values.forEach((a,n)->aspects.merge(a,n,Integer::sum));timer=-150;return true;
     }
     public boolean contains(Map<String,Integer> cost){return !cost.isEmpty()&&cost.entrySet().stream().allMatch(e->e.getValue()>0&&Aspect.byId(e.getKey()).map(a->aspects.getOrDefault(a,0)>=e.getValue()).orElse(false));}

@@ -11,3 +11,5 @@ Rights and reverse engineering for debugging modifications to this library are g
 
 Thaumcraft: original code, textures and design by Azanor. The original mod was supplied by the user for this private migration. No claim of authorship or redistribution rights is made for original Thaumcraft content.
 Minecraft executable classes and runtime installations are not redistributed. The book-only blueprint assets under assets/thaumcraft/models/research/vanilla and assets/thaumcraft/textures/research/vanilla include 16 model JSON files and 12 texture PNG files extracted from the Minecraft 1.12.2 client for comparison and faithful rendering of the six TC6 blueprint block types. Original Minecraft assets are by Mojang; no authorship or general redistribution rights are claimed. These isolated preview assets do not replace Minecraft 1.21.1 world or item resources.
+
+The crucible-only water texture assets/thaumcraft/textures/block/crucible_water.png and its animation metadata are unmodified Minecraft 1.12.2 water assets by Mojang, retained for original TC6 colouring and animation. They do not replace world water textures.

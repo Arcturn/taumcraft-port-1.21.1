@@ -60,7 +60,7 @@ public final class ThaumatoriumEntity extends EssentiaEntity implements WorldlyC
         selected.put(id,player.getUUID());demand=null;active=null;sync();
     }
     private void updateEnvironment(){
-        var below=level.getBlockState(worldPosition.below(2));heated=below.is(BlockTags.FIRE)||below.getFluidState().is(FluidTags.LAVA)||below.is(Blocks.MAGMA_BLOCK)||below.getBlock() instanceof NitorBlock;
+        heated=CrucibleEntity.isHeatSource(level.getBlockState(worldPosition.below(2)));
         int upgrades=0;for(int y=0;y<2;y++)for(Direction d:Direction.values())if(d!=Direction.DOWN&&d!=front()){
             var p=worldPosition.above(y).relative(d);if(!level.hasChunkAt(p))continue;var state=level.getBlockState(p);if(state.is(EssentiaContent.BRAIN_BOX.get())&&state.getValue(BrainBoxBlock.FACING)==d.getOpposite())upgrades++;
         }

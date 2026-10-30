@@ -68,6 +68,7 @@ public final class SalisMundusParticle extends TextureSheetParticle {
     }
 
     private int delay, grid = 64, firstFrame = 512, frameCount = 16;
+    private int[] finalFrames;
     private boolean loop = true, additive = true, angled;
     private float startSize = .05f, endSize = .1f, rotationStep, angleYaw, anglePitch;
     private float startRed = 1, startGreen = 1, startBlue = 1;
@@ -125,6 +126,23 @@ public final class SalisMundusParticle extends TextureSheetParticle {
     }
 
     static ParticleRenderType scannerGlowLayer() { return GLOW; }
+
+    public void crucible(CrucibleVisualRules.Bubble preset, float red, float green, float blue) {
+        lifetime = preset.lifetime();
+        grid = 64; firstFrame = preset.firstFrame(); frameCount = 1; loop = false;
+        finalFrames = preset.finalFrames();
+        startSize = endSize = preset.halfSize();
+        colours(red, green, blue, red, green, blue);
+        gravity = preset.gravity();
+        randomX = randomY = randomZ = preset.movement();
+        additive = preset.additive();
+        // FXGeneric.setNoClip(false) writes canCollide=false: overflow must pass
+        // through the rim and fall down the sides instead of accumulating on top.
+        hasPhysics = preset.collision();
+        alphaKeys = new float[]{preset.alpha()};
+        alpha = preset.alpha();
+        quadSize = startSize;
+    }
 
     public void smoke(float red, float green, float blue) {
         var r = level.random;
@@ -214,6 +232,7 @@ public final class SalisMundusParticle extends TextureSheetParticle {
     }
 
     private int frame() {
+        if (finalFrames != null) return CrucibleVisualRules.frame(firstFrame, finalFrames, age, lifetime);
         return firstFrame + (loop ? age % frameCount
                 : Math.min(frameCount - 1, age * frameCount / Math.max(1, lifetime)));
     }

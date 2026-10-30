@@ -42,6 +42,13 @@ public final class MachineContent {
         }
     }
     public static final Supplier<BlockEntityType<NitorEntity>> NITOR_ENTITY=ENTITIES.register("nitor",()->BlockEntityType.Builder.of(NitorEntity::new,NITOR.values().stream().map(Supplier::get).toArray(Block[]::new)).build(null));
-    public static void register(IEventBus bus){ENTITIES.register(bus);MENUS.register(bus);RECIPES.register(bus);}
+    public static void register(IEventBus bus){
+        ENTITIES.register(bus);MENUS.register(bus);RECIPES.register(bus);
+        bus.addListener(MachineContent::registerCapabilities);
+    }
+    private static void registerCapabilities(net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent event){
+        event.registerBlockEntity(net.neoforged.neoforge.capabilities.Capabilities.FluidHandler.BLOCK,
+            CRUCIBLE_ENTITY.get(),(be,side)->be.fluidHandler);
+    }
     private MachineContent() {}
 }

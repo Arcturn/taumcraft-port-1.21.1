@@ -17,6 +17,8 @@ public final class ClientEvents {
     @SubscribeEvent public static void bookModels(net.neoforged.neoforge.client.event.ModelEvent.RegisterAdditional e){BookAssets.registerModels(e);e.register(ResearchTableRenderer.QUILL);}
     @SubscribeEvent public static void menus(net.neoforged.neoforge.client.event.RegisterMenuScreensEvent e){e.register(thaumcraft.port.theory.TheoryContent.MENU.get(),TheoryScreen::new);e.register(thaumcraft.port.machine.MachineContent.WORKBENCH_MENU.get(),WorkbenchScreen::new);e.register(thaumcraft.port.essentia.EssentiaContent.SMELTER_MENU.get(),SmelterScreen::new);e.register(thaumcraft.port.essentia.EssentiaContent.THAUMATORIUM_MENU.get(),ThaumatoriumScreen::new);}
     @SubscribeEvent public static void setup(net.neoforged.fml.event.lifecycle.FMLClientSetupEvent e){e.enqueueWork(()->{
+        thaumcraft.port.machine.CrucibleVisualBridge.tick=CrucibleFx::tick;
+        thaumcraft.port.machine.CrucibleVisualBridge.event=CrucibleFx::blockEvent;
         PortContent.RESEARCH_DISPLAY_ICONS.values().forEach(item->net.minecraft.client.renderer.item.ItemProperties.register(item.get(),net.minecraft.resources.ResourceLocation.parse("thaumcraft:research_frame"),new ResearchFrameProperty(item.get().variants().size(),System::currentTimeMillis)));
         net.minecraft.client.renderer.item.ItemProperties.register(PortContent.CELESTIAL_NOTES.get(),net.minecraft.resources.ResourceLocation.parse("thaumcraft:celestial"),(net.minecraft.client.renderer.item.ItemPropertyFunction)(stack,level,entity,seed)->stack.getOrDefault(PortContent.CELESTIAL_KIND.get(),0));
         var fill=net.minecraft.resources.ResourceLocation.parse("thaumcraft:fill");var filled=net.minecraft.resources.ResourceLocation.parse("thaumcraft:filled");
@@ -27,11 +29,11 @@ public final class ClientEvents {
     });}
 
     @SubscribeEvent public static void particles(net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent e){
-        thaumcraft.port.content.PortParticles.ALL.forEach((kind,type)->e.registerSprite(type.get(),kind.startsWith("nitor_")?new NitorParticle.Provider(kind):kind.equals("scan_rune")?new ScanRuneParticle.Provider():kind.equals("theory_rune")?new TheoryRuneParticle.Provider():kind.equals("salis_mundus")||kind.equals("scan_spark")?new SalisMundusParticle.Provider():new LegacyParticle.Provider(kind)));
+        thaumcraft.port.content.PortParticles.ALL.forEach((kind,type)->e.registerSprite(type.get(),kind.startsWith("nitor_")?new NitorParticle.Provider(kind):kind.equals("scan_rune")?new ScanRuneParticle.Provider():kind.equals("theory_rune")?new TheoryRuneParticle.Provider():kind.equals("salis_mundus")||kind.equals("scan_spark")||kind.equals("crucible_bubble")?new SalisMundusParticle.Provider():new LegacyParticle.Provider(kind)));
     }
     @SubscribeEvent public static void geometry(net.neoforged.neoforge.client.event.ModelEvent.RegisterGeometryLoaders e){e.register(net.minecraft.resources.ResourceLocation.parse("thaumcraft:crystal_cluster"),new CrystalModel.Loader());}
     @SubscribeEvent public static void layers(EntityRenderersEvent.RegisterLayerDefinitions e){e.registerLayerDefinition(ResearchTableRenderer.LAYER,ResearchTableRenderer::layer);WorldRenderers.layers(e);EssentiaRenderers.layers(e);}
-    @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers e){e.registerBlockEntityRenderer(thaumcraft.port.theory.TheoryContent.ENTITY.get(),ResearchTableRenderer::new);WorldRenderers.register(e);EssentiaRenderers.register(e);e.registerBlockEntityRenderer(thaumcraft.port.machine.MachineContent.CRUCIBLE_ENTITY.get(),CrucibleRenderer::new);}
+    @SubscribeEvent public static void renderers(EntityRenderersEvent.RegisterRenderers e){e.registerEntityRenderer(WorldEntities.SPECIAL_ITEM.get(),net.minecraft.client.renderer.entity.ItemEntityRenderer::new);e.registerBlockEntityRenderer(thaumcraft.port.theory.TheoryContent.ENTITY.get(),ResearchTableRenderer::new);WorldRenderers.register(e);EssentiaRenderers.register(e);e.registerBlockEntityRenderer(thaumcraft.port.machine.MachineContent.CRUCIBLE_ENTITY.get(),CrucibleRenderer::new);}
     @SubscribeEvent public static void blocks(RegisterColorHandlersEvent.Block e){
         e.register((s,l,p,tint)->l!=null&&p!=null?net.minecraft.client.renderer.BiomeColors.getAverageGrassColor(l,p):6750149,WorldContent.block("grass_ambient"));
         // TC6 ships grayscale greatwood leaves and colors them with the biome's foliage tint.

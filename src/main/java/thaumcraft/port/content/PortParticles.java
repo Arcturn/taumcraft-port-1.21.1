@@ -10,7 +10,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public final class PortParticles {
     private static final DeferredRegister<ParticleType<?>> TYPES = DeferredRegister.create(Registries.PARTICLE_TYPE, "thaumcraft");
     public static final Map<String, Supplier<SimpleParticleType>> ALL = new LinkedHashMap<>();
-    static { for (String name : List.of("wisp", "taint", "spark", "rune", "craft", "alumentum", "nitor_core", "scan_rune", "scan_spark", "theory_rune", "salis_mundus"))
+    static { for (String name : List.of("wisp", "taint", "spark", "rune", "craft", "alumentum", "nitor_core", "scan_rune", "scan_spark", "theory_rune", "salis_mundus", "crucible_bubble"))
         ALL.put(name, TYPES.register(name, () -> new SimpleParticleType(false) {})); }
     static { for(var color:net.minecraft.world.item.DyeColor.values()) {
         String name="nitor_"+color.getName();ALL.put(name,TYPES.register(name,()->new SimpleParticleType(false){}));

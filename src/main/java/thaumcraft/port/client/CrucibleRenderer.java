@@ -13,12 +13,15 @@ public final class CrucibleRenderer implements BlockEntityRenderer<CrucibleEntit
     public CrucibleRenderer(BlockEntityRendererProvider.Context context){}
     @Override public void render(CrucibleEntity be,float partial,PoseStack pose,MultiBufferSource buffers,int light,int overlay){
         if(be.state.water()<=0)return;
-        var sprite=Minecraft.getInstance().getModelManager().getAtlas(InventoryMenu.BLOCK_ATLAS).getSprite(ResourceLocation.withDefaultNamespace("block/water_still"));
-        float base=.3f+.5f*be.state.water()/1000f,y=Math.min(.999f,base+be.state.total()/500f*(1-base));
-        int color=be.getLevel()==null?0x3f76e4:BiomeColors.getAverageWaterColor(be.getLevel(),be.getBlockPos());
+        // BETA26 used already-blue water pixels, without the biome water tint.
+        var sprite=Minecraft.getInstance().getModelManager().getAtlas(InventoryMenu.BLOCK_ATLAS).getSprite(ResourceLocation.fromNamespaceAndPath("thaumcraft","block/crucible_water"));
+        float y=be.state.fluidHeight();
+        var color=CrucibleVisualRules.fluidColour(be.state.total());
         var out=buffers.getBuffer(RenderType.translucent());
-        float[][] vertices={{.126f,y,.126f,.126f,.126f},{.126f,y,.874f,.126f,.874f},{.874f,y,.874f,.874f,.874f},{.874f,y,.126f,.874f,.126f}};
-        for(var v:vertices)out.addVertex(pose.last().pose(),v[0],v[1],v[2]).setColor((color>>16)&255,(color>>8)&255,color&255,210)
+        // The original full-block plane rises above the rim when overfilled.
+        // Below the rim the crucible walls naturally occlude its outer edge.
+        float[][] vertices={{0,y,1,1,1},{1,y,1,0,1},{1,y,0,0,0},{0,y,0,1,0}};
+        for(var v:vertices)out.addVertex(pose.last().pose(),v[0],v[1],v[2]).setColor(color.red(),color.green(),color.blue(),1)
             .setUv(sprite.getU(v[3]),sprite.getV(v[4])).setOverlay(OverlayTexture.NO_OVERLAY).setLight(light).setNormal(pose.last(),0,1,0);
     }
 }

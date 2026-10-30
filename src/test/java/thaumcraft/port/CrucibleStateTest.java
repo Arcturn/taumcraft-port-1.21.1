@@ -30,4 +30,33 @@ class CrucibleStateTest {
         assertEquals(1000,s.drain(2000,true));assertEquals(1000,s.water());assertEquals(1000,s.drain(2000,false));assertEquals(0,s.water());
         assertEquals(1000,s.fill(2000,true));assertEquals(0,s.water());
     }
+    @Test void refillAndSourceRemovalPreserveThermalInertia(){
+        var s=boiling();for(int i=0;i<49;i++)s.tick(true);assertEquals(200,s.heat());
+        s.drain(1000,false);s.tick(true);assertEquals(199,s.heat());assertFalse(s.boiling());
+        s.fill(1000,false);assertTrue(s.boiling());assertEquals(199,s.heat());
+        for(int i=0;i<48;i++)s.tick(false);assertTrue(s.boiling());assertEquals(151,s.heat());
+        s.tick(false);assertFalse(s.boiling());assertEquals(150,s.heat());
+    }
+    @Test void overflowAndPeriodicLossAreIndependentEvenWhenCold(){
+        var s=new CrucibleState();s.restore(0,0,99,Map.of(Aspect.FLUX,501));s.tick(false);
+        if(s.total()>500)s.spill(0);
+        assertTrue(s.periodicSpillDue());s.spill(0);
+        assertEquals(499,s.total());assertEquals(0,s.timer());
+        assertFalse(s.periodicSpillDue());
+    }
+    @Test void fullAndOverflowFluidSurfacesUseOppositeSidesOfTheRim(){
+        var s=new CrucibleState();s.restore(1000,200,0,Map.of());assertEquals(.8f,s.fluidHeight(),.0001f);
+        s.restore(1000,200,0,Map.of(Aspect.FIRE,500));assertEquals(.9999f,s.fluidHeight(),.00001f);
+        s.restore(1000,200,0,Map.of(Aspect.FIRE,501));assertEquals(1.001f,s.fluidHeight(),.00001f);
+    }
+    @Test void comparatorMeasuresAspectLoadAndClampsAtRedstoneMaximum(){
+        var s=new CrucibleState();assertEquals(0,s.comparatorSignal());
+        s.restore(1000,200,0,Map.of(Aspect.FIRE,1));assertEquals(1,s.comparatorSignal());
+        s.restore(1000,200,0,Map.of(Aspect.FIRE,250));assertEquals(8,s.comparatorSignal());
+        s.restore(1000,200,0,Map.of(Aspect.FIRE,600));assertEquals(15,s.comparatorSignal());
+    }
+    @Test void oneFinalCraftMayConsumeLessThanFiftyWaterAsInTc6(){
+        var s=new CrucibleState();s.restore(1,151,-100,Map.of(Aspect.FIRE,1));
+        assertTrue(s.craft(Map.of("ignis",1)));assertEquals(0,s.water());assertFalse(s.boiling());
+    }
 }

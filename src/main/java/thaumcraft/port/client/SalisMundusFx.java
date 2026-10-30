@@ -91,10 +91,15 @@ public final class SalisMundusFx {
     }
 
     private static void bamf(ClientLevel level, Vec3 center, boolean fancy) {
+        bamf(level, center, fancy, null);
+    }
+
+    static void bamf(ClientLevel level, Vec3 center, boolean fancy, Direction direction) {
         var random = level.random;
         // The original loops re-sample their random upper bound each iteration.
         for (int i = 0; i < 8 + random.nextInt(3); i++) {
             Vec3 velocity = new Vec3(signed(random, .05f, .05f), signed(random, .05f, .05f), signed(random, .05f, .05f));
+            if (direction != null) velocity = velocity.add(direction.getStepX() * .1, direction.getStepY() * .1, direction.getStepZ() * .1);
             SalisMundusParticle particle = create(center.add(velocity.scale(2)), velocity.scale(.5));
             if (particle != null) particle.smoke(tint(random, .5f), tint(random, .1f), tint(random, .6f));
         }
@@ -112,6 +117,7 @@ public final class SalisMundusFx {
             float green = .1f;
             float blue = (.5f + random.nextFloat() * .1f + .6f) / 2;
             Vec3 velocity = new Vec3(signed(random, .0025f, .005f), signed(random, .0025f, .005f), signed(random, .0025f, .005f));
+            if (direction != null) velocity = velocity.add(direction.getStepX() * .025, direction.getStepY() * .025, direction.getStepZ() * .025);
             SalisMundusParticle particle = create(center.add(velocity.scale(5)), velocity);
             if (particle != null) particle.wisp(i, red, green, blue);
         }
