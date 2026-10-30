@@ -1,3 +1,6 @@
 {
-  "parent": "thaumcraft:block/taint_fibre"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thaumcraft:blocks/taint_fibres"
+  }
 }

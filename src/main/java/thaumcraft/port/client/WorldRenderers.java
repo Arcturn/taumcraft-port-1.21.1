@@ -70,28 +70,15 @@ public final class WorldRenderers {
         }
     }
     private static final class WispRenderer extends EntityRenderer<Wisp>{
-        private static final ResourceLocation PARTICLES=WorldContent.id("textures/misc/particles.png");
-        private static final ResourceLocation NODES=WorldContent.id("textures/misc/auranodes.png");
         WispRenderer(EntityRendererProvider.Context c){super(c);}
-        @Override public ResourceLocation getTextureLocation(Wisp e){return PARTICLES;}
+        @Override public ResourceLocation getTextureLocation(Wisp e){return WispRenderTypes.PARTICLES_TEXTURE;}
         @Override public void render(Wisp e,float yaw,float partial,PoseStack pose,MultiBufferSource buffers,int light){
             if(e.getHealth()<=0)return;
             pose.pushPose();pose.mulPose(entityRenderDispatcher.cameraOrientation());
             int frame=e.tickCount%16;
-            layer(pose,buffers,PARTICLES,64,512+frame,.4f,0xffffff,1);
-            layer(pose,buffers,PARTICLES,64,320+frame,.75f,0xffffff,.25f);
-            layer(pose,buffers,NODES,32,800+frame,.75f,e.aspect().color(),.5f);
+            if(DeferredWispRenderer.canEnqueue()) DeferredWispRenderer.enqueue(pose,frame,e.aspect().color());
+            else DeferredWispRenderer.drawImmediate(pose,buffers,frame,e.aspect().color());
             pose.popPose();super.render(e,yaw,partial,pose,buffers,light);
-        }
-        private static void layer(PoseStack pose,MultiBufferSource buffers,ResourceLocation texture,int grid,int frame,float size,int colour,float alpha){
-            var out=buffers.getBuffer(RenderType.EYES.apply(texture,RenderStateShard.LIGHTNING_TRANSPARENCY));
-            float u0=(frame%grid)/(float)grid,u1=(frame%grid+1)/(float)grid;
-            float v0=(frame/grid)/(float)grid,v1=(frame/grid+1)/(float)grid;
-            float half=size;
-            float[][] vertices={{-half,-half,u1,v1},{half,-half,u0,v1},{half,half,u0,v0},{-half,half,u1,v0}};
-            for(var v:vertices)out.addVertex(pose.last().pose(),v[0],v[1],0)
-                    .setColor((colour>>16)&255,(colour>>8)&255,colour&255,(int)(alpha*255))
-                    .setUv(v[2],v[3]).setOverlay(OverlayTexture.NO_OVERLAY).setLight(15728880).setNormal(pose.last(),0,0,1);
         }
     }
     public static final class SeedModel extends HierarchicalModel<TaintSeed>{

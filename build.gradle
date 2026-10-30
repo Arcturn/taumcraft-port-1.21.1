@@ -5,7 +5,12 @@ plugins {
 
 group = 'thaumcraft'
 version = mod_version
-base { archivesName = 'thaumcraft-renaissance-1.21.1' }
+base {
+    archivesName = 'thaumcraft-renaissance-1.21.1'
+}
+tasks.withType(AbstractArchiveTask).configureEach {
+    archiveVersion = mod_version.replace('0.1.0-', '').replace('-dev', '')
+}
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 repositories {

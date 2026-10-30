@@ -4,7 +4,7 @@ import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
 import net.minecraft.core.particles.SimpleParticleType;
 
-/** Original TC6 sheet coordinates and FXDispatcher presets, using the modern particle atlas. */
+/** Original TC6 sheet coordinates and FXDispatcher presets, on the linearly filtered original sheet. */
 public final class LegacyParticle extends TextureSheetParticle {
     private final int grid, start, frames;
     private final boolean loop;
@@ -34,10 +34,10 @@ public final class LegacyParticle extends TextureSheetParticle {
         if(kind.startsWith("nitor_")) {int color=net.minecraft.world.item.DyeColor.byName(kind.substring(6),net.minecraft.world.item.DyeColor.YELLOW).getTextureDiffuseColor();setColor(((color>>16)&255)/255f,((color>>8)&255)/255f,(color&255)/255f);}
     }
     private int frame() { return start + (loop ? age%frames : Math.min(frames-1,age*frames/Math.max(1,lifetime))); }
-    @Override protected float getU0() { return sprite.getU((frame()%grid+.01f)/grid); }
-    @Override protected float getU1() { return sprite.getU((frame()%grid+.99f)/grid); }
-    @Override protected float getV0() { return sprite.getV((frame()/grid+.01f)/grid); }
-    @Override protected float getV1() { return sprite.getV((frame()/grid+.99f)/grid); }
+    @Override protected float getU0() { return (frame()%grid+.01f)/grid; }
+    @Override protected float getU1() { return (frame()%grid+.99f)/grid; }
+    @Override protected float getV0() { return (frame()/grid+.01f)/grid; }
+    @Override protected float getV1() { return (frame()/grid+.99f)/grid; }
     @Override public void tick() {
         super.tick(); float t=Math.min(1,age/(float)lifetime);
         quadSize=initialSize+(finalSize-initialSize)*t;
@@ -47,7 +47,7 @@ public final class LegacyParticle extends TextureSheetParticle {
         if(kind.equals("wisp")||kind.equals("rune")) { xd+=(random.nextFloat()-.5)*.005; zd+=(random.nextFloat()-.5)*.005; }
     }
     @Override protected int getLightColor(float tick) { return kind.equals("taint")?super.getLightColor(tick):0xf000f0; }
-    @Override public ParticleRenderType getRenderType() { return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT; }
+    @Override public ParticleRenderType getRenderType() { return SalisMundusParticle.legacyLayer(false); }
     public record Provider(String kind) implements ParticleProvider.Sprite<SimpleParticleType> {
         @Override public TextureSheetParticle createParticle(SimpleParticleType type, ClientLevel level, double x, double y, double z,
                                                  double vx, double vy, double vz) {

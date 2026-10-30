@@ -24,10 +24,10 @@ public final class ScanRuneParticle extends TextureSheetParticle {
         quadSize=.15f*(1+(float)random.nextGaussian()*.1f);alpha=0;
         setSize(.01f,.01f);
     }
-    @Override protected float getU0() {return sprite.getU(glyph/64f);}
-    @Override protected float getU1() {return sprite.getU((glyph+1)/64f);}
-    @Override protected float getV0() {return sprite.getV(6/64f);}
-    @Override protected float getV1() {return sprite.getV(7/64f);}
+    @Override protected float getU0() {return glyph/64f;}
+    @Override protected float getU1() {return (glyph+1)/64f;}
+    @Override protected float getV0() {return 6/64f;}
+    @Override protected float getV1() {return 7/64f;}
     @Override public void tick() {
         xo=x;yo=y;zo=z;
         alpha=ScannerVisualRules.runeOpacity(age,lifetime);

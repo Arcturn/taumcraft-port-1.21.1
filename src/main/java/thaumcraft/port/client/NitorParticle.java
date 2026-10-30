@@ -24,10 +24,10 @@ public final class NitorParticle extends TextureSheetParticle {
         }
     }
     private int frame(){return NitorVisualRules.frame(core,age);}
-    @Override protected float getU0(){return sprite.getU(NitorVisualRules.u0(frame()));}
-    @Override protected float getU1(){return sprite.getU(NitorVisualRules.u1(frame()));}
-    @Override protected float getV0(){return sprite.getV(NitorVisualRules.v0(frame()));}
-    @Override protected float getV1(){return sprite.getV(NitorVisualRules.v1(frame()));}
+    @Override protected float getU0(){return NitorVisualRules.u0(frame());}
+    @Override protected float getU1(){return NitorVisualRules.u1(frame());}
+    @Override protected float getV0(){return NitorVisualRules.v0(frame());}
+    @Override protected float getV1(){return NitorVisualRules.v1(frame());}
     // Original position interpolation uses partial ticks; scale and atlas frame use whole particle age.
     @Override public float getQuadSize(float partial){return NitorVisualRules.size(scaleFrames,age);}
     @Override public void tick(){

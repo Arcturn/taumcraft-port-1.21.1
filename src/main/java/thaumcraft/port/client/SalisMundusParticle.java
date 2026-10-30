@@ -16,7 +16,6 @@ import net.minecraft.client.particle.ParticleRenderType;
 import net.minecraft.client.particle.TextureSheetParticle;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.ShaderInstance;
-import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.resources.ResourceLocation;
@@ -27,6 +26,7 @@ import org.joml.Vector3f;
 
 /** The Salis Mundus presets of BETA26 FXGeneric, on the unmodified original atlas. */
 public final class SalisMundusParticle extends TextureSheetParticle {
+    private static final ResourceLocation ORIGINAL_SHEET = ResourceLocation.fromNamespaceAndPath("thaumcraft", "textures/misc/particles.png");
     private static final DustRenderType[] LAYERS = createLayers();
     private static final ParticleRenderType SMOKE = LAYERS[0], GLOW = LAYERS[1];
     private static ShaderInstance dustShader;
@@ -61,7 +61,10 @@ public final class SalisMundusParticle extends TextureSheetParticle {
             RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA,
                     additive ? GlStateManager.DestFactor.ONE : GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
             RenderSystem.setShader(() -> dustShader != null ? dustShader : GameRenderer.getParticleShader());
-            RenderSystem.setShaderTexture(0, TextureAtlas.LOCATION_PARTICLES);
+            // TC6 samples its own sheet with texture.blur=true. Stitching the whole
+            // sheet into vanilla's nearest-filtered atlas loses that metadata.
+            textures.getTexture(ORIGINAL_SHEET).setFilter(true, false);
+            RenderSystem.setShaderTexture(0, ORIGINAL_SHEET);
             return tessellator.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.PARTICLE);
         }
         @Override public String toString() { return additive ? "THAUMCRAFT_SALIS_GLOW" : "THAUMCRAFT_SALIS_SMOKE"; }
@@ -270,10 +273,10 @@ public final class SalisMundusParticle extends TextureSheetParticle {
         return firstFrame + (loop ? age % frameCount
                 : Math.min(frameCount - 1, age * frameCount / Math.max(1, lifetime)));
     }
-    @Override protected float getU0() { return sprite.getU((frame() % grid) / (float) grid); }
-    @Override protected float getU1() { return sprite.getU((frame() % grid + 1) / (float) grid); }
-    @Override protected float getV0() { return sprite.getV((frame() / grid) / (float) grid); }
-    @Override protected float getV1() { return sprite.getV((frame() / grid + 1) / (float) grid); }
+    @Override protected float getU0() { return (frame() % grid) / (float) grid; }
+    @Override protected float getU1() { return (frame() % grid + 1) / (float) grid; }
+    @Override protected float getV0() { return (frame() / grid) / (float) grid; }
+    @Override protected float getV1() { return (frame() / grid + 1) / (float) grid; }
 
     @Override public float getQuadSize(float partialTick) {
         // SingleQuadParticle also uses this for the frustum bounds. Preserve the

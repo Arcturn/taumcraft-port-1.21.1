@@ -1,7 +1,9 @@
 {
+  "parent": "minecraft:block/block",
   "loader": "neoforge:obj",
   "model": "thaumcraft:models/block/thaumatorium.obj",
-  "flip_v": true,
+  "flip_v": false,
+  "automatic_culling": false,
   "textures": {
     "texture": "thaumcraft:block/thaumatorium",
     "particle": "thaumcraft:block/thaumatorium"
