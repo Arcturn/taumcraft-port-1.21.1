@@ -20,6 +20,8 @@ public final class ResearchState {
     private final Map<String,java.util.EnumSet<ResearchFlag>> researchFlags = new LinkedHashMap<>();
     // Completion effects are not read flags and are never restored from saved data.
     private final java.util.List<String> addendumMessages = new java.util.ArrayList<>();
+    // Transient gain events are never saved or inferred from client journal snapshots.
+    private final java.util.List<KnowledgeGain> knowledgeGains = new java.util.ArrayList<>();
     private int permanentWarp, normalWarp, temporaryWarp;
 
     public ResearchState() {}
@@ -132,10 +134,25 @@ public final class ResearchState {
     public int knowledge(String type,String category) { return knowledge.getOrDefault(type+";"+category,0); }
     public static int progression(String type) { return type.equals("OBSERVATION")?16:type.equals("THEORY")?32:0; }
     public boolean addKnowledge(String type,String category,int amount) {
+        return addKnowledge(type,category,amount,true);
+    }
+    boolean restoreKnowledge(String type,String category,int amount) {
+        return addKnowledge(type,category,amount,false);
+    }
+    private boolean addKnowledge(String type,String category,int amount,boolean notify) {
         if(progression(type)==0||!ResearchCatalog.CATEGORIES.contains(category))return false;
-        long next=(long)knowledge(type,category)+amount;
+        int before=knowledge(type,category);
+        long next=(long)before+amount;
         if(next<0||next>1000000)return false;
-        knowledge.put(type+";"+category,(int)next);return true;
+        knowledge.put(type+";"+category,(int)next);
+        int gained=(int)next/progression(type)-before/progression(type);
+        if(notify&&amount>0&&gained>0)knowledgeGains.add(new KnowledgeGain(type,category,gained));
+        return true;
+    }
+    /** TC6 emits one animation/sound for each full point crossed (16 observation / 32 theory). */
+    public record KnowledgeGain(String type,String category,int count) {}
+    public java.util.List<KnowledgeGain> drainKnowledgeGains(){
+        var pending=java.util.List.copyOf(knowledgeGains);knowledgeGains.clear();return pending;
     }
     public int permanentWarp(){return permanentWarp;}
     public int normalWarp(){return normalWarp;}

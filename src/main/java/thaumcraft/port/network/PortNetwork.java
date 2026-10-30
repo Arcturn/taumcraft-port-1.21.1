@@ -7,6 +7,8 @@ public final class PortNetwork {
     private PortNetwork() {}
 
     public static void register(RegisterPayloadHandlersEvent event) {
+        event.registrar("9").playToClient(KnowledgeGainPayload.TYPE,KnowledgeGainPayload.STREAM_CODEC,
+                (p,c)->c.enqueueWork(()->thaumcraft.port.client.KnowledgeGainHud.receive(p.knowledgeType(),p.category(),p.count())));
         event.registrar("9").playToClient(WispZapPayload.TYPE,WispZapPayload.STREAM_CODEC,
                 (p,c)->c.enqueueWork(()->thaumcraft.port.client.WispFx.zap(p)));
         event.registrar("9").playToClient(PollutionFxPayload.TYPE, PollutionFxPayload.STREAM_CODEC,

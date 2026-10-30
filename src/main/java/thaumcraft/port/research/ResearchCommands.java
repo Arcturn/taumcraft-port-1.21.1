@@ -28,7 +28,7 @@ public final class ResearchCommands {
             .suggests((c,b)->SharedSuggestionProvider.suggest(ResearchCatalog.CATEGORIES,b)).then(Commands.argument("raw",IntegerArgumentType.integer(1,1000000)).executes(c->{
                 var p=c.getSource().getPlayerOrException();var storage=ResearchStorage.get(p.getServer());
                 boolean ok=storage.player(p.getUUID()).addKnowledge(type,StringArgumentType.getString(c,"category").toUpperCase(java.util.Locale.ROOT),IntegerArgumentType.getInteger(c,"raw"));
-                if(ok){storage.setDirty();c.getSource().sendSuccess(()->Component.literal("Knowledge added"),true);return 1;}
+                if(ok){storage.setDirty();ResearchProgress.sync(p);c.getSource().sendSuccess(()->Component.literal("Knowledge added"),true);return 1;}
                 c.getSource().sendFailure(Component.literal("Invalid category or knowledge limit exceeded"));return 0;
             }))));
         root.then(knowledge);event.getDispatcher().register(Commands.literal("thaumcraft").then(root));

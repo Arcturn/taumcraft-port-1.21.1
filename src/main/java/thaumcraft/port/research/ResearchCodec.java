@@ -13,7 +13,7 @@ public final class ResearchCodec {
         LegacyScanKeys.migrate(state);
         var stages=tag.getCompound("stages");stages.getAllKeys().forEach(k->state.restoreStage(k,stages.getInt(k)));
         var knowledge=tag.getCompound("knowledge");knowledge.getAllKeys().forEach(k->{
-            var parts=k.split(";",-1);if(parts.length==2)state.addKnowledge(parts[0],parts[1],Math.max(0,knowledge.getInt(k)));
+            var parts=k.split(";",-1);if(parts.length==2)state.restoreKnowledge(parts[0],parts[1],Math.max(0,knowledge.getInt(k)));
         });
         state.warp(tag.getInt("warpPermanent"),tag.getInt("warpNormal"),tag.getInt("warpTemporary"));
         if(tag.getInt("schema")>=SCHEMA){

@@ -13,12 +13,13 @@ import thaumcraft.port.network.JournalPayload;
 /** All requirements are validated before inventory or knowledge is consumed. */
 @net.neoforged.fml.common.EventBusSubscriber(modid="thaumcraft")
 public final class ResearchProgress {
-    @net.neoforged.bus.api.SubscribeEvent public static void login(net.neoforged.neoforge.event.entity.player.PlayerEvent.PlayerLoggedInEvent event){if(event.getEntity() instanceof ServerPlayer player)sync(player);}
+    @net.neoforged.bus.api.SubscribeEvent public static void login(net.neoforged.neoforge.event.entity.player.PlayerEvent.PlayerLoggedInEvent event){if(event.getEntity() instanceof ServerPlayer player){ResearchStorage.get(player.getServer()).player(player.getUUID()).drainKnowledgeGains();sync(player);}}
     @net.neoforged.bus.api.SubscribeEvent public static void respawn(net.neoforged.neoforge.event.entity.player.PlayerEvent.PlayerRespawnEvent event){if(event.getEntity() instanceof ServerPlayer player)sync(player);}
     public static void show(ServerPlayer player) {
         var storage=ResearchStorage.get(player.getServer());var state=storage.player(player.getUUID());
         if(state.flag("!gotthaumonomicon"))storage.setDirty();
         deliverAddenda(player,state);
+        deliverKnowledgeGains(player,state);
         PacketDistributor.sendToPlayer(player,new JournalPayload(state.scanned().size(),String.join(",",state.discovered()),snapshot(storage,state)));
     }
     public static void craft(ServerPlayer player,ItemStack output) {
@@ -27,7 +28,7 @@ public final class ResearchProgress {
         if(storage.player(player.getUUID()).craft(LegacyRequirement.craftKey(output)))storage.setDirty();
     }
     public static void sync(ServerPlayer player){
-        var storage=ResearchStorage.get(player.getServer());var s=storage.player(player.getUUID());deliverAddenda(player,s);var tag=snapshot(storage,s);
+        var storage=ResearchStorage.get(player.getServer());var s=storage.player(player.getUUID());deliverAddenda(player,s);deliverKnowledgeGains(player,s);var tag=snapshot(storage,s);
         var aura=thaumcraft.port.world.AuraSystem.get(player.serverLevel(),player.blockPosition());if(aura!=null){tag.putFloat("auraBase",aura.base());tag.putFloat("auraVis",aura.vis());tag.putFloat("auraFlux",aura.flux());}
         var target=Scanner.target(player,9,player.blockInteractionRange());String subject=Scanner.subject(player,target);tag.putString("scanTarget",Scanner.readoutKey(player,target));
         if(s.scanned().contains(subject)){var aspects=new net.minecraft.nbt.CompoundTag();Scanner.aspects(player,target).forEach((a,n)->aspects.putInt(a.id(),n));tag.put("scanAspects",aspects);}
@@ -35,6 +36,10 @@ public final class ResearchProgress {
     }
     /** TC6 snapshots pending POPUP flags, then clears them on the server before the next sync. */
     static net.minecraft.nbt.CompoundTag snapshot(ResearchStorage storage,ResearchState state){var tag=ResearchCodec.write(state);if(state.clearPopups())storage.setDirty();return tag;}
+    private static void deliverKnowledgeGains(ServerPlayer player,ResearchState state){
+        for(var gain:state.drainKnowledgeGains())PacketDistributor.sendToPlayer(player,
+                new thaumcraft.port.network.KnowledgeGainPayload(gain.type(),gain.category(),gain.count()));
+    }
     private static void deliverAddenda(ServerPlayer player,ResearchState state){
         for(String key:state.drainAddendumMessages()){
             var entry=ResearchCatalog.get(key);
