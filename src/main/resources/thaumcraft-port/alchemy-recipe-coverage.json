@@ -1,0 +1,265 @@
+{
+  "thaumcraft:nitor": [
+    "crucible_nitor"
+  ],
+  "thaumcraft:nitorgroup": [
+    "nitor_black_dye",
+    "nitor_blue_dye",
+    "nitor_brown_dye",
+    "nitor_cyan_dye",
+    "nitor_gray_dye",
+    "nitor_green_dye",
+    "nitor_light_blue_dye",
+    "nitor_light_gray_dye",
+    "nitor_lime_dye",
+    "nitor_magenta_dye",
+    "nitor_orange_dye",
+    "nitor_pink_dye",
+    "nitor_purple_dye",
+    "nitor_red_dye",
+    "nitor_white_dye",
+    "nitor_yellow_dye"
+  ],
+  "thaumcraft:viscrystalgroup": [
+    "vis_crystal_aer",
+    "vis_crystal_alienis",
+    "vis_crystal_alkimia",
+    "vis_crystal_aqua",
+    "vis_crystal_auram",
+    "vis_crystal_aversio",
+    "vis_crystal_bestia",
+    "vis_crystal_cognitio",
+    "vis_crystal_desiderium",
+    "vis_crystal_exanimis",
+    "vis_crystal_fabrico",
+    "vis_crystal_gelum",
+    "vis_crystal_herba",
+    "vis_crystal_humanus",
+    "vis_crystal_ignis",
+    "vis_crystal_instrumentum",
+    "vis_crystal_lux",
+    "vis_crystal_machina",
+    "vis_crystal_metallum",
+    "vis_crystal_mortuus",
+    "vis_crystal_motus",
+    "vis_crystal_ordo",
+    "vis_crystal_perditio",
+    "vis_crystal_permutatio",
+    "vis_crystal_potentia",
+    "vis_crystal_praecantatio",
+    "vis_crystal_praemunio",
+    "vis_crystal_sensus",
+    "vis_crystal_spiritus",
+    "vis_crystal_tenebrae",
+    "vis_crystal_terra",
+    "vis_crystal_vacuos",
+    "vis_crystal_victus",
+    "vis_crystal_vinculum",
+    "vis_crystal_vitium",
+    "vis_crystal_vitreus",
+    "vis_crystal_volatus"
+  ],
+  "thaumcraft:phial": [
+    "phial"
+  ],
+  "thaumcraft:Filter": [
+    "filter"
+  ],
+  "thaumcraft:MorphicResonator": [
+    "morphic_resonator"
+  ],
+  "thaumcraft:alumentum": [
+    "crucible_alumentum"
+  ],
+  "thaumcraft:brassingot": [
+    "crucible_brassingot"
+  ],
+  "thaumcraft:brass_stuff": [
+    "brass_block",
+    "brass_unpack",
+    "plate_brass"
+  ],
+  "thaumcraft:thaumiumingot": [
+    "crucible_thaumiumingot"
+  ],
+  "thaumcraft:thaumium_stuff": [
+    "thaumium_block",
+    "thaumium_unpack",
+    "plate_thaumium",
+    "thaumium_helm",
+    "thaumium_chest",
+    "thaumium_legs",
+    "thaumium_boots",
+    "thaumium_sword",
+    "thaumium_pick",
+    "thaumium_axe",
+    "thaumium_shovel",
+    "thaumium_hoe"
+  ],
+  "thaumcraft:tallowcandles": [
+    "tallow_candle",
+    "candle_black_dye",
+    "candle_blue_dye",
+    "candle_brown_dye",
+    "candle_cyan_dye",
+    "candle_gray_dye",
+    "candle_green_dye",
+    "candle_light_blue_dye",
+    "candle_light_gray_dye",
+    "candle_lime_dye",
+    "candle_magenta_dye",
+    "candle_orange_dye",
+    "candle_pink_dye",
+    "candle_purple_dye",
+    "candle_red_dye",
+    "candle_white_dye",
+    "candle_yellow_dye"
+  ],
+  "thaumcraft:LiquidDeath": [
+    "liquid_death"
+  ],
+  "thaumcraft:BottleTaint": [
+    "bottle_taint"
+  ],
+  "thaumcraft:BathSalts": [
+    "bath_salts"
+  ],
+  "thaumcraft:SaneSoap": [
+    "sanity_soap"
+  ],
+  "thaumcraft:ArcaneSpa": [
+    "spa"
+  ],
+  "thaumcraft:EssentiaSmelter": [
+    "smelter_basic"
+  ],
+  "thaumcraft:Alembic": [
+    "alembic"
+  ],
+  "thaumcraft:WardedJar": [
+    "jar_normal"
+  ],
+  "thaumcraft:JarVoid": [
+    "jar_void"
+  ],
+  "thaumcraft:BrassBrace": [
+    "jar_brace"
+  ],
+  "thaumcraft:JarLabel": [
+    "label"
+  ],
+  "thaumcraft:JarLabelEssence": [
+    "label_aspect"
+  ],
+  "thaumcraft:Resonator": [
+    "resonator"
+  ],
+  "thaumcraft:Tube": [
+    "tube"
+  ],
+  "thaumcraft:TubeValve": [
+    "tube_valve"
+  ],
+  "thaumcraft:TubeFilter": [
+    "tube_filter"
+  ],
+  "thaumcraft:TubeRestrict": [
+    "tube_restrict"
+  ],
+  "thaumcraft:TubeOneway": [
+    "tube_oneway"
+  ],
+  "thaumcraft:TubeBuffer": [
+    "tube_buffer"
+  ],
+  "thaumcraft:AlchemicalConstruct": [
+    "metal_alchemical"
+  ],
+  "thaumcraft:EssentiaSmelterThaumium": [
+    "smelter_thaumium"
+  ],
+  "thaumcraft:AdvAlchemyConstruct": [
+    "metal_alchemical_advanced"
+  ],
+  "thaumcraft:EssentiaSmelterVoid": [
+    "smelter_void"
+  ],
+  "thaumcraft:SmelterAux": [
+    "smelter_aux"
+  ],
+  "thaumcraft:SmelterVent": [
+    "smelter_vent"
+  ],
+  "thaumcraft:Centrifuge": [
+    "centrifuge"
+  ],
+  "thaumcraft:Thaumatorium": [
+    "@salis_mundus_ritual"
+  ],
+  "thaumcraft:MnemonicMatrix": [
+    "brain_box"
+  ],
+  "thaumcraft:EssentiaTransportIn": [
+    "essentia_input"
+  ],
+  "thaumcraft:EssentiaTransportOut": [
+    "essentia_output"
+  ],
+  "thaumcraft:EverfullUrn": [
+    "everfull_urn"
+  ],
+  "thaumcraft:PotionSprayer": [
+    "potion_sprayer"
+  ],
+  "thaumcraft:metal_purification_iron": [
+    "crucible_metal_purification_iron"
+  ],
+  "thaumcraft:metal_purification_gold": [
+    "crucible_metal_purification_gold"
+  ],
+  "thaumcraft:metal_purification_cinnabar": [
+    "crucible_metal_purification_cinnabar"
+  ],
+  "thaumcraft:metal_purification_copper": [
+    "crucible_metal_purification_copper"
+  ],
+  "thaumcraft:metal_purification_tin": [
+    "crucible_metal_purification_tin"
+  ],
+  "thaumcraft:metal_purification_silver": [
+    "crucible_metal_purification_silver"
+  ],
+  "thaumcraft:metal_purification_lead": [
+    "crucible_metal_purification_lead"
+  ],
+  "thaumcraft:hedge_tallow": [
+    "crucible_hedge_tallow"
+  ],
+  "thaumcraft:hedge_leather": [
+    "crucible_hedge_leather"
+  ],
+  "thaumcraft:hedge_gunpowder": [
+    "crucible_hedge_gunpowder"
+  ],
+  "thaumcraft:hedge_slime": [
+    "crucible_hedge_slime"
+  ],
+  "thaumcraft:hedge_dye": [
+    "crucible_hedge_dye"
+  ],
+  "thaumcraft:hedge_glowstone": [
+    "crucible_hedge_glowstone"
+  ],
+  "thaumcraft:hedge_clay": [
+    "crucible_hedge_clay"
+  ],
+  "thaumcraft:hedge_string": [
+    "crucible_hedge_string"
+  ],
+  "thaumcraft:hedge_web": [
+    "crucible_hedge_web"
+  ],
+  "thaumcraft:hedge_lava": [
+    "crucible_hedge_lava"
+  ]
+}

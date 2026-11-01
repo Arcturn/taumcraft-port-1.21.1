@@ -17,6 +17,7 @@ public final class RevealingReadout {
             var main=machine.main();
             return main==null?Map.of():Map.copyOf(main.contents.values());
         }
+        if(entity instanceof thaumcraft.port.alchemy.devices.PotionSprayerEntity sprayer)return Map.copyOf(sprayer.store.progress());
         if(entity instanceof CrucibleEntity crucible)return Map.copyOf(crucible.state.aspects());
         return Map.of();
     }

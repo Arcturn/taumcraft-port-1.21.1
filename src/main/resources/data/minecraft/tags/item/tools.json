@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:thaumium_sword",
+    "thaumcraft:thaumium_pick",
+    "thaumcraft:thaumium_shovel",
+    "thaumcraft:thaumium_axe",
+    "thaumcraft:thaumium_hoe"
+  ]
+}

@@ -11,7 +11,7 @@ import thaumcraft.port.content.CrystalItem;
 /** Conservative conversion: unsupported legacy metadata/NBT never becomes a free requirement. */
 public record LegacyRequirement(String source,int count,String craftKey,Predicate<ItemStack> matches) {
     private static final Map<String,String> IDS=Map.of("minecraft:noteblock","minecraft:note_block","minecraft:web","minecraft:cobweb",
-            "minecraft:map","minecraft:map","thaumcraft:leather","minecraft:leather","thaumcraft:thaumium_pick","thaumcraft:thaumium_pickaxe",
+            "minecraft:map","minecraft:map","thaumcraft:leather","minecraft:leather",
             "thaumcraft:nitor_silver","thaumcraft:nitor_light_gray");
     public static LegacyRequirement parse(String source) {
         try {
@@ -32,7 +32,8 @@ public record LegacyRequirement(String source,int count,String craftKey,Predicat
             // The old smelter pages retain the pre-flattening metal ID. Their
             // descriptions and matching plate requirements identify thaumium/void.
             else if(id.equals("thaumcraft:metal"))id=switch(meta){case 2->"thaumcraft:metal_thaumium";case 3->"thaumcraft:metal_void";default->"";};
-            else if(id.equals("thaumcraft:nugget")&&meta==9)id="thaumcraft:nugget_quartz";
+            else if(id.equals("thaumcraft:nugget"))id=switch(meta){case 0->"minecraft:iron_nugget";case 5->"thaumcraft:nugget_quicksilver";case 6->"thaumcraft:nugget_thaumium";case 7->"thaumcraft:nugget_void";case 8->"thaumcraft:nugget_brass";case 9->"thaumcraft:nugget_quartz";case 10->"thaumcraft:rareearth";default->"";};
+            else if(id.equals("thaumcraft:cluster"))id=switch(meta){case 0->"thaumcraft:cluster_iron";case 1->"thaumcraft:cluster_gold";case 2->"thaumcraft:cluster_copper";case 3->"thaumcraft:cluster_tin";case 4->"thaumcraft:cluster_silver";case 5->"thaumcraft:cluster_lead";case 6->"thaumcraft:cluster_cinnabar";case 7->"thaumcraft:cluster_quartz";default->"";};
             else if(id.equals("thaumcraft:nitor")&&meta==4)id="thaumcraft:nitor_yellow";
             else if(id.equals("thaumcraft:plate"))id=switch(meta){case 0->"thaumcraft:plate_brass";case 1->"thaumcraft:plate_iron";case 2->"thaumcraft:plate_thaumium";case 3->"thaumcraft:plate_void";default->"";};
             else if(id.equals("thaumcraft:phial")&&meta==1&&parts.length==4){

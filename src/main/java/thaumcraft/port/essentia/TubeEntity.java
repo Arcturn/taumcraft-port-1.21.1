@@ -3,7 +3,7 @@ package thaumcraft.port.essentia;
 import net.minecraft.core.*;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.state.BlockState;
 import thaumcraft.port.aspect.Aspect;
 import thaumcraft.port.content.*;
@@ -16,11 +16,15 @@ public class TubeEntity extends EssentiaEntity {
     public boolean allowFlow=true,wasPowered;
     public float rotation,previousRotation;
     private boolean connectionsInitialized;
+    private int visualVenting,ventColor;
     public TubeEntity(BlockPos pos,BlockState state){super(EssentiaContent.TUBE_ENTITY.get(),pos,state);kind=((TubeBlock)state.getBlock()).kind;}
     public Direction facing(){return getBlockState().getValue(TubeBlock.FACING);}
     public boolean connects(Direction d){return d!=null&&(open&(1<<d.ordinal()))!=0&&(kind!=TubeBlock.Kind.VALVE||d!=facing());}
-    public boolean input(Direction d){return connects(d)&&(kind!=TubeBlock.Kind.ONEWAY||d!=facing().getOpposite())&&(kind!=TubeBlock.Kind.VALVE||allowFlow);}
-    public boolean output(Direction d){return connects(d)&&(kind!=TubeBlock.Kind.ONEWAY||d==facing().getOpposite())&&(kind!=TubeBlock.Kind.VALVE||allowFlow);}
+    // TC6 valves stop suction, not extraction of the one unit already in the tube.
+    // A one-way tube restricts its own pull direction; its physical side ports remain accessible.
+    public boolean input(Direction d){return connects(d);}
+    public boolean output(Direction d){return connects(d);}
+    public boolean canPullFrom(Direction d){return input(d)&&(kind!=TubeBlock.Kind.ONEWAY||d!=facing().getOpposite());}
     public Aspect aspect(Direction d){return tank.aspect();}
     public int amount(Direction d){return tank.amount();}
     public Aspect suctionType(Direction d){return suctionType;}
@@ -46,7 +50,7 @@ public class TubeEntity extends EssentiaEntity {
             if(other==null||!other.connects(d.getOpposite())||(other instanceof TubeEntity t&&t.kind==TubeBlock.Kind.FILTER))continue;
             int strength=other.suction(d.getOpposite());
             if(SuctionRules.conflicts(new SuctionRules.Demand(suctionType,suction,false),new SuctionRules.Demand(other.suctionType(d.getOpposite()),strength,false))){
-                venting=40;sync();level.playSound(null,worldPosition,PortSounds.get("spill"),SoundSource.BLOCKS,.3f,1.4f);return;
+                venting=40;sync();level.blockEvent(worldPosition,getBlockState().getBlock(),1,suctionType==null?-1:suctionType.ordinal());return;
             }
         }
     }
@@ -63,7 +67,11 @@ public class TubeEntity extends EssentiaEntity {
     }
     public void tick(){
         if(level==null)return;
-        if(level.isClientSide){previousRotation=rotation;rotation=allowFlow?Math.max(0,rotation-20):Math.min(360,rotation+20);return;}
+        if(level.isClientSide){
+            previousRotation=rotation;rotation=allowFlow?Math.max(0,rotation-20):Math.min(360,rotation+20);
+            if(visualVenting>0&&--visualVenting>0)thaumcraft.port.client.EssentiaStreams.vent(worldPosition,ventColor);
+            return;
+        }
         if(!connectionsInitialized||level.getGameTime()%20==0){connectionsInitialized=true;((TubeBlock)getBlockState().getBlock()).refresh(level,worldPosition);}
         long time=level.getGameTime()+Math.floorMod(worldPosition.asLong(),5);
         if(kind==TubeBlock.Kind.VALVE&&time%5==0){
@@ -71,13 +79,24 @@ public class TubeEntity extends EssentiaEntity {
             if(powered!=wasPowered){allowFlow=!powered;wasPowered=powered;suction=0;sync();level.playSound(null,worldPosition,PortSounds.get("squeek"),SoundSource.BLOCKS,.7f,1);}
         }
         if(venting>0){
-            --venting;setChanged();if(venting%5==0&&level instanceof ServerLevel s)s.sendParticles(PortParticles.ALL.get("taint").get(),worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5,3,.12,.12,.12,.025);
+            --venting;setChanged();
             if(venting==0)sync();return;
         }
         if(time%2==0){int old=suction;Aspect type=suctionType;calculateSuction();checkVenting();if(old!=suction||type!=suctionType)sync();}
-        if(venting==0&&time%5==0&&suction>0&&tank.amount()==0)for(Direction d:Direction.values())if(EssentiaTransport.pull(this,d,neighbour(d))>0){
-            if(level.random.nextInt(100)==0)level.playSound(null,worldPosition,PortSounds.get("creak"),SoundSource.BLOCKS,1,1.4f);break;
+        if(venting==0&&time%5==0&&suction>0&&tank.amount()==0)for(Direction d:Direction.values())if(canPullFrom(d)&&EssentiaTransport.pull(this,d,neighbour(d))>0){
+            if(level.random.nextInt(100)==0)level.blockEvent(worldPosition,getBlockState().getBlock(),0,0);break;
         }
+    }
+    @Override public boolean triggerEvent(int id,int value){
+        if(id!=0&&id!=1)return super.triggerEvent(id,value);
+        if(level!=null&&level.isClientSide){
+            if(id==0)level.playLocalSound(worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5,PortSounds.get("creak"),SoundSource.AMBIENT,1,1.3f+level.random.nextFloat()*.2f,false);
+            else{
+                if(visualVenting<=0)level.playLocalSound(worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5,SoundEvents.LAVA_EXTINGUISH,SoundSource.BLOCKS,.1f,1+level.random.nextFloat()*.1f,false);
+                visualVenting=50;ventColor=value<0||value>=Aspect.values().length?0xaaaaaa:Aspect.values()[value].color();
+            }
+        }
+        return true;
     }
     @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider r){super.saveAdditional(tag,r);writeTank(tag,tank);tag.putInt("Open",open);tag.putInt("Suction",suction);if(suctionType!=null)tag.putString("SuctionType",suctionType.id());tag.putInt("Venting",venting);tag.putBoolean("Flow",allowFlow);tag.putBoolean("Powered",wasPowered);}
     @Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider r){super.loadAdditional(tag,r);readTank(tag,tank);open=tag.contains("Open")?tag.getInt("Open")&63:63;suction=Math.clamp(tag.getInt("Suction"),0,192);suctionType=readAspect(tag,"SuctionType");venting=Math.clamp(tag.getInt("Venting"),0,40);allowFlow=!tag.contains("Flow")||tag.getBoolean("Flow");wasPowered=tag.getBoolean("Powered");}

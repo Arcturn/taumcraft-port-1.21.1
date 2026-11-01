@@ -22,9 +22,12 @@ import thaumcraft.port.world.AuraSystem;
 
 public final class JarBlock extends Block implements EntityBlock {
     public JarBlock(Properties p){super(p);}
-    @Override protected VoxelShape getShape(BlockState s,BlockGetter l,BlockPos p,CollisionContext c){return box(3,0,3,13,14,13);}
+    @Override protected VoxelShape getShape(BlockState s,BlockGetter l,BlockPos p,CollisionContext c){return s.is(EssentiaContent.ALEMBIC.get())?box(2,0,2,14,16,14):box(3,0,3,13,12,13);}
     @Override public BlockEntity newBlockEntity(BlockPos p,BlockState s){return new JarEntity(p,s);}
     @Override public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level l,BlockState s,BlockEntityType<T> t){return t==EssentiaContent.JAR_ENTITY.get()?(w,p,st,e)->((JarEntity)e).tick():null;}
+    @Override protected boolean hasAnalogOutputSignal(BlockState state){return true;}
+    @Override protected int getAnalogOutputSignal(BlockState state,Level level,BlockPos pos){return level.getBlockEntity(pos) instanceof JarEntity jar?(jar.tank.amount()*14/jar.tank.capacity)+(jar.tank.amount()>0?1:0):0;}
+    @Override protected void onRemove(BlockState state,Level level,BlockPos pos,BlockState next,boolean moving){super.onRemove(state,level,pos,next,moving);if(!state.is(next.getBlock()))level.updateNeighbourForOutputSignal(pos,this);}
     @Override protected List<ItemStack> getDrops(BlockState s,LootParams.Builder params){
         var drops=new java.util.ArrayList<>(super.getDrops(s,params));
         if(params.getOptionalParameter(LootContextParams.BLOCK_ENTITY) instanceof JarEntity be&&!be.alembic){
@@ -73,7 +76,10 @@ public final class JarBlock extends Block implements EntityBlock {
         if(l.getBlockEntity(p) instanceof JarEntity be&&!l.isClientSide){
             if(player.isShiftKeyDown()){
                 if(be.tank.filter()!=null&&hit.getDirection()==be.labelFacing){be.tank.filter(null);l.updateNeighborsAt(p,s.getBlock());popResource(l,p,new ItemStack(EssentiaContent.LABEL.get()));l.playSound(null,p,PortSounds.get("page"),SoundSource.BLOCKS,.4f,1);}
-                else {if(l instanceof ServerLevel server)AuraSystem.add(server,p,be.tank.amount(),true);be.tank.restore(null,0,be.tank.filter());l.playSound(null,p,PortSounds.get("spill"),SoundSource.BLOCKS,.5f,1);}
+                else if(player.getMainHandItem().isEmpty()){
+                    if(l instanceof ServerLevel server)AuraSystem.add(server,p,be.tank.amount(),true);be.tank.restore(null,0,be.tank.filter());
+                    l.playSound(null,p,PortSounds.get("jar"),SoundSource.BLOCKS,.4f,1);l.playSound(null,p,SoundEvents.BOTTLE_FILL,SoundSource.BLOCKS,.5f,1+(l.random.nextFloat()-l.random.nextFloat())*.3f);
+                }
                 be.sync();
             }else describe(be,player);
         }

@@ -20,9 +20,10 @@ public final class SmelterMenu extends AbstractContainerMenu {
     @Override public ItemStack quickMoveStack(Player p,int i){
         if(i<0||i>=slots.size())return ItemStack.EMPTY;var slot=slots.get(i);if(!slot.hasItem())return ItemStack.EMPTY;
         ItemStack stack=slot.getItem(),copy=stack.copy();boolean moved;
-        if(i<2)moved=moveItemStackTo(stack,2,38,true);
-        else if(SmelterEntity.fuel(stack)>0)moved=moveItemStackTo(stack,1,2,false);
-        else moved=moveItemStackTo(stack,0,1,false);
+        if(i<2)moved=moveItemStackTo(stack,2,38,false);
+        else if(SmelterEntity.fuel(stack)>0)moved=moveItemStackTo(stack,1,2,false)||moveItemStackTo(stack,0,1,false);
+        else if(slots.getFirst().mayPlace(stack))moved=moveItemStackTo(stack,0,1,false);
+        else moved=i<29?moveItemStackTo(stack,29,38,false):moveItemStackTo(stack,2,29,false);
         if(!moved)return ItemStack.EMPTY;if(stack.isEmpty())slot.setByPlayer(ItemStack.EMPTY);else slot.setChanged();slot.onTake(p,stack);return copy;
     }
 }

@@ -21,6 +21,7 @@ public final class SmelterEntity extends BlockEntity implements WorldlyContainer
     public final SmelterState store=new SmelterState();
     public int burn,fuelTime,cook,smeltTime=1;
     public boolean boost;
+    private int counter;
     public final int tier;
     public final ContainerData data=new ContainerData(){
         public int get(int i){return switch(i){case 0->burn;case 1->fuelTime;case 2->cook;case 3->smeltTime;case 4->store.total();default->0;};}
@@ -32,7 +33,7 @@ public final class SmelterEntity extends BlockEntity implements WorldlyContainer
         if(!(level instanceof ServerLevel server))return;
         boolean dirty=false;if(burn>0){burn--;dirty=true;}
         int period=tier==1?10:15;if(boost)period=(int)(period*.8);
-        if(server.getGameTime()%period==0){
+        if(++counter%period==0){
             var outlets=new ArrayList<BlockPos>();outlets.add(worldPosition);outlets.addAll(attachments(EssentiaContent.AUX.get()));
             for(BlockPos outlet:outlets)for(Aspect a:new ArrayList<>(store.aspects().keySet()))if(distill(a,outlet)){store.take(a);dirty=true;break;}
         }
@@ -41,14 +42,27 @@ public final class SmelterEntity extends BlockEntity implements WorldlyContainer
         if(burn==0&&can){
             int duration=fuel(items.get(1));
             if(duration>0){
-                ItemStack stack=items.get(1);boost=net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(stack.getItem()).getPath().equals("alumentum");
+                ItemStack stack=items.get(1);boost=net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(stack.getItem()).equals(net.minecraft.resources.ResourceLocation.parse("thaumcraft:alumentum"));
                 var remainder=((IItemStackExtension)(Object)stack).getCraftingRemainingItem();
                 stack.shrink(1);if(stack.isEmpty())items.set(1,remainder);burn=fuelTime=duration;dirty=true;
             }
         }
         if(burn>0&&can){
             cook++;dirty=true;
-            if(cook>=smeltTime){int pollution=store.smelt(tags,tier,()->server.random.nextFloat());if(pollution>=0){items.get(0).shrink(1);if(pollution>0){var vents=attachments(EssentiaContent.VENT.get());int remaining=SmelterUpgrades.pollution(pollution,vents.size(),()->server.random.nextFloat());if(remaining>0)AuraSystem.add(server,worldPosition,remaining,true);if(remaining<pollution)for(BlockPos vent:vents)server.sendParticles(net.minecraft.core.particles.ParticleTypes.CLOUD,vent.getX()+.5,vent.getY()+.5,vent.getZ()+.5,5,.2,.2,.2,.03);}}cook=0;}
+            if(cook>=smeltTime){
+                int pollution=store.smelt(tags,tier,()->server.random.nextFloat());
+                if(pollution>=0){
+                    items.get(0).shrink(1);
+                    if(pollution>0){
+                        var vents=attachments(EssentiaContent.VENT.get());
+                        int remaining=SmelterUpgrades.pollution(pollution,vents.size(),()->server.random.nextFloat(),
+                                index->server.blockEvent(worldPosition,getBlockState().getBlock(),1,
+                                        level.getBlockState(vents.get(index)).getValue(SmelterAttachmentBlock.FACING).get3DDataValue()));
+                        if(remaining>0)AuraSystem.pollute(server,worldPosition,remaining,true);
+                    }
+                }
+                cook=0;
+            }
         }else if(cook!=0){cook=0;dirty=true;}
         if(getBlockState().getValue(SmelterBlock.LIT)!=(burn>0))server.setBlock(worldPosition,getBlockState().setValue(SmelterBlock.LIT,burn>0),3);
         if(dirty)setChanged();
@@ -80,6 +94,10 @@ public final class SmelterEntity extends BlockEntity implements WorldlyContainer
     public boolean canTakeItemThroughFace(int i,ItemStack stack,Direction d){return true;}
     public Component getDisplayName(){return getBlockState().getBlock().getName();}
     public AbstractContainerMenu createMenu(int id,Inventory inv,Player p){return new SmelterMenu(id,inv,this,data);}
+    @Override public boolean triggerEvent(int id,int parameter){
+        if(id==1&&parameter>=0&&parameter<6)return level!=null&&(!level.isClientSide||SmelterVisualBridge.vent.handle(this,Direction.from3DDataValue(parameter)));
+        return super.triggerEvent(id,parameter);
+    }
     @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider r){
         super.saveAdditional(tag,r);ContainerHelper.saveAllItems(tag,items,r);tag.putInt("Burn",burn);tag.putInt("FuelTime",fuelTime);tag.putInt("Cook",cook);tag.putInt("SmeltTime",smeltTime);tag.putBoolean("Boost",boost);
         var values=new CompoundTag();store.aspects().forEach((a,n)->values.putInt(a.id(),n));tag.put("Aspects",values);

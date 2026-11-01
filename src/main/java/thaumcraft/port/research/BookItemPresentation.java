@@ -79,6 +79,8 @@ public final class BookItemPresentation {
     public static List<Component> catalogTooltip(String source, boolean advanced) {
         var entries = advanced && OriginalTooltips.ADVANCED != null ? OriginalTooltips.ADVANCED : OriginalTooltips.ENTRIES;
         String canonical = canonicalSource(source);
+        var aliases = OriginalTooltips.CATALOG.getAsJsonObject("aliases");
+        if (aliases != null && aliases.has(canonical)) canonical = aliases.get(canonical).getAsString();
         var keys = entries.getAsJsonArray(canonical);
         // Modern dye naming for the same original candle, used by OreIngredient cycling.
         if (keys == null && canonical.startsWith("thaumcraft:candle_light_gray;"))

@@ -3,6 +3,7 @@ package thaumcraft.port.essentia;
 import net.minecraft.core.*;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.*;
 import net.minecraft.world.entity.player.Player;
@@ -13,6 +14,7 @@ import net.minecraft.world.level.block.entity.*;
 import net.minecraft.world.level.block.state.*;
 import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.phys.BlockHitResult;
+import thaumcraft.port.world.AuraSystem;
 
 public final class SmelterBlock extends Block implements EntityBlock {
     public static final DirectionProperty FACING=BlockStateProperties.HORIZONTAL_FACING;
@@ -27,6 +29,18 @@ public final class SmelterBlock extends Block implements EntityBlock {
         if(player instanceof ServerPlayer sp&&l.getBlockEntity(p) instanceof SmelterEntity be)sp.openMenu(be);
         return InteractionResult.sidedSuccess(l.isClientSide);
     }
-    @Override protected void onRemove(BlockState s,Level l,BlockPos p,BlockState next,boolean moving){if(!s.is(next.getBlock())&&l.getBlockEntity(p) instanceof SmelterEntity be)Containers.dropContents(l,p,be);super.onRemove(s,l,p,next,moving);}
-    @Override public void animateTick(BlockState s,Level l,BlockPos p,RandomSource r){if(s.getValue(LIT)){Direction d=s.getValue(FACING);double x=p.getX()+.5+d.getStepX()*.52,y=p.getY()+.25+r.nextDouble()*.25,z=p.getZ()+.5+d.getStepZ()*.52;l.addParticle(ParticleTypes.SMOKE,x,y,z,0,.01,0);l.addParticle(ParticleTypes.FLAME,x,y,z,0,0,0);}}
+    @Override protected void onRemove(BlockState s,Level l,BlockPos p,BlockState next,boolean moving){
+        if(!s.is(next.getBlock())&&l.getBlockEntity(p) instanceof SmelterEntity be){
+            if(l instanceof ServerLevel server)AuraSystem.pollute(server,p,be.store.total(),true);
+            Containers.dropContents(l,p,be);l.updateNeighbourForOutputSignal(p,this);
+        }
+        super.onRemove(s,l,p,next,moving);
+    }
+    @Override protected boolean hasAnalogOutputSignal(BlockState state){return true;}
+    @Override protected int getAnalogOutputSignal(BlockState state,Level level,BlockPos pos){return net.minecraft.world.inventory.AbstractContainerMenu.getRedstoneSignalFromBlockEntity(level.getBlockEntity(pos));}
+    @Override protected boolean triggerEvent(BlockState state,Level level,BlockPos pos,int id,int parameter){
+        super.triggerEvent(state,level,pos,id,parameter);
+        return level.getBlockEntity(pos) instanceof SmelterEntity be&&be.triggerEvent(id,parameter);
+    }
+    @Override public void animateTick(BlockState s,Level l,BlockPos p,RandomSource r){if(s.getValue(LIT)){Direction d=s.getValue(FACING);double spread=r.nextFloat()*.5-.25;double x=p.getX()+.5+d.getStepX()*.52+(d.getAxis()==Direction.Axis.Z?spread:0),y=p.getY()+.2+r.nextFloat()*5/16,z=p.getZ()+.5+d.getStepZ()*.52+(d.getAxis()==Direction.Axis.X?spread:0);l.addParticle(ParticleTypes.SMOKE,x,y,z,0,0,0);l.addParticle(ParticleTypes.FLAME,x,y,z,0,0,0);}}
 }

@@ -22,7 +22,7 @@ public final class ResearchState {
     private final java.util.List<String> addendumMessages = new java.util.ArrayList<>();
     // Transient gain events are never saved or inferred from client journal snapshots.
     private final java.util.List<KnowledgeGain> knowledgeGains = new java.util.ArrayList<>();
-    private int permanentWarp, normalWarp, temporaryWarp;
+    private int permanentWarp, normalWarp, temporaryWarp, warpCounter;
 
     public ResearchState() {}
 
@@ -162,7 +162,12 @@ public final class ResearchState {
     public int permanentWarp(){return permanentWarp;}
     public int normalWarp(){return normalWarp;}
     public int temporaryWarp(){return temporaryWarp;}
+    public int warpCounter(){return warpCounter;}
+    public void warpCounter(int counter){warpCounter=Math.clamp(counter,0,30000);}
     public void warp(int permanent,int normal,int temporary) {
+        boolean increased=Math.clamp(permanent,0,10000)>permanentWarp||Math.clamp(normal,0,10000)>normalWarp||Math.clamp(temporary,0,10000)>temporaryWarp;
         permanentWarp=Math.clamp(permanent,0,10000);normalWarp=Math.clamp(normal,0,10000);temporaryWarp=Math.clamp(temporary,0,10000);
+        // TC6 resets event activity when gaining warp; cleansing does not reactivate it.
+        if(increased)warpCounter=permanentWarp+normalWarp+temporaryWarp;
     }
 }

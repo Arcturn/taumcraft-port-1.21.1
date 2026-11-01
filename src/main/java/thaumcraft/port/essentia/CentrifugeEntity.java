@@ -31,12 +31,15 @@ public final class CentrifugeEntity extends EssentiaEntity {
     }
     public void tick(){
         if(level==null)return;
-        if(level.isClientSide){previousRotation=rotation;speed=incoming!=null&&!powered()?Math.min(20,speed+2):Math.max(0,speed-.5f);rotation+=speed;return;}
+        if(level.isClientSide){
+            previousRotation=rotation;speed=incoming!=null&&!powered()?Math.min(20,speed+2):Math.max(0,speed-.5f);rotation+=speed;
+            if(rotation%180<=20&&(int)previousRotation%180>=160&&speed>0)level.playLocalSound(worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5,PortSounds.get("pump"),SoundSource.BLOCKS,1,1,false);
+            return;
+        }
         if(powered())return;
         if(outgoing==null&&incoming==null&&level.getGameTime()%5==0)EssentiaTransport.pull(this,Direction.DOWN,neighbour(Direction.DOWN));
         if(process>0){process--;setChanged();}
         if(incoming!=null&&outgoing==null&&process==0){outgoing=incoming.components().get(level.random.nextInt(2));incoming=null;sync();}
-        if(incoming!=null&&level.getGameTime()%9==0)level.playSound(null,worldPosition,PortSounds.get("pump"),SoundSource.BLOCKS,.7f,1);
     }
     @Override protected void saveAdditional(CompoundTag tag,HolderLookup.Provider r){super.saveAdditional(tag,r);if(incoming!=null)tag.putString("In",incoming.id());if(outgoing!=null)tag.putString("Out",outgoing.id());tag.putInt("Process",process);}
     @Override protected void loadAdditional(CompoundTag tag,HolderLookup.Provider r){super.loadAdditional(tag,r);incoming=readAspect(tag,"In");if(incoming!=null&&incoming.isPrimal())incoming=null;outgoing=readAspect(tag,"Out");process=incoming==null?0:Math.clamp(tag.getInt("Process"),0,39);}

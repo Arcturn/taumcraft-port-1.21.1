@@ -43,9 +43,11 @@ public final class EssentiaFixtures {
         var restoredTube=new TubeEntity(BlockPos.ZERO,tube.getBlockState());restoredTube.loadCustomOnly(tube.saveCustomOnly(registries),registries);
         require(restoredTube.open==5&&restoredTube.venting==23&&restoredTube.tank.aspect()==Aspect.AIR&&restoredTube.suction==63&&restoredTube.tank.filter()==Aspect.AIR&&!restoredTube.allowFlow,"Tube content, filter, ports, suction and vent save");checks++;
         var valve=new TubeEntity(BlockPos.ZERO,EssentiaContent.TUBES.get("tube_valve").get().defaultBlockState());valve.allowFlow=false;
-        require(valve.insert(Aspect.AIR,1,Direction.UP,false)==0&&!valve.output(Direction.UP),"Closed valve prevents movement");checks++;
+        // TileTubeValve overrides setSuction/isConnectable, inheriting both port permissions.
+        require(valve.suction(Direction.UP)==0&&valve.insert(Aspect.AIR,1,Direction.UP,false)==1&&valve.output(Direction.UP)&&valve.extract(Aspect.AIR,1,Direction.UP,false)==1,"Closed valve stops suction but permits draining its stored unit");checks++;
         var oneWay=new TubeEntity(BlockPos.ZERO,EssentiaContent.TUBES.get("tube_oneway").get().defaultBlockState());
-        require(oneWay.input(Direction.NORTH)&&!oneWay.input(Direction.SOUTH)&&oneWay.output(Direction.SOUTH)&&!oneWay.output(Direction.NORTH),"Directional tube ports");checks++;
+        // TileTubeOneway restricts equalizeWithNeighbours/calculateSuction, not capability ports.
+        require(oneWay.input(Direction.NORTH)&&oneWay.input(Direction.SOUTH)&&oneWay.output(Direction.SOUTH)&&oneWay.output(Direction.NORTH)&&oneWay.canPullFrom(Direction.NORTH)&&!oneWay.canPullFrom(Direction.SOUTH),"Directional tube restricts its pull while keeping physical ports");checks++;
         var centrifuge=new CentrifugeEntity(BlockPos.ZERO,EssentiaContent.CENTRIFUGE.get().defaultBlockState());
         require(centrifuge.insert(Aspect.AIR,1,Direction.DOWN,false)==0&&centrifuge.insert(Aspect.MOTION,1,Direction.UP,false)==0&&centrifuge.insert(Aspect.MOTION,0,Direction.DOWN,false)==0,"Centrifuge rejects primal, wrong port and zero input");checks++;
         require(centrifuge.insert(Aspect.MOTION,1,Direction.DOWN,true)==1&&centrifuge.incoming==null,"Centrifuge simulation");checks++;

@@ -41,12 +41,12 @@ public final class LegacyParticle extends TextureSheetParticle {
     @Override public void tick() {
         super.tick(); float t=Math.min(1,age/(float)lifetime);
         quadSize=initialSize+(finalSize-initialSize)*t;
-        alpha=switch(kind) {case "taint" -> .75f*(1-t); case "wisp" -> .5f;
+        alpha=switch(kind) {case "taint" -> .75f*(1-t); case "wisp" -> .5f;case "alumentum" -> .7f;
             case "rune" -> Math.min(1, Math.min(t*3,(1-t)*3))*.6f; default -> 1-t;};
         if(kind.equals("taint")) { oRoll=roll; roll+=.025f; }
         if(kind.equals("wisp")||kind.equals("rune")) { xd+=(random.nextFloat()-.5)*.005; zd+=(random.nextFloat()-.5)*.005; }
     }
-    @Override protected int getLightColor(float tick) { return kind.equals("taint")?super.getLightColor(tick):0xf000f0; }
+    @Override protected int getLightColor(float tick) { return kind.equals("taint")||kind.equals("alumentum")?super.getLightColor(tick):0xf000f0; }
     @Override public ParticleRenderType getRenderType() { return SalisMundusParticle.legacyLayer(false); }
     public record Provider(String kind) implements ParticleProvider.Sprite<SimpleParticleType> {
         @Override public TextureSheetParticle createParticle(SimpleParticleType type, ClientLevel level, double x, double y, double z,

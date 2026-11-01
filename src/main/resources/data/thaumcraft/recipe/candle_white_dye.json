@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "tag": "thaumcraft:tallow_candles"
+    }
+  ],
+  "result": {
+    "id": "thaumcraft:candle_white"
+  }
+}

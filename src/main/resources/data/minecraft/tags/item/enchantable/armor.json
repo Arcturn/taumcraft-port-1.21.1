@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:thaumium_helm",
+    "thaumcraft:thaumium_chest",
+    "thaumcraft:thaumium_legs",
+    "thaumcraft:thaumium_boots"
+  ]
+}

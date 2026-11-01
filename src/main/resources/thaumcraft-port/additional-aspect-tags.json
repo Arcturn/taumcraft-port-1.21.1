@@ -3,5 +3,55 @@
     "cognitio": 5,
     "tenebrae": 5,
     "lux": 5
+  },
+  "item:thaumcraft:rareearth": {
+    "terra": 5,
+    "ordo": 5,
+    "metallum": 5
+  },
+  "item:thaumcraft:cluster_tin": {
+    "ordo": 5,
+    "metallum": 15,
+    "terra": 5,
+    "vitreus": 10
+  },
+  "item:thaumcraft:cluster_silver": {
+    "ordo": 5,
+    "metallum": 15,
+    "terra": 5,
+    "desiderium": 10
+  },
+  "item:thaumcraft:cluster_lead": {
+    "ordo": 15,
+    "metallum": 15,
+    "terra": 5
+  },
+  "item:thaumcraft:cluster_iron": {
+    "ordo": 5,
+    "metallum": 15,
+    "terra": 5
+  },
+  "item:thaumcraft:cluster_gold": {
+    "ordo": 5,
+    "metallum": 15,
+    "terra": 5,
+    "desiderium": 10
+  },
+  "item:thaumcraft:cluster_copper": {
+    "ordo": 5,
+    "metallum": 15,
+    "terra": 5,
+    "permutatio": 10
+  },
+  "item:thaumcraft:cluster_cinnabar": {
+    "ordo": 5,
+    "metallum": 15,
+    "terra": 5,
+    "alkimia": 5,
+    "mortuus": 5
+  },
+  "item:thaumcraft:cluster_quartz": {
+    "ordo": 5,
+    "vitreus": 10
   }
 }

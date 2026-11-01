@@ -1,0 +1,8 @@
+{
+  "type": "thaumcraft:cluster_cooking",
+  "ingredient": {
+    "item": "thaumcraft:cluster_tin"
+  },
+  "result_tag": "c:ingots/tin",
+  "blasting": false
+}

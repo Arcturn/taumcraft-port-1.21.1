@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "thaumcraft:block/potion_sprayer",
+      "x": 180
+    },
+    "facing=up": {
+      "model": "thaumcraft:block/potion_sprayer"
+    },
+    "facing=east": {
+      "model": "thaumcraft:block/potion_sprayer",
+      "x": 90,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/potion_sprayer",
+      "x": 90,
+      "y": 270
+    },
+    "facing=north": {
+      "model": "thaumcraft:block/potion_sprayer",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/potion_sprayer",
+      "x": 90,
+      "y": 180
+    }
+  }
+}

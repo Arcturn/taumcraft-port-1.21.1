@@ -16,6 +16,7 @@ public final class ResearchCodec {
             var parts=k.split(";",-1);if(parts.length==2)state.restoreKnowledge(parts[0],parts[1],Math.max(0,knowledge.getInt(k)));
         });
         state.warp(tag.getInt("warpPermanent"),tag.getInt("warpNormal"),tag.getInt("warpTemporary"));
+        if(tag.contains("warpCounter",Tag.TAG_INT))state.warpCounter(tag.getInt("warpCounter"));
         if(tag.getInt("schema")>=SCHEMA){
             var flags=tag.getCompound("research_flags");
             for(String key:flags.getAllKeys())for(String name:strings(flags,key))try{state.setResearchFlag(key,ResearchState.ResearchFlag.valueOf(name));}catch(IllegalArgumentException ignored){}
@@ -29,7 +30,7 @@ public final class ResearchCodec {
         var stages=new CompoundTag();state.stages().forEach(stages::putInt);tag.put("stages",stages);
         var knowledge=new CompoundTag();state.knowledge().forEach(knowledge::putInt);tag.put("knowledge",knowledge);
         var researchFlags=new CompoundTag();state.researchFlags().forEach((key,value)->researchFlags.put(key,list(value.stream().map(Enum::name).sorted().toList())));tag.put("research_flags",researchFlags);
-        tag.putInt("warpPermanent",state.permanentWarp());tag.putInt("warpNormal",state.normalWarp());tag.putInt("warpTemporary",state.temporaryWarp());return tag;
+        tag.putInt("warpPermanent",state.permanentWarp());tag.putInt("warpNormal",state.normalWarp());tag.putInt("warpTemporary",state.temporaryWarp());tag.putInt("warpCounter",state.warpCounter());return tag;
     }
     private static java.util.List<String> strings(CompoundTag tag,String key) { return tag.getList(key,Tag.TAG_STRING).stream().map(Tag::getAsString).toList(); }
     private static ListTag list(Collection<String> values) {var list=new ListTag();values.forEach(s->list.add(StringTag.valueOf(s)));return list;}

@@ -2727,5 +2727,267 @@
     ],
     "line": 556,
     "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ItemsTC.thaumometer, 1, Short.MAX_VALUE), new AspectList().add(Aspect.SENSES, 10).add(Aspect.AURA, 10));"
+  },
+  {
+    "target": "thaumcraft:bucket_death",
+    "kind": "copy",
+    "source": "minecraft:bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "mortuus",
+        "amount": 15
+      },
+      {
+        "op": "add",
+        "aspect": "perditio",
+        "amount": 15
+      }
+    ],
+    "line": 495,
+    "expression": "ConfigAspects.registerObjectTags: filled fluid bucket copies the empty bucket and adds two aspects."
+  },
+  {
+    "target": "thaumcraft:bucket_purifying",
+    "kind": "copy",
+    "source": "minecraft:bucket",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "cognitio",
+        "amount": 15
+      },
+      {
+        "op": "add",
+        "aspect": "ordo",
+        "amount": 15
+      }
+    ],
+    "line": 494,
+    "expression": "ConfigAspects.registerObjectTags: filled fluid bucket copies the empty bucket and adds two aspects."
+  },
+  {
+    "target": "thaumcraft:candle_white",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_orange",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_magenta",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_light_blue",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_yellow",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_lime",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_pink",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_gray",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_light_gray",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_cyan",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_purple",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_blue",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_brown",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_green",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_red",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:candle_black",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "lux",
+        "amount": 5
+      }
+    ],
+    "line": 550,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
   }
 ]

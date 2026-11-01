@@ -12,6 +12,14 @@
     "thaumcraft:stone_porous",
     "thaumcraft:deepslate_ore_amber",
     "thaumcraft:deepslate_ore_cinnabar",
-    "thaumcraft:deepslate_ore_quartz"
+    "thaumcraft:deepslate_ore_quartz",
+    "thaumcraft:spa",
+    "thaumcraft:everfull_urn",
+    "thaumcraft:potion_sprayer",
+    "thaumcraft:essentia_input",
+    "thaumcraft:essentia_output",
+    "thaumcraft:condenser",
+    "thaumcraft:condenser_lattice",
+    "thaumcraft:condenser_lattice_dirty"
   ]
 }

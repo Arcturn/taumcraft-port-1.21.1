@@ -80,6 +80,11 @@ public final class RecipeAspects {
                         for (String slot : List.of("template", "base", "addition"))
                             ingredients.add(Ingredient.CODEC.parse(ops, json.get(slot)).getOrThrow());
                     } else ingredients = List.copyOf(recipe.getIngredients());
+                    // TC6 derives sugar (and potion reagents) from cane. The 1.15 honey
+                    // conversion must not erase its Aer/Aqua with a cheaper modern route.
+                    if (recipe instanceof CraftingRecipe && output.is(Items.SUGAR)
+                            && ingredients.size() == 1 && Arrays.stream(ingredients.getFirst().getItems())
+                            .anyMatch(input -> input.is(Items.HONEY_BOTTLE))) modern = true;
                     recipes.computeIfAbsent(output.getItem(), key -> new ArrayList<>())
                             .add(new Candidate(recipe, output, ingredients, modern));
                 } catch (RuntimeException exception) {
@@ -189,7 +194,7 @@ public final class RecipeAspects {
                     }
                     if (missing) continue; // An unresolved/empty required tag is not a craftable recipe.
                     // Ask the recipe itself about reusable catalysts and component-aware containers.
-                    if (!modern) {
+                    if (recipe instanceof CraftingRecipe || recipe instanceof ArcaneRecipe) {
                         int width = recipe instanceof ShapedRecipe shaped ? shaped.getWidth()
                                 : recipe instanceof ArcaneRecipe arcane && !arcane.shapeless() ? arcane.pattern().width() : Math.min(3, ingredients.size());
                         int height = width == 0 ? 0 : (ingredients.size() + width - 1) / width;

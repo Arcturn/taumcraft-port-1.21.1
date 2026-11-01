@@ -1,4 +1,7 @@
 {
   "replace": false,
-  "values": ["thaumcraft:goggles"]
+  "values": [
+    "thaumcraft:goggles",
+    "thaumcraft:thaumium_helm"
+  ]
 }

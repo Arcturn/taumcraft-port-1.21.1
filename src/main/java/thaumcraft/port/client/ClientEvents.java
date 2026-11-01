@@ -43,6 +43,7 @@ public final class ClientEvents {
         e.register((s,l,p,tint)->0xff000000|(l!=null&&p!=null?net.minecraft.client.renderer.BiomeColors.getAverageFoliageColor(l,p):net.minecraft.world.level.FoliageColor.getDefaultColor()),WorldContent.block("leaves_greatwood"));
         e.register((s,l,p,tint)->0xffffffff,WorldContent.block("leaves_silverwood"));
         thaumcraft.port.machine.MachineContent.NITOR.forEach((name,block)->e.register((s,l,p,tint)->0xff000000|net.minecraft.world.item.DyeColor.byName(name.substring(6),net.minecraft.world.item.DyeColor.YELLOW).getTextureDiffuseColor(),block.get()));
+        thaumcraft.port.alchemy.material.AlchemyMaterials.CANDLES.forEach((name,block)->e.register((s,l,p,tint)->tint==0?0xff000000|net.minecraft.world.item.DyeColor.byName(name.substring(7),net.minecraft.world.item.DyeColor.WHITE).getMapColor().col:0xffffffff,block.get()));
         WorldContent.CRYSTALS.forEach((a,b)->e.register((s,l,p,tint)->0xFF000000|a.color(),b.get()));
     }
     @SubscribeEvent
@@ -54,6 +55,7 @@ public final class ClientEvents {
         event.register((stack,tint)->6750149,WorldContent.block("grass_ambient").asItem());
         event.register((stack,tint)->event.getBlockColors().getColor(((net.minecraft.world.item.BlockItem)stack.getItem()).getBlock().defaultBlockState(),null,null,tint),WorldContent.block("leaves_greatwood").asItem(),WorldContent.block("leaves_silverwood").asItem());
         thaumcraft.port.machine.MachineContent.NITOR.forEach((name,block)->event.register((s,tint)->tint==1?0xffffffff:0xff000000|net.minecraft.world.item.DyeColor.byName(name.substring(6),net.minecraft.world.item.DyeColor.YELLOW).getMapColor().col,block.get().asItem()));
+        thaumcraft.port.alchemy.material.AlchemyMaterials.CANDLES.forEach((name,block)->event.register((s,tint)->tint==0?0xff000000|net.minecraft.world.item.DyeColor.byName(name.substring(7),net.minecraft.world.item.DyeColor.WHITE).getMapColor().col:0xffffffff,block.get().asItem()));
         WorldContent.CRYSTALS.forEach((a,b)->event.register((stack,tint)->0xFF000000|a.color(),b.get().asItem()));
         event.register((stack, tint) -> 0xFF000000 | CrystalItem.aspect(stack).color(), PortContent.CRYSTAL_ESSENCE.get());
     }

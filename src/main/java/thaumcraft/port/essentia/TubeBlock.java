@@ -29,6 +29,7 @@ public final class TubeBlock extends Block implements EntityBlock {
     @Override public BlockState getStateForPlacement(BlockPlaceContext c){return defaultBlockState().setValue(FACING,c.getNearestLookingDirection());}
     @Override public BlockEntity newBlockEntity(BlockPos p,BlockState s){return kind==Kind.BUFFER?new BufferEntity(p,s):new TubeEntity(p,s);}
     @Override public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level l,BlockState s,BlockEntityType<T> t){return t==EssentiaContent.TUBE_ENTITY.get()?(w,p,st,e)->((TubeEntity)e).tick():null;}
+    @Override protected boolean triggerEvent(BlockState state,Level level,BlockPos pos,int id,int value){var entity=level.getBlockEntity(pos);return entity!=null&&entity.triggerEvent(id,value);}
     public void refresh(Level l,BlockPos p){
         if(l.isClientSide||!(l.getBlockEntity(p) instanceof TubeEntity be))return;
         BlockState old=l.getBlockState(p),next=old;

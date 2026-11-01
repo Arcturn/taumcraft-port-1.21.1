@@ -1522,7 +1522,7 @@
           "item": "thaumcraft:plate_brass"
         },
         "S": {
-          "item": "thaumcraft:nugget_quartz"
+          "item": "thaumcraft:rareearth"
         }
       },
       "result": {
@@ -2115,62 +2115,62 @@
     "thaumcraft:LiquidDeath": {
       "type": "thaumcraft:crucible",
       "research": "LIQUIDDEATH",
-      "result": {
-        "legacy": "thaumcraft:bucket_death"
-      },
       "catalyst": {
-        "legacy": "minecraft:bucket;1;0"
+        "item": "minecraft:bucket"
       },
       "aspects": {
         "mortuus": 100,
         "alkimia": 20,
         "perditio": 50
+      },
+      "result": {
+        "id": "thaumcraft:bucket_death"
       }
     },
     "thaumcraft:BottleTaint": {
       "type": "thaumcraft:crucible",
       "research": "BOTTLETAINT",
-      "result": {
-        "legacy": "thaumcraft:bottle_taint;1;0"
-      },
       "catalyst": {
         "legacy": "thaumcraft:phial;1;1;{Aspects:[{key:\"vitium\",amount:10}]}"
       },
       "aspects": {
         "vitium": 30,
         "aqua": 30
+      },
+      "result": {
+        "id": "thaumcraft:bottle_taint"
       }
     },
     "thaumcraft:BathSalts": {
       "type": "thaumcraft:crucible",
       "research": "BATHSALTS",
-      "result": {
-        "legacy": "thaumcraft:bath_salts;1;0"
-      },
       "catalyst": {
-        "legacy": "thaumcraft:salis_mundus;1;0"
+        "item": "thaumcraft:salis_mundus"
       },
       "aspects": {
         "cognitio": 40,
         "aer": 40,
         "ordo": 40,
         "victus": 40
+      },
+      "result": {
+        "id": "thaumcraft:bath_salts"
       }
     },
     "thaumcraft:SaneSoap": {
       "type": "thaumcraft:crucible",
       "research": "SANESOAP",
-      "result": {
-        "legacy": "thaumcraft:sanity_soap;1;0"
-      },
       "catalyst": {
-        "legacy": "thaumcraft:flesh_block;1;0"
+        "item": "thaumcraft:flesh_block"
       },
       "aspects": {
         "cognitio": 75,
         "alienis": 50,
         "ordo": 75,
         "victus": 50
+      },
+      "result": {
+        "id": "thaumcraft:sanity_soap"
       }
     },
     "thaumcraft:SealCollect": {
@@ -2357,16 +2357,16 @@
     "thaumcraft:EverfullUrn": {
       "type": "thaumcraft:crucible",
       "research": "EVERFULLURN",
-      "result": {
-        "legacy": "thaumcraft:everfull_urn;1;0"
-      },
       "catalyst": {
-        "legacy": "minecraft:flower_pot;1;0"
+        "item": "minecraft:flower_pot"
       },
       "aspects": {
         "aqua": 30,
         "fabrico": 10,
         "terra": 10
+      },
+      "result": {
+        "id": "thaumcraft:everfull_urn"
       }
     },
     "thaumcraft:mechanism_complex": {
@@ -2852,30 +2852,30 @@
       "crystals": {
         "aqua": 1
       },
-      "result": {
-        "legacy": "thaumcraft:spa;1;0"
-      },
       "pattern": [
         "QIQ",
         "SJS",
         "SPS"
       ],
       "key": {
-        "P": {
-          "legacy": "thaumcraft:mechanism_simple;1;0"
-        },
-        "J": {
-          "legacy": "thaumcraft:jar_normal;1;0"
-        },
-        "S": {
-          "legacy": "thaumcraft:stone_arcane;1;0"
-        },
         "Q": {
-          "legacy": "minecraft:quartz_block;1;0"
+          "item": "minecraft:quartz_block"
         },
         "I": {
-          "legacy": "minecraft:iron_bars;1;0"
+          "item": "minecraft:iron_bars"
+        },
+        "S": {
+          "item": "thaumcraft:arcane_stone"
+        },
+        "J": {
+          "item": "thaumcraft:jar_normal"
+        },
+        "P": {
+          "item": "thaumcraft:mechanism_simple"
         }
+      },
+      "result": {
+        "id": "thaumcraft:spa"
       }
     },
     "thaumcraft:Tube": {
@@ -3919,9 +3919,6 @@
         "aer": 1,
         "ignis": 1
       },
-      "result": {
-        "legacy": "thaumcraft:morphic_resonator;1;0"
-      },
       "pattern": [
         " G ",
         "BSB",
@@ -3929,14 +3926,18 @@
       ],
       "key": {
         "G": {
-          "legacy": "oredict:paneGlass"
+          "item": "minecraft:glass_pane"
         },
         "B": {
-          "legacy": "oredict:plateBrass"
+          "item": "thaumcraft:plate_brass"
         },
         "S": {
-          "legacy": "thaumcraft:nugget;1;10"
+          "item": "thaumcraft:rareearth"
         }
+      },
+      "result": {
+        "id": "thaumcraft:morphic_resonator",
+        "count": 1
       }
     },
     "thaumcraft:Alembic": {
@@ -4127,9 +4128,6 @@
         "aqua": 1,
         "ignis": 1
       },
-      "result": {
-        "legacy": "thaumcraft:potion_sprayer;1;0"
-      },
       "pattern": [
         "BDB",
         "IAI",
@@ -4137,20 +4135,23 @@
       ],
       "key": {
         "B": {
-          "legacy": "oredict:plateBrass"
-        },
-        "I": {
-          "legacy": "oredict:plateIron"
-        },
-        "A": {
-          "legacy": "minecraft:brewing_stand;1;0"
+          "item": "thaumcraft:plate_brass"
         },
         "D": {
-          "legacy": "minecraft:dispenser;1;0"
+          "item": "minecraft:dispenser"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
+        },
+        "A": {
+          "item": "minecraft:brewing_stand"
         },
         "C": {
-          "legacy": "thaumcraft:metal_alchemical;1;0"
+          "item": "thaumcraft:metal_alchemical"
         }
+      },
+      "result": {
+        "id": "thaumcraft:potion_sprayer"
       }
     },
     "thaumcraft:SmelterAux": {
@@ -4231,27 +4232,26 @@
         "aer": 1,
         "aqua": 1
       },
-      "result": {
-        "legacy": "thaumcraft:essentia_input;1;0"
-      },
       "pattern": [
-        "   ",
         "BQB",
         "IGI"
       ],
       "key": {
-        "I": {
-          "legacy": "oredict:plateIron"
-        },
         "B": {
-          "legacy": "oredict:plateBrass"
+          "item": "thaumcraft:plate_brass"
         },
         "Q": {
-          "legacy": "minecraft:dispenser;1;0"
+          "item": "minecraft:dispenser"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
         },
         "G": {
-          "legacy": "thaumcraft:metal_alchemical;1;0"
+          "item": "thaumcraft:metal_alchemical"
         }
+      },
+      "result": {
+        "id": "thaumcraft:essentia_input"
       }
     },
     "thaumcraft:EssentiaTransportOut": {
@@ -4262,27 +4262,26 @@
         "aer": 1,
         "aqua": 1
       },
-      "result": {
-        "legacy": "thaumcraft:essentia_output;1;0"
-      },
       "pattern": [
-        "   ",
         "BQB",
         "IGI"
       ],
       "key": {
-        "I": {
-          "legacy": "oredict:plateIron"
-        },
         "B": {
-          "legacy": "oredict:plateBrass"
+          "item": "thaumcraft:plate_brass"
         },
         "Q": {
-          "legacy": "minecraft:hopper;1;0"
+          "item": "minecraft:dropper"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
         },
         "G": {
-          "legacy": "thaumcraft:metal_alchemical;1;0"
+          "item": "thaumcraft:metal_alchemical"
         }
+      },
+      "result": {
+        "id": "thaumcraft:essentia_output"
       }
     },
     "thaumcraft:Bellows": {
@@ -6661,25 +6660,24 @@
     },
     "thaumcraft:thaumiumhelm": {
       "type": "minecraft:crafting_shaped",
-      "result": {
-        "legacy": "thaumcraft:thaumium_helm;1;0"
-      },
+      "category": "misc",
       "pattern": [
         "III",
         "I I"
       ],
       "key": {
         "I": {
-          "legacy": "oredict:ingotThaumium"
+          "tag": "c:ingots/thaumium"
         }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_helm"
       },
       "book_group": "thaumcraft:thaumium_stuff"
     },
     "thaumcraft:thaumiumchest": {
       "type": "minecraft:crafting_shaped",
-      "result": {
-        "legacy": "thaumcraft:thaumium_chest;1;0"
-      },
+      "category": "misc",
       "pattern": [
         "I I",
         "III",
@@ -6687,16 +6685,17 @@
       ],
       "key": {
         "I": {
-          "legacy": "oredict:ingotThaumium"
+          "tag": "c:ingots/thaumium"
         }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_chest"
       },
       "book_group": "thaumcraft:thaumium_stuff"
     },
     "thaumcraft:thaumiumlegs": {
       "type": "minecraft:crafting_shaped",
-      "result": {
-        "legacy": "thaumcraft:thaumium_legs;1;0"
-      },
+      "category": "misc",
       "pattern": [
         "III",
         "I I",
@@ -6704,32 +6703,34 @@
       ],
       "key": {
         "I": {
-          "legacy": "oredict:ingotThaumium"
+          "tag": "c:ingots/thaumium"
         }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_legs"
       },
       "book_group": "thaumcraft:thaumium_stuff"
     },
     "thaumcraft:thaumiumboots": {
       "type": "minecraft:crafting_shaped",
-      "result": {
-        "legacy": "thaumcraft:thaumium_boots;1;0"
-      },
+      "category": "misc",
       "pattern": [
         "I I",
         "I I"
       ],
       "key": {
         "I": {
-          "legacy": "oredict:ingotThaumium"
+          "tag": "c:ingots/thaumium"
         }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_boots"
       },
       "book_group": "thaumcraft:thaumium_stuff"
     },
     "thaumcraft:thaumiumshovel": {
       "type": "minecraft:crafting_shaped",
-      "result": {
-        "legacy": "thaumcraft:thaumium_shovel;1;0"
-      },
+      "category": "misc",
       "pattern": [
         "I",
         "S",
@@ -6737,19 +6738,20 @@
       ],
       "key": {
         "I": {
-          "legacy": "oredict:ingotThaumium"
+          "tag": "c:ingots/thaumium"
         },
         "S": {
-          "legacy": "oredict:stickWood"
+          "tag": "c:rods/wooden"
         }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_shovel"
       },
       "book_group": "thaumcraft:thaumium_stuff"
     },
     "thaumcraft:thaumiumpick": {
       "type": "minecraft:crafting_shaped",
-      "result": {
-        "legacy": "thaumcraft:thaumium_pick;1;0"
-      },
+      "category": "misc",
       "pattern": [
         "III",
         " S ",
@@ -6757,19 +6759,20 @@
       ],
       "key": {
         "I": {
-          "legacy": "oredict:ingotThaumium"
+          "tag": "c:ingots/thaumium"
         },
         "S": {
-          "legacy": "oredict:stickWood"
+          "tag": "c:rods/wooden"
         }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_pick"
       },
       "book_group": "thaumcraft:thaumium_stuff"
     },
     "thaumcraft:thaumiumaxe": {
       "type": "minecraft:crafting_shaped",
-      "result": {
-        "legacy": "thaumcraft:thaumium_axe;1;0"
-      },
+      "category": "misc",
       "pattern": [
         "II",
         "SI",
@@ -6777,19 +6780,20 @@
       ],
       "key": {
         "I": {
-          "legacy": "oredict:ingotThaumium"
+          "tag": "c:ingots/thaumium"
         },
         "S": {
-          "legacy": "oredict:stickWood"
+          "tag": "c:rods/wooden"
         }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_axe"
       },
       "book_group": "thaumcraft:thaumium_stuff"
     },
     "thaumcraft:thaumiumhoe": {
       "type": "minecraft:crafting_shaped",
-      "result": {
-        "legacy": "thaumcraft:thaumium_hoe;1;0"
-      },
+      "category": "misc",
       "pattern": [
         "II",
         "S ",
@@ -6797,19 +6801,20 @@
       ],
       "key": {
         "I": {
-          "legacy": "oredict:ingotThaumium"
+          "tag": "c:ingots/thaumium"
         },
         "S": {
-          "legacy": "oredict:stickWood"
+          "tag": "c:rods/wooden"
         }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_hoe"
       },
       "book_group": "thaumcraft:thaumium_stuff"
     },
     "thaumcraft:thaumiumsword": {
       "type": "minecraft:crafting_shaped",
-      "result": {
-        "legacy": "thaumcraft:thaumium_sword;1;0"
-      },
+      "category": "misc",
       "pattern": [
         "I",
         "I",
@@ -6817,11 +6822,14 @@
       ],
       "key": {
         "I": {
-          "legacy": "oredict:ingotThaumium"
+          "tag": "c:ingots/thaumium"
         },
         "S": {
-          "legacy": "oredict:stickWood"
+          "tag": "c:rods/wooden"
         }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_sword"
       },
       "book_group": "thaumcraft:thaumium_stuff"
     },
@@ -7525,262 +7533,280 @@
     },
     "thaumcraft:TallowCandle": {
       "type": "minecraft:crafting_shaped",
-      "result": {
-        "legacy": "thaumcraft:candle_white;3;0"
-      },
+      "category": "misc",
       "pattern": [
-        " S ",
-        " T ",
-        " T "
+        "S",
+        "T",
+        "T"
       ],
       "key": {
         "S": {
-          "legacy": "oredict:string"
+          "item": "minecraft:string"
         },
         "T": {
-          "legacy": "thaumcraft:tallow;1;0"
+          "item": "thaumcraft:tallow"
         }
+      },
+      "result": {
+        "id": "thaumcraft:candle_white",
+        "count": 3
       },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlewhite": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_white;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:white_dye"
+          "item": "minecraft:white_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_white"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandleorange": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_orange;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:orange_dye"
+          "item": "minecraft:orange_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_orange"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlemagenta": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_magenta;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:magenta_dye"
+          "item": "minecraft:magenta_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_magenta"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlelight_blue": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_light_blue;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:light_blue_dye"
+          "item": "minecraft:light_blue_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_light_blue"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandleyellow": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_yellow;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:yellow_dye"
+          "item": "minecraft:yellow_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_yellow"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlelime": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_lime;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:lime_dye"
+          "item": "minecraft:lime_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_lime"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlepink": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_pink;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:pink_dye"
+          "item": "minecraft:pink_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_pink"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlegray": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_gray;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:gray_dye"
+          "item": "minecraft:gray_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_gray"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlesilver": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_silver;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:light_gray_dye"
+          "item": "minecraft:light_gray_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_light_gray"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlecyan": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_cyan;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:cyan_dye"
+          "item": "minecraft:cyan_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_cyan"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlepurple": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_purple;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:purple_dye"
+          "item": "minecraft:purple_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_purple"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandleblue": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_blue;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:blue_dye"
+          "item": "minecraft:blue_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_blue"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlebrown": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_brown;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:brown_dye"
+          "item": "minecraft:brown_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_brown"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlegreen": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_green;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:green_dye"
+          "item": "minecraft:green_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_green"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandlered": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_red;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:red_dye"
+          "item": "minecraft:red_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_red"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:TallowCandleblack": {
       "type": "minecraft:crafting_shapeless",
-      "result": {
-        "legacy": "thaumcraft:candle_black;1;0"
-      },
+      "category": "misc",
       "ingredients": [
         {
-          "legacy": "minecraft:black_dye"
+          "item": "minecraft:black_dye"
         },
         {
-          "legacy": "oredict:tallowCandles"
+          "tag": "thaumcraft:tallow_candles"
         }
       ],
+      "result": {
+        "id": "thaumcraft:candle_black"
+      },
       "book_group": "thaumcraft:tallowcandles"
     },
     "thaumcraft:BrassBrace": {
@@ -7805,79 +7831,104 @@
     "thaumcraft:hedge_gunpowder": {
       "type": "thaumcraft:crucible",
       "research": "HEDGEALCHEMY@2",
-      "result": {
-        "legacy": "minecraft:gunpowder;2;0"
-      },
       "catalyst": {
-        "legacy": "minecraft:gunpowder;1;0"
+        "item": "minecraft:gunpowder"
       },
-      "aspects": {}
+      "aspects": {
+        "ignis": 10,
+        "perditio": 10,
+        "alkimia": 5
+      },
+      "result": {
+        "id": "minecraft:gunpowder",
+        "count": 2
+      }
     },
     "thaumcraft:hedge_slime": {
       "type": "thaumcraft:crucible",
       "research": "HEDGEALCHEMY@2",
-      "result": {
-        "legacy": "minecraft:slime_ball;2;0"
-      },
       "catalyst": {
-        "legacy": "minecraft:slime_ball;1;0"
+        "item": "minecraft:slime_ball"
       },
-      "aspects": {}
+      "aspects": {
+        "aqua": 5,
+        "victus": 5,
+        "alkimia": 1
+      },
+      "result": {
+        "id": "minecraft:slime_ball",
+        "count": 2
+      }
     },
     "thaumcraft:hedge_glowstone": {
       "type": "thaumcraft:crucible",
       "research": "HEDGEALCHEMY@2",
-      "result": {
-        "legacy": "minecraft:glowstone_dust;2;0"
-      },
       "catalyst": {
-        "legacy": "oredict:dustGlowstone"
+        "item": "minecraft:glowstone_dust"
       },
-      "aspects": {}
+      "aspects": {
+        "sensus": 5,
+        "lux": 10
+      },
+      "result": {
+        "id": "minecraft:glowstone_dust",
+        "count": 2
+      }
     },
     "thaumcraft:hedge_dye": {
       "type": "thaumcraft:crucible",
       "research": "HEDGEALCHEMY@2",
-      "result": {
-        "legacy": "minecraft:ink_sac;2"
-      },
       "catalyst": {
-        "legacy": "minecraft:ink_sac;1"
+        "item": "minecraft:ink_sac"
       },
-      "aspects": {}
+      "aspects": {
+        "aqua": 2,
+        "bestia": 2
+      },
+      "result": {
+        "id": "minecraft:ink_sac",
+        "count": 2
+      }
     },
     "thaumcraft:hedge_clay": {
       "type": "thaumcraft:crucible",
       "research": "HEDGEALCHEMY@3",
-      "result": {
-        "legacy": "minecraft:clay_ball;1;0"
-      },
       "catalyst": {
-        "legacy": "minecraft:dirt;1;0"
+        "item": "minecraft:dirt"
       },
-      "aspects": {}
+      "aspects": {
+        "aqua": 5
+      },
+      "result": {
+        "id": "minecraft:clay_ball"
+      }
     },
     "thaumcraft:hedge_string": {
       "type": "thaumcraft:crucible",
       "research": "HEDGEALCHEMY@3",
-      "result": {
-        "legacy": "minecraft:string;1;0"
-      },
       "catalyst": {
-        "legacy": "minecraft:wheat;1;0"
+        "item": "minecraft:wheat"
       },
-      "aspects": {}
+      "aspects": {
+        "bestia": 5,
+        "fabrico": 1
+      },
+      "result": {
+        "id": "minecraft:string"
+      }
     },
     "thaumcraft:hedge_web": {
       "type": "thaumcraft:crucible",
       "research": "HEDGEALCHEMY@3",
-      "result": {
-        "legacy": "minecraft:cobweb;1;0"
-      },
       "catalyst": {
-        "legacy": "minecraft:string;1;0"
+        "item": "minecraft:string"
       },
-      "aspects": {}
+      "aspects": {
+        "vinculum": 5
+      },
+      "result": {
+        "id": "minecraft:cobweb"
+      }
     },
     "thaumcraft:hedge_lava": {
       "type": "thaumcraft:crucible",
@@ -9858,6 +9909,680 @@
           ]
         ]
       ]
+    },
+    "thaumcraft:crucible_hedge_gunpowder": {
+      "type": "thaumcraft:crucible",
+      "research": "HEDGEALCHEMY@2",
+      "catalyst": {
+        "item": "minecraft:gunpowder"
+      },
+      "aspects": {
+        "ignis": 10,
+        "perditio": 10,
+        "alkimia": 5
+      },
+      "result": {
+        "id": "minecraft:gunpowder",
+        "count": 2
+      }
+    },
+    "thaumcraft:crucible_hedge_slime": {
+      "type": "thaumcraft:crucible",
+      "research": "HEDGEALCHEMY@2",
+      "catalyst": {
+        "item": "minecraft:slime_ball"
+      },
+      "aspects": {
+        "aqua": 5,
+        "victus": 5,
+        "alkimia": 1
+      },
+      "result": {
+        "id": "minecraft:slime_ball",
+        "count": 2
+      }
+    },
+    "thaumcraft:crucible_hedge_glowstone": {
+      "type": "thaumcraft:crucible",
+      "research": "HEDGEALCHEMY@2",
+      "catalyst": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "aspects": {
+        "sensus": 5,
+        "lux": 10
+      },
+      "result": {
+        "id": "minecraft:glowstone_dust",
+        "count": 2
+      }
+    },
+    "thaumcraft:crucible_hedge_dye": {
+      "type": "thaumcraft:crucible",
+      "research": "HEDGEALCHEMY@2",
+      "catalyst": {
+        "item": "minecraft:ink_sac"
+      },
+      "aspects": {
+        "aqua": 2,
+        "bestia": 2
+      },
+      "result": {
+        "id": "minecraft:ink_sac",
+        "count": 2
+      }
+    },
+    "thaumcraft:crucible_hedge_clay": {
+      "type": "thaumcraft:crucible",
+      "research": "HEDGEALCHEMY@3",
+      "catalyst": {
+        "item": "minecraft:dirt"
+      },
+      "aspects": {
+        "aqua": 5
+      },
+      "result": {
+        "id": "minecraft:clay_ball"
+      }
+    },
+    "thaumcraft:crucible_hedge_string": {
+      "type": "thaumcraft:crucible",
+      "research": "HEDGEALCHEMY@3",
+      "catalyst": {
+        "item": "minecraft:wheat"
+      },
+      "aspects": {
+        "bestia": 5,
+        "fabrico": 1
+      },
+      "result": {
+        "id": "minecraft:string"
+      }
+    },
+    "thaumcraft:crucible_hedge_web": {
+      "type": "thaumcraft:crucible",
+      "research": "HEDGEALCHEMY@3",
+      "catalyst": {
+        "item": "minecraft:string"
+      },
+      "aspects": {
+        "vinculum": 5
+      },
+      "result": {
+        "id": "minecraft:cobweb"
+      }
+    },
+    "thaumcraft:crucible_hedge_lava": {
+      "type": "thaumcraft:crucible",
+      "research": "HEDGEALCHEMY@3",
+      "catalyst": {
+        "item": "minecraft:bucket"
+      },
+      "aspects": {
+        "ignis": 15,
+        "terra": 5
+      },
+      "result": {
+        "id": "minecraft:lava_bucket"
+      }
+    },
+    "thaumcraft:liquid_death": {
+      "type": "thaumcraft:crucible",
+      "research": "LIQUIDDEATH",
+      "catalyst": {
+        "item": "minecraft:bucket"
+      },
+      "aspects": {
+        "mortuus": 100,
+        "alkimia": 20,
+        "perditio": 50
+      },
+      "result": {
+        "id": "thaumcraft:bucket_death"
+      }
+    },
+    "thaumcraft:bottle_taint": {
+      "type": "thaumcraft:crucible",
+      "research": "BOTTLETAINT",
+      "catalyst": {
+        "legacy": "thaumcraft:phial;1;1;{Aspects:[{key:\"vitium\",amount:10}]}"
+      },
+      "aspects": {
+        "vitium": 30,
+        "aqua": 30
+      },
+      "result": {
+        "id": "thaumcraft:bottle_taint"
+      }
+    },
+    "thaumcraft:bath_salts": {
+      "type": "thaumcraft:crucible",
+      "research": "BATHSALTS",
+      "catalyst": {
+        "item": "thaumcraft:salis_mundus"
+      },
+      "aspects": {
+        "cognitio": 40,
+        "aer": 40,
+        "ordo": 40,
+        "victus": 40
+      },
+      "result": {
+        "id": "thaumcraft:bath_salts"
+      }
+    },
+    "thaumcraft:sanity_soap": {
+      "type": "thaumcraft:crucible",
+      "research": "SANESOAP",
+      "catalyst": {
+        "item": "thaumcraft:flesh_block"
+      },
+      "aspects": {
+        "cognitio": 75,
+        "alienis": 50,
+        "ordo": 75,
+        "victus": 50
+      },
+      "result": {
+        "id": "thaumcraft:sanity_soap"
+      }
+    },
+    "thaumcraft:everfull_urn": {
+      "type": "thaumcraft:crucible",
+      "research": "EVERFULLURN",
+      "catalyst": {
+        "item": "minecraft:flower_pot"
+      },
+      "aspects": {
+        "aqua": 30,
+        "fabrico": 10,
+        "terra": 10
+      },
+      "result": {
+        "id": "thaumcraft:everfull_urn"
+      }
+    },
+    "thaumcraft:spa": {
+      "type": "thaumcraft:arcane",
+      "research": "ARCANESPA",
+      "vis": 50,
+      "crystals": {
+        "aqua": 1
+      },
+      "pattern": [
+        "QIQ",
+        "SJS",
+        "SPS"
+      ],
+      "key": {
+        "Q": {
+          "item": "minecraft:quartz_block"
+        },
+        "I": {
+          "item": "minecraft:iron_bars"
+        },
+        "S": {
+          "item": "thaumcraft:arcane_stone"
+        },
+        "J": {
+          "item": "thaumcraft:jar_normal"
+        },
+        "P": {
+          "item": "thaumcraft:mechanism_simple"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:spa"
+      }
+    },
+    "thaumcraft:potion_sprayer": {
+      "type": "thaumcraft:arcane",
+      "research": "POTIONSPRAYER",
+      "vis": 75,
+      "crystals": {
+        "aqua": 1,
+        "ignis": 1
+      },
+      "pattern": [
+        "BDB",
+        "IAI",
+        "ICI"
+      ],
+      "key": {
+        "B": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "D": {
+          "item": "minecraft:dispenser"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
+        },
+        "A": {
+          "item": "minecraft:brewing_stand"
+        },
+        "C": {
+          "item": "thaumcraft:metal_alchemical"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:potion_sprayer"
+      }
+    },
+    "thaumcraft:essentia_input": {
+      "type": "thaumcraft:arcane",
+      "research": "ESSENTIATRANSPORT",
+      "vis": 100,
+      "crystals": {
+        "aer": 1,
+        "aqua": 1
+      },
+      "pattern": [
+        "BQB",
+        "IGI"
+      ],
+      "key": {
+        "B": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "Q": {
+          "item": "minecraft:dispenser"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
+        },
+        "G": {
+          "item": "thaumcraft:metal_alchemical"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:essentia_input"
+      }
+    },
+    "thaumcraft:essentia_output": {
+      "type": "thaumcraft:arcane",
+      "research": "ESSENTIATRANSPORT",
+      "vis": 100,
+      "crystals": {
+        "aer": 1,
+        "aqua": 1
+      },
+      "pattern": [
+        "BQB",
+        "IGI"
+      ],
+      "key": {
+        "B": {
+          "item": "thaumcraft:plate_brass"
+        },
+        "Q": {
+          "item": "minecraft:dropper"
+        },
+        "I": {
+          "item": "thaumcraft:plate_iron"
+        },
+        "G": {
+          "item": "thaumcraft:metal_alchemical"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:essentia_output"
+      }
+    },
+    "thaumcraft:flesh_block": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:rotten_flesh"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:flesh_block"
+      }
+    },
+    "thaumcraft:flesh_unpack": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "#"
+      ],
+      "key": {
+        "#": {
+          "item": "thaumcraft:flesh_block"
+        }
+      },
+      "result": {
+        "id": "minecraft:rotten_flesh",
+        "count": 9
+      }
+    },
+    "thaumcraft:quartz_nuggets": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "#"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:quartz"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:nugget_quartz",
+        "count": 9
+      }
+    },
+    "thaumcraft:quartz_from_nuggets": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "thaumcraft:nugget_quartz"
+        }
+      },
+      "result": {
+        "id": "minecraft:quartz"
+      }
+    },
+    "thaumcraft:quicksilver_nuggets": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "#"
+      ],
+      "key": {
+        "#": {
+          "item": "thaumcraft:quicksilver"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:nugget_quicksilver",
+        "count": 9
+      }
+    },
+    "thaumcraft:quicksilver_from_nuggets": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "thaumcraft:nugget_quicksilver"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:quicksilver"
+      }
+    },
+    "thaumcraft:thaumium_helm": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "III",
+        "I I"
+      ],
+      "key": {
+        "I": {
+          "tag": "c:ingots/thaumium"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_helm"
+      }
+    },
+    "thaumcraft:thaumium_chest": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "I I",
+        "III",
+        "III"
+      ],
+      "key": {
+        "I": {
+          "tag": "c:ingots/thaumium"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_chest"
+      }
+    },
+    "thaumcraft:thaumium_legs": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "III",
+        "I I",
+        "I I"
+      ],
+      "key": {
+        "I": {
+          "tag": "c:ingots/thaumium"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_legs"
+      }
+    },
+    "thaumcraft:thaumium_boots": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "I I",
+        "I I"
+      ],
+      "key": {
+        "I": {
+          "tag": "c:ingots/thaumium"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_boots"
+      }
+    },
+    "thaumcraft:thaumium_shovel": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "I",
+        "S",
+        "S"
+      ],
+      "key": {
+        "I": {
+          "tag": "c:ingots/thaumium"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_shovel"
+      }
+    },
+    "thaumcraft:thaumium_pick": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "III",
+        " S ",
+        " S "
+      ],
+      "key": {
+        "I": {
+          "tag": "c:ingots/thaumium"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_pick"
+      }
+    },
+    "thaumcraft:thaumium_axe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "II",
+        "SI",
+        "S "
+      ],
+      "key": {
+        "I": {
+          "tag": "c:ingots/thaumium"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_axe"
+      }
+    },
+    "thaumcraft:thaumium_hoe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "II",
+        "S ",
+        "S "
+      ],
+      "key": {
+        "I": {
+          "tag": "c:ingots/thaumium"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_hoe"
+      }
+    },
+    "thaumcraft:thaumium_sword": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "I",
+        "I",
+        "S"
+      ],
+      "key": {
+        "I": {
+          "tag": "c:ingots/thaumium"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "result": {
+        "id": "thaumcraft:thaumium_sword"
+      }
+    },
+    "thaumcraft:crucible_metal_purification_tin": {
+      "type": "thaumcraft:crucible",
+      "research": "METALPURIFICATION",
+      "catalyst": {
+        "tag": "c:ores/tin"
+      },
+      "aspects": {
+        "metallum": 5,
+        "ordo": 5
+      },
+      "result": {
+        "id": "thaumcraft:cluster_tin"
+      }
+    },
+    "thaumcraft:cluster_tin_smelting": {
+      "type": "thaumcraft:cluster_cooking",
+      "ingredient": {
+        "item": "thaumcraft:cluster_tin"
+      },
+      "result_tag": "c:ingots/tin",
+      "blasting": false
+    },
+    "thaumcraft:cluster_tin_blasting": {
+      "type": "thaumcraft:cluster_cooking",
+      "ingredient": {
+        "item": "thaumcraft:cluster_tin"
+      },
+      "result_tag": "c:ingots/tin",
+      "blasting": true
+    },
+    "thaumcraft:crucible_metal_purification_silver": {
+      "type": "thaumcraft:crucible",
+      "research": "METALPURIFICATION",
+      "catalyst": {
+        "tag": "c:ores/silver"
+      },
+      "aspects": {
+        "metallum": 5,
+        "ordo": 5
+      },
+      "result": {
+        "id": "thaumcraft:cluster_silver"
+      }
+    },
+    "thaumcraft:cluster_silver_smelting": {
+      "type": "thaumcraft:cluster_cooking",
+      "ingredient": {
+        "item": "thaumcraft:cluster_silver"
+      },
+      "result_tag": "c:ingots/silver",
+      "blasting": false
+    },
+    "thaumcraft:cluster_silver_blasting": {
+      "type": "thaumcraft:cluster_cooking",
+      "ingredient": {
+        "item": "thaumcraft:cluster_silver"
+      },
+      "result_tag": "c:ingots/silver",
+      "blasting": true
+    },
+    "thaumcraft:crucible_metal_purification_lead": {
+      "type": "thaumcraft:crucible",
+      "research": "METALPURIFICATION",
+      "catalyst": {
+        "tag": "c:ores/lead"
+      },
+      "aspects": {
+        "metallum": 5,
+        "ordo": 5
+      },
+      "result": {
+        "id": "thaumcraft:cluster_lead"
+      }
+    },
+    "thaumcraft:cluster_lead_smelting": {
+      "type": "thaumcraft:cluster_cooking",
+      "ingredient": {
+        "item": "thaumcraft:cluster_lead"
+      },
+      "result_tag": "c:ingots/lead",
+      "blasting": false
+    },
+    "thaumcraft:cluster_lead_blasting": {
+      "type": "thaumcraft:cluster_cooking",
+      "ingredient": {
+        "item": "thaumcraft:cluster_lead"
+      },
+      "result_tag": "c:ingots/lead",
+      "blasting": true
     }
   }
 }

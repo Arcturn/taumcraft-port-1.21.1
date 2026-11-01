@@ -1,0 +1,8 @@
+{
+  "type": "thaumcraft:cluster_cooking",
+  "ingredient": {
+    "item": "thaumcraft:cluster_silver"
+  },
+  "result_tag": "c:ingots/silver",
+  "blasting": false
+}

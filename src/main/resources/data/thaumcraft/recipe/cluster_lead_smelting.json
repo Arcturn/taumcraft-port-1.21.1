@@ -1,0 +1,8 @@
+{
+  "type": "thaumcraft:cluster_cooking",
+  "ingredient": {
+    "item": "thaumcraft:cluster_lead"
+  },
+  "result_tag": "c:ingots/lead",
+  "blasting": false
+}

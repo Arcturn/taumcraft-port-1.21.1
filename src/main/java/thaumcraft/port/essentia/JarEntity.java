@@ -18,6 +18,7 @@ public final class JarEntity extends EssentiaEntity implements EssentiaSource {
         tank=new EssentiaTank(alembic?128:250);
     }
     public boolean blocked(){return alembic||braced;}
+    @Override public void sync(){super.sync();if(level!=null&&!level.isClientSide)level.updateNeighbourForOutputSignal(worldPosition,getBlockState().getBlock());}
     public Aspect storedAspect(){return tank.aspect();}
     public int storedAmount(){return tank.amount();}
     public int takeRemote(Aspect a,int n,boolean simulate){if(blocked())return 0;int taken=tank.extract(a,n,simulate);if(taken>0&&!simulate)sync();return taken;}

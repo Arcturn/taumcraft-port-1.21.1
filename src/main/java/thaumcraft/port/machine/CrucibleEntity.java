@@ -79,7 +79,8 @@ public final class CrucibleEntity extends BlockEntity {
             if(recipe.isPresent()&&state.craft(recipe.get().aspects())){
                 ItemStack output=recipe.get().result().copy();
                 ejectItem(server,output.copy());
-                ResearchProgress.craft(player,output);
+                // Original TileCrucible fires the Forge event before reducing the catalyst batch.
+                net.neoforged.neoforge.event.EventHooks.firePlayerCraftingEvent(player,output,new net.minecraft.world.SimpleContainer(stack.copy()));
                 crafted=true;remaining--;
             }else if(state.dissolveInBatch(RecipeAspects.get(stack,server))){dissolved=true;remaining--;}
         }

@@ -31,6 +31,12 @@ public final class ThaumcraftPort {
         thaumcraft.port.machine.MachineContent.register(modBus);
         thaumcraft.port.essentia.EssentiaContent.register(modBus);
         thaumcraft.port.theory.TheoryContent.register(modBus);
+        thaumcraft.port.alchemy.liquid.AlchemyLiquids.register(modBus);
+        thaumcraft.port.alchemy.spa.SpaContent.register(modBus);
+        thaumcraft.port.alchemy.devices.AlchemyDevices.register(modBus);
+        thaumcraft.port.essentia.EssentiaTransferContent.register(modBus);
+        thaumcraft.port.alchemy.material.AlchemyMaterials.register(modBus);
+        thaumcraft.port.essentia.CondenserContent.register(modBus);
         PortContent.register(modBus);
         thaumcraft.port.research.ResearchAdvancements.register(modBus);
         modBus.addListener(PortNetwork::register);
