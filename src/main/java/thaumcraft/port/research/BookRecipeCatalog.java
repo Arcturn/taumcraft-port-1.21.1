@@ -14,10 +14,20 @@ public final class BookRecipeCatalog {
         if(key==null)return List.of();
         if(RECIPES.has(key))return List.of(RECIPES.getAsJsonObject(key));
         String name=key.substring(key.indexOf(':')+1);
+        // BETA26's research JSON retained these old IDs after ConfigRecipes moved
+        // to per-color/per-aspect recipes. Keep the source pages intact and expose
+        // their real registered recipes instead of leaving the two tabs empty.
+        if(name.equalsIgnoreCase("nitorcolor"))return group("thaumcraft:nitorgroup", "");
+        if(name.equalsIgnoreCase("JarLabelEssence"))return group("thaumcraft:jarlabels", "thaumcraft:label_");
         for(var e:RECIPES.entrySet())if(e.getKey().equalsIgnoreCase(key))return List.of(e.getValue().getAsJsonObject());
         String wanted=normalize(ALIASES.getOrDefault(name.toLowerCase(Locale.ROOT),name));List<JsonObject> out=new ArrayList<>();
         for(var e:RECIPES.entrySet())if(normalize(e.getKey().substring(e.getKey().indexOf(':')+1)).equals(wanted)||e.getValue().getAsJsonObject().has("book_group")&&e.getValue().getAsJsonObject().get("book_group").getAsString().equalsIgnoreCase(key))out.add(e.getValue().getAsJsonObject());
         return List.copyOf(out);
+    }
+    private static List<JsonObject> group(String group,String prefix){
+        return RECIPES.entrySet().stream().filter(e->e.getKey().startsWith(prefix))
+                .map(e->e.getValue().getAsJsonObject())
+                .filter(recipe->recipe.has("book_group")&&recipe.get("book_group").getAsString().equals(group)).toList();
     }
     public static boolean unlocked(JsonObject recipe,ResearchState state){return !recipe.has("research")||state.knows(recipe.get("research").getAsString());}
     public static List<JsonObject> recipes(String key,ResearchState state){return recipes(key).stream().filter(r->unlocked(r,state)).toList();}
@@ -46,13 +56,18 @@ public final class BookRecipeCatalog {
         // Original getCraftingRecipeKey scans all entries, then applies each recipe's own gate.
         for(var entry:ResearchCatalog.all()){
             for(var section:entry.stages())for(String key:ResearchCatalog.strings(section,"recipes")){
-                var all=recipes(key);
-                boolean group=all.size()>1||all.stream().anyMatch(r->r.has("book_group")&&r.get("book_group").getAsString().equalsIgnoreCase(key));
-                if(group){int variant=variant(key,source,state,signature);if(variant>=0)return new Reference(key,variant);}
+                // Page aliases repair old JSON references, but ingredient navigation
+                // still addresses the registered group and indexes that group's list.
+                String name=key.substring(key.indexOf(':')+1);
+                String target=name.equalsIgnoreCase("nitorcolor")?"thaumcraft:nitorgroup":
+                        name.equalsIgnoreCase("JarLabelEssence")?"thaumcraft:jarlabels":key;
+                var all=recipes(target);
+                boolean group=all.size()>1||all.stream().anyMatch(r->r.has("book_group")&&r.get("book_group").getAsString().equalsIgnoreCase(target));
+                if(group){int variant=variant(target,source,state,signature);if(variant>=0)return new Reference(target,variant);}
                 else if(!all.isEmpty()){
                     var recipe=all.getFirst();
                     if(!recipe.get("type").getAsString().contains("blueprint")&&signature.apply(output(recipe)).equals(signature.apply(source)))
-                        return new Reference(key,unlocked(recipe,state)?0:-99);
+                        return new Reference(target,unlocked(recipe,state)?0:-99);
                 }
             }
         }

@@ -2,6 +2,8 @@ package thaumcraft.port.theory;
 
 import java.util.*;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.tags.TagKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Container;
@@ -12,13 +14,38 @@ import thaumcraft.port.essentia.*;
 import thaumcraft.port.research.*;
 
 public final class TheoryItems {
+    // ContainerResearchTable uses InventoryUtils with ore matching enabled, even for
+    // concrete card stacks. Keep the old named groups specific: a copper ingot is not
+    // an iron ingot, whereas another wool or nitor colour is a valid substitute.
+    private static final Map<String,String> ORIGINAL_EQUIVALENTS=Map.ofEntries(
+        Map.entry("minecraft:white_wool","minecraft:wool"),
+        Map.entry("thaumcraft:nitor_yellow","thaumcraft:nitor"),
+        Map.entry("minecraft:iron_ingot","c:ingots/iron"),
+        Map.entry("minecraft:gold_ingot","c:ingots/gold"),
+        Map.entry("thaumcraft:ingot_thaumium","c:ingots/thaumium"),
+        Map.entry("thaumcraft:ingot_brass","c:ingots/brass"),
+        Map.entry("thaumcraft:amber","c:gems/amber"),
+        Map.entry("minecraft:diamond","c:gems/diamond"),
+        Map.entry("minecraft:emerald","c:gems/emerald"),
+        Map.entry("minecraft:quartz","c:gems/quartz"),
+        Map.entry("minecraft:redstone","c:dusts/redstone"),
+        Map.entry("minecraft:glowstone_dust","c:dusts/glowstone"),
+        Map.entry("minecraft:brick","c:bricks/normal"),
+        Map.entry("minecraft:gunpowder","c:gunpowders"),
+        Map.entry("minecraft:leather","c:leathers"),
+        Map.entry("minecraft:feather","c:feathers"),
+        Map.entry("minecraft:egg","c:eggs"));
     public static ItemStack stack(TheoryCards.Requirement q){
         if(q.item().equals("thaumcraft:celestial_notes"))return CelestialNotesItem.stack(q.kind());
         if(!q.aspect().isEmpty()){var a=Aspect.byId(q.aspect()).orElseThrow();if(q.item().equals("thaumcraft:crystal_essence"))return CrystalItem.stack(a);if(q.item().equals("thaumcraft:phial"))return EssentiaItem.phial(a);}
         return new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(q.item())));
     }
     public static boolean matches(ItemStack stack,TheoryCards.Requirement q){
-        if(stack.isEmpty()||!BuiltInRegistries.ITEM.getKey(stack.getItem()).toString().equals(q.item()))return false;
+        if(stack.isEmpty())return false;
+        if(!BuiltInRegistries.ITEM.getKey(stack.getItem()).toString().equals(q.item())){
+            String equivalent=ORIGINAL_EQUIVALENTS.get(q.item());
+            if(!q.aspect().isEmpty()||q.kind()>=0||equivalent==null||!stack.is(TagKey.create(Registries.ITEM,ResourceLocation.parse(equivalent))))return false;
+        }
         if(stack.isDamageableItem()&&stack.getDamageValue()!=0)return false;
         if(q.kind()>=0&&stack.getOrDefault(PortContent.CELESTIAL_KIND.get(),0)!=q.kind())return false;
         if(!q.aspect().isEmpty())return q.item().equals("thaumcraft:crystal_essence")?CrystalItem.aspect(stack).id().equals(q.aspect()):EssentiaItem.aspect(stack)!=null&&EssentiaItem.aspect(stack).id().equals(q.aspect());

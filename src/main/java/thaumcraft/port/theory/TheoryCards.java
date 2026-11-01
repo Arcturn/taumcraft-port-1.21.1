@@ -41,7 +41,7 @@ public final class TheoryCards {
             case "Reject"->{var cats=s.totals.keySet().stream().filter(c->!s.blocked.contains(c)).toList();if(cats.isEmpty())return null;cat=pick(cats,r);}
             case "Curio"->{if(ctx.curios().isEmpty())return null;String id=pick(ctx.curios(),r);items.add(Requirement.item(id,true));}
             case "Inspired"->{cat=s.highest();if(cat.isEmpty())return null;value=10+s.totals.get(cat)/2;}
-            case "Celestial"->{cat=s.highest();if(cat.isEmpty()||!ctx.research().knows("CELESTIALSCANNING"))return null;int first=r.nextInt(13),second;do{second=r.nextInt(13);}while(first==second);items.add(Requirement.note(first));items.add(Requirement.note(second));}
+            case "Celestial"->{cat=s.highest();if(cat.isEmpty()||!ctx.research().isResearchKnown("CELESTIALSCANNING"))return null;int first=r.nextInt(13),second;do{second=r.nextInt(13);}while(first==second);items.add(Requirement.note(first));items.add(Requirement.note(second));}
             case "Concentrate","Reactions","Synthesis","Channel","Infuse"->{
                 Aspect a=pick(COMPOUNDS,r);aspect=a.id();
                 if(kind.equals("Synthesis")){items.add(Requirement.crystal(a.components().get(0),true));items.add(Requirement.crystal(a.components().get(1),true));}

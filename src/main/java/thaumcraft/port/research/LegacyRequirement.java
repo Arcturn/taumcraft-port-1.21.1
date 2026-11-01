@@ -24,10 +24,14 @@ public record LegacyRequirement(String source,int count,String craftKey,Predicat
                 if(needed.isEmpty())return unsupported(source);
                 return new LegacyRequirement(source,count,"enchantment:"+needed,s->{var actual=s.getOrDefault(s.is(net.minecraft.world.item.Items.ENCHANTED_BOOK)?net.minecraft.core.component.DataComponents.STORED_ENCHANTMENTS:net.minecraft.core.component.DataComponents.ENCHANTMENTS,net.minecraft.world.item.enchantment.ItemEnchantments.EMPTY);return needed.entrySet().stream().allMatch(n->actual.entrySet().stream().anyMatch(a->a.getKey().unwrapKey().map(k->k.location().toString().equals("minecraft:"+n.getKey())).orElse(false)&&a.getIntValue()>=n.getValue()));});
             }
-            if(id.equals("oredict:chest"))return new LegacyRequirement(source,count,"minecraft:chest",s->s.is(net.minecraft.world.item.Items.CHEST));
+            // Forge's original "chest" ore entry includes ordinary, trapped and ender
+            // chests; use its modern common tag so other mods retain that integration.
+            if(id.equals("oredict:chest"))return new LegacyRequirement(source,count,"minecraft:chest",s->s.is(net.neoforged.neoforge.common.Tags.Items.CHESTS));
             if(id.equals("minecraft:dye"))id=meta==15?"minecraft:bone_meal":meta==0?"minecraft:ink_sac":"";
             else if(id.equals("thaumcraft:ingot"))id=switch(meta){case 0->"thaumcraft:ingot_thaumium";case 1->"thaumcraft:ingot_void";case 2->"thaumcraft:ingot_brass";default->"";};
-            else if(id.equals("thaumcraft:metal"))id=switch(meta){case 2->"thaumcraft:metal_brass";case 3->"thaumcraft:metal_thaumium";default->"";};
+            // The old smelter pages retain the pre-flattening metal ID. Their
+            // descriptions and matching plate requirements identify thaumium/void.
+            else if(id.equals("thaumcraft:metal"))id=switch(meta){case 2->"thaumcraft:metal_thaumium";case 3->"thaumcraft:metal_void";default->"";};
             else if(id.equals("thaumcraft:nugget")&&meta==9)id="thaumcraft:nugget_quartz";
             else if(id.equals("thaumcraft:nitor")&&meta==4)id="thaumcraft:nitor_yellow";
             else if(id.equals("thaumcraft:plate"))id=switch(meta){case 0->"thaumcraft:plate_brass";case 1->"thaumcraft:plate_iron";case 2->"thaumcraft:plate_thaumium";case 3->"thaumcraft:plate_void";default->"";};

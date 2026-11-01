@@ -8,7 +8,8 @@ import thaumcraft.port.aspect.Aspect;
 
 /** Immutable original research content. Definitions alone do not imply implemented machines. */
 public final class ResearchCatalog {
-    public static final List<String> CATEGORIES=List.of("BASICS","ALCHEMY","AUROMANCY","ARTIFICE","INFUSION","GOLEMANCY","ELDRITCH");
+    // ScanGeneric visits TC6's category registry in insertion order, including gain notifications.
+    public static final List<String> CATEGORIES=List.of("BASICS","AUROMANCY","ALCHEMY","ARTIFICE","INFUSION","GOLEMANCY","ELDRITCH");
     public record Entry(String key,String title,String category,int x,int y,List<String> parents,
                         List<String> siblings,List<String> meta,List<JsonObject> stages,List<String> icons,List<JsonObject> addenda) {}
     private static final Map<String,Entry> ENTRIES=load();

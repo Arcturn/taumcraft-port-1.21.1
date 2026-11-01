@@ -11,6 +11,8 @@ import thaumcraft.port.research.*;
 
 /** Original two-column parchment and paper inserts; progress remains server-owned. */
 public final class ResearchPageScreen extends Screen {
+    // TC6 iterates EnumKnowledgeType: THEORY first at the bottom, OBSERVATION above it.
+    private static final List<String> KNOWLEDGE_TYPES=List.of("THEORY","OBSERVATION");
     private final ResearchCatalog.Entry entry;
     private JournalPayload payload;
     private ResearchState state;
@@ -113,7 +115,8 @@ public final class ResearchPageScreen extends Screen {
     private void hover(int mx,int my,int x,int y,int w,int h,Component text){if(insert!=3&&inside(mx,my,x,y,w,h))tip=text;}
     private boolean inside(double mx,double my,int x,int y,int w,int h){return mx>=x&&my>=y&&mx<x+w&&my<y+h;}
     private void requirements(GuiGraphics g,int mx,int my){
-        int x=left(),y=top()+194;canAdvance=state.available(entry)&&state.stage(entry.key())>0;int[] taken=new int[minecraft.player.getInventory().getContainerSize()];
+        // TC6's obtain requirements inspect mainInventory only, never armor or the offhand.
+        int x=left(),y=top()+194;canAdvance=state.available(entry)&&state.stage(entry.key())>0;int[] taken=new int[minecraft.player.getInventory().items.size()];
         for(String field:List.of("required_research","required_item","required_craft","required_knowledge")){
             var values=ResearchCatalog.strings(stage,field);if(values.isEmpty())continue;y-=18;
             int uv=field.equals("required_research")?232:field.equals("required_item")?216:field.equals("required_craft")?200:184;
@@ -167,10 +170,10 @@ public final class ResearchPageScreen extends Screen {
         }
         if(aspectPage>0)arrow(g,width/2-88,height/2+104,0,184,12,8);if((aspectPage+1)*5<list.size())arrow(g,width/2+76,height/2+104,12,184,12,8);
     }
-    private int knowledgeRows(){int rows=0;for(String type:List.of("OBSERVATION","THEORY"))if(BookAssets.CATEGORIES.stream().anyMatch(category->state.knowledge(type,category)>0))rows++;return rows;}
+    private int knowledgeRows(){int rows=0;for(String type:KNOWLEDGE_TYPES)if(BookAssets.CATEGORIES.stream().anyMatch(category->state.knowledge(type,category)>0))rows++;return rows;}
     private void knowledge(GuiGraphics g,int mx,int my,boolean inPage){
         int x=inPage?left():left()+60,y=top()+(inPage?176:57),row=0;
-        for(String t:List.of("OBSERVATION","THEORY")){int col=0;for(String c:BookAssets.CATEGORIES){int raw=state.knowledge(t,c),unit=ResearchState.progression(t);if(raw<=0)continue;int cx=x-10+(inPage?18:164/BookAssets.CATEGORIES.size())*col++,cy=y-row*(inPage?20:28);
+        for(String t:KNOWLEDGE_TYPES){int col=0;for(String c:BookAssets.CATEGORIES){int raw=state.knowledge(t,c),unit=ResearchState.progression(t);if(raw<=0)continue;int cx=x-10+(inPage?18:164/BookAssets.CATEGORIES.size())*col++,cy=y-row*(inPage?20:28);
             BookAssets.texture(g,BookAssets.id("textures/research/knowledge_"+t.toLowerCase(Locale.ROOT)+".png"),cx,cy,16);g.setColor(1,1,1,.75f);BookAssets.texture(g,BookAssets.category(c),cx+3,cy+3,11);g.setColor(1,1,1,1);
             String amount=""+(raw/unit);g.drawString(font,amount,cx+16-font.width(amount),cy+8,0xffffff,true);int n=16*(raw%unit)/unit;
             if(raw%unit>0){g.setColor(1,1,1,.75f);BookAssets.sprite(g,BookAssets.BOOK,cx,cy+17,0,232,n,2);BookAssets.sprite(g,BookAssets.BOOK,cx+n,cy+17,n,234,16-n,2);g.setColor(1,1,1,1);}

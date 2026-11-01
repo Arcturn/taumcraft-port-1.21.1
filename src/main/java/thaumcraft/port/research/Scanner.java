@@ -62,10 +62,18 @@ public final class Scanner {
     }
     public static ScanObservation observation(Player player,HitResult hit){
         java.util.Set<String> flags=java.util.Set.of();
+        var aspects=aspects(player,hit);
+        java.util.Set<Aspect> aspectDiscoveries=aspects.keySet();
         if(hit instanceof EntityHitResult entity)flags=ScanDiscoveries.entityFlags(entity.getEntity());
-        else if(hit instanceof BlockHitResult block&&hit.getType()!=HitResult.Type.MISS)
-            flags=ScanDiscoveries.blockFlags(player.level().getBlockState(block.getBlockPos()),blockStack(player,block));
-        return new ScanObservation(subject(player,hit),aspects(player,hit),flags);
+        else if(hit instanceof BlockHitResult block&&hit.getType()!=HitResult.Type.MISS){
+            var state=player.level().getBlockState(block.getBlockPos());
+            flags=ScanDiscoveries.blockFlags(state,blockStack(player,block));
+            // ScanAspect examines the placed block's own item, whereas ScanGeneric
+            // uses the picked item (or a bucket for fluids). The bucket's aspects
+            // must not also award first-aspect discoveries for a placed liquid.
+            aspectDiscoveries=itemAspects(player,new ItemStack(state.getBlock())).keySet();
+        }
+        return new ScanObservation(subject(player,hit),aspects,flags,aspectDiscoveries);
     }
     private static java.util.Map<Aspect,Integer> itemAspects(Player p,ItemStack s){return RecipeAspects.get(s,p.level());}
     public static void use(ServerPlayer p){
@@ -99,7 +107,9 @@ public final class Scanner {
         if(p.level().dimension()!=Level.OVERWORLD||!p.level().canSeeSky(p.blockPosition().above())||!state.knows("CELESTIALSCANNING"))return false;
         var t=CelestialTarget.find(p.getYRot(),p.getXRot(),p.level().getTimeOfDay(0),p.level().getMoonPhase(),p.getDirection().get3DDataValue()-2);if(t==null)return false;
         String key=t.key(p.level().getGameTime());if(state.knows(key)){p.displayClientMessage(Component.translatable("tc.celestial.fail.1",""),true);return true;}
-        int paper=-1;boolean ink=false;var inv=p.getInventory();for(int i=0;i<inv.getContainerSize();i++){var s=inv.getItem(i);if(s.is(PortContent.SCRIBING_TOOLS.get()))ink=true;if(s.is(Items.PAPER))paper=i;}
+        // Original InventoryUtils searches mainInventory in slot order, excluding
+        // offhand and armor. Celestial observations need tools but do not use ink.
+        int paper=-1;boolean ink=false;var inv=p.getInventory();for(int i=0;i<inv.items.size();i++){var s=inv.items.get(i);if(s.is(PortContent.SCRIBING_TOOLS.get()))ink=true;if(paper<0&&s.is(Items.PAPER))paper=i;}
         if(!ink||paper<0)p.displayClientMessage(Component.translatable("tc.celestial.fail.2",""),true);
         else {
             inv.removeItem(paper,1);var note=CelestialNotesItem.stack(t.variant());if(!inv.add(note))p.drop(note,false);inv.setChanged();state.flag(key);

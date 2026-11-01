@@ -26,7 +26,10 @@ public final class Scanning {
     public static void scan(ServerPlayer player,ScanObservation observation,boolean message){
         ResearchStorage data = ResearchStorage.get(player.getServer());
         var state=data.player(player.getUUID());
-        boolean changed=observation.learn(state);
+        // Every TC6 catalog entry discovered by a scan has one requirement-free
+        // stage, so progressResearch completes it and awards its 5 experience.
+        // Ordinary scan/aspect keys are not catalog entries and grant no XP.
+        boolean changed=observation.learn(state,key->ResearchProgress.completeResearch(player,key));
         if(changed)data.setDirty();
         if(message)player.displayClientMessage(feedback(changed),true);
     }

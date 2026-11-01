@@ -18,6 +18,31 @@ import static thaumcraft.port.research.ResearchState.ResearchFlag.*;
 @PrefixGameTestTemplate(false)
 public final class ResearchProgressGameTests {
     @GameTest(template="empty",timeoutTicks=40)
+    public static void obtainRequirementsLeaveOffhandItemUntouched(GameTestHelper helper){
+        var player=player(helper);var state=state(player);prepare(state,"REDSTONERELAY",1);
+        state.flag("!potentia");state.flag("!machina");state.addKnowledge("OBSERVATION","ARTIFICE",16);
+        player.setItemInHand(InteractionHand.OFF_HAND,new ItemStack(Items.REDSTONE_TORCH));
+        var before=ResearchCodec.write(state);ResearchProgress.advance(player,"REDSTONERELAY",1);
+        helper.assertTrue(before.equals(ResearchCodec.write(state)),"Offhand item was accepted for a main-inventory obtain requirement");
+        helper.assertTrue(player.getOffhandItem().is(Items.REDSTONE_TORCH),"Research consumed an equipped offhand item");
+        player.getInventory().setItem(9,new ItemStack(Items.REDSTONE_TORCH));ResearchProgress.advance(player,"REDSTONERELAY",1);
+        helper.assertTrue(state.knows("REDSTONERELAY"),"Moving a required item to the main inventory did not allow progression");
+        helper.assertTrue(player.getInventory().getItem(9).isEmpty()&&player.getOffhandItem().is(Items.REDSTONE_TORCH),"Progression did not consume only the main-inventory requirement");
+        helper.succeed();
+    }
+
+    @GameTest(template="empty",timeoutTicks=40)
+    public static void scriptedCompletionChecksParentsAndAwardsEachTransitionOnce(GameTestHelper helper){
+        var player=player(helper);var state=state(player);
+        helper.assertTrue(!ResearchProgress.completeResearch(player,"CrimsonRites"),"Scripted completion ignored the cultist discovery prerequisite");
+        helper.assertValueEqual(player.totalExperience,0,"Rejected scripted completion awarded experience");
+        state.flag("!CrimsonCultist");helper.assertTrue(ResearchProgress.completeResearch(player,"CrimsonRites"),"Scripted completion failed after its prerequisite");
+        helper.assertTrue(state.knows("CrimsonRites"),"Scripted completion did not finish all stages");
+        helper.assertValueEqual(player.totalExperience,10,"Two original progressResearch transitions must award ten XP");
+        helper.assertTrue(!ResearchProgress.completeResearch(player,"CrimsonRites"),"Scripted completion repeated an already-complete research");
+        helper.assertValueEqual(player.totalExperience,10,"Repeated scripted completion awarded experience twice");helper.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=40)
     public static void missingResearchAndKnowledgeAreAtomicThenSuccessConsumesOnce(GameTestHelper helper){
         var player=player(helper);var state=state(player);prepare(state,"REDSTONERELAY",1);
         player.getInventory().setItem(9,new ItemStack(Items.REDSTONE_TORCH,2));state.addKnowledge("OBSERVATION","ARTIFICE",15);state.flag("!potentia");

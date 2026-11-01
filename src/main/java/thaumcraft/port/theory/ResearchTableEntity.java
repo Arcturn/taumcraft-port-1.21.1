@@ -53,14 +53,13 @@ public final class ResearchTableEntity extends BlockEntity implements Container,
     boolean action(ServerPlayer player,int action,Set<String> aids){
         if(!stillValid(player)||!player.isAlive())return false;
         var storage=ResearchStorage.get(player.getServer());var state=storage.player(player.getUUID());
-        if(session!=null&&!session.owner.equals(player.getUUID()))return false;
         if(action==0){
             if(session!=null||ink()<1||!paper(1)||aids.size()>=TheorySession.availableInspiration(state)||!nearbyAids().containsAll(aids))return false;
             session=new TheorySession(player.getUUID(),TheorySession.availableInspiration(state),aids);
         }else if(session==null)return false;
         else if(action==1){
             if(!paper(1)||session.complete()||!session.choices.isEmpty())return false;
-            var next=session.copy();if(!next.draw(TheoryItems.context(player),TheoryItems.random(player)))return false;
+            var next=session.copy();next.owner=player.getUUID();if(!next.draw(TheoryItems.context(player),TheoryItems.random(player)))return false;
             removeItem(1,1);session=next;
         }else if(action>=2&&action<=4){
             int index=action-2;if(index>=session.choices.size()||session.selected>=0||session.complete())return false;

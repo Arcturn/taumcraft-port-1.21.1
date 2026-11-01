@@ -9,6 +9,7 @@ import thaumcraft.port.research.ResearchCatalog;
 public final class TheorySession {
     public static final List<String> CATEGORIES=List.of("BASICS","AUROMANCY","ALCHEMY","ARTIFICE","INFUSION","GOLEMANCY","ELDRITCH");
     private static final Gson JSON=new Gson();
+    /** Last player to draw; TC6 tables are shared, so this is never an access lock. */
     public UUID owner;
     public int inspirationStart,inspiration,bonusDraws,penaltyStart;
     public TreeMap<String,Integer> totals=new TreeMap<>();

@@ -121,6 +121,73 @@ public final class ThaumometerGameTests {
     }
 
     @GameTest(template = "empty", timeoutTicks = 80)
+    public static void placedLiquidUsesBucketGenericRewardWithoutBucketAspectDiscoveries(GameTestHelper helper) {
+        try (var fixture = new Fixture(helper)) {
+            var player = fixture.player();
+            var target = fixture.origin.offset(0, 1, 3);
+            // A supported water source is stable while the real scanner rays into it.
+            fixture.set(target.below(), Blocks.STONE.defaultBlockState());
+            fixture.set(target, Blocks.WATER.defaultBlockState());
+            var hit = Scanner.target(player, 9, player.blockInteractionRange());
+            helper.assertTrue(hit instanceof BlockHitResult block && block.getBlockPos().equals(target),
+                    "Liquid scan fixture did not hit the water source");
+            var observation = Scanner.observation(player, hit);
+            helper.assertValueEqual(observation.subject(), "item:minecraft:water_bucket",
+                    "ScanGeneric no longer uses the fluid's bucket fallback");
+            helper.assertFalse(observation.aspects().isEmpty(), "Water bucket has no generic observation reward");
+            helper.assertTrue(observation.aspectDiscoveries().isEmpty(),
+                    "ScanAspect incorrectly used a picked bucket instead of the placed liquid's own item");
+            use(player);
+            var state = state(player);
+            helper.assertTrue(state.scanned().contains("item:minecraft:water_bucket"), "Liquid scan was not recorded");
+            helper.assertTrue(state.discovered().isEmpty(), "Placed water granted the bucket's first-aspect bonuses");
+            int basics = state.knowledge("OBSERVATION", "BASICS");
+
+            // The real bucket may subsequently reveal aspects, but not repeat ScanGeneric.
+            var bucket = new ItemEntity(fixture.level, player.getX(), player.getY() + 1.4,
+                    player.getZ() + 2, new ItemStack(Items.WATER_BUCKET));
+            bucket.setNoGravity(true);
+            fixture.spawn(bucket);
+            use(player);
+            helper.assertTrue(state.discovered().contains("aqua"), "Actual bucket did not reveal its water aspect");
+            helper.assertValueEqual(state.knowledge("OBSERVATION", "BASICS"), basics + observation.aspects().size(),
+                    "Actual bucket repeated the generic reward instead of awarding only new aspect discoveries");
+            helper.assertValueEqual(state.scanned().size(), 1, "Liquid and its bucket used different generic scan identities");
+        }
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty", timeoutTicks = 80)
+    public static void scanDiscoveryCompletesCatalogStageAndAwardsExperienceOnlyOnce(GameTestHelper helper) {
+        try (var fixture = new Fixture(helper)) {
+            var player = fixture.player();
+            var target = fixture.origin.offset(0, 1, 3);
+            var amber = net.minecraft.core.registries.BuiltInRegistries.BLOCK.get(
+                    net.minecraft.resources.ResourceLocation.parse("thaumcraft:ore_amber"));
+            var cinnabar = net.minecraft.core.registries.BuiltInRegistries.BLOCK.get(
+                    net.minecraft.resources.ResourceLocation.parse("thaumcraft:ore_cinnabar"));
+            fixture.set(target, amber.defaultBlockState());
+            int before = player.totalExperience;
+            use(player);
+            var state = state(player);
+            helper.assertTrue(state.knows("ORE"), "Ore scan did not complete the original discovery page");
+            helper.assertValueEqual(state.stage("ORE"), 2, "Ore scan set a loose flag instead of completing its catalog stage");
+            helper.assertValueEqual(player.totalExperience, before + 5,
+                    "Catalog scan discovery omitted its original five experience points");
+            helper.assertTrue(state.knows("!OREAMBER"), "Ore scan omitted its amber addendum");
+            use(player);
+            helper.assertValueEqual(player.totalExperience, before + 5, "Repeated scan granted discovery experience again");
+
+            fixture.set(target, cinnabar.defaultBlockState());
+            use(player);
+            helper.assertTrue(state.knows("!ORECINNABAR"), "Second ore scan omitted its separate addendum");
+            helper.assertValueEqual(player.totalExperience, before + 5,
+                    "Non-catalog generic/aspect/addendum flags incorrectly granted experience");
+        }
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty", timeoutTicks = 80)
     public static void ordinaryInteractionsTakePriorityAndSneakingContainerFallsBackToScan(GameTestHelper helper) {
         try (var fixture = new Fixture(helper)) {
             var target = fixture.origin.offset(0, 1, 3);
@@ -321,6 +388,48 @@ public final class ThaumometerGameTests {
             helper.assertValueEqual(count(player, Items.PAPER), 2, "Daily repeat consumed another paper");
             helper.assertValueEqual(count(player, PortContent.CELESTIAL_NOTES.get()), 1, "Daily repeat duplicated a celestial note");
             System.out.println("THAUMOMETER_SKY missing_materials=handled old_keys_pruned=true note_count=1 paper_consumed=1 duplicate_rejected=true");
+        } finally {
+            level.setDayTime(previousDayTime);
+        }
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty", timeoutTicks = 80)
+    public static void celestialScanUsesMainInventoryAndConsumesFirstPaperStack(GameTestHelper helper) {
+        var level = helper.getLevel();
+        long previousDayTime = level.getDayTime();
+        try (var fixture = new Fixture(helper)) {
+            level.setDayTime(18000);
+            var player = fixture.player();
+            player.setXRot(-45);
+            state(player).flag("CELESTIALSCANNING");
+            helper.assertTrue(level.canSeeSky(player.blockPosition().above()), "Celestial fixture lacks open sky");
+            assertMiss(helper, player);
+            player.getInventory().setItem(9, new ItemStack(Items.PAPER, 3));
+            player.setItemInHand(InteractionHand.OFF_HAND, new ItemStack(PortContent.SCRIBING_TOOLS.get()));
+            use(player);
+            assertMessageKey(helper, player, 0, "tc.celestial.fail.2");
+            helper.assertValueEqual(count(player, PortContent.CELESTIAL_NOTES.get()), 0,
+                    "Offhand writing tools incorrectly satisfied the original main-inventory predicate");
+            helper.assertValueEqual(player.getInventory().getItem(9).getCount(), 3, "Failed scan consumed paper");
+
+            player.getInventory().setItem(9, ItemStack.EMPTY);
+            player.getInventory().setItem(10, player.getOffhandItem());
+            player.setItemInHand(InteractionHand.OFF_HAND, new ItemStack(Items.PAPER, 4));
+            player.messages.clear();
+            use(player);
+            assertMessageKey(helper, player, 0, "tc.celestial.fail.2");
+            helper.assertValueEqual(player.getOffhandItem().getCount(), 4, "Scanner consumed offhand paper");
+            helper.assertValueEqual(count(player, PortContent.CELESTIAL_NOTES.get()), 0, "Offhand paper created a note");
+
+            player.getInventory().setItem(9, new ItemStack(Items.PAPER, 3));
+            player.getInventory().setItem(20, new ItemStack(Items.PAPER, 5));
+            player.messages.clear();
+            use(player);
+            helper.assertValueEqual(player.getInventory().getItem(9).getCount(), 2, "First paper stack was not consumed");
+            helper.assertValueEqual(player.getInventory().getItem(20).getCount(), 5, "Later paper stack was consumed first");
+            helper.assertValueEqual(player.getOffhandItem().getCount(), 4, "Successful scan consumed offhand paper");
+            helper.assertValueEqual(count(player, PortContent.CELESTIAL_NOTES.get()), 1, "Valid main-inventory materials did not create a note");
         } finally {
             level.setDayTime(previousDayTime);
         }

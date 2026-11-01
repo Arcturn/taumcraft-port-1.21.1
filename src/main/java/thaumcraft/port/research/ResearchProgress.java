@@ -27,6 +27,20 @@ public final class ResearchProgress {
         var storage=ResearchStorage.get(player.getServer());
         if(storage.player(player.getUUID()).craft(LegacyRequirement.craftKey(output)))storage.setDirty();
     }
+    /** Original scripted discoveries complete stages without spending their book requirements. */
+    public static boolean completeResearch(ServerPlayer player,String key) {
+        if(key==null||key.isBlank())return false;
+        var storage=ResearchStorage.get(player.getServer());var state=storage.player(player.getUUID());
+        if(state.knows(key))return false;
+        var entry=ResearchCatalog.get(key);
+        if(entry==null){if(!state.flag(key))return false;}
+        else {
+            if(!entry.parents().stream().allMatch(state::knows))return false;
+            completeSibling(player,state,entry,new Notifications(false));
+        }
+        storage.setDirty();
+        return true;
+    }
     public static void sync(ServerPlayer player){
         var storage=ResearchStorage.get(player.getServer());var s=storage.player(player.getUUID());deliverAddenda(player,s);deliverKnowledgeGains(player,s);var tag=snapshot(storage,s);
         var aura=thaumcraft.port.world.AuraSystem.get(player.serverLevel(),player.blockPosition());if(aura!=null){tag.putFloat("auraBase",aura.base());tag.putFloat("auraVis",aura.vis());tag.putFloat("auraFlux",aura.flux());}
@@ -80,7 +94,8 @@ public final class ResearchProgress {
                 if(amount<0)return;costs.merge(parts[0]+";"+parts[1],amount,Integer::sum);
             }
             for(var cost:costs.entrySet()) {var parts=cost.getKey().split(";");if(state.knowledge(parts[0],parts[1])<cost.getValue())return;}
-            var inventory=player.getInventory();int[] take=new int[inventory.getContainerSize()];
+            // TC6's obtain requirements use mainInventory, never armor or the off hand.
+            var inventory=player.getInventory();int[] take=new int[inventory.items.size()];
             for(String encoded:ResearchCatalog.strings(stage,"required_item")) {
                 var requirement=LegacyRequirement.parse(encoded);int needed=requirement.count();
                 for(int slot=0;slot<take.length&&needed>0;slot++) {

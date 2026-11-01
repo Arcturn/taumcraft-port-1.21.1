@@ -22,7 +22,7 @@ public final class TheoryFixtures {
         require(menu.slots.size()==38&&menu.getSlot(0).x==16&&menu.getSlot(0).y==15&&menu.getSlot(1).x==224&&menu.getSlot(1).y==16,"Original table slot coordinates");checks++;
         require(menu.getSlot(0).mayPlace(ink)&&!menu.getSlot(0).mayPlace(new ItemStack(Items.PAPER))&&menu.getSlot(0).getMaxStackSize()==1&&menu.getSlot(1).mayPlace(new ItemStack(Items.PAPER))&&!menu.getSlot(1).mayPlace(ink),"Ink and paper filters");checks++;
         for(int i=0;i<27;i++){var slot=menu.getSlot(i+2);require(slot.x==77+i%9*18&&slot.y==190+i/9*18&&slot.getSlotIndex()==9+i,"TC6 main inventory layout");checks++;}
-        for(int i=0;i<9;i++){var slot=menu.getSlot(i+29);require(slot.x==20+i%3*18&&slot.y==190+i/3*18&&slot.getSlotIndex()==i,"TC6 3x3 hotbar layout");checks++;}
+        for(int i=0;i<9;i++){var slot=menu.getSlot(i+29);require(slot.x==20+i/3*18&&slot.y==190+i%3*18&&slot.getSlotIndex()==i/3+i%3*3,"TC6 3x3 hotbar layout");checks++;}
         var state=new ResearchState();state.completeCatalog();
         var ctx=new TheoryCards.Context(){public ResearchState research(){return state;}public int levels(){return 20;}public List<String> curios(){return List.of("thaumcraft:curio_arcane");}public int aspectTotal(String id){return 25;}};
         table.session=new TheorySession(UUID.fromString("55b20568-46de-4452-a9b3-f0bd47f8d03a"),10,List.of("Bookshelf","BasicAlchemy"));table.session.add("ALCHEMY",50);table.session.add("INFUSION",30);table.session.add("ARTIFICE",10);table.revision=17;

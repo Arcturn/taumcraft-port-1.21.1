@@ -31,7 +31,9 @@ public final class EssentiaExtensionFixtures {
         thaumatorium.setItem(0,new ItemStack(Items.IRON_INGOT,13));thaumatorium.selected.put(ResourceLocation.parse("thaumcraft:thaumium"),uuid);thaumatorium.contents.insert(Aspect.FIRE,7,false);thaumatorium.contents.insert(Aspect.ORDER,4,false);thaumatorium.capacity=3;thaumatorium.demand=Aspect.FIRE;thaumatorium.heated=true;
         var restored=new ThaumatoriumEntity(BlockPos.ZERO,thaumatorium.getBlockState());restored.loadCustomOnly(thaumatorium.saveCustomOnly(registries),registries);
         require(restored.getItem(0).getCount()==13&&restored.selected.equals(thaumatorium.selected)&&restored.contents.values().equals(thaumatorium.contents.values())&&restored.capacity==3&&restored.demand==Aspect.FIRE&&restored.heated,"Thaumatorium persists catalyst, recipe owner, accumulated essentia and status");checks++;
-        require(!restored.input(Direction.NORTH)&&!restored.input(Direction.UP)&&!restored.input(Direction.DOWN)&&restored.input(Direction.EAST)&&!restored.output(Direction.EAST),"Lower machine ports exclude front, bottom and internal top");checks++;
+        // TC6 canInputFrom permits every non-front face; only fill() skips the
+        // bottom and the lower half's internal top when actively pulling essentia.
+        require(Arrays.stream(Direction.values()).allMatch(side->restored.input(side)==(side!=restored.front())&&!restored.output(side)),"Thaumatorium exposes input on every non-front face and never outputs essentia");checks++;
         var top=new ThaumatoriumEntity(BlockPos.ZERO,EssentiaContent.THAUMATORIUM_TOP.get().defaultBlockState());require(top.input(Direction.UP)&&!top.output(Direction.UP)&&top.main()==null&&top.suction(Direction.UP)==0,"Detached top cannot consume or expose a stale master");checks++;
         var recipe=new CrucibleRecipe("",Ingredient.of(Items.IRON_INGOT),Map.of("ignis",8,"ordo",4),new ItemStack(Items.GOLD_INGOT));
         require(ThaumatoriumEntity.missing(recipe,restored.contents)==Aspect.FIRE,"Machine requests the remaining required aspect");checks++;

@@ -23,7 +23,7 @@ public final class TheoryMenu extends AbstractContainerMenu {
         addSlot(new Slot(table,0,16,15){public boolean mayPlace(ItemStack s){return s.is(PortContent.SCRIBING_TOOLS.get());}public int getMaxStackSize(){return 1;}});
         addSlot(new Slot(table,1,224,16){public boolean mayPlace(ItemStack s){return s.is(Items.PAPER);}});
         for(int y=0;y<3;y++)for(int x=0;x<9;x++)addSlot(new Slot(inv,9+x+y*9,77+x*18,190+y*18));
-        for(int y=0;y<3;y++)for(int x=0;x<3;x++)addSlot(new Slot(inv,x+y*3,20+x*18,190+y*18));
+        for(int x=0;x<3;x++)for(int y=0;y<3;y++)addSlot(new Slot(inv,x+y*3,20+x*18,190+y*18));
     }
     @Override public boolean stillValid(Player p){return table instanceof ResearchTableEntity?table.stillValid(p):p.level().getBlockState(pos).is(TheoryContent.TABLE.get())&&p.distanceToSqr(pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5)<=64;}
     @Override public ItemStack quickMoveStack(Player p,int index){
@@ -44,7 +44,7 @@ public final class TheoryMenu extends AbstractContainerMenu {
     }
     @Override public void broadcastChanges(){
         super.broadcastChanges();if(!(player instanceof ServerPlayer sp)||!(table instanceof ResearchTableEntity entity))return;
-        if(entity.session!=null&&entity.session.owner.equals(player.getUUID())){
+        if(entity.session!=null){
             var context=TheoryItems.context(sp);boolean changed=false;
             for(int i=0;i<entity.session.choices.size();i++){var old=entity.session.choices.get(i);var fresh=TheoryCards.refreshValue(old,context);if(!old.equals(fresh)){entity.session.choices.set(i,fresh);changed=true;}}
             var last=TheoryCards.refreshValue(entity.session.lastDraw,context);if(!Objects.equals(last,entity.session.lastDraw)){entity.session.lastDraw=last;changed=true;}
@@ -52,7 +52,7 @@ public final class TheoryMenu extends AbstractContainerMenu {
         }
         if(player.level().getGameTime()-aidCheck>=100){aids=List.copyOf(entity.nearbyAids());aidCheck=player.level().getGameTime();}
         var tag=new CompoundTag();if(entity.session!=null)tag.putString("session",entity.session.encode());
-        tag.putString("aids",String.join(",",aids));tag.putInt("inspiration",TheorySession.availableInspiration(ResearchStorage.get(sp.getServer()).player(sp.getUUID())));tag.putLong("revision",entity.revision);tag.putBoolean("owned",entity.session==null||entity.session.owner.equals(player.getUUID()));
+        tag.putString("aids",String.join(",",aids));tag.putInt("inspiration",TheorySession.availableInspiration(ResearchStorage.get(sp.getServer()).player(sp.getUUID())));tag.putLong("revision",entity.revision);tag.putBoolean("owned",true);
         if(!tag.equals(lastSent)){PacketDistributor.sendToPlayer(sp,new TheorySyncPayload(containerId,token,tag));lastSent=tag.copy();}
     }
     public void receive(String nonce,CompoundTag tag){token=nonce;revision=tag.getLong("revision");view=tag.contains("session")?TheorySession.decode(tag.getString("session")):null;aids=tag.getString("aids").isEmpty()?List.of():List.of(tag.getString("aids").split(","));inspiration=tag.getInt("inspiration");owned=tag.getBoolean("owned");}

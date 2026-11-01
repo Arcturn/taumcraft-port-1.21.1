@@ -41,7 +41,12 @@ public final class ResearchState {
             return false;
         }
         discoverAspects(aspects);
-        return scanned.add(scanKey(subject));
+        return recordScanSubject(subject);
+    }
+
+    /** ScanGeneric and ScanAspect have independent predicates in the original scanner. */
+    boolean recordScanSubject(String subject) {
+        return subject != null && !subject.isBlank() && scanned.add(scanKey(subject));
     }
 
     /** ScanAspect is independent of ScanGeneric: variants can reveal a new aspect only once. */

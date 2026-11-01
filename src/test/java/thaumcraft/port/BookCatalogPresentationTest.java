@@ -33,8 +33,6 @@ class BookCatalogPresentationTest {
     private static final Set<String> ORIGINAL_STALE_IDS = Set.of(
             "thaumcraft:JarLabelEssence", "thaumcraft:arcane_brick",
             "thaumcraft:arcane_stone", "thaumcraft:nitorcolor");
-    private static final Set<String> STILL_UNRESOLVED = Set.of(
-            "thaumcraft:JarLabelEssence", "thaumcraft:nitorcolor");
     private static final List<String> REQUIREMENT_FIELDS = List.of(
             "required_research", "required_item", "required_craft", "required_knowledge");
     // Deliberately deterministic metrics for content integrity, not a pixel-parity oracle.
@@ -62,7 +60,7 @@ class BookCatalogPresentationTest {
         return references;
     }
 
-    @Test void originalCatalogScopeAndFourStaleIdsStayExplicit() {
+    @Test void originalCatalogScopeAndAllRecipeReferencesResolve() {
         assertEquals(148, ResearchCatalog.all().size());
         assertEquals(271, stages().count());
         assertEquals(16, ResearchCatalog.all().stream().mapToInt(entry -> entry.addenda().size()).sum());
@@ -70,11 +68,35 @@ class BookCatalogPresentationTest {
         assertTrue(references().containsAll(ORIGINAL_STALE_IDS));
         var unresolved = new LinkedHashSet<String>();
         for (String key : references()) if (BookRecipeCatalog.recipes(key).isEmpty()) unresolved.add(key);
-        assertEquals(STILL_UNRESOLVED, unresolved,
-                "No new missing tab may be hidden inside the original four-ID exception");
-        // These two stale TC6 IDs intentionally resolve to the port's modern recipes.
+        assertTrue(unresolved.isEmpty(), "Missing recipe tabs: " + unresolved);
+        // All four stale TC6 IDs resolve without editing the original page definitions.
         assertFalse(BookRecipeCatalog.recipes("thaumcraft:arcane_stone").isEmpty());
         assertFalse(BookRecipeCatalog.recipes("thaumcraft:arcane_brick").isEmpty());
+    }
+
+    @Test void oldColorAndEssenceReferencesExposeEveryOriginalVariant() {
+        var colors = BookRecipeCatalog.recipes("thaumcraft:nitorcolor");
+        assertEquals(16, colors.size(), "ConfigRecipes registers one dye recipe for each original color");
+        assertEquals(16, colors.stream().map(BookRecipeCatalog::output).distinct().count());
+        assertTrue(colors.stream().allMatch(recipe -> recipe.get("book_group").getAsString().equals("thaumcraft:nitorgroup")));
+        var labels = BookRecipeCatalog.recipes("thaumcraft:JarLabelEssence");
+        assertEquals(37, labels.size(), "The essence tab needs all TC6 aspect labels");
+        for (var aspect : thaumcraft.port.aspect.Aspect.values()) {
+            var expected = BookRecipeCatalog.recipes("thaumcraft:label_" + aspect.id()).getFirst();
+            assertTrue(labels.contains(expected), "Missing label for " + aspect.id());
+            int variant = BookRecipeCatalog.variant("thaumcraft:JarLabelEssence", BookRecipeCatalog.output(expected),
+                    new ResearchState(), java.util.function.UnaryOperator.identity());
+            assertTrue(variant >= 0, "Ingredient links must be able to open the aspect's recipe");
+            assertEquals(expected, labels.get(variant));
+            var reference = BookRecipeCatalog.reference(BookRecipeCatalog.output(expected), new ResearchState(),
+                    java.util.function.UnaryOperator.identity());
+            assertNotNull(reference);
+            assertEquals("thaumcraft:jarlabels", reference.recipe(), "Ingredient navigation uses the registered group");
+            assertEquals(expected, BookRecipeCatalog.recipes(reference.recipe()).get(reference.variant()),
+                    "The canonical group's blank-label recipes must not shift the selected aspect");
+        }
+        assertFalse(labels.contains(BookRecipeCatalog.recipes("thaumcraft:JarLabel").getFirst()),
+                "The existing blank-label tab must not be duplicated among essence variants");
     }
 
     @TestFactory Stream<DynamicTest> everyStageHasAnIsolatedInProgressPresentation() {
@@ -97,10 +119,7 @@ class BookCatalogPresentationTest {
             }
             for (String key : ResearchCatalog.strings(test.stage(), "recipes")) {
                 var catalog = BookRecipeCatalog.recipes(key);
-                if (catalog.isEmpty()) {
-                    assertTrue(STILL_UNRESOLVED.contains(key), "Unregistered recipe tab: " + key);
-                    continue;
-                }
+                assertFalse(catalog.isEmpty(), "Unregistered recipe tab: " + key);
                 // A stage may name a future gated tab. Empty here is legal; a tab
                 // with a gate the isolated player lacks must never become visible.
                 for (var recipe : BookRecipeCatalog.recipes(key, state)) {

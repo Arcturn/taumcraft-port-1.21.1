@@ -42,6 +42,42 @@ class ScanObservationTest {
         assertEquals(1, copy.scanned().size());
     }
 
+    @Test void genericFallbackAndAspectDiscoveryRemainIndependent() {
+        var state = new ResearchState();
+        var bucketAspects = Map.of(Aspect.WATER, 20, Aspect.METAL, 5);
+        var liquid = new ScanObservation("item:minecraft:water_bucket", bucketAspects, Set.of(), Set.of());
+        assertTrue(liquid.canLearn(state));
+        assertTrue(liquid.learn(state));
+        assertEquals(Set.of("item:minecraft:water_bucket"), state.scanned());
+        assertTrue(state.discovered().isEmpty());
+        assertFalse(state.knows("!aqua"));
+        assertEquals(ResearchCatalog.observation("BASICS", bucketAspects), state.knowledge("OBSERVATION", "BASICS"));
+        assertFalse(liquid.canLearn(state));
+        assertFalse(liquid.learn(state));
+
+        var copy = ResearchCodec.read(ResearchCodec.write(state));
+        var bucket = new ScanObservation("item:minecraft:water_bucket", bucketAspects, Set.of());
+        assertTrue(bucket.canLearn(copy));
+        assertTrue(bucket.learn(copy));
+        assertEquals(state.knowledge("OBSERVATION", "BASICS") + 2, copy.knowledge("OBSERVATION", "BASICS"));
+        assertEquals(Set.of("aqua", "metallum"), copy.discovered());
+        assertEquals(state.scanned(), copy.scanned());
+        assertFalse(bucket.learn(copy));
+    }
+
+    @Test void genericScanAnnouncesKnowledgeInOriginalCategoryRegistrationOrder() {
+        var state = new ResearchState();
+        var categories = List.of("BASICS", "AUROMANCY", "ALCHEMY", "ARTIFICE", "INFUSION", "GOLEMANCY", "ELDRITCH");
+        categories.forEach(category -> state.addKnowledge("OBSERVATION", category, 15));
+        var aspects = new EnumMap<Aspect, Integer>(Aspect.class);
+        for (Aspect aspect : Aspect.values()) aspects.put(aspect, 1);
+        var scan = new ScanObservation("item:test:all_aspects", aspects, Set.of(), Set.of());
+        assertTrue(scan.learn(state));
+        assertEquals(categories, state.drainKnowledgeGains().stream().map(ResearchState.KnowledgeGain::category).toList());
+        assertFalse(scan.learn(state));
+        assertTrue(state.drainKnowledgeGains().isEmpty());
+    }
+
     @Test void oldIncorrectFlagsMigrateWithoutRemovingKnowledgeOrOldFlags() {
         var state = new ResearchState();
         state.flag("!enchantment.efficiency"); state.flag("!potion.nausea"); state.flag("!potion.fireResistance");
@@ -70,9 +106,12 @@ class ScanObservationTest {
 
     @Test void observationsDoNotRetainMutableInputCollections() {
         var aspects = new LinkedHashMap<>(Map.of(Aspect.AIR, 1)); var flags = new HashSet<>(Set.of("f_FLY"));
-        var observation = new ScanObservation("entity:test:bird", aspects, flags);
-        aspects.clear(); flags.clear();
+        var discoveries = new HashSet<>(Set.of(Aspect.AIR));
+        var observation = new ScanObservation("entity:test:bird", aspects, flags, discoveries);
+        aspects.clear(); flags.clear(); discoveries.clear();
         assertEquals(Map.of(Aspect.AIR, 1), observation.aspects()); assertEquals(Set.of("f_FLY"), observation.discoveries());
+        assertEquals(Set.of(Aspect.AIR), observation.aspectDiscoveries());
         assertThrows(UnsupportedOperationException.class, () -> observation.discoveries().clear());
+        assertThrows(UnsupportedOperationException.class, () -> observation.aspectDiscoveries().clear());
     }
 }
