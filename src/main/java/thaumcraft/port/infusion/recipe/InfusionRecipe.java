@@ -12,7 +12,9 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
+import net.neoforged.neoforge.common.ItemAbilities;
 import thaumcraft.port.aspect.Aspect;
+import thaumcraft.port.crafting.IngredientMatching;
 import thaumcraft.port.research.ResearchStorage;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
@@ -41,12 +43,11 @@ public record InfusionRecipe(String research, Ingredient input, List<Ingredient>
     public boolean matches(ServerPlayer player,ItemStack central,List<ItemStack> pedestals){
         if(player==null)return false;
         var state=ResearchStorage.get(player.getServer()).player(player.getUUID());
-        // BETA26 deliberately checks discovery rather than completion for runic augmentation.
-        boolean unlocked=operation.equals("runic")?state.isResearchKnown(research):state.knows(research);
-        return unlocked&&matches(new InfusionInput(central,pedestals),player.level());
+        // Both InfusionRecipe and ThaumcraftCapabilities.knowsResearch use discovery in BETA26.
+        return state.isResearchKnown(research)&&matches(new InfusionInput(central,pedestals),player.level());
     }
     @Override public boolean matches(InfusionInput in,Level level){
-        if(in.central().isEmpty()||(!input.isEmpty()&&!input.test(in.central())))return false;
+        if(in.central().isEmpty()||(!input.isEmpty()&&!IngredientMatching.test(input,in.central())))return false;
         if(operation.equals("runic")&&(!(in.central().getItem() instanceof ArmorItem||in.central().getItem() instanceof ICurioItem)||InfusionAugments.getRunic(in.central())>=127))return false;
         if(operation.equals("enchantment")&&(InfusionAugments.getEnchantment(in.central(),parameter)>=InfusionAugments.maxLevel(parameter)||!canEnchant(in.central(),parameter)))return false;
         return matchComponents(components(in.central()),in.components());
@@ -63,11 +64,12 @@ public record InfusionRecipe(String research, Ingredient input, List<Ingredient>
         return true;
     }
     private static boolean assign(int ingredient,List<Ingredient> ingredients,List<ItemStack> stacks,int[] assigned,boolean[] seen){
-        for(int n=0;n<stacks.size();n++)if(!seen[n]&&ingredients.get(ingredient).test(stacks.get(n))){seen[n]=true;if(assigned[n]<0||assign(assigned[n],ingredients,stacks,assigned,seen)){assigned[n]=ingredient;return true;}}
+        for(int n=0;n<stacks.size();n++)if(!seen[n]&&IngredientMatching.test(ingredients.get(ingredient),stacks.get(n))){seen[n]=true;if(assigned[n]<0||assign(assigned[n],ingredients,stacks,assigned,seen)){assigned[n]=ingredient;return true;}}
         return false;
     }
     public static boolean canEnchant(ItemStack stack,String enchantment){
-        boolean axe=stack.getItem() instanceof AxeItem,pick=stack.getItem() instanceof PickaxeItem,shovel=stack.getItem() instanceof ShovelItem;
+        // NeoForge abilities replace TC6's getToolClasses, including the crusher's pickaxe/shovel pair.
+        boolean axe=stack.canPerformAction(ItemAbilities.AXE_DIG),pick=stack.canPerformAction(ItemAbilities.PICKAXE_DIG),shovel=stack.canPerformAction(ItemAbilities.SHOVEL_DIG);
         boolean[] weapon={false};stack.getAttributeModifiers().forEach(EquipmentSlot.MAINHAND,(attribute,modifier)->{if(attribute.equals(Attributes.ATTACK_DAMAGE))weapon[0]=true;});
         return switch(enchantment){case "collector"->axe||pick||shovel||weapon[0];case "destructive","lamplight"->axe||pick||shovel;case "burrowing"->axe||pick;case "sounding","refining"->pick;case "arcing","essence"->weapon[0];default->false;};
     }
@@ -97,7 +99,9 @@ public record InfusionRecipe(String research, Ingredient input, List<Ingredient>
         }
         float modifier=1;
         if(operation.equals("enchantment")){
-            int level=InfusionAugments.getEnchantment(central,parameter);int other=InfusionAugments.enchantments(central).size()-(level>0?1:0);modifier=level+1+other*.33f;
+            if(central.isEmpty())return Map.of();
+            int level=InfusionAugments.getEnchantment(central,parameter);if(level>=InfusionAugments.maxLevel(parameter))return Map.of();
+            int other=InfusionAugments.enchantments(central).size()-(level>0?1:0);modifier=level+1+other*.33f;
         }
         var result=new LinkedHashMap<Aspect,Integer>();for(var entry:baseAspects.entrySet())result.put(Aspect.byId(entry.getKey()).orElseThrow(),(int)(entry.getValue()*modifier));return Collections.unmodifiableMap(result);
     }

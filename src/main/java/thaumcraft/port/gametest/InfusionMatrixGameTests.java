@@ -1,6 +1,7 @@
 package thaumcraft.port.gametest;
 
 import java.util.*;
+import com.mojang.serialization.JsonOps;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -19,6 +20,7 @@ import net.neoforged.neoforge.gametest.*;
 import thaumcraft.port.alchemy.material.AlchemyMaterials;
 import thaumcraft.port.aspect.Aspect;
 import thaumcraft.port.content.RevealingReadout;
+import thaumcraft.port.data.InfusionCraftingFixtures;
 import thaumcraft.port.essentia.*;
 import thaumcraft.port.infusion.matrix.*;
 import thaumcraft.port.infusion.recipe.*;
@@ -205,6 +207,42 @@ public final class InfusionMatrixGameTests {
         helper.assertFalse(MatrixSources.inRange(origin,origin.above(12)),"Original upper range is exclusive");helper.assertFalse(MatrixSources.inRange(origin,origin.east(13)),"Outside source accepted");helper.assertFalse(MatrixSources.inRange(origin,origin),"Matrix must not draw from itself");
         var jar=jar(helper,MATRIX.offset(-10,-4,10),Aspect.MAGIC,17);var target=new MatrixSources().providing(helper.getLevel(),origin,Aspect.MAGIC);
         helper.assertTrue(target!=null&&target.source()==jar,"Matrix did not discover rear/below remote jar");helper.succeed();
+    }
+    @GameTest(template=TEMPLATE,batch="infusion_matrix",timeoutTicks=120)
+    public static void everyPreviouslyMissingOriginalInfusionCompletesAnExactAltarTransaction(GameTestHelper helper){
+        var ops=helper.getLevel().registryAccess().createSerializationContext(JsonOps.INSTANCE);int crafted=0;
+        for(var expected:InfusionCraftingFixtures.entries()){
+            if(!expected.get("added_in_alpha930").getAsBoolean())continue;
+            String id=expected.get("recipe").getAsString();var matrix=altar(helper,StructureContent.PILLAR_ARCANE.get());
+            var player=GameTestPlayers.create(helper);player.setPos(matrix.getBlockPos().getX()+.5,matrix.getBlockPos().getY()+1,matrix.getBlockPos().getZ()+.5);
+            var input=InfusionCraftingFixtures.central(expected,ops);var originalComponents=InfusionCraftingFixtures.components(expected,ops);var costs=InfusionCraftingFixtures.aspects(expected);
+            var center=(PedestalEntity)helper.getBlockEntity(MATRIX.below(2));center.setItem(0,input.copy());
+            var pedestals=new ArrayList<PedestalEntity>();
+            for(int i=0;i<originalComponents.size();i++){var offset=COMPONENTS[i];var pedestal=pedestal(helper,MATRIX.offset(offset[0],-2,offset[1]),StructureContent.PEDESTAL_ARCANE.get());pedestal.setItem(0,originalComponents.get(i).copy());pedestals.add(pedestal);}
+            var jars=new LinkedHashMap<Aspect,JarEntity>();int index=0;
+            for(var cost:costs.entrySet())jars.put(cost.getKey(),jar(helper,MATRIX.offset(10,-2,index++-3),cost.getKey(),cost.getValue()+3));
+            helper.assertTrue(matrix.activateOrStart(player),"Independent fixture could not activate altar: "+id);
+            helper.assertFalse(matrix.activateOrStart(player),"Missing research allowed original infusion: "+id);
+            helper.assertTrue(pedestals.stream().noneMatch(PedestalEntity::isEmpty),"Rejected infusion consumed ingredients: "+id);
+            ResearchStorage.get(helper.getLevel().getServer()).player(player.getUUID()).stage(expected.get("research").getAsString().split("@")[0],256,false);
+            helper.assertTrue(matrix.activateOrStart(player),"Original source inputs did not start live infusion: "+id);
+            helper.assertValueEqual(matrix.remainingEssentia(),costs,"Live altar changed original essentia costs: "+id);
+            int total=costs.values().stream().mapToInt(Integer::intValue).sum();
+            // Hold the altar stable so this checks payment/recipes independently of random mishaps.
+            for(int i=0;i<total;i++){matrix.stability=25;matrix.craftCycle();}
+            helper.assertTrue(matrix.remainingEssentia().isEmpty(),"Original essentia phase did not finish exactly: "+id);
+            helper.assertTrue(pedestals.stream().noneMatch(PedestalEntity::isEmpty),"Ingredients consumed before essentia completed: "+id);
+            for(var jar:jars.values())helper.assertValueEqual(jar.storedAmount(),3,"Live altar overcharged or undercharged an aspect: "+id);
+            for(int i=0;matrix.crafting&&i<originalComponents.size()*6+2;i++){matrix.stability=25;matrix.craftCycle();}
+            helper.assertFalse(matrix.crafting,"Original infusion failed to finish: "+id);
+            InfusionCraftingFixtures.verifyOutput(expected,center.getItem(0),input,ops);
+            for(int i=0;i<pedestals.size();i++)helper.assertTrue(ItemStack.matches(pedestals.get(i).getItem(0),originalComponents.get(i).getCraftingRemainingItem()),"Infusion consumed incorrectly or lost a container: "+id+" pedestal "+i);
+            for(var jar:jars.values())helper.assertValueEqual(jar.storedAmount(),3,"Finishing infusion charged essentia twice: "+id);
+            for(var pedestal:pedestals)helper.getLevel().removeBlock(pedestal.getBlockPos(),false);
+            for(var jar:jars.values())helper.getLevel().removeBlock(jar.getBlockPos(),false);
+            helper.getLevel().removeBlock(matrix.getBlockPos(),false);crafted++;
+        }
+        helper.assertValueEqual(crafted,26,"Not all 26 missing original infusions reached the real altar transaction");helper.succeed();
     }
     private static Ritual ritual(GameTestHelper helper,String id,ItemStack input,boolean known,boolean supply){
         var matrix=altar(helper,StructureContent.PILLAR_ARCANE.get());var recipe=recipe(helper,id);var player=GameTestPlayers.create(helper);

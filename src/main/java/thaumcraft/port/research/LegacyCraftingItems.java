@@ -7,7 +7,8 @@ public final class LegacyCraftingItems {
     private static final Map<Integer, String> SEALS = Map.ofEntries(
             Map.entry(0, "blank"), Map.entry(1, "pickup"), Map.entry(2, "pickup_advanced"),
             Map.entry(3, "fill"), Map.entry(4, "fill_advanced"), Map.entry(5, "empty"),
-            Map.entry(6, "empty_advanced"), Map.entry(9, "guard"), Map.entry(10, "guard_advanced"),
+            Map.entry(6, "empty_advanced"), Map.entry(7, "harvest"), Map.entry(8, "butcher"),
+            Map.entry(9, "guard"), Map.entry(10, "guard_advanced"),
             Map.entry(11, "lumber"), Map.entry(12, "breaker"), Map.entry(13, "use"),
             Map.entry(14, "provider"), Map.entry(15, "stock"), Map.entry(16, "breaker_advanced"));
 
@@ -19,7 +20,12 @@ public final class LegacyCraftingItems {
         String item = switch (parts[0]) {
             case "thaumcraft:mind" -> meta == 0 ? "mind_clockwork" : meta == 1 ? "mind_biothaumic" : null;
             case "thaumcraft:module" -> meta == 0 ? "module_vision" : meta == 1 ? "module_aggression" : null;
-            case "thaumcraft:turret" -> meta == 0 ? "turret_placer_basic" : meta == 1 ? "turret_placer_advanced" : null;
+            case "thaumcraft:turret" -> switch (meta) {
+                case 0 -> "turret_placer_basic";
+                case 1 -> "turret_placer_advanced";
+                case 2 -> "turret_placer_bore";
+                default -> null;
+            };
             case "thaumcraft:seal" -> SEALS.containsKey(meta) ? "seal_" + SEALS.get(meta) : null;
             // The captured book also uses a seal type token, rather than an NBT compound.
             case "thaumcraft:seals" -> parts.length == 4 && parts[3].startsWith("thaumcraft:")

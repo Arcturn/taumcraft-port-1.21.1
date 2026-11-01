@@ -30,6 +30,8 @@ public record LegacyRequirement(String source,int count,String craftKey,Predicat
             if(id.equals("minecraft:dye"))id=meta==15?"minecraft:bone_meal":meta==0?"minecraft:ink_sac":"";
             else if(id.equals("thaumcraft:ingot"))id=switch(meta){case 0->"thaumcraft:ingot_thaumium";case 1->"thaumcraft:ingot_void";case 2->"thaumcraft:ingot_brass";default->"";};
             else if(id.equals("thaumcraft:baubles"))id=switch(meta){case 0->"thaumcraft:amulet_mundane";case 1->"thaumcraft:ring_mundane";case 2->"thaumcraft:girdle_mundane";case 3->"thaumcraft:ring_apprentice";case 4->"thaumcraft:amulet_fancy";case 5->"thaumcraft:ring_fancy";case 6->"thaumcraft:girdle_fancy";default->"";};
+            // Keep the book's crafted/found subtype labels; the registered amulet is crafted.
+            else if(id.equals("thaumcraft:amulet_vis")&&meta==1)id="thaumcraft:amulet_vis";
             else if(id.equals("thaumcraft:stone_arcane"))id="thaumcraft:arcane_stone";
             else if(id.equals("thaumcraft:stone_arcane_brick"))id="thaumcraft:arcane_brick";
             else if(id.equals("thaumcraft:nugget"))id=switch(meta){case 0->"minecraft:iron_nugget";case 5->"thaumcraft:nugget_quicksilver";case 6->"thaumcraft:nugget_thaumium";case 7->"thaumcraft:nugget_void";case 8->"thaumcraft:nugget_brass";case 9->"thaumcraft:nugget_quartz";case 10->"thaumcraft:rareearth";default->"";};

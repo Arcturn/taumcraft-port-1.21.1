@@ -3,6 +3,8 @@
   "values": [
     "thaumcraft:goggles",
     "thaumcraft:thaumium_helm",
-    "thaumcraft:fortress_helm"
+    "thaumcraft:fortress_helm",
+    "thaumcraft:void_helm",
+    "thaumcraft:void_robe_helm"
   ]
 }

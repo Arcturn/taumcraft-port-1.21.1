@@ -1,0 +1,45 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "LAMPFERTILITY",
+  "input": {
+    "item": "thaumcraft:lamp_arcane"
+  },
+  "components": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "type": "neoforge:components",
+      "items": "thaumcraft:crystal_essence",
+      "components": {
+        "thaumcraft:crystal_aspect": "ignis"
+      }
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "type": "neoforge:components",
+      "items": "thaumcraft:crystal_essence",
+      "components": {
+        "thaumcraft:crystal_aspect": "ignis"
+      }
+    }
+  ],
+  "aspects": {
+    "bestia": 20,
+    "lux": 15,
+    "victus": 15,
+    "desiderium": 15
+  },
+  "instability": 4,
+  "result": {
+    "id": "thaumcraft:lamp_fertility"
+  }
+}

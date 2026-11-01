@@ -1,0 +1,4 @@
+{
+  "parent": "thaumcraft:research/legacy/block/void_siphon",
+  "render_type": "minecraft:cutout"
+}

@@ -15,6 +15,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
+import net.minecraft.world.phys.AABB;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -30,6 +31,8 @@ public final class InfusionMatrixRenderer implements BlockEntityRenderer<Infusio
     private static final ResourceLocation NORMAL=texture("normal"),ANCIENT=texture("ancient"),ELDRITCH=texture("eldritch");
     public InfusionMatrixRenderer(BlockEntityRendererProvider.Context context){}
     @SubscribeEvent public static void register(EntityRenderersEvent.RegisterRenderers event){event.registerBlockEntityRenderer(MatrixContent.ENTITY.get(),InfusionMatrixRenderer::new);}
+    // TC6 expands the tile's render bounds for its moving pieces; NeoForge owns this hook on the renderer.
+    @Override public AABB getRenderBoundingBox(InfusionMatrixEntity matrix){return new AABB(matrix.getBlockPos()).inflate(.1);}
     private static ModelPart.Cube cube(int v){return new ModelPart.Cube(0,v,-8,-8,-8,16,16,16,0,0,0,false,64,64,EnumSet.allOf(Direction.class));}
     private static ResourceLocation texture(String variant){return ResourceLocation.parse("thaumcraft:textures/blocks/infuser_"+variant+".png");}
     @Override public void render(InfusionMatrixEntity matrix,float partial,PoseStack pose,MultiBufferSource buffers,int light,int overlay){
@@ -53,27 +56,32 @@ public final class InfusionMatrixRenderer implements BlockEntityRenderer<Infusio
         if(matrix.crafting&&matrix.craftCount>0)halo(pose,buffers.getBuffer(Layers.HALO),matrix.craftCount);
     }
     static void halo(PoseStack pose,VertexConsumer buffer,int count){
+        emitHalo(pose,buffer,count,Minecraft.useFancyGraphics()?20:10);
+    }
+    /** TC6's POSITION_COLOR buffer writes an unsigned byte, even after the first 500 ticks. */
+    static int haloAlpha(int count){return ((int)(255*(1-count/500f)))&255;}
+    static void emitHalo(PoseStack pose,VertexConsumer buffer,int count,int quality){
         pose.pushPose();pose.translate(.5,.5,.5);Random random=new Random(245);
         float fraction=count/500f,scale=Math.min(count,50)/1000f;
-        int quality=Minecraft.useFancyGraphics()?20:10;
         for(int i=0;i<quality;i++){
             pose.mulPose(Axis.XP.rotationDegrees(random.nextFloat()*360));pose.mulPose(Axis.YP.rotationDegrees(random.nextFloat()*360));pose.mulPose(Axis.ZP.rotationDegrees(random.nextFloat()*360));
             pose.mulPose(Axis.XP.rotationDegrees(random.nextFloat()*360));pose.mulPose(Axis.YP.rotationDegrees(random.nextFloat()*360));pose.mulPose(Axis.ZP.rotationDegrees(random.nextFloat()*360+fraction*360));
             float length=(random.nextFloat()*20+5)*scale,width=(random.nextFloat()*2+1)*scale;
             float[][] corners={{-.866f*width,length,-.5f*width},{.866f*width,length,-.5f*width},{0,length,width}};
             for(int side=0;side<3;side++){
-                buffer.addVertex(pose.last().pose(),0,0,0).setColor(255,255,255,Mth.clamp((int)(255*(1-fraction)),0,255));
+                buffer.addVertex(pose.last().pose(),0,0,0).setColor(255,255,255,haloAlpha(count));
                 for(int vertex:new int[]{side,(side+1)%3})buffer.addVertex(pose.last().pose(),corners[vertex][0],corners[vertex][1],corners[vertex][2]).setColor(255,0,255,0);
             }
         }
         pose.popPose();
     }
     private static final class Layers extends RenderType {
+        // TC6 blends SRC_ALPHA, ONE. Vanilla ADDITIVE_TRANSPARENCY uses ONE, ONE and loses pulses and ray gradients.
         static final Map<ResourceLocation,RenderType> GLOW=Map.of(NORMAL,glow(NORMAL),ANCIENT,glow(ANCIENT),ELDRITCH,glow(ELDRITCH));
         static final RenderType HALO=create("thaumcraft_matrix_halo",DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.TRIANGLES,1536,false,false,
-                CompositeState.builder().setShaderState(POSITION_COLOR_SHADER).setTransparencyState(ADDITIVE_TRANSPARENCY).setCullState(CULL).setWriteMaskState(COLOR_WRITE).createCompositeState(false));
+                CompositeState.builder().setShaderState(POSITION_COLOR_SHADER).setTransparencyState(LIGHTNING_TRANSPARENCY).setCullState(CULL).setWriteMaskState(COLOR_WRITE).createCompositeState(false));
         private static RenderType glow(ResourceLocation texture){return create("thaumcraft_matrix_runes",DefaultVertexFormat.NEW_ENTITY,VertexFormat.Mode.QUADS,1536,false,false,
-                CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_TRANSLUCENT_EMISSIVE_SHADER).setTextureState(new TextureStateShard(texture,false,false)).setTransparencyState(ADDITIVE_TRANSPARENCY).setCullState(NO_CULL).setOverlayState(OVERLAY).setLightmapState(LIGHTMAP).setWriteMaskState(COLOR_WRITE).createCompositeState(false));}
+                CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_TRANSLUCENT_EMISSIVE_SHADER).setTextureState(new TextureStateShard(texture,false,false)).setTransparencyState(LIGHTNING_TRANSPARENCY).setCullState(NO_CULL).setOverlayState(OVERLAY).setLightmapState(LIGHTMAP).setWriteMaskState(COLOR_WRITE).createCompositeState(false));}
         private Layers(){super("unused",DefaultVertexFormat.POSITION,VertexFormat.Mode.QUADS,256,false,false,()->{},()->{});}
     }
 }

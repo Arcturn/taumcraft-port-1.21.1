@@ -7,7 +7,7 @@ import top.theillusivec4.curios.api.CuriosApi;
 
 /** Shared TC6 EntityUtils/CasterManager rules; cosmetic Curios never grant effects. */
 public final class RevealingEquipment {
-    private static boolean goggles(ItemStack stack) { return stack.getItem() instanceof GogglesItem || (stack.getItem() instanceof thaumcraft.port.infusion.armor.FortressArmorItem && thaumcraft.port.infusion.recipe.InfusionAugments.goggles(stack)); }
+    private static boolean goggles(ItemStack stack) { return stack.getItem() instanceof GogglesItem || (stack.getItem() instanceof thaumcraft.port.infusion.content.VoidArmorItem armor && armor.reveals()) || (stack.getItem() instanceof thaumcraft.port.infusion.armor.FortressArmorItem && thaumcraft.port.infusion.recipe.InfusionAugments.goggles(stack)); }
 
     /** TC6 checks the main hand for popup goggles, but deliberately not the off hand. */
     public static boolean hasGoggles(Player player) {

@@ -26,12 +26,15 @@ import thaumcraft.port.research.ResearchStorage;
 import thaumcraft.port.world.AuraSystem;
 import top.theillusivec4.curios.api.CuriosApi;
 
-/** TC6's absorption-based runic shield and fortress equipment effects. */
+/** TC6's runic shield, special armor absorption and infusion equipment effects. */
 public final class InfusionEquipmentEvents {
     private static final ResourceLocation RUNIC=ResourceLocation.parse("thaumcraft:runic_capacity");
     private static final ResourceLocation ARMOR=ResourceLocation.parse("thaumcraft:fortress_set_armor");
     private static final ResourceLocation TOUGHNESS=ResourceLocation.parse("thaumcraft:fortress_set_toughness");
-    private static final Map<LivingEntity,net.neoforged.neoforge.common.damagesource.DamageContainer> FORTRESS_DAMAGE=new WeakHashMap<>();
+    private record ArmorProperty(EquipmentSlot slot,ItemStack stack,int priority,float ratio,float maximum) {}
+    private record ArmorContext(net.neoforged.neoforge.common.damagesource.DamageContainer damage,List<ArmorProperty> properties) {}
+    private record ArmorAbsorption(float remaining,Map<EquipmentSlot,Float> absorbed) {}
+    private static final Map<LivingEntity,ArmorContext> SPECIAL_DAMAGE=new WeakHashMap<>();
     public static void register(){
         NeoForge.EVENT_BUS.addListener(InfusionEquipmentEvents::tick);
         NeoForge.EVENT_BUS.addListener(InfusionEquipmentEvents::hurt);
@@ -45,7 +48,8 @@ public final class InfusionEquipmentEvents {
     }
     public static int runicCapacity(Player player){int[] n={0};worn(player,stack->n[0]+=InfusionAugments.getRunic(stack));return n[0];}
     /** Original WarpEvents includes the main hand, armor and functional baubles, but not the offhand. */
-    public static int gearWarp(Player player){int[] total={InfusionAugments.getWarp(player.getMainHandItem())};worn(player,stack->total[0]+=InfusionAugments.getWarp(stack));return total[0];}
+    public static int gearWarp(Player player){int[] total={gearWarp(player.getMainHandItem(),player)};worn(player,stack->total[0]+=gearWarp(stack,player));return total[0];}
+    private static int gearWarp(ItemStack stack,Player player){return InfusionAugments.getWarp(stack)+(stack.getItem() instanceof thaumcraft.port.infusion.content.WarpingGear gear?gear.gearWarp(stack,player):0);}
     /** TC6 checks this before warp severity selection, rather than reducing permanent warp. */
     public static int mitigateWarpSeverity(Player player,int severity){
         return mask(player)==0?Math.max(0,severity-2-player.getRandom().nextInt(4)):severity;
@@ -80,7 +84,7 @@ public final class InfusionEquipmentEvents {
     }
     private static void modifier(Player player,net.minecraft.core.Holder<net.minecraft.world.entity.ai.attributes.Attribute> type,ResourceLocation id,double value){var attribute=player.getAttribute(type);if(attribute==null)return;var old=attribute.getModifier(id);if(old!=null&&old.amount()==value)return;attribute.removeModifier(id);if(value>0)attribute.addTransientModifier(new AttributeModifier(id,value,AttributeModifier.Operation.ADD_VALUE));}
     private static void hurt(LivingIncomingDamageEvent event){
-        var victim=event.getEntity();FORTRESS_DAMAGE.remove(victim);
+        var victim=event.getEntity();SPECIAL_DAMAGE.remove(victim);
         // The incoming event precedes shield/iframe rejection. ARMOR callbacks run
         // only for an accepted hit and expose its actual pre-armor damage.
         event.addReductionModifier(net.neoforged.neoforge.common.damagesource.DamageContainer.Reduction.ARMOR,(container,reduction)->{
@@ -92,48 +96,71 @@ public final class InfusionEquipmentEvents {
             return reduction;
         });
         if(victim instanceof Player player)fortressBonuses(player);
-        if(!event.getSource().is(DamageTypeTags.BYPASSES_ARMOR)){
-            boolean hasFortress=false;for(var item:victim.getArmorSlots())if(item.getItem() instanceof FortressArmorItem){hasFortress=true;break;}
-            if(hasFortress){
-                FORTRESS_DAMAGE.put(victim,event.getContainer());
-                final int originalArmor=victim.getArmorValue();final float originalToughness=(float)victim.getAttributeValue(Attributes.ARMOR_TOUGHNESS);
-                var properties=new ArrayList<float[]>();for(var stack:victim.getArmorSlots())if(stack.getItem() instanceof FortressArmorItem armor)properties.add(new float[]{armor.getDefense()/denominator(event.getSource()),stack.getMaxDamage()+1-stack.getDamageValue()});
-                // Forge1.12 ISpecialArmor applies proportional absorption first, then the
-                // ordinary armor/toughness attributes (including the per-piece set bonus).
-                event.addReductionModifier(net.neoforged.neoforge.common.damagesource.DamageContainer.Reduction.ARMOR,(container,reduction)->{
-                    float raw=container.getNewDamage(),ratio=0;for(var property:properties)ratio+=Math.min(property[0],property[1]/Math.max(.001f,raw));ratio=Math.min(1,ratio);
-                    float remaining=net.minecraft.world.damagesource.CombatRules.getDamageAfterAbsorb(victim,raw*(1-ratio),event.getSource(),originalArmor,originalToughness);
-                    return raw-remaining;
-                });
-            }
+        var properties=armorProperties(victim,event.getSource());
+        if(!properties.isEmpty()){
+            SPECIAL_DAMAGE.put(victim,new ArmorContext(event.getContainer(),properties));
+            final int originalArmor=victim.getArmorValue();final float originalToughness=(float)victim.getAttributeValue(Attributes.ARMOR_TOUGHNESS);
+            // Source ISpecialArmor consumes higher-priority protection first: fortress
+            // fire protection precedes ordinary void robes in a mixed set.
+            event.addReductionModifier(net.neoforged.neoforge.common.damagesource.DamageContainer.Reduction.ARMOR,(container,reduction)->{
+                float raw=container.getNewDamage();var absorption=absorb(properties,raw);float remaining=absorption.remaining();
+                remaining=net.minecraft.world.damagesource.CombatRules.getDamageAfterAbsorb(victim,remaining,event.getSource(),originalArmor,originalToughness);
+                return raw-remaining;
+            });
         }
     }
-    private static float denominator(net.minecraft.world.damagesource.DamageSource source){
-        if(source.is(DamageTypes.MAGIC)||source.is(DamageTypes.INDIRECT_MAGIC))return 35;
-        return source.is(DamageTypeTags.IS_FIRE)||source.is(DamageTypeTags.IS_EXPLOSION)?20:25;
+    private static List<ArmorProperty> armorProperties(LivingEntity entity,net.minecraft.world.damagesource.DamageSource source){
+        var properties=new ArrayList<ArmorProperty>();
+        // Forge 1.12 calls handleUnblockableDamage before getProperties. Both
+        // source items inherit its false default, including for vanilla magic.
+        if(source.is(DamageTypeTags.BYPASSES_ARMOR))return properties;
+        boolean magic=source.is(net.neoforged.neoforge.common.Tags.DamageTypes.IS_MAGIC)||source.is(DamageTypes.MAGIC)||source.is(DamageTypes.INDIRECT_MAGIC);
+        for(var slot:List.of(EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET)){
+            var stack=entity.getItemBySlot(slot);boolean fortress=stack.getItem() instanceof FortressArmorItem;
+            boolean robe=stack.getItem() instanceof thaumcraft.port.infusion.content.VoidArmorItem armor&&armor.isRobe();
+            if(!fortress&&!robe)continue;
+            boolean elemental=fortress&&(source.is(DamageTypeTags.IS_FIRE)||source.is(DamageTypeTags.IS_EXPLOSION));
+            float denominator=magic?35:elemental?20:25;
+            properties.add(new ArmorProperty(slot,stack,magic||elemental?1:0,((net.minecraft.world.item.ArmorItem)stack.getItem()).getDefense()/denominator,
+                    stack.getMaxDamage()+1-stack.getDamageValue()));
+        }
+        return properties;
     }
-    private static float fortressRatio(LivingEntity entity,net.minecraft.world.damagesource.DamageSource source,float damage){float ratio=0;for(var stack:entity.getArmorSlots())if(stack.getItem() instanceof FortressArmorItem armor)ratio+=Math.min(armor.getDefense()/denominator(source),(stack.getMaxDamage()+1-stack.getDamageValue())/Math.max(.001f,damage));return Math.min(1,ratio);}
+    private static ArmorAbsorption absorb(List<ArmorProperty> properties,float raw){
+        float remaining=raw;var absorbed=new EnumMap<EquipmentSlot,Float>(EquipmentSlot.class);
+        for(int priority=1;priority>=0;priority--){
+            float ratio=0;for(var property:properties)if(property.priority()==priority)ratio+=Math.min(property.ratio(),property.maximum()/Math.max(.001f,remaining));
+            if(ratio<=0)continue;
+            float normalization=ratio>1?1/ratio:1;
+            for(var property:properties)if(property.priority()==priority){
+                float part=Math.min(property.ratio(),property.maximum()/Math.max(.001f,remaining))*normalization;
+                if(part>0)absorbed.put(property.slot(),remaining*part);
+            }
+            remaining*=1-Math.min(1,ratio);
+        }
+        return new ArmorAbsorption(remaining,absorbed);
+    }
     private static void armorHurt(net.neoforged.neoforge.event.entity.living.ArmorHurtEvent event){
         // Falling blocks/anvils hurt only the helmet before their ordinary armor pass.
         if(event.getDamageSource().is(DamageTypeTags.DAMAGES_HELMET)&&event.getArmorMap().size()==1&&event.getArmorMap().containsKey(EquipmentSlot.HEAD))return;
-        var context=FORTRESS_DAMAGE.remove(event.getEntity());if(context==null||context.getSource()!=event.getDamageSource()||event.getDamageSource().is(DamageTypeTags.BYPASSES_ARMOR))return;
-        float raw=context.getNewDamage();
-        float ratio=fortressRatio(event.getEntity(),event.getDamageSource(),raw),normal=raw*(1-ratio);
+        var context=SPECIAL_DAMAGE.remove(event.getEntity());if(context==null||context.damage().getSource()!=event.getDamageSource()||event.getDamageSource().is(DamageTypeTags.BYPASSES_ARMOR))return;
+        var absorption=absorb(context.properties(),context.damage().getNewDamage());float normal=absorption.remaining();
         for(var entry:event.getArmorMap().entrySet()){
             float damage=normal>0?Math.max(1,(int)(normal/4)):0;
-            if(entry.getValue().armorItemStack.getItem() instanceof FortressArmorItem armor)damage+=Math.max(1,(int)(raw*armor.getDefense()/denominator(event.getDamageSource())));
+            float absorbed=absorption.absorbed().getOrDefault(entry.getKey(),0f);
+            if(absorbed>0&&!event.getDamageSource().is(DamageTypes.FALL))damage+=Math.max(1,(int)absorbed);
             event.setNewDamage(entry.getKey(),damage);
         }
     }
     private static void damaged(LivingDamageEvent.Post event){
-        FORTRESS_DAMAGE.remove(event.getEntity());
+        SPECIAL_DAMAGE.remove(event.getEntity());
         if(!(event.getEntity() instanceof ServerPlayer player)||player.getPersistentData().getInt("tcRunicMaximum")==0)return;
         if(event.getReduction(net.neoforged.neoforge.common.damagesource.DamageContainer.Reduction.ABSORPTION)<=0)return;
         InfusionFxPayload.shield(player,event.getSource());
         if(player.getAbsorptionAmount()<1){player.getPersistentData().putInt("tcRunicLastCharge",0);player.getPersistentData().putLong("tcRunicNext",player.level().getGameTime()+80);}
     }
     private static void tooltip(ItemTooltipEvent event){
-        var stack=event.getItemStack();int shield=InfusionAugments.getRunic(stack),warp=InfusionAugments.getWarp(stack);
+        var stack=event.getItemStack();int shield=InfusionAugments.getRunic(stack),warp=gearWarp(stack,event.getEntity());
         if(shield>0)event.getToolTip().add(Component.translatable("item.runic.charge").append(" +"+shield).withStyle(ChatFormatting.GOLD));
         InfusionAugments.enchantments(stack).forEach((id,level)->{var text=Component.translatable("enchantment.infusion."+id.toUpperCase(Locale.ROOT));if(InfusionAugments.maxLevel(id)>1)text.append(" ").append(Component.translatable("enchantment.level."+level));event.getToolTip().add(text.withStyle(ChatFormatting.GOLD));});
         if(warp>0)event.getToolTip().add(Component.translatable("item.warping").append(" "+warp).withStyle(ChatFormatting.DARK_PURPLE));

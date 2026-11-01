@@ -16,13 +16,8 @@
       }
     },
     {
-      "type": "neoforge:components",
-      "items": "minecraft:potion",
-      "components": {
-        "minecraft:potion_contents": {
-          "potion": "minecraft:strong_regeneration"
-        }
-      }
+      "type": "thaumcraft:potion",
+      "potion": "minecraft:strong_regeneration"
     },
     {
       "type": "neoforge:components",

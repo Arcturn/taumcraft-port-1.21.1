@@ -1,6 +1,7 @@
 {
   "textures": {
-    "texture": "thaumcraft:blocks/pillar_eldritch"
+    "texture": "thaumcraft:blocks/pillar_eldritch",
+    "particle": "#texture"
   },
   "loader": "neoforge:obj",
   "model": "thaumcraft:models/research/obj/pillar.obj",

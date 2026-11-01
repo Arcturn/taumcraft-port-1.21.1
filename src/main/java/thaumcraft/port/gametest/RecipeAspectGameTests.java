@@ -19,6 +19,7 @@ import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 import thaumcraft.port.aspect.*;
 import thaumcraft.port.content.PortContent;
+import thaumcraft.port.infusion.content.InfusionCraftingContent;
 
 /** Synthetic recipes use an existing unassigned mod display item, without adding fake gameplay items. */
 @GameTestHolder("thaumcraft")
@@ -31,6 +32,25 @@ public final class RecipeAspectGameTests {
     private static RecipeAspects.Calculator calculator(GameTestHelper helper, Recipe<?>... recipes) {
         var level = helper.getLevel();
         return new RecipeAspects.Calculator(level.registryAccess(), level.potionBrewing(), List.of(recipes));
+    }
+
+    @GameTest(template="empty", timeoutTicks=100)
+    public static void voidAndPrimalToolsRetainOriginalEquipmentAspectFloors(GameTestHelper helper) {
+        // ThaumcraftMaterials VOID harvest level 4; ItemPrimalCrusher PRIMALVOID level 5.
+        // Original getBonusTags merges (harvest level + 1) * 4 Instrumentum.
+        var expected = Map.of(InfusionCraftingContent.VOID_PICK.get(),20,
+                InfusionCraftingContent.VOID_SHOVEL.get(),20,InfusionCraftingContent.PRIMAL_CRUSHER.get(),24);
+        expected.forEach((item, amount) -> {
+            var stack = new ItemStack(item);
+            helper.assertValueEqual(calculator(helper).get(stack), Map.of(Aspect.TOOL,amount),
+                    "Equipment aspects must retain the original material tier: " + item);
+            stack.setDamageValue(1);
+            helper.assertValueEqual(ItemAspectBonuses.apply(stack,Map.of(Aspect.METAL,7)),
+                    Map.of(Aspect.METAL,7,Aspect.TOOL,amount), "Wear must not reduce the equipment bonus");
+            helper.assertValueEqual(ItemAspectBonuses.apply(stack,Map.of(Aspect.TOOL,40)),
+                    Map.of(Aspect.TOOL,40), "Equipment floors must not add to a larger recipe contribution");
+        });
+        helper.succeed();
     }
 
     @GameTest(template="empty", timeoutTicks=100)

@@ -1,6 +1,7 @@
 {
   "textures": {
-    "texture": "thaumcraft:blocks/pillar_normal"
+    "texture": "thaumcraft:blocks/pillar_normal",
+    "particle": "#texture"
   },
   "loader": "neoforge:obj",
   "model": "thaumcraft:models/research/obj/pillar.obj",

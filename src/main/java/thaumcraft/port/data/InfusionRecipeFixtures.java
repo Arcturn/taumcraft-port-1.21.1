@@ -13,6 +13,7 @@ import net.minecraft.world.item.crafting.*;
 import thaumcraft.port.aspect.Aspect;
 import thaumcraft.port.content.CrystalItem;
 import thaumcraft.port.crafting.ArcaneRecipe;
+import thaumcraft.port.crafting.IngredientMatching;
 import thaumcraft.port.infusion.recipe.*;
 import thaumcraft.port.research.*;
 
@@ -93,7 +94,7 @@ public final class InfusionRecipeFixtures {
         return new ItemStack(Set.of("arcing","essence").contains(recipe.parameter())?Items.IRON_SWORD:Items.IRON_PICKAXE);
     }
     public static List<ItemStack> sampleComponents(InfusionRecipe recipe,ItemStack central){return recipe.components(central).stream().map(InfusionRecipeFixtures::first).toList();}
-    private static ItemStack first(Ingredient ingredient){var items=ingredient.getItems();require(items.length>0,"Empty ingredient: "+ingredient);return items[0].copy();}
+    private static ItemStack first(Ingredient ingredient){var items=IngredientMatching.getItems(ingredient);require(items.length>0,"Empty ingredient: "+ingredient);return items[0].copy();}
     private static List<ItemStack> grid(List<Ingredient> ingredients){return ingredients.stream().map(i->i.isEmpty()?ItemStack.EMPTY:first(i)).toList();}
     private static void require(boolean valid,String message){if(!valid)throw new IllegalStateException(message);}
     private InfusionRecipeFixtures(){}

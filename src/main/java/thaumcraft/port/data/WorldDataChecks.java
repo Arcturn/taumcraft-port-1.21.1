@@ -71,6 +71,7 @@ public final class WorldDataChecks implements DataProvider {
             report.addProperty("alchemy_recipe_checks",AlchemyRecipeFixtures.validate(resources,registries,ops));
             report.addProperty("crafting_recipe_checks",CraftingRecipeFixtures.validate(resources,registries,ops));
             report.addProperty("infusion_recipe_checks",InfusionRecipeFixtures.validate(resources,registries,ops));
+            report.addProperty("infusion_crafting_checks",InfusionCraftingFixtures.validate(resources,registries,ops));
             report.addProperty("essentia_extension_fixture_checks",EssentiaExtensionFixtures.validate(resources,registries,ops));
             report.addProperty("jar_bellows_fixture_checks",JarBellowsFixtures.validate(resources,registries,ops));
             report.addProperty("presentation_fixture_checks",PresentationFixtures.validate(event.getResourceManager(PackType.CLIENT_RESOURCES)));

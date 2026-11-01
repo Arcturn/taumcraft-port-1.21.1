@@ -9,6 +9,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.minecraft.world.level.block.Blocks;
+import thaumcraft.port.infusion.content.VoidTools;
 
 /** TC6 getBonusTags: equipment and enchantments merge by maximum, never by addition. */
 public final class ItemAspectBonuses {
@@ -78,6 +79,10 @@ public final class ItemAspectBonuses {
     }
 
     private static int harvestLevel(Tier tier) {
+        // TC6's VOID and PRIMALVOID materials expose levels 4 and 5. Modern
+        // mining tags cannot distinguish those levels from ordinary diamond.
+        if (tier == VoidTools.VOID) return 4;
+        if (tier == VoidTools.PRIMAL) return 5;
         if (tier == Tiers.WOOD || tier == Tiers.GOLD) return 0;
         if (tier == Tiers.STONE) return 1;
         if (tier == Tiers.IRON) return 2;

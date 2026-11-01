@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:jar_brain",
+    "thaumcraft:mirror",
+    "thaumcraft:mirror_essentia",
+    "thaumcraft:lamp_growth",
+    "thaumcraft:lamp_fertility",
+    "thaumcraft:void_siphon"
+  ]
+}

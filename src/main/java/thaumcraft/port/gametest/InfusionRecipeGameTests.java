@@ -3,13 +3,18 @@ package thaumcraft.port.gametest;
 import java.util.*;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.gametest.framework.*;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.gametest.*;
+import net.neoforged.neoforge.common.crafting.CompoundIngredient;
 import thaumcraft.port.aspect.Aspect;
 import thaumcraft.port.content.CrystalItem;
 import thaumcraft.port.data.InfusionRecipeFixtures;
@@ -36,6 +41,37 @@ public final class InfusionRecipeGameTests {
             components.add(new ItemStack(Items.DIRT));helper.assertTrue(!recipe.matches(player,central,components),"Extra pedestal accepted: "+holder.id());
             components.removeLast();components.removeLast();helper.assertTrue(!recipe.matches(player,central,components),"Missing pedestal accepted: "+holder.id());
         }
+        helper.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=20)
+    public static void discoveredResearchUnlocksAllInfusionKindsBeforePageCompletion(GameTestHelper helper){
+        var player=GameTestPlayers.create(helper);var state=ResearchStorage.get(helper.getLevel().getServer()).player(player.getUUID());
+        for(var holder:helper.getLevel().getRecipeManager().getAllRecipesFor(InfusionRecipes.TYPE.get())){
+            var recipe=holder.value();String[] gate=recipe.research().split("@");int stage=gate.length>1?Integer.parseInt(gate[1]):1;
+            state.stage(gate[0],stage);
+            helper.assertFalse(state.knows(gate[0]),"Test must leave the research page incomplete: "+gate[0]);
+            var central=InfusionRecipeFixtures.sampleCentral(recipe);var components=InfusionRecipeFixtures.sampleComponents(recipe,central);
+            helper.assertTrue(recipe.matches(player,central,components),"Discovered recipe still required page completion: "+holder.id());
+        }
+        var gated=new InfusionRecipe("FOCUSADVANCED@2",Ingredient.of(Items.STONE),List.of(Ingredient.of(Items.DIRT)),Map.of("aer",1),0,new ItemStack(Items.DIAMOND),"item","");
+        state.stage("FOCUSADVANCED",1);
+        helper.assertFalse(gated.matches(player,new ItemStack(Items.STONE),List.of(new ItemStack(Items.DIRT))),"Discovery bypassed an explicit stage requirement");
+        state.stage("FOCUSADVANCED",2);
+        helper.assertTrue(gated.matches(player,new ItemStack(Items.STONE),List.of(new ItemStack(Items.DIRT))),"Explicit infusion stage did not unlock");
+        helper.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=20)
+    public static void emptyTagDisplayBarriersCannotSupplyCentralOrPedestalIngredients(GameTestHelper helper){
+        var missing=Ingredient.of(TagKey.create(Registries.ITEM,ResourceLocation.parse("thaumcraft:test_missing_infusion_tag")));
+        var alternative=CompoundIngredient.of(missing,Ingredient.of(Items.GOLD_INGOT));var barrier=new ItemStack(Items.BARRIER);var stone=new ItemStack(Items.STONE);
+        var missingCentral=new InfusionRecipe("",alternative,List.of(Ingredient.of(Items.STONE)),Map.of("aer",1),0,new ItemStack(Items.DIAMOND),"item","");
+        helper.assertFalse(missingCentral.matches(new InfusionInput(barrier,List.of(stone)),helper.getLevel()),"Central ingredient accepted an empty tag's display barrier");
+        helper.assertTrue(missingCentral.matches(new InfusionInput(new ItemStack(Items.GOLD_INGOT),List.of(stone)),helper.getLevel()),"Valid central alternative stopped matching");
+        var missingPedestal=new InfusionRecipe("",Ingredient.of(Items.STONE),List.of(alternative),Map.of("aer",1),0,new ItemStack(Items.DIAMOND),"item","");
+        helper.assertFalse(missingPedestal.matches(new InfusionInput(stone,List.of(barrier)),helper.getLevel()),"Pedestal ingredient accepted an empty tag's display barrier");
+        helper.assertTrue(missingPedestal.matches(new InfusionInput(stone,List.of(new ItemStack(Items.GOLD_INGOT))),helper.getLevel()),"Valid pedestal alternative stopped matching");
+        var explicit=new InfusionRecipe("",Ingredient.of(Items.BARRIER),List.of(Ingredient.of(Items.BARRIER)),Map.of("aer",1),0,new ItemStack(Items.DIAMOND),"item","");
+        helper.assertTrue(explicit.matches(new InfusionInput(barrier,List.of(barrier.copy())),helper.getLevel()),"Explicit barrier items must remain valid ingredients");
         helper.succeed();
     }
     @GameTest(template="empty",timeoutTicks=20)
@@ -69,10 +105,26 @@ public final class InfusionRecipeGameTests {
                 helper.assertTrue(result.getDamageValue()==17&&InfusionAugments.getRunic(result)==2,"Enchant lost central damage/runic data");central=result;
             }
             helper.assertTrue(!recipe.matches(player,central,components),"Enchantment exceeded level cap: "+id);
+            helper.assertTrue(recipe.aspects(player,central,components).isEmpty(),"Capped enchantment still reported another level's cost: "+id);
+            helper.assertTrue(recipe.aspects(player,ItemStack.EMPTY,components).isEmpty(),"Missing central item still reported an enchantment cost: "+id);
             helper.assertTrue(!recipe.matches(player,new ItemStack(Items.DIRT),components),"Enchantment accepted ineligible item: "+id);
         }
         var pick=new ItemStack(Items.IRON_PICKAXE);InfusionAugments.setEnchantment(pick,"refining",1);InfusionAugments.setEnchantment(pick,"sounding",1);
         helper.assertTrue(recipe(helper,"ie_refining").aspects(player,pick,List.of()).equals(Map.of(Aspect.ORDER,186,Aspect.EXCHANGE,139)),"Other infusion enchants must add the original .33 surcharge");
+        helper.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=20)
+    public static void primalCrusherExposesBothOriginalToolClassesToInfusionEnchanting(GameTestHelper helper){
+        var central=new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("thaumcraft:primal_crusher")));
+        helper.assertFalse(central.isEmpty(),"Primal crusher is missing");
+        for(String id:List.of("arcing","burrowing","collector","destructive","essence","lamplight","refining","sounding"))
+            helper.assertTrue(InfusionRecipe.canEnchant(central,id),"Crusher lost its original pickaxe/shovel/weapon eligibility: "+id);
+        helper.assertFalse(InfusionRecipe.canEnchant(new ItemStack(Items.IRON_SHOVEL),"refining"),"A shovel gained the crusher's pickaxe eligibility");
+        var recipe=recipe(helper,"ie_sounding");var components=InfusionRecipeFixtures.sampleComponents(recipe,central);
+        helper.assertTrue(recipe.matches(new InfusionInput(central,components),helper.getLevel()),"Crusher could not receive a pickaxe infusion enchantment");
+        var output=recipe.assemble(new InfusionInput(central,components),helper.getLevel().registryAccess());
+        helper.assertValueEqual(InfusionAugments.getEnchantment(output,"sounding"),1,"Crusher sounding result");
+        helper.assertTrue(InfusionAugments.getEnchantment(output,"destructive")==1&&InfusionAugments.getEnchantment(output,"refining")==1,"Crusher lost its inherent infusions");
         helper.succeed();
     }
     @GameTest(template="empty",timeoutTicks=20)
@@ -93,6 +145,11 @@ public final class InfusionRecipeGameTests {
         var potion=new ItemStack(Items.POTION);potion.set(DataComponents.POTION_CONTENTS,new PotionContents(Potions.HEALING));components.set(2,potion);
         helper.assertTrue(!life.matches(new InfusionInput(central,components),helper.getLevel()),"Weak healing potion accepted in place of strong healing");
         potion.set(DataComponents.POTION_CONTENTS,new PotionContents(Potions.STRONG_HEALING));helper.assertTrue(life.matches(new InfusionInput(central,components),helper.getLevel()),"Strong healing potion rejected");
+        potion.set(DataComponents.CUSTOM_NAME,Component.literal("Decorated strong healing"));
+        potion.set(DataComponents.POTION_CONTENTS,new PotionContents(Optional.of(Potions.STRONG_HEALING),Optional.of(0x8855AA),List.of(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,100,1))));
+        helper.assertTrue(life.matches(new InfusionInput(central,components),helper.getLevel()),"Relaxed original Potion NBT rejected extra custom effects or color");
+        var splash=PotionContents.createItemStack(Items.SPLASH_POTION,Potions.STRONG_HEALING);components.set(2,splash);
+        helper.assertFalse(life.matches(new InfusionInput(central,components),helper.getLevel()),"Splash potion substituted for the original drinkable potion");
         helper.succeed();
     }
     @GameTest(template="empty",timeoutTicks=20)

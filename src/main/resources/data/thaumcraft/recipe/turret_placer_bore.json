@@ -1,0 +1,44 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "ARCANEBORE",
+  "input": {
+    "item": "thaumcraft:turret_placer_basic"
+  },
+  "components": [
+    {
+      "item": "thaumcraft:plank_greatwood"
+    },
+    {
+      "item": "thaumcraft:plank_greatwood"
+    },
+    {
+      "item": "thaumcraft:mechanism_complex"
+    },
+    {
+      "tag": "c:plates/brass"
+    },
+    {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    {
+      "item": "minecraft:diamond_shovel"
+    },
+    {
+      "item": "thaumcraft:morphic_resonator"
+    },
+    {
+      "item": "thaumcraft:rareearth"
+    }
+  ],
+  "aspects": {
+    "potentia": 25,
+    "terra": 25,
+    "machina": 100,
+    "vacuos": 25,
+    "motus": 25
+  },
+  "instability": 4,
+  "result": {
+    "id": "thaumcraft:turret_placer_bore"
+  }
+}

@@ -3,6 +3,8 @@
   "values": [
     "thaumcraft:thaumium_legs",
     "thaumcraft:cloth_legs",
-    "thaumcraft:fortress_legs"
+    "thaumcraft:fortress_legs",
+    "thaumcraft:void_legs",
+    "thaumcraft:void_robe_legs"
   ]
 }

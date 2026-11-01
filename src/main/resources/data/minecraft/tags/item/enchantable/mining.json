@@ -8,6 +8,9 @@
     "thaumcraft:elemental_axe",
     "thaumcraft:elemental_pick",
     "thaumcraft:elemental_shovel",
-    "thaumcraft:elemental_hoe"
+    "thaumcraft:elemental_hoe",
+    "thaumcraft:void_pick",
+    "thaumcraft:void_shovel",
+    "thaumcraft:primal_crusher"
   ]
 }

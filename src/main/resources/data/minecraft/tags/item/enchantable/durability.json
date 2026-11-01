@@ -21,6 +21,15 @@
     "thaumcraft:cloth_boots",
     "thaumcraft:fortress_helm",
     "thaumcraft:fortress_chest",
-    "thaumcraft:fortress_legs"
+    "thaumcraft:fortress_legs",
+    "thaumcraft:void_helm",
+    "thaumcraft:void_robe_helm",
+    "thaumcraft:void_chest",
+    "thaumcraft:void_robe_chest",
+    "thaumcraft:void_legs",
+    "thaumcraft:void_robe_legs",
+    "thaumcraft:void_pick",
+    "thaumcraft:void_shovel",
+    "thaumcraft:primal_crusher"
   ]
 }
