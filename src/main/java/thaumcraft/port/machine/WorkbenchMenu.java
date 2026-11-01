@@ -44,7 +44,9 @@ public final class WorkbenchMenu extends AbstractContainerMenu {
         var input=input();var manager=player.level().getRecipeManager();
         var arcane=manager.getAllRecipesFor(MachineContent.ARCANE_RECIPE.get()).stream().filter(h->h.value().matches(input,player.level()))
             .sorted(java.util.Comparator.<RecipeHolder<ArcaneRecipe>>comparingInt(h->hasCrystals(h.value().crystals())?0:1).thenComparing(h->h.id().toString())).findFirst();
-        if(arcane.isPresent()){var r=arcane.get().value();return new Order(r,r.research(),r.vis(),r.crystals(),r.assemble(input,player.level().registryAccess()));}
+        // Recompute worn equipment and exhaustion for every preview and transaction.
+        // TC6 truncates the discounted cost; 50 vis with goggles is 47, not 48.
+        if(arcane.isPresent()){var r=arcane.get().value();return new Order(r,r.research(),RevealingEquipment.discountedVis(r.vis(),player),r.crystals(),r.assemble(input,player.level().registryAccess()));}
         return manager.getRecipeFor(RecipeType.CRAFTING,input,player.level()).map(h->{var r=h.value();return new Order(r,"",0,Map.of(),r.assemble(input,player.level().registryAccess()));}).orElse(null);
     }
     private boolean hasCrystals(Map<String,Integer> costs){

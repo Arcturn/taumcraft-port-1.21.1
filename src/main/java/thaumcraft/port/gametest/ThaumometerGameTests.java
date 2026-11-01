@@ -249,24 +249,31 @@ public final class ThaumometerGameTests {
         } finally {
             level.setDayTime(previousDayTime);
         }
-        // canSeeSky reads the SKY light layer in 1.21.1. Block placement queues its propagation;
-        // evaluating it in the placement tick incorrectly sees the previous open-sky light values.
-        helper.runAfterDelay(10, () -> {
-            long callbackDayTime = level.getDayTime();
-            try {
-                level.setDayTime(18000);
-                helper.assertFalse(level.canSeeSky(player.blockPosition().above()), "Roof fixture did not block the sky after lighting updates");
-                assertMiss(helper, player);
-                player.messages.clear();
-                use(player);
-                assertFeedback(helper, player, 0, "tc.unknownobject", ChatFormatting.DARK_PURPLE);
-                helper.assertValueEqual(player.messages.size(), 1, "Obstructed sky emitted celestial feedback");
-                helper.succeed();
-            } finally {
-                fixture.close();
-                level.setDayTime(callbackDayTime);
-            }
+        // canSeeSky reads the asynchronously propagated SKY light layer. A fixed ten-tick
+        // delay races that worker when the full suite also generates chunks. Wait for the
+        // actual fixture condition, then perform the scan exactly once with unchanged assertions.
+        helper.runAtTickTime(79, () -> {
+            fixture.close();
+            helper.fail("Roof fixture lighting did not settle before the test deadline");
         });
+        helper.startSequence().thenWaitUntil(() ->
+                helper.assertFalse(level.canSeeSky(player.blockPosition().above()),
+                        "Roof fixture did not block the sky after lighting updates"))
+                .thenExecute(() -> {
+                    long callbackDayTime = level.getDayTime();
+                    try {
+                        level.setDayTime(18000);
+                        helper.assertFalse(level.canSeeSky(player.blockPosition().above()), "Roof fixture did not block the sky after lighting updates");
+                        assertMiss(helper, player);
+                        player.messages.clear();
+                        use(player);
+                        assertFeedback(helper, player, 0, "tc.unknownobject", ChatFormatting.DARK_PURPLE);
+                        helper.assertValueEqual(player.messages.size(), 1, "Obstructed sky emitted celestial feedback");
+                    } finally {
+                        fixture.close();
+                        level.setDayTime(callbackDayTime);
+                    }
+                }).thenSucceed();
     }
 
     @GameTest(template = "empty", timeoutTicks = 80)

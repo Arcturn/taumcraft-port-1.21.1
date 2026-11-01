@@ -8,7 +8,6 @@ import net.minecraft.client.renderer.*;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.entity.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import thaumcraft.port.world.*;
 
@@ -55,17 +54,10 @@ public final class WorldRenderers {
         RiftRenderer(EntityRendererProvider.Context c){super(c);}
         @Override public ResourceLocation getTextureLocation(FluxRift e){return ResourceLocation.withDefaultNamespace("textures/entity/end_portal.png");}
         @Override public void render(FluxRift e,float yaw,float partial,PoseStack pose,MultiBufferSource buffers,int light){
-            var points=e.points();var widths=e.widths();var out=buffers.getBuffer(RenderType.endGateway());var matrix=pose.last().pose();
-            for(int i=0;i<points.size()-1;i++){
-                var a=points.get(i);var b=points.get(i+1);var axis=b.subtract(a).normalize();
-                Vec3 u=axis.cross(Math.abs(axis.y)>.9?new Vec3(1,0,0):new Vec3(0,1,0)).normalize(),v=axis.cross(u).normalize();
-                for(int k=0;k<8;k++){
-                    double angle=k*Math.PI/4,next=(k+1)*Math.PI/4;
-                    Vec3 p=u.scale(Math.cos(angle)).add(v.scale(Math.sin(angle))),q=u.scale(Math.cos(next)).add(v.scale(Math.sin(next)));
-                    for(Vec3 point:new Vec3[]{a.add(p.scale(widths.get(i))),a.add(q.scale(widths.get(i))),b.add(q.scale(widths.get(i+1))),b.add(p.scale(widths.get(i+1)))})
-                        out.addVertex(matrix,(float)point.x,(float)point.y,(float)point.z);
-                }
-            }
+            var points=e.points();var widths=e.widths();var matrix=pose.last().pose();
+            if(thaumcraft.port.content.RevealingEquipment.hasGoggles(net.minecraft.client.Minecraft.getInstance().player))
+                RiftGeometry.emit(points,widths,matrix,buffers.getBuffer(RiftRenderTypes.REVEALED),1.25f);
+            RiftGeometry.emit(points,widths,matrix,buffers.getBuffer(RenderType.endGateway()),1);
             super.render(e,yaw,partial,pose,buffers,light);
         }
     }

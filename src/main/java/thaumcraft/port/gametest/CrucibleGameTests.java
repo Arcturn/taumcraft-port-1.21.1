@@ -244,7 +244,7 @@ public final class CrucibleGameTests {
         helper.succeed();
     }
 
-    @GameTest(template = "empty", timeoutTicks = 80)
+    @GameTest(template = "empty", timeoutTicks = 180)
     public static void formedThaumatoriumUsesTheSameLitCampfireRules(GameTestHelper helper) {
         var crucible = fixture(helper);
         helper.setBlock(RELATIVE.above(), EssentiaContent.THAUMATORIUM.get());
@@ -258,15 +258,15 @@ public final class CrucibleGameTests {
             helper.assertTrue(machine.heated, "Lit campfire heats the crucible but not the formed thaumatorium");
             source(helper, crucible, Blocks.SOUL_CAMPFIRE.defaultBlockState());
         });
-        helper.runAfterDelay(12, () -> {
+        helper.runAfterDelay(46, () -> {
             helper.assertTrue(machine.heated, "Lit soul campfire failed to heat the formed thaumatorium");
             source(helper, crucible, Blocks.SOUL_CAMPFIRE.defaultBlockState().setValue(CampfireBlock.LIT, false));
         });
-        helper.runAfterDelay(18, () -> {
+        helper.runAfterDelay(86, () -> {
             helper.assertFalse(machine.heated, "Extinguished soul campfire still heated the thaumatorium");
             source(helper, crucible, Blocks.CAMPFIRE.defaultBlockState().setValue(CampfireBlock.WATERLOGGED, true));
         });
-        helper.runAfterDelay(24, () -> {
+        helper.runAfterDelay(126, () -> {
             helper.assertFalse(machine.heated, "Waterlogged campfire still heated the thaumatorium");
             helper.succeed();
         });

@@ -1,47 +1,143 @@
 package thaumcraft.port.essentia;
 
 import java.util.*;
+import net.minecraft.nbt.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.*;
 import net.minecraft.world.entity.player.*;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.neoforge.network.PacketDistributor;
+import thaumcraft.port.aspect.Aspect;
 
+/** The original single catalyst slot, with recipe buttons synchronized separately from inventory slots. */
 public final class ThaumatoriumMenu extends AbstractContainerMenu {
+    public record RecipeView(ResourceLocation id, ItemStack output, Map<Aspect,Integer> aspects) {}
+
     private final Container machine;
-    private final SimpleContainer previews=new SimpleContainer(9);
-    public final ContainerData data=new SimpleContainerData(15);
     private final Player viewer;
-    private final List<ResourceLocation> visible=new ArrayList<>();
-    private int page;
-    public ThaumatoriumMenu(int id,Inventory inv){this(id,inv,new SimpleContainer(1));}
-    public ThaumatoriumMenu(int id,Inventory inv,Container machine){
-        super(EssentiaContent.THAUMATORIUM_MENU.get(),id);this.machine=machine;viewer=inv.player;
-        addSlot(new Slot(machine,0,26,34));
-        for(int i=0;i<9;i++)addSlot(new Slot(previews,i,84+i%3*18,16+i/3*18){public boolean mayPlace(ItemStack s){return false;}public boolean mayPickup(Player p){return false;}});
-        for(int y=0;y<3;y++)for(int x=0;x<9;x++)addSlot(new Slot(inv,9+y*9+x,8+x*18,104+y*18));
-        for(int x=0;x<9;x++)addSlot(new Slot(inv,x,8+x*18,162));addDataSlots(data);refresh();
+    private CompoundTag lastSent, selectionContext;
+    public String token = UUID.randomUUID().toString();
+    public long revision = -1;
+    public int capacity = 1;
+    public boolean catalystPresent;
+    public List<RecipeView> recipes = List.of();
+    public List<ResourceLocation> selected = List.of();
+    public Map<Aspect,Integer> contents = Map.of();
+
+    public ThaumatoriumMenu(int id, Inventory inv) { this(id, inv, new SimpleContainer(1)); }
+
+    public ThaumatoriumMenu(int id, Inventory inv, Container machine) {
+        super(EssentiaContent.THAUMATORIUM_MENU.get(), id);
+        this.machine = machine;
+        viewer = inv.player;
+        addSlot(new Slot(machine, 0, 55, 24));
+        for (int y = 0; y < 3; y++) for (int x = 0; x < 9; x++)
+            addSlot(new Slot(inv, 9 + y * 9 + x, 8 + x * 18, 135 + y * 18));
+        for (int x = 0; x < 9; x++) addSlot(new Slot(inv, x, 8 + x * 18, 193));
     }
-    private void refresh(){
-        if(!(machine instanceof ThaumatoriumEntity be)||!(viewer instanceof ServerPlayer player))return;
-        var choices=be.choices(player);int pages=Math.max(1,(choices.size()+8)/9);page=Math.clamp(page,0,pages-1);visible.clear();
-        for(int i=0;i<9;i++){int index=page*9+i;if(index<choices.size()){var h=choices.get(index);visible.add(h.id());previews.setItem(i,h.value().result().copy());data.set(i,be.selected.containsKey(h.id())?1:0);}else{previews.setItem(i,ItemStack.EMPTY);data.set(i,0);}}
-        data.set(9,page+1);data.set(10,pages);data.set(11,be.capacity);data.set(12,be.heated?1:0);data.set(13,be.contents.total());data.set(14,be.selected.size());
+
+    /** Server snapshot. Essentia progress alone must not invalidate a recipe click in flight. */
+    public CompoundTag snapshot() {
+        if (!(machine instanceof ThaumatoriumEntity be) || !(viewer instanceof ServerPlayer player))
+            return new CompoundTag();
+        var context = new CompoundTag();
+        var choices = new ListTag();
+        for (var holder : be.choices(player)) {
+            var choice = new CompoundTag();
+            choice.putString("id", holder.id().toString());
+            choice.put("output", holder.value().result().save(player.registryAccess()));
+            var aspects = new CompoundTag();
+            holder.value().aspects().forEach(aspects::putInt);
+            choice.put("aspects", aspects);
+            choices.add(choice);
+        }
+        context.put("recipes", choices);
+        var chosen = new ListTag();
+        be.selected.keySet().forEach(id -> chosen.add(StringTag.valueOf(id.toString())));
+        context.put("selected", chosen);
+        context.putInt("capacity", be.capacity);
+        context.putBoolean("catalystPresent", !be.isEmpty());
+        if (!context.equals(selectionContext)) {
+            revision++;
+            selectionContext = context.copy();
+        }
+        var data = context.copy();
+        data.putLong("revision", revision);
+        var amounts = new CompoundTag();
+        be.contents.values().forEach((a, n) -> amounts.putInt(a.id(), n));
+        data.put("contents", amounts);
+        return data;
     }
-    @Override public void broadcastChanges(){refresh();super.broadcastChanges();}
-    @Override public void clicked(int slot,int button,ClickType type,Player player){
-        if(slot>=1&&slot<=9){if(type==ClickType.PICKUP&&button==0&&stillValid(player)&&player instanceof ServerPlayer sp&&machine instanceof ThaumatoriumEntity be&&slot-1<visible.size()){be.choose(sp,visible.get(slot-1));broadcastChanges();}return;}
-        super.clicked(slot,button,type,player);
+
+    @Override public void broadcastChanges() {
+        super.broadcastChanges();
+        if (!(viewer instanceof ServerPlayer player) || !(machine instanceof ThaumatoriumEntity)) return;
+        var data = snapshot();
+        if (!data.equals(lastSent)) {
+            PacketDistributor.sendToPlayer(player, new ThaumatoriumSyncPayload(containerId, token, data));
+            lastSent = data.copy();
+        }
     }
-    @Override public boolean clickMenuButton(Player player,int button){
-        if(!stillValid(player)||!(machine instanceof ThaumatoriumEntity be)||button<0||button>2)return false;
-        if(button==0)page=Math.max(0,page-1);else if(button==1)page=Math.min(data.get(10)-1,page+1);else{be.selected.clear();be.demand=null;be.sync();}
-        broadcastChanges();return true;
+
+    public void select(ServerPlayer player, ThaumatoriumSelectPayload request) {
+        if (player != viewer || player.containerMenu != this || request.container() != containerId
+                || !token.equals(request.token()) || !stillValid(player)
+                || !(machine instanceof ThaumatoriumEntity be)) return;
+        // Re-evaluate eligibility before comparing the revision, including changes by another viewer.
+        snapshot();
+        if (request.revision() == revision && selectionContext.getList("recipes", Tag.TAG_COMPOUND)
+                .stream().map(tag -> ((CompoundTag)tag).getString("id")).anyMatch(request.recipe().toString()::equals))
+            be.choose(player, request.recipe());
+        broadcastChanges();
     }
-    @Override public boolean stillValid(Player player){return machine.stillValid(player);}
-    @Override public ItemStack quickMoveStack(Player p,int i){
-        if(i<0||i>=slots.size()||(i>=1&&i<=9))return ItemStack.EMPTY;var slot=slots.get(i);if(!slot.hasItem())return ItemStack.EMPTY;var stack=slot.getItem();var copy=stack.copy();
-        if(!(i==0?moveItemStackTo(stack,10,46,true):moveItemStackTo(stack,0,1,false)))return ItemStack.EMPTY;if(stack.isEmpty())slot.setByPlayer(ItemStack.EMPTY);else slot.setChanged();slot.onTake(p,stack);return copy;
+
+    public void receive(String nonce, CompoundTag data) {
+        token = nonce;
+        revision = data.getLong("revision");
+        capacity = Math.clamp(data.getInt("capacity"), 1, 19);
+        catalystPresent = data.getBoolean("catalystPresent");
+        var available = new ArrayList<RecipeView>();
+        var recipeList = data.getList("recipes", Tag.TAG_COMPOUND);
+        for (int i = 0; i < recipeList.size(); i++) {
+            var recipe = recipeList.getCompound(i);
+            var id = ResourceLocation.tryParse(recipe.getString("id"));
+            var output = ItemStack.parseOptional(viewer.registryAccess(), recipe.getCompound("output"));
+            if (id != null && !output.isEmpty())
+                available.add(new RecipeView(id, output, readAspects(recipe.getCompound("aspects"))));
+        }
+        recipes = List.copyOf(available);
+        var chosen = new ArrayList<ResourceLocation>();
+        for (var tag : data.getList("selected", Tag.TAG_STRING)) {
+            var id = ResourceLocation.tryParse(tag.getAsString());
+            if (id != null && chosen.size() < 19) chosen.add(id);
+        }
+        selected = List.copyOf(chosen);
+        contents = readAspects(data.getCompound("contents"));
+    }
+
+    private static Map<Aspect,Integer> readAspects(CompoundTag tag) {
+        var aspects = new EnumMap<Aspect,Integer>(Aspect.class);
+        for (Aspect aspect : Aspect.values()) {
+            int amount = tag.getInt(aspect.id());
+            if (amount > 0) aspects.put(aspect, amount);
+        }
+        return Collections.unmodifiableMap(aspects);
+    }
+
+    @Override public boolean stillValid(Player player) { return machine.stillValid(player); }
+
+    @Override public ItemStack quickMoveStack(Player player, int index) {
+        if (index < 0 || index >= slots.size()) return ItemStack.EMPTY;
+        var slot = slots.get(index);
+        if (!slot.hasItem()) return ItemStack.EMPTY;
+        var stack = slot.getItem();
+        var copy = stack.copy();
+        if (!(index == 0 ? moveItemStackTo(stack, 1, 37, false) : moveItemStackTo(stack, 0, 1, false)))
+            return ItemStack.EMPTY;
+        if (stack.isEmpty()) slot.setByPlayer(ItemStack.EMPTY); else slot.setChanged();
+        slot.onTake(player, stack);
+        return copy;
     }
 }

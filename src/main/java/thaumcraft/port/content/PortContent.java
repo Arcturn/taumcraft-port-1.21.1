@@ -5,10 +5,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 import net.minecraft.core.component.DataComponentType;
+import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
@@ -37,6 +44,14 @@ public final class PortContent {
             DeferredRegister.create(Registries.RECIPE_SERIALIZER, ThaumcraftPort.MOD_ID);
     public static final DeferredRegister<CreativeModeTab> TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ThaumcraftPort.MOD_ID);
+    public static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS =
+            DeferredRegister.create(Registries.ARMOR_MATERIAL, ThaumcraftPort.MOD_ID);
+    public static final Holder<ArmorMaterial> SPECIAL_ARMOR = ARMOR_MATERIALS.register("special", () ->
+            new ArmorMaterial(java.util.Map.of(ArmorItem.Type.BOOTS, 1, ArmorItem.Type.LEGGINGS, 2,
+                    ArmorItem.Type.CHESTPLATE, 3, ArmorItem.Type.HELMET, 1, ArmorItem.Type.BODY, 3),
+                    25, SoundEvents.ARMOR_EQUIP_LEATHER,
+                    () -> Ingredient.of(TagKey.create(Registries.ITEM, ResourceLocation.parse("c:ingots/brass"))),
+                    List.of(new ArmorMaterial.Layer(ResourceLocation.parse("thaumcraft:goggles"))), 1, 0));
 
     public static final Supplier<DataComponentType<String>> CRYSTAL_ASPECT = COMPONENTS.register("crystal_aspect",
             () -> DataComponentType.<String>builder().persistent(Codec.STRING)
@@ -50,6 +65,8 @@ public final class PortContent {
     public static final DeferredItem<CelestialNotesItem> CELESTIAL_NOTES=ITEMS.registerItem("celestial_notes",CelestialNotesItem::new);
     public static final DeferredItem<ThaumometerItem> THAUMOMETER = ITEMS.registerItem("thaumometer", ThaumometerItem::new,
             new Item.Properties().rarity(Rarity.UNCOMMON));
+    public static final DeferredItem<GogglesItem> GOGGLES = ITEMS.registerItem("goggles", GogglesItem::new,
+            new Item.Properties().durability(350).rarity(Rarity.RARE));
     public static final DeferredItem<ThaumonomiconItem> THAUMONOMICON = ITEMS.registerItem("thaumonomicon", ThaumonomiconItem::new,
             new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
     public static final DeferredItem<SalisMundusItem> SALIS_MUNDUS = ITEMS.registerItem("salis_mundus", SalisMundusItem::new);
@@ -103,6 +120,7 @@ public final class PortContent {
     public static void register(IEventBus bus) {
         COMPONENTS.register(bus);
         BLOCKS.register(bus);
+        ARMOR_MATERIALS.register(bus);
         ITEMS.register(bus);
         SERIALIZERS.register(bus);
         TABS.register(bus);

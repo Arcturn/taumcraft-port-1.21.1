@@ -7,6 +7,12 @@ public final class PortNetwork {
     private PortNetwork() {}
 
     public static void register(RegisterPayloadHandlersEvent event) {
+        event.registrar("9").playToServer(thaumcraft.port.essentia.ThaumatoriumSelectPayload.TYPE,thaumcraft.port.essentia.ThaumatoriumSelectPayload.STREAM_CODEC,(p,c)->c.enqueueWork(()->{
+            if(c.player() instanceof net.minecraft.server.level.ServerPlayer sp&&sp.containerMenu instanceof thaumcraft.port.essentia.ThaumatoriumMenu menu)menu.select(sp,p);
+        }));
+        event.registrar("9").playToClient(thaumcraft.port.essentia.ThaumatoriumSyncPayload.TYPE,thaumcraft.port.essentia.ThaumatoriumSyncPayload.STREAM_CODEC,(p,c)->c.enqueueWork(()->{
+            if(c.player().containerMenu instanceof thaumcraft.port.essentia.ThaumatoriumMenu menu&&menu.containerId==p.container())menu.receive(p.token(),p.data());
+        }));
         event.registrar("9").playToClient(KnowledgeGainPayload.TYPE,KnowledgeGainPayload.STREAM_CODEC,
                 (p,c)->c.enqueueWork(()->thaumcraft.port.client.KnowledgeGainHud.receive(p.knowledgeType(),p.category(),p.count())));
         event.registrar("9").playToClient(WispZapPayload.TYPE,WispZapPayload.STREAM_CODEC,
