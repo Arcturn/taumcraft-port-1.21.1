@@ -12,6 +12,26 @@ class ResearchProgressTest {
         assertEquals(2,ResearchCatalog.observation("BASICS",Map.of(Aspect.AIR,5)));
         assertEquals(6,ResearchCatalog.observation("ALCHEMY",Map.of(Aspect.ALCHEMY,10)));
     }
+    @Test void obsoleteSmelterCraftsMatchTheLoadedOriginalWithoutDroppingOtherRequirements(){
+        var source=ResearchCatalog.read("/assets/thaumcraft/research/alchemy.json").getAsJsonArray("entries");
+        for(String key:java.util.List.of("ESSENTIASMELTERTHAUMIUM","ESSENTIASMELTERVOID")){
+            var raw=source.asList().stream().map(com.google.gson.JsonElement::getAsJsonObject)
+                .filter(e->e.get("key").getAsString().equals(key)).findFirst().orElseThrow()
+                .getAsJsonArray("stages").get(0).getAsJsonObject();
+            assertEquals(1,ResearchCatalog.strings(raw,"required_craft").size(),"Retain original source data for traceability");
+            var loaded=ResearchCatalog.get(key).stages().getFirst();
+            assertTrue(ResearchCatalog.strings(loaded,"required_craft").isEmpty(),"BETA26 skips its unregistered metal item");
+            assertEquals(ResearchCatalog.strings(raw,"required_item"),ResearchCatalog.strings(loaded,"required_item"));
+            assertEquals(ResearchCatalog.strings(raw,"required_knowledge"),ResearchCatalog.strings(loaded,"required_knowledge"));
+        }
+        // Unsupported focus crafting remains a real requirement, not a free unlock.
+        var auromancy=ResearchCatalog.read("/assets/thaumcraft/research/auromancy.json").getAsJsonArray("entries");
+        for(var element:auromancy){var raw=element.getAsJsonObject();var loaded=ResearchCatalog.get(raw.get("key").getAsString());
+            for(int i=0;i<loaded.stages().size();i++)assertEquals(
+                ResearchCatalog.strings(raw.getAsJsonArray("stages").get(i).getAsJsonObject(),"required_craft"),
+                ResearchCatalog.strings(loaded.stages().get(i),"required_craft"));
+        }
+    }
     @Test void hiddenPrerequisitesAndStageReferencesRemainDistinct(){
         var s=new ResearchState();var first=ResearchCatalog.get("FIRSTSTEPS");assertFalse(s.available(first));
         s.flag("!gotthaumonomicon");assertTrue(s.available(first));s.stage("FIRSTSTEPS",2);

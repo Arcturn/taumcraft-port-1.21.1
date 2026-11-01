@@ -45,7 +45,10 @@ public final class PortNetwork {
     /** Runs on the server main thread; a delayed progress response must not reopen a closed book. */
     public static void handleResearchAction(net.minecraft.server.level.ServerPlayer player,ResearchActionPayload payload){
         if(!player.getMainHandItem().is(thaumcraft.port.content.PortContent.THAUMONOMICON.get())&&!player.getOffhandItem().is(thaumcraft.port.content.PortContent.THAUMONOMICON.get()))return;
-        if(player.getCooldowns().isOnCooldown(thaumcraft.port.content.PortContent.THAUMONOMICON.get()))return;
+        if(player.getCooldowns().isOnCooldown(thaumcraft.port.content.PortContent.THAUMONOMICON.get())){
+            // Even a rejected click needs a reply to release the page's pending state.
+            thaumcraft.port.research.ResearchProgress.sync(player);return;
+        }
         player.getCooldowns().addCooldown(thaumcraft.port.content.PortContent.THAUMONOMICON.get(),4);
         if(payload.action()==ResearchActionPayload.Action.TERMINAL_NODE)thaumcraft.port.research.ResearchProgress.openTerminal(player,payload.key(),payload.expectedStage());
         else thaumcraft.port.research.ResearchProgress.advance(player,payload.key(),payload.expectedStage());

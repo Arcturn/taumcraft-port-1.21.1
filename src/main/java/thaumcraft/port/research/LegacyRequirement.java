@@ -32,9 +32,6 @@ public record LegacyRequirement(String source,int count,String craftKey,Predicat
             else if(id.equals("thaumcraft:baubles"))id=switch(meta){case 0->"thaumcraft:amulet_mundane";case 1->"thaumcraft:ring_mundane";case 2->"thaumcraft:girdle_mundane";case 3->"thaumcraft:ring_apprentice";case 4->"thaumcraft:amulet_fancy";case 5->"thaumcraft:ring_fancy";case 6->"thaumcraft:girdle_fancy";default->"";};
             else if(id.equals("thaumcraft:stone_arcane"))id="thaumcraft:arcane_stone";
             else if(id.equals("thaumcraft:stone_arcane_brick"))id="thaumcraft:arcane_brick";
-            // The old smelter pages retain the pre-flattening metal ID. Their
-            // descriptions and matching plate requirements identify thaumium/void.
-            else if(id.equals("thaumcraft:metal"))id=switch(meta){case 2->"thaumcraft:metal_thaumium";case 3->"thaumcraft:metal_void";default->"";};
             else if(id.equals("thaumcraft:nugget"))id=switch(meta){case 0->"minecraft:iron_nugget";case 5->"thaumcraft:nugget_quicksilver";case 6->"thaumcraft:nugget_thaumium";case 7->"thaumcraft:nugget_void";case 8->"thaumcraft:nugget_brass";case 9->"thaumcraft:nugget_quartz";case 10->"thaumcraft:rareearth";default->"";};
             else if(id.equals("thaumcraft:cluster"))id=switch(meta){case 0->"thaumcraft:cluster_iron";case 1->"thaumcraft:cluster_gold";case 2->"thaumcraft:cluster_copper";case 3->"thaumcraft:cluster_tin";case 4->"thaumcraft:cluster_silver";case 5->"thaumcraft:cluster_lead";case 6->"thaumcraft:cluster_cinnabar";case 7->"thaumcraft:cluster_quartz";default->"";};
             else if(id.equals("thaumcraft:chunk"))id=meta>=0&&meta<6?"thaumcraft:chunk_"+thaumcraft.port.infusion.recipe.InfusionFood.KINDS.get(meta):"";

@@ -16,7 +16,7 @@ import thaumcraft.port.research.ResearchProgress;
 import thaumcraft.port.research.ResearchStorage;
 import thaumcraft.port.content.PortContent;
 
-/** Actual loaded common tags, matching Forge 1.12.2's OreDictionary chest family. */
+/** Loaded original requirements, including valid chest tags and ignored stale item IDs. */
 @GameTestHolder("thaumcraft")
 @PrefixGameTestTemplate(false)
 public final class LegacyRequirementGameTests {
@@ -37,9 +37,14 @@ public final class LegacyRequirementGameTests {
     }
 
     @GameTest(template = "empty", timeoutTicks = 40)
-    public static void smelterResearchRequiresItsOwnMetalAndConsumesPlateAndTheoryOnce(GameTestHelper helper) {
+    public static void smelterResearchMatchesOriginalMissingCraftAndConsumesOnlyPlateAndTheory(GameTestHelper helper) {
         for (String material : java.util.List.of("thaumium", "void")) {
             String key = material.equals("thaumium") ? "ESSENTIASMELTERTHAUMIUM" : "ESSENTIASMELTERVOID";
+            var entry = ResearchCatalog.get(key);
+            // Unmodified BETA26 resolves the obsolete thaumcraft:metal ID to EMPTY,
+            // so both loaded stages have no craft/craft-reference requirement.
+            helper.assertTrue(ResearchCatalog.strings(entry.stages().getFirst(), "required_craft").isEmpty(),
+                    "Loaded smelter stage retained a phantom legacy metal craft requirement");
             var player = GameTestPlayers.create(helper);
             player.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(PortContent.THAUMONOMICON.get()));
             var state = ResearchStorage.get(player.getServer()).player(player.getUUID());
@@ -48,29 +53,52 @@ public final class LegacyRequirementGameTests {
             if (material.equals("void")) {
                 state.flag("ESSENTIASMELTERTHAUMIUM");
                 state.flag("BASEELDRITCH");
-                state.addKnowledge("THEORY", "ELDRITCH", 32);
+                state.addKnowledge("THEORY", "ELDRITCH", 41);
             }
             state.stage(key, 1);
-            state.addKnowledge("THEORY", "ALCHEMY", 32);
-            var plate = BuiltInRegistries.ITEM.get(ResourceLocation.parse("thaumcraft:plate_" + material));
-            player.getInventory().setItem(9, new ItemStack(plate, 2));
-            String wrongMetal = material.equals("thaumium") ? "brass" : "thaumium";
-            ResearchProgress.craft(player, new ItemStack(BuiltInRegistries.ITEM.get(
-                    ResourceLocation.parse("thaumcraft:metal_" + wrongMetal))));
+            state.addKnowledge("THEORY", "ALCHEMY", 39);
+            state.craft("minecraft:stick");
+            var craftedBefore = java.util.Set.copyOf(state.crafted());
+            for (int i = 0; i < 3; i++) {
+                String metal = java.util.List.of("brass", "thaumium", "void").get(i);
+                player.getInventory().setItem(10 + i, new ItemStack(BuiltInRegistries.ITEM.get(
+                        ResourceLocation.parse("thaumcraft:metal_" + metal)), 3));
+            }
             var before = ResearchCodec.write(state);
             ResearchProgress.advance(player, key, 1);
-            helper.assertTrue(before.equals(ResearchCodec.write(state)), "Crafting the previous metal unlocked " + key);
-            helper.assertValueEqual(player.getInventory().getItem(9).getCount(), 2, "Failed research consumed its plate");
-            ResearchProgress.craft(player, new ItemStack(BuiltInRegistries.ITEM.get(
-                    ResourceLocation.parse("thaumcraft:metal_" + material))));
+            helper.assertTrue(before.equals(ResearchCodec.write(state)), "Missing plate changed research or knowledge");
+            helper.assertValueEqual(player.totalExperience, 0, "Missing plate awarded experience");
+
+            var plate = BuiltInRegistries.ITEM.get(ResourceLocation.parse("thaumcraft:plate_" + material));
+            player.getInventory().setItem(9, new ItemStack(plate, 2));
+            state.addKnowledge("THEORY", "ALCHEMY", -8);
+            before = ResearchCodec.write(state);
             ResearchProgress.advance(player, key, 1);
-            helper.assertTrue(state.knows(key), "The correct metal block did not satisfy " + key);
+            helper.assertTrue(before.equals(ResearchCodec.write(state)), "Partial alchemy theory paid a whole-point cost");
+            helper.assertValueEqual(player.getInventory().getItem(9).getCount(), 2, "Missing alchemy theory consumed its plate");
+            state.addKnowledge("THEORY", "ALCHEMY", 8);
+            if (material.equals("void")) {
+                state.addKnowledge("THEORY", "ELDRITCH", -10);
+                before = ResearchCodec.write(state);
+                ResearchProgress.advance(player, key, 1);
+                helper.assertTrue(before.equals(ResearchCodec.write(state)), "Missing eldritch theory changed research or knowledge");
+                helper.assertValueEqual(player.getInventory().getItem(9).getCount(), 2, "Missing eldritch theory consumed its plate");
+                state.addKnowledge("THEORY", "ELDRITCH", 10);
+            }
+
+            ResearchProgress.advance(player, key, 1);
+            helper.assertTrue(state.knows(key), "Valid original requirements failed without a metal-block craft history");
             helper.assertValueEqual(player.getInventory().getItem(9).getCount(), 1, "Research must consume exactly one matching plate");
-            helper.assertValueEqual(state.knowledge("THEORY", "ALCHEMY"), 0, "Research must spend one alchemy theory");
-            if (material.equals("void")) helper.assertValueEqual(state.knowledge("THEORY", "ELDRITCH"), 0,
-                    "Void smelter research must also spend one eldritch theory");
+            helper.assertValueEqual(state.knowledge("THEORY", "ALCHEMY"), 7, "Research must spend one alchemy theory and preserve its remainder");
+            if (material.equals("void")) helper.assertValueEqual(state.knowledge("THEORY", "ELDRITCH"), 9,
+                    "Void smelter research must spend one eldritch theory and preserve its remainder");
+            helper.assertTrue(state.crafted().equals(craftedBefore), "Research changed existing craft history or invented a metal craft");
+            for (int i = 10; i < 13; i++) helper.assertValueEqual(player.getInventory().getItem(i).getCount(), 3,
+                    "Research consumed an unrelated metal block");
             helper.assertValueEqual(player.totalExperience, 5, "Successful research must reward five XP once");
+            before = ResearchCodec.write(state);
             ResearchProgress.advance(player, key, 1);
+            helper.assertTrue(before.equals(ResearchCodec.write(state)), "Replayed request changed completed research or knowledge");
             helper.assertValueEqual(player.getInventory().getItem(9).getCount(), 1, "Replayed request consumed another plate");
             helper.assertValueEqual(player.totalExperience, 5, "Replayed request rewarded XP again");
         }

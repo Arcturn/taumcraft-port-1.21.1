@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 import thaumcraft.port.aspect.Aspect;
 
-/** Immutable original research content. Definitions alone do not imply implemented machines. */
+/** Original runtime research content. Definitions alone do not imply implemented machines. */
 public final class ResearchCatalog {
     // ScanGeneric visits TC6's category registry in insertion order, including gain notifications.
     public static final List<String> CATEGORIES=List.of("BASICS","AUROMANCY","ALCHEMY","ARTIFICE","INFUSION","GOLEMANCY","ELDRITCH");
@@ -22,7 +22,7 @@ public final class ResearchCatalog {
                 String key=o.get("key").getAsString();
                 if(entries.put(key,new Entry(key,o.get("name").getAsString(),o.get("category").getAsString(),
                     location==null?0:location.get(0).getAsInt(),location==null?0:location.get(1).getAsInt(),
-                    strings(o,"parents"),strings(o,"siblings"),strings(o,"meta"),objects(o,"stages"),strings(o,"icons"),objects(o,"addenda")))!=null)
+                    strings(o,"parents"),strings(o,"siblings"),strings(o,"meta"),stages(o),strings(o,"icons"),objects(o,"addenda")))!=null)
                     throw new IllegalStateException("Duplicate research "+key);
             }
         return Collections.unmodifiableMap(entries);
@@ -39,6 +39,24 @@ public final class ResearchCatalog {
     private static List<JsonObject> objects(JsonObject object,String key) {
         if(!object.has(key))return List.of();
         return object.getAsJsonArray(key).asList().stream().map(JsonElement::getAsJsonObject).toList();
+    }
+    private static List<JsonObject> stages(JsonObject entry) {
+        var stages=objects(entry,"stages");
+        // BETA26 no longer registers thaumcraft:metal. Its ResearchManager skips
+        // these two stale craft stacks, leaving getCraft() null in the live game.
+        // Normalize the shared catalog so the book and server see the same rule.
+        // Do not skip other unsupported requirements: those may be unported content.
+        String obsolete=switch(entry.get("key").getAsString()){
+            case "ESSENTIASMELTERTHAUMIUM"->"thaumcraft:metal;1;2";
+            case "ESSENTIASMELTERVOID"->"thaumcraft:metal;1;3";
+            default->null;
+        };
+        if(obsolete!=null)for(var stage:stages)if(stage.has("required_craft")){
+            var crafts=stage.getAsJsonArray("required_craft");
+            crafts.asList().removeIf(value->value.getAsString().equals(obsolete));
+            if(crafts.isEmpty())stage.remove("required_craft");
+        }
+        return stages;
     }
     public static Entry get(String key) { return ENTRIES.get(key); }
     public static Collection<Entry> all() { return ENTRIES.values(); }

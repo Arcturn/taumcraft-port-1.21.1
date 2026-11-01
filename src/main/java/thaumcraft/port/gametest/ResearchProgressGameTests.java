@@ -141,6 +141,36 @@ public final class ResearchProgressGameTests {
         helper.assertValueEqual(received.knowledge("OBSERVATION","ARTIFICE"),0,"Response did not synchronize spent knowledge");helper.succeed();
     }
 
+    @GameTest(template="empty",timeoutTicks=40)
+    public static void cooldownRejectionRepliesWithoutSpendingAndAllowsRetry(GameTestHelper helper){
+        var player=player(helper);var state=state(player);prepare(state,"METALLURGY",1);
+        state.addKnowledge("OBSERVATION","ALCHEMY",23);state.addKnowledge("THEORY","ALCHEMY",41);
+        state.craft(LegacyRequirement.parse("thaumcraft:ingot;1;2").craftKey());
+        state.craft(LegacyRequirement.parse("thaumcraft:ingot;1;0").craftKey());
+        var connection=new JournalConnection(player);
+        thaumcraft.port.network.PortNetwork.handleResearchAction(player,new thaumcraft.port.network.ResearchActionPayload("METALLURGY",1));
+        helper.assertValueEqual(state.stage("METALLURGY"),2,"First click did not advance metallurgy");
+        helper.assertValueEqual(state.knowledge("OBSERVATION","ALCHEMY"),7,"First stage did not spend exactly one observation");
+        helper.assertTrue(player.getCooldowns().isOnCooldown(PortContent.THAUMONOMICON.get()),"First click did not start its cooldown");
+        var before=ResearchCodec.write(state);
+        // The UI can receive the first reply and submit its next stage within four ticks.
+        thaumcraft.port.network.PortNetwork.handleResearchAction(player,new thaumcraft.port.network.ResearchActionPayload("METALLURGY",2));
+        helper.assertValueEqual(connection.journals.size(),2,"Rejected click left the client waiting without a reply");
+        helper.assertTrue(before.equals(ResearchCodec.write(state)),"Cooldown rejection changed research or knowledge");
+        var rejected=connection.journals.getLast();
+        helper.assertTrue(!rejected.open(),"Cooldown reply would reopen a closed book");
+        helper.assertTrue(before.equals(ResearchCodec.write(ResearchCodec.read(rejected.progress()))),"Cooldown reply did not contain the current unchanged progress");
+        helper.assertValueEqual(player.totalExperience,5,"Rejected click granted experience");
+        for(int tick=0;tick<4;tick++)player.getCooldowns().tick();
+        thaumcraft.port.network.PortNetwork.handleResearchAction(player,new thaumcraft.port.network.ResearchActionPayload("METALLURGY",2));
+        helper.assertValueEqual(connection.journals.size(),3,"Retry did not send its synchronized result");
+        var completed=ResearchCodec.read(connection.journals.getLast().progress());
+        helper.assertTrue(completed.knows("METALLURGY"),"Retry after cooldown did not complete the research");
+        helper.assertValueEqual(completed.knowledge("OBSERVATION","ALCHEMY"),7,"Retry charged observations twice");
+        helper.assertValueEqual(completed.knowledge("THEORY","ALCHEMY"),9,"Retry did not charge exactly one theory");
+        helper.assertValueEqual(player.totalExperience,10,"Retry did not award experience exactly once");helper.succeed();
+    }
+
     private static final class JournalConnection extends net.minecraft.server.network.ServerGamePacketListenerImpl {
         final java.util.List<thaumcraft.port.network.JournalPayload> journals=new java.util.ArrayList<>();
         JournalConnection(ServerPlayer player){

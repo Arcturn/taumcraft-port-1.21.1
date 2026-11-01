@@ -29,7 +29,7 @@ public final class ResearchPageScreen extends Screen {
     private long nextCycle;
     private boolean pending,canAdvance;
     private int completeY;
-    private Component tip;
+    private List<Component> tip;
     private String initialRecipe;
     private String shownRecipe;
     private final Deque<String> recipeHistory=new ArrayDeque<>();
@@ -83,7 +83,7 @@ public final class ResearchPageScreen extends Screen {
             g.pose().popPose();
         }
         if(insert==0&&!state.knows(entry.key())&&stage!=null&&stage.has("warp")&&stage.get("warp").getAsInt()>0)forbidden(g,mx,my,x,knowledgeTab()?y+32:state.knows("FIRSTSTEPS")?y+9:contentY);
-        if(!RecipeBook.renderTooltip(g,mx,my)&&tip!=null)BookTooltip.render(g,List.of(tip),mx,my+12,mx,width,height,11);
+        if(!RecipeBook.renderTooltip(g,mx,my)&&tip!=null)BookTooltip.render(g,tip,mx,my+12,mx,width,height,11);
     }
     private boolean knowledgeTab(){return state.knows("KNOWLEDGETYPES")&&!entry.key().equals("KNOWLEDGETYPES");}
     private void recipeBookmarks(GuiGraphics g,int mx,int my,int x,int y){
@@ -112,7 +112,18 @@ public final class ResearchPageScreen extends Screen {
         hover(mx,my,x-67,y-50,20,20,Component.literal(Component.translatable("tc.warp.warn").getString().replace("%n",level)));
     }
     private void arrow(GuiGraphics g,int x,int y,int u,int v,int w,int h){float scale=1.1f+(float)Math.sin(minecraft.player.tickCount/3f)*.2f;g.pose().pushPose();g.pose().translate(x+w/2f,y+h/2f,0);g.pose().scale(scale,scale,1);BookAssets.sprite(g,BookAssets.BOOK,-w/2,-h/2,u,v,w,h);g.pose().popPose();}
-    private void hover(int mx,int my,int x,int y,int w,int h,Component text){if(insert!=3&&inside(mx,my,x,y,w,h))tip=text;}
+    private void hover(int mx,int my,int x,int y,int w,int h,Component text){hover(mx,my,x,y,w,h,List.of(text));}
+    private void hover(int mx,int my,int x,int y,int w,int h,List<Component> text){if(insert!=3&&inside(mx,my,x,y,w,h))tip=text;}
+    private List<Component> knowledgeTip(String type,String category,Integer cost){
+        int raw=state.knowledge(type,category),unit=ResearchState.progression(type);
+        var lines=new ArrayList<Component>();
+        lines.add(Component.translatable("tc.type."+type.toLowerCase(Locale.ROOT)).append(": ").append(Component.translatable("tc.research_category."+category)));
+        lines.add(Component.translatable("thaumcraft.knowledge.available",raw/unit));
+        if(cost!=null)lines.add(Component.translatable("thaumcraft.knowledge.required",cost));
+        lines.add(Component.translatable("thaumcraft.knowledge.progress",raw%unit,unit));
+        lines.add(Component.translatable(cost==null?"thaumcraft.knowledge.spendable":"thaumcraft.knowledge.spend_on_complete"));
+        return lines;
+    }
     private boolean inside(double mx,double my,int x,int y,int w,int h){return mx>=x&&my>=y&&mx<x+w&&my<y+h;}
     private void requirements(GuiGraphics g,int mx,int my){
         // TC6's obtain requirements inspect mainInventory only, never armor or the offhand.
@@ -126,7 +137,7 @@ public final class ResearchPageScreen extends Screen {
             for(int i=0;i<values.size();i++){String value=values.get(i);int rx=x+9+i*step;boolean done=false;Component label;
                 if(field.equals("required_knowledge")){
                     String[] p=value.split(";");int cost=Integer.parseInt(p[2]);done=state.knowledge(p[0],p[1])>=cost*ResearchState.progression(p[0]);BookAssets.texture(g,BookAssets.id("textures/research/knowledge_"+p[0].toLowerCase(Locale.ROOT)+".png"),rx,y,16);BookAssets.texture(g,BookAssets.category(p[1]),rx+2,y+2,12);
-                    label=Component.translatable("tc.type."+p[0].toLowerCase(Locale.ROOT)).append(": ").append(Component.translatable("tc.research_category."+p[1]));
+                    label=null;if(insert==0)hover(mx,my,rx,y,16,16,knowledgeTip(p[0],p[1],cost));
                     String amount=""+cost;float textScale=BookTypography.smallScale();g.pose().pushPose();g.pose().translate(rx+16-(int)Math.ceil(font.width(amount)*textScale),y+16-(int)Math.ceil(font.lineHeight*textScale),5);g.pose().scale(textScale,textScale,textScale);g.drawString(font,amount,0,0,done?0xffffff:0xff5555,true);g.pose().popPose();
                 }else if(field.equals("required_research")){
                     done=state.knows(value);var e=ResearchCatalog.get(ResearchView.clean(value));var a=Aspect.byId(value.startsWith("!")?value.substring(1):"").orElse(null);
@@ -140,7 +151,7 @@ public final class ResearchPageScreen extends Screen {
                     if(field.equals("required_craft"))done=state.crafted().contains(req.craftKey());
                     else {int needed=req.count();for(int slot=0;slot<taken.length&&needed>0;slot++){var s=minecraft.player.getInventory().getItem(slot);if(req.matches().test(s)){int n=Math.min(needed,s.getCount()-taken[slot]);taken[slot]+=n;needed-=n;}}done=needed==0;}
                 }
-                canAdvance&=done;if(done)BookAssets.sprite(g,BookAssets.BOOK,rx+8,y,159,207,10,10);if(label!=null&&insert!=3)hover(mx,my,rx,y,16,16,label);
+                canAdvance&=done;if(done)BookAssets.sprite(g,BookAssets.BOOK,rx+8,y,159,207,10,10);if(label!=null&&insert==0)hover(mx,my,rx,y,16,16,field.equals("required_research")?List.of(label,Component.translatable("thaumcraft.knowledge.discovery_kept")):List.of(label));
             }
         }
         completeY=y-18;
@@ -177,7 +188,7 @@ public final class ResearchPageScreen extends Screen {
             BookAssets.texture(g,BookAssets.id("textures/research/knowledge_"+t.toLowerCase(Locale.ROOT)+".png"),cx,cy,16);g.setColor(1,1,1,.75f);BookAssets.texture(g,BookAssets.category(c),cx+3,cy+3,11);g.setColor(1,1,1,1);
             String amount=""+(raw/unit);g.drawString(font,amount,cx+16-font.width(amount),cy+8,0xffffff,true);int n=16*(raw%unit)/unit;
             if(raw%unit>0){g.setColor(1,1,1,.75f);BookAssets.sprite(g,BookAssets.BOOK,cx,cy+17,0,232,n,2);BookAssets.sprite(g,BookAssets.BOOK,cx+n,cy+17,n,234,16-n,2);g.setColor(1,1,1,1);}
-            hover(mx,my,cx,cy,16,19,Component.translatable("tc.type."+t.toLowerCase(Locale.ROOT)).append(": ").append(Component.translatable("tc.research_category."+c)));
+            hover(mx,my,cx,cy,16,19,knowledgeTip(t,c,null));
         }if(col>0)row++;}
         if(inPage&&row>0)BookAssets.sprite(g,BookAssets.BOOK,x+4,y-row*20+12,24,184,96,8);
     }
