@@ -17,7 +17,8 @@ public final class CuriosEvents {
     public static void onDeath(LivingDeathEvent event) {
         if (!(event.getEntity() instanceof ServerPlayer player) || event.isCanceled()) return;
         CuriosApi.getCuriosInventory(player).ifPresent(inventory ->
-                inventory.findFirstCurio(PortContent.CHARM_UNDYING.get()).ifPresent(found -> {
+                // The Item overload caches within a tick; death must observe the current active slot.
+                inventory.findFirstCurio(stack -> stack.is(PortContent.CHARM_UNDYING.get())).ifPresent(found -> {
                     var slot = found.slotContext();
                     inventory.getStacksHandler(slot.identifier()).ifPresent(handler -> {
                         var consumed = handler.getStacks().extractItem(slot.index(), 1, false);

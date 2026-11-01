@@ -1,0 +1,19 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "INFUSIONENCHANTMENT",
+  "components": [
+    {
+      "item": "minecraft:enchanted_book"
+    },
+    {
+      "item": "minecraft:map"
+    }
+  ],
+  "aspects": {
+    "sensus": 40,
+    "ignis": 60
+  },
+  "instability": 4,
+  "operation": "enchantment",
+  "parameter": "sounding"
+}

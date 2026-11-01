@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thaumcraft:block/slab_eldritch"
+    },
+    "type=top": {
+      "model": "thaumcraft:block/slab_eldritch_top"
+    },
+    "type=double": {
+      "model": "thaumcraft:block/slab_eldritch_double"
+    }
+  }
+}

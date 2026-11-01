@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "N N",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "tag": "c:nuggets/brass"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:ring_mundane"
+  }
+}

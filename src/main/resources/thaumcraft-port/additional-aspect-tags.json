@@ -53,5 +53,29 @@
   "item:thaumcraft:cluster_quartz": {
     "ordo": 5,
     "vitreus": 10
+  },
+  "item:thaumcraft:chunk_beef": {
+    "victus": 5,
+    "perditio": 1
+  },
+  "item:thaumcraft:chunk_chicken": {
+    "victus": 5,
+    "perditio": 1
+  },
+  "item:thaumcraft:chunk_pork": {
+    "victus": 5,
+    "perditio": 1
+  },
+  "item:thaumcraft:chunk_fish": {
+    "victus": 5,
+    "perditio": 1
+  },
+  "item:thaumcraft:chunk_rabbit": {
+    "victus": 5,
+    "perditio": 1
+  },
+  "item:thaumcraft:chunk_mutton": {
+    "victus": 5,
+    "perditio": 1
   }
 }

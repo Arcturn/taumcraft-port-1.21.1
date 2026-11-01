@@ -1,0 +1,19 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "INFUSIONENCHANTMENT",
+  "components": [
+    {
+      "item": "minecraft:enchanted_book"
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    }
+  ],
+  "aspects": {
+    "sensus": 80,
+    "terra": 150
+  },
+  "instability": 4,
+  "operation": "enchantment",
+  "parameter": "burrowing"
+}

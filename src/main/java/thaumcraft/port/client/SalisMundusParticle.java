@@ -179,6 +179,15 @@ public final class SalisMundusParticle extends TextureSheetParticle {
 
     static ParticleRenderType legacyLayer(boolean additive) { return additive ? GLOW : SMOKE; }
 
+    /** BETA26 FXDispatcher.drawBlockMistParticles, used by the Hoe of Growth. */
+    public void growthMist() {
+        lifetime=50+level.random.nextInt(25);grid=16;firstFrame=56;frameCount=1;loop=false;additive=true;
+        colours(64/255f,1,64/255f,64/255f,1,64/255f);
+        alphaKeys=new float[]{0,.5f,.4f,.3f,.2f,.1f,0};alpha=0;
+        startSize=.5f;endSize=.1f;quadSize=startSize;slowdown=1;gravity=.1f;wind(.001);
+        rotation(level.random.nextFloat(),level.random.nextBoolean()?-1:1);
+    }
+
     public void wispMote(int colour) {
         lifetime=10+level.random.nextInt(5); firstFrame=264; frameCount=8; loop=true;
         startSize=(1+level.random.nextFloat()*.25f)*.1f; endSize=.005f;

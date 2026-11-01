@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:arcane_stone",
+    "thaumcraft:arcane_brick",
+    "thaumcraft:stone_ancient",
+    "thaumcraft:stone_eldritch_tile",
+    "thaumcraft:matrix_cost",
+    "thaumcraft:matrix_speed"
+  ]
+}

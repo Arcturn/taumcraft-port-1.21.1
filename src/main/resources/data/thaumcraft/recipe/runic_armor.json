@@ -1,0 +1,19 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "RUNICSHIELDING",
+  "components": [
+    {
+      "item": "thaumcraft:salis_mundus"
+    },
+    {
+      "tag": "c:gems/amber"
+    }
+  ],
+  "aspects": {
+    "praemunio": 40,
+    "vitreus": 20,
+    "potentia": 20
+  },
+  "instability": 5,
+  "operation": "runic"
+}

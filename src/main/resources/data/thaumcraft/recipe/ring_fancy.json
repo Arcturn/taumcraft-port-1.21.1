@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NGN",
+    "N N",
+    "NNN"
+  ],
+  "key": {
+    "G": {
+      "tag": "c:gems/diamond"
+    },
+    "N": {
+      "tag": "c:nuggets/gold"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:ring_fancy"
+  }
+}

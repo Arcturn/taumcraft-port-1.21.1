@@ -1,0 +1,38 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "ELEMENTALTOOLS",
+  "input": {
+    "item": "thaumcraft:thaumium_sword"
+  },
+  "components": [
+    {
+      "type": "neoforge:components",
+      "items": "thaumcraft:crystal_essence",
+      "components": {
+        "thaumcraft:crystal_aspect": "aer"
+      }
+    },
+    {
+      "type": "neoforge:components",
+      "items": "thaumcraft:crystal_essence",
+      "components": {
+        "thaumcraft:crystal_aspect": "aer"
+      }
+    },
+    {
+      "item": "thaumcraft:rareearth"
+    },
+    {
+      "item": "thaumcraft:plank_greatwood"
+    }
+  ],
+  "aspects": {
+    "aer": 30,
+    "motus": 30,
+    "aversio": 30
+  },
+  "instability": 1,
+  "result": {
+    "id": "thaumcraft:elemental_sword"
+  }
+}

@@ -43,6 +43,14 @@ public final class RevealingHud {
             }
             var state=mc.level.getBlockState(pos);
             if(state.getBlock() instanceof NoteBlock)drawText(event,Vec3.atCenterOf(pos).add(0,1,0),"Note: "+state.getValue(NoteBlock.NOTE));
+            if(mc.level.getBlockEntity(pos) instanceof thaumcraft.port.infusion.matrix.InfusionMatrixEntity matrix){
+                var format=new java.text.DecimalFormat("#######.##");
+                var lines=new java.util.ArrayList<String>();
+                lines.add("§l"+net.minecraft.client.resources.language.I18n.get("stability."+matrix.stabilityName()));
+                lines.add("§6§o"+format.format(matrix.stabilityReplenish())+" "+net.minecraft.client.resources.language.I18n.get("stability.gain"));
+                if(matrix.lossPerCycle()!=0)lines.add("§c"+net.minecraft.client.resources.language.I18n.get("stability.range")+"§o"+format.format(matrix.lossPerCycle())+" "+net.minecraft.client.resources.language.I18n.get("stability.loss"));
+                for(int i=0;i<lines.size();i++)drawText(event,Vec3.atCenterOf(pos).add(0,-(i-lines.size()/2f)/5.5f,0),lines.get(i),true);
+            }
         }
         tagScale=RevealingVisualRules.afterFrame(tagScale);
     }
@@ -94,10 +102,13 @@ public final class RevealingHud {
     }
 
     private static void drawText(RenderLevelStageEvent event,Vec3 anchor,String text) {
+        drawText(event,anchor,text,false);
+    }
+    private static void drawText(RenderLevelStageEvent event,Vec3 anchor,String text,boolean through) {
         var mc=Minecraft.getInstance();var pose=facing(event,anchor,anchor);
         pose.mulPose(Axis.ZP.rotationDegrees(180));pose.scale(.0125f,.0125f,.0125f);
         var buffers=mc.renderBuffers().bufferSource();
-        mc.font.drawInBatch(text,1-mc.font.width(text)/2,1,0xFFFFFFFF,true,pose.last().pose(),buffers,Font.DisplayMode.NORMAL,0,0xF000F0);
+        mc.font.drawInBatch(text,1-mc.font.width(text)/2,1,0xFFFFFFFF,true,pose.last().pose(),buffers,through?Font.DisplayMode.SEE_THROUGH:Font.DisplayMode.NORMAL,0,0xF000F0);
         buffers.endBatch();
     }
     private RevealingHud() {}

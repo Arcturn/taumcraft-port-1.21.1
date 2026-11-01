@@ -53,10 +53,11 @@ public final class AlchemyLiquidEvents {
         int temporary = state.temporaryWarp();
         state.warp(state.permanentWarp(), state.normalWarp(), Math.max(0, temporary - 1));
         boolean changed = temporary != state.temporaryWarp();
-        int total = state.permanentWarp() + state.normalWarp() + state.temporaryWarp();
+        int gearWarp = thaumcraft.port.infusion.armor.InfusionEquipmentEvents.gearWarp(player);
+        int total = state.permanentWarp() + state.normalWarp() + state.temporaryWarp() + gearWarp;
         boolean occurred = AlchemyRules.warpEvent(state.warpCounter(), total, roll);
         if (occurred) {
-            state.warpCounter(AlchemyRules.remainingCounter(state.warpCounter(), 0));
+            state.warpCounter(AlchemyRules.remainingCounter(state.warpCounter(), gearWarp));
             changed = true;
             if (state.permanentWarp() + state.normalWarp() > 10 && !state.knows("BATHSALTS") && !state.knows("!BATHSALTS")) {
                 state.flag("!BATHSALTS");

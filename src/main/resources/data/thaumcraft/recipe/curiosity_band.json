@@ -1,0 +1,42 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "CURIOSITYBAND",
+  "input": {
+    "item": "thaumcraft:girdle_fancy"
+  },
+  "components": [
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:writable_book"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:writable_book"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:writable_book"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:writable_book"
+    }
+  ],
+  "aspects": {
+    "cognitio": 150,
+    "vacuos": 50,
+    "vinculum": 100
+  },
+  "instability": 5,
+  "result": {
+    "id": "thaumcraft:curiosity_band"
+  }
+}

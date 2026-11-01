@@ -34,6 +34,19 @@ public final class RecipeAspectGameTests {
     }
 
     @GameTest(template="empty", timeoutTicks=100)
+    public static void infusionAspectsUseCentralItemPedestalsAndSquareRootEssentia(GameTestHelper helper) {
+        var infusion = new thaumcraft.port.infusion.recipe.InfusionRecipe("INFUSION",Ingredient.of(Items.IRON_INGOT),
+                List.of(Ingredient.of(Items.REDSTONE)),Map.of("praecantatio",16,"potentia",9),2,
+                modOutput().copyWithCount(2),"item","");
+        var cheapCraft = craft(modOutput(),Ingredient.of(Items.STICK));
+        // Metal: floor(15*.75/2)=5. Energy: floor(10*.75/2)+floor(sqrt(9)/2)=4. Magic: sqrt(16)/2=2.
+        helper.assertValueEqual(calculator(helper,cheapCraft,infusion).get(modOutput()),
+                Map.of(Aspect.METAL,5,Aspect.ENERGY,4,Aspect.MAGIC,2),
+                "Infusion derivation must include all consumed inputs and take priority over crafting");
+        helper.succeed();
+    }
+
+    @GameTest(template="empty", timeoutTicks=100)
     public static void modCraftingRecipesInheritKnownIngredientsAndOutputCounts(GameTestHelper helper) {
         helper.assertTrue(!BuiltInRegistries.ITEM.getKey(modOutput().getItem()).getNamespace().equals("minecraft"),
                 "The synthetic output must be a real non-vanilla registered item");

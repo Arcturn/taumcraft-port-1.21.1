@@ -34,6 +34,12 @@ public final class ScanDiscoveries {
         for(String wood:List.of("greatwood","silverwood"))for(String type:List.of("log_","sapling_"))add("item:thaumcraft:"+type+wood,"PLANTS","!PLANTWOOD");
         for(String plant:List.of("shimmerleaf","cinderpearl","vishroom"))add("item:thaumcraft:"+plant,"PLANTS","!PLANT"+plant.toUpperCase(Locale.ROOT));
         add("item:thaumcraft:primordial_pearl","PRIMPEARL");
+        // ConfigResearch's ScanBlock predicates also cover the corresponding block item.
+        for(String prefix:List.of("item:","block:")) {
+            add(prefix+"thaumcraft:stone_ancient","!ORBLOCK1");
+            add(prefix+"thaumcraft:stone_ancient_tile","!ORBLOCK1");
+            add(prefix+"thaumcraft:stone_eldritch_tile","!ORBLOCK2");
+        }
     }
     public static Set<String> subjectFlags(String subject) {
         if (subject.startsWith("entity:thaumcraft:wisp:")) subject="entity:thaumcraft:wisp";

@@ -1,0 +1,19 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "INFUSIONENCHANTMENT",
+  "components": [
+    {
+      "item": "minecraft:enchanted_book"
+    },
+    {
+      "item": "thaumcraft:crystal_essence"
+    }
+  ],
+  "aspects": {
+    "bestia": 40,
+    "vitium": 60
+  },
+  "instability": 4,
+  "operation": "enchantment",
+  "parameter": "essence"
+}

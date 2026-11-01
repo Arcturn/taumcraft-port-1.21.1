@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "thaumcraft:thaumium_pick"
+    "thaumcraft:thaumium_pick",
+    "thaumcraft:elemental_pick"
   ]
 }

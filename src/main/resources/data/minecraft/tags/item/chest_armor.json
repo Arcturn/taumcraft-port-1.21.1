@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "thaumcraft:thaumium_chest"
+    "thaumcraft:thaumium_chest",
+    "thaumcraft:cloth_chest",
+    "thaumcraft:fortress_chest"
   ]
 }

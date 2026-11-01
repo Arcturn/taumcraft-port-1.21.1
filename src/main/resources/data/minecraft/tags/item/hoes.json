@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "thaumcraft:thaumium_hoe"
+    "thaumcraft:thaumium_hoe",
+    "thaumcraft:elemental_hoe"
   ]
 }

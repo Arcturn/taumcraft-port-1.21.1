@@ -9125,7 +9125,8 @@
           "legacy": "minecraft:rabbit_foot;1;0"
         }
       ],
-      "enchantment": "BURROWING"
+      "enchantment": "BURROWING",
+      "research": "INFUSIONENCHANTMENT"
     },
     "thaumcraft:IECOLLECTORFAKE": {
       "type": "thaumcraft:infusion",
@@ -9148,7 +9149,8 @@
           "legacy": "minecraft:lead;1;0"
         }
       ],
-      "enchantment": "COLLECTOR"
+      "enchantment": "COLLECTOR",
+      "research": "INFUSIONENCHANTMENT"
     },
     "thaumcraft:IEDESTRUCTIVEFAKE": {
       "type": "thaumcraft:infusion",
@@ -9171,7 +9173,8 @@
           "legacy": "minecraft:tnt;1;0"
         }
       ],
-      "enchantment": "DESTRUCTIVE"
+      "enchantment": "DESTRUCTIVE",
+      "research": "INFUSIONENCHANTMENT"
     },
     "thaumcraft:IEREFININGFAKE": {
       "type": "thaumcraft:infusion",
@@ -9194,7 +9197,8 @@
           "legacy": "thaumcraft:salis_mundus;1;0"
         }
       ],
-      "enchantment": "REFINING"
+      "enchantment": "REFINING",
+      "research": "INFUSIONENCHANTMENT"
     },
     "thaumcraft:IESOUNDINGFAKE": {
       "type": "thaumcraft:infusion",
@@ -9217,7 +9221,8 @@
           "legacy": "minecraft:map;1;0"
         }
       ],
-      "enchantment": "SOUNDING"
+      "enchantment": "SOUNDING",
+      "research": "INFUSIONENCHANTMENT"
     },
     "thaumcraft:IEARCINGFAKE": {
       "type": "thaumcraft:infusion",
@@ -9240,7 +9245,8 @@
           "legacy": "minecraft:redstone_block;1;0"
         }
       ],
-      "enchantment": "ARCING"
+      "enchantment": "ARCING",
+      "research": "INFUSIONENCHANTMENT"
     },
     "thaumcraft:IEESSENCEFAKE": {
       "type": "thaumcraft:infusion",
@@ -9263,7 +9269,8 @@
           "legacy": "thaumcraft:crystal_essence;1;0"
         }
       ],
-      "enchantment": "ESSENCE"
+      "enchantment": "ESSENCE",
+      "research": "INFUSIONENCHANTMENT"
     },
     "thaumcraft:IELAMPLIGHTFAKE": {
       "type": "thaumcraft:infusion",
@@ -9286,7 +9293,8 @@
           "legacy": "oredict:nitor"
         }
       ],
-      "enchantment": "LAMPLIGHT"
+      "enchantment": "LAMPLIGHT",
+      "research": "INFUSIONENCHANTMENT"
     },
     "thaumcraft:infernalfurnace": {
       "type": "thaumcraft:blueprint",

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " L ",
+    "L L",
+    " I "
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "I": {
+      "tag": "c:ingots/brass"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:girdle_mundane"
+  }
+}

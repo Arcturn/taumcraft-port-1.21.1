@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "thaumcraft:ring_mundane",
-    "thaumcraft:ring_fancy"
+    "thaumcraft:ring_fancy",
+    "thaumcraft:cloud_ring",
+    "thaumcraft:ring_apprentice"
   ]
 }

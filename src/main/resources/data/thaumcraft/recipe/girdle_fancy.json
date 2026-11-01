@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " L ",
+    "LGL",
+    " I "
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "G": {
+      "tag": "c:gems/diamond"
+    },
+    "I": {
+      "tag": "c:ingots/gold"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:girdle_fancy"
+  }
+}

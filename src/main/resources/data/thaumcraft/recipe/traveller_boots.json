@@ -1,0 +1,54 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "BOOTSTRAVELLER",
+  "input": {
+    "item": "minecraft:leather_boots"
+  },
+  "components": [
+    {
+      "type": "neoforge:components",
+      "items": "thaumcraft:crystal_essence",
+      "components": {
+        "thaumcraft:crystal_aspect": "aer"
+      }
+    },
+    {
+      "type": "neoforge:components",
+      "items": "thaumcraft:crystal_essence",
+      "components": {
+        "thaumcraft:crystal_aspect": "aer"
+      }
+    },
+    {
+      "item": "thaumcraft:fabric"
+    },
+    {
+      "item": "thaumcraft:fabric"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    [
+      {
+        "item": "minecraft:cod"
+      },
+      {
+        "item": "minecraft:salmon"
+      },
+      {
+        "item": "minecraft:tropical_fish"
+      },
+      {
+        "item": "minecraft:pufferfish"
+      }
+    ]
+  ],
+  "aspects": {
+    "volatus": 100,
+    "motus": 100
+  },
+  "instability": 1,
+  "result": {
+    "id": "thaumcraft:traveller_boots"
+  }
+}

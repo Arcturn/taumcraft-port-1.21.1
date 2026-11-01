@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "thaumcraft:thaumium_boots"
+    "thaumcraft:thaumium_boots",
+    "thaumcraft:traveller_boots",
+    "thaumcraft:cloth_boots"
   ]
 }

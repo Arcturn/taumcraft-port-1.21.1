@@ -1,0 +1,19 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "INFUSIONENCHANTMENT",
+  "components": [
+    {
+      "item": "minecraft:enchanted_book"
+    },
+    {
+      "item": "minecraft:redstone_block"
+    }
+  ],
+  "aspects": {
+    "potentia": 40,
+    "aer": 60
+  },
+  "instability": 4,
+  "operation": "enchantment",
+  "parameter": "arcing"
+}

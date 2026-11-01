@@ -9,6 +9,18 @@
     "thaumcraft:thaumium_pick",
     "thaumcraft:thaumium_axe",
     "thaumcraft:thaumium_hoe",
-    "thaumcraft:thaumium_sword"
+    "thaumcraft:thaumium_sword",
+    "thaumcraft:elemental_axe",
+    "thaumcraft:elemental_pick",
+    "thaumcraft:elemental_shovel",
+    "thaumcraft:elemental_hoe",
+    "thaumcraft:elemental_sword",
+    "thaumcraft:traveller_boots",
+    "thaumcraft:cloth_chest",
+    "thaumcraft:cloth_legs",
+    "thaumcraft:cloth_boots",
+    "thaumcraft:fortress_helm",
+    "thaumcraft:fortress_chest",
+    "thaumcraft:fortress_legs"
   ]
 }

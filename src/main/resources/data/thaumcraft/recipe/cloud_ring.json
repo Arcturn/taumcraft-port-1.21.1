@@ -1,0 +1,26 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "CLOUDRING",
+  "input": {
+    "item": "thaumcraft:ring_mundane"
+  },
+  "components": [
+    {
+      "type": "neoforge:components",
+      "items": "thaumcraft:crystal_essence",
+      "components": {
+        "thaumcraft:crystal_aspect": "aer"
+      }
+    },
+    {
+      "item": "minecraft:feather"
+    }
+  ],
+  "aspects": {
+    "aer": 50
+  },
+  "instability": 1,
+  "result": {
+    "id": "thaumcraft:cloud_ring"
+  }
+}

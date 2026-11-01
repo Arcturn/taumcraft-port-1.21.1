@@ -11,6 +11,7 @@ import net.minecraft.world.item.alchemy.PotionBrewing;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import thaumcraft.port.crafting.*;
+import thaumcraft.port.infusion.recipe.InfusionRecipe;
 import org.slf4j.Logger;
 
 /** TC6 recipe derivation; reload clears the per-manager caches on both logical sides. */
@@ -65,12 +66,16 @@ public final class RecipeAspects {
             for (var recipe : source) {
                 boolean modern = recipe instanceof AbstractCookingRecipe || recipe instanceof StonecutterRecipe
                         || recipe instanceof SmithingTransformRecipe;
-                if (!(recipe instanceof CraftingRecipe || recipe instanceof ArcaneRecipe || recipe instanceof CrucibleRecipe) && !modern) continue;
+                if (!(recipe instanceof CraftingRecipe || recipe instanceof ArcaneRecipe || recipe instanceof CrucibleRecipe || recipe instanceof InfusionRecipe) && !modern) continue;
                 try {
                     var output = recipe.getResultItem(registries).copy();
                     if (output.isEmpty()) continue; // Dynamic/special outputs need their own explicit integration.
                     List<Ingredient> ingredients;
-                    if (recipe instanceof SmithingTransformRecipe smithing) {
+                    if (recipe instanceof InfusionRecipe infusion) {
+                        ingredients = new ArrayList<>();
+                        ingredients.add(infusion.input());
+                        ingredients.addAll(infusion.components());
+                    } else if (recipe instanceof SmithingTransformRecipe smithing) {
                         // Smithing does not expose its ingredients through Recipe.getIngredients().
                         // Its public codec preserves NeoForge custom ingredients without reflection.
                         var ops = registries.createSerializationContext(JsonOps.INSTANCE);
@@ -167,9 +172,14 @@ public final class RecipeAspects {
                 sum.values().removeIf(n -> n <= 0);
                 return sum;
             }
-            var legacy = fromOrdinaryRecipes(stack, candidates, false, path, work);
+            // TC6 tries infusion after crucible, before ordinary crafting.
+            var infusionCandidates = candidates.stream().filter(c -> c.recipe() instanceof InfusionRecipe).toList();
+            var infused = fromOrdinaryRecipes(stack, infusionCandidates, false, path, work);
+            if (!infused.isEmpty()) return infused;
+            var ordinaryCandidates = candidates.stream().filter(c -> !(c.recipe() instanceof InfusionRecipe)).toList();
+            var legacy = fromOrdinaryRecipes(stack, ordinaryCandidates, false, path, work);
             // New workstation routes fill gaps; they do not lower original crafting-derived values.
-            return legacy.isEmpty() ? fromOrdinaryRecipes(stack, candidates, true, path, work) : legacy;
+            return legacy.isEmpty() ? fromOrdinaryRecipes(stack, ordinaryCandidates, true, path, work) : legacy;
         }
 
         private Map<Aspect, Integer> fromOrdinaryRecipes(ItemStack stack, List<Candidate> candidates,
@@ -212,6 +222,9 @@ public final class RecipeAspects {
                     sum.replaceAll((aspect, amount) -> processing ? amount / output : scaled(amount, output));
                     if (recipe instanceof ArcaneRecipe arcane && arcane.vis() > 0)
                         sum.merge(Aspect.MAGIC, (int) (Math.sqrt(1 + arcane.vis() / 2) / output), Integer::sum);
+                    if (recipe instanceof InfusionRecipe infusion)
+                        infusion.baseAspects().forEach((id, amount) -> sum.merge(Aspect.byId(id).orElseThrow(),
+                                (int) (Math.sqrt(amount) / output), Integer::sum));
                     sum.values().removeIf(n -> n <= 0);
                     int total = sum.values().stream().mapToInt(Integer::intValue).sum();
                     // Recoloring back through an ancestor is not a cheaper source of the

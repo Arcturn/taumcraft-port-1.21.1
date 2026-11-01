@@ -1,0 +1,22 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "FORTRESSMASK",
+  "input": {
+    "item": "thaumcraft:fortress_helm"
+  },
+  "components": [
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "thaumcraft:goggles"
+    }
+  ],
+  "aspects": {
+    "sensus": 40,
+    "auram": 20,
+    "praemunio": 20
+  },
+  "instability": 5,
+  "operation": "goggles"
+}

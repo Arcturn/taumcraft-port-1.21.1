@@ -1,0 +1,24 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "INFUSIONSTABLE",
+  "vis": 25,
+  "crystals": {
+    "aqua": 1
+  },
+  "pattern": [
+    "AB"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:dusts/redstone"
+    },
+    "B": {
+      "tag": "c:ingots/gold"
+    }
+  },
+  "shapeless": true,
+  "result": {
+    "id": "thaumcraft:inlay",
+    "count": 2
+  }
+}

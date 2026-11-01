@@ -65,6 +65,8 @@ public final class PortContent {
     public static final DeferredItem<CelestialNotesItem> CELESTIAL_NOTES=ITEMS.registerItem("celestial_notes",CelestialNotesItem::new);
     public static final DeferredItem<ThaumometerItem> THAUMOMETER = ITEMS.registerItem("thaumometer", ThaumometerItem::new,
             new Item.Properties().rarity(Rarity.UNCOMMON));
+    public static final DeferredItem<CasterItem> CASTER_BASIC = ITEMS.registerItem("caster_basic", CasterItem::new,
+            new Item.Properties().stacksTo(1));
     public static final DeferredItem<GogglesItem> GOGGLES = ITEMS.registerItem("goggles", GogglesItem::new,
             new Item.Properties().durability(350).rarity(Rarity.RARE));
     public static final DeferredItem<ThaumonomiconItem> THAUMONOMICON = ITEMS.registerItem("thaumonomicon", ThaumonomiconItem::new,
@@ -82,7 +84,7 @@ public final class PortContent {
             ITEMS.registerSimpleItem(id);
         }
         for (String id : List.of("amulet_mundane", "ring_mundane", "girdle_mundane", "amulet_fancy", "ring_fancy", "girdle_fancy")) {
-            ITEMS.registerItem(id, CurioItem::new);
+            ITEMS.registerItem(id, CurioItem::new, new Item.Properties().rarity(id.endsWith("fancy") ? Rarity.UNCOMMON : Rarity.COMMON));
         }
         for (String id : List.of("metal_brass", "metal_thaumium", "metal_void")) {
             addBlock(id, SoundType.METAL, 5f, 10f);
@@ -105,6 +107,8 @@ public final class PortContent {
                     for (Aspect aspect : Aspect.values()) output.accept(CrystalItem.stack(aspect));
                     for(int kind=1;kind<13;kind++)output.accept(CelestialNotesItem.stack(kind));
                     for (Aspect aspect : Aspect.values()) output.accept(thaumcraft.port.essentia.EssentiaItem.phial(aspect));
+                    output.accept(thaumcraft.port.infusion.bauble.VerdantCharmItem.stack(1));
+                    output.accept(thaumcraft.port.infusion.bauble.VerdantCharmItem.stack(2));
                 }).build());
     }
 

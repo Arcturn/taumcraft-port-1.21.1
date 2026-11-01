@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "S S",
+    " I "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:string"
+    },
+    "I": {
+      "tag": "c:ingots/brass"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:amulet_mundane"
+  }
+}

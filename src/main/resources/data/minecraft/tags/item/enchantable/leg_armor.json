@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "thaumcraft:thaumium_legs"
+    "thaumcraft:thaumium_legs",
+    "thaumcraft:cloth_legs",
+    "thaumcraft:fortress_legs"
   ]
 }

@@ -86,7 +86,7 @@ public final class RecipeBook {
     }
     public static void render(GuiGraphics g,String key,int variant,ResearchState state,int cx,int cy,int mx,int my,BlueprintView blueprint){
         var mc=Minecraft.getInstance();var all=BookRecipeCatalog.recipes(key,state);if(all.isEmpty()){g.drawWordWrap(mc.font,Component.translatable("thaumcraft.port.recipe.unavailable"),cx-85,cy-15,170,0x403020);return;}
-        var r=all.get(Math.floorMod(variant,all.size()));String type=r.has("type")?r.get("type").getAsString():"";
+        var r=InfusionBookRecipes.live(key,all.get(Math.floorMod(variant,all.size())));String type=r.has("type")?r.get("type").getAsString():"";
         String label=type.contains("blueprint")?"recipe.type.construct":type.contains("crucible")?"recipe.type.crucible":type.contains("infusion")?"recipe.type.infusion":type.contains("arcane")?(r.has("pattern")?"recipe.type.arcane":"recipe.type.arcane.shapeless"):r.has("pattern")?"recipe.type.workbench":"recipe.type.workbenchshapeless";
         var labelLines=mc.font.split(Component.translatable(label),186);
         // Keep the last header line above the original output frame; native RU shapeless
@@ -118,13 +118,13 @@ public final class RecipeBook {
             if(r.has("vis")){g.setColor(1,1,1,.4f);overlay(g,cx,cy,-6,40,68,76,12,12);g.setColor(1,1,1,1);String v=r.get("vis").getAsString();g.drawString(mc.font,v,cx-mc.font.width(v)/2,cy+90,0x505050,false);if(mx>=cx-mc.font.width(v)/2-15&&mx<cx-mc.font.width(v)/2+15&&my>=cy+75&&my<cy+105)tooltip=List.of(Component.translatable("wandtable.text1"));}
             if(r.has("crystals")){var crystals=r.getAsJsonObject("crystals");int i=0;for(var e:crystals.entrySet()){String crystal="thaumcraft:crystal_essence;"+e.getValue().getAsInt()+";0;{Aspects:[{key:\""+e.getKey()+"\",amount:1}]}";ingredient(g,crystal,cx+4-crystals.size()*10+i++*20,cy+59,mx,my);}}
         }
-        if(mx>=cx-8&&mx<cx+8&&my>=cy-85&&my<cy-69&&(r.has("runic_after")||r.has("enchantment"))){
+        if(mx>=cx-8&&mx<cx+8&&my>=cy-85&&my<cy-69&&!r.has("live_infusion")&&(r.has("runic_after")||r.has("enchantment"))){
             itemTooltip(item(r.get("result")),false);var lines=new ArrayList<Component>(tooltip);
             if(r.has("runic_after"))lines.add(1,Component.translatable("item.runic.charge").append(" +"+r.get("runic_after").getAsInt()).withStyle(net.minecraft.ChatFormatting.GOLD));
             if(r.has("enchantment")){String enchantment=r.get("enchantment").getAsString();var line=Component.translatable("enchantment.infusion."+enchantment);if(Set.of("sounding","refining","arcing","essence","visbattery","swift").contains(enchantment.toLowerCase(Locale.ROOT)))line.append(" I");lines.add(1,line.withStyle(net.minecraft.ChatFormatting.GOLD));}
             tooltip=lines;
         }
-        if(mx>=cx-8&&mx<cx+8&&my>=cy-16&&my<cy&&r.has("runic_before")&&r.get("runic_before").getAsInt()>0){
+        if(mx>=cx-8&&mx<cx+8&&my>=cy-16&&my<cy&&!r.has("live_infusion")&&r.has("runic_before")&&r.get("runic_before").getAsInt()>0){
             var lines=new ArrayList<Component>(tooltip);lines.add(1,Component.translatable("item.runic.charge").append(" +"+r.get("runic_before").getAsInt()).withStyle(net.minecraft.ChatFormatting.GOLD));tooltip=lines;
         }
         if(all.size()>1){float bob=1.1f+(float)Math.sin(mc.player.tickCount/3f)*.2f;if(variant>0)variantArrow(g,cx-88,cy+104,0,bob);if(variant<all.size()-1)variantArrow(g,cx+76,cy+104,12,bob);}

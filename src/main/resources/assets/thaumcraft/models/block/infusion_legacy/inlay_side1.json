@@ -1,0 +1,7 @@
+{
+  "parent": "thaumcraft:block/infusion_legacy/inlay_side",
+  "textures": {
+    "over": "thaumcraft:blocks/inlay_rune1"
+  },
+  "render_type": "minecraft:cutout"
+}

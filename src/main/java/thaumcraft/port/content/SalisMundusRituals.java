@@ -10,6 +10,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.NbtUtils;
@@ -38,6 +40,9 @@ import thaumcraft.port.machine.MachineContent;
 import thaumcraft.port.network.SalisMundusFxPayload;
 import thaumcraft.port.research.ResearchProgress;
 import thaumcraft.port.research.ResearchStorage;
+import thaumcraft.port.infusion.structure.StructureContent;
+import thaumcraft.port.infusion.structure.PillarBlock;
+import thaumcraft.port.infusion.matrix.MatrixContent;
 
 /** Server-owned delayed replacements. Paid dust is held in saved data until commit/refund. */
 public final class SalisMundusRituals extends SavedData {
@@ -48,7 +53,8 @@ public final class SalisMundusRituals extends SavedData {
     private final List<Pending> pending = new ArrayList<>();
     private final Map<UUID, WeakReference<ServerPlayer>> actors = new HashMap<>();
 
-    private enum Kind { BOOK, WORKBENCH, CRUCIBLE, THAUMATORIUM }
+    private enum Kind { BOOK, WORKBENCH, CRUCIBLE, THAUMATORIUM, INFUSION, INFUSIONANCIENT, INFUSIONELDRITCH }
+    private static boolean infusion(Kind kind) { return kind.ordinal() >= Kind.INFUSION.ordinal(); }
     private record Source(BlockPos pos, BlockState state) {}
     private record Pending(Kind kind, UUID actor, InteractionHand hand, Direction face, Direction facing,
                            Vec3 hit, long due, List<Source> sources, ItemStack payment) {
@@ -77,8 +83,12 @@ public final class SalisMundusRituals extends SavedData {
             if (!level.getBlockState(pos.below()).is(MachineContent.CRUCIBLE.get())
                     || !level.getBlockState(pos.above()).is(EssentiaContent.CONSTRUCT.get())) return InteractionResult.PASS;
             state = level.getBlockState(pos);
-        } else return InteractionResult.PASS;
-        sources.add(new Source(pos.immutable(), state));
+        } else {
+            Kind found = findAltar(level, pos, sources);
+            if (found == null) return InteractionResult.PASS;
+            kind = found;
+        }
+        if (!infusion(kind)) sources.add(new Source(pos.immutable(), state));
         if (kind == Kind.THAUMATORIUM) sources.add(new Source(pos.above(), level.getBlockState(pos.above())));
         for (Source source : sources) {
             if (!level.mayInteract(player, source.pos)
@@ -87,6 +97,10 @@ public final class SalisMundusRituals extends SavedData {
         if (!(level instanceof ServerLevel server) || !(player instanceof ServerPlayer actor)) return InteractionResult.SUCCESS;
         if (kind == Kind.THAUMATORIUM && !knowsThaumatorium(actor)) {
             actor.displayClientMessage(Component.translatable("gui.thaumcraft.thaumatorium_research"), true);
+            return InteractionResult.FAIL;
+        }
+        if (infusion(kind) && !ResearchStorage.get(actor.getServer()).player(actor.getUUID()).knows(kind.name())) {
+            actor.displayClientMessage(Component.translatable("gui.thaumcraft.infusion_research"), true);
             return InteractionResult.FAIL;
         }
         SalisMundusRituals rituals = get(server);
@@ -108,6 +122,36 @@ public final class SalisMundusRituals extends SavedData {
         return ResearchStorage.get(actor.getServer()).player(actor.getUUID()).knows("THAUMATORIUM");
     }
 
+    /** Dust may touch any part of the original 3x3x3 blueprint, including its matrix. */
+    private static Kind findAltar(net.minecraft.world.level.Level level, BlockPos clicked, List<Source> sources) {
+        for (int x = -2; x <= 2; x++) for (int z = -2; z <= 2; z++) for (int y = 0; y <= 3; y++) {
+            BlockPos matrix = clicked.offset(x, y, z);
+            if (!level.hasChunkAt(matrix) || !level.getBlockState(matrix).is(MatrixContent.MATRIX.get())) continue;
+            BlockPos center = matrix.below(2);
+            Block pedestal = level.getBlockState(center).getBlock();
+            Kind kind = pedestal == StructureContent.PEDESTAL_ARCANE.get() ? Kind.INFUSION
+                    : pedestal == StructureContent.PEDESTAL_ANCIENT.get() ? Kind.INFUSIONANCIENT
+                    : pedestal == StructureContent.PEDESTAL_ELDRITCH.get() ? Kind.INFUSIONELDRITCH : null;
+            if (kind == null) continue;
+            Block stone = switch (kind) {
+                case INFUSION -> BuiltInRegistries.BLOCK.get(ResourceLocation.parse("thaumcraft:arcane_stone"));
+                case INFUSIONANCIENT -> StructureContent.STONE_ANCIENT.get();
+                default -> StructureContent.STONE_ELDRITCH_TILE.get();
+            };
+            List<Source> parts = new ArrayList<>();
+            parts.add(new Source(matrix.immutable(), level.getBlockState(matrix)));
+            parts.add(new Source(center.immutable(), level.getBlockState(center)));
+            boolean matches = true;
+            for (int dx : new int[]{-1, 1}) for (int dz : new int[]{-1, 1}) for (int dy = 0; dy < 2; dy++) {
+                BlockPos part = center.offset(dx, dy, dz);
+                if (!level.hasChunkAt(part) || !level.getBlockState(part).is(stone)) { matches = false; break; }
+                parts.add(new Source(part.immutable(), level.getBlockState(part)));
+            }
+            if (matches && parts.size() == 10) { sources.addAll(parts); return kind; }
+        }
+        return null;
+    }
+
     private boolean reserved(BlockPos pos) {
         return pending.stream().anyMatch(job -> job.sources.stream().anyMatch(source -> source.pos.equals(pos)));
     }
@@ -116,7 +160,7 @@ public final class SalisMundusRituals extends SavedData {
     public static void breakBlock(BlockEvent.BreakEvent event) {
         if (event.getLevel() instanceof ServerLevel level) {
             SalisMundusRituals rituals = level.getDataStorage().get(FACTORY, SAVE_KEY);
-            if (rituals != null && rituals.pending.stream().anyMatch(job -> job.kind == Kind.THAUMATORIUM
+            if (rituals != null && rituals.pending.stream().anyMatch(job -> (job.kind == Kind.THAUMATORIUM || infusion(job.kind))
                     && job.sources.stream().anyMatch(source -> source.pos.equals(event.getPos())))) event.setCanceled(true);
         }
     }
@@ -150,13 +194,34 @@ public final class SalisMundusRituals extends SavedData {
             if (!level.getBlockState(source.pos).equals(source.state) || !level.mayInteract(actor, source.pos)
                     || !actor.mayUseItemAt(source.pos, job.face, permissionItem)) return false;
         }
+        if (infusion(job.kind)) return ResearchStorage.get(actor.getServer()).player(actor.getUUID()).knows(job.kind.name());
         return job.kind != Kind.THAUMATORIUM
                 || (knowsThaumatorium(actor) && level.getBlockState(job.base().below()).is(MachineContent.CRUCIBLE.get()));
     }
 
     private static boolean complete(ServerLevel level, ServerPlayer actor, Pending job) {
         BlockPos base = job.base();
-        if (job.kind == Kind.THAUMATORIUM) {
+        if (infusion(job.kind)) {
+            var pillar = switch (job.kind) {
+                case INFUSION -> StructureContent.PILLAR_ARCANE.get();
+                case INFUSIONANCIENT -> StructureContent.PILLAR_ANCIENT.get();
+                default -> StructureContent.PILLAR_ELDRITCH.get();
+            };
+            // BETA26's first matching horizontal face is SOUTH; its blueprint is rotated three times.
+            Direction[] facings = {Direction.NORTH, Direction.WEST, Direction.EAST, Direction.SOUTH};
+            for (int i = 2; i < job.sources.size(); i++) {
+                Source source = job.sources.get(i);
+                BlockState target = i % 2 == 1 ? Blocks.AIR.defaultBlockState()
+                        : pillar.defaultBlockState().setValue(PillarBlock.FACING, facings[(i - 2) / 2]);
+                if (!level.setBlock(source.pos, target, Block.UPDATE_CLIENTS)) {
+                    for (Source previous : job.sources) if (!level.getBlockState(previous.pos).equals(previous.state))
+                        level.setBlock(previous.pos, previous.state, Block.UPDATE_CLIENTS);
+                    for (Source previous : job.sources) level.updateNeighborsAt(previous.pos, previous.state.getBlock());
+                    return false;
+                }
+            }
+            for (Source source : job.sources) level.updateNeighborsAt(source.pos, level.getBlockState(source.pos).getBlock());
+        } else if (job.kind == Kind.THAUMATORIUM) {
             // Both halves must exist before either receives a neighbor notification.
             var facing = ThaumatoriumBlock.FACING;
             boolean top = level.setBlock(base.above(), EssentiaContent.THAUMATORIUM_TOP.get()
@@ -225,7 +290,7 @@ public final class SalisMundusRituals extends SavedData {
                             NbtUtils.readBlockState(registries.lookupOrThrow(Registries.BLOCK), source.getCompound("state"))));
                 }
                 Kind kind = Kind.valueOf(tag.getString("kind"));
-                if (sources.size() != (kind == Kind.THAUMATORIUM ? 2 : 1)) continue;
+                if (sources.size() != (infusion(kind) ? 10 : kind == Kind.THAUMATORIUM ? 2 : 1)) continue;
                 Vec3 hit = new Vec3(tag.getDouble("hitX"), tag.getDouble("hitY"), tag.getDouble("hitZ"));
                 if (!Double.isFinite(hit.lengthSqr())) continue;
                 rituals.pending.add(new Pending(kind, tag.getUUID("actor"), InteractionHand.valueOf(tag.getString("hand")),

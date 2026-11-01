@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "thaumcraft:goggles",
-    "thaumcraft:thaumium_helm"
+    "thaumcraft:thaumium_helm",
+    "thaumcraft:fortress_helm"
   ]
 }

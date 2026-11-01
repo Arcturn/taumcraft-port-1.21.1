@@ -74,13 +74,22 @@ public final class BookAssets {
         if(source.startsWith("minecraft:potion;")&&source.contains("Potion:")){
             var match=java.util.regex.Pattern.compile("Potion:\"([^\"]+)\"").matcher(source);if(match.find()){var holder=BuiltInRegistries.POTION.getHolder(ResourceLocation.parse(match.group(1)));if(holder.isPresent()){var potion=new ItemStack(Items.POTION);potion.set(net.minecraft.core.component.DataComponents.POTION_CONTENTS,new net.minecraft.world.item.alchemy.PotionContents(holder.get()));return potion;}}
         }
-        var req=LegacyRequirement.parse(source);
+        var augmentParts=source.split(";",4);
+        boolean augmented=augmentParts.length==4&&(augmentParts[3].contains("TC.RUNIC")||augmentParts[3].contains("TC.WARP")||augmentParts[3].contains("infench")||augmentParts[3].contains("goggles")||augmentParts[3].contains("mask")||augmentParts[0].equals("thaumcraft:verdant_charm")&&augmentParts[3].contains("type"));
+        var req=LegacyRequirement.parse(augmented?String.join(";",augmentParts[0],augmentParts[1],augmentParts[2]):source);
         if(!req.craftKey().startsWith("unsupported:")){
             String key=req.craftKey();int slash=key.indexOf('/');String base=slash<0?key:key.substring(0,slash);var id=ResourceLocation.tryParse(base);
             if(id!=null&&BuiltInRegistries.ITEM.containsKey(id)){
                 var stack=new ItemStack(BuiltInRegistries.ITEM.get(id),req.count());
                 if(slash>0&&base.equals("thaumcraft:celestial_notes")){stack=thaumcraft.port.content.CelestialNotesItem.stack(Integer.parseInt(key.substring(slash+1)));stack.setCount(req.count());}
                 if(slash>0){var aspect=thaumcraft.port.aspect.Aspect.byId(key.substring(slash+1)).orElse(null);if(aspect!=null){if(base.endsWith("crystal_essence"))stack=thaumcraft.port.content.CrystalItem.stack(aspect);else if(base.endsWith("phial"))stack=thaumcraft.port.essentia.EssentiaItem.phial(aspect);stack.setCount(req.count());}}
+                // Actual infusion previews retain the original custom-data augment keys.
+                var parts=source.split(";",4);
+                if(parts.length==4)try{
+                    var tag=net.minecraft.nbt.TagParser.parseTag(parts[3]);
+                    if(tag.contains("TC.RUNIC")||tag.contains("TC.WARP")||tag.contains("infench")||tag.contains("goggles")||tag.contains("mask")||base.equals("thaumcraft:verdant_charm")&&tag.contains("type"))
+                        stack.set(net.minecraft.core.component.DataComponents.CUSTOM_DATA,net.minecraft.world.item.component.CustomData.of(tag));
+                }catch(com.mojang.brigadier.exceptions.CommandSyntaxException ignored){}
                 return stack;
             }
         }
@@ -160,6 +169,10 @@ public final class BookAssets {
     public static List<Component> tooltip(String source){
         source=ingredient(source);
         var mc=Minecraft.getInstance();
+        if(source.contains(";")&&(source.contains("TC.RUNIC")||source.contains("infench")||source.contains("goggles:")||source.contains("mask:")||source.contains("type:"))){
+            var augmented=stack(source);
+            if(!augmented.isEmpty())return augmented.getTooltipLines(Item.TooltipContext.of(mc.level),mc.player,mc.options.advancedItemTooltips?TooltipFlag.ADVANCED:TooltipFlag.NORMAL);
+        }
         var captured=BookItemPresentation.catalogTooltip(source,mc.options.advancedItemTooltips);if(!captured.isEmpty())
             return BookItemPresentation.withPlayerContext(source,captured,ClientJournal.state.permanentWarp());
         var stack=stack(source);

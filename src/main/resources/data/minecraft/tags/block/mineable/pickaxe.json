@@ -20,6 +20,25 @@
     "thaumcraft:essentia_output",
     "thaumcraft:condenser",
     "thaumcraft:condenser_lattice",
-    "thaumcraft:condenser_lattice_dirty"
+    "thaumcraft:condenser_lattice_dirty",
+    "thaumcraft:pedestal_arcane",
+    "thaumcraft:pedestal_ancient",
+    "thaumcraft:pedestal_eldritch",
+    "thaumcraft:pillar_arcane",
+    "thaumcraft:pillar_ancient",
+    "thaumcraft:pillar_eldritch",
+    "thaumcraft:stone_ancient",
+    "thaumcraft:stone_eldritch_tile",
+    "thaumcraft:slab_arcane_stone",
+    "thaumcraft:slab_arcane_brick",
+    "thaumcraft:slab_ancient",
+    "thaumcraft:slab_eldritch",
+    "thaumcraft:stabilizer",
+    "thaumcraft:inlay",
+    "thaumcraft:matrix_cost",
+    "thaumcraft:matrix_speed",
+    "thaumcraft:recharge_pedestal",
+    "thaumcraft:paving_stone_travel",
+    "thaumcraft:paving_stone_barrier"
   ]
 }

@@ -29,11 +29,15 @@ public record LegacyRequirement(String source,int count,String craftKey,Predicat
             if(id.equals("oredict:chest"))return new LegacyRequirement(source,count,"minecraft:chest",s->s.is(net.neoforged.neoforge.common.Tags.Items.CHESTS));
             if(id.equals("minecraft:dye"))id=meta==15?"minecraft:bone_meal":meta==0?"minecraft:ink_sac":"";
             else if(id.equals("thaumcraft:ingot"))id=switch(meta){case 0->"thaumcraft:ingot_thaumium";case 1->"thaumcraft:ingot_void";case 2->"thaumcraft:ingot_brass";default->"";};
+            else if(id.equals("thaumcraft:baubles"))id=switch(meta){case 0->"thaumcraft:amulet_mundane";case 1->"thaumcraft:ring_mundane";case 2->"thaumcraft:girdle_mundane";case 3->"thaumcraft:ring_apprentice";case 4->"thaumcraft:amulet_fancy";case 5->"thaumcraft:ring_fancy";case 6->"thaumcraft:girdle_fancy";default->"";};
+            else if(id.equals("thaumcraft:stone_arcane"))id="thaumcraft:arcane_stone";
+            else if(id.equals("thaumcraft:stone_arcane_brick"))id="thaumcraft:arcane_brick";
             // The old smelter pages retain the pre-flattening metal ID. Their
             // descriptions and matching plate requirements identify thaumium/void.
             else if(id.equals("thaumcraft:metal"))id=switch(meta){case 2->"thaumcraft:metal_thaumium";case 3->"thaumcraft:metal_void";default->"";};
             else if(id.equals("thaumcraft:nugget"))id=switch(meta){case 0->"minecraft:iron_nugget";case 5->"thaumcraft:nugget_quicksilver";case 6->"thaumcraft:nugget_thaumium";case 7->"thaumcraft:nugget_void";case 8->"thaumcraft:nugget_brass";case 9->"thaumcraft:nugget_quartz";case 10->"thaumcraft:rareearth";default->"";};
             else if(id.equals("thaumcraft:cluster"))id=switch(meta){case 0->"thaumcraft:cluster_iron";case 1->"thaumcraft:cluster_gold";case 2->"thaumcraft:cluster_copper";case 3->"thaumcraft:cluster_tin";case 4->"thaumcraft:cluster_silver";case 5->"thaumcraft:cluster_lead";case 6->"thaumcraft:cluster_cinnabar";case 7->"thaumcraft:cluster_quartz";default->"";};
+            else if(id.equals("thaumcraft:chunk"))id=meta>=0&&meta<6?"thaumcraft:chunk_"+thaumcraft.port.infusion.recipe.InfusionFood.KINDS.get(meta):"";
             else if(id.equals("thaumcraft:nitor")&&meta==4)id="thaumcraft:nitor_yellow";
             else if(id.equals("thaumcraft:plate"))id=switch(meta){case 0->"thaumcraft:plate_brass";case 1->"thaumcraft:plate_iron";case 2->"thaumcraft:plate_thaumium";case 3->"thaumcraft:plate_void";default->"";};
             else if(id.equals("thaumcraft:phial")&&meta==1&&parts.length==4){
@@ -45,6 +49,12 @@ public record LegacyRequirement(String source,int count,String craftKey,Predicat
             else if(id.equals("thaumcraft:celestial_notes")&&meta>=0&&meta<13){final int kind=meta;return new LegacyRequirement(source,count,id+"/"+meta,s->s.is(thaumcraft.port.content.PortContent.CELESTIAL_NOTES.get())&&s.getOrDefault(thaumcraft.port.content.PortContent.CELESTIAL_KIND.get(),0)==kind);}
             else if(meta!=0)return unsupported(source);
             if(parts.length==4) {
+                if(id.equals("thaumcraft:verdant_charm")){
+                    var matcher=Pattern.compile("type:(\\d+)[bs]?").matcher(parts[3]);if(!matcher.find())return unsupported(source);
+                    int type=Integer.parseInt(matcher.group(1));if(type>2)return unsupported(source);
+                    var item=BuiltInRegistries.ITEM.get(ResourceLocation.parse(id));
+                    return new LegacyRequirement(source,count,id+"/"+type,s->s.is(item)&&thaumcraft.port.infusion.recipe.InfusionAugments.type(s)==type);
+                }
                 if(!id.equals("thaumcraft:crystal_essence"))return unsupported(source);
                 var matcher=Pattern.compile("key:['\"]([a-z]+)['\"]").matcher(parts[3]);if(!matcher.find())return unsupported(source);
                 String aspect=matcher.group(1);
@@ -59,6 +69,7 @@ public record LegacyRequirement(String source,int count,String craftKey,Predicat
     public static String craftKey(ItemStack stack) {
         String id=BuiltInRegistries.ITEM.getKey(stack.getItem()).toString();
         if(stack.is(thaumcraft.port.essentia.EssentiaContent.PHIAL.get())&&thaumcraft.port.essentia.EssentiaItem.aspect(stack)!=null)return id+"/"+thaumcraft.port.essentia.EssentiaItem.aspect(stack).id();
+        if(id.equals("thaumcraft:verdant_charm"))return id+"/"+thaumcraft.port.infusion.recipe.InfusionAugments.type(stack);
         return stack.getItem() instanceof CrystalItem?id+"/"+CrystalItem.aspect(stack).id():id;
     }
     private static LegacyRequirement unsupported(String source) {return new LegacyRequirement(source,1,"unsupported:"+source,s->false);}

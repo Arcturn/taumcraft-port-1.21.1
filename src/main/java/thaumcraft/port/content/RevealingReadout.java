@@ -9,6 +9,8 @@ import thaumcraft.port.machine.CrucibleEntity;
 /** The BETA26 IAspectContainer view, distinct from transport amounts and suction. */
 public final class RevealingReadout {
     public static Map<Aspect,Integer> aspects(BlockEntity entity) {
+        if(entity instanceof thaumcraft.port.infusion.matrix.InfusionMatrixEntity matrix)return matrix.remainingEssentia();
+        if(entity instanceof thaumcraft.port.infusion.structure.RechargePedestalEntity pedestal)return single(Aspect.ENERGY,Math.max(0,thaumcraft.port.infusion.structure.ItemCharge.get(pedestal.getItem(0))));
         if(entity instanceof JarEntity jar)return single(jar.tank.aspect(),jar.tank.amount());
         if(entity instanceof BufferEntity buffer)return Map.copyOf(buffer.contents.values());
         if(entity instanceof TubeEntity tube&&tube.kind==TubeBlock.Kind.FILTER)return single(tube.tank.filter(),-1);

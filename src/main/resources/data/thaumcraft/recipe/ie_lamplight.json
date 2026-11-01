@@ -1,0 +1,19 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "INFUSIONENCHANTMENT",
+  "components": [
+    {
+      "item": "minecraft:enchanted_book"
+    },
+    {
+      "tag": "thaumcraft:nitor"
+    }
+  ],
+  "aspects": {
+    "lux": 80,
+    "aer": 20
+  },
+  "instability": 4,
+  "operation": "enchantment",
+  "parameter": "lamplight"
+}

@@ -1,0 +1,163 @@
+{
+  "thaumcraft:AncientPedestal": [
+    "pedestal_ancient"
+  ],
+  "thaumcraft:ArcanePedestal": [
+    "pedestal_arcane"
+  ],
+  "thaumcraft:Banners": [
+    "banner_white",
+    "banner_orange",
+    "banner_magenta",
+    "banner_light_blue",
+    "banner_yellow",
+    "banner_lime",
+    "banner_pink",
+    "banner_gray",
+    "banner_light_gray",
+    "banner_cyan",
+    "banner_purple",
+    "banner_blue",
+    "banner_brown",
+    "banner_green",
+    "banner_red",
+    "banner_black"
+  ],
+  "thaumcraft:BootsTraveller": [
+    "traveller_boots"
+  ],
+  "thaumcraft:CHARMUNDYING": [
+    "charm_undying"
+  ],
+  "thaumcraft:CLOUDRING": [
+    "cloud_ring"
+  ],
+  "thaumcraft:CuriosityBand": [
+    "curiosity_band"
+  ],
+  "thaumcraft:EldritchPedestal": [
+    "pedestal_eldritch"
+  ],
+  "thaumcraft:ElementalAxe": [
+    "elemental_axe"
+  ],
+  "thaumcraft:ElementalHoe": [
+    "elemental_hoe"
+  ],
+  "thaumcraft:ElementalPick": [
+    "elemental_pick"
+  ],
+  "thaumcraft:ElementalShovel": [
+    "elemental_shovel"
+  ],
+  "thaumcraft:ElementalSword": [
+    "elemental_sword"
+  ],
+  "thaumcraft:HelmGoggles": [
+    "helm_goggles"
+  ],
+  "thaumcraft:IEARCINGFAKE": [
+    "ie_arcing"
+  ],
+  "thaumcraft:IEBURROWINGFAKE": [
+    "ie_burrowing"
+  ],
+  "thaumcraft:IECOLLECTORFAKE": [
+    "ie_collector"
+  ],
+  "thaumcraft:IEDESTRUCTIVEFAKE": [
+    "ie_destructive"
+  ],
+  "thaumcraft:IEESSENCEFAKE": [
+    "ie_essence"
+  ],
+  "thaumcraft:IELAMPLIGHTFAKE": [
+    "ie_lamplight"
+  ],
+  "thaumcraft:IEREFININGFAKE": [
+    "ie_refining"
+  ],
+  "thaumcraft:IESOUNDINGFAKE": [
+    "ie_sounding"
+  ],
+  "thaumcraft:InfusionMatrix": [
+    "infusion_matrix"
+  ],
+  "thaumcraft:MaskAngryGhost": [
+    "mask_angry_ghost"
+  ],
+  "thaumcraft:MaskGrinningDevil": [
+    "mask_grinning_devil"
+  ],
+  "thaumcraft:MaskSippingFiend": [
+    "mask_sipping_fiend"
+  ],
+  "thaumcraft:MatrixCost": [
+    "matrix_cost"
+  ],
+  "thaumcraft:MatrixMotion": [
+    "matrix_speed"
+  ],
+  "thaumcraft:PaveBarrier": [
+    "paving_stone_barrier"
+  ],
+  "thaumcraft:PaveTravel": [
+    "paving_stone_travel"
+  ],
+  "thaumcraft:RedstoneInlay": [
+    "inlay"
+  ],
+  "thaumcraft:RunicArmorFake0": [
+    "runic_armor"
+  ],
+  "thaumcraft:RunicArmorFake1": [
+    "runic_armor"
+  ],
+  "thaumcraft:RunicArmorFake2": [
+    "runic_armor"
+  ],
+  "thaumcraft:Stabilizer": [
+    "stabilizer"
+  ],
+  "thaumcraft:ThaumiumFortressChest": [
+    "fortress_chest"
+  ],
+  "thaumcraft:ThaumiumFortressHelm": [
+    "fortress_helm"
+  ],
+  "thaumcraft:ThaumiumFortressLegs": [
+    "fortress_legs"
+  ],
+  "thaumcraft:VerdantHeart": [
+    "verdant_charm"
+  ],
+  "thaumcraft:VerdantHeartLife": [
+    "verdant_heart_life"
+  ],
+  "thaumcraft:VerdantHeartSustain": [
+    "verdant_heart_sustain"
+  ],
+  "thaumcraft:arcane_brick": [
+    "arcane_brick"
+  ],
+  "thaumcraft:arcane_stone": [
+    "arcane_stone"
+  ],
+  "thaumcraft:baubles_stuff": [
+    "amulet_mundane",
+    "ring_mundane",
+    "girdle_mundane",
+    "amulet_fancy",
+    "ring_fancy",
+    "girdle_fancy"
+  ],
+  "thaumcraft:infusionaltar": [
+    "@infusionaltar"
+  ],
+  "thaumcraft:infusionaltarancient": [
+    "@infusionaltarancient"
+  ],
+  "thaumcraft:infusionaltareldritch": [
+    "@infusionaltareldritch"
+  ]
+}

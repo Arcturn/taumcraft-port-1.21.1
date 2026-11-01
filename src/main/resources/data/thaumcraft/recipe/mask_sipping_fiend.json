@@ -1,0 +1,35 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "FORTRESSMASK",
+  "input": {
+    "item": "thaumcraft:fortress_helm"
+  },
+  "components": [
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "tag": "c:plates/iron"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "minecraft:ghast_tear"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "tag": "c:plates/iron"
+    }
+  ],
+  "aspects": {
+    "exanimis": 80,
+    "victus": 80,
+    "praemunio": 20
+  },
+  "instability": 8,
+  "operation": "mask",
+  "parameter": "2"
+}

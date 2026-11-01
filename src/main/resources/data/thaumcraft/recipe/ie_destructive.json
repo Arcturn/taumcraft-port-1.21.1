@@ -1,0 +1,19 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "INFUSIONENCHANTMENT",
+  "components": [
+    {
+      "item": "minecraft:enchanted_book"
+    },
+    {
+      "item": "minecraft:tnt"
+    }
+  ],
+  "aspects": {
+    "aversio": 200,
+    "perditio": 250
+  },
+  "instability": 4,
+  "operation": "enchantment",
+  "parameter": "destructive"
+}

@@ -1,0 +1,4 @@
+{
+  "parent": "thaumcraft:research/legacy/block/stabilizer",
+  "render_type": "minecraft:cutout"
+}

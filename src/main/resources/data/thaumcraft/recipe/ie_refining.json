@@ -1,0 +1,19 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "INFUSIONENCHANTMENT",
+  "components": [
+    {
+      "item": "minecraft:enchanted_book"
+    },
+    {
+      "item": "thaumcraft:salis_mundus"
+    }
+  ],
+  "aspects": {
+    "ordo": 80,
+    "permutatio": 60
+  },
+  "instability": 4,
+  "operation": "enchantment",
+  "parameter": "refining"
+}
