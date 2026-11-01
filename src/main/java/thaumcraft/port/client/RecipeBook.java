@@ -58,9 +58,10 @@ public final class RecipeBook {
     public static int variants(String key,ResearchState state){return BookRecipeCatalog.recipes(key,state).size();}
     public static boolean available(String key){return !BookRecipeCatalog.recipes(key).isEmpty();}
     public static boolean available(String key,ResearchState state){return variants(key,state)>0;}
-    public static String output(String key,int variant){return output(BookRecipeCatalog.recipes(key),variant);}
-    public static String output(String key,int variant,ResearchState state){return output(BookRecipeCatalog.recipes(key,state),variant);}
-    private static String output(List<JsonObject> all,int variant){return all.isEmpty()?"thaumcraft:textures/aspects/_unknown.png":BookRecipeCatalog.output(all.get(Math.floorMod(variant,all.size())));}
+    public static String output(String key,int variant){return output(key,BookRecipeCatalog.recipes(key),variant);}
+    public static String output(String key,int variant,ResearchState state){return output(key,BookRecipeCatalog.recipes(key,state),variant);}
+    private static String output(String key,List<JsonObject> all,int variant){return all.isEmpty()?"thaumcraft:textures/aspects/_unknown.png":BookRecipeCatalog.output(live(key,all.get(Math.floorMod(variant,all.size()))));}
+    private static JsonObject live(String key,JsonObject original){return CraftingBookRecipes.live(key,InfusionBookRecipes.live(key,original));}
     /** BETA26 uses the completed construction on tabs unless BluePrint supplies a display stack. */
     public static boolean bookmark(GuiGraphics g,String key,int variant,ResearchState state,int x,int y){
         var all=BookRecipeCatalog.recipes(key,state);if(!all.isEmpty()){
@@ -70,7 +71,7 @@ public final class RecipeBook {
                 blueprint(g,layers,x+8,y+7+layers.size(),4,0,true);return false;
             }
         }
-        BookAssets.icon(g,output(all,variant),x,y,false);return true;
+        BookAssets.icon(g,output(key,all,variant),x,y,false);return true;
     }
     private static String item(JsonElement value){
         return item(value,0);
@@ -86,7 +87,7 @@ public final class RecipeBook {
     }
     public static void render(GuiGraphics g,String key,int variant,ResearchState state,int cx,int cy,int mx,int my,BlueprintView blueprint){
         var mc=Minecraft.getInstance();var all=BookRecipeCatalog.recipes(key,state);if(all.isEmpty()){g.drawWordWrap(mc.font,Component.translatable("thaumcraft.port.recipe.unavailable"),cx-85,cy-15,170,0x403020);return;}
-        var r=InfusionBookRecipes.live(key,all.get(Math.floorMod(variant,all.size())));String type=r.has("type")?r.get("type").getAsString():"";
+        var r=live(key,all.get(Math.floorMod(variant,all.size())));String type=r.has("type")?r.get("type").getAsString():"";
         String label=type.contains("blueprint")?"recipe.type.construct":type.contains("crucible")?"recipe.type.crucible":type.contains("infusion")?"recipe.type.infusion":type.contains("arcane")?(r.has("pattern")?"recipe.type.arcane":"recipe.type.arcane.shapeless"):r.has("pattern")?"recipe.type.workbench":"recipe.type.workbenchshapeless";
         var labelLines=mc.font.split(Component.translatable(label),186);
         // Keep the last header line above the original output frame; native RU shapeless

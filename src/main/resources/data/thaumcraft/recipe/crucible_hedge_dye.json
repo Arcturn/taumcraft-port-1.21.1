@@ -6,7 +6,8 @@
   },
   "aspects": {
     "aqua": 2,
-    "bestia": 2
+    "bestia": 2,
+    "sensus": 5
   },
   "result": {
     "id": "minecraft:ink_sac",

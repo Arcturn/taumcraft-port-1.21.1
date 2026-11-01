@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:hungry_chest",
+    "thaumcraft:arcane_workbench_charger",
+    "thaumcraft:levitator",
+    "thaumcraft:arcane_ear",
+    "thaumcraft:slab_greatwood",
+    "thaumcraft:slab_silverwood"
+  ]
+}

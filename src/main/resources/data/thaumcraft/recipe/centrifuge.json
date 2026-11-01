@@ -6,6 +6,7 @@
     "ordo": 1,
     "perditio": 1
   },
+  "source_order": 653,
   "pattern": [
     " T ",
     "RCP",
@@ -26,7 +27,6 @@
     }
   },
   "result": {
-    "id": "thaumcraft:centrifuge",
-    "count": 1
+    "id": "thaumcraft:centrifuge"
   }
 }

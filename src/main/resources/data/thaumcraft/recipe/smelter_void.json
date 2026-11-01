@@ -5,6 +5,7 @@
   "crystals": {
     "ignis": 3
   },
+  "source_order": 644,
   "pattern": [
     "BFB",
     "IGI",
@@ -12,20 +13,19 @@
   ],
   "key": {
     "B": {
-      "item": "thaumcraft:plate_brass"
+      "tag": "c:plates/brass"
     },
     "F": {
       "item": "thaumcraft:smelter_basic"
     },
     "I": {
-      "item": "thaumcraft:plate_void"
+      "tag": "c:plates/void"
     },
     "G": {
       "item": "thaumcraft:metal_alchemical_advanced"
     }
   },
   "result": {
-    "id": "thaumcraft:smelter_void",
-    "count": 1
+    "id": "thaumcraft:smelter_void"
   }
 }

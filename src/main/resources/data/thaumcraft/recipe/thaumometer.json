@@ -5,11 +5,12 @@
   "crystals": {
     "aer": 1,
     "terra": 1,
-    "ignis": 1,
     "aqua": 1,
+    "ignis": 1,
     "ordo": 1,
     "perditio": 1
   },
+  "source_order": 582,
   "pattern": [
     " I ",
     "IGI",
@@ -17,7 +18,7 @@
   ],
   "key": {
     "I": {
-      "item": "minecraft:gold_ingot"
+      "tag": "c:ingots/gold"
     },
     "G": {
       "item": "minecraft:glass_pane"

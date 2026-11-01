@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "thaumcraft:block/table_stone"
+    },
+    "facing=east": {
+      "model": "thaumcraft:block/table_stone",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/table_stone",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/table_stone",
+      "y": 270
+    }
+  }
+}

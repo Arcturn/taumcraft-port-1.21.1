@@ -3,6 +3,7 @@
   "research": "TUBES",
   "vis": 50,
   "crystals": {},
+  "source_order": 599,
   "pattern": [
     "I I",
     "INI",
@@ -13,7 +14,7 @@
       "tag": "c:plates/iron"
     },
     "N": {
-      "tag": "c:gems/quartz"
+      "item": "minecraft:quartz"
     },
     "S": {
       "tag": "c:rods/wooden"

@@ -1,0 +1,28 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "REDSTONERELAY",
+  "vis": 10,
+  "crystals": {
+    "ordo": 1
+  },
+  "source_order": 627,
+  "pattern": [
+    "   ",
+    "ABA",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:redstone_torch"
+    },
+    "B": {
+      "item": "thaumcraft:mechanism_simple"
+    },
+    "C": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:redstone_relay"
+  }
+}

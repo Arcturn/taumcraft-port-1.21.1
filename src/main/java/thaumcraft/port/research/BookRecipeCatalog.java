@@ -53,9 +53,13 @@ public final class BookRecipeCatalog {
     }
     public static Reference reference(String source,ResearchState state,UnaryOperator<String> signature){
         if(source==null)return null;
-        // Original getCraftingRecipeKey scans all entries, then applies each recipe's own gate.
+        // Stage recipes retain their own gates. Addenda become navigable only when
+        // the owning page is complete and its additional research is known.
         for(var entry:ResearchCatalog.all()){
-            for(var section:entry.stages())for(String key:ResearchCatalog.strings(section,"recipes")){
+            var sections=new ArrayList<>(entry.stages());
+            if(state.knows(entry.key()))for(var addendum:entry.addenda())
+                if(ResearchCatalog.strings(addendum,"required_research").stream().allMatch(state::knows))sections.add(addendum);
+            for(var section:sections)for(String key:ResearchCatalog.strings(section,"recipes")){
                 // Page aliases repair old JSON references, but ingredient navigation
                 // still addresses the registered group and indexes that group's list.
                 String name=key.substring(key.indexOf(':')+1);

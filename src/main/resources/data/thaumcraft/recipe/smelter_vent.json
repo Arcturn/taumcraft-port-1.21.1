@@ -5,22 +5,20 @@
   "crystals": {
     "aer": 1
   },
+  "source_order": 649,
   "pattern": [
     "IBI",
-    "MGF",
+    "MGM",
     "IBI"
   ],
   "key": {
     "I": {
-      "item": "thaumcraft:plate_iron"
+      "tag": "c:plates/iron"
     },
     "B": {
-      "item": "thaumcraft:plate_brass"
+      "tag": "c:plates/brass"
     },
     "M": {
-      "item": "thaumcraft:filter"
-    },
-    "F": {
       "item": "thaumcraft:filter"
     },
     "G": {

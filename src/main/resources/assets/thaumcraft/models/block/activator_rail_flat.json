@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/rail_flat",
+  "textures": {
+    "rail": "thaumcraft:blocks/rail_activator"
+  },
+  "render_type": "minecraft:cutout"
+}

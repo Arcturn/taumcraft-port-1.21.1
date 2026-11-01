@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "thaumcraft:block/dioptra"
+    },
+    "facing=east": {
+      "model": "thaumcraft:block/dioptra",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "thaumcraft:block/dioptra",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thaumcraft:block/dioptra",
+      "y": 270
+    }
+  }
+}

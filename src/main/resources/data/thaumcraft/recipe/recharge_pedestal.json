@@ -6,23 +6,24 @@
     "aer": 1,
     "ordo": 1
   },
+  "source_order": 584,
   "pattern": [
     " R ",
     "DID",
     "SSS"
   ],
   "key": {
-    "I": {
-      "tag": "c:ingots/gold"
+    "R": {
+      "item": "thaumcraft:vis_resonator"
     },
     "D": {
       "tag": "c:gems/diamond"
     },
-    "R": {
-      "item": "thaumcraft:vis_resonator"
+    "I": {
+      "tag": "c:ingots/gold"
     },
     "S": {
-      "item": "minecraft:stone"
+      "tag": "c:stones/normal"
     }
   },
   "result": {

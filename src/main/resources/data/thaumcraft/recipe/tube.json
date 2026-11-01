@@ -3,6 +3,7 @@
   "research": "TUBES",
   "vis": 10,
   "crystals": {},
+  "source_order": 598,
   "pattern": [
     " Q ",
     "IGI",
@@ -10,16 +11,16 @@
   ],
   "key": {
     "Q": {
-      "item": "thaumcraft:nugget_quicksilver"
+      "tag": "c:nuggets/quicksilver"
     },
     "I": {
-      "item": "thaumcraft:plate_iron"
+      "tag": "c:plates/iron"
     },
     "G": {
-      "item": "minecraft:glass"
+      "tag": "c:glass_blocks/cheap"
     },
     "B": {
-      "item": "thaumcraft:nugget_brass"
+      "tag": "c:nuggets/brass"
     }
   },
   "result": {

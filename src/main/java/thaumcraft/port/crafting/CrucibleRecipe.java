@@ -20,7 +20,8 @@ public record CrucibleRecipe(String research,Ingredient catalyst,Map<String,Inte
         Codec.unboundedMap(ASPECT,Codec.intRange(1,500)).fieldOf("aspects").forGetter(CrucibleRecipe::aspects),
         ItemStack.STRICT_CODEC.fieldOf("result").forGetter(CrucibleRecipe::result)).apply(i,CrucibleRecipe::new));
     public CrucibleRecipe{aspects=java.util.Collections.unmodifiableMap(new java.util.LinkedHashMap<>(aspects));result=result.copy();}
-    public boolean matches(SingleRecipeInput input,Level level){return catalyst.test(input.item());}
+    public boolean matchesCatalyst(ItemStack stack){return IngredientMatching.test(catalyst,stack);}
+    public boolean matches(SingleRecipeInput input,Level level){return matchesCatalyst(input.item());}
     public ItemStack assemble(SingleRecipeInput input,HolderLookup.Provider registries){return result.copy();}
     public ItemStack getResultItem(HolderLookup.Provider registries){return result;}
     public boolean canCraftInDimensions(int x,int y){return x*y>=1;}

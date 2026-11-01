@@ -1,0 +1,5 @@
+{
+  "textures": {},
+  "parent": "thaumcraft:research/legacy/block/arcane_ear_off",
+  "render_type": "minecraft:cutout"
+}

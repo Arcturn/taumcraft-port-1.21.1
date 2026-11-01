@@ -6,6 +6,7 @@
     "aer": 1,
     "terra": 1
   },
+  "source_order": 648,
   "pattern": [
     "WTW",
     "RGR",
@@ -19,13 +20,13 @@
       "item": "thaumcraft:tube_filter"
     },
     "R": {
-      "item": "thaumcraft:plate_brass"
+      "tag": "c:plates/brass"
     },
     "G": {
       "item": "thaumcraft:metal_alchemical"
     },
     "I": {
-      "item": "thaumcraft:plate_iron"
+      "tag": "c:plates/iron"
     },
     "B": {
       "item": "thaumcraft:bellows"

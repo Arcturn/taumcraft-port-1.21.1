@@ -2,7 +2,7 @@
   "type": "thaumcraft:crucible",
   "research": "UNLOCKALCHEMY@3",
   "catalyst": {
-    "item": "minecraft:glowstone_dust"
+    "tag": "c:dusts/glowstone"
   },
   "aspects": {
     "potentia": 10,

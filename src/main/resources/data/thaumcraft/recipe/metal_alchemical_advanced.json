@@ -6,6 +6,7 @@
     "terra": 1,
     "ignis": 1
   },
+  "source_order": 646,
   "pattern": [
     " A ",
     "VPV",
@@ -16,14 +17,13 @@
       "item": "thaumcraft:metal_alchemical"
     },
     "V": {
-      "item": "thaumcraft:plate_void"
+      "tag": "c:plates/void"
     },
     "P": {
       "item": "thaumcraft:primordial_pearl"
     }
   },
   "result": {
-    "id": "thaumcraft:metal_alchemical_advanced",
-    "count": 1
+    "id": "thaumcraft:metal_alchemical_advanced"
   }
 }

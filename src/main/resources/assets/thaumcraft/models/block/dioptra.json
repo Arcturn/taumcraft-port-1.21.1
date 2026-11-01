@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "thaumcraft:blocks/dioptra_side_on",
+    "side": "thaumcraft:blocks/dioptra_side_on",
+    "top": "thaumcraft:blocks/dioptra_top",
+    "bottom": "thaumcraft:blocks/arcane_stone_1"
+  },
+  "parent": "thaumcraft:research/legacy/block/dioptra",
+  "render_type": "minecraft:cutout"
+}

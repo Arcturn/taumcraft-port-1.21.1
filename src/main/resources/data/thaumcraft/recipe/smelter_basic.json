@@ -5,6 +5,7 @@
   "crystals": {
     "ignis": 1
   },
+  "source_order": 642,
   "pattern": [
     "BCB",
     "SFS",
@@ -12,20 +13,19 @@
   ],
   "key": {
     "B": {
-      "item": "thaumcraft:plate_brass"
+      "tag": "c:plates/brass"
     },
     "C": {
       "item": "thaumcraft:crucible"
     },
     "S": {
-      "item": "minecraft:cobblestone"
+      "tag": "c:cobblestones/normal"
     },
     "F": {
       "item": "minecraft:furnace"
     }
   },
   "result": {
-    "id": "thaumcraft:smelter_basic",
-    "count": 1
+    "id": "thaumcraft:smelter_basic"
   }
 }

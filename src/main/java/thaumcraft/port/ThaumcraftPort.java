@@ -43,6 +43,7 @@ public final class ThaumcraftPort {
         thaumcraft.port.infusion.tools.InfusionTools.register(modBus);
         thaumcraft.port.infusion.armor.InfusionArmor.register(modBus);
         thaumcraft.port.infusion.bauble.InfusionBaubles.register(modBus);
+        thaumcraft.port.crafting.content.CraftingContent.register(modBus);
         PortContent.register(modBus);
         thaumcraft.port.research.ResearchAdvancements.register(modBus);
         modBus.addListener(PortNetwork::register);

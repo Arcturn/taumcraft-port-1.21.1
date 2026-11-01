@@ -6,6 +6,7 @@
     "terra": 1,
     "ordo": 1
   },
+  "source_order": 654,
   "pattern": [
     "IAI",
     "ABA",
@@ -13,10 +14,10 @@
   ],
   "key": {
     "I": {
-      "item": "thaumcraft:plate_iron"
+      "tag": "c:plates/iron"
     },
     "A": {
-      "item": "thaumcraft:amber"
+      "tag": "c:gems/amber"
     },
     "B": {
       "item": "thaumcraft:mind_clockwork"

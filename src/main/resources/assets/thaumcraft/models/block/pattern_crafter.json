@@ -1,0 +1,5 @@
+{
+  "textures": {},
+  "parent": "thaumcraft:research/legacy/block/pattern_crafter_inv",
+  "render_type": "minecraft:cutout"
+}

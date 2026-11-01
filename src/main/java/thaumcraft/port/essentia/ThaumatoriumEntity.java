@@ -88,7 +88,7 @@ public final class ThaumatoriumEntity extends EssentiaEntity implements WorldlyC
         if (items.getFirst().isEmpty()) return selected.keySet().stream().map(this::recipe).filter(Objects::nonNull).toList();
         return level.getRecipeManager().getAllRecipesFor(MachineContent.CRUCIBLE_RECIPE.get()).stream()
                 .filter(holder -> selected.containsKey(holder.id())
-                        || holder.value().catalyst().test(items.getFirst()) && permitted(player.getUUID(), holder.value()))
+                        || holder.value().matchesCatalyst(items.getFirst()) && permitted(player.getUUID(), holder.value()))
                 .sorted(Comparator.<RecipeHolder<CrucibleRecipe>, String>comparing(holder ->
                         holder.value().getResultItem(level.registryAccess()).getHoverName().getString())
                         .thenComparing(holder -> holder.id().toString())).toList();
@@ -101,7 +101,7 @@ public final class ThaumatoriumEntity extends EssentiaEntity implements WorldlyC
             return;
         }
         var recipe = recipe(id);
-        if (recipe == null || !recipe.value().catalyst().test(items.getFirst())
+        if (recipe == null || !recipe.value().matchesCatalyst(items.getFirst())
                 || !permitted(player.getUUID(), recipe.value()) || selected.size() >= capacity) return;
         selected.put(id, player.getUUID());
         sync();
@@ -141,11 +141,11 @@ public final class ThaumatoriumEntity extends EssentiaEntity implements WorldlyC
         if (oldDemand != demand || wasHeated != heated || oldCapacity != capacity) sync();
     }
     private void process(ServerLevel server) {
-        if (activeId == null || !selected.containsKey(activeId) || active == null || !active.catalyst().test(items.getFirst())) {
+        if (activeId == null || !selected.containsKey(activeId) || active == null || !active.matchesCatalyst(items.getFirst())) {
             resetActive();
             for (var id : selected.keySet()) {
                 var recipe = recipe(id);
-                if (recipe != null && recipe.value().catalyst().test(items.getFirst())) {
+                if (recipe != null && recipe.value().matchesCatalyst(items.getFirst())) {
                     activeId = id;
                     active = recipe.value();
                     break;
@@ -216,7 +216,7 @@ public final class ThaumatoriumEntity extends EssentiaEntity implements WorldlyC
         be.items.set(slot, stack);
         stack.limitSize(getMaxStackSize(stack));
         // Keep a matching in-progress recipe and its essentia when automation tops up the stack.
-        if (be.active != null && !be.active.catalyst().test(stack)) be.resetActive();
+        if (be.active != null && !be.active.matchesCatalyst(stack)) be.resetActive();
         be.sync();
     }
     public boolean stillValid(Player player) { return main() != null && Container.stillValidBlockEntity(this, player); }

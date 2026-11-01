@@ -1,0 +1,8 @@
+{
+  "textures": {
+    "particle": "thaumcraft:blocks/lamp_on",
+    "side": "thaumcraft:blocks/lamp_on"
+  },
+  "parent": "thaumcraft:research/legacy/block/lamp",
+  "render_type": "minecraft:cutout"
+}

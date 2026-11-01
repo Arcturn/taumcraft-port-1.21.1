@@ -5,6 +5,8 @@
   "crystals": {
     "aqua": 1
   },
+  "source_order": 667,
+  "shapeless": true,
   "pattern": [
     "AB"
   ],
@@ -16,7 +18,6 @@
       "tag": "c:ingots/gold"
     }
   },
-  "shapeless": true,
   "result": {
     "id": "thaumcraft:inlay",
     "count": 2

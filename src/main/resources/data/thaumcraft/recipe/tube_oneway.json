@@ -5,6 +5,8 @@
   "crystals": {
     "aqua": 1
   },
+  "source_order": 603,
+  "shapeless": true,
   "pattern": [
     "T"
   ],
@@ -14,8 +16,6 @@
     }
   },
   "result": {
-    "id": "thaumcraft:tube_oneway",
-    "count": 1
-  },
-  "shapeless": true
+    "id": "thaumcraft:tube_oneway"
+  }
 }

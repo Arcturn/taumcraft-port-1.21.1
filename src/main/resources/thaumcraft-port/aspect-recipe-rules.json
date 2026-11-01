@@ -2989,5 +2989,33 @@
     ],
     "line": 550,
     "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(ca), new AspectList().add(Aspect.LIGHT, 5));"
+  },
+  {
+    "target": "thaumcraft:table_stone",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "instrumentum",
+        "amount": 1
+      }
+    ],
+    "line": 491,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(BlocksTC.tableStone), new AspectList().add(Aspect.TOOL, 1));"
+  },
+  {
+    "target": "thaumcraft:arcane_ear",
+    "kind": "complex",
+    "source": null,
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "sensus",
+        "amount": 20
+      }
+    ],
+    "line": 558,
+    "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(BlocksTC.arcaneEar), new AspectList().add(Aspect.SENSES, 20));"
   }
 ]

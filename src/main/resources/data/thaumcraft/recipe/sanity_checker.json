@@ -1,0 +1,29 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "WARP",
+  "vis": 20,
+  "crystals": {
+    "ordo": 1,
+    "perditio": 1
+  },
+  "source_order": 583,
+  "pattern": [
+    "AB ",
+    "C B",
+    "AB "
+  ],
+  "key": {
+    "A": {
+      "item": "thaumcraft:brain"
+    },
+    "B": {
+      "tag": "c:nuggets/brass"
+    },
+    "C": {
+      "item": "thaumcraft:mirrored_glass"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:sanity_checker"
+  }
+}

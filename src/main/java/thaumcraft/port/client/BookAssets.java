@@ -34,7 +34,7 @@ public final class BookAssets {
     }
     public static String ingredient(String source){
         if(source.equals("thaumcraft:leather"))return "minecraft:leather";
-        return BookIngredients.resolve(source,0,System.currentTimeMillis(),false);
+        return thaumcraft.port.research.LegacyCraftingItems.normalize(BookIngredients.resolve(source,0,System.currentTimeMillis(),false));
     }
     private static final Map<String,String> VARIANTS=Map.of("ingot","thaumium,void,brass","plate","brass,iron,thaumium,void","mind","clockwork,biothaumic","nugget","iron,copper,tin,silver,lead,quicksilver,thaumium,void,brass,quartz,rareearth","cluster","iron,gold,copper,tin,silver,lead,cinnabar,quartz","thaumonomicon","normal,cheat");
     private static final Map<ResourceLocation,int[]> DIMENSIONS=new HashMap<>();

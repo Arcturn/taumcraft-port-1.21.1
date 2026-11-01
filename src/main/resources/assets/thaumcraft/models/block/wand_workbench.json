@@ -1,0 +1,5 @@
+{
+  "textures": {},
+  "parent": "thaumcraft:research/legacy/block/wand_workbench",
+  "render_type": "minecraft:cutout"
+}

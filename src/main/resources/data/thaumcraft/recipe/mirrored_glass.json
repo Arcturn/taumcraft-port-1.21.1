@@ -1,0 +1,25 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "BASEARTIFICE",
+  "vis": 50,
+  "crystals": {
+    "aqua": 1,
+    "ordo": 1
+  },
+  "source_order": 596,
+  "shapeless": true,
+  "pattern": [
+    "AB"
+  ],
+  "key": {
+    "A": {
+      "item": "thaumcraft:quicksilver"
+    },
+    "B": {
+      "tag": "c:glass_panes"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:mirrored_glass"
+  }
+}

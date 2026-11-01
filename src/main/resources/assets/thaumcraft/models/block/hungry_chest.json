@@ -1,0 +1,8 @@
+{
+  "textures": {
+    "particle": "thaumcraft:models/chesthungry",
+    "texture": "thaumcraft:models/chesthungry"
+  },
+  "parent": "thaumcraft:research/legacy/block/chest",
+  "render_type": "minecraft:cutout"
+}

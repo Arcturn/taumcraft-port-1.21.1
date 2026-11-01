@@ -3,6 +3,7 @@
   "research": "BASEINFUSION",
   "vis": 10,
   "crystals": {},
+  "source_order": 611,
   "pattern": [
     "WS",
     "WS",
@@ -13,7 +14,7 @@
       "item": "minecraft:yellow_wool"
     },
     "S": {
-      "item": "minecraft:stick"
+      "tag": "c:rods/wooden"
     },
     "B": {
       "tag": "minecraft:wooden_slabs"

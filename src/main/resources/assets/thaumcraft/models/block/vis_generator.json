@@ -1,0 +1,5 @@
+{
+  "textures": {},
+  "parent": "thaumcraft:research/legacy/block/vis_generator",
+  "render_type": "minecraft:cutout"
+}

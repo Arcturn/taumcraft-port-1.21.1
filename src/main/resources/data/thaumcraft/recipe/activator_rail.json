@@ -1,0 +1,19 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "FIRSTSTEPS",
+  "vis": 10,
+  "crystals": {},
+  "source_order": 581,
+  "shapeless": true,
+  "pattern": [
+    "A"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:activator_rail"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:activator_rail"
+  }
+}

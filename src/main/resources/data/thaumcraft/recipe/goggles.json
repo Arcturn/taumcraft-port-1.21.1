@@ -2,11 +2,25 @@
   "type": "thaumcraft:arcane",
   "research": "UNLOCKARTIFICE",
   "vis": 50,
-  "pattern": ["LGL", "L L", "TGT"],
+  "crystals": {},
+  "source_order": 592,
+  "pattern": [
+    "LGL",
+    "L L",
+    "TGT"
+  ],
   "key": {
-    "L": {"tag": "c:leathers"},
-    "G": {"tag": "c:ingots/brass"},
-    "T": {"item": "thaumcraft:thaumometer"}
+    "L": {
+      "tag": "c:leathers"
+    },
+    "G": {
+      "tag": "c:ingots/brass"
+    },
+    "T": {
+      "item": "thaumcraft:thaumometer"
+    }
   },
-  "result": {"id": "thaumcraft:goggles"}
+  "result": {
+    "id": "thaumcraft:goggles"
+  }
 }

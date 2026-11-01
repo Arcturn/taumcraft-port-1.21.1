@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "thaumcraft:activator_rail",
+    "thaumcraft:wand_workbench",
+    "thaumcraft:lamp_arcane",
+    "thaumcraft:redstone_relay",
+    "thaumcraft:dioptra",
+    "thaumcraft:pattern_crafter",
+    "thaumcraft:vis_battery",
+    "thaumcraft:vis_generator",
+    "thaumcraft:table_stone"
+  ]
+}

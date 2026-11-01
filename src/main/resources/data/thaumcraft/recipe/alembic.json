@@ -5,6 +5,7 @@
   "crystals": {
     "aqua": 1
   },
+  "source_order": 641,
   "pattern": [
     "WFW",
     "SBS",
@@ -18,14 +19,13 @@
       "item": "thaumcraft:filter"
     },
     "S": {
-      "item": "thaumcraft:plate_brass"
+      "tag": "c:plates/brass"
     },
     "B": {
       "item": "minecraft:bucket"
     }
   },
   "result": {
-    "id": "thaumcraft:alembic",
-    "count": 1
+    "id": "thaumcraft:alembic"
   }
 }

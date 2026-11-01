@@ -1,0 +1,5 @@
+{
+  "textures": {},
+  "parent": "thaumcraft:research/legacy/block/redstone_relay_off",
+  "render_type": "minecraft:cutout"
+}

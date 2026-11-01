@@ -6,6 +6,7 @@
     "aqua": 1,
     "ignis": 1
   },
+  "source_order": 647,
   "pattern": [
     "BDB",
     "IAI",
@@ -13,13 +14,13 @@
   ],
   "key": {
     "B": {
-      "item": "thaumcraft:plate_brass"
+      "tag": "c:plates/brass"
     },
     "D": {
       "item": "minecraft:dispenser"
     },
     "I": {
-      "item": "thaumcraft:plate_iron"
+      "tag": "c:plates/iron"
     },
     "A": {
       "item": "minecraft:brewing_stand"

@@ -7,29 +7,30 @@
     "aqua": 1,
     "perditio": 1
   },
+  "source_order": 666,
   "pattern": [
     "SRS",
     "BVB",
     "IMI"
   ],
   "key": {
-    "R": {
-      "item": "minecraft:redstone_block"
-    },
     "S": {
       "item": "thaumcraft:slab_arcane_stone"
     },
+    "R": {
+      "tag": "c:storage_blocks/redstone"
+    },
     "B": {
       "item": "thaumcraft:arcane_stone"
-    },
-    "M": {
-      "item": "thaumcraft:mechanism_complex"
     },
     "V": {
       "item": "thaumcraft:vis_resonator"
     },
     "I": {
       "item": "thaumcraft:inlay"
+    },
+    "M": {
+      "item": "thaumcraft:mechanism_complex"
     }
   },
   "result": {

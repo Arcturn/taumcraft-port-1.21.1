@@ -6,21 +6,23 @@
     "aer": 1,
     "aqua": 1
   },
+  "source_order": 650,
   "pattern": [
-    "BQB",
-    "IGI"
+    "   ",
+    "ABA",
+    "CDC"
   ],
   "key": {
-    "B": {
-      "item": "thaumcraft:plate_brass"
+    "A": {
+      "tag": "c:plates/brass"
     },
-    "Q": {
+    "B": {
       "item": "minecraft:dispenser"
     },
-    "I": {
-      "item": "thaumcraft:plate_iron"
+    "C": {
+      "tag": "c:plates/iron"
     },
-    "G": {
+    "D": {
       "item": "thaumcraft:metal_alchemical"
     }
   },

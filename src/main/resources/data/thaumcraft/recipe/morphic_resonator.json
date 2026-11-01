@@ -6,6 +6,7 @@
     "aer": 1,
     "ignis": 1
   },
+  "source_order": 640,
   "pattern": [
     " G ",
     "BSB",
@@ -13,17 +14,16 @@
   ],
   "key": {
     "G": {
-      "item": "minecraft:glass_pane"
+      "tag": "c:glass_panes"
     },
     "B": {
-      "item": "thaumcraft:plate_brass"
+      "tag": "c:plates/brass"
     },
     "S": {
       "item": "thaumcraft:rareearth"
     }
   },
   "result": {
-    "id": "thaumcraft:morphic_resonator",
-    "count": 1
+    "id": "thaumcraft:morphic_resonator"
   }
 }

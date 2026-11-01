@@ -1,0 +1,7 @@
+{
+  "textures": {
+    "all": "thaumcraft:blocks/vis_battery_0"
+  },
+  "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:cutout"
+}

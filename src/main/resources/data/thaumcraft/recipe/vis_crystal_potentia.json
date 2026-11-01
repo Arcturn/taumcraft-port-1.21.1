@@ -2,7 +2,7 @@
   "type": "thaumcraft:crucible",
   "research": "BASEALCHEMY",
   "catalyst": {
-    "item": "thaumcraft:nugget_quartz"
+    "tag": "c:nuggets/quartz"
   },
   "aspects": {
     "potentia": 2

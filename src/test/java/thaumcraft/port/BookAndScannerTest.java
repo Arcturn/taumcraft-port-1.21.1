@@ -126,13 +126,38 @@ class BookAndScannerTest {
         state.stage("UNLOCKALCHEMY",3);var unlocked=BookRecipeCatalog.reference(yellow,state,BookRecipeCatalog::itemIdentity);
         assertNotNull(unlocked);assertFalse(unlocked.locked());assertEquals("thaumcraft:nitor",unlocked.recipe());
     }
-    @Test void referenceSearchUsesStageRecipesWithoutAddingAddenda(){
-        var state=new ResearchState();state.completeCatalog();var advanced=BookRecipeCatalog.recipes("thaumcraft:SealCollectAdv",state);
-        assertEquals(1,advanced.size());
-        // Preserve NBT in this lookup-only fixture to distinguish the addendum's seal
-        // from stage seals, independently of the production item+metadata comparator.
-        assertNull(BookRecipeCatalog.reference(BookRecipeCatalog.output(advanced.getFirst()),state,java.util.function.UnaryOperator.identity()));
+    @Test void completedCatalogLinksEveryAdvancedSealToItsAddendumRecipe(){
+        var state=new ResearchState();state.completeCatalog();
+        var expected=Map.of("pickup","SealCollectAdv","fill","SealStoreAdv","empty","SealEmptyAdv",
+                "guard","SealGuardAdv","breaker","SealBreakAdv");
+        expected.forEach((seal,recipe)->{
+            String output="thaumcraft:seal_"+seal+"_advanced;1;0";
+            var reference=BookRecipeCatalog.reference(output,state,BookAndScannerTest::craftingIdentity);
+            assertNotNull(reference,output);assertFalse(reference.locked(),output);
+            assertEquals("thaumcraft:"+recipe,reference.recipe());assertEquals(0,reference.variant());
+            var displayed=BookRecipeCatalog.recipes(reference.recipe(),state).get(reference.variant());
+            assertEquals(craftingIdentity(output),craftingIdentity(BookRecipeCatalog.output(displayed)));
+        });
     }
+    @Test void hiddenAddendumRecipesDoNotLeakThroughIngredientLinks(){
+        var owners=Map.of("pickup","SEALCOLLECT","fill","SEALSTORE","empty","SEALEMPTY",
+                "guard","SEALGUARD","breaker","SEALBREAK");
+        owners.forEach((seal,owner)->{
+            String output="thaumcraft:seal_"+seal+"_advanced;1;0";
+            var state=new ResearchState();
+            assertNull(BookRecipeCatalog.reference(output,state,BookAndScannerTest::craftingIdentity));
+            state.flag("MINDBIOTHAUMIC");
+            assertNull(BookRecipeCatalog.reference(output,state,BookAndScannerTest::craftingIdentity),"Helper alone: "+owner);
+            state.stage(owner,ResearchCatalog.get(owner).stages().size());
+            assertNull(BookRecipeCatalog.reference(output,state,BookAndScannerTest::craftingIdentity),"Incomplete owner: "+owner);
+            var ownerOnly=new ResearchState();ownerOnly.flag(owner);
+            assertNull(BookRecipeCatalog.reference(output,ownerOnly,BookAndScannerTest::craftingIdentity),"Missing helper: "+owner);
+            ownerOnly.flag("MINDBIOTHAUMIC");
+            var reference=BookRecipeCatalog.reference(output,ownerOnly,BookAndScannerTest::craftingIdentity);
+            assertNotNull(reference,owner);assertFalse(reference.locked(),owner);
+        });
+    }
+    private static String craftingIdentity(String source){return BookRecipeCatalog.itemIdentity(LegacyCraftingItems.normalize(source));}
     @Test void wildcardWoolIngredientsRetainAllColorsAndFixedBlackBannerStaysBlack(){
         var recipes=ResearchCatalog.read("/thaumcraft-port/book-recipes.json").getAsJsonObject("recipes");
         var fabric=recipes.getAsJsonObject("thaumcraft:EnchantedFabric");var wool=fabric.getAsJsonObject("key").getAsJsonArray("C");

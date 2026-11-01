@@ -5,6 +5,8 @@
   "crystals": {
     "terra": 1
   },
+  "source_order": 602,
+  "shapeless": true,
   "pattern": [
     "T"
   ],
@@ -14,8 +16,6 @@
     }
   },
   "result": {
-    "id": "thaumcraft:tube_restrict",
-    "count": 1
-  },
-  "shapeless": true
+    "id": "thaumcraft:tube_restrict"
+  }
 }

@@ -6,6 +6,7 @@
     "ignis": 1,
     "aqua": 1
   },
+  "source_order": 578,
   "pattern": [
     " B ",
     "ISI",
@@ -13,17 +14,16 @@
   ],
   "key": {
     "B": {
-      "item": "thaumcraft:plate_brass"
+      "tag": "c:plates/brass"
     },
     "I": {
-      "item": "thaumcraft:plate_iron"
+      "tag": "c:plates/iron"
     },
     "S": {
-      "item": "minecraft:stick"
+      "tag": "c:rods/wooden"
     }
   },
   "result": {
-    "id": "thaumcraft:mechanism_simple",
-    "count": 1
+    "id": "thaumcraft:mechanism_simple"
   }
 }

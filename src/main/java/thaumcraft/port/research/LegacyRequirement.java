@@ -15,7 +15,7 @@ public record LegacyRequirement(String source,int count,String craftKey,Predicat
             "thaumcraft:nitor_silver","thaumcraft:nitor_light_gray");
     public static LegacyRequirement parse(String source) {
         try {
-            var parts=source.split(";",4);String id=IDS.getOrDefault(parts[0],parts[0]);
+            var parts=LegacyCraftingItems.normalize(source).split(";",4);String id=IDS.getOrDefault(parts[0],parts[0]);
             int count=parts.length>1?Integer.parseInt(parts[1]):1,meta=parts.length>2?Integer.parseInt(parts[2]):0;
             if(count<1||count>64)return unsupported(source);
             if(id.endsWith(":enchanted_placeholder")&&parts.length==4){

@@ -1,0 +1,34 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "LEVITATOR",
+  "vis": 35,
+  "crystals": {
+    "aer": 1
+  },
+  "source_order": 626,
+  "pattern": [
+    "ABA",
+    "CDC",
+    "AEA"
+  ],
+  "key": {
+    "A": {
+      "tag": "minecraft:planks"
+    },
+    "B": {
+      "tag": "c:plates/thaumium"
+    },
+    "C": {
+      "tag": "c:plates/iron"
+    },
+    "D": {
+      "tag": "thaumcraft:nitor"
+    },
+    "E": {
+      "item": "thaumcraft:mechanism_simple"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:levitator"
+  }
+}

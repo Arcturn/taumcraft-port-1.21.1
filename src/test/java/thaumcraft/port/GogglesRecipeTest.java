@@ -13,7 +13,8 @@ class GogglesRecipeTest {
         for (String field : new String[]{"type", "research", "vis", "pattern"})
             assertEquals(original.get(field), playable.get(field), field);
         assertEquals(0, original.getAsJsonObject("crystals").size());
-        assertFalse(playable.has("crystals"), "The original recipe has no crystal costs");
+        assertEquals(0, playable.has("crystals") ? playable.getAsJsonObject("crystals").size() : 0,
+                "The original recipe has no crystal costs");
         assertEquals("thaumcraft:goggles", playable.getAsJsonObject("result").get("id").getAsString());
         var key = playable.getAsJsonObject("key");
         assertEquals("thaumcraft:thaumometer", key.getAsJsonObject("T").get("item").getAsString());

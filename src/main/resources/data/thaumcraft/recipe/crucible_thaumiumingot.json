@@ -2,7 +2,7 @@
   "type": "thaumcraft:crucible",
   "research": "METALLURGY@2",
   "catalyst": {
-    "item": "minecraft:iron_ingot"
+    "tag": "c:ingots/iron"
   },
   "aspects": {
     "praecantatio": 5,

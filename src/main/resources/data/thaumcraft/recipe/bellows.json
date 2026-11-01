@@ -5,6 +5,7 @@
   "crystals": {
     "aer": 1
   },
+  "source_order": 652,
   "pattern": [
     "WW ",
     "LLI",
@@ -15,10 +16,10 @@
       "tag": "minecraft:planks"
     },
     "L": {
-      "item": "minecraft:leather"
+      "tag": "c:leathers"
     },
     "I": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     }
   },
   "result": {

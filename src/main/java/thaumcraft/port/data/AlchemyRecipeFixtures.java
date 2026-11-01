@@ -44,7 +44,7 @@ public final class AlchemyRecipeFixtures {
                 require(!(recipe.getResultItem(registries).getItem() instanceof thaumcraft.port.content.ResearchDisplayItem),"Display-only Alchemy output: "+id);
                 if(recipe instanceof CrucibleRecipe crucible) {
                     require(!crucible.aspects().isEmpty(),"Alchemy cannot create free items: "+id);
-                    var inputs=crucible.catalyst().getItems();
+                    var inputs=IngredientMatching.getItems(crucible.catalyst());
                     boolean optional=id.matches("crucible_metal_purification_(tin|silver|lead)");
                     require(optional||inputs.length>0,"Unobtainable catalyst: "+id);
                     if(inputs.length>0)require(crucible.matches(new SingleRecipeInput(inputs[0]),null),"Crucible catalyst rejected "+id);

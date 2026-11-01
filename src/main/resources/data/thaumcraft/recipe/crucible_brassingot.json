@@ -2,7 +2,7 @@
   "type": "thaumcraft:crucible",
   "research": "METALLURGY@1",
   "catalyst": {
-    "item": "minecraft:iron_ingot"
+    "tag": "c:ingots/iron"
   },
   "aspects": {
     "instrumentum": 5

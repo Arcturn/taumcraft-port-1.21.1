@@ -5,6 +5,7 @@
   "crystals": {
     "perditio": 1
   },
+  "source_order": 606,
   "pattern": [
     "J"
   ],
@@ -14,7 +15,6 @@
     }
   },
   "result": {
-    "id": "thaumcraft:jar_void",
-    "count": 1
+    "id": "thaumcraft:jar_void"
   }
 }

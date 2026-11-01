@@ -1,0 +1,32 @@
+{
+  "type": "thaumcraft:arcane",
+  "research": "CONTROLSEALS",
+  "vis": 20,
+  "crystals": {
+    "aer": 1
+  },
+  "source_order": 593,
+  "shapeless": true,
+  "pattern": [
+    "ABC",
+    "D  "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:clay_ball"
+    },
+    "B": {
+      "item": "thaumcraft:tallow"
+    },
+    "C": {
+      "tag": "c:dyes/red"
+    },
+    "D": {
+      "tag": "thaumcraft:nitor"
+    }
+  },
+  "result": {
+    "id": "thaumcraft:seal_blank",
+    "count": 3
+  }
+}

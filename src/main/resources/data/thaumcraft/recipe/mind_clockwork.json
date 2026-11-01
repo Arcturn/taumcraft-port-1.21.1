@@ -6,6 +6,7 @@
     "ignis": 1,
     "ordo": 1
   },
+  "source_order": 655,
   "pattern": [
     " P ",
     "PGP",
@@ -13,13 +14,13 @@
   ],
   "key": {
     "P": {
-      "item": "minecraft:glass_pane"
+      "tag": "c:glass_panes"
     },
     "G": {
       "item": "thaumcraft:mechanism_simple"
     },
     "B": {
-      "item": "thaumcraft:plate_brass"
+      "tag": "c:plates/brass"
     },
     "C": {
       "item": "minecraft:comparator"

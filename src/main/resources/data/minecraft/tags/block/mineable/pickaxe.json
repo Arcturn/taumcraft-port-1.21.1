@@ -39,6 +39,7 @@
     "thaumcraft:matrix_speed",
     "thaumcraft:recharge_pedestal",
     "thaumcraft:paving_stone_travel",
-    "thaumcraft:paving_stone_barrier"
+    "thaumcraft:paving_stone_barrier",
+    "#thaumcraft:crafting/pickaxe"
   ]
 }

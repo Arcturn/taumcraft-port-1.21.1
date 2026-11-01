@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/rail_raised_sw",
+  "textures": {
+    "rail": "thaumcraft:blocks/rail_activator_powered"
+  },
+  "render_type": "minecraft:cutout"
+}

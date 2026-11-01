@@ -3,6 +3,8 @@
   "research": "TUBES",
   "vis": 10,
   "crystals": {},
+  "source_order": 600,
+  "shapeless": true,
   "pattern": [
     "TL"
   ],
@@ -15,8 +17,6 @@
     }
   },
   "result": {
-    "id": "thaumcraft:tube_valve",
-    "count": 1
-  },
-  "shapeless": true
+    "id": "thaumcraft:tube_valve"
+  }
 }
