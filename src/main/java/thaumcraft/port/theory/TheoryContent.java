@@ -21,7 +21,8 @@ public final class TheoryContent {
     public static final Supplier<MenuType<TheoryMenu>> MENU=MENUS.register("research_table",()->IMenuTypeExtension.create((id,inventory,buffer)->new TheoryMenu(id,inventory,new net.minecraft.world.SimpleContainer(2),buffer.readBlockPos())));
     static {
         PortContent.ITEMS.registerSimpleBlockItem("research_table",TABLE);PortContent.ITEMS.registerSimpleBlockItem("table_wood",WOOD_TABLE);
-        for(String id:java.util.List.of("vis_resonator","brain","fabric"))PortContent.ITEMS.registerSimpleItem(id);
+        for(String id:java.util.List.of("vis_resonator","fabric"))PortContent.ITEMS.registerSimpleItem(id);
+        PortContent.ITEMS.registerItem("brain",thaumcraft.port.warp.ZombieBrainItem::new);
         for(String type:TheoryCards.CURIOS)PortContent.ITEMS.registerItem("curio_"+type,p->new ResearchCurioItem(p,type),new Item.Properties().rarity(net.minecraft.world.item.Rarity.UNCOMMON));
     }
     public static void register(IEventBus bus){ENTITIES.register(bus);MENUS.register(bus);}

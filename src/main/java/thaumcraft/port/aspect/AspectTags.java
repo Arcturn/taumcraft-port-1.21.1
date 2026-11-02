@@ -81,6 +81,10 @@ public final class AspectTags {
                     pech.getPechType()==0?Aspect.DESIRE:pech.getPechType()==1?Aspect.AVERSION:Aspect.MAGIC,5);
         if (entity instanceof thaumcraft.port.golem.GolemEntity)
             return Map.of(Aspect.MECHANISM,10,Aspect.MAN,10,Aspect.MOTION,10);
+        if (entity instanceof thaumcraft.port.warp.entity.MindSpider)
+            return Map.of(Aspect.FLUX,5,Aspect.FIRE,5);
+        if (entity instanceof thaumcraft.port.warp.entity.EldritchGuardian)
+            return Map.of(Aspect.ELDRITCH,20,Aspect.DEATH,20,Aspect.UNDEAD,20);
         if (entity instanceof ItemEntity item) return forItem(item.getItem());
         return VALUES.getOrDefault("entity:" + BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()), Map.of());
     }

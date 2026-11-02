@@ -11,6 +11,7 @@ public final class ScanDiscoveries {
         add("entity:thaumcraft:thaumic_slime","!ThaumSlime");
         add("entity:thaumcraft:firebat","!Firebat","f_BAT","f_FLY");
         add("entity:thaumcraft:pech","!Pech");
+        add("entity:thaumcraft:eldritch_guardian","!EldritchGuardian");
         add("item:thaumcraft:pech_wand","!Pechwand");
         add("entity:thaumcraft:cultist_knight","!CrimsonCultist");add("entity:thaumcraft:cultist_cleric","!CrimsonCultist");
         add("entity:thaumcraft:taint_seed","!TaintSeed");add("entity:thaumcraft:taint_seed_prime","!TaintSeed");
@@ -101,6 +102,7 @@ public final class ScanDiscoveries {
 
     public static Set<String> entityTypeFlags(Class<? extends net.minecraft.world.entity.Entity> type,net.minecraft.resources.ResourceLocation id) {
         var flags=new LinkedHashSet<>(subjectFlags("entity:"+id));
+        if(thaumcraft.port.warp.entity.EldritchMob.class.isAssignableFrom(type))flags.add("!ORMOB");
         if(net.minecraft.world.entity.monster.Spider.class.isAssignableFrom(type))flags.add("f_SPIDER");
         if(net.minecraft.world.entity.ambient.Bat.class.isAssignableFrom(type)){flags.add("f_BAT");flags.add("f_FLY");}
         if(net.minecraft.world.entity.animal.Parrot.class.isAssignableFrom(type)||net.minecraft.world.entity.monster.Ghast.class.isAssignableFrom(type)

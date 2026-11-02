@@ -20,10 +20,13 @@ public final class ThaumcraftPort {
     public ThaumcraftPort(IEventBus modBus, ModContainer container) {
         container.registerConfig(ModConfig.Type.COMMON, WorldConfig.SPEC);
         container.registerConfig(ModConfig.Type.CLIENT, thaumcraft.port.config.ClientVisualConfig.SPEC);
+        container.registerConfig(ModConfig.Type.COMMON, thaumcraft.port.warp.WarpConfig.SPEC, "thaumcraft-warp.toml");
         thaumcraft.port.content.PortSounds.register(modBus);
         thaumcraft.port.content.PortParticles.register(modBus);
         WorldContent.register(modBus);
         WorldEntities.register(modBus);
+        thaumcraft.port.warp.WarpEffects.register(modBus);
+        thaumcraft.port.warp.entity.WarpEntities.register(modBus);
         AuraSystem.register(modBus);
         modBus.addListener((FMLCommonSetupEvent e) -> e.enqueueWork(() -> {
             if (WorldConfig.MAGIC_FOREST.get()) Regions.register(new MagicalForestRegion());
@@ -68,6 +71,7 @@ public final class ThaumcraftPort {
             if(e.getEntity() instanceof net.minecraft.server.level.ServerPlayer player)thaumcraft.port.research.ResearchProgress.craft(player,e.getCrafting());
         });
         NeoForge.EVENT_BUS.addListener(WorldCommands::register);
+        NeoForge.EVENT_BUS.addListener(thaumcraft.port.warp.WarpCommands::register);
         NeoForge.EVENT_BUS.addListener(thaumcraft.port.research.ResearchCommands::register);
         NeoForge.EVENT_BUS.addListener(thaumcraft.port.research.AuditCommands::register);
         NeoForge.EVENT_BUS.addListener(thaumcraft.port.research.ResearchEvents::tick);

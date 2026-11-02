@@ -1,8 +1,6 @@
 package thaumcraft.port.alchemy.liquid;
 
 import java.util.ArrayList;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.level.block.Blocks;
@@ -11,11 +9,9 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.item.ItemExpireEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDropsEvent;
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import thaumcraft.port.aspect.AspectTags;
 import thaumcraft.port.content.CrystalItem;
-import thaumcraft.port.research.ResearchProgress;
-import thaumcraft.port.research.ResearchStorage;
+import thaumcraft.port.warp.WarpEvents;
 
 @EventBusSubscriber(modid = "thaumcraft")
 public final class AlchemyLiquidEvents {
@@ -40,33 +36,9 @@ public final class AlchemyLiquidEvents {
             event.getDrops().add(new ItemEntity(entity.level(), entity.getX(), entity.getEyeY(), entity.getZ(),
                     CrystalItem.stack(choices.get(entity.getRandom().nextInt(choices.size())))));
     }
-    @SubscribeEvent public static void tick(PlayerTickEvent.Post event) {
-        if (!(event.getEntity() instanceof ServerPlayer player) || player.tickCount <= 0
-                || player.tickCount % 2000 != 0 || player.hasEffect(AlchemyLiquids.WARP_WARD)) return;
-        checkWarp(player, player.getRandom().nextInt(100));
-    }
-    /** The warp-event eligibility needed by hidden alchemy; unrelated eldritch event effects live elsewhere. */
+    /** Compatibility entry point; the sole periodic listener now belongs to WarpEvents. */
     public static boolean checkWarp(ServerPlayer player, int roll) {
-        if (player.hasEffect(AlchemyLiquids.WARP_WARD)) return false;
-        var storage = ResearchStorage.get(player.getServer());
-        var state = storage.player(player.getUUID());
-        int temporary = state.temporaryWarp();
-        state.warp(state.permanentWarp(), state.normalWarp(), Math.max(0, temporary - 1));
-        boolean changed = temporary != state.temporaryWarp();
-        int gearWarp = thaumcraft.port.infusion.armor.InfusionEquipmentEvents.gearWarp(player);
-        int total = state.permanentWarp() + state.normalWarp() + state.temporaryWarp() + gearWarp;
-        boolean occurred = AlchemyRules.warpEvent(state.warpCounter(), total, roll);
-        if (occurred) {
-            state.warpCounter(AlchemyRules.remainingCounter(state.warpCounter(), gearWarp));
-            changed = true;
-            if (state.permanentWarp() + state.normalWarp() > 10 && !state.knows("BATHSALTS") && !state.knows("!BATHSALTS")) {
-                state.flag("!BATHSALTS");
-                player.displayClientMessage(Component.translatable("warp.text.8")
-                        .withStyle(ChatFormatting.DARK_PURPLE, ChatFormatting.ITALIC), true);
-            }
-        }
-        if (changed) { storage.setDirty(); ResearchProgress.sync(player); }
-        return occurred;
+        return WarpEvents.check(player, roll);
     }
     private AlchemyLiquidEvents() {}
 }

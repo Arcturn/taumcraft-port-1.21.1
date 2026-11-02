@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "thaumcraft:triple_meat_treat"
+    "thaumcraft:triple_meat_treat",
+    "thaumcraft:brain"
   ]
 }

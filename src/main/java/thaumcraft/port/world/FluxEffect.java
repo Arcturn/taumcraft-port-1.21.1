@@ -3,7 +3,8 @@ import net.minecraft.world.effect.*;
 import net.minecraft.world.entity.LivingEntity;
 public final class FluxEffect extends MobEffect {
     private final boolean taint;
-    public FluxEffect(boolean taint){super(MobEffectCategory.HARMFUL,taint?0x7c1689:0x604482);this.taint=taint;}
+    public FluxEffect(boolean taint){super(MobEffectCategory.HARMFUL,taint?0x7c1689:0x665577);this.taint=taint;}
+    @Override public String getDescriptionId(){return taint?"potion.flux_taint":"potion.infvisexhaust";}
     @Override public boolean shouldApplyEffectTickThisTick(int duration,int amplifier){return duration%Math.max(1,taint?40>>Math.min(amplifier,8):40)==0;}
     @Override public boolean applyEffectTick(LivingEntity target,int amplifier){
         if(target.level().isClientSide)return true;

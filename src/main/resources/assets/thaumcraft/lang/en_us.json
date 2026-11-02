@@ -4214,5 +4214,10 @@
   "block.thaumcraft.golem_builder": "Golem Press",
   "entity.thaumcraft.golem": "Golem",
   "entity.thaumcraft.golem_dart": "Golem Dart",
-  "entity.thaumcraft.golem_orb": "Energy Orb"
+  "entity.thaumcraft.golem_orb": "Energy Orb",
+  "entity.thaumcraft.eldritch_guardian": "Eldritch Guardian",
+  "entity.thaumcraft.mind_spider": "Mind Spider",
+  "entity.thaumcraft.eldritch_orb": "Eldritch Orb",
+  "command.thaumcraft.warp.status": "%s: permanent %s, normal %s, temporary %s; activity %s",
+  "command.thaumcraft.warp.event": "Warp event %s (strength %s) triggered for %s player(s)."
 }
