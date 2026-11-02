@@ -9,6 +9,9 @@ public final class ScanDiscoveries {
     static {
         add("entity:thaumcraft:wisp","!Wisp","f_FLY");
         add("entity:thaumcraft:thaumic_slime","!ThaumSlime");
+        add("entity:thaumcraft:firebat","!Firebat","f_BAT","f_FLY");
+        add("entity:thaumcraft:pech","!Pech");
+        add("item:thaumcraft:pech_wand","!Pechwand");
         add("entity:thaumcraft:cultist_knight","!CrimsonCultist");add("entity:thaumcraft:cultist_cleric","!CrimsonCultist");
         add("entity:thaumcraft:taint_seed","!TaintSeed");add("entity:thaumcraft:taint_seed_prime","!TaintSeed");
         add("entity:thaumcraft:flux_rift","!FluxRift","f_toomuchflux");

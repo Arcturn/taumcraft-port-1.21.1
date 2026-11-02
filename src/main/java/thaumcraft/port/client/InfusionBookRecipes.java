@@ -89,6 +89,7 @@ public final class InfusionBookRecipes {
         var custom=stack.get(DataComponents.CUSTOM_DATA);var tag=custom==null?new CompoundTag():custom.copyTag();
         // TC6's found/crafted amulets share an ID but have distinct labels and models.
         String aspect=stack.get(PortContent.CRYSTAL_ASPECT.get());int meta=id.equals("thaumcraft:amulet_vis")?1:0,amount=1;
+        if(id.equals("thaumcraft:amulet_vis_found"))id="thaumcraft:amulet_vis";
         if(aspect==null){aspect=stack.get(EssentiaContent.ASPECT.get());if(aspect!=null){meta=1;amount=stack.is(EssentiaContent.PHIAL.get())?10:1;}}
         if(aspect!=null){
             var value=new CompoundTag();value.putString("key",aspect);value.putInt("amount",amount);

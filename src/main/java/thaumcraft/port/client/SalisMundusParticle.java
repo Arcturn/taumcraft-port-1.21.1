@@ -177,7 +177,7 @@ public final class SalisMundusParticle extends TextureSheetParticle {
         rotation(level.random.nextFloat(), level.random.nextBoolean() ? -1 : 1);
     }
 
-    static ParticleRenderType legacyLayer(boolean additive) { return additive ? GLOW : SMOKE; }
+    public static ParticleRenderType legacyLayer(boolean additive) { return additive ? GLOW : SMOKE; }
 
     /** BETA26 FXDispatcher.drawBlockMistParticles, used by the Hoe of Growth. */
     public void growthMist() {

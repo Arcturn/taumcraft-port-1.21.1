@@ -4191,5 +4191,11 @@
   "block.thaumcraft.mirror_essentia": "Essentia Mirror",
   "block.thaumcraft.lamp_growth": "Lamp of Growth",
   "block.thaumcraft.lamp_fertility": "Lamp of Fertility",
-  "block.thaumcraft.void_siphon": "Void Siphon"
+  "block.thaumcraft.void_siphon": "Void Siphon",
+  "key.thaumcraft.focus": "Change Caster Focus",
+  "key.thaumcraft.caster_misc": "Misc Caster Toggle",
+  "thaumcraft.focus.none": "No configured foci available",
+  "item.thaumcraft.pech_wand": "Pech Wand",
+  "entity.thaumcraft.pech": "Pech Forager",
+  "item.thaumcraft.pech_spawn_egg": "Pech Spawn Egg"
 }

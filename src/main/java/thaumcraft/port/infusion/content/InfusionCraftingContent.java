@@ -20,6 +20,9 @@ import thaumcraft.port.content.PortContent;
 import thaumcraft.port.crafting.content.ArcaneLampBlock;
 import thaumcraft.port.crafting.content.CraftingDeviceBlock;
 import thaumcraft.port.infusion.recipe.InfusionAugments;
+import thaumcraft.port.auromancy.item.FocusItem;
+import thaumcraft.port.content.PortSounds;
+import thaumcraft.port.infusion.brain.BrainJarBlock;
 
 /** Registry identities for the remaining BETA26 infusion outputs and their void-metal prerequisites. */
 public final class InfusionCraftingContent {
@@ -47,10 +50,12 @@ public final class InfusionCraftingContent {
                     .component(DataComponents.CUSTOM_DATA,InfusionAugments.defaults(Map.of("destructive",1,"refining",1)))));
     public static final DeferredItem<VisAmuletItem> AMULET_VIS = PortContent.ITEMS.registerItem("amulet_vis", p ->
             new VisAmuletItem(p.rarity(Rarity.RARE)));
+    public static final DeferredItem<VisAmuletItem> AMULET_VIS_FOUND = PortContent.ITEMS.registerItem("amulet_vis_found", p ->
+            new VisAmuletItem(p.rarity(Rarity.UNCOMMON),true));
     public static final DeferredItem<VoidseerCharmItem> VOIDSEER_CHARM = PortContent.ITEMS.registerItem("voidseer_charm", p ->
             new VoidseerCharmItem(p.rarity(Rarity.RARE)));
-    public static final DeferredBlock<CraftingDeviceBlock> JAR_BRAIN = device("jar_brain",SoundType.GLASS,.3f,
-            Block.box(3,0,3,13,12,13));
+    public static final DeferredBlock<BrainJarBlock> JAR_BRAIN = PortContent.BLOCKS.register("jar_brain",()->
+            new BrainJarBlock(BlockBehaviour.Properties.of().sound(PortSounds.JAR).strength(.3f)));
     public static final DeferredBlock<CraftingDeviceBlock> VOID_SIPHON = device("void_siphon",SoundType.METAL,2.5f,
             Block.box(3,0,3,13,16,13));
     public static final DeferredBlock<InfusionMirrorBlock> MIRROR = mirror("mirror");
@@ -58,8 +63,10 @@ public final class InfusionCraftingContent {
     public static final DeferredBlock<ArcaneLampBlock> LAMP_GROWTH = lamp("lamp_growth");
     public static final DeferredBlock<ArcaneLampBlock> LAMP_FERTILITY = lamp("lamp_fertility");
     static {
+        PortContent.ITEMS.registerSimpleBlockItem("jar_brain",JAR_BRAIN);
         for(String id:List.of("seal_harvest","seal_butcher","turret_placer_bore"))PortContent.ITEMS.registerSimpleItem(id);
-        for(String id:List.of("focus_2","focus_3"))PortContent.ITEMS.registerSimpleItem(id,new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
+        PortContent.ITEMS.registerItem("focus_2",properties->new FocusItem(properties.stacksTo(1).rarity(Rarity.RARE),25));
+        PortContent.ITEMS.registerItem("focus_3",properties->new FocusItem(properties.stacksTo(1).rarity(Rarity.RARE),50));
         PortContent.ITEMS.registerSimpleItem("hand_mirror",new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
         PortContent.ITEMS.registerSimpleItem("causality_collapser",new Item.Properties().stacksTo(16));
     }

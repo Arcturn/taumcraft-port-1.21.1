@@ -68,6 +68,17 @@ public final class InfusionCraftingContentGameTests {
         player.tickCount=20;amulet.curioTick(new SlotContext("necklace",player,0,true,true),stack);
         h.assertValueEqual(aura.vis(),17f,"Cosmetic amulet activated or a charge spent extra aura");h.assertValueEqual(ItemCharge.get(backpack),0,"Amulet charged outside the original nine hotbar slots");h.assertValueEqual(ItemCharge.get(cosmetic),0,"Amulet charged cosmetic Curios");h.succeed();
     }
+    @GameTest(template="elemental_tools_empty",timeoutTicks=40)
+    public static void foundAmuletRetainsFortyTickRechargeAndDistinctSubtype(GameTestHelper h){
+        var player=GameTestPlayers.create(h);player.getInventory().clearContent();var charm=VerdantCharmItem.stack(0);player.getInventory().setItem(0,charm);
+        var aura=AuraSystem.get(h.getLevel(),player.blockPosition());aura.drain(false,Float.MAX_VALUE,false);aura.addVis(10);
+        var amulet=InfusionCraftingContent.AMULET_VIS_FOUND.get();var stack=new ItemStack(amulet);var context=new SlotContext("necklace",player,0,false,true);
+        for(int tick=1;tick<40;tick++){player.tickCount=tick;amulet.curioTick(context,stack);}
+        h.assertValueEqual(ItemCharge.get(charm),0,"Found amulet used crafted amulet's faster interval");
+        player.tickCount=40;amulet.curioTick(context,stack);h.assertValueEqual(ItemCharge.get(charm),1,"Found amulet failed at its fortieth tick");
+        h.assertValueEqual(aura.vis(),9f,"Found amulet charged more than one item");
+        h.assertValueEqual(amulet.getDescriptionId(),"item.amulet_vis.found.name","Found amulet uses crafted name");h.succeed();
+    }
     private static ItemStack stack(String id){return new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("thaumcraft:"+id)));}
     private InfusionCraftingContentGameTests(){}
 }

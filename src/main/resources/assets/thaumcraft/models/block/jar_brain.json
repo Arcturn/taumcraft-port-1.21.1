@@ -1,4 +1,4 @@
 {
-  "parent": "thaumcraft:research/legacy/block/jar_brain_item",
-  "render_type": "minecraft:cutout"
+  "parent": "thaumcraft:research/legacy/block/jar_normal",
+  "render_type": "minecraft:translucent"
 }

@@ -76,6 +76,9 @@ public final class AspectTags {
         if (entity instanceof thaumcraft.port.world.Wisp wisp) {
             Map<Aspect,Integer> values=new LinkedHashMap<>();values.merge(wisp.aspect(),5,Integer::sum);values.merge(Aspect.AURA,5,Integer::sum);values.merge(Aspect.FLIGHT,5,Integer::sum);return Collections.unmodifiableMap(values);
         }
+        if (entity instanceof thaumcraft.port.auromancy.pech.PechEntity pech)
+            return Map.of(Aspect.MAN,10,Aspect.AURA,5,Aspect.EXCHANGE,10,
+                    pech.getPechType()==0?Aspect.DESIRE:pech.getPechType()==1?Aspect.AVERSION:Aspect.MAGIC,5);
         if (entity instanceof ItemEntity item) return forItem(item.getItem());
         return VALUES.getOrDefault("entity:" + BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()), Map.of());
     }

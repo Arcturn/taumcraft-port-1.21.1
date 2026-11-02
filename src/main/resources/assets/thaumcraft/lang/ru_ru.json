@@ -4178,5 +4178,11 @@
   "block.thaumcraft.mirror_essentia": "Зеркало эссенции",
   "block.thaumcraft.lamp_growth": "Светильник роста",
   "block.thaumcraft.lamp_fertility": "Светильник скрещивания",
-  "block.thaumcraft.void_siphon": "Пустотный сифон"
+  "block.thaumcraft.void_siphon": "Пустотный сифон",
+  "key.thaumcraft.focus": "Сменить фокус перчатки",
+  "key.thaumcraft.caster_misc": "Настроить область фокуса",
+  "thaumcraft.focus.none": "Нет настроенных фокусов",
+  "item.thaumcraft.pech_wand": "Палочка Пехта",
+  "entity.thaumcraft.pech": "Пехт-кладовщик",
+  "item.thaumcraft.pech_spawn_egg": "Яйцо призыва пехта"
 }

@@ -1,19 +1,5 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "thaumcraft:block/arcane_workbench_charger"
-    },
-    "facing=east": {
-      "model": "thaumcraft:block/arcane_workbench_charger",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "thaumcraft:block/arcane_workbench_charger",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "thaumcraft:block/arcane_workbench_charger",
-      "y": 270
-    }
+    "": {"model": "thaumcraft:block/arcane_workbench_charger"}
   }
 }

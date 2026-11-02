@@ -20,6 +20,11 @@ import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import thaumcraft.port.content.PortContent;
+import thaumcraft.port.auromancy.device.VisBatteryBlock;
+import thaumcraft.port.auromancy.device.WorkbenchChargerBlock;
+import thaumcraft.port.auromancy.focal.FocalManipulatorBlock;
+import thaumcraft.port.auromancy.item.FocusItem;
+import thaumcraft.port.auromancy.item.FocusPouchItem;
 
 /** Real registry identities used by the original arcane and crucible recipe outputs. */
 public final class CraftingContent {
@@ -42,10 +47,10 @@ public final class CraftingContent {
     public static final DeferredBlock<SlabBlock> SLAB_SILVERWOOD = PortContent.BLOCKS.register(
             "slab_silverwood", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
 
-    public static final DeferredBlock<CraftingDeviceBlock> ARCANE_WORKBENCH_CHARGER = device(
-            "arcane_workbench_charger", SoundType.WOOD, 1.25f, Shapes.block());
-    public static final DeferredBlock<CraftingDeviceBlock> WAND_WORKBENCH = device(
-            "wand_workbench", SoundType.STONE, 2.5f, Shapes.block());
+    public static final DeferredBlock<WorkbenchChargerBlock> ARCANE_WORKBENCH_CHARGER = PortContent.BLOCKS.register(
+            "arcane_workbench_charger", () -> new WorkbenchChargerBlock(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1.25f,10)));
+    public static final DeferredBlock<FocalManipulatorBlock> WAND_WORKBENCH = PortContent.BLOCKS.register(
+            "wand_workbench", () -> new FocalManipulatorBlock(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2.5f).noOcclusion()));
     public static final DeferredBlock<CraftingDeviceBlock> LEVITATOR = device(
             "levitator", SoundType.WOOD, 2.5f, Shapes.block());
     public static final DeferredBlock<CraftingDeviceBlock> REDSTONE_RELAY = device(
@@ -56,8 +61,8 @@ public final class CraftingContent {
             "dioptra", SoundType.STONE, 2.5f, Shapes.block());
     public static final DeferredBlock<CraftingDeviceBlock> PATTERN_CRAFTER = device(
             "pattern_crafter", SoundType.METAL, 2.5f, Shapes.block());
-    public static final DeferredBlock<CraftingDeviceBlock> VIS_BATTERY = device(
-            "vis_battery", SoundType.GLASS, .5f, Shapes.block());
+    public static final DeferredBlock<VisBatteryBlock> VIS_BATTERY = PortContent.BLOCKS.register(
+            "vis_battery", () -> new VisBatteryBlock(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(.5f)));
     public static final DeferredBlock<CraftingDeviceBlock> VIS_GENERATOR = device(
             "vis_generator", SoundType.METAL, 2.5f, Block.box(4, 0, 4, 12, 14, 12));
     public static final DeferredBlock<CraftingDeviceBlock> TABLE_STONE = device(
@@ -72,6 +77,9 @@ public final class CraftingContent {
         PortContent.ITEMS.registerSimpleBlockItem("lamp_arcane", LAMP_ARCANE);
         PortContent.ITEMS.registerSimpleBlockItem("slab_greatwood", SLAB_GREATWOOD);
         PortContent.ITEMS.registerSimpleBlockItem("slab_silverwood", SLAB_SILVERWOOD);
+        PortContent.ITEMS.registerSimpleBlockItem("arcane_workbench_charger", ARCANE_WORKBENCH_CHARGER);
+        PortContent.ITEMS.registerSimpleBlockItem("wand_workbench", WAND_WORKBENCH);
+        PortContent.ITEMS.registerSimpleBlockItem("vis_battery", VIS_BATTERY);
         for (String id : List.of("module_vision", "module_aggression", "mirrored_glass", "mind_biothaumic",
                 "turret_placer_basic", "turret_placer_advanced", "grapple_gun_tip", "grapple_gun_spool",
                 "seal_blank", "seal_pickup", "seal_pickup_advanced", "seal_fill", "seal_fill_advanced",
@@ -79,10 +87,10 @@ public final class CraftingContent {
                 "seal_breaker", "seal_use", "seal_provider", "seal_stock", "seal_breaker_advanced")) {
             PortContent.ITEMS.registerSimpleItem(id);
         }
-        PortContent.ITEMS.registerSimpleItem("focus_1", new Item.Properties().stacksTo(1));
+        PortContent.ITEMS.registerItem("focus_1", properties -> new FocusItem(properties.stacksTo(1),15));
         PortContent.ITEMS.registerSimpleItem("sanity_checker", new Item.Properties().stacksTo(1));
         PortContent.ITEMS.registerSimpleItem("grapple_gun", new Item.Properties().stacksTo(1));
-        PortContent.ITEMS.registerSimpleItem("focus_pouch", new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
+        PortContent.ITEMS.registerItem("focus_pouch", properties -> new FocusPouchItem(properties.stacksTo(1).rarity(Rarity.UNCOMMON)));
     }
 
     private static DeferredBlock<CraftingDeviceBlock> device(String id, SoundType sound, float hardness, VoxelShape shape) {

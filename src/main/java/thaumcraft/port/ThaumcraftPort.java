@@ -45,6 +45,13 @@ public final class ThaumcraftPort {
         thaumcraft.port.infusion.bauble.InfusionBaubles.register(modBus);
         thaumcraft.port.crafting.content.CraftingContent.register(modBus);
         thaumcraft.port.infusion.content.InfusionCraftingContent.register(modBus);
+        thaumcraft.port.auromancy.AuromancyContent.register(modBus);
+        thaumcraft.port.auromancy.item.CasterContent.register(modBus);
+        thaumcraft.port.auromancy.entity.AuromancyEntities.register(modBus);
+        thaumcraft.port.auromancy.effect.FocusEffectContent.register(modBus);
+        thaumcraft.port.infusion.brain.BrainJarContent.register(modBus);
+        thaumcraft.port.auromancy.firebat.FireBatContent.register(modBus);
+        thaumcraft.port.auromancy.pech.PechContent.register(modBus);
         PortContent.register(modBus);
         thaumcraft.port.research.ResearchAdvancements.register(modBus);
         modBus.addListener(PortNetwork::register);

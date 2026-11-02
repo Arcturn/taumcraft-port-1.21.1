@@ -15,7 +15,7 @@ import thaumcraft.port.aspect.Aspect;
 import thaumcraft.port.content.*;
 import thaumcraft.port.crafting.ArcaneRecipe;
 import thaumcraft.port.research.*;
-import thaumcraft.port.world.AuraSystem;
+import thaumcraft.port.auromancy.device.WorkbenchAura;
 
 /** Result clicks revalidate and pay atomically, including when two players share one table. */
 public final class WorkbenchMenu extends AbstractContainerMenu {
@@ -82,11 +82,11 @@ public final class WorkbenchMenu extends AbstractContainerMenu {
         if(!(player instanceof ServerPlayer sp)||recipe==null||recipe.result().isEmpty()||!stillValid(player))return false;
         if(!canUseRecipe(recipe))return false;
         if(!hasCrystals(recipe.crystals()))return false;
-        return recipe.vis()==0||AuraSystem.drain(sp.serverLevel(),pos,recipe.vis(),false,true)>=recipe.vis();
+        return recipe.vis()==0||WorkbenchAura.available(sp.serverLevel(),pos)>=recipe.vis();
     }
     @Override public void broadcastChanges(){
         if(player instanceof ServerPlayer sp){var recipe=recipe();result.setItem(0,canCraft(recipe)?recipe.result().copy():ItemStack.EMPTY);
-            data.set(0,recipe==null?0:recipe.vis());var aura=AuraSystem.get(sp.serverLevel(),pos);data.set(1,aura==null?0:(int)aura.vis());
+            data.set(0,recipe==null?0:recipe.vis());data.set(1,WorkbenchAura.available(sp.serverLevel(),pos));
             for(int i=0;i<6;i++)data.set(2+i,recipe==null?0:recipe.crystals().getOrDefault(PRIMALS.get(i).id(),0));}
         super.broadcastChanges();
     }
@@ -101,7 +101,7 @@ public final class WorkbenchMenu extends AbstractContainerMenu {
         net.minecraft.core.NonNullList<ItemStack> remaining;
         CommonHooks.setCraftingPlayer(sp);
         try{remaining=recipe.holder().value().getRemainingItems(input);}finally{CommonHooks.setCraftingPlayer(null);}
-        AuraSystem.drain(sp.serverLevel(),pos,recipe.vis(),false,false);
+        WorkbenchAura.spend(sp.serverLevel(),pos,recipe.vis());
         for(int i=0;i<6;i++)matrix.removeItem(9+i,recipe.crystals().getOrDefault(PRIMALS.get(i).id(),0));
         output.onCraftedBy(sp.level(),sp,output.getCount());
         // The event also records research progress through the mod's normal listener.

@@ -1,20 +1,7 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "thaumcraft:block/jar_brain",
-      "y": 0
-    },
-    "facing=east": {
-      "model": "thaumcraft:block/jar_brain",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "thaumcraft:block/jar_brain",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "thaumcraft:block/jar_brain",
-      "y": 270
+    "": {
+      "model": "thaumcraft:block/jar_brain"
     }
   }
 }

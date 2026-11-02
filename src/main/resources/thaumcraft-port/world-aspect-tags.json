@@ -106,5 +106,10 @@
     "herba": 30,
     "bestia": 30,
     "vitium": 30
+  },
+  "entity:thaumcraft:firebat": {
+    "bestia": 5,
+    "volatus": 5,
+    "ignis": 10
   }
 }

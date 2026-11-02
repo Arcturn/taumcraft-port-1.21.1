@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "#thaumcraft:magical",
+    {
+      "id": "#c:is_magical",
+      "required": false
+    },
+    {
+      "id": "#forge:is_magical",
+      "required": false
+    },
+    {
+      "id": "thaumcraft:eerie",
+      "required": false
+    }
+  ]
+}

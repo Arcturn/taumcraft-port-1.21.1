@@ -27,7 +27,10 @@ final class ArchitectOverlay extends RenderType {
                         .setWriteMaskState(COLOR_WRITE).createCompositeState(false));
     }
     static void render(RenderHighlightEvent.Block event,List<BlockPos> positions) {
-        var blocks=new HashSet<>(positions);var pose=event.getPoseStack();var eye=event.getCamera().getPosition();
+        render(event.getPoseStack(), event.getMultiBufferSource(), event.getCamera().getPosition(), positions);
+    }
+    static void render(PoseStack pose, net.minecraft.client.renderer.MultiBufferSource buffers, net.minecraft.world.phys.Vec3 eye, List<BlockPos> positions) {
+        var blocks=new HashSet<>(positions);
         pose.pushPose();pose.translate(-eye.x,-eye.y,-eye.z);
         for (var pos:positions) {
             boolean[] corners=new boolean[8];
@@ -38,10 +41,10 @@ final class ArchitectOverlay extends RenderType {
                 if (blocks.contains(pos.relative(face))) continue;
                 pose.pushPose();pose.mulPose(new Quaternionf().rotationAxis((float)Math.PI/2,-face.getStepY(),face.getStepX(),-face.getStepZ()));
                 pose.translate(0,0,face.getStepZ()<0?-.5:.5);pose.mulPose(new Quaternionf().rotationZ(-(float)Math.PI/2));
-                quad(pose,event.getMultiBufferSource().getBuffer(SIDE),.1f);
+                quad(pose,buffers.getBuffer(SIDE),.1f);
                 for (int corner=0;corner<4;corner++) if (corners[CORNERS[face.ordinal()][corner]]) {
                     pose.pushPose();pose.mulPose(new Quaternionf().rotationZ(ROTATIONS[face.ordinal()][corner]*(float)Math.PI/180));
-                    quad(pose,event.getMultiBufferSource().getBuffer(CORNER),.66f);pose.popPose();
+                    quad(pose,buffers.getBuffer(CORNER),.66f);pose.popPose();
                 }
                 pose.popPose();
             }
@@ -49,6 +52,7 @@ final class ArchitectOverlay extends RenderType {
         }
         pose.popPose();
     }
+    static void flush(net.minecraft.client.renderer.MultiBufferSource.BufferSource buffers) { buffers.endBatch(SIDE); buffers.endBatch(CORNER); }
     private static void quad(PoseStack pose,VertexConsumer vertices,float alpha) {
         var matrix=pose.last().pose();
         vertices.addVertex(matrix,-.5f,-.5f,0).setUv(0,1).setColor(1,1,1,alpha);
