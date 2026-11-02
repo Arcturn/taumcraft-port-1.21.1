@@ -19,7 +19,10 @@ public final class FocusMediaClient {
     private static void receive(FocusMediaPayload payload) {
         var minecraft=Minecraft.getInstance();var level=minecraft.level;if(level==null)return;
         if(payload.kind()==1) {minecraft.particleEngine.add(new FocusBoltParticle(level,payload.from(),payload.to(),payload.color(),payload.width()));return;}
-        for(var key:payload.effects())if(FocusEngine.getElement(key) instanceof FocusEffect effect)effect.renderParticleFX(level,payload.from().x,payload.from().y,payload.from().z,payload.to().x,payload.to().y,payload.to().z);
+        if(payload.effects().isEmpty())return;
+        int amount=Math.max(1,10/payload.effects().size());
+        for(var key:payload.effects())if(FocusEngine.getElement(key) instanceof FocusEffect effect)
+            for(int i=0;i<amount;i++)effect(effect,level,payload.from(),payload.to().add(gaussian(level,.05)));
     }
     private static void tick(SpellEntity entity) {
         if(!(entity.level() instanceof ClientLevel level))return;

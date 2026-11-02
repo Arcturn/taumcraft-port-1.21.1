@@ -68,6 +68,17 @@ public final class FocusMediaGameTests {
         var input=new Vec3(1,2,3);var floor=EntityFocusProjectile.reflected(input,Direction.Axis.Y);var wall=EntityFocusProjectile.reflected(input,Direction.Axis.X);
         helper.assertTrue(floor.distanceTo(new Vec3(.9,-1.62,2.7))<1e-8,"Floor bounce must apply .9 reflection plus .9 global damping");helper.assertTrue(wall.distanceTo(new Vec3(-.9,1.8,2.7))<1e-8,"Wall bounce must apply .9 global damping");helper.succeed();
     }
+    @GameTest(template="empty",timeoutTicks=40)
+    public static void mineRenderAnglesFollowFlightAndWrapWithoutSnapping(GameTestHelper helper) {
+        registerCounter();var caster=sheep(helper,new Vec3(8,8,8));
+        var mine=new EntityFocusMine(pack(caster),new Trajectory(helper.absoluteVec(new Vec3(2,8,2)),new Vec3(1,0,0)),false);
+        mine.setDeltaMovement(1,-1,0);mine.tick();
+        helper.assertTrue(Math.abs(mine.getYRot()-18)<.01,"Mine yaw did not inherit the original throwable's 20% smoothing");
+        helper.assertTrue(Math.abs(mine.getXRot()+9)<.01,"Mine pitch stayed flat instead of following its fall");
+        mine.setYRot(179);mine.setXRot(0);double angle=Math.toRadians(-179);mine.setDeltaMovement(Math.sin(angle),0,Math.cos(angle));mine.tick();
+        helper.assertTrue(Math.abs(net.minecraft.util.Mth.wrapDegrees(mine.getYRot()-179.4f))<.01,"Mine made a full turn at the +/-180 degree boundary");
+        caster.discard();helper.succeed();
+    }
     private static Sheep sheep(GameTestHelper helper,Vec3 relative) {var sheep=EntityType.SHEEP.create(helper.getLevel());sheep.setPos(helper.absoluteVec(relative));sheep.setNoAi(true);sheep.setNoGravity(true);helper.getLevel().addFreshEntity(sheep);return sheep;}
     private static FocusPackage pack(Sheep caster) {var pack=new FocusPackage(caster);var effect=new CounterEffect();effect.initialize();pack.addNode(effect);pack.setUniqueID(UUID.randomUUID());return pack;}
     private static void registerCounter() {if(!FocusEngine.elements.containsKey("thaumcraft.TEST_MEDIA_COUNTER"))FocusEngine.registerElement(CounterEffect.class,ResourceLocation.parse("thaumcraft:textures/foci/root.png"),0xFFFFFF);}

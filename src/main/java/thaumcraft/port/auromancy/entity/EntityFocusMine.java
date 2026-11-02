@@ -5,6 +5,8 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.util.Mth;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
@@ -34,7 +36,8 @@ public final class EntityFocusMine extends SpellEntity {
         var velocity=getDeltaMovement();
         var hit=FocusTargeting.ray(level(),this,tickCount<5?getCaster():null,position(),velocity,velocity.length(),.3);
         if (hit.getType()!=HitResult.Type.MISS && getCaster()!=null && !level().isClientSide) setIsArmed(true);
-        setPos(position().add(velocity));setDeltaMovement(velocity.scale(isInWater()?.8:.99).add(0,-.01,0));
+        setPos(position().add(velocity));updateFlightRotation(velocity);
+        setDeltaMovement(velocity.scale(isInWater()?.8:.99).add(0,-.01,0));
         settleOutOfBlock();
         if (!getIsArmed()) return;
         if (getArmingTicks()>0) entityData.set(ARMING,getArmingTicks()-1);
@@ -47,6 +50,16 @@ public final class EntityFocusMine extends SpellEntity {
             SpellExecution.schedule(getFocusPackage().copy(getCaster()),new Trajectory[]{new Trajectory(position(),midpoint.subtract(position()).normalize())},new HitResult[]{new EntityHitResult(candidate,midpoint)},delay++);
         }
         if (delay>0) discard();
+    }
+    /** EntityThrowable supplied these smoothed angles before TC6 rendered its ModelGrappler mine. */
+    private void updateFlightRotation(Vec3 velocity) {
+        float yaw=(float)(Mth.atan2(velocity.x,velocity.z)*180/Math.PI);
+        float pitch=(float)(Mth.atan2(velocity.y,velocity.horizontalDistance())*180/Math.PI);
+        while(pitch-xRotO < -180)xRotO-=360;
+        while(pitch-xRotO >= 180)xRotO+=360;
+        while(yaw-yRotO < -180)yRotO-=360;
+        while(yaw-yRotO >= 180)yRotO+=360;
+        setXRot(Mth.lerp(.2f,xRotO,pitch));setYRot(Mth.lerp(.2f,yRotO,yaw));
     }
     private void settleOutOfBlock() {
         var pos=blockPosition();

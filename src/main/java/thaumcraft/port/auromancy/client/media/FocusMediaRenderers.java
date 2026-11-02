@@ -1,9 +1,13 @@
 package thaumcraft.port.auromancy.client.media;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
+import com.mojang.blaze3d.vertex.VertexFormat;
 import com.mojang.math.Axis;
 import java.util.WeakHashMap;
 import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.CubeListBuilder;
@@ -14,6 +18,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.NoopRenderer;
+import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
@@ -43,7 +48,7 @@ public final class FocusMediaRenderers {
         root.addOrReplaceChild("prong2",CubeListBuilder.create().texOffs(0,10).addBox(-.5f,-.5f,-2.5f,1,1,5),PartPose.rotation(Mth.HALF_PI,Mth.HALF_PI,0));
         return LayerDefinition.create(mesh,64,32);
     }
-    private static LayerDefinition batLayer() {
+    static LayerDefinition batLayer() {
         var mesh=new MeshDefinition();var root=mesh.getRoot();
         var head=root.addOrReplaceChild("head",CubeListBuilder.create().texOffs(0,0).addBox(-3,-3,-3,6,6,6),PartPose.ZERO);
         head.addOrReplaceChild("right_ear",CubeListBuilder.create().texOffs(24,0).addBox(-4,-6,-2,3,4,1),PartPose.ZERO);
@@ -57,12 +62,15 @@ public final class FocusMediaRenderers {
     }
     private static final class ProjectileRenderer extends EntityRenderer<EntityFocusProjectile> {
         private final WeakHashMap<EntityFocusProjectile,Integer> lastTick=new WeakHashMap<>();
-        private final WeakHashMap<EntityFocusProjectile,Float> lastFrame=new WeakHashMap<>();
+        private final WeakHashMap<EntityFocusProjectile,Float> lastPartial=new WeakHashMap<>();
         ProjectileRenderer(EntityRendererProvider.Context context){super(context);}
         @Override public ResourceLocation getTextureLocation(EntityFocusProjectile entity){return ResourceLocation.parse("thaumcraft:textures/misc/particles.png");}
         @Override public void render(EntityFocusProjectile entity,float yaw,float partial,PoseStack pose,MultiBufferSource buffers,int light) {
-            float frame=entity.tickCount+partial;
-            if(lastFrame.getOrDefault(entity,-1f)!=frame){boolean first=lastTick.getOrDefault(entity,-1)!=entity.tickCount;FocusMediaClient.projectile(entity,partial,first);lastTick.put(entity,entity.tickCount);lastFrame.put(entity,frame);}
+            // RenderNoProjectile throttles fire motes by partial-tick distance,
+            // independent of frame rate; the effect trail still emits once a tick.
+            float elapsed=partial-lastPartial.getOrDefault(entity,0f);
+            if(elapsed<0)elapsed+=1;
+            if((double)elapsed>.2){boolean first=lastTick.getOrDefault(entity,0)!=entity.tickCount;FocusMediaClient.projectile(entity,partial,first);lastTick.put(entity,entity.tickCount);lastPartial.put(entity,partial);}
         }
     }
     private static final class MineRenderer extends EntityRenderer<EntityFocusMine> {
@@ -75,16 +83,45 @@ public final class FocusMediaRenderers {
             model.render(pose,buffers.getBuffer(RenderType.entityTranslucent(getTextureLocation(entity))),15728880,OverlayTexture.NO_OVERLAY,color);pose.popPose();
         }
     }
-    private static final class BatRenderer extends EntityRenderer<EntitySpellBat> {
-        private final ModelPart model,head,body,right,left;
-        BatRenderer(EntityRendererProvider.Context context){super(context);model=context.bakeLayer(BAT);head=model.getChild("head");body=model.getChild("body");right=body.getChild("right");left=body.getChild("left");shadowRadius=.25f;}
+    private static final class BatRenderer extends MobRenderer<EntitySpellBat,SpellBatModel> {
+        BatRenderer(EntityRendererProvider.Context context){super(context,new SpellBatModel(context.bakeLayer(BAT)),.25f);}
         @Override public ResourceLocation getTextureLocation(EntitySpellBat entity){return ResourceLocation.parse("thaumcraft:textures/entity/spellbat.png");}
-        @Override public void render(EntitySpellBat entity,float yaw,float partial,PoseStack pose,MultiBufferSource buffers,int light) {
-            float age=entity.tickCount+partial;head.xRot=Mth.lerp(partial,entity.xRotO,entity.getXRot())*Mth.DEG_TO_RAD;head.yRot=Mth.rotLerp(partial,entity.yHeadRotO,entity.yHeadRot)*Mth.DEG_TO_RAD-yaw*Mth.DEG_TO_RAD;
-            body.xRot=Mth.PI/4+Mth.cos(age*.1f)*.15f;right.yRot=Mth.cos(age*1.3f)*Mth.PI*.25f;left.yRot=-right.yRot;right.getChild("outer").yRot=right.yRot*.5f;left.getChild("outer").yRot=left.yRot*.5f;
-            pose.pushPose();pose.translate(0,-.1,0);pose.mulPose(Axis.YP.rotationDegrees(180-yaw));pose.scale(-.35f,-.35f,.35f);pose.translate(0,-1.501,0);
-            model.render(pose,buffers.getBuffer(RenderType.entityTranslucent(getTextureLocation(entity))),15728880,OverlayTexture.NO_OVERLAY,0x80000000|FocusMediaVisuals.color(entity.getFocusPackage()));pose.popPose();super.render(entity,yaw,partial,pose,buffers,light);
+        @Override protected RenderType getRenderType(EntitySpellBat entity,boolean visible,boolean translucent,boolean glowing){
+            return translucent?TransparentBatLayer.TYPE:super.getRenderType(entity,visible,false,glowing);
         }
+        @Override protected void scale(EntitySpellBat entity,PoseStack pose,float partial){pose.scale(.35f,.35f,.35f);}
+        @Override protected void setupRotations(EntitySpellBat entity,PoseStack pose,float age,float yaw,float partial,float scale){
+            pose.translate(0,-.1,0);super.setupRotations(entity,pose,age,yaw,partial,scale);
+        }
+        @Override public void render(EntitySpellBat entity,float yaw,float partial,PoseStack pose,MultiBufferSource buffers,int light) {
+            super.render(entity,yaw,partial,pose,buffers,0xF000F0);
+        }
+    }
+    private static final class SpellBatModel extends EntityModel<EntitySpellBat> {
+        private final ModelPart root,head,body,right,left;
+        private int tint;
+        SpellBatModel(ModelPart root){super(RenderType::entityTranslucent);this.root=root;head=root.getChild("head");body=root.getChild("body");right=body.getChild("right");left=body.getChild("left");}
+        @Override public void setupAnim(EntitySpellBat entity,float limbSwing,float limbAmount,float age,float headYaw,float headPitch){
+            tint=FocusMediaVisuals.color(entity.getFocusPackage());head.xRot=headPitch*Mth.DEG_TO_RAD;head.yRot=headYaw*Mth.DEG_TO_RAD;
+            body.xRot=Mth.PI/4+Mth.cos(age*.1f)*.15f;right.yRot=Mth.cos(age*1.3f)*Mth.PI*.25f;left.yRot=-right.yRot;right.getChild("outer").yRot=right.yRot*.5f;left.getChild("outer").yRot=left.yRot*.5f;
+        }
+        @Override public void renderToBuffer(PoseStack pose,VertexConsumer vertices,int light,int overlay,int color){
+            renderBatModel(root,pose,vertices,light,overlay,color,tint);
+        }
+    }
+    static void renderBatModel(ModelPart root,PoseStack pose,VertexConsumer vertices,int light,int overlay,int color,int tint){
+        // 1.12 TRANSPARENT_MODEL overrides glColor to white/.15, rather than
+        // multiplying RenderSpellBat's outer tint/.5. Preserve the vanilla
+        // incoming translucent color (0x26ffffff) and the hurt overlay.
+        root.render(pose,vertices,light,overlay,color==-1?0x7F000000|tint:color);
+    }
+    private static final class TransparentBatLayer extends RenderType {
+        static final RenderType TYPE=create("thaumcraft_spellbat_invisible",DefaultVertexFormat.NEW_ENTITY,VertexFormat.Mode.QUADS,1536,true,true,
+                CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_TRANSLUCENT_SHADER)
+                        .setTextureState(new TextureStateShard(ResourceLocation.parse("thaumcraft:textures/entity/spellbat.png"),false,false))
+                        .setTransparencyState(TRANSLUCENT_TRANSPARENCY).setCullState(NO_CULL)
+                        .setLightmapState(LIGHTMAP).setOverlayState(OVERLAY).setWriteMaskState(COLOR_WRITE).createCompositeState(true));
+        private TransparentBatLayer(){super("unused",DefaultVertexFormat.NEW_ENTITY,VertexFormat.Mode.QUADS,0,false,false,()->{},()->{});}
     }
     private FocusMediaRenderers() { }
 }

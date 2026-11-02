@@ -40,7 +40,10 @@ public final class StructureClient {
         BlockPos pos=entity.getBlockPos();
         if (entity instanceof RechargePedestalEntity && event==5) {
             var random=level.random;
-            Vec3 source=new Vec3(pos.getX()+random.nextInt(3)-random.nextInt(3)+random.nextFloat(),pos.getY()+1+random.nextInt(3)+random.nextFloat(),pos.getZ()+random.nextInt(3)-random.nextInt(3)+random.nextFloat());
+            // TileRechargePedestal chooses all block coordinates before
+            // FXDispatcher adds its six source/target fractional offsets.
+            int x=pos.getX()+random.nextInt(3)-random.nextInt(3),y=pos.getY()+1+random.nextInt(3),z=pos.getZ()+random.nextInt(3)-random.nextInt(3);
+            Vec3 source=new Vec3(x+random.nextFloat(),y+random.nextFloat(),z+random.nextFloat());
             Vec3 target=new Vec3(pos.getX()+.4+random.nextFloat()*.2,pos.getY()+1.4+random.nextFloat()*.2,pos.getZ()+.4+random.nextFloat()*.2);
             Minecraft.getInstance().particleEngine.add(new StructureParticle.VisSparkle(level,source,target,parameter));
         } else if (event==5) SHIELDS.put(entity,new Shield(level.getGameTime(),8+level.random.nextInt(4)));

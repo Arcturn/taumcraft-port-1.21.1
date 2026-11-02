@@ -1,10 +1,13 @@
 package thaumcraft.port.client;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import java.util.ArrayList;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
 import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.phys.Vec3;
 import org.joml.Quaternionf;
 
@@ -17,7 +20,9 @@ public final class FocusEffectParticle extends TextureSheetParticle {
     private double slowdown=.98f,randomX,randomY,randomZ;
     private FocusEffectParticle(ClientLevel level,Vec3 point,Vec3 velocity){super(level,point.x,point.y,point.z);setSize(.1f,.1f);xd=velocity.x;yd=velocity.y;zd=velocity.z;hasPhysics=true;}
     public static FocusEffectParticle effect(String key,ClientLevel level,Vec3 point,Vec3 velocity) {
-        var r=level.random;
+        return effect(key,level,point,velocity,level.random);
+    }
+    static FocusEffectParticle effect(String key,ClientLevel level,Vec3 point,Vec3 velocity,RandomSource r) {
         if(key.equals("thaumcraft.HEAL")||key.equals("thaumcraft.FLUX")||key.equals("thaumcraft.EXCHANGE"))velocity=velocity.add(r.nextGaussian()*.01,r.nextGaussian()*.01,r.nextGaussian()*.01);
         var p=new FocusEffectParticle(level,point,velocity);
         switch(key) {
@@ -45,6 +50,18 @@ public final class FocusEffectParticle extends TextureSheetParticle {
     private void movement(double x,double y,double z){randomX=x;randomY=y;randomZ=z;}
     private void rotation(float start,float speed){roll=oRoll=start*Mth.TWO_PI;rotationStep=Mth.TWO_PI*speed*Mth.DEG_TO_RAD;}
     @Override public void tick(){if(delay>0&&--delay>0)return;xo=x;yo=y;zo=z;if(age++>=lifetime){remove();return;}oRoll=roll;roll+=rotationStep;yd-=.04*gravity;move(xd,yd,zd);xd*=slowdown;yd*=slowdown;zd*=slowdown;xd+=level.random.nextGaussian()*randomX;yd+=level.random.nextGaussian()*randomY;zd+=level.random.nextGaussian()*randomZ;if(onGround&&slowdown!=1){xd*=.7;zd*=.7;}}
+    @Override public void move(double dx,double dy,double dz){
+        var requested=new Vec3(dx,dy,dz);var resolved=requested;
+        if(hasPhysics){
+            var obstacles=new ArrayList<VoxelShape>();
+            level.getBlockCollisions(null,getBoundingBox().expandTowards(requested)).forEach(obstacles::add);
+            resolved=FocusParticleMotion.collide(getBoundingBox(),requested,obstacles);
+        }
+        setBoundingBox(getBoundingBox().move(resolved));setLocationFromBoundingbox();
+        onGround=dy!=resolved.y&&dy<0;
+        if(dx!=resolved.x)xd=0;
+        if(dz!=resolved.z)zd=0;
+    }
     private int frame(){return firstFrame+(loop?age%frames:Math.min(frames-1,age*frames/Math.max(1,lifetime)));}
     @Override protected float getU0(){return (frame()%grid)/(float)grid;}
     @Override protected float getU1(){return (frame()%grid+1)/(float)grid;}
@@ -53,10 +70,15 @@ public final class FocusEffectParticle extends TextureSheetParticle {
     private float key(float[] keys){float cursor=Mth.clamp(age/(float)lifetime,0,1)*(keys.length-1);int i=Math.min(keys.length-1,(int)cursor);return Mth.lerp(cursor-i,keys[i],keys[Math.min(i+1,keys.length-1)]);}
     @Override public float getQuadSize(float partial){return key(scaleKeys)*.1f;}
     @Override public void render(VertexConsumer buffer,Camera camera,float partial){
-        if(delay>0)return;alpha=key(alphaKeys);float progress=Mth.clamp((age+partial)/lifetime,0,1);rCol=Mth.lerp(progress,startRed,endRed);gCol=Mth.lerp(progress,startGreen,endGreen);bCol=Mth.lerp(progress,startBlue,endBlue);
-        var position=camera.getPosition();float px=(float)(Mth.lerp(partial,xo,x)-position.x),py=(float)(Mth.lerp(partial,yo,y)-position.y),pz=(float)(Mth.lerp(partial,zo,z)-position.z);
-        var rotation=new Quaternionf(camera.rotation()).rotateZ(roll+(roll-oRoll)*partial);
-        SalisMundusParticle.renderQuad(buffer,rotation,px,py,pz,getQuadSize(partial),flipped?getU1():getU0(),flipped?getU0():getU1(),getV0(),getV1(),rCol,gCol,bCol,alpha,getLightColor(partial));
+        renderFrame(buffer,camera.rotation(),camera.getPosition(),partial,getLightColor(partial));
+    }
+    void renderFrame(VertexConsumer buffer,Quaternionf cameraRotation,Vec3 cameraPosition,float partial,int light){
+        // FXGeneric initializes its alpha/scale arrays on its first update. Its
+        // constructor frame is invisible; do not flash a full-sized sprite first.
+        if(delay>0||age==0)return;alpha=key(alphaKeys);float progress=Mth.clamp((age+partial)/lifetime,0,1);rCol=Mth.lerp(progress,startRed,endRed);gCol=Mth.lerp(progress,startGreen,endGreen);bCol=Mth.lerp(progress,startBlue,endBlue);
+        var position=cameraPosition;float px=(float)(Mth.lerp(partial,xo,x)-position.x),py=(float)(Mth.lerp(partial,yo,y)-position.y),pz=(float)(Mth.lerp(partial,zo,z)-position.z);
+        var rotation=new Quaternionf(cameraRotation).rotateZ(roll+(roll-oRoll)*partial);
+        SalisMundusParticle.renderQuad(buffer,rotation,px,py,pz,getQuadSize(partial),flipped?getU1():getU0(),flipped?getU0():getU1(),getV0(),getV1(),rCol,gCol,bCol,alpha,light);
     }
     @Override public ParticleRenderType getRenderType(){return SalisMundusParticle.legacyLayer(additive);}
 }

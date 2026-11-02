@@ -118,6 +118,41 @@ public final class TheoryResearchGameTests {
         helper.succeed();
     }
 
+    @GameTest(template="elemental_tools_empty",timeoutTicks=80)
+    public static void infusionUnlockEnablesTheoryBeforeItsMatrixResearch(GameTestHelper helper) {
+        var table=table(helper);var player=player(helper,table);var state=ResearchStorage.get(player.getServer()).player(player.getUUID());
+        state.flag("UNLOCKALCHEMY");state.flag("!auram");state.flag("!praecantatio");
+        state.stage("UNLOCKINFUSION",1,false);state.addKnowledge("OBSERVATION","INFUSION",16);
+        player.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(PortContent.THAUMONOMICON.get()));
+        var session=new TheorySession(player.getUUID(),5,List.of());
+        helper.assertFalse(session.availableCategories(state).contains("INFUSION"),"An unfinished category unlock enabled Infusion cards");
+        thaumcraft.port.research.ResearchProgress.advance(player,"UNLOCKINFUSION",1);
+        helper.assertTrue(state.knows("UNLOCKINFUSION"),"Paying the actual book requirements did not finish the unlock");
+        helper.assertTrue(session.availableCategories(state).contains("INFUSION"),"Completed unlock did not enable ordinary Infusion cards");
+        helper.assertFalse(state.isResearchKnown("INFUSION"),"Category unlock incorrectly completed matrix research");
+        helper.assertFalse(table.nearbyAids().contains("BasicInfusion"),"An unlocked category fabricated a nearby matrix aid");
+        helper.succeed();
+    }
+
+    @GameTest(template="elemental_tools_empty",timeoutTicks=80)
+    public static void matrixAidUsesOriginalHorizontalAndVerticalRangeAndStartsItsCardPool(GameTestHelper helper) {
+        var table=table(helper);var player=player(helper,table);var matrix=thaumcraft.port.infusion.matrix.MatrixContent.MATRIX.get().defaultBlockState();
+        BlockPos inside=table.getBlockPos().offset(4,1,0),high=table.getBlockPos().offset(4,2,0),far=table.getBlockPos().offset(5,1,0);
+        helper.getLevel().setBlock(high,matrix,3);
+        helper.assertFalse(table.nearbyAids().contains("BasicInfusion"),"Matrix two blocks above table escaped the source vertical boundary");
+        helper.getLevel().removeBlock(high,false);helper.getLevel().setBlock(far,matrix,3);
+        helper.assertFalse(table.nearbyAids().contains("BasicInfusion"),"Matrix five blocks away escaped the source horizontal boundary");
+        helper.getLevel().removeBlock(far,false);helper.getLevel().setBlock(inside,matrix,3);
+        helper.assertTrue(table.nearbyAids().contains("BasicInfusion"),"Matrix on the source scan boundary was not detected");
+        var menu=menu(player,table,34);menu.broadcastChanges();
+        helper.assertTrue(menu.aids.contains("BasicInfusion"),"Detected matrix aid was not offered by the server menu");
+        menu.action(player,new TheoryActionPayload(menu.containerId,menu.token,table.saveCustomOnly(table.getLevel().registryAccess()).getLong("TheoryRevision"),0,"BasicInfusion"));
+        var started=session(table);
+        helper.assertTrue(started.aids.contains("BasicInfusion"),"Selecting a real nearby matrix aid did not start a theory");
+        helper.assertTrue(started.aidCards.equals(List.of("Measure","Channel","Infuse")),"Matrix aid lost its exact original Infusion card pool");
+        helper.getLevel().removeBlock(inside,false);helper.succeed();
+    }
+
     private static ResearchTableEntity table(GameTestHelper helper) {
         var pos=helper.absolutePos(new BlockPos(1,2,1));
         helper.getLevel().setBlock(pos,TheoryContent.TABLE.get().defaultBlockState(),3);

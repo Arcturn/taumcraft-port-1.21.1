@@ -108,8 +108,13 @@ public final class FocalManipulatorScreen extends AbstractContainerScreen<FocalM
             sprite(g,BASE,leftPos+200,topPos+8,208,224,8,14);
         }
         float tint=valid&&table.vis<=0?(over(mouseX,mouseY,leftPos+230,topPos+10,24,16)?1:.9f):.5f;
-        g.setColor(tint,tint,tint,.9f);sprite(g,FRAME,leftPos+230,topPos+10,232,240,24,16);g.setColor(1,1,1,1);
-        for(int i=0;i<3;i++)BookAssets.texture(g,BookAssets.id("textures/gui/"+new String[]{"complex","costxp","costvis"}[i]+".png"),leftPos+225,topPos+31+i*14,16);
+        g.setColor(tint,tint,tint,valid&&table.vis<=0?1:.9f);sprite(g,BASE,leftPos+230,topPos+10,232,240,24,16);g.setColor(1,1,1,1);
+        for(int i=0;i<3;i++) {
+            float brightness=over(mouseX,mouseY,leftPos+225,topPos+31+i*14,32,16)?1:.9f;
+            g.setColor(brightness,brightness,brightness,brightness);
+            BookAssets.texture(g,BookAssets.id("textures/gui/"+new String[]{"complex","costxp","costvis"}[i]+".png"),leftPos+225,topPos+31+i*14,16);
+        }
+        g.setColor(1,1,1,1);
         if(maximum>0)g.drawString(font,complexity+"/"+maximum,leftPos+242,topPos+36,complexity>maximum?16151160:16761407);
         g.drawString(font,Integer.toString(costXp),leftPos+242,topPos+50,!minecraft.player.getAbilities().instabuild&&costXp>minecraft.player.experienceLevel?16151160:10092429);
         g.drawString(font,Integer.toString(table.vis>0?(int)table.vis:costVis),leftPos+242,topPos+64,0x55ffff);
@@ -119,12 +124,14 @@ public final class FocalManipulatorScreen extends AbstractContainerScreen<FocalM
         for(var crystal:crystals.entrySet()) {
             ItemStack stack=CrystalItem.stack(crystal.getKey());stack.setCount(crystal.getValue());
             int x=leftPos+226+(index%5)*16,y=topPos+102+(index/5)*16;
+            if(over(mouseX,mouseY,x,y,16,16))y--;
             g.renderItem(stack,x,y);g.renderItemDecorations(font,stack,x,y);index++;
         }
         for(var spinner:settings) {
             int x=leftPos+231,y=topPos+spinner.y;
             g.drawString(font,spinner.setting.getLocalizedName(),x,y-13,0xffaa00);
-            g.setColor(table.vis>0?.5f:1,table.vis>0?.5f:1,table.vis>0?.5f:1,1);
+            float brightness=table.vis>0?.5f:over(mouseX,mouseY,x,y,spinner.width+10,10)?1:.9f;
+            g.setColor(brightness,brightness,brightness,brightness);
             sprite(g,BASE,x,y,20,0,10,10);sprite(g,BASE,x+spinner.width,y,30,0,10,10);g.setColor(1,1,1,1);
             g.drawCenteredString(font,spinner.setting.getValueText(),x+spinner.width/2+5,y+1,0xffffff);
         }
@@ -188,18 +195,18 @@ public final class FocalManipulatorScreen extends AbstractContainerScreen<FocalM
         BookAssets.prepareImage(g);
         if(vertical)g.blit(BASE,x+2,y,4,h,240,176,4,32,256,256);
         else g.blit(BASE,x,y+2,w,4,208,176,32,4,256,256);
-        int position=Math.round((value-min)/(float)Math.max(1,max-min)*((vertical?h:w)-8));
+        int position=(int)((value-min)/(float)Math.max(1,max-min)*((vertical?h:w)-8));
         sprite(g,BASE,x+(vertical?0:position),y+(vertical?position:0),20,20,8,8);
     }
     private void renderHints(GuiGraphics g,int mouseX,int mouseY) {
         for(int i=0;i<6&&partsStart+i<parts.size();i++)if(over(mouseX,mouseY,leftPos+28,topPos+33+i*25,20,20)) {
-            if(FocusEngine.getElement(parts.get(partsStart+i)) instanceof FocusNode node)tooltip(g,partText(node,null),mouseX,mouseY);
+            if(FocusEngine.getElement(parts.get(partsStart+i)) instanceof FocusNode node)tooltip(g,partText(node,null),leftPos+44,topPos+46+i*24);
             return;
         }
         var node=data().get(hovered);
-        if(node!=null&&node.node!=null){tooltip(g,partText(node.node,node),mouseX,mouseY);return;}
+        if(node!=null&&node.node!=null){tooltip(g,partText(node.node,node),leftPos+140-scrollX+node.x*24,topPos+50-scrollY+node.y*32);return;}
         if(over(mouseX,mouseY,leftPos+230,topPos+10,24,16)){g.renderTooltip(font,Component.translatable("wandtable.text3"),mouseX,mouseY);return;}
-        for(int i=0;i<3;i++)if(over(mouseX,mouseY,leftPos+225,topPos+31+i*14,32,14)){g.renderTooltip(font,Component.translatable(new String[]{"wandtable.text5","wandtable.text2","wandtable.text1"}[i]),mouseX,mouseY);return;}
+        for(int i=0;i<3;i++)if(over(mouseX,mouseY,leftPos+225,topPos+31+i*14,32,16)){g.renderTooltip(font,Component.translatable(new String[]{"wandtable.text5","wandtable.text2","wandtable.text1"}[i]),mouseX,mouseY);return;}
         int i=0;
         for(var crystal:crystals.entrySet()) {
             if(over(mouseX,mouseY,leftPos+226+(i%5)*16,topPos+102+(i/5)*16,16,16)){

@@ -27,7 +27,14 @@ public final class HoleRenderer implements BlockEntityRenderer<HoleBlockEntity> 
     }
     private static ShaderInstance activeShader(){
         var client=Minecraft.getInstance();var camera=client.getCameraEntity();
-        if(shader!=null&&camera!=null){shader.safeGetUniform("Time").set(camera.tickCount);shader.safeGetUniform("Yaw").set((float)Math.toRadians(camera.getYRot()));shader.safeGetUniform("Pitch").set((float)-Math.toRadians(camera.getXRot()));}
+        if(shader!=null&&camera!=null){
+            // ShaderHelper uses the render-view entity's age; TileHoleRenderer's
+            // callback uses the local player's angles, even for a detached view.
+            var orientation=client.player==null?camera:client.player;
+            shader.safeGetUniform("Time").set(camera.tickCount);
+            shader.safeGetUniform("Yaw").set((float)Math.toRadians(orientation.getYRot()));
+            shader.safeGetUniform("Pitch").set((float)-Math.toRadians(orientation.getXRot()));
+        }
         return shader;
     }
     @Override public void render(HoleBlockEntity hole,float partial,PoseStack pose,MultiBufferSource buffers,int light,int overlay){
@@ -35,21 +42,12 @@ public final class HoleRenderer implements BlockEntityRenderer<HoleBlockEntity> 
         for(Direction face:Direction.values()){
             var neighbor=hole.getBlockPos().relative(face);var state=level.getBlockState(neighbor);
             if(state.is(FocusEffectContent.HOLE.get())||!state.isSolidRender(level,neighbor))continue;
-            float a=.001f,b=.999f;
-            float[][] points=switch(face){
-                case DOWN->new float[][]{{0,a,0},{1,a,0},{1,a,1},{0,a,1}};
-                case UP->new float[][]{{0,b,1},{1,b,1},{1,b,0},{0,b,0}};
-                case NORTH->new float[][]{{1,0,a},{0,0,a},{0,1,a},{1,1,a}};
-                case SOUTH->new float[][]{{0,0,b},{1,0,b},{1,1,b},{0,1,b}};
-                case WEST->new float[][]{{a,0,0},{a,0,1},{a,1,1},{a,1,0}};
-                case EAST->new float[][]{{b,0,1},{b,0,0},{b,1,0},{b,1,1}};
-            };
-            for(float[] p:points)buffer.addVertex(matrix,p[0],p[1],p[2]);
+            PortableHoleGeometry.emit(face,matrix,buffer);
         }
     }
     private static final class Layer extends RenderType {
         static final RenderType PORTAL=create("thaumcraft_portable_hole",DefaultVertexFormat.POSITION,VertexFormat.Mode.QUADS,1536,false,false,
-                CompositeState.builder().setShaderState(new ShaderStateShard(HoleRenderer::activeShader)).setTextureState(new TextureStateShard(ResourceLocation.withDefaultNamespace("textures/entity/end_portal.png"),false,false)).setCullState(NO_CULL).createCompositeState(false));
+                CompositeState.builder().setShaderState(new ShaderStateShard(HoleRenderer::activeShader)).setTextureState(new TextureStateShard(ResourceLocation.withDefaultNamespace("textures/entity/end_portal.png"),false,false)).setCullState(CULL).createCompositeState(false));
         private Layer(){super("unused",DefaultVertexFormat.POSITION,VertexFormat.Mode.QUADS,256,false,false,()->{},()->{});}
     }
 }

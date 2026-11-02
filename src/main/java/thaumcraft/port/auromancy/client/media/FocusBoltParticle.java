@@ -10,12 +10,13 @@ import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.particle.ParticleRenderType;
-import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
+import thaumcraft.port.client.SalisMundusParticle;
+import thaumcraft.port.auromancy.client.media.FocusBoltGeometry.Node;
 
 /** BETA26 FXBolt: three ticks, seeded jagged path, five-sided outer and inner tubes. */
 public final class FocusBoltParticle extends Particle {
@@ -23,7 +24,10 @@ public final class FocusBoltParticle extends Particle {
         public BufferBuilder begin(Tesselator t,TextureManager textures){
             RenderSystem.depthMask(false);RenderSystem.enableBlend();
             RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA,GlStateManager.DestFactor.ONE);
-            RenderSystem.setShader(GameRenderer::getParticleShader);
+            // Duplicate reverse faces below instead of leaking glDisable(CULL)
+            // into later particle layers, which have no end-state callback.
+            RenderSystem.enableCull();
+            RenderSystem.setShader(SalisMundusParticle::legacyShader);
             RenderSystem.setShaderTexture(0,ResourceLocation.parse("thaumcraft:textures/misc/essentia.png"));
             return t.begin(VertexFormat.Mode.QUADS,DefaultVertexFormat.PARTICLE);
         }
@@ -36,12 +40,13 @@ public final class FocusBoltParticle extends Particle {
     public FocusBoltParticle(ClientLevel level,Vec3 from,Vec3 to,int colour,float width){
         super(level,from.x,from.y,from.z);this.width=width;delta=to.subtract(from);
         lifetime=3;hasPhysics=false;xd=yd=zd=0;
-        phase=(float)(random.nextInt(50)*Math.PI);seed=random.nextInt(1000);
+        phase=(float)(random.nextInt(50)*Math.PI);
+        for(int i=1;i<(int)(delta.length()*Math.PI)-1;i++)for(int j=0;j<6;j++)random.nextFloat();
+        seed=random.nextInt(1000);
         setColor(((colour>>16)&255)/255f,((colour>>8)&255)/255f,(colour&255)/255f);
         setBoundingBox(new AABB(from,to).inflate(1));
     }
     @Override public void tick(){xo=x;yo=y;zo=z;if(age++>=lifetime)remove();}
-    record Node(Vec3 position,double radius){}
     static List<Node> path(Vec3 delta,int seed,float phase,int age,float partial){
         var points=new ArrayList<Node>();var r=new Random(seed);
         float length=(float)(delta.length()*Math.PI);int steps=(int)length;
@@ -59,21 +64,30 @@ public final class FocusBoltParticle extends Particle {
         var nodes=path(delta,seed,phase,age,partial);if(nodes.size()<=2)return;
         Vec3 origin=new Vec3(x,y,z).subtract(camera.getPosition());
         float fade=Mth.clamp(1-age/(float)lifetime,.1f,1);
-        // Modern vertex buffers replace the old immediate-mode GLE polycone.
-        for(double scale:new double[]{1,1.0/3})for(int i=0;i<nodes.size()-1;i++){
-            var a=nodes.get(i);var b=nodes.get(i+1);
-            var direction=b.position.subtract(a.position).normalize();
-            var u=direction.cross(Math.abs(direction.y)>.9?new Vec3(1,0,0):new Vec3(0,1,0)).normalize();
-            var v=direction.cross(u).normalize();
-            for(int side=0;side<5;side++){
-                double angle=side*Math.PI*2/5,next=(side+1)*Math.PI*2/5;
-                Vec3 p=u.scale(Math.cos(angle)).add(v.scale(Math.sin(angle)));
-                Vec3 q=u.scale(Math.cos(next)).add(v.scale(Math.sin(next)));
-                vertex(out,origin.add(a.position).add(p.scale(a.radius*scale*width)),side/5f,i,fade);
-                vertex(out,origin.add(a.position).add(q.scale(a.radius*scale*width)),(side+1)/5f,i,fade);
-                vertex(out,origin.add(b.position).add(q.scale(b.radius*scale*width)),(side+1)/5f,i+1,fade);
-                vertex(out,origin.add(b.position).add(p.scale(b.radius*scale*width)),side/5f,i+1,fade);
+        for(double scale:new double[]{1,1.0/3}){
+            var segments=FocusBoltGeometry.tube(nodes,scale*width);
+            for(int i=0;i<segments.size();i++){
+                var segment=segments.get(i);
+                if(i==0)cap(out,origin,segment.front(),0,fade);
+                if(i==segments.size()-1)cap(out,origin,segment.back(),i,fade);
+                for(int side=0;side<5;side++){
+                    int next=(side+1)%5;
+                    Vec3 a=origin.add(segment.front()[side]),b=origin.add(segment.back()[side]);
+                    Vec3 c=origin.add(segment.back()[next]),d=origin.add(segment.front()[next]);
+                    float u=side/5f,v=(side+1)/5f;
+                    vertex(out,a,u,i,fade);vertex(out,b,u,i+1,fade);vertex(out,c,v,i+1,fade);vertex(out,d,v,i,fade);
+                    vertex(out,d,v,i,fade);vertex(out,c,v,i+1,fade);vertex(out,b,u,i+1,fade);vertex(out,a,u,i,fade);
+                }
             }
+        }
+    }
+    private void cap(VertexConsumer out,Vec3 origin,Vec3[] ring,float v,float fade){
+        // GLE tessellates each convex end cap with the current texture coordinate.
+        Vec3 a=origin.add(ring[0]);
+        for(int i=1;i<ring.length-1;i++){
+            Vec3 b=origin.add(ring[i]),c=origin.add(ring[i+1]);
+            vertex(out,a,1,v,fade);vertex(out,b,1,v,fade);vertex(out,c,1,v,fade);vertex(out,c,1,v,fade);
+            vertex(out,c,1,v,fade);vertex(out,c,1,v,fade);vertex(out,b,1,v,fade);vertex(out,a,1,v,fade);
         }
     }
     private void vertex(VertexConsumer out,Vec3 p,float u,float v,float alpha){

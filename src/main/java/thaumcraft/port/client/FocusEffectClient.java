@@ -17,7 +17,7 @@ import thaumcraft.port.content.*;
 @EventBusSubscriber(modid="thaumcraft",bus=EventBusSubscriber.Bus.MOD,value=Dist.CLIENT)
 public final class FocusEffectClient {
     @SubscribeEvent public static void setup(FMLClientSetupEvent event){event.enqueueWork(()->{FocusEffectVisuals.particles=FocusEffectClient::particle;FocusEffectVisuals.receiver=FocusEffectClient::receive;FocusEffectVisuals.holeAmbient=FocusEffectClient::hole;FocusEffectVisuals.sapAmbient=FocusEffectClient::sap;});}
-    private static void particle(String key,Level world,Vec3 position,Vec3 velocity){if(world instanceof ClientLevel level){var p=FocusEffectParticle.effect(key,level,position,velocity);if(p!=null)Minecraft.getInstance().particleEngine.add(p);}}
+    private static void particle(String key,Level world,Vec3 position,Vec3 velocity){if(world instanceof ClientLevel level){var p=FocusEffectParticle.effect(key,level,position,velocity);if(p!=null)add(p);}}
     private static void receive(FocusEffectVisuals.Payload payload){
         var client=Minecraft.getInstance();var level=client.level;if(level==null||client.player==null||client.player.position().distanceToSqr(payload.position())>80*80)return;
         if(payload.kind()==1){bamf(level,payload);return;}
@@ -35,11 +35,11 @@ public final class FocusEffectClient {
         for(int i=0;i<(payload.flair()?2:0)+r.nextInt(3);i++){Vec3 velocity=new Vec3(signed(level,.0025,.005),signed(level,.0025,.005),signed(level,.0025,.005));var p=dust(point.add(velocity.scale(5)),velocity);if(p!=null)p.wisp(i,(.9f+r.nextFloat()*.1f+red)/2,(.1f+green)/2,(.5f+r.nextFloat()*.1f+blue)/2);}
     }
     private static double signed(ClientLevel level,double base,double spread){return (base+level.random.nextFloat()*spread)*(level.random.nextBoolean()?-1:1);}
-    private static SalisMundusParticle dust(Vec3 point,Vec3 velocity){var p=Minecraft.getInstance().particleEngine.createParticle(PortParticles.get("salis_mundus"),point.x,point.y,point.z,velocity.x,velocity.y,velocity.z);return p instanceof SalisMundusParticle dust?dust:null;}
+    private static SalisMundusParticle dust(Vec3 point,Vec3 velocity){var client=Minecraft.getInstance();if(client.level==null||!FocusParticleAdmission.allows(client.options.particles().get(),client.getFps(),client.level.random.nextInt(3)))return null;var p=client.particleEngine.createParticle(PortParticles.get("salis_mundus"),point.x,point.y,point.z,velocity.x,velocity.y,velocity.z);return p instanceof SalisMundusParticle dust?dust:null;}
     private static void sap(Level world,BlockPos pos){
         if(!(world instanceof ClientLevel level))return;var random=level.random;float h=random.nextFloat()*.33f;
         Vec3 point=new Vec3(pos.getX()+random.nextFloat(),pos.getY()+.1515+h/2,pos.getZ()+random.nextFloat());
-        Minecraft.getInstance().particleEngine.add(FocusEffectParticle.sapSpark(level,point,3+h*6,.3f-random.nextFloat()*.1f,.5f+random.nextFloat()*.2f));
+        add(FocusEffectParticle.sapSpark(level,point,3+h*6,.3f-random.nextFloat()*.1f,.5f+random.nextFloat()*.2f));
         if(random.nextInt(50)==0)level.playLocalSound(pos.getX(),pos.getY(),pos.getZ(),PortSounds.get("jacobs"),SoundSource.AMBIENT,.25f,1+(random.nextFloat()-random.nextFloat())*.2f,false);
     }
     private static void hole(HoleBlockEntity hole){
@@ -51,9 +51,12 @@ public final class FocusEffectClient {
                 if(a.getAxis()==b.getAxis()||!level.getBlockState(side).isSolidRender(level,side)&&!level.getBlockState(diagonal).isSolidRender(level,diagonal))continue;
                 float x=.5f*(a.getStepX()!=0?a.getStepX():b.getStepX()),y=.5f*(a.getStepY()!=0?a.getStepY():b.getStepY()),z=.5f*(a.getStepZ()!=0?a.getStepZ():b.getStepZ());
                 Vec3 point=new Vec3(pos.getX()+(x==0?level.random.nextFloat():x+.5f),pos.getY()+(y==0?level.random.nextFloat():y+.5f),pos.getZ()+(z==0?level.random.nextFloat():z+.5f));
-                if(level.random.nextInt(6)<4)Minecraft.getInstance().particleEngine.add(FocusEffectParticle.holeSparkle(level,point));
+                if(level.random.nextInt(6)<4)add(FocusEffectParticle.holeSparkle(level,point));
             }
         }
+    }
+    private static void add(FocusEffectParticle particle){
+        var client=Minecraft.getInstance();if(client.level!=null&&FocusParticleAdmission.allows(client.options.particles().get(),client.getFps(),client.level.random.nextInt(3)))client.particleEngine.add(particle);
     }
     private FocusEffectClient(){}
 }

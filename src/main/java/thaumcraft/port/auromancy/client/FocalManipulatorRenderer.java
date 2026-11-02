@@ -6,11 +6,11 @@ import com.mojang.blaze3d.vertex.VertexFormat;
 import com.mojang.math.Axis;
 import java.util.Random;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
-import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.ItemDisplayContext;
@@ -18,6 +18,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.AABB;
 import thaumcraft.port.auromancy.focal.FocalManipulatorEntity;
 import thaumcraft.port.client.BookAssets;
+import thaumcraft.port.client.SalisMundusParticle;
 import thaumcraft.port.content.CrystalItem;
 
 /** The original hovering focus, orbiting vis crystals, billboards and seeded light fans. */
@@ -43,10 +44,10 @@ public final class FocalManipulatorRenderer implements BlockEntityRenderer<Focal
             var camera=game.gameRenderer.getMainCamera();pose.mulPose(Axis.YP.rotationDegrees(-camera.getYRot()));pose.mulPose(Axis.XP.rotationDegrees(camera.getXRot()));
             int frame=320+age%16;float u=frame%64/64f,v=frame/64/64f,s=1/64f;
             var glow=buffers.getBuffer(Layers.GLOW);
-            glow.addVertex(pose.last().pose(),-.175f,-.175f,0).setColor(red,green,blue,.66f).setUv(u+s,v+s).setOverlay(OverlayTexture.NO_OVERLAY).setLight(240).setNormal(pose.last(),0,1,0);
-            glow.addVertex(pose.last().pose(),-.175f,.175f,0).setColor(red,green,blue,.66f).setUv(u+s,v).setOverlay(OverlayTexture.NO_OVERLAY).setLight(240).setNormal(pose.last(),0,1,0);
-            glow.addVertex(pose.last().pose(),.175f,.175f,0).setColor(red,green,blue,.66f).setUv(u,v).setOverlay(OverlayTexture.NO_OVERLAY).setLight(240).setNormal(pose.last(),0,1,0);
-            glow.addVertex(pose.last().pose(),.175f,-.175f,0).setColor(red,green,blue,.66f).setUv(u,v+s).setOverlay(OverlayTexture.NO_OVERLAY).setLight(240).setNormal(pose.last(),0,1,0);
+            glow.addVertex(pose.last().pose(),-.175f,-.175f,0).setColor(red,green,blue,.66f).setUv(u+s,v+s).setLight(LightTexture.FULL_BRIGHT);
+            glow.addVertex(pose.last().pose(),-.175f,.175f,0).setColor(red,green,blue,.66f).setUv(u+s,v).setLight(LightTexture.FULL_BRIGHT);
+            glow.addVertex(pose.last().pose(),.175f,.175f,0).setColor(red,green,blue,.66f).setUv(u,v).setLight(LightTexture.FULL_BRIGHT);
+            glow.addVertex(pose.last().pose(),.175f,-.175f,0).setColor(red,green,blue,.66f).setUv(u,v+s).setLight(LightTexture.FULL_BRIGHT);
             pose.popPose();
             pose.pushPose();pose.translate(.5,1.05,.5);pose.mulPose(Axis.YP.rotationDegrees(angle));pose.translate(0,bob,.4);pose.scale(.5f,.5f,.5f);
             ray(pose,buffers,angle,index,bob,red,green,blue,ticks);
@@ -76,8 +77,8 @@ public final class FocalManipulatorRenderer implements BlockEntityRenderer<Focal
     }
     @Override public AABB getRenderBoundingBox(FocalManipulatorEntity table){return new AABB(table.getBlockPos()).expandTowards(0,.7,0).inflate(.15);}
     private static final class Layers extends RenderType {
-        static final RenderType GLOW=create("thaumcraft_focal_glow",DefaultVertexFormat.NEW_ENTITY,VertexFormat.Mode.QUADS,1536,false,false,
-                CompositeState.builder().setShaderState(RENDERTYPE_ENTITY_TRANSLUCENT_EMISSIVE_SHADER).setTextureState(new TextureStateShard(PARTICLES,true,false)).setTransparencyState(LIGHTNING_TRANSPARENCY).setCullState(NO_CULL).setOverlayState(OVERLAY).setLightmapState(LIGHTMAP).setWriteMaskState(COLOR_WRITE).createCompositeState(false));
+        static final RenderType GLOW=create("thaumcraft_focal_glow",DefaultVertexFormat.PARTICLE,VertexFormat.Mode.QUADS,1536,false,false,
+                CompositeState.builder().setShaderState(new ShaderStateShard(SalisMundusParticle::legacyShader)).setTextureState(new TextureStateShard(PARTICLES,true,false)).setTransparencyState(LIGHTNING_TRANSPARENCY).setCullState(NO_CULL).setLightmapState(LIGHTMAP).setWriteMaskState(COLOR_WRITE).createCompositeState(false));
         static final RenderType RAYS=create("thaumcraft_focal_rays",DefaultVertexFormat.POSITION_COLOR,VertexFormat.Mode.TRIANGLES,1536,false,false,
                 CompositeState.builder().setShaderState(POSITION_COLOR_SHADER).setTransparencyState(LIGHTNING_TRANSPARENCY).setCullState(CULL).setWriteMaskState(COLOR_WRITE).createCompositeState(false));
         private Layers(){super("unused",DefaultVertexFormat.POSITION,VertexFormat.Mode.QUADS,256,false,false,()->{},()->{});}

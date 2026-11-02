@@ -8,7 +8,6 @@ import java.util.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.*;
 import net.minecraft.client.renderer.blockentity.*;
-import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.phys.AABB;
@@ -43,7 +42,7 @@ public final class PedestalRenderer<T extends DisplayPedestalEntity> implements 
         int frame=Math.min(14,(int)(14*progress));float alpha=Math.min(1,(1-progress)*3);
         pose.pushPose();pose.translate(.5,1,.5);pose.mulPose(Axis.YP.rotationDegrees(180));pose.mulPose(Axis.XP.rotationDegrees(-90));pose.scale(.4f,.4f,.4f);
         var out=buffers.getBuffer(ShieldTypes.FRAMES[frame]);
-        for(float[] vertex:Hemisphere.VERTICES)out.addVertex(pose.last().pose(),vertex[0],vertex[1],vertex[2]).setColor(.65f,.1f,.5f,alpha).setUv(vertex[3],vertex[4]).setOverlay(OverlayTexture.NO_OVERLAY).setLight(220).setNormal(pose.last(),vertex[0]/2,vertex[1]/2,vertex[2]/2);
+        for(float[] vertex:Hemisphere.VERTICES)out.addVertex(pose.last().pose(),vertex[0],vertex[1],vertex[2]).setColor(.65f,.1f,.5f,alpha).setUv(vertex[3],vertex[4]).setLight(220);
         pose.popPose();
     }
     /** The actual BETA26 160-triangle hemisphere, rather than a substitute sprite or cube. */
@@ -70,10 +69,12 @@ public final class PedestalRenderer<T extends DisplayPedestalEntity> implements 
     }
     private static final class ShieldTypes extends RenderType {
         static final RenderType[] FRAMES=new RenderType[15];
-        static { for(int i=0;i<15;i++)FRAMES[i]=create("thaumcraft_pedestal_shield_"+i,DefaultVertexFormat.NEW_ENTITY,VertexFormat.Mode.QUADS,8192,false,true,
-            CompositeState.builder().setShaderState(RENDERTYPE_ENERGY_SWIRL_SHADER)
+        static { for(int i=0;i<15;i++)FRAMES[i]=create("thaumcraft_pedestal_shield_"+i,DefaultVertexFormat.PARTICLE,VertexFormat.Mode.QUADS,8192,false,true,
+            CompositeState.builder().setShaderState(new ShaderStateShard(SalisMundusParticle::legacyShader))
                 .setTextureState(new TextureStateShard(ResourceLocation.fromNamespaceAndPath("thaumcraft","textures/models/hemis"+(i+1)+".png"),true,false))
-                .setTransparencyState(ADDITIVE_TRANSPARENCY).setCullState(NO_CULL).setLightmapState(LIGHTMAP).setOverlayState(OVERLAY).setWriteMaskState(COLOR_WRITE).createCompositeState(false)); }
+                // FXShieldRunes uses SRC_ALPHA, ONE and the particle pipeline's
+                // 1/255 alpha cutoff, with explicit packed light 220.
+                .setTransparencyState(LIGHTNING_TRANSPARENCY).setCullState(NO_CULL).setLightmapState(LIGHTMAP).setWriteMaskState(COLOR_WRITE).createCompositeState(false)); }
         ShieldTypes(String name,VertexFormat format,VertexFormat.Mode mode,int size,boolean crumbling,boolean sorted,Runnable begin,Runnable end){super(name,format,mode,size,crumbling,sorted,begin,end);}
     }
 }

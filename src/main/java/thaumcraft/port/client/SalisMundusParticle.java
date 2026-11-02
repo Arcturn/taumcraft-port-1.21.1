@@ -60,7 +60,7 @@ public final class SalisMundusParticle extends TextureSheetParticle {
             RenderSystem.enableBlend();
             RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA,
                     additive ? GlStateManager.DestFactor.ONE : GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
-            RenderSystem.setShader(() -> dustShader != null ? dustShader : GameRenderer.getParticleShader());
+            RenderSystem.setShader(SalisMundusParticle::legacyShader);
             // TC6 samples its own sheet with texture.blur=true. Stitching the whole
             // sheet into vanilla's nearest-filtered atlas loses that metadata.
             textures.getTexture(ORIGINAL_SHEET).setFilter(true, false);
@@ -178,6 +178,8 @@ public final class SalisMundusParticle extends TextureSheetParticle {
     }
 
     public static ParticleRenderType legacyLayer(boolean additive) { return additive ? GLOW : SMOKE; }
+    /** Shared with block/entity glow quads: BETA26 tests alpha against 1/255, not vanilla's 0.1. */
+    public static ShaderInstance legacyShader() { return dustShader != null ? dustShader : GameRenderer.getParticleShader(); }
 
     /** BETA26 FXDispatcher.drawBlockMistParticles, used by the Hoe of Growth. */
     public void growthMist() {
@@ -317,7 +319,7 @@ public final class SalisMundusParticle extends TextureSheetParticle {
                 rCol, gCol, bCol, alpha, light);
     }
 
-    static void renderQuad(VertexConsumer buffer, Quaternionf orientation, float px, float py, float pz,
+    public static void renderQuad(VertexConsumer buffer, Quaternionf orientation, float px, float py, float pz,
                            float size, float u0, float u1, float v0, float v1,
                            float red, float green, float blue, float alpha, int light) {
         // Match SingleQuadParticle's front-facing winding and UVs. Reversing X

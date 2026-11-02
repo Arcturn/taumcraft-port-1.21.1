@@ -27,6 +27,36 @@ final class TheorySessionTest {
     @Test void drawingLocksCategoriesAndNeverReturnsDuplicateCardKinds(){
         var ctx=new Context(false);for(int seed=0;seed<100;seed++){var s=session();assertTrue(s.draw(ctx,new Random(seed)));assertTrue(s.choices.size()>=1&&s.choices.size()<=2);assertEquals(s.choices.size(),s.choices.stream().map(TheoryCards.Card::kind).distinct().count());for(var c:s.choices){assertFalse(TheoryCards.aidOnly(c.kind()));assertTrue(TheoryCards.researchCategory(c).isEmpty()||TheoryCards.researchCategory(c).equals("BASICS"));}assertFalse(s.draw(ctx,new Random(seed)),"Cannot replace an unresolved draw");}
     }
+    @Test void infusionUnlockIsStrictButDoesNotRequireTheLaterInfusionMachineResearch(){
+        var context=new Context(false);var session=session();
+        assertFalse(session.availableCategories(context.state).contains("INFUSION"));
+        context.state.stage("UNLOCKINFUSION",1,false);
+        assertTrue(context.state.isResearchKnown("UNLOCKINFUSION"));
+        assertFalse(session.availableCategories(context.state).contains("INFUSION"),"Starting the unlock is not strict completion");
+        context.state.stage("UNLOCKINFUSION",thaumcraft.port.research.ResearchCatalog.get("UNLOCKINFUSION").stages().size()+1,false);
+        assertTrue(session.availableCategories(context.state).contains("INFUSION"));
+        assertFalse(context.state.isResearchKnown("INFUSION"),"The matrix research must not be a prerequisite for its own theory");
+        session.blocked.add("INFUSION");
+        assertFalse(session.availableCategories(context.state).contains("INFUSION"),"Reject still blocks an unlocked category for this session");
+    }
+    @Test void unlockedInfusionCardsDrawAndAwardTheoryWithoutAMatrixOrExistingInfusionTotal(){
+        var context=new Context(false);context.state.flag("UNLOCKINFUSION");
+        var session=session();session.bonusDraws=1;
+        var candidates=new ArrayDeque<>(List.of("Measure","Channel","Infuse"));
+        var draw=new Random(){
+            @Override public int nextInt(int bound){assertEquals(TheoryCards.KINDS.size(),bound);return TheoryCards.KINDS.indexOf(candidates.removeFirst());}
+            @Override public long nextLong(){return 17;}
+        };
+        assertTrue(session.draw(context,draw));
+        assertEquals(List.of("Measure","Channel","Infuse"),session.choices.stream().map(TheoryCards.Card::kind).toList());
+        assertTrue(session.aids.isEmpty());assertTrue(session.totals.isEmpty());
+        for(int index=0;index<3;index++){
+            var card=session.choices.get(index);assertEquals("INFUSION",card.category());assertFalse(card.fromAid());
+            var result=TheoryCards.activate(session,index,context,new Random(17));assertNotNull(result,card.kind());
+            assertEquals(card.kind().equals("Measure")?15:card.kind().equals("Channel")?25:20,result.next().totals.get("INFUSION"));
+        }
+        assertTrue(session.totals.isEmpty(),"A draw only creates choices; category totals appear when a card is selected");
+    }
     @Test void aidCardsCanTeachLockedCategoriesButRespectRejection(){var ctx=new Context(false);boolean seen=false;for(int seed=0;seed<100;seed++){var s=new TheorySession(OWNER,5,List.of("BasicAlchemy"));s.draw(ctx,new Random(seed));if(s.choices.stream().anyMatch(c->c.fromAid()&&c.category().equals("ALCHEMY")))seen=true;var b=new TheorySession(OWNER,5,List.of("BasicAlchemy"));b.blocked.add("ALCHEMY");b.draw(ctx,new Random(seed));assertTrue(b.choices.stream().noneMatch(c->TheoryCards.researchCategory(c).equals("ALCHEMY")));}assertTrue(seen);}
     @Test void bonusDrawIsConsumedOnceAndCannotReroll(){var s=prepared();s.bonusDraws=2;assertTrue(s.draw(new Context(true),new Random(3)));assertEquals(3,s.choices.size());assertEquals(1,s.bonusDraws);assertFalse(s.draw(new Context(true),new Random(4)));assertEquals(1,s.bonusDraws);}
     @Test void seededRequirementsSurviveRestart(){var ctx=new Context(true);for(String kind:List.of("Concentrate","Reactions","Synthesis","Channel","Infuse","Tinker","MindOverMatter","Celestial","Curio")){var s=prepared();var c=TheoryCards.initialize(kind,898,true,s,ctx);s.choices.add(c);var loaded=TheorySession.decode(s.encode());assertEquals(c,loaded.choices.getFirst());assertEquals(c,TheoryCards.initialize(kind,898,true,s,ctx));}}
