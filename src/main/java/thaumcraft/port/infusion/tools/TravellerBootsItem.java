@@ -29,7 +29,7 @@ public final class TravellerBootsItem extends ArmorItem implements RechargeableI
     @Override public ChargeDisplay chargeDisplay(ItemStack stack,LivingEntity entity) { return ChargeDisplay.PERIODIC; }
     @Override public void appendHoverText(ItemStack stack,TooltipContext context,List<Component> tooltip,TooltipFlag flag) {
         super.appendHoverText(stack,context,tooltip,flag);
-        tooltip.add(Component.translatable("tc.charge").append(" "+ItemCharge.get(stack)).withStyle(ChatFormatting.YELLOW));
+        tooltip.add(Component.translatable("tc.charge").append(" "+ItemCharge.get(stack)+" / "+ItemCharge.maximum(stack,null)).withStyle(ChatFormatting.YELLOW));
     }
     public static boolean worn(Player player) { return player.getItemBySlot(EquipmentSlot.FEET).is(InfusionTools.BOOTS.get()); }
     @SubscribeEvent public static void tick(PlayerTickEvent.Pre event) { tickBoots(event.getEntity()); }

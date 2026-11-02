@@ -1582,7 +1582,7 @@
   "tc.need.know": "Знания, которые необходимо использовать",
   "tc.break.fly": "Что-то мешает Вам воспользоваться полётом.",
   "tc.boss.enrage": "поражён Вашими мощными ударами.",
-  "tc.levitator": "Установленный радиус: %s блоков. (%d вис/минута)",
+  "tc.levitator": "Установленный радиус: %s блоков. (%s вис/минута)",
   "tc.dioptra.1": "Отображается %s уровней в ауре. ",
   "tc.dioptra.2": "Отображаются наивысшие уровни ауры.",
   "tc.dioptra.3": "Отображаются коэффициенты уровня ауры.",
@@ -4184,5 +4184,16 @@
   "thaumcraft.focus.none": "Нет настроенных фокусов",
   "item.thaumcraft.pech_wand": "Палочка Пехта",
   "entity.thaumcraft.pech": "Пехт-кладовщик",
-  "item.thaumcraft.pech_spawn_egg": "Яйцо призыва пехта"
+  "item.thaumcraft.pech_spawn_egg": "Яйцо призыва пехта",
+  "entity.thaumcraft.turret_basic": "Автоматический арбалет",
+  "entity.thaumcraft.turret_advanced": "Продвинутый автоматический арбалет",
+  "entity.thaumcraft.arcane_bore": "Мистический бур",
+  "block.thaumcraft.arcane_ear_toggle": "Мистическое ухо (Переключённое)",
+  "block.thaumcraft.infernal_furnace": "Адская печь",
+  "item.thaumcraft.nugget_copper": "Кусочек меди",
+  "item.thaumcraft.nugget_tin": "Кусочек олова",
+  "item.thaumcraft.nugget_silver": "Кусочек серебра",
+  "item.thaumcraft.nugget_lead": "Кусочек свинца",
+  "entity.thaumcraft.grapple": "Крюк",
+  "thaumcraft.mirror.already_linked": "Это зеркало уже связано с действующим получателем."
 }

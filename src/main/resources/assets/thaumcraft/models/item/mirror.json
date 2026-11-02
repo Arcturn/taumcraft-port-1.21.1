@@ -1,3 +1,4 @@
 {
-  "parent": "thaumcraft:research/icons/mirror_0"
+  "parent": "thaumcraft:research/icons/mirror_0",
+  "overrides": [{"predicate":{"thaumcraft:linked":1},"model":"thaumcraft:item/mirror_on"}]
 }

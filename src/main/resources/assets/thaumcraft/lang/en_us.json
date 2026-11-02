@@ -1594,7 +1594,7 @@
   "tc.need.know": "Knowledge that must be used",
   "tc.break.fly": "Something disrupts your ability to fly.",
   "tc.boss.enrage": "is enraged by your powerful blows.",
-  "tc.levitator": "Range set to %s blocks. (%d vis/minute)",
+  "tc.levitator": "Range set to %s blocks. (%s vis/minute)",
   "tc.dioptra.1": "Showing %s levels in the aura. ",
   "tc.dioptra.2": "Showing highest aura levels.",
   "tc.dioptra.3": "Showing aura level ratios.",
@@ -4197,5 +4197,16 @@
   "thaumcraft.focus.none": "No configured foci available",
   "item.thaumcraft.pech_wand": "Pech Wand",
   "entity.thaumcraft.pech": "Pech Forager",
-  "item.thaumcraft.pech_spawn_egg": "Pech Spawn Egg"
+  "item.thaumcraft.pech_spawn_egg": "Pech Spawn Egg",
+  "entity.thaumcraft.turret_basic": "Automated Crossbow",
+  "entity.thaumcraft.turret_advanced": "Advanced Automated Crossbow",
+  "entity.thaumcraft.arcane_bore": "Arcane Bore",
+  "block.thaumcraft.arcane_ear_toggle": "Arcane Ear (Toggle)",
+  "block.thaumcraft.infernal_furnace": "Infernal Furnace",
+  "item.thaumcraft.nugget_copper": "Copper Nugget",
+  "item.thaumcraft.nugget_tin": "Tin Nugget",
+  "item.thaumcraft.nugget_silver": "Silver Nugget",
+  "item.thaumcraft.nugget_lead": "Lead Nugget",
+  "entity.thaumcraft.grapple": "Grappling Hook",
+  "thaumcraft.mirror.already_linked": "That mirror is already linked to a valid destination."
 }

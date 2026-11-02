@@ -37,8 +37,11 @@ public final class ItemCharge {
     }
     public static float fraction(ItemStack stack, LivingEntity wearer) {
         if (!supported(stack)) return -1;
-        int maximum = ((RechargeableItem)stack.getItem()).maxCharge(stack, wearer);
+        int maximum = maximum(stack, wearer);
         return maximum <= 0 ? 0 : Math.clamp((float)get(stack) / maximum, 0, 1);
+    }
+    public static int maximum(ItemStack stack, LivingEntity wearer) {
+        return supported(stack) ? Math.max(0, ((RechargeableItem)stack.getItem()).maxCharge(stack, wearer)) : 0;
     }
     private static boolean supported(ItemStack stack) { return stack != null && !stack.isEmpty() && stack.getItem() instanceof RechargeableItem; }
     private ItemCharge() {}

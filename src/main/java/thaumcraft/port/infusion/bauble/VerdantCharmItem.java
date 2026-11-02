@@ -22,7 +22,7 @@ public final class VerdantCharmItem extends BaubleItem implements RechargeableIt
     @Override public void appendHoverText(ItemStack stack,TooltipContext context,List<Component> tooltip,TooltipFlag flag){
         super.appendHoverText(stack,context,tooltip,flag);
         if(kind(stack)>0)tooltip.add(Component.translatable("item.verdant_charm."+(kind(stack)==1?"life":"sustain")+".text").withStyle(ChatFormatting.GOLD));
-        tooltip.add(Component.translatable("tc.charge").append(" "+ItemCharge.get(stack)).withStyle(ChatFormatting.YELLOW));
+        tooltip.add(Component.translatable("tc.charge").append(" "+ItemCharge.get(stack)+" / "+ItemCharge.maximum(stack,null)).withStyle(ChatFormatting.YELLOW));
     }
     @Override public void curioTick(SlotContext context,ItemStack stack){
         if(context.cosmetic()||!(context.entity() instanceof Player player)||player.level().isClientSide||player.tickCount%20!=0)return;

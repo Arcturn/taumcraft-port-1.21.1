@@ -1,19 +1,10 @@
 {
   "variants": {
-    "facing=north": {
+    "enabled=true": {
       "model": "thaumcraft:block/dioptra"
     },
-    "facing=east": {
-      "model": "thaumcraft:block/dioptra",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "thaumcraft:block/dioptra",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "thaumcraft:block/dioptra",
-      "y": 270
+    "enabled=false": {
+      "model": "thaumcraft:block/dioptra_off"
     }
   }
 }

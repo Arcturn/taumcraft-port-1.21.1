@@ -105,7 +105,8 @@ public final class ScanDiscoveries {
         if(net.minecraft.world.entity.ambient.Bat.class.isAssignableFrom(type)){flags.add("f_BAT");flags.add("f_FLY");}
         if(net.minecraft.world.entity.animal.Parrot.class.isAssignableFrom(type)||net.minecraft.world.entity.monster.Ghast.class.isAssignableFrom(type)
                 ||net.minecraft.world.entity.monster.Blaze.class.isAssignableFrom(type))flags.add("f_FLY");
-        if(net.minecraft.world.entity.animal.AbstractGolem.class.isAssignableFrom(type))flags.add("f_golem");
+        if(net.minecraft.world.entity.animal.AbstractGolem.class.isAssignableFrom(type)
+                ||thaumcraft.port.artifice.construct.OwnedConstruct.class.isAssignableFrom(type))flags.add("f_golem");
         if(net.minecraft.world.entity.monster.EnderMan.class.isAssignableFrom(type))flags.add("f_TELEPORT");
         if(net.minecraft.world.entity.projectile.AbstractArrow.class.isAssignableFrom(type))flags.add("f_arrow");
         if(net.minecraft.world.entity.projectile.Fireball.class.isAssignableFrom(type)||net.minecraft.world.entity.projectile.DragonFireball.class.isAssignableFrom(type)

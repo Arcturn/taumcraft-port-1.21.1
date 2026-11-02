@@ -17,6 +17,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.ChestLidController;
+import net.minecraft.world.level.block.entity.ContainerOpenersCounter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.items.ItemHandlerHelper;
@@ -25,9 +28,27 @@ import net.neoforged.neoforge.items.wrapper.InvWrapper;
 public final class HungryChestEntity extends BlockEntity implements Container, MenuProvider {
     private final NonNullList<ItemStack> items = NonNullList.withSize(27, ItemStack.EMPTY);
     private final IItemHandler handler = new InvWrapper(this);
+    private final ChestLidController lid = new ChestLidController();
+    private final ContainerOpenersCounter openers = new ContainerOpenersCounter() {
+        @Override protected void onOpen(Level world,BlockPos pos,BlockState state) { sound(SoundEvents.CHEST_OPEN); }
+        @Override protected void onClose(Level world,BlockPos pos,BlockState state) { sound(SoundEvents.CHEST_CLOSE); }
+        @Override protected void openerCountChanged(Level world,BlockPos pos,BlockState state,int oldCount,int count) { world.blockEvent(pos,state.getBlock(),1,count); }
+        @Override protected boolean isOwnContainer(Player player) { return player.containerMenu instanceof ChestMenu menu && menu.getContainer()==HungryChestEntity.this; }
+    };
 
     public HungryChestEntity(BlockPos pos, BlockState state) { super(CraftingContent.HUNGRY_CHEST_ENTITY.get(), pos, state); }
     public IItemHandler itemHandler() { return handler; }
+    public float openness(float partialTick) { return lid.getOpenness(partialTick); }
+    public int openCount() { return openers.getOpenerCount(); }
+    public void tick() {
+        if(level==null) return;
+        if(level.isClientSide) lid.tickLid();
+        else if(level.getGameTime()%5==0) openers.recheckOpeners(level,worldPosition,getBlockState());
+    }
+    private void sound(net.minecraft.sounds.SoundEvent sound) { if(level!=null) level.playSound(null,worldPosition,sound,SoundSource.BLOCKS,.5f,.9f+level.random.nextFloat()*.1f); }
+    @Override public void startOpen(Player player) { if(!isRemoved() && !player.isSpectator() && level!=null && !level.isClientSide) openers.incrementOpeners(player,level,worldPosition,getBlockState()); }
+    @Override public void stopOpen(Player player) { if(!isRemoved() && !player.isSpectator() && level!=null && !level.isClientSide) openers.decrementOpeners(player,level,worldPosition,getBlockState()); }
+    @Override public boolean triggerEvent(int event,int data) { if(event==1) { lid.shouldBeOpen(data>0); return true; } return super.triggerEvent(event,data); }
     @Override public int getContainerSize() { return items.size(); }
     @Override public boolean isEmpty() { return items.stream().allMatch(ItemStack::isEmpty); }
     @Override public ItemStack getItem(int slot) { return items.get(slot); }
@@ -57,9 +78,13 @@ public final class HungryChestEntity extends BlockEntity implements Container, M
         super.saveAdditional(tag, registries);
         ContainerHelper.saveAllItems(tag, items, registries);
     }
+    @Override public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
+        var tag=saveWithoutMetadata(registries);tag.putInt("OpenCount",openers.getOpenerCount());return tag;
+    }
     @Override protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
         super.loadAdditional(tag, registries);
         items.clear();
         ContainerHelper.loadAllItems(tag, items, registries);
+        lid.shouldBeOpen(tag.getInt("OpenCount")>0);
     }
 }

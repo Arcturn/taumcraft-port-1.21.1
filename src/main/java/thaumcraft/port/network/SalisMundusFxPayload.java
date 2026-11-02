@@ -16,7 +16,8 @@ import net.neoforged.neoforge.network.PacketDistributor;
 public record SalisMundusFxPayload(int phase, int playerId, InteractionHand hand,
                                   BlockPos target, Vec3 hit, List<BlockPos> blocks) implements CustomPacketPayload {
     public static final int START = 0, FINISH = 1;
-    private static final int MAX_PARTS = 16;
+    // Infernal furnace conversion includes all 26 shell/source cells of its 3x3x3 structure.
+    private static final int MAX_PARTS = 32;
     public static final Type<SalisMundusFxPayload> TYPE = new Type<>(
             ResourceLocation.fromNamespaceAndPath("thaumcraft", "salis_mundus_fx"));
 
@@ -46,7 +47,7 @@ public record SalisMundusFxPayload(int phase, int playerId, InteractionHand hand
     public boolean valid() {
         return (phase == START || phase == FINISH) && hand != null
                 && Double.isFinite(hit.lengthSqr()) && !blocks.isEmpty() && blocks.size() <= MAX_PARTS
-                && target != null && Vec3.atCenterOf(target).distanceToSqr(hit) <= 4
+                && target != null && Vec3.atCenterOf(target).distanceToSqr(hit) <= 16
                 && blocks.stream().allMatch(pos -> Vec3.atCenterOf(pos).distanceToSqr(hit) <= 16 * 16);
     }
 

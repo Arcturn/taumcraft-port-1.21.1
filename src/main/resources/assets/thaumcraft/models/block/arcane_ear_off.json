@@ -1,0 +1,9 @@
+{
+  "parent": "thaumcraft:block/arcane_ear_on",
+  "textures": {
+    "particle": "thaumcraft:blocks/arcane_ear_off",
+    "side": "thaumcraft:blocks/arcane_ear_off",
+    "top": "thaumcraft:blocks/base_wood"
+  },
+  "render_type": "minecraft:cutout"
+}

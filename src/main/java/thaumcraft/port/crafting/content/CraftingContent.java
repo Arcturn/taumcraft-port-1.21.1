@@ -25,6 +25,10 @@ import thaumcraft.port.auromancy.device.WorkbenchChargerBlock;
 import thaumcraft.port.auromancy.focal.FocalManipulatorBlock;
 import thaumcraft.port.auromancy.item.FocusItem;
 import thaumcraft.port.auromancy.item.FocusPouchItem;
+import thaumcraft.port.artifice.device.ArtificeDeviceBlock;
+import thaumcraft.port.artifice.construct.ConstructPlacerItem;
+import thaumcraft.port.artifice.tool.GrappleGunItem;
+import thaumcraft.port.artifice.tool.SanityCheckerItem;
 
 /** Real registry identities used by the original arcane and crucible recipe outputs. */
 public final class CraftingContent {
@@ -51,20 +55,20 @@ public final class CraftingContent {
             "arcane_workbench_charger", () -> new WorkbenchChargerBlock(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1.25f,10)));
     public static final DeferredBlock<FocalManipulatorBlock> WAND_WORKBENCH = PortContent.BLOCKS.register(
             "wand_workbench", () -> new FocalManipulatorBlock(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2.5f).noOcclusion()));
-    public static final DeferredBlock<CraftingDeviceBlock> LEVITATOR = device(
-            "levitator", SoundType.WOOD, 2.5f, Shapes.block());
-    public static final DeferredBlock<CraftingDeviceBlock> REDSTONE_RELAY = device(
-            "redstone_relay", SoundType.STONE, 0, Block.box(0, 0, 0, 16, 2, 16));
-    public static final DeferredBlock<CraftingDeviceBlock> ARCANE_EAR = device(
-            "arcane_ear", SoundType.WOOD, 1, Block.box(2, 0, 2, 14, 6, 14));
-    public static final DeferredBlock<CraftingDeviceBlock> DIOPTRA = device(
-            "dioptra", SoundType.STONE, 2.5f, Shapes.block());
-    public static final DeferredBlock<CraftingDeviceBlock> PATTERN_CRAFTER = device(
-            "pattern_crafter", SoundType.METAL, 2.5f, Shapes.block());
+    public static final DeferredBlock<ArtificeDeviceBlock> LEVITATOR = artificeDevice(
+            "levitator", ArtificeDeviceBlock.Kind.LEVITATOR, SoundType.WOOD, 2.5f);
+    public static final DeferredBlock<ArtificeDeviceBlock> REDSTONE_RELAY = artificeDevice(
+            "redstone_relay", ArtificeDeviceBlock.Kind.REDSTONE_RELAY, SoundType.STONE, 0);
+    public static final DeferredBlock<ArtificeDeviceBlock> ARCANE_EAR = artificeDevice(
+            "arcane_ear", ArtificeDeviceBlock.Kind.ARCANE_EAR, SoundType.WOOD, 1);
+    public static final DeferredBlock<ArtificeDeviceBlock> DIOPTRA = artificeDevice(
+            "dioptra", ArtificeDeviceBlock.Kind.DIOPTRA, SoundType.STONE, 2.5f);
+    public static final DeferredBlock<ArtificeDeviceBlock> PATTERN_CRAFTER = artificeDevice(
+            "pattern_crafter", ArtificeDeviceBlock.Kind.PATTERN_CRAFTER, SoundType.METAL, 2.5f);
     public static final DeferredBlock<VisBatteryBlock> VIS_BATTERY = PortContent.BLOCKS.register(
             "vis_battery", () -> new VisBatteryBlock(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(.5f)));
-    public static final DeferredBlock<CraftingDeviceBlock> VIS_GENERATOR = device(
-            "vis_generator", SoundType.METAL, 2.5f, Block.box(4, 0, 4, 12, 14, 12));
+    public static final DeferredBlock<ArtificeDeviceBlock> VIS_GENERATOR = artificeDevice(
+            "vis_generator", ArtificeDeviceBlock.Kind.VIS_GENERATOR, SoundType.METAL, 2.5f);
     public static final DeferredBlock<CraftingDeviceBlock> TABLE_STONE = device(
             "table_stone", SoundType.STONE, 2, Shapes.or(Block.box(0, 12, 0, 16, 16, 16),
                     Block.box(1, 0, 1, 5, 12, 5), Block.box(11, 0, 1, 15, 12, 5),
@@ -81,21 +85,30 @@ public final class CraftingContent {
         PortContent.ITEMS.registerSimpleBlockItem("wand_workbench", WAND_WORKBENCH);
         PortContent.ITEMS.registerSimpleBlockItem("vis_battery", VIS_BATTERY);
         for (String id : List.of("module_vision", "module_aggression", "mirrored_glass", "mind_biothaumic",
-                "turret_placer_basic", "turret_placer_advanced", "grapple_gun_tip", "grapple_gun_spool",
+                "grapple_gun_tip", "grapple_gun_spool",
                 "seal_blank", "seal_pickup", "seal_pickup_advanced", "seal_fill", "seal_fill_advanced",
                 "seal_empty", "seal_empty_advanced", "seal_guard", "seal_guard_advanced", "seal_lumber",
                 "seal_breaker", "seal_use", "seal_provider", "seal_stock", "seal_breaker_advanced")) {
             PortContent.ITEMS.registerSimpleItem(id);
         }
         PortContent.ITEMS.registerItem("focus_1", properties -> new FocusItem(properties.stacksTo(1),15));
-        PortContent.ITEMS.registerSimpleItem("sanity_checker", new Item.Properties().stacksTo(1));
-        PortContent.ITEMS.registerSimpleItem("grapple_gun", new Item.Properties().stacksTo(1));
+        PortContent.ITEMS.registerItem("sanity_checker", SanityCheckerItem::new);
+        PortContent.ITEMS.registerItem("grapple_gun", GrappleGunItem::new);
+        PortContent.ITEMS.registerItem("turret_placer_basic", properties -> new ConstructPlacerItem(properties, ConstructPlacerItem.Kind.BASIC));
+        PortContent.ITEMS.registerItem("turret_placer_advanced", properties -> new ConstructPlacerItem(properties, ConstructPlacerItem.Kind.ADVANCED));
         PortContent.ITEMS.registerItem("focus_pouch", properties -> new FocusPouchItem(properties.stacksTo(1).rarity(Rarity.UNCOMMON)));
     }
 
     private static DeferredBlock<CraftingDeviceBlock> device(String id, SoundType sound, float hardness, VoxelShape shape) {
         var block = PortContent.BLOCKS.register(id, () -> new CraftingDeviceBlock(
                 BlockBehaviour.Properties.of().strength(hardness).sound(sound).noOcclusion(), shape));
+        PortContent.ITEMS.registerSimpleBlockItem(id, block);
+        return block;
+    }
+
+    private static DeferredBlock<ArtificeDeviceBlock> artificeDevice(String id, ArtificeDeviceBlock.Kind kind, SoundType sound, float hardness) {
+        var block = PortContent.BLOCKS.register(id, () -> new ArtificeDeviceBlock(kind,
+                BlockBehaviour.Properties.of().strength(hardness).sound(sound).noOcclusion()));
         PortContent.ITEMS.registerSimpleBlockItem(id, block);
         return block;
     }

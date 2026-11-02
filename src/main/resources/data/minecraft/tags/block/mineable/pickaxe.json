@@ -41,6 +41,9 @@
     "thaumcraft:paving_stone_travel",
     "thaumcraft:paving_stone_barrier",
     "#thaumcraft:crafting/pickaxe",
-    "#thaumcraft:infusion_content/pickaxe"
+    "#thaumcraft:infusion_content/pickaxe",
+    "thaumcraft:infernal_furnace",
+    "thaumcraft:placeholder_brick",
+    "thaumcraft:placeholder_obsidian"
   ]
 }

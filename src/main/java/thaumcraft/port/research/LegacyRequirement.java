@@ -34,7 +34,7 @@ public record LegacyRequirement(String source,int count,String craftKey,Predicat
             else if(id.equals("thaumcraft:amulet_vis"))id=meta==0?"thaumcraft:amulet_vis_found":"thaumcraft:amulet_vis";
             else if(id.equals("thaumcraft:stone_arcane"))id="thaumcraft:arcane_stone";
             else if(id.equals("thaumcraft:stone_arcane_brick"))id="thaumcraft:arcane_brick";
-            else if(id.equals("thaumcraft:nugget"))id=switch(meta){case 0->"minecraft:iron_nugget";case 5->"thaumcraft:nugget_quicksilver";case 6->"thaumcraft:nugget_thaumium";case 7->"thaumcraft:nugget_void";case 8->"thaumcraft:nugget_brass";case 9->"thaumcraft:nugget_quartz";case 10->"thaumcraft:rareearth";default->"";};
+            else if(id.equals("thaumcraft:nugget"))id=switch(meta){case 0->"minecraft:iron_nugget";case 1->"thaumcraft:nugget_copper";case 2->"thaumcraft:nugget_tin";case 3->"thaumcraft:nugget_silver";case 4->"thaumcraft:nugget_lead";case 5->"thaumcraft:nugget_quicksilver";case 6->"thaumcraft:nugget_thaumium";case 7->"thaumcraft:nugget_void";case 8->"thaumcraft:nugget_brass";case 9->"thaumcraft:nugget_quartz";case 10->"thaumcraft:rareearth";default->"";};
             else if(id.equals("thaumcraft:cluster"))id=switch(meta){case 0->"thaumcraft:cluster_iron";case 1->"thaumcraft:cluster_gold";case 2->"thaumcraft:cluster_copper";case 3->"thaumcraft:cluster_tin";case 4->"thaumcraft:cluster_silver";case 5->"thaumcraft:cluster_lead";case 6->"thaumcraft:cluster_cinnabar";case 7->"thaumcraft:cluster_quartz";default->"";};
             else if(id.equals("thaumcraft:chunk"))id=meta>=0&&meta<6?"thaumcraft:chunk_"+thaumcraft.port.infusion.recipe.InfusionFood.KINDS.get(meta):"";
             else if(id.equals("thaumcraft:nitor")&&meta==4)id="thaumcraft:nitor_yellow";

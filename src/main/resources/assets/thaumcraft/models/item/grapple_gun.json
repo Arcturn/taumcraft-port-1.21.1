@@ -1,3 +1,4 @@
 {
-  "parent": "thaumcraft:research/icons/grapple_gun_0"
+  "parent": "thaumcraft:research/icons/grapple_gun_0",
+  "overrides": [{"predicate":{"thaumcraft:loaded":1},"model":"thaumcraft:item/grapple_gun_fired"}]
 }

@@ -23,6 +23,10 @@ import thaumcraft.port.infusion.recipe.InfusionAugments;
 import thaumcraft.port.auromancy.item.FocusItem;
 import thaumcraft.port.content.PortSounds;
 import thaumcraft.port.infusion.brain.BrainJarBlock;
+import thaumcraft.port.infusion.brain.BrainJarItem;
+import thaumcraft.port.artifice.construct.ConstructPlacerItem;
+import thaumcraft.port.artifice.mirror.MirrorBlockItem;
+import thaumcraft.port.artifice.mirror.HandMirrorItem;
 
 /** Registry identities for the remaining BETA26 infusion outputs and their void-metal prerequisites. */
 public final class InfusionCraftingContent {
@@ -63,11 +67,12 @@ public final class InfusionCraftingContent {
     public static final DeferredBlock<ArcaneLampBlock> LAMP_GROWTH = lamp("lamp_growth");
     public static final DeferredBlock<ArcaneLampBlock> LAMP_FERTILITY = lamp("lamp_fertility");
     static {
-        PortContent.ITEMS.registerSimpleBlockItem("jar_brain",JAR_BRAIN);
-        for(String id:List.of("seal_harvest","seal_butcher","turret_placer_bore"))PortContent.ITEMS.registerSimpleItem(id);
+        PortContent.ITEMS.registerItem("jar_brain",properties -> new BrainJarItem(JAR_BRAIN.get(),properties));
+        for(String id:List.of("seal_harvest","seal_butcher"))PortContent.ITEMS.registerSimpleItem(id);
+        PortContent.ITEMS.registerItem("turret_placer_bore",properties -> new ConstructPlacerItem(properties,ConstructPlacerItem.Kind.BORE));
         PortContent.ITEMS.registerItem("focus_2",properties->new FocusItem(properties.stacksTo(1).rarity(Rarity.RARE),25));
         PortContent.ITEMS.registerItem("focus_3",properties->new FocusItem(properties.stacksTo(1).rarity(Rarity.RARE),50));
-        PortContent.ITEMS.registerSimpleItem("hand_mirror",new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
+        PortContent.ITEMS.registerItem("hand_mirror",properties -> new HandMirrorItem(properties.stacksTo(1).rarity(Rarity.UNCOMMON)));
         PortContent.ITEMS.registerSimpleItem("causality_collapser",new Item.Properties().stacksTo(16));
     }
     static Ingredient voidIngot(){return Ingredient.of(BuiltInRegistries.ITEM.get(ResourceLocation.parse("thaumcraft:ingot_void")));}
@@ -82,12 +87,13 @@ public final class InfusionCraftingContent {
     }
     private static DeferredBlock<InfusionMirrorBlock> mirror(String name){
         var block=PortContent.BLOCKS.register(name,()->new InfusionMirrorBlock(BlockBehaviour.Properties.of()
-                .sound(SoundType.METAL).strength(.1f).noOcclusion()));
-        PortContent.ITEMS.registerSimpleBlockItem(name,block);return block;
+                .sound(PortSounds.JAR).strength(.1f).noOcclusion()));
+        PortContent.ITEMS.registerItem(name,properties -> new MirrorBlockItem(block.get(),properties));return block;
     }
     private static DeferredBlock<ArcaneLampBlock> lamp(String name){
         var block=PortContent.BLOCKS.register(name,()->new ArcaneLampBlock(BlockBehaviour.Properties.of()
-                .sound(SoundType.METAL).strength(1).noOcclusion().lightLevel(state->state.getValue(ArcaneLampBlock.LIT)?15:0)));
+                .sound(SoundType.METAL).strength(1).noOcclusion().lightLevel(state->state.getValue(ArcaneLampBlock.LIT)?15:0),
+                name.equals("lamp_growth")?ArcaneLampBlock.Kind.GROWTH:ArcaneLampBlock.Kind.FERTILITY));
         PortContent.ITEMS.registerSimpleBlockItem(name,block);return block;
     }
     public static void register(IEventBus bus) { }

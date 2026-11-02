@@ -52,6 +52,12 @@ public final class ThaumcraftPort {
         thaumcraft.port.infusion.brain.BrainJarContent.register(modBus);
         thaumcraft.port.auromancy.firebat.FireBatContent.register(modBus);
         thaumcraft.port.auromancy.pech.PechContent.register(modBus);
+        thaumcraft.port.artifice.device.ArtificeDevices.register(modBus);
+        thaumcraft.port.artifice.mirror.MirrorContent.register(modBus);
+        thaumcraft.port.artifice.construct.ConstructContent.register(modBus);
+        thaumcraft.port.artifice.furnace.InfernalFurnaceContent.register(modBus);
+        thaumcraft.port.artifice.lamp.ArtificeLamps.register(modBus);
+        thaumcraft.port.artifice.tool.ArtificeTools.register(modBus);
         PortContent.register(modBus);
         thaumcraft.port.research.ResearchAdvancements.register(modBus);
         modBus.addListener(PortNetwork::register);

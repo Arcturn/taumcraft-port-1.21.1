@@ -1,0 +1,8 @@
+{
+  "parent": "thaumcraft:block/dioptra",
+  "textures": {
+    "particle": "thaumcraft:blocks/dioptra_side_off",
+    "side": "thaumcraft:blocks/dioptra_side_off"
+  },
+  "render_type": "minecraft:cutout"
+}

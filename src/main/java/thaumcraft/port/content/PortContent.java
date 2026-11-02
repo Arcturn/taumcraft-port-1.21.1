@@ -102,7 +102,8 @@ public final class PortContent {
                 .icon(() -> new ItemStack(THAUMONOMICON.get()))
                 .displayItems((parameters, output) -> {
                     ITEMS.getEntries().forEach(entry -> {
-                        if (entry.get() != CRYSTAL_ESSENCE.get() && entry.get()!=RESEARCH_ICON.get() && !(entry.get() instanceof ResearchDisplayItem)) output.accept(entry.get());
+                        if (entry.get() != CRYSTAL_ESSENCE.get() && entry.get()!=RESEARCH_ICON.get()
+                                && !(entry.get() instanceof ResearchDisplayItem) && !entry.getId().getPath().equals("infernal_furnace")) output.accept(entry.get());
                     });
                     for (Aspect aspect : Aspect.values()) output.accept(CrystalItem.stack(aspect));
                     for(int kind=1;kind<13;kind++)output.accept(CelestialNotesItem.stack(kind));

@@ -67,6 +67,7 @@ public final class CraftingContentGameTests {
     @GameTest(template = "empty", timeoutTicks = 40)
     public static void arcaneLampUsesOriginalRedstoneOffSwitch(GameTestHelper helper) {
         var pos = helper.absolutePos(new BlockPos(2, 2, 2));
+        helper.getLevel().setBlock(pos.below(), Blocks.STONE.defaultBlockState(), 3);
         helper.getLevel().setBlock(pos, CraftingContent.LAMP_ARCANE.get().defaultBlockState(), 3);
         helper.assertValueEqual(helper.getLevel().getBlockState(pos).getLightEmission(helper.getLevel(), pos), 15,
                 "Unpowered arcane lamp must provide full light");

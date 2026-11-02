@@ -34,8 +34,21 @@ class SalisMundusFxTest {
         assertFalse(new SalisMundusFxPayload(0, 1, InteractionHand.MAIN_HAND, target, Vec3.ZERO, List.of(target.offset(40, 0, 0))).valid());
         assertFalse(new SalisMundusFxPayload(0, 1, InteractionHand.MAIN_HAND, target, Vec3.ZERO, List.of()).valid());
         var blocks = new ArrayList<BlockPos>();
-        for (int i = 0; i < 17; i++) blocks.add(target);
+        for (int i = 0; i < 33; i++) blocks.add(target);
         assertFalse(new SalisMundusFxPayload(0, 1, InteractionHand.MAIN_HAND, target, Vec3.ZERO, blocks).valid());
+    }
+
+    @Test void furnaceCompletionAcceptsAllShellCellsAndAnOuterCornerClick() {
+        BlockPos center=new BlockPos(10,64,10);
+        var blocks=new ArrayList<BlockPos>();
+        for(int x=-1;x<=1;x++)for(int y=-1;y<=1;y++)for(int z=-1;z<=1;z++)
+            if(x!=0||y!=0||z!=0)blocks.add(center.offset(x,y,z));
+        var value=new SalisMundusFxPayload(SalisMundusFxPayload.FINISH,73,InteractionHand.MAIN_HAND,
+                center,new Vec3(9,66,9),blocks);
+        assertTrue(value.valid());
+        var buffer=new RegistryFriendlyByteBuf(Unpooled.buffer(),RegistryAccess.EMPTY);
+        try {SalisMundusFxPayload.STREAM_CODEC.encode(buffer,value);assertEquals(value,SalisMundusFxPayload.STREAM_CODEC.decode(buffer));}
+        finally {buffer.release();}
     }
 
     @Test void decoderRejectsOversizedCountBeforeReadingPositions() {

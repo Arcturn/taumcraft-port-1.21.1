@@ -1,36 +1,76 @@
 {
-  "variants": {
-    "facing=north,lit=false": {
-      "model": "thaumcraft:block/lamp_growth",
-      "y": 0
+  "multipart": [
+    {
+      "when": {
+        "lit": "true"
+      },
+      "apply": {
+        "model": "thaumcraft:block/lamp_growth_on"
+      }
     },
-    "facing=north,lit=true": {
-      "model": "thaumcraft:block/lamp_growth_on",
-      "y": 0
+    {
+      "when": {
+        "lit": "false"
+      },
+      "apply": {
+        "model": "thaumcraft:block/lamp_growth"
+      }
     },
-    "facing=east,lit=false": {
-      "model": "thaumcraft:block/lamp_growth",
-      "y": 90
+    {
+      "when": {
+        "facing": "down"
+      },
+      "apply": {
+        "model": "thaumcraft:block/lamp_stand"
+      }
     },
-    "facing=east,lit=true": {
-      "model": "thaumcraft:block/lamp_growth_on",
-      "y": 90
+    {
+      "when": {
+        "facing": "up"
+      },
+      "apply": {
+        "model": "thaumcraft:block/lamp_stand",
+        "x": 180
+      }
     },
-    "facing=south,lit=false": {
-      "model": "thaumcraft:block/lamp_growth",
-      "y": 180
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "thaumcraft:block/lamp_stand",
+        "x": 90,
+        "y": 180
+      }
     },
-    "facing=south,lit=true": {
-      "model": "thaumcraft:block/lamp_growth_on",
-      "y": 180
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "thaumcraft:block/lamp_stand",
+        "x": 90
+      }
     },
-    "facing=west,lit=false": {
-      "model": "thaumcraft:block/lamp_growth",
-      "y": 270
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "thaumcraft:block/lamp_stand",
+        "x": 90,
+        "y": 270
+      }
     },
-    "facing=west,lit=true": {
-      "model": "thaumcraft:block/lamp_growth_on",
-      "y": 270
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "thaumcraft:block/lamp_stand",
+        "x": 90,
+        "y": 90
+      }
     }
-  }
+  ]
 }
