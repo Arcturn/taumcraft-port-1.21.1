@@ -49,6 +49,38 @@ public final class TheoryResearchGameTests {
     }
 
     @GameTest(template="empty",timeoutTicks=80)
+    public static void finishRequiresSpentInspirationButNoSuppliesOrAcknowledgment(GameTestHelper helper) {
+        var table=table(helper);var player=player(helper,table);var menu=menu(player,table,35);
+        var pending=new TheorySession(player.getUUID(),1,List.of());
+        pending.add("ARTIFICE",100);
+        pending.choices.add(TheoryCards.initialize("Calibrate",42,true,pending,TheoryItems.context(player)));
+        restore(table,pending);
+        table.getItem(0).setDamageValue(table.getItem(0).getMaxDamage()-1);
+        table.setItem(1,ItemStack.EMPTY);
+        var state=ResearchStorage.get(player.getServer()).player(player.getUUID());
+        var unfinished=table.saveCustomOnly(table.getLevel().registryAccess());
+        menu.action(player,request(menu,table,6));
+        helper.assertTrue(unfinished.equals(table.saveCustomOnly(table.getLevel().registryAccess())),"100% category progress finished a theory with inspiration remaining");
+        helper.assertValueEqual(state.knowledge("THEORY","ARTIFICE"),0,"Rejected finish awarded knowledge");
+
+        menu.action(player,request(menu,table,2));
+        helper.assertValueEqual(session(table).inspiration,0,"The final card did not spend the last inspiration");
+        helper.assertValueEqual(table.ink(),0,"The final card did not exhaust the last ink");
+        helper.assertTrue(table.getItem(1).isEmpty(),"Selecting Calibrate unexpectedly supplied paper");
+        var completed=table.saveCustomOnly(table.getLevel().registryAccess());
+        table.loadCustomOnly(completed,table.getLevel().registryAccess());
+        helper.assertTrue(session(table).complete()&&session(table).selected==0,"Reload lost completion before the card animation acknowledgment");
+
+        var finish=request(menu,table,6);
+        menu.action(player,finish);
+        helper.assertFalse(table.saveCustomOnly(table.getLevel().registryAccess()).contains("TheoryV1"),"Zero inspiration could not finish without ink, paper or acknowledgment");
+        helper.assertValueEqual(state.knowledge("THEORY","ARTIFICE"),37,"Finish did not award the original rounded 115% reward");
+        menu.action(player,finish);
+        helper.assertValueEqual(state.knowledge("THEORY","ARTIFICE"),37,"A replayed finish awarded the same theory twice");
+        helper.succeed();
+    }
+
+    @GameTest(template="empty",timeoutTicks=80)
     public static void missingInputsAndReplayedCardRequestsCannotChargeOrRewardTwice(GameTestHelper helper) {
         var table=table(helper);var player=player(helper,table);var menu=menu(player,table,32);
         var pending=new TheorySession(player.getUUID(),2,List.of());

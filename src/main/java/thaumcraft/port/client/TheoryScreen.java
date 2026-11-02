@@ -58,7 +58,6 @@ public final class TheoryScreen extends AbstractContainerScreen<TheoryMenu> {
         }
         inspiration(g,s.inspirationStart,s.inspiration,16);
         if(!menu.owned){g.drawCenteredString(font,Component.translatable("thaumcraft.theory.other_owner"),leftPos+128,topPos+30,0xffcc88);}
-        if(s.complete())button(g,191,96,"button.complete.theory",menu.owned,0x88ffaa,mx,my);else button(g,128,168,"button.scrap.theory",menu.owned,0xff2222,mx,my);
         for(int i=0;i<Math.min(s.bonusDraws,64);i++)BookAssets.sprite(g,BASE,leftPos+15+i*2,topPos+150+i,64,96,16,16);
         if(!s.complete()&&!menu.table.getItem(1).isEmpty()){
             var r=new Random(55);for(int i=0;i<1+menu.table.getItem(1).getCount()/4;i++)sheet(g,leftPos+65,topPos+100,6,r,1,1,null);
@@ -84,6 +83,8 @@ public final class TheoryScreen extends AbstractContainerScreen<TheoryMenu> {
             }
             if(chosen&&in[i]>=1){sound("write",.3f);presentation.finishSelection();break;}
         }
+        // TC6 renders its buttons after the background cards, over the completed stack.
+        if(s.complete())button(g,191,96,"button.complete.theory",menu.owned,0x88ffaa,mx,my);else button(g,128,168,"button.scrap.theory",menu.owned,0xff2222,mx,my);
         if(minecraft.player.tickCount!=lastTick){lastTick=minecraft.player.tickCount;sparks.forEach(p->p.tick(visualRandom));sparks.removeIf(p->p.age>=p.life);}
         var rising=presentation.stepTotals(s,minecraft.player.tickCount);
         var sorted=new ArrayList<>(presentation.totals().entrySet());sorted.sort(Map.Entry.<String,Integer>comparingByValue().reversed());int rank=0;
@@ -92,7 +93,13 @@ public final class TheoryScreen extends AbstractContainerScreen<TheoryMenu> {
     }
     private static void image(GuiGraphics g,ResourceLocation texture,int x,int y,int width,int height){BookAssets.prepareImage(g);g.blit(texture,x,y,width,height,0,0,256,256,256,256);}
     private void sheet(GuiGraphics g,float x,float y,float scale,Random random,float alpha,float tilt,TheoryCards.Card card){
-        g.pose().pushPose();g.pose().translate(x+random.nextGaussian(),y+random.nextGaussian(),0);g.pose().scale(scale,scale,1);g.pose().mulPose(Axis.ZP.rotationDegrees((float)random.nextGaussian()*tilt));g.setColor(1,1,1,alpha);g.pose().pushPose();
+        g.pose().pushPose();g.pose().translate(x+random.nextGaussian(),y+random.nextGaussian(),0);g.pose().scale(scale,scale,1);
+        // TC6 flattens each complete sheet onto its paper plane. GUI items add
+        // 150 Z in 1.21; retaining that depth lets old requirements pierce a new
+        // card. Flatten positions only: PoseStack.scale(...,0) would divide the
+        // lighting normal matrix by zero and break three-dimensional icons.
+        g.pose().last().pose().scale(1,1,0);
+        g.pose().mulPose(Axis.ZP.rotationDegrees((float)random.nextGaussian()*tilt));g.setColor(1,1,1,alpha);g.pose().pushPose();
         if(random.nextBoolean())g.pose().mulPose(Axis.ZP.rotationDegrees(180));if(random.nextBoolean())g.pose().scale(-1,1,1);
         com.mojang.blaze3d.systems.RenderSystem.disableCull();image(g,card!=null&&card.fromAid()?GILDED:PAPER,-8,-8,16,16);g.flush();com.mojang.blaze3d.systems.RenderSystem.enableCull();g.pose().popPose();
         if(card!=null&&alpha==1){
