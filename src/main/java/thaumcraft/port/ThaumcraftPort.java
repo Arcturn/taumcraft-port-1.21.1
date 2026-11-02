@@ -58,6 +58,7 @@ public final class ThaumcraftPort {
         thaumcraft.port.artifice.furnace.InfernalFurnaceContent.register(modBus);
         thaumcraft.port.artifice.lamp.ArtificeLamps.register(modBus);
         thaumcraft.port.artifice.tool.ArtificeTools.register(modBus);
+        thaumcraft.port.golem.GolemContent.register(modBus);
         PortContent.register(modBus);
         thaumcraft.port.research.ResearchAdvancements.register(modBus);
         modBus.addListener(PortNetwork::register);

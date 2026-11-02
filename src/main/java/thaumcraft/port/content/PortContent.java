@@ -103,13 +103,17 @@ public final class PortContent {
                 .displayItems((parameters, output) -> {
                     ITEMS.getEntries().forEach(entry -> {
                         if (entry.get() != CRYSTAL_ESSENCE.get() && entry.get()!=RESEARCH_ICON.get()
-                                && !(entry.get() instanceof ResearchDisplayItem) && !entry.getId().getPath().equals("infernal_furnace")) output.accept(entry.get());
+                                && !(entry.get() instanceof ResearchDisplayItem)
+                                && !(entry.get() instanceof thaumcraft.port.golem.item.GolemPlacerItem)
+                                && !entry.getId().getPath().equals("infernal_furnace")
+                                && !entry.getId().getPath().equals("golem_builder")) output.accept(entry.get());
                     });
                     for (Aspect aspect : Aspect.values()) output.accept(CrystalItem.stack(aspect));
                     for(int kind=1;kind<13;kind++)output.accept(CelestialNotesItem.stack(kind));
                     for (Aspect aspect : Aspect.values()) output.accept(thaumcraft.port.essentia.EssentiaItem.phial(aspect));
                     output.accept(thaumcraft.port.infusion.bauble.VerdantCharmItem.stack(1));
                     output.accept(thaumcraft.port.infusion.bauble.VerdantCharmItem.stack(2));
+                    thaumcraft.port.golem.GolemContent.GOLEM_ITEM.get().creativeVariants().forEach(output::accept);
                 }).build());
     }
 

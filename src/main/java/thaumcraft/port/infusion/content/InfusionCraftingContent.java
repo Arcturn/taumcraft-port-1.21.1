@@ -68,7 +68,7 @@ public final class InfusionCraftingContent {
     public static final DeferredBlock<ArcaneLampBlock> LAMP_FERTILITY = lamp("lamp_fertility");
     static {
         PortContent.ITEMS.registerItem("jar_brain",properties -> new BrainJarItem(JAR_BRAIN.get(),properties));
-        for(String id:List.of("seal_harvest","seal_butcher"))PortContent.ITEMS.registerSimpleItem(id);
+        for(String id:List.of("seal_harvest","seal_butcher"))PortContent.ITEMS.registerItem(id,p->new thaumcraft.port.golem.seal.SealPlacerItem(p,id.substring(5)));
         PortContent.ITEMS.registerItem("turret_placer_bore",properties -> new ConstructPlacerItem(properties,ConstructPlacerItem.Kind.BORE));
         PortContent.ITEMS.registerItem("focus_2",properties->new FocusItem(properties.stacksTo(1).rarity(Rarity.RARE),25));
         PortContent.ITEMS.registerItem("focus_3",properties->new FocusItem(properties.stacksTo(1).rarity(Rarity.RARE),50));

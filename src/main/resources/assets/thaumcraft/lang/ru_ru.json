@@ -4195,5 +4195,11 @@
   "item.thaumcraft.nugget_silver": "Кусочек серебра",
   "item.thaumcraft.nugget_lead": "Кусочек свинца",
   "entity.thaumcraft.grapple": "Крюк",
-  "thaumcraft.mirror.already_linked": "Это зеркало уже связано с действующим получателем."
+  "thaumcraft.mirror.already_linked": "Это зеркало уже связано с действующим получателем.",
+  "item.thaumcraft.golem": "Голем",
+  "item.thaumcraft.golem_bell": "Колокольчик големостроителя",
+  "block.thaumcraft.golem_builder": "Пресс големов",
+  "entity.thaumcraft.golem": "Голем",
+  "entity.thaumcraft.golem_dart": "Дротик голема",
+  "entity.thaumcraft.golem_orb": "Энергетическая сфера"
 }

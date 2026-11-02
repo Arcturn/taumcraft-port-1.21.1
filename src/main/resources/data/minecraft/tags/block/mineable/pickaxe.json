@@ -44,6 +44,11 @@
     "#thaumcraft:infusion_content/pickaxe",
     "thaumcraft:infernal_furnace",
     "thaumcraft:placeholder_brick",
-    "thaumcraft:placeholder_obsidian"
+    "thaumcraft:placeholder_obsidian",
+    "thaumcraft:golem_builder",
+    "thaumcraft:placeholder_bars",
+    "thaumcraft:placeholder_anvil",
+    "thaumcraft:placeholder_cauldron",
+    "thaumcraft:placeholder_table"
   ]
 }

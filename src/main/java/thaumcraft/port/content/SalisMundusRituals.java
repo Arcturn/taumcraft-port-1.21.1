@@ -45,6 +45,8 @@ import thaumcraft.port.infusion.structure.PillarBlock;
 import thaumcraft.port.infusion.matrix.MatrixContent;
 import thaumcraft.port.artifice.furnace.InfernalFurnaceContent;
 import thaumcraft.port.artifice.furnace.InfernalFurnaceStructure;
+import thaumcraft.port.golem.GolemContent;
+import thaumcraft.port.golem.builder.GolemBuilderStructure;
 
 /** Server-owned delayed replacements. Paid dust is held in saved data until commit/refund. */
 public final class SalisMundusRituals extends SavedData {
@@ -55,7 +57,7 @@ public final class SalisMundusRituals extends SavedData {
     private final List<Pending> pending = new ArrayList<>();
     private final Map<UUID, WeakReference<ServerPlayer>> actors = new HashMap<>();
 
-    private enum Kind { BOOK, WORKBENCH, CRUCIBLE, THAUMATORIUM, INFERNALFURNACE, INFUSION, INFUSIONANCIENT, INFUSIONELDRITCH }
+    private enum Kind { BOOK, WORKBENCH, CRUCIBLE, THAUMATORIUM, INFERNALFURNACE, GOLEMPRESS, INFUSION, INFUSIONANCIENT, INFUSIONELDRITCH }
     private static boolean infusion(Kind kind) { return kind.ordinal() >= Kind.INFUSION.ordinal(); }
     private record Source(BlockPos pos, BlockState state) {}
     private record Pending(Kind kind, UUID actor, InteractionHand hand, Direction face, Direction facing,
@@ -77,7 +79,13 @@ public final class SalisMundusRituals extends SavedData {
         Kind kind;
         Direction facing = player.getDirection().getOpposite();
         List<Source> sources = new ArrayList<>();
-        if (state.is(Blocks.BOOKSHELF)) kind = Kind.BOOK;
+        var press = GolemBuilderStructure.find(level, pos);
+        if (press != null) {
+            kind = Kind.GOLEMPRESS;
+            facing = press.facing();
+            for (var part : press.parts()) sources.add(new Source(part.pos(), part.source()));
+        }
+        else if (state.is(Blocks.BOOKSHELF)) kind = Kind.BOOK;
         else if (state.is(Blocks.CRAFTING_TABLE)) kind = Kind.WORKBENCH;
         else if (state.is(Blocks.CAULDRON) || state.is(Blocks.WATER_CAULDRON)) kind = Kind.CRUCIBLE;
         else if (state.is(EssentiaContent.CONSTRUCT.get())) {
@@ -98,7 +106,7 @@ public final class SalisMundusRituals extends SavedData {
                 kind = found;
             }
         }
-        if (!infusion(kind) && kind != Kind.INFERNALFURNACE) sources.add(new Source(pos.immutable(), state));
+        if (!infusion(kind) && kind != Kind.INFERNALFURNACE && kind != Kind.GOLEMPRESS) sources.add(new Source(pos.immutable(), state));
         if (kind == Kind.THAUMATORIUM) sources.add(new Source(pos.above(), level.getBlockState(pos.above())));
         for (Source source : sources) {
             if (!level.mayInteract(player, source.pos)
@@ -115,6 +123,8 @@ public final class SalisMundusRituals extends SavedData {
         }
         // DustTriggerMultiblock uses isResearchKnown, allowing the already-started furnace entry.
         if (kind == Kind.INFERNALFURNACE && !ResearchStorage.get(actor.getServer()).player(actor.getUUID()).isResearchKnown("INFERNALFURNACE"))
+            return InteractionResult.FAIL;
+        if (kind == Kind.GOLEMPRESS && !ResearchStorage.get(actor.getServer()).player(actor.getUUID()).isResearchKnown("MINDCLOCKWORK"))
             return InteractionResult.FAIL;
         SalisMundusRituals rituals = get(server);
         if (sources.stream().anyMatch(source -> rituals.reserved(source.pos))) return InteractionResult.FAIL;
@@ -173,7 +183,7 @@ public final class SalisMundusRituals extends SavedData {
     public static void breakBlock(BlockEvent.BreakEvent event) {
         if (event.getLevel() instanceof ServerLevel level) {
             SalisMundusRituals rituals = level.getDataStorage().get(FACTORY, SAVE_KEY);
-            if (rituals != null && rituals.pending.stream().anyMatch(job -> (job.kind == Kind.THAUMATORIUM || job.kind == Kind.INFERNALFURNACE || infusion(job.kind))
+            if (rituals != null && rituals.pending.stream().anyMatch(job -> (job.kind == Kind.THAUMATORIUM || job.kind == Kind.INFERNALFURNACE || job.kind == Kind.GOLEMPRESS || infusion(job.kind))
                     && job.sources.stream().anyMatch(source -> source.pos.equals(event.getPos())))) event.setCanceled(true);
         }
     }
@@ -209,6 +219,7 @@ public final class SalisMundusRituals extends SavedData {
         }
         if (infusion(job.kind)) return ResearchStorage.get(actor.getServer()).player(actor.getUUID()).knows(job.kind.name());
         if (job.kind == Kind.INFERNALFURNACE) return ResearchStorage.get(actor.getServer()).player(actor.getUUID()).isResearchKnown("INFERNALFURNACE");
+        if (job.kind == Kind.GOLEMPRESS) return ResearchStorage.get(actor.getServer()).player(actor.getUUID()).isResearchKnown("MINDCLOCKWORK");
         return job.kind != Kind.THAUMATORIUM
                 || (knowsThaumatorium(actor) && level.getBlockState(job.base().below()).is(MachineContent.CRUCIBLE.get()));
     }
@@ -238,6 +249,9 @@ public final class SalisMundusRituals extends SavedData {
         } else if (job.kind == Kind.INFERNALFURNACE) {
             if (!InfernalFurnaceStructure.form(level, base, job.facing.getOpposite())) return false;
             net.neoforged.neoforge.event.EventHooks.firePlayerCraftingEvent(actor, new ItemStack(InfernalFurnaceContent.FURNACE.get()), new net.minecraft.world.SimpleContainer(1));
+        } else if (job.kind == Kind.GOLEMPRESS) {
+            if (!GolemBuilderStructure.form(level, base, job.facing)) return false;
+            net.neoforged.neoforge.event.EventHooks.firePlayerCraftingEvent(actor, new ItemStack(GolemContent.BUILDER.get()), new net.minecraft.world.SimpleContainer(1));
         } else if (job.kind == Kind.THAUMATORIUM) {
             // Both halves must exist before either receives a neighbor notification.
             var facing = ThaumatoriumBlock.FACING;
@@ -310,7 +324,7 @@ public final class SalisMundusRituals extends SavedData {
                             NbtUtils.readBlockState(registries.lookupOrThrow(Registries.BLOCK), source.getCompound("state"))));
                 }
                 Kind kind = Kind.valueOf(tag.getString("kind"));
-                if (sources.size() != (infusion(kind) ? 10 : kind == Kind.INFERNALFURNACE ? 26 : kind == Kind.THAUMATORIUM ? 2 : 1)) continue;
+                if (sources.size() != (infusion(kind) ? 10 : kind == Kind.INFERNALFURNACE ? 26 : kind == Kind.GOLEMPRESS ? 5 : kind == Kind.THAUMATORIUM ? 2 : 1)) continue;
                 Vec3 hit = new Vec3(tag.getDouble("hitX"), tag.getDouble("hitY"), tag.getDouble("hitZ"));
                 if (!Double.isFinite(hit.lengthSqr())) continue;
                 rituals.pending.add(new Pending(kind, tag.getUUID("actor"), InteractionHand.valueOf(tag.getString("hand")),

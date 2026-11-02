@@ -85,11 +85,13 @@ public final class CraftingContent {
         PortContent.ITEMS.registerSimpleBlockItem("wand_workbench", WAND_WORKBENCH);
         PortContent.ITEMS.registerSimpleBlockItem("vis_battery", VIS_BATTERY);
         for (String id : List.of("module_vision", "module_aggression", "mirrored_glass", "mind_biothaumic",
-                "grapple_gun_tip", "grapple_gun_spool",
-                "seal_blank", "seal_pickup", "seal_pickup_advanced", "seal_fill", "seal_fill_advanced",
+                "grapple_gun_tip", "grapple_gun_spool", "seal_blank")) {
+            PortContent.ITEMS.registerSimpleItem(id);
+        }
+        for (String id : List.of("seal_pickup", "seal_pickup_advanced", "seal_fill", "seal_fill_advanced",
                 "seal_empty", "seal_empty_advanced", "seal_guard", "seal_guard_advanced", "seal_lumber",
                 "seal_breaker", "seal_use", "seal_provider", "seal_stock", "seal_breaker_advanced")) {
-            PortContent.ITEMS.registerSimpleItem(id);
+            PortContent.ITEMS.registerItem(id, properties -> new thaumcraft.port.golem.seal.SealPlacerItem(properties,id.substring(5)));
         }
         PortContent.ITEMS.registerItem("focus_1", properties -> new FocusItem(properties.stacksTo(1),15));
         PortContent.ITEMS.registerItem("sanity_checker", SanityCheckerItem::new);

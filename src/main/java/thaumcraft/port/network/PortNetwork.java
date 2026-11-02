@@ -10,6 +10,7 @@ public final class PortNetwork {
         thaumcraft.port.auromancy.focal.FocalPayloads.register(event);
         thaumcraft.port.auromancy.item.CasterPayloads.register(event);
         thaumcraft.port.auromancy.entity.FocusMediaPayload.register(event);
+        thaumcraft.port.golem.seal.SealPayloads.register(event);
         event.registrar("9").playToServer(thaumcraft.port.essentia.ThaumatoriumSelectPayload.TYPE,thaumcraft.port.essentia.ThaumatoriumSelectPayload.STREAM_CODEC,(p,c)->c.enqueueWork(()->{
             if(c.player() instanceof net.minecraft.server.level.ServerPlayer sp&&sp.containerMenu instanceof thaumcraft.port.essentia.ThaumatoriumMenu menu)menu.select(sp,p);
         }));

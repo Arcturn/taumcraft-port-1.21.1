@@ -4208,5 +4208,11 @@
   "item.thaumcraft.nugget_silver": "Silver Nugget",
   "item.thaumcraft.nugget_lead": "Lead Nugget",
   "entity.thaumcraft.grapple": "Grappling Hook",
-  "thaumcraft.mirror.already_linked": "That mirror is already linked to a valid destination."
+  "thaumcraft.mirror.already_linked": "That mirror is already linked to a valid destination.",
+  "item.thaumcraft.golem": "Golem",
+  "item.thaumcraft.golem_bell": "Golemancer's Bell",
+  "block.thaumcraft.golem_builder": "Golem Press",
+  "entity.thaumcraft.golem": "Golem",
+  "entity.thaumcraft.golem_dart": "Golem Dart",
+  "entity.thaumcraft.golem_orb": "Energy Orb"
 }
