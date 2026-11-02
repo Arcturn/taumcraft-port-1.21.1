@@ -17,12 +17,20 @@ import top.theillusivec4.curios.api.CuriosApi;
 
 /** Inventory transactions and the original per-caster (not per-hand) cooldown and architect controls. */
 public final class CasterManager {
-    private static final Map<LivingEntity, Long> COOLDOWNS = Collections.synchronizedMap(new WeakHashMap<>());
+    // Entity equality uses its numeric id. Client and integrated-server copies
+    // have the same id, so sharing a map lets prediction block the server cast.
+    // As in TC6, keep logical sides separate. Weak keys avoid retaining departed casters.
+    private static final Map<LivingEntity, Long> CLIENT_COOLDOWNS = Collections.synchronizedMap(new WeakHashMap<>());
+    private static final Map<LivingEntity, Long> SERVER_COOLDOWNS = Collections.synchronizedMap(new WeakHashMap<>());
+    private static Map<LivingEntity, Long> cooldowns(LivingEntity caster) {
+        return caster.level().isClientSide ? CLIENT_COOLDOWNS : SERVER_COOLDOWNS;
+    }
     private record FocusSlot(Supplier<ItemStack> read, Consumer<ItemStack> write) { }
     public static boolean isOnCooldown(LivingEntity caster) { return getCooldown(caster) > 0; }
-    public static float getCooldown(LivingEntity caster) { return Math.max(0, (COOLDOWNS.getOrDefault(caster, 0L) - System.nanoTime()) / 1_000_000_000f); }
+    public static float getCooldown(LivingEntity caster) { return Math.max(0, (cooldowns(caster).getOrDefault(caster, 0L) - System.nanoTime()) / 1_000_000_000f); }
     public static void setCooldown(LivingEntity caster, int ticks) {
-        if (ticks <= 0) COOLDOWNS.remove(caster); else COOLDOWNS.put(caster, System.nanoTime() + ticks * 50_000_000L);
+        var cooldowns = cooldowns(caster);
+        if (ticks <= 0) cooldowns.remove(caster); else cooldowns.put(caster, System.nanoTime() + ticks * 50_000_000L);
     }
     public static float getTotalVisDiscount(Player player) { return RevealingEquipment.visDiscount(player); }
     public static boolean consumeVisFromInventory(Player player, float amount, boolean crafting, boolean simulate) {

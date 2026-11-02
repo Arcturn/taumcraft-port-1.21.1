@@ -82,6 +82,43 @@ public final class CasterGameTests {
         helper.assertValueEqual(aura.vis(),0f,"Rejected payment altered aura"); helper.succeed();
     }
     @GameTest(template="elemental_tools_empty",timeoutTicks=40)
+    public static void predictedClientCastCannotPutEqualServerPlayerOnCooldown(GameTestHelper helper) {
+        var serverPlayer = GameTestPlayers.create(helper);
+        var clientLevel = new CooldownClientLevel(helper.getLevel());
+        net.minecraft.world.entity.player.Player clientPlayer = new net.minecraft.world.entity.player.Player(clientLevel, serverPlayer.blockPosition(), 0, serverPlayer.getGameProfile()) {
+            @Override public boolean isSpectator() { return false; }
+            @Override public boolean isCreative() { return false; }
+        };
+        clientPlayer.setId(serverPlayer.getId());
+        helper.assertTrue(clientPlayer != serverPlayer && clientPlayer.equals(serverPlayer)
+                && clientPlayer.hashCode() == serverPlayer.hashCode(), "Fixture must reproduce Entity equality across logical sides");
+        helper.assertTrue(clientPlayer.level().isClientSide && !serverPlayer.level().isClientSide, "Fixture must use different logical sides");
+        var caster = item("caster_basic"); CasterItem.setFocus(caster, focus(10, "Side isolation"));
+        clientPlayer.setItemInHand(InteractionHand.MAIN_HAND, caster.copy());
+        serverPlayer.setItemInHand(InteractionHand.MAIN_HAND, caster);
+        var aura = AuraSystem.get(helper.getLevel(), serverPlayer.blockPosition()); aura.addVis(100); float before = aura.vis();
+        var item = (CasterItem)caster.getItem();
+        try {
+            helper.assertTrue(item.use(clientLevel, clientPlayer, InteractionHand.MAIN_HAND).getResult().consumesAction(), "Client prediction failed");
+            helper.assertTrue(CasterManager.isOnCooldown(clientPlayer), "Prediction must still show its client cooldown");
+            // Keep the regression independent of wall-clock delays in a busy test server.
+            CasterManager.setCooldown(clientPlayer, 1200);
+            helper.assertFalse(CasterManager.isOnCooldown(serverPlayer), "Client prediction blocked the equal-id server player");
+            helper.assertTrue(item.use(helper.getLevel(), serverPlayer, InteractionHand.MAIN_HAND).getResult().consumesAction(), "Server rejected the predicted cast");
+            helper.assertTrue(Math.abs(aura.vis() - (before - 2)) < .0001, "The server must execute and pay for exactly one cast");
+            helper.assertTrue(CasterManager.isOnCooldown(serverPlayer), "Server cast must retain its own cooldown");
+            CasterManager.setCooldown(serverPlayer, 1200);
+            CasterManager.setCooldown(clientPlayer, 0);
+            helper.assertTrue(CasterManager.isOnCooldown(serverPlayer), "Clearing client cooldown erased the server cooldown");
+            CasterManager.setCooldown(clientPlayer, 1200);
+            CasterManager.setCooldown(serverPlayer, 0);
+            helper.assertTrue(CasterManager.isOnCooldown(clientPlayer), "Clearing server cooldown erased the client cooldown");
+        } finally {
+            CasterManager.setCooldown(clientPlayer, 0); CasterManager.setCooldown(serverPlayer, 0);
+        }
+        helper.succeed();
+    }
+    @GameTest(template="elemental_tools_empty",timeoutTicks=40)
     public static void anatomicalMappingAndOffhandPouchLock(GameTestHelper helper) {
         helper.assertValueEqual(CasterHand.arm(HumanoidArm.LEFT, InteractionHand.MAIN_HAND), HumanoidArm.LEFT, "Left-primary main hand rendered on right");
         helper.assertValueEqual(CasterHand.arm(HumanoidArm.LEFT, InteractionHand.OFF_HAND), HumanoidArm.RIGHT, "Left-primary off hand rendered on left");
@@ -94,5 +131,42 @@ public final class CasterGameTests {
         helper.assertValueEqual(menu.lockedSlot(),40,"Off-hand pouch must lock vanilla inventory slot 40");
         player.setItemInHand(InteractionHand.OFF_HAND,ItemStack.EMPTY);
         helper.assertFalse(menu.stillValid(player),"Menu remained active after its off-hand pouch was removed");helper.succeed();
+    }
+
+    /** Logical client world usable on a dedicated GameTest server, without loading client classes. */
+    private static final class CooldownClientLevel extends net.minecraft.world.level.Level {
+        private final net.minecraft.server.level.ServerLevel source;
+        CooldownClientLevel(net.minecraft.server.level.ServerLevel source) {
+            super((net.minecraft.world.level.storage.WritableLevelData)source.getLevelData(), source.dimension(), source.registryAccess(),
+                    source.dimensionTypeRegistration(), source::getProfiler, true, false, 0, 0);
+            this.source = source;
+        }
+        @Override public net.minecraft.world.level.chunk.ChunkSource getChunkSource() { return source.getChunkSource(); }
+        @Override public net.minecraft.world.ticks.LevelTickAccess<net.minecraft.world.level.block.Block> getBlockTicks() { return source.getBlockTicks(); }
+        @Override public net.minecraft.world.ticks.LevelTickAccess<net.minecraft.world.level.material.Fluid> getFluidTicks() { return source.getFluidTicks(); }
+        @Override public net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getUncachedNoiseBiome(int x,int y,int z) { return source.getUncachedNoiseBiome(x,y,z); }
+        @Override public net.minecraft.world.flag.FeatureFlagSet enabledFeatures() { return source.enabledFeatures(); }
+        @Override public float getShade(net.minecraft.core.Direction direction,boolean shade) { return source.getShade(direction,shade); }
+        @Override public java.util.List<? extends net.minecraft.world.entity.player.Player> players() { return java.util.List.of(); }
+        @Override public net.minecraft.world.TickRateManager tickRateManager() { return source.tickRateManager(); }
+        @Override public net.minecraft.world.entity.Entity getEntity(int id) { return null; }
+        @Override protected net.minecraft.world.level.entity.LevelEntityGetter<net.minecraft.world.entity.Entity> getEntities() { throw new UnsupportedOperationException("No client entity lookup in cooldown fixture"); }
+        @Override public net.minecraft.world.level.saveddata.maps.MapItemSavedData getMapData(net.minecraft.world.level.saveddata.maps.MapId id) { return null; }
+        @Override public void setMapData(net.minecraft.world.level.saveddata.maps.MapId id,net.minecraft.world.level.saveddata.maps.MapItemSavedData data) { throw new UnsupportedOperationException(); }
+        @Override public net.minecraft.world.level.saveddata.maps.MapId getFreeMapId() { throw new UnsupportedOperationException(); }
+        @Override public net.minecraft.world.scores.Scoreboard getScoreboard() { return source.getScoreboard(); }
+        @Override public net.minecraft.world.item.crafting.RecipeManager getRecipeManager() { return source.getRecipeManager(); }
+        @Override public net.minecraft.world.item.alchemy.PotionBrewing potionBrewing() { return source.potionBrewing(); }
+        @Override public String gatherChunkSourceStats() { return "Cooldown client fixture"; }
+        @Override public float getDayTimeFraction() { return source.getDayTimeFraction(); }
+        @Override public float getDayTimePerTick() { return source.getDayTimePerTick(); }
+        @Override public void setDayTimeFraction(float value) { }
+        @Override public void setDayTimePerTick(float value) { }
+        @Override public void sendBlockUpdated(net.minecraft.core.BlockPos pos,net.minecraft.world.level.block.state.BlockState before,net.minecraft.world.level.block.state.BlockState after,int flags) { }
+        @Override public void destroyBlockProgress(int id,net.minecraft.core.BlockPos pos,int progress) { }
+        @Override public void levelEvent(net.minecraft.world.entity.player.Player player,int event,net.minecraft.core.BlockPos pos,int data) { }
+        @Override public void gameEvent(net.minecraft.core.Holder<net.minecraft.world.level.gameevent.GameEvent> event,net.minecraft.world.phys.Vec3 pos,net.minecraft.world.level.gameevent.GameEvent.Context context) { }
+        @Override public void playSeededSound(net.minecraft.world.entity.player.Player player,double x,double y,double z,net.minecraft.core.Holder<net.minecraft.sounds.SoundEvent> sound,net.minecraft.sounds.SoundSource category,float volume,float pitch,long seed) { }
+        @Override public void playSeededSound(net.minecraft.world.entity.player.Player player,net.minecraft.world.entity.Entity entity,net.minecraft.core.Holder<net.minecraft.sounds.SoundEvent> sound,net.minecraft.sounds.SoundSource category,float volume,float pitch,long seed) { }
     }
 }
