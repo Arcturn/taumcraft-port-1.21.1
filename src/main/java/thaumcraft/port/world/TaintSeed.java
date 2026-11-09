@@ -11,7 +11,11 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.level.Level;
 import thaumcraft.port.content.CrystalItem;
 import thaumcraft.port.aspect.Aspect;
-public final class TaintSeed extends Monster {
+public final class TaintSeed extends Monster implements thaumcraft.port.mob.TaintedMob {
+    @Override public boolean isAlliedTo(Entity other){return other instanceof thaumcraft.port.mob.TaintedMob||super.isAlliedTo(other);}
+    @Override public void setTarget(LivingEntity target){super.setTarget(target instanceof thaumcraft.port.mob.TaintedMob?null:target);}
+    @Override public boolean doHurtTarget(Entity target){return !(target instanceof thaumcraft.port.mob.TaintedMob)&&super.doHurtTarget(target);}
+    @Override public boolean canAttackType(EntityType<?> type){return !thaumcraft.port.mob.TaintedMob.isTaintedType(type)&&super.canAttackType(type);}
     public int boost;
     @Override protected net.minecraft.sounds.SoundEvent getHurtSound(net.minecraft.world.damagesource.DamageSource s){return thaumcraft.port.content.PortSounds.get("tentacle");}
     @Override protected net.minecraft.sounds.SoundEvent getDeathSound(){return thaumcraft.port.content.PortSounds.get("tentacle");}
@@ -28,8 +32,13 @@ public final class TaintSeed extends Monster {
             if(mod<=0){hurt(damageSources().starve(),.5f);AuraSystem.add(l,blockPosition(),.1f,true);}
             else TaintSystem.spread(l,blockPosition().offset(random.nextInt(area*6+1)-area*3,random.nextInt(area*2+1)-area,random.nextInt(area*6+1)-area*3),true);
         }
-        if(tickCount%20==0)for(var e:l.getEntitiesOfClass(LivingEntity.class,getBoundingBox().inflate(area*4),e->e!=this))e.addEffect(new MobEffectInstance(WorldEntities.TAINT,100,area-1));
+        if(tickCount%20==0){
+            var target=getTarget();
+            if(target!=null&&target.isAlive()&&distanceToSqr(target)<area*256&&hasLineOfSight(target))spawnTentacles(target);
+            for(var e:l.getEntitiesOfClass(LivingEntity.class,getBoundingBox().inflate(area*4),e->e!=this))e.addEffect(new MobEffectInstance(WorldEntities.TAINT,100,area-1));
+        }
     }
+    public thaumcraft.port.mob.TaintacleSmall spawnTentacles(Entity target){return thaumcraft.port.mob.Taintacle.summonTentacle(this,target);}
     @Override protected void dropCustomDeathLoot(ServerLevel l,net.minecraft.world.damagesource.DamageSource d,boolean hit){super.dropCustomDeathLoot(l,d,hit);int n=prime()?1+random.nextInt(3):1;for(int i=0;i<n;i++)spawnAtLocation(CrystalItem.stack(Aspect.FLUX));}
     @Override public void addAdditionalSaveData(CompoundTag t){super.addAdditionalSaveData(t);t.putInt("boost",boost);}
     @Override public void readAdditionalSaveData(CompoundTag t){super.readAdditionalSaveData(t);boost=Math.max(0,Math.min(10000,t.getInt("boost")));}

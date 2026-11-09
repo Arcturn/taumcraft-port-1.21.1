@@ -25,6 +25,7 @@ public final class ThaumcraftPort {
         thaumcraft.port.content.PortParticles.register(modBus);
         WorldContent.register(modBus);
         WorldEntities.register(modBus);
+        thaumcraft.port.mob.MobContent.register(modBus);
         thaumcraft.port.warp.WarpEffects.register(modBus);
         thaumcraft.port.warp.entity.WarpEntities.register(modBus);
         AuraSystem.register(modBus);

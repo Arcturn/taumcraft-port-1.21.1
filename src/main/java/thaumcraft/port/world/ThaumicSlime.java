@@ -5,7 +5,11 @@ import net.minecraft.world.entity.monster.Slime;
 import net.minecraft.world.level.Level;
 import thaumcraft.port.aspect.Aspect;
 import thaumcraft.port.content.CrystalItem;
-public final class ThaumicSlime extends Slime {
+public final class ThaumicSlime extends Slime implements thaumcraft.port.mob.TaintedMob {
+    @Override public boolean isAlliedTo(Entity other){return other instanceof thaumcraft.port.mob.TaintedMob||super.isAlliedTo(other);}
+    @Override public void setTarget(LivingEntity target){super.setTarget(target instanceof thaumcraft.port.mob.TaintedMob?null:target);}
+    @Override public boolean canAttackType(EntityType<?> type){return !thaumcraft.port.mob.TaintedMob.isTaintedType(type)&&super.canAttackType(type);}
+    @Override public boolean doHurtTarget(Entity target){return !(target instanceof thaumcraft.port.mob.TaintedMob)&&super.doHurtTarget(target);}
     public ThaumicSlime(EntityType<? extends Slime> type,Level level){super(type,level);}
     @Override public void tick(){
         super.tick();if(!(level() instanceof ServerLevel l))return;

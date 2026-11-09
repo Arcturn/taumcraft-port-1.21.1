@@ -85,6 +85,20 @@ public final class AspectTags {
             return Map.of(Aspect.FLUX,5,Aspect.FIRE,5);
         if (entity instanceof thaumcraft.port.warp.entity.EldritchGuardian)
             return Map.of(Aspect.ELDRITCH,20,Aspect.DEATH,20,Aspect.UNDEAD,20);
+        if (entity instanceof thaumcraft.port.mob.GiantBrainyZombie)
+            return Map.of(Aspect.UNDEAD,25,Aspect.MAN,15,Aspect.MIND,5,Aspect.AVERSION,10);
+        if (entity instanceof thaumcraft.port.mob.BrainyZombie)
+            return Map.of(Aspect.UNDEAD,20,Aspect.MAN,10,Aspect.MIND,5,Aspect.AVERSION,5);
+        if (entity instanceof thaumcraft.port.mob.InhabitedZombie)
+            return Map.of(Aspect.ELDRITCH,10,Aspect.UNDEAD,10,Aspect.MAN,5);
+        if (entity instanceof thaumcraft.port.mob.EldritchCrab)
+            return Map.of(Aspect.ELDRITCH,10,Aspect.BEAST,10,Aspect.TRAP,10);
+        if (entity instanceof thaumcraft.port.mob.TaintacleSmall)
+            return Map.of(Aspect.FLUX,5,Aspect.BEAST,5);
+        if (entity instanceof thaumcraft.port.mob.Taintacle)
+            return Map.of(Aspect.FLUX,15,Aspect.BEAST,10);
+        if (entity instanceof thaumcraft.port.mob.TaintSwarm)
+            return Map.of(Aspect.FLUX,15,Aspect.AIR,5);
         if (entity instanceof ItemEntity item) return forItem(item.getItem());
         return VALUES.getOrDefault("entity:" + BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()), Map.of());
     }

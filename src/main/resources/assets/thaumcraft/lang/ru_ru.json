@@ -4206,5 +4206,20 @@
   "entity.thaumcraft.mind_spider": "Призрачный паук",
   "entity.thaumcraft.eldritch_orb": "Потусторонняя сфера",
   "command.thaumcraft.warp.status": "%s: постоянное %s, обычное %s, временное %s; активность %s",
-  "command.thaumcraft.warp.event": "Событие искажения %s (сила %s) вызвано для %s игроков."
+  "command.thaumcraft.warp.event": "Событие искажения %s (сила %s) вызвано для %s игроков.",
+  "entity.thaumcraft.brainy_zombie": "Злобный зомби",
+  "item.thaumcraft.brainy_zombie_spawn_egg": "Яйцо призыва: злобный зомби",
+  "entity.thaumcraft.giant_brainy_zombie": "Гигантский злобный зомби",
+  "item.thaumcraft.giant_brainy_zombie_spawn_egg": "Яйцо призыва: гигантский злобный зомби",
+  "entity.thaumcraft.eldritch_crab": "Потусторонний краб",
+  "item.thaumcraft.eldritch_crab_spawn_egg": "Яйцо призыва: потусторонний краб",
+  "entity.thaumcraft.inhabited_zombie": "Одержимый зомби",
+  "item.thaumcraft.inhabited_zombie_spawn_egg": "Яйцо призыва: одержимый зомби",
+  "entity.thaumcraft.taint_crawler": "Заражённый ползун",
+  "item.thaumcraft.taint_crawler_spawn_egg": "Яйцо призыва: заражённый ползун",
+  "entity.thaumcraft.taint_swarm": "Заражённый рой",
+  "item.thaumcraft.taint_swarm_spawn_egg": "Яйцо призыва: заражённый рой",
+  "entity.thaumcraft.taintacle": "Заражённое щупальце",
+  "item.thaumcraft.taintacle_spawn_egg": "Яйцо призыва: заражённое щупальце",
+  "entity.thaumcraft.taintacle_small": "Малое заражённое щупальце"
 }

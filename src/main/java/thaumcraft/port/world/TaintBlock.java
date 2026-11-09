@@ -34,6 +34,6 @@ public final class TaintBlock extends Block{
         if(kind.equals("taint_crust")&&l.isEmptyBlock(p.below())){l.setBlockAndUpdate(p.below(),s);l.removeBlock(p,false);return;}
         TaintSystem.spread(l,p,false);
     }
-    @Override protected void entityInside(BlockState s,Level l,BlockPos p,Entity e){if(!l.isClientSide&&e instanceof LivingEntity living&&!(e instanceof TaintSeed)&&l.random.nextInt(kind.equals("taint_fibre")?750:250)==0)living.addEffect(new MobEffectInstance(WorldEntities.TAINT,200));}
+    @Override protected void entityInside(BlockState s,Level l,BlockPos p,Entity e){if(!l.isClientSide&&e instanceof LivingEntity living&&!living.getType().is(net.minecraft.tags.EntityTypeTags.UNDEAD)&&l.random.nextInt(kind.equals("taint_fibre")?750:250)==0)living.addEffect(new MobEffectInstance(WorldEntities.TAINT,200));}
     @Override public void stepOn(Level l,BlockPos p,BlockState s,Entity e){entityInside(s,l,p,e);super.stepOn(l,p,s,e);}
 }

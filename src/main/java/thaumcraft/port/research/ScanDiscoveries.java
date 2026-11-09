@@ -103,6 +103,11 @@ public final class ScanDiscoveries {
     public static Set<String> entityTypeFlags(Class<? extends net.minecraft.world.entity.Entity> type,net.minecraft.resources.ResourceLocation id) {
         var flags=new LinkedHashSet<>(subjectFlags("entity:"+id));
         if(thaumcraft.port.warp.entity.EldritchMob.class.isAssignableFrom(type))flags.add("!ORMOB");
+        if(thaumcraft.port.mob.BrainyZombie.class.isAssignableFrom(type)){flags.add("!BrainyZombie");flags.add("f_BRAIN");}
+        if(thaumcraft.port.mob.EldritchCrab.class.isAssignableFrom(type)||thaumcraft.port.mob.InhabitedZombie.class.isAssignableFrom(type))flags.add("!EldritchCrab");
+        if(thaumcraft.port.mob.TaintCrawler.class.isAssignableFrom(type))flags.add("!TaintCrawler");
+        if(thaumcraft.port.mob.Taintacle.class.isAssignableFrom(type))flags.add("!Taintacle");
+        if(thaumcraft.port.mob.TaintSwarm.class.isAssignableFrom(type)){flags.add("!TaintSwarm");flags.add("f_FLY");}
         if(net.minecraft.world.entity.monster.Spider.class.isAssignableFrom(type))flags.add("f_SPIDER");
         if(net.minecraft.world.entity.ambient.Bat.class.isAssignableFrom(type)){flags.add("f_BAT");flags.add("f_FLY");}
         if(net.minecraft.world.entity.animal.Parrot.class.isAssignableFrom(type)||net.minecraft.world.entity.monster.Ghast.class.isAssignableFrom(type)

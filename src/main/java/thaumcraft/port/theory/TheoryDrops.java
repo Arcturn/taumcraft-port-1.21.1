@@ -15,7 +15,7 @@ import thaumcraft.port.research.ResearchStorage;
 public final class TheoryDrops {
     public static void drops(LivingDropsEvent event){
         var entity=event.getEntity();if(entity.level().isClientSide)return;
-        if(entity instanceof Zombie&&event.isRecentlyHit()){
+        if(entity instanceof Zombie&&!(entity instanceof thaumcraft.port.mob.BrainyZombie)&&event.isRecentlyHit()){
             int looting=event.getSource().getEntity() instanceof LivingEntity attacker?EnchantmentHelper.getEnchantmentLevel(entity.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING),attacker):0;
             if(entity.getRandom().nextInt(10)-looting<1)add(event,"brain");
         }
