@@ -78,7 +78,9 @@ public final class EldritchBossGameTests {
     public static void golemOrbHomesDeflectsAndDealsMagicDamageOnCollision(GameTestHelper h){
         var owner=h.spawn(BossContent.ELDRITCH_GOLEM.get(),new BlockPos(1,2,3));owner.setNoAi(true);owner.setNoGravity(true);
         var victim=h.spawn(EntityType.COW,new BlockPos(5,2,3));victim.setNoAi(true);victim.setNoGravity(true);victim.getAttribute(Attributes.ARMOR).setBaseValue(30);
-        var orb=BossContent.GOLEM_ORB.get().create(h.getLevel());orb.setOwner(owner);orb.setTarget(victim);orb.setPos(victim.position().add(-1,.7,0));orb.setDeltaMovement(.25,0,0);h.getLevel().addFreshEntity(orb);
+        // Offset avoids ending the first ray exactly on the inflated cow-box edge (-.75).
+        // Vanilla AABB.clip deliberately accepts only intersections strictly inside the ray.
+        var orb=BossContent.GOLEM_ORB.get().create(h.getLevel());orb.setOwner(owner);orb.setTarget(victim);orb.setPos(victim.position().add(-1.2,.7,0));orb.setDeltaMovement(.25,0,0);h.getLevel().addFreshEntity(orb);
         var saved=new CompoundTag();orb.addAdditionalSaveData(saved);var reloaded=BossContent.GOLEM_ORB.get().create(h.getLevel());reloaded.readAdditionalSaveData(saved);h.assertTrue(reloaded.getTarget()==victim,"Orb target UUID failed to survive reload");
         var deflector=GameTestPlayers.create(h);deflector.setYRot(90);deflector.setXRot(0);h.assertTrue(reloaded.hurt(h.getLevel().damageSources().playerAttack(deflector),1),"Orb was not deflectable");h.assertTrue(reloaded.getDeltaMovement().x<-.8,"Deflection did not follow attacker's look vector");h.assertTrue(reloaded.getTarget()==victim,"Deflection incorrectly retargeted the homing orb");
         // GameTest chunks may contain entities outside the server's active entity-ticking range.

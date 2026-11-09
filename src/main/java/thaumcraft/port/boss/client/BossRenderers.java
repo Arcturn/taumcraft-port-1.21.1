@@ -55,7 +55,7 @@ public final class BossRenderers {
         GolemRenderer(EntityRendererProvider.Context c){super(c,new EldritchGolemModel(c.bakeLayer(GOLEM)),1);}
         @Override public ResourceLocation getTextureLocation(EldritchGolem e){return id("textures/entity/eldritch_golem.png");}
         @Override protected void scale(EldritchGolem e,PoseStack pose,float partial){pose.scale(1.7f,1.7f,1.7f);}
-        @Override protected RenderType getRenderType(EldritchGolem e,boolean visible,boolean translucent,boolean outline){return outline?RenderType.outline(getTextureLocation(e)):visible||translucent?RenderType.entityTranslucent(getTextureLocation(e)):null;}
+        @Override protected RenderType getRenderType(EldritchGolem e,boolean visible,boolean translucent,boolean outline){return outline?RenderType.outline(getTextureLocation(e)):visible||translucent?BossRenderTypes.translucent(getTextureLocation(e)):null;}
     }
     private static final class WardenRenderer extends MobRenderer<EldritchWarden,EldritchWardenModel>{
         WardenRenderer(EntityRendererProvider.Context c){super(c,new EldritchWardenModel(c.bakeLayer(WARDEN)),.6f);addLayer(new RenderLayer<>(this){
@@ -64,7 +64,7 @@ public final class BossRenderers {
             }
         });}
         @Override public ResourceLocation getTextureLocation(EldritchWarden e){return id("textures/entity/eldritch_warden.png");}
-        @Override protected RenderType getRenderType(EldritchWarden e,boolean visible,boolean translucent,boolean outline){return outline?RenderType.outline(getTextureLocation(e)):visible||translucent?RenderType.entityTranslucent(getTextureLocation(e)):null;}
+        @Override protected RenderType getRenderType(EldritchWarden e,boolean visible,boolean translucent,boolean outline){return outline?RenderType.outline(getTextureLocation(e)):visible||translucent?BossRenderTypes.translucent(getTextureLocation(e)):null;}
         @Override public void render(EldritchWarden e,float yaw,float partial,PoseStack pose,MultiBufferSource buffers,int light){pose.pushPose();pose.translate(0,-e.getBbHeight()*e.getSpawnTimer()/150f,0);super.render(e,yaw,partial,pose,buffers,light);pose.popPose();}
     }
     private static final class LeaderRenderer extends HumanoidMobRenderer<CultistLeader,HumanoidModel<CultistLeader>>{

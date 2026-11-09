@@ -23,7 +23,7 @@ public final class WorldConfig {
         NO_SLEEP=b.comment("Give the dream journal on first crystal pickup instead of requiring sleep, as in TC6.").define("noSleep",false);
         b.pop().push("mobs");
         BRAINY_ZOMBIES=b.comment("Allow angry zombies to spawn naturally in eligible Overworld biomes, as in TC6.").define("brainyZombies",true);
-        CHAMPION_MOBS=b.comment("Allow champion mobs. Dangerous places retain a reduced chance when disabled, as in TC6.").define("championMobs",true);
+        CHAMPION_MOBS=b.comment("Allow eligible mobs to become champions naturally; existing champions and boss initialization are unaffected.").define("championMobs",true);
         b.pop(); SPEC=b.build();
     }
     private WorldConfig() {}
