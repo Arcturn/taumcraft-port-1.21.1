@@ -17,6 +17,14 @@ import thaumcraft.port.world.*;
 @PrefixGameTestTemplate(false)
 public final class TaintIntegrationGameTests {
     @GameTest(template="elemental_tools_empty",timeoutTicks=40)
+    public static void bottledTaintCanRefillShallowFiniteGoo(GameTestHelper h){
+        var pos=h.absolutePos(new BlockPos(9,3,9));var goo=WorldContent.block("flux_goo");
+        for(int x=-4;x<=4;x++)for(int z=-4;z<=4;z++){var target=pos.offset(x,0,z);h.getLevel().setBlockAndUpdate(target.below(),Blocks.STONE.defaultBlockState());h.getLevel().setBlockAndUpdate(target,goo.defaultBlockState().setValue(FluxGooBlock.LEVEL,1));}
+        var bottle=thaumcraft.port.alchemy.liquid.AlchemyLiquids.BOTTLE_PROJECTILE.get().create(h.getLevel());bottle.setPos(pos.getX()+.5,pos.getY(),pos.getZ()+.5);bottle.getRandom().setSeed(0);h.getLevel().random.setSeed(0);bottle.splash();
+        int filled=0;for(int x=-4;x<=4;x++)for(int z=-4;z<=4;z++){var state=h.getLevel().getBlockState(pos.offset(x,0,z));h.assertTrue(state.is(goo),"Bottled taint removed the existing liquid");if(state.getValue(FluxGooBlock.LEVEL)==7)filled++;}
+        h.assertTrue(filled>0,"Bottle did not refill any shallow goo layer");h.succeed();
+    }
+    @GameTest(template="elemental_tools_empty",timeoutTicks=40)
     public static void taintDamagePreservesMagicArmorBypassAndOriginalDeathMessage(GameTestHelper h){
         var cow=EntityType.COW.create(h.getLevel());cow.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).setBaseValue(100);cow.setHealth(10);
         WorldEntities.TAINT.get().applyEffectTick(cow,0);h.assertValueEqual(cow.getHealth(),9f,"Taint damage must bypass ordinary armor");
@@ -53,6 +61,7 @@ public final class TaintIntegrationGameTests {
         var aura=AuraSystem.get(h.getLevel(),pos);float before=aura.flux();
         h.assertFalse(rift.trySpawnTaintSeed(pos),"Seed overlap was ignored");neighbour.discard();
         h.getLevel().setBlockAndUpdate(pos,Blocks.WATER.defaultBlockState());h.assertFalse(rift.trySpawnTaintSeed(pos),"Seed spawned in liquid");h.getLevel().removeBlock(pos,false);
+        h.getLevel().setBlockAndUpdate(pos,Blocks.STONE.defaultBlockState());h.assertFalse(rift.trySpawnTaintSeed(pos),"Seed spawned inside solid terrain");h.getLevel().removeBlock(pos,false);
         boolean configured=WorldConfig.TAINT.get();try{WorldConfig.TAINT.set(false);h.assertFalse(rift.trySpawnTaintSeed(pos),"Disabled taint created seed");}finally{WorldConfig.TAINT.set(configured);}
         h.assertFalse(rift.isRemoved(),"Failed seed attempt consumed rift");h.assertValueEqual(aura.flux(),before,"Failed seed attempt polluted aura");h.succeed();
     }

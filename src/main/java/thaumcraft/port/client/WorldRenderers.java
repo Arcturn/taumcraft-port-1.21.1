@@ -76,6 +76,7 @@ public final class WorldRenderers {
     private static final class SeedRenderer extends MobRenderer<TaintSeed,TaintSeedModel>{
         SeedRenderer(EntityRendererProvider.Context c){super(c,new TaintSeedModel(c.bakeLayer(SEED_LAYER)),.4f);}
         @Override public ResourceLocation getTextureLocation(TaintSeed e){return WorldContent.id("textures/entity/taintseed.png");}
+        @Override protected void setupRotations(TaintSeed e,PoseStack pose,float age,float yaw,float partial,float scale){super.setupRotations(e,pose,age,0,partial,scale);}
         @Override protected RenderType getRenderType(TaintSeed e,boolean visible,boolean translucent,boolean glowing){return glowing?RenderType.outline(getTextureLocation(e)):visible||translucent?RenderType.entityTranslucent(getTextureLocation(e)):null;}
     }
 }

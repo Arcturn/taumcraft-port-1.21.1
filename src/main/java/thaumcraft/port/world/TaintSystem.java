@@ -25,7 +25,7 @@ public final class TaintSystem {
         int radius=radius();double outer=(double)radius*radius,inner=outer*.64;
         return !level.getEntitiesOfClass(TaintSeed.class,new AABB(pos).inflate(radius),seed->{double distance=seed.blockPosition().distSqr(pos);return seed.isAlive()&&distance>inner&&distance<outer;}).isEmpty();
     }
-    public static boolean tainted(BlockState state){return state.getBlock() instanceof TaintBlock||state.getBlock() instanceof TaintFeatureBlock;}
+    public static boolean tainted(BlockState state){return state.getBlock() instanceof TaintBlock||state.getBlock() instanceof TaintFeatureBlock||state.getBlock() instanceof FluxGooBlock;}
     public static boolean neighboursLoaded(LevelReader level,BlockPos pos){for(var side:Direction.values())if(!level.hasChunkAt(pos.relative(side)))return false;return level.hasChunkAt(pos);}
     /** True if no adjacent non-tainted block provides a solid supporting face. */
     public static boolean onlyAdjacentToTaint(LevelReader level,BlockPos pos){
@@ -57,7 +57,7 @@ public final class TaintSystem {
             }
             return replace(level,target,"taint_fibre",true);
         }
-        if((state.isAir()||state.canBeReplaced()||state.getBlock() instanceof BushBlock||state.getBlock() instanceof net.neoforged.neoforge.common.IPlantable)&&!onlyAdjacentToTaint(level,target))return replace(level,target,"taint_fibre",true);
+        if((state.isAir()||state.canBeReplaced()||state.getBlock() instanceof BushBlock||state.getBlock() instanceof SugarCaneBlock||state.getBlock() instanceof CactusBlock||state.getBlock() instanceof BambooStalkBlock)&&!onlyAdjacentToTaint(level,target))return replace(level,target,"taint_fibre",true);
         if(hemmedByTaint(level,target)&&hardness<5&&!tainted(state)){
             if(state.is(BlockTags.LOGS)){
                 var converted=WorldContent.block("taint_log").defaultBlockState();if(state.hasProperty(BlockStateProperties.AXIS))converted=converted.setValue(BlockStateProperties.AXIS,state.getValue(BlockStateProperties.AXIS));

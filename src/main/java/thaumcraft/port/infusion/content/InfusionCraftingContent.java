@@ -9,16 +9,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import thaumcraft.port.content.PortContent;
 import thaumcraft.port.crafting.content.ArcaneLampBlock;
-import thaumcraft.port.crafting.content.CraftingDeviceBlock;
 import thaumcraft.port.infusion.recipe.InfusionAugments;
 import thaumcraft.port.auromancy.item.FocusItem;
 import thaumcraft.port.content.PortSounds;
@@ -60,13 +57,14 @@ public final class InfusionCraftingContent {
             new VoidseerCharmItem(p.rarity(Rarity.RARE)));
     public static final DeferredBlock<BrainJarBlock> JAR_BRAIN = PortContent.BLOCKS.register("jar_brain",()->
             new BrainJarBlock(BlockBehaviour.Properties.of().sound(PortSounds.JAR).strength(.3f)));
-    public static final DeferredBlock<CraftingDeviceBlock> VOID_SIPHON = device("void_siphon",SoundType.METAL,2.5f,
-            Block.box(3,0,3,13,16,13));
+    public static final DeferredBlock<thaumcraft.port.artifice.siphon.VoidSiphonBlock> VOID_SIPHON = PortContent.BLOCKS.register("void_siphon",()->
+            new thaumcraft.port.artifice.siphon.VoidSiphonBlock(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2,12).noOcclusion()));
     public static final DeferredBlock<InfusionMirrorBlock> MIRROR = mirror("mirror");
     public static final DeferredBlock<InfusionMirrorBlock> MIRROR_ESSENTIA = mirror("mirror_essentia");
     public static final DeferredBlock<ArcaneLampBlock> LAMP_GROWTH = lamp("lamp_growth");
     public static final DeferredBlock<ArcaneLampBlock> LAMP_FERTILITY = lamp("lamp_fertility");
     static {
+        PortContent.ITEMS.registerSimpleBlockItem("void_siphon",VOID_SIPHON);
         PortContent.ITEMS.registerItem("jar_brain",properties -> new BrainJarItem(JAR_BRAIN.get(),properties));
         for(String id:List.of("seal_harvest","seal_butcher"))PortContent.ITEMS.registerItem(id,p->new thaumcraft.port.golem.seal.SealPlacerItem(p,id.substring(5)));
         PortContent.ITEMS.registerItem("turret_placer_bore",properties -> new ConstructPlacerItem(properties,ConstructPlacerItem.Kind.BORE));
@@ -79,11 +77,6 @@ public final class InfusionCraftingContent {
     private static DeferredItem<VoidArmorItem> armor(String name,ArmorItem.Type type,boolean robe){
         return PortContent.ITEMS.registerItem(name,p -> new VoidArmorItem(type,robe,p.durability(type.getDurability(robe?18:10))
                 .rarity(robe?Rarity.EPIC:Rarity.UNCOMMON)));
-    }
-    private static DeferredBlock<CraftingDeviceBlock> device(String name,SoundType sound,float hardness,VoxelShape shape){
-        var block=PortContent.BLOCKS.register(name,()->new CraftingDeviceBlock(BlockBehaviour.Properties.of()
-                .sound(sound).strength(hardness).noOcclusion(),shape));
-        PortContent.ITEMS.registerSimpleBlockItem(name,block);return block;
     }
     private static DeferredBlock<InfusionMirrorBlock> mirror(String name){
         var block=PortContent.BLOCKS.register(name,()->new InfusionMirrorBlock(BlockBehaviour.Properties.of()

@@ -40,8 +40,9 @@ public final class BottleTaintProjectile extends ThrowableItemProjectile {
     }
     private boolean placeGoo(BlockPos pos) {
         if (!level().hasChunkAt(pos)||!level().hasChunkAt(pos.below())||level().isOutsideBuildHeight(pos)
-                ||!level().getBlockState(pos.below()).isFaceSturdy(level(), pos.below(), Direction.UP)
-                || !level().getBlockState(pos).canBeReplaced()) return false;
+                ||!level().getBlockState(pos.below()).isFaceSturdy(level(), pos.below(), Direction.UP)) return false;
+        var state=level().getBlockState(pos);
+        if(!state.canBeReplaced()&&!(state.getBlock() instanceof thaumcraft.port.world.FluxGooBlock&&state.getValue(thaumcraft.port.world.FluxGooBlock.LEVEL)<4))return false;
         return level().setBlockAndUpdate(pos, WorldContent.block("flux_goo").defaultBlockState());
     }
     @Override public void handleEntityEvent(byte id) {

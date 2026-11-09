@@ -29,7 +29,8 @@ import thaumcraft.port.content.PortContent;
 @GameTestHolder("thaumcraft")
 @PrefixGameTestTemplate(false)
 public final class FocusMediaGameTests {
-    @GameTest(template="empty",timeoutTicks=60)
+    // Both caster and target must stay inside this test's bounds while neighbouring tests run.
+    @GameTest(template="elemental_tools_empty",timeoutTicks=60)
     public static void cloudKeepsBeta26FiveTickCadenceAndCuboidRange(GameTestHelper helper) {
         registerCounter();var caster=sheep(helper,new Vec3(8,4,8));var target=sheep(helper,new Vec3(2.9,4,2.9));
         var origin=helper.absoluteVec(new Vec3(2,4,2));var cloud=new EntityFocusCloud(pack(caster),new Trajectory(origin,new Vec3(1,0,0)),1,5);helper.getLevel().addFreshEntity(cloud);

@@ -44,10 +44,10 @@ public class TaintBlock extends Block {
             }
         }
     }
-    @Override protected void entityInside(BlockState state,Level level,BlockPos pos,Entity entity){
-        if(!level.isClientSide&&entity instanceof LivingEntity living&&!living.getType().is(EntityTypeTags.UNDEAD)&&level.random.nextInt(kind.equals("taint_fibre")?750:250)==0)living.addEffect(new MobEffectInstance(WorldEntities.TAINT,200));
+    @Override public void stepOn(Level level,BlockPos pos,BlockState state,Entity entity){
+        if(!kind.equals("taint_log")&&!level.isClientSide&&entity instanceof LivingEntity living&&!living.getType().is(EntityTypeTags.UNDEAD)&&level.random.nextInt(kind.equals("taint_fibre")?750:250)==0)living.addEffect(new MobEffectInstance(WorldEntities.TAINT,200));
+        super.stepOn(level,pos,state,entity);
     }
-    @Override public void stepOn(Level level,BlockPos pos,BlockState state,Entity entity){entityInside(state,level,pos,entity);super.stepOn(level,pos,state,entity);}
     @Override protected boolean triggerEvent(BlockState state,Level level,BlockPos pos,int event,int parameter){
         if(event==1){if(level.isClientSide)level.playLocalSound(pos,SoundEvents.CHORUS_FLOWER_DEATH,SoundSource.BLOCKS,.1f,.9f+level.random.nextFloat()*.2f,false);return true;}return super.triggerEvent(state,level,pos,event,parameter);
     }

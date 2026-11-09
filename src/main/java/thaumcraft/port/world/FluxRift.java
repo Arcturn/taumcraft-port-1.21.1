@@ -32,7 +32,9 @@ public final class FluxRift extends Entity {
     public float stability(){return entityData.get(STABILITY);}
     public boolean collapsing(){return entityData.get(COLLAPSE);}
     public void addStability(float amount){if(Float.isFinite(amount))entityData.set(STABILITY,Math.clamp(stability()+amount,-100,100));}
-    public void collapse(){entityData.set(COLLAPSE,true);}
+    public void collapse(){if(!collapsing())maxSize=size();entityData.set(COLLAPSE,true);}
+    /** A siphon can reduce a live rift to size one without manufacturing collapse rewards. */
+    public void shrinkForSiphon(){if(!level().isClientSide&&isAlive()&&size()>=2){size(size()-1);geometry();}}
     private void size(int n){n=Math.clamp(n,0,400);entityData.set(SIZE,n);maxSize=Math.max(maxSize,n);}
     public List<Vec3> points(){geometry();return Collections.unmodifiableList(points);}
     public List<Float> widths(){geometry();return Collections.unmodifiableList(widths);}
@@ -111,8 +113,9 @@ public final class FluxRift extends Entity {
         seed.moveTo(pos.getX()+.5,pos.getY(),pos.getZ()+.5,random.nextInt(360),0);seed.boost=size();
         var bounds=seed.getBoundingBox();
         if(!level.hasChunksAt(BlockPos.containing(bounds.minX,bounds.minY,bounds.minZ),BlockPos.containing(bounds.maxX,bounds.maxY,bounds.maxZ))
-                ||!level.getWorldBorder().isWithinBounds(bounds)||!seed.checkSpawnRules(level,MobSpawnType.MOB_SUMMONED)||!seed.checkSpawnObstruction(level)||!level.addFreshEntity(seed))return false;
-        AuraSystem.add(level,blockPosition(),size()/2,true);discard();return true;
+                ||!level.getWorldBorder().isWithinBounds(bounds)||!seed.checkSpawnRules(level,MobSpawnType.MOB_SUMMONED)||!seed.checkSpawnObstruction(level)
+                ||!level.noCollision(seed)||!level.addFreshEntity(seed))return false;
+        AuraSystem.pollute(level,blockPosition(),size()/2,true);discard();return true;
     }
     private void finish(ServerLevel l){
         int count=(int)Math.sqrt(maxSize);

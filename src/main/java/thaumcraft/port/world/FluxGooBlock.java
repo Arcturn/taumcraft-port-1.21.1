@@ -3,6 +3,7 @@ package thaumcraft.port.world;
 import java.util.ArrayList;
 import net.minecraft.core.*;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.*;
@@ -15,7 +16,11 @@ import net.minecraft.world.phys.shapes.*;
 import thaumcraft.port.content.PortSounds;
 import thaumcraft.port.warp.WarpEffects;
 
-/** Eight-quanta finite goo. The TC6 viscosity of6000 gives a30-tick scheduled update. */
+/**
+ * Eight-quanta finite goo. TC6 viscosity of 6000 gives a 30-tick scheduled update.
+ * Finite balancing follows Minecraft Forge 1.12 BlockFluidFinite (LGPL-2.1-or-later):
+ * https://github.com/MinecraftForge/MinecraftForge/blob/1.12.x/src/main/java/net/minecraftforge/fluids/BlockFluidFinite.java
+ */
 public final class FluxGooBlock extends Block {
     public static final IntegerProperty LEVEL=IntegerProperty.create("level",0,7);
     public static final BooleanProperty COVERED=BooleanProperty.create("covered");
@@ -24,6 +29,10 @@ public final class FluxGooBlock extends Block {
     @Override protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> builder){builder.add(LEVEL,COVERED);}
     @Override public BlockState getStateForPlacement(BlockPlaceContext context){return stateFor(context.getLevel(),context.getClickedPos(),8);}
     @Override protected VoxelShape getShape(BlockState state,BlockGetter level,BlockPos pos,CollisionContext context){return box(0,0,0,16,state.getValue(COVERED)?16:(state.getValue(LEVEL)+1)*16d/9d,16);}
+    @Override protected boolean skipRendering(BlockState state,BlockState neighbour,Direction direction){
+        if(neighbour.is(this))return direction.getAxis()==Direction.Axis.Y||neighbour.getValue(COVERED)||!state.getValue(COVERED)&&neighbour.getValue(LEVEL)>=state.getValue(LEVEL);
+        return super.skipRendering(state,neighbour,direction);
+    }
     @Override protected boolean canBeReplaced(BlockState state,BlockPlaceContext context){return state.getValue(LEVEL)<4;}
     @Override protected BlockState updateShape(BlockState state,Direction direction,BlockState neighbour,LevelAccessor level,BlockPos pos,BlockPos neighbourPos){return direction==Direction.UP?state.setValue(COVERED,neighbour.is(this)):state;}
     @Override protected void onPlace(BlockState state,Level level,BlockPos pos,BlockState old,boolean moved){
@@ -69,7 +78,10 @@ public final class FluxGooBlock extends Block {
         var destinations=new ArrayList<BlockPos>();int total=units;
         for(var direction:Direction.Plane.HORIZONTAL){
             BlockPos next=pos.relative(direction);if(!receivable(level,next))continue;
-            int there=amount(level,next);if(there<units-1){destinations.add(next);total+=there;}
+            int there=amount(level,next);if(there<units-1){
+                if(!level.getBlockState(next).is(this)){displace(level,next);level.removeBlock(next,false);}
+                destinations.add(next);total+=there;
+            }
         }
         if(destinations.isEmpty()){if(units!=original)put(level,pos,units);return;}
         int count=destinations.size()+1,each=total/count,remainder=total%count;
@@ -84,7 +96,16 @@ public final class FluxGooBlock extends Block {
     private int amount(ServerLevel level,BlockPos pos){var state=level.getBlockState(pos);return state.is(this)?state.getValue(LEVEL)+1:0;}
     private boolean receivable(ServerLevel level,BlockPos pos){
         if(level.isOutsideBuildHeight(pos)||!level.hasChunkAt(pos))return false;
-        var state=level.getBlockState(pos);return state.getFluidState().isEmpty()&&!state.hasBlockEntity()&&(state.is(this)||state.isAir()||state.canBeReplaced()||state.is(WorldContent.block("taint_fibre")));
+        var state=level.getBlockState(pos);
+        if(!state.getFluidState().isEmpty()||state.hasBlockEntity())return false;
+        if(state.is(this)||state.isAir()||state.is(WorldContent.block("taint_fibre")))return true;
+        var block=state.getBlock();
+        // Forge 1.12 finite fluids destroy nonblocking plants/devices but preserve these fixtures.
+        if(state.is(BlockTags.DOORS)||state.is(BlockTags.TRAPDOORS)||state.is(BlockTags.FENCES)||state.is(BlockTags.FENCE_GATES)
+                ||state.is(BlockTags.WALLS)||state.is(BlockTags.PORTALS)||block instanceof BasePressurePlateBlock||block instanceof LadderBlock
+                ||block instanceof IronBarsBlock||block instanceof SignBlock||block instanceof AbstractBannerBlock||block instanceof CakeBlock
+                ||block instanceof SugarCaneBlock||state.is(Blocks.BARRIER)||state.is(Blocks.STRUCTURE_VOID))return false;
+        return !state.blocksMotion();
     }
     private void displace(ServerLevel level,BlockPos pos){
         var state=level.getBlockState(pos);
@@ -94,7 +115,7 @@ public final class FluxGooBlock extends Block {
     private void put(ServerLevel level,BlockPos pos,int units){
         if(units<=0)level.removeBlock(pos,false);
         else level.setBlock(pos,stateFor(level,pos,units),2);
-        // Finite-flow updates use flag2; keep the lower block's covered render state synchronized too.
+        // Finite-flow updates use flag 2; keep the lower block's covered render state synchronized too.
         BlockPos below=pos.below();if(!level.isOutsideBuildHeight(below)){
             var lower=level.getBlockState(below);if(lower.is(this)&&lower.getValue(COVERED)!=(units>0))level.setBlock(below,lower.setValue(COVERED,units>0),2);
         }

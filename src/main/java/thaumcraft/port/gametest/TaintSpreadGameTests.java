@@ -28,7 +28,7 @@ public final class TaintSpreadGameTests {
         try{
             level.setBlockAndUpdate(pos,Blocks.OAK_LOG.defaultBlockState().setValue(BlockStateProperties.AXIS,Direction.Axis.X));float before=aura.flux();
             h.assertTrue(TaintSystem.spreadTo(level,pos.west(),pos,new ZeroRandom()),"Hemmed log did not convert");h.assertTrue(level.getBlockState(pos).is(WorldContent.block("taint_log")),"Wrong log conversion");h.assertValueEqual(level.getBlockState(pos).getValue(TaintLogBlock.AXIS),Direction.Axis.X,"Log axis changed");h.assertValueEqual(aura.flux(),before,"Source log conversion unexpectedly consumed flux");
-            for(var pair:new Object[][]{{Blocks.CACTUS,"taint_crust"},{Blocks.PUMPKIN,"taint_crust"},{Blocks.OAK_PLANKS,"taint_crust"},{Blocks.CLAY,"taint_soil"},{Blocks.GRAVEL,"taint_soil"},{Blocks.DIAMOND_ORE,"taint_rock"}}){
+            for(var pair:new Object[][]{{Blocks.PUMPKIN,"taint_crust"},{Blocks.OAK_PLANKS,"taint_crust"},{Blocks.CLAY,"taint_soil"},{Blocks.GRAVEL,"taint_soil"},{Blocks.DIAMOND_ORE,"taint_rock"},{WorldContent.block("stone_porous"),"taint_rock"},{WorldContent.block("grass_ambient"),"taint_soil"}}){
                 level.setBlockAndUpdate(pos,((Block)pair[0]).defaultBlockState());before=aura.flux();h.assertTrue(TaintSystem.spreadTo(level,pos.west(),pos,new ZeroRandom()),"Missing source material conversion: "+pair[0]);h.assertTrue(level.getBlockState(pos).is(WorldContent.block((String)pair[1])),"Wrong taint material");h.assertTrue(Math.abs(aura.flux()-(before-.01f))<.0002f,"Conversion flux cost differs from .01");
             }
             level.setBlockAndUpdate(pos,Blocks.WHITE_WOOL.defaultBlockState());h.assertFalse(TaintSystem.spreadTo(level,pos.west(),pos,new ZeroRandom()),"Source cloth was wrongly treated as wood");
@@ -49,7 +49,7 @@ public final class TaintSpreadGameTests {
         var level=h.getLevel();var livingSeed=seed(h,new BlockPos(8,5,8));var pos=h.absolutePos(new BlockPos(6,3,6));hem(h,pos);
         var rule=level.getGameRules().getRule(GameRules.RULE_MOBGRIEFING);boolean old=rule.get();
         try{
-            h.assertTrue(TaintSystem.hemmedByTaint(level,pos),"One tainted neighbour among solids should hem the target");level.removeBlock(pos.east(),false);h.assertFalse(TaintSystem.hemmedByTaint(level,pos),"One open face must cancel one tainted face");level.setBlockAndUpdate(pos.east(),Blocks.STONE.defaultBlockState());
+            h.assertTrue(TaintSystem.hemmedByTaint(level,pos),"One tainted neighbour among solids should hem the target");level.setBlockAndUpdate(pos.west(),WorldContent.block("flux_goo").defaultBlockState());h.assertTrue(TaintSystem.hemmedByTaint(level,pos),"Flux goo must count as source taint material");level.setBlockAndUpdate(pos.west(),WorldContent.block("taint_rock").defaultBlockState());level.removeBlock(pos.east(),false);h.assertFalse(TaintSystem.hemmedByTaint(level,pos),"One open face must cancel one tainted face");level.setBlockAndUpdate(pos.east(),Blocks.STONE.defaultBlockState());
             for(var block:new Block[]{Blocks.WATER,Blocks.CHEST,Blocks.BEDROCK,Blocks.OBSIDIAN}){level.setBlockAndUpdate(pos,block.defaultBlockState());h.assertFalse(TaintSystem.spreadTo(level,pos.west(),pos,new ZeroRandom()),"Spread replaced protected target "+block);h.assertTrue(level.getBlockState(pos).is(block),"Protected block changed");}
             rule.set(false,level.getServer());level.setBlockAndUpdate(pos,Blocks.STONE.defaultBlockState());h.assertFalse(TaintSystem.spreadTo(level,pos.west(),pos,new ZeroRandom()),"Spread ignored mobGriefing");
         }finally{rule.set(old,level.getServer());livingSeed.discard();}h.succeed();
@@ -88,6 +88,16 @@ public final class TaintSpreadGameTests {
         var tool=new ItemStack(Items.DIAMOND_PICKAXE);tool.enchant(level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE),4);
         var drops=Block.getDrops(state,level,pos,null,null,tool);h.assertValueEqual(drops.size(),1,"Fortune IV should guarantee the growth3 crystal");h.assertTrue(drops.getFirst().is(CrystalItem.stack(Aspect.FLUX).getItem()),"Wrong growth crystal item");
         var aura=AuraSystem.get(level,pos);float before=aura.flux();state.spawnAfterBreak(level,pos,tool,true);h.assertTrue(Math.abs(aura.flux()-before-1)<.0001,"Harvest did not pollute aura by one");aura.drain(true,1,false);h.succeed();
+    }
+    @GameTest(template="elemental_tools_empty",timeoutTicks=40)
+    public static void taintedSoilAtTheSeedFringeCreatesARealSeedAndConsumesFiveFlux(GameTestHelper h){
+        int oldRadius=WorldConfig.TAINT_SPREAD_AREA.get();WorldConfig.TAINT_SPREAD_AREA.set(10);var level=h.getLevel();var parent=seed(h,new BlockPos(3,3,3));var pos=parent.blockPosition().east(9);
+        var aura=AuraSystem.get(level,pos);float before=aura.flux();aura.drain(true,Float.MAX_VALUE,false);aura.addFlux(10);
+        try{
+            level.setBlockAndUpdate(pos,WorldContent.block("taint_soil").defaultBlockState());level.removeBlock(pos.above(),false);level.removeBlock(pos.above(2),false);
+            h.assertTrue(TaintSystem.spreadTo(level,pos.west(),pos,new ZeroRandom()),"Tainted soil failed to propagate a seed at the fringe");
+            var children=level.getEntitiesOfClass(TaintSeed.class,new net.minecraft.world.phys.AABB(pos.above()).inflate(2),seed->seed!=parent&&seed.isAlive());h.assertValueEqual(children.size(),1,"Fringe seed count");h.assertValueEqual(aura.flux(),5f,"New seed flux debit");children.forEach(TaintSeed::discard);
+        }finally{parent.discard();WorldConfig.TAINT_SPREAD_AREA.set(oldRadius);aura.drain(true,Float.MAX_VALUE,false);aura.addFlux(before);}h.succeed();
     }
     private TaintSpreadGameTests(){}
 }

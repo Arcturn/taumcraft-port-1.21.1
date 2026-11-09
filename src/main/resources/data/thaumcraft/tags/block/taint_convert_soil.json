@@ -22,6 +22,10 @@
     "minecraft:purple_concrete_powder",
     "minecraft:red_concrete_powder",
     "minecraft:white_concrete_powder",
-    "minecraft:yellow_concrete_powder"
+    "minecraft:yellow_concrete_powder",
+    "thaumcraft:grass_ambient",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    "minecraft:hay_block"
   ]
 }

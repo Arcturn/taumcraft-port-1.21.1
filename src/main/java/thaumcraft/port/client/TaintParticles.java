@@ -58,13 +58,13 @@ public final class TaintParticles {
     private static final class GooBubble extends TextureSheetParticle {
         private final float size;
         GooBubble(ClientLevel level,double x,double y,double z){super(level,x,y,z);lifetime=2+random.nextInt(3);quadSize=size=(random.nextFloat()*.3f+.2f)*.1f;setColor(1,0,.5f);alpha=.25f;gravity=-.01f;}
-        private int cell(){return age>=lifetime-2?65+Math.max(0,age-(lifetime-2)):64;}
+        private int cell(){return age>lifetime-2?(age>=lifetime?65:66):64;}
         @Override protected float getU0(){return cell()%64/64f;}
         @Override protected float getU1(){return getU0()+1/64f;}
         @Override protected float getV0(){return cell()/64/64f;}
         @Override protected float getV1(){return getV0()+1/64f;}
         @Override public ParticleRenderType getRenderType(){return SalisMundusParticle.legacyLayer(true);}
-        @Override public void tick(){xd+=(random.nextDouble()-.5)*.001;yd+=(random.nextDouble()-.5)*.001;zd+=(random.nextDouble()-.5)*.001;super.tick();quadSize=size;alpha=.25f;}
+        @Override public void tick(){super.tick();xd+=random.nextGaussian()*.001;yd+=random.nextGaussian()*.001;zd+=random.nextGaussian()*.001;quadSize=size;alpha=.25f;}
     }
     private static final ParticleRenderType DEBRIS_LAYER=new ParticleRenderType(){
         @Override public BufferBuilder begin(Tesselator tessellator,TextureManager textures){RenderSystem.depthMask(false);RenderSystem.enableBlend();RenderSystem.defaultBlendFunc();RenderSystem.setShader(SalisMundusParticle::legacyShader);RenderSystem.setShaderTexture(0,TextureAtlas.LOCATION_BLOCKS);return tessellator.begin(VertexFormat.Mode.QUADS,DefaultVertexFormat.PARTICLE);}

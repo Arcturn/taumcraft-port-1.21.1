@@ -1,20 +1,5 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "thaumcraft:block/void_siphon",
-      "y": 0
-    },
-    "facing=east": {
-      "model": "thaumcraft:block/void_siphon",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "thaumcraft:block/void_siphon",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "thaumcraft:block/void_siphon",
-      "y": 270
-    }
+    "": { "model": "thaumcraft:block/void_siphon" }
   }
 }
