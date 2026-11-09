@@ -26,8 +26,8 @@ public final class BossContent {
             .sized(1.5f, 3f).eyeHeight(1.5f).fireImmune().clientTrackingRange(8).updateInterval(20).build("thaumcraft:cultist_portal_greater"));
     public static final Supplier<EntityType<GiantTaintacle>> GIANT_TAINTACLE = TYPES.register("giant_taintacle", () -> EntityType.Builder.<GiantTaintacle>of(GiantTaintacle::new, MobCategory.MONSTER)
             .sized(1.1f, 6f).eyeHeight(5.1f).clientTrackingRange(12).updateInterval(3).build("thaumcraft:giant_taintacle"));
-    public static final Supplier<EntityType<GolemOrb>> GOLEM_ORB = TYPES.register("golem_orb", () -> EntityType.Builder.<GolemOrb>of(GolemOrb::new, MobCategory.MISC)
-            .sized(.25f, .25f).clientTrackingRange(8).updateInterval(3).build("thaumcraft:golem_orb"));
+    public static final Supplier<EntityType<GolemOrb>> GOLEM_ORB = TYPES.register("eldritch_golem_orb", () -> EntityType.Builder.<GolemOrb>of(GolemOrb::new, MobCategory.MISC)
+            .sized(.25f, .25f).clientTrackingRange(8).updateInterval(3).build("thaumcraft:eldritch_golem_orb"));
 
     public static final DeferredItem<SpawnEggItem> ELDRITCH_GOLEM_EGG = egg("eldritch_golem", ELDRITCH_GOLEM, 6842578, 0x888888);
     public static final DeferredItem<SpawnEggItem> ELDRITCH_WARDEN_EGG = egg("eldritch_warden", ELDRITCH_WARDEN, 6842578, 0x808080);

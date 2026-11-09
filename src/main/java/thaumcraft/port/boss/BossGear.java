@@ -55,10 +55,13 @@ public final class BossGear {
         }
         @Override public boolean hurtEnemy(ItemStack stack,LivingEntity victim,LivingEntity attacker){
             if(!victim.level().isClientSide&&(!(victim instanceof Player target)||!(attacker instanceof Player player)||player.canHarmPlayer(target))){
-                victim.addEffect(new MobEffectInstance(MobEffects.WEAKNESS,crimson?60:80));
+                victim.addEffect(new MobEffectInstance(MobEffects.WEAKNESS,60));
                 if(crimson)victim.addEffect(new MobEffectInstance(MobEffects.HUNGER,120));
             }
             return super.hurtEnemy(stack,victim,attacker);
+        }
+        @Override public void appendHoverText(ItemStack stack,TooltipContext context,List<net.minecraft.network.chat.Component> tooltip,TooltipFlag flag){
+            super.appendHoverText(stack,context,tooltip,flag);tooltip.add(net.minecraft.network.chat.Component.translatable(crimson?"enchantment.special.sapgreat":"enchantment.special.sapless").withStyle(net.minecraft.ChatFormatting.GOLD));
         }
     }
     private BossGear(){}

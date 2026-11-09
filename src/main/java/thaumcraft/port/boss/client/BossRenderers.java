@@ -88,7 +88,7 @@ public final class BossRenderers {
             float bob=Mth.sin(e.tickCount/(5-12*damage))*damage+damage,bob2=Mth.sin(e.tickCount/(6-15*damage))*damage+damage;
             height-=bob/4;width-=bob2/3;float alpha=1-bob;
             pose.pushPose();pose.translate(0,e.getBbHeight()/2,0);pose.mulPose(entityRenderDispatcher.cameraOrientation());
-            int frame=15-(int)(e.level().getGameTime()%16);quad(pose,buffers.getBuffer(PORTAL_LAYER),width,height,frame/16f,(frame+1)/16f,0,1,(int)(255*alpha)<<24|0xffffff,220);
+            int frame=15-(int)(e.level().getGameTime()%16);quad(pose,buffers.getBuffer(PORTAL_LAYER),width,height,(frame+1)/16f,frame/16f,1,0,(int)(255*alpha)<<24|0xffffff,220);
             pose.popPose();super.render(e,yaw,partial,pose,buffers,light);
         }
     }

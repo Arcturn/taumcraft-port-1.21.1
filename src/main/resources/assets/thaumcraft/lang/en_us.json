@@ -4214,7 +4214,7 @@
   "block.thaumcraft.golem_builder": "Golem Press",
   "entity.thaumcraft.golem": "Golem",
   "entity.thaumcraft.golem_dart": "Golem Dart",
-  "entity.thaumcraft.golem_orb": "Construct Orb",
+  "entity.thaumcraft.golem_orb": "Energy Orb",
   "entity.thaumcraft.eldritch_guardian": "Eldritch Guardian",
   "entity.thaumcraft.mind_spider": "Mind Spider",
   "entity.thaumcraft.eldritch_orb": "Eldritch Orb",
@@ -4258,5 +4258,6 @@
   "item.thaumcraft.loot_bag_rare": "Rare Treasure",
   "block.thaumcraft.banner_crimson_cult": "Crimson Cult Banner",
   "item.thaumcraft.void_boots": "Void Boots",
-  "entity.thaumcraft.cultist_leader.custom": "Praetor %s the %s"
+  "entity.thaumcraft.cultist_leader.custom": "Praetor %s the %s",
+  "entity.thaumcraft.eldritch_golem_orb": "Eldritch Construct Orb"
 }

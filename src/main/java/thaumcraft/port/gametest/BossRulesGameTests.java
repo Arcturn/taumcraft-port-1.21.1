@@ -26,9 +26,9 @@ public final class BossRulesGameTests {
     public static void threatSwitchesToTheActualStrongerAttacker(GameTestHelper h){
         var origin=h.absolutePos(new BlockPos(3,3,3));var boss=new TestBoss(h.getLevel());boss.setPos(origin.getX(),origin.getY(),origin.getZ());
         var first=h.spawn(net.minecraft.world.entity.EntityType.COW,new BlockPos(3,3,4));var second=h.spawn(net.minecraft.world.entity.EntityType.COW,new BlockPos(4,3,4));first.setNoAi(true);second.setNoAi(true);
-        boss.setTarget(first);boss.hurt(boss.damageSources().mobAttack(first),5);boss.invulnerableTime=0;boss.hurt(boss.damageSources().mobAttack(second),34);boss.tickCount=19;boss.tick();
+        boss.setTarget(first);boss.hurt(boss.damageSources().mobAttack(first),5);boss.invulnerableTime=0;boss.hurt(boss.damageSources().mobAttack(second),34);boss.tickCount=20;boss.tick();
         h.assertTrue(boss.getTarget()==second,"Threat lookup retained the old attacker instead of the stronger one");
-        second.discard();boss.tickCount=39;boss.tick();h.assertTrue(boss.getTarget()==null||boss.getTarget()!=second,"Removed threat target remained active");first.discard();h.succeed();
+        second.discard();boss.tickCount=40;boss.tick();h.assertTrue(boss.getTarget()==null||boss.getTarget()!=second,"Removed threat target remained active");first.discard();h.succeed();
     }
     @GameTest(template="elemental_tools_empty",timeoutTicks=40)
     public static void bossCapsBurstDamageAndEnragesWithTheSourceEffects(GameTestHelper h){
@@ -45,7 +45,7 @@ public final class BossRulesGameTests {
         var boss=new TestBoss(h.getLevel());boss.spawning(2);float hp=boss.getHealth();
         h.assertFalse(boss.hurt(boss.damageSources().generic(),10),"Spawning boss took damage");h.assertFalse(boss.isPushable(),"Spawning boss was pushable");
         boss.tick();boss.tick();h.assertValueEqual(boss.getSpawnTimer(),0,"Spawn timer stalled");h.assertValueEqual(boss.getHealth(),hp,"Protected health changed");
-        boss.setHealth(hp-10);boss.tickCount=29;boss.tick();h.assertValueEqual(boss.getHealth(),hp-9,"Source passive regeneration");h.succeed();
+        boss.setHealth(hp-10);boss.tickCount=30;boss.tick();h.assertValueEqual(boss.getHealth(),hp-9,"Source passive regeneration");h.succeed();
     }
     @GameTest(template="elemental_tools_empty",timeoutTicks=40)
     public static void bossHomeSurvivesReloadWithoutDistanceDespawn(GameTestHelper h){

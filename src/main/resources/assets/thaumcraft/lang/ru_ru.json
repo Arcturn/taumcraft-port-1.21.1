@@ -4201,7 +4201,7 @@
   "block.thaumcraft.golem_builder": "Пресс големов",
   "entity.thaumcraft.golem": "Голем",
   "entity.thaumcraft.golem_dart": "Дротик голема",
-  "entity.thaumcraft.golem_orb": "Сфера конструкции",
+  "entity.thaumcraft.golem_orb": "Энергетическая сфера",
   "entity.thaumcraft.eldritch_guardian": "Потусторонний страж",
   "entity.thaumcraft.mind_spider": "Призрачный паук",
   "entity.thaumcraft.eldritch_orb": "Потусторонняя сфера",
@@ -4245,5 +4245,6 @@
   "item.thaumcraft.loot_bag_rare": "Редкое сокровище",
   "block.thaumcraft.banner_crimson_cult": "Знамя багрового культа",
   "item.thaumcraft.void_boots": "Пустотные ботинки",
-  "entity.thaumcraft.cultist_leader.custom": "Претор %s — %s"
+  "entity.thaumcraft.cultist_leader.custom": "Претор %s — %s",
+  "entity.thaumcraft.eldritch_golem_orb": "Сфера потусторонней конструкции"
 }

@@ -30,6 +30,7 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import thaumcraft.port.content.PortSounds;
 import thaumcraft.port.warp.entity.EldritchMob;
+import thaumcraft.port.world.LootContainerBlock;
 
 /** BETA26's two-stage golem: losing its head opens a recharging homing-orb cannon. */
 public final class EldritchGolem extends ThaumcraftBoss implements EldritchMob,RangedAttackMob {
@@ -80,8 +81,9 @@ public final class EldritchGolem extends ThaumcraftBoss implements EldritchMob,R
     @Override public void aiStep(){
         super.aiStep();if(attackTimer>0)--attackTimer;
         BlockPos pos=blockPosition();BlockState state=level().getBlockState(pos);
-        if(getDeltaMovement().horizontalDistanceSqr()>2.500000277905201E-7&&random.nextInt(5)==0&&level().isClientSide&&!state.isAir()){
-            level().addParticle(new BlockParticleOption(ParticleTypes.BLOCK,state),getX()+(random.nextFloat()-.5)*getBbWidth(),getBoundingBox().minY+.1,getZ()+(random.nextFloat()-.5)*getBbWidth(),4*(random.nextFloat()-.5),.5,4*(random.nextFloat()-.5));
+        if(getDeltaMovement().horizontalDistanceSqr()>2.500000277905201E-7&&random.nextInt(5)==0){
+            if(level().isClientSide&&!state.isAir())level().addParticle(new BlockParticleOption(ParticleTypes.BLOCK,state),getX()+(random.nextFloat()-.5)*getBbWidth(),getBoundingBox().minY+.1,getZ()+(random.nextFloat()-.5)*getBbWidth(),4*(random.nextFloat()-.5),.5,4*(random.nextFloat()-.5));
+            else if(!level().isClientSide&&level().getGameRules().getBoolean(GameRules.RULE_MOBGRIEFING)&&state.getBlock() instanceof LootContainerBlock)level().destroyBlock(pos,true,this);
         }
         if(!level().isClientSide&&level().getGameRules().getBoolean(GameRules.RULE_MOBGRIEFING)&&!state.isAir()&&!state.hasBlockEntity()){
             float hardness=state.getDestroySpeed(level(),pos);

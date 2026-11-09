@@ -72,7 +72,7 @@ public final class ChampionSystem {
         add(mob,ChampionContent.MODIFIER,id(ChampionModifier.TAINTED.legacyUuid),15,AttributeModifier.Operation.ADD_VALUE);
         if(!(mob instanceof ChampionBoss)){
             add(mob,Attributes.MAX_HEALTH,TAINT_HEALTH,25,AttributeModifier.Operation.ADD_VALUE);
-            if(!(mob instanceof Monster))mob.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(Math.max(2,(mob.getBbHeight()+mob.getBbWidth())*2));
+            if(!ChampionContent.hadAttackAttribute(mob.getType()))mob.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(Math.max(2,(mob.getBbHeight()+mob.getBbWidth())*2));
             else add(mob,Attributes.ATTACK_DAMAGE,TAINT_DAMAGE,.5,AttributeModifier.Operation.ADD_VALUE);
             mob.heal(25);
         }else ((ChampionBoss)mob).generateName();
@@ -133,9 +133,15 @@ public final class ChampionSystem {
         });
     }
     private static float applyCombatEffects(LivingEntity victim,DamageSource source,float amount){
-        if(victim instanceof Monster mob&&source.getEntity() instanceof LivingEntity attacker){
+        if(amount<=0)return amount;
+        if(victim instanceof PathfinderMob creature&&creature.getHealth()<2&&creature.isAlive()
+            &&!creature.getType().is(net.minecraft.tags.EntityTypeTags.UNDEAD)&&!(creature instanceof thaumcraft.port.artifice.construct.OwnedConstruct)
+            &&!(creature instanceof TaintedMob)&&creature.hasEffect(thaumcraft.port.world.WorldEntities.TAINT)&&creature.getRandom().nextBoolean()){
+            makeTainted(creature);return amount;
+        }
+        if(victim instanceof Monster mob&&source.getEntity() instanceof LivingEntity attacker&&!(mob instanceof thaumcraft.port.warp.entity.EldritchMob&&mob.getAbsorptionAmount()>0)){
             switch(getModifier(mob)){
-                case 1->{if(!source.is(DamageTypes.THORNS)){attacker.hurt(mob.damageSources().thorns(mob),1+mob.getRandom().nextInt(3));attacker.playSound(net.minecraft.sounds.SoundEvents.ENCHANT_THORNS_HIT,.5f,1);}}
+                case 1->{if(!source.is(DamageTypes.THORNS)){attacker.hurt(mob.damageSources().thorns(mob),1+mob.getRandom().nextInt(3));attacker.playSound(net.minecraft.sounds.SoundEvents.THORNS_HIT,.5f,1);}}
                 case 2->{if(!source.is(DamageTypeTags.BYPASSES_ARMOR))amount=amount*19/25;}
                 case 12->{if(mob.getRandom().nextFloat()<.4f){var crawler=MobContent.CRAWLER.get().create(mob.level());if(crawler!=null){crawler.moveTo(mob.getX(),mob.getY()+mob.getBbHeight()/2,mob.getZ(),mob.getRandom().nextFloat()*360,0);mob.level().addFreshEntity(crawler);mob.playSound(PortSounds.get("gore"),.5f,1);}}}
                 default->{}

@@ -29,9 +29,14 @@ public final class BossLoot {
     public static ItemStack bag(int quality){return new ItemStack((quality==2?RARE:quality==1?UNCOMMON:COMMON).get());}
     public static ItemStack lootBag(int quality){return bag(quality);}
     private record Entry(ItemStack stack,int weight){}
+    private static final List<List<Entry>> POOLS=new ArrayList<>();
     private static ItemStack item(String path){return new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("thaumcraft:"+path)));}
     private static void add(List<Entry> pool,ItemStack stack,int weight){if(!stack.isEmpty())pool.add(new Entry(stack,weight));}
     private static List<Entry> pool(int quality){
+        if(POOLS.isEmpty())for(int i=0;i<3;i++)POOLS.add(buildPool(i));
+        return POOLS.get(quality);
+    }
+    private static List<Entry> buildPool(int quality){
         var pool=new ArrayList<Entry>();
         add(pool,new ItemStack(Items.GOLD_NUGGET,quality+1),2500-quality*250);
         add(pool,item("salis_mundus"),3*(quality+1));
