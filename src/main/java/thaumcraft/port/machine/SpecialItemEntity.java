@@ -9,7 +9,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import thaumcraft.port.world.WorldEntities;
 
-/** TC6's floating, fire-resistant crafted item, kept separate from crucible inputs. */
+/** TC6's floating, explosion-resistant special item, kept separate from crucible inputs. */
 public final class SpecialItemEntity extends ItemEntity {
     public static final String CRUCIBLE_OUTPUT_TAG = "thaumcraft_crucible_output";
 
@@ -39,6 +39,6 @@ public final class SpecialItemEntity extends ItemEntity {
 
     @Override
     public boolean hurt(DamageSource source, float amount) {
-        return !source.is(DamageTypeTags.IS_FIRE) && super.hurt(source, amount);
+        return !source.is(DamageTypeTags.IS_EXPLOSION) && super.hurt(source, amount);
     }
 }

@@ -83,6 +83,14 @@ public final class AspectTags {
             return Map.of(Aspect.MECHANISM,10,Aspect.MAN,10,Aspect.MOTION,10);
         if (entity instanceof thaumcraft.port.warp.entity.MindSpider)
             return Map.of(Aspect.FLUX,5,Aspect.FIRE,5);
+        if (entity instanceof thaumcraft.port.boss.EldritchWarden)
+            return Map.of(Aspect.ELDRITCH,40,Aspect.DEATH,40,Aspect.UNDEAD,40);
+        if (entity instanceof thaumcraft.port.boss.EldritchGolem)
+            return Map.of(Aspect.ELDRITCH,40,Aspect.ENERGY,40,Aspect.MECHANISM,40);
+        if (entity instanceof thaumcraft.port.boss.CultistLeader)
+            return Map.of(Aspect.ELDRITCH,40,Aspect.AVERSION,40,Aspect.MAN,40);
+        if (entity instanceof thaumcraft.port.boss.GiantTaintacle)
+            return Map.of(Aspect.ELDRITCH,40,Aspect.BEAST,40,Aspect.FLUX,40);
         if (entity instanceof thaumcraft.port.warp.entity.EldritchGuardian)
             return Map.of(Aspect.ELDRITCH,20,Aspect.DEATH,20,Aspect.UNDEAD,20);
         if (entity instanceof thaumcraft.port.mob.GiantBrainyZombie)

@@ -6,7 +6,7 @@ public final class WorldConfig {
     public static final ModConfigSpec SPEC;
     public static final ModConfigSpec.BooleanValue ORES, CRYSTALS, TREES, STRUCTURES, PORTALS, AURA, MAGIC_FOREST, RIFTS, TAINT;
     public static final ModConfigSpec.BooleanValue NO_SLEEP;
-    public static final ModConfigSpec.BooleanValue BRAINY_ZOMBIES;
+    public static final ModConfigSpec.BooleanValue BRAINY_ZOMBIES, CHAMPION_MOBS;
     public static final ModConfigSpec.IntValue DENSITY, FOREST_WEIGHT;
     static {
         var b = new ModConfigSpec.Builder();
@@ -23,6 +23,7 @@ public final class WorldConfig {
         NO_SLEEP=b.comment("Give the dream journal on first crystal pickup instead of requiring sleep, as in TC6.").define("noSleep",false);
         b.pop().push("mobs");
         BRAINY_ZOMBIES=b.comment("Allow angry zombies to spawn naturally in eligible Overworld biomes, as in TC6.").define("brainyZombies",true);
+        CHAMPION_MOBS=b.comment("Allow champion mobs. Dangerous places retain a reduced chance when disabled, as in TC6.").define("championMobs",true);
         b.pop(); SPEC=b.build();
     }
     private WorldConfig() {}

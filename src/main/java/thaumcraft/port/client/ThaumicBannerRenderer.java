@@ -14,6 +14,7 @@ import thaumcraft.port.infusion.bauble.*;
 public final class ThaumicBannerRenderer implements BlockEntityRenderer<ThaumicBannerEntity> {
     public static final ModelLayerLocation LAYER=new ModelLayerLocation(ResourceLocation.parse("thaumcraft:banner"),"main");
     private static final ResourceLocation TEXTURE=ResourceLocation.parse("thaumcraft:textures/models/banner_blank.png");
+    private static final ResourceLocation CRIMSON=ResourceLocation.parse("thaumcraft:textures/models/banner_cultist.png");
     private final ModelPart model;
     public ThaumicBannerRenderer(BlockEntityRendererProvider.Context context){model=context.bakeLayer(LAYER);}
     public static LayerDefinition layer(){
@@ -29,15 +30,15 @@ public final class ThaumicBannerRenderer implements BlockEntityRenderer<ThaumicB
     @Override public void render(ThaumicBannerEntity banner,float partial,PoseStack pose,MultiBufferSource buffers,int light,int overlay){
         var state=banner.getBlockState();if(!(state.getBlock() instanceof ThaumicBannerBlock block))return;
         pose.pushPose();pose.translate(.5,1.5,.5);pose.mulPose(Axis.XP.rotationDegrees(180));pose.mulPose(Axis.YP.rotationDegrees(180+state.getValue(ThaumicBannerBlock.ROTATION)*360/16f));
-        var out=buffers.getBuffer(RenderType.entityCutoutNoCull(TEXTURE));
+        var out=buffers.getBuffer(RenderType.entityCutoutNoCull(block.crimson?CRIMSON:TEXTURE));
         if(state.getValue(ThaumicBannerBlock.WALL))pose.translate(0,1,-.4125);else model.getChild("pole").render(pose,out,light,overlay);
         model.getChild("beam").render(pose,out,light,overlay);
-        int color=0xff000000|block.dye.getTextureDiffuseColor();
+        int color=block.crimson?-1:0xff000000|block.dye.getTextureDiffuseColor();
         model.getChild("tab1").render(pose,out,light,overlay,color);model.getChild("tab2").render(pose,out,light,overlay,color);
         var pos=banner.getBlockPos();var player=Minecraft.getInstance().player;
         float phase=pos.getX()*7+pos.getY()*9+pos.getZ()*13+(player==null?0:player.tickCount)+partial;
         float angle=.02f-(float)Math.sin(phase/11)*.02f;var cloth=model.getChild("cloth");cloth.xRot=angle;cloth.render(pose,out,light,overlay,color);
-        if(banner.aspect()!=null){
+        if(!block.crimson&&banner.aspect()!=null){
             pose.translate(0,0,.05001);pose.scale(.0375f,.0375f,.0375f);pose.mulPose(Axis.YP.rotationDegrees(180));pose.mulPose(Axis.XP.rotation(-angle*2));
             var aspect=banner.aspect();var decal=buffers.getBuffer(RenderType.entityTranslucent(ResourceLocation.parse("thaumcraft:textures/aspects/"+aspect.id()+".png")));
             int tint=0xbf000000|aspect.color();float[][] vertices={{-8,0,0,0},{-8,16,0,1},{8,16,1,1},{8,0,1,0}};

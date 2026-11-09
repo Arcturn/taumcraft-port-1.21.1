@@ -25,6 +25,7 @@ public final class SapBlock extends Block {
             living.addEffect(new MobEffectInstance(MobEffects.HUNGER,40,1,true,true));
         }
     }
+    @Override protected void tick(BlockState state,ServerLevel level,BlockPos pos,RandomSource random){level.removeBlock(pos,false);}
     @Override protected void randomTick(BlockState state,ServerLevel level,BlockPos pos,RandomSource random){level.removeBlock(pos,false);}
     @Override public void animateTick(BlockState state,Level level,BlockPos pos,RandomSource random){FocusEffectVisuals.sapAmbient.accept(level,pos);}
 }

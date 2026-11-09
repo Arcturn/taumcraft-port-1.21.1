@@ -205,7 +205,7 @@ public final class CrucibleGameTests {
     }
 
     @GameTest(template = "empty", timeoutTicks = 80)
-    public static void craftedEntityRetainsItsTypeFireImmunityAndFloatingMotionAfterSave(GameTestHelper helper) {
+    public static void craftedEntityRetainsItsTypeExplosionImmunityAndFloatingMotionAfterSave(GameTestHelper helper) {
         var be = fixture(helper);
         var item = new SpecialItemEntity(helper.getLevel(), be.getBlockPos().getX() + .5,
                 be.getBlockPos().getY() + .71, be.getBlockPos().getZ() + .5, new ItemStack(Items.GOLD_INGOT, 3));
@@ -225,8 +225,10 @@ public final class CrucibleGameTests {
                         + ", motion=" + item.getDeltaMovement() + ", tickCount=" + item.tickCount
                         + ", noGravity=" + item.isNoGravity() + ", removed=" + item.isRemoved()
                         + ", onGround=" + item.onGround() + ", fluid=" + item.getMaxHeightFluidType());
-        helper.assertFalse(item.hurt(helper.getLevel().damageSources().lava(), 5), "Lava damaged a crafted special item");
-        helper.assertFalse(item.hurt(helper.getLevel().damageSources().inFire(), 5), "Fire damaged a crafted special item");
+        var explosion = new net.minecraft.world.damagesource.DamageSource(helper.getLevel().registryAccess()
+                .registryOrThrow(net.minecraft.core.registries.Registries.DAMAGE_TYPE)
+                .getHolderOrThrow(net.minecraft.world.damagesource.DamageTypes.EXPLOSION));
+        helper.assertFalse(item.hurt(explosion, 20), "Explosion damaged a crafted special item");
 
         var saved = new CompoundTag();
         helper.assertTrue(item.save(saved), "Crafted entity could not be serialized with its registered type");
@@ -237,8 +239,10 @@ public final class CrucibleGameTests {
                 "Crafted stack was changed during entity save/load");
         helper.assertTrue(restored.getTags().contains(SpecialItemEntity.CRUCIBLE_OUTPUT_TAG),
                 "Crafted output protection was lost on save/load");
-        helper.assertFalse(restored.hurt(helper.getLevel().damageSources().lava(), 5),
-                "Reloaded crafted entity lost its fire immunity");
+        helper.assertFalse(restored.hurt(explosion, 20),
+                "Reloaded crafted entity lost its explosion immunity");
+        helper.assertTrue(restored.hurt(helper.getLevel().damageSources().lava(), 5),
+                "Special item incorrectly retained the previous port's fire immunity");
         item.discard();
         restored.discard();
         helper.succeed();

@@ -24,7 +24,9 @@ public final class ThaumicBannerBlock extends Block implements EntityBlock {
     public static final BooleanProperty WALL=BooleanProperty.create("wall");
     public static final IntegerProperty ROTATION=BlockStateProperties.ROTATION_16;
     public final DyeColor dye;
-    public ThaumicBannerBlock(DyeColor dye,Properties properties){super(properties);this.dye=dye;registerDefaultState(stateDefinition.any().setValue(WALL,false).setValue(ROTATION,0));}
+    public final boolean crimson;
+    public ThaumicBannerBlock(DyeColor dye,Properties properties){this(dye,false,properties);}
+    public ThaumicBannerBlock(DyeColor dye,boolean crimson,Properties properties){super(properties);this.dye=dye;this.crimson=crimson;registerDefaultState(stateDefinition.any().setValue(WALL,false).setValue(ROTATION,0));}
     @Override protected void createBlockStateDefinition(StateDefinition.Builder<Block,BlockState> builder){builder.add(WALL,ROTATION);}
     @Override public BlockState getStateForPlacement(BlockPlaceContext context){
         Direction face=context.getClickedFace();if(face==Direction.DOWN)return null;
@@ -42,7 +44,7 @@ public final class ThaumicBannerBlock extends Block implements EntityBlock {
     }
     @Override protected InteractionResult useWithoutItem(BlockState state,Level level,BlockPos pos,Player player,BlockHitResult hit){apply(level,pos,player,ItemStack.EMPTY);return InteractionResult.sidedSuccess(level.isClientSide);}
     public static void apply(Level level,BlockPos pos,Player player,ItemStack held){
-        if(level.isClientSide||!(level.getBlockEntity(pos) instanceof ThaumicBannerEntity banner)||!player.isShiftKeyDown()&&!held.is(EssentiaContent.PHIAL.get()))return;
+        if(level.isClientSide||level.getBlockState(pos).getBlock() instanceof ThaumicBannerBlock block&&block.crimson||!(level.getBlockEntity(pos) instanceof ThaumicBannerEntity banner)||!player.isShiftKeyDown()&&!held.is(EssentiaContent.PHIAL.get()))return;
         if(player.isShiftKeyDown())banner.setAspect(null);else{var aspect=EssentiaItem.aspect(held);if(aspect!=null){banner.setAspect(aspect);held.shrink(1);}}
         level.playSound(null,pos,SoundEvents.WOOL_HIT,SoundSource.BLOCKS,1,1);
     }

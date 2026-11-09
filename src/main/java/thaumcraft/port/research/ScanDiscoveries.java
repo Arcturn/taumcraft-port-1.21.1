@@ -103,6 +103,7 @@ public final class ScanDiscoveries {
     public static Set<String> entityTypeFlags(Class<? extends net.minecraft.world.entity.Entity> type,net.minecraft.resources.ResourceLocation id) {
         var flags=new LinkedHashSet<>(subjectFlags("entity:"+id));
         if(thaumcraft.port.warp.entity.EldritchMob.class.isAssignableFrom(type))flags.add("!ORMOB");
+        if(thaumcraft.port.boss.ThaumcraftBoss.class.isAssignableFrom(type))flags.add("!ORBOSS");
         if(thaumcraft.port.mob.BrainyZombie.class.isAssignableFrom(type)){flags.add("!BrainyZombie");flags.add("f_BRAIN");}
         if(thaumcraft.port.mob.EldritchCrab.class.isAssignableFrom(type)||thaumcraft.port.mob.InhabitedZombie.class.isAssignableFrom(type))flags.add("!EldritchCrab");
         if(thaumcraft.port.mob.TaintCrawler.class.isAssignableFrom(type))flags.add("!TaintCrawler");

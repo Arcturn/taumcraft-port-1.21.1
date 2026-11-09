@@ -28,7 +28,9 @@ public final class InfusionBaubles {
             BANNERS.put(color,block);PortContent.ITEMS.registerItem(name,p->new ThaumicBannerItem(block.get(),p));
         }
     }
-    public static final Supplier<BlockEntityType<ThaumicBannerEntity>> BANNER_ENTITY=ENTITIES.register("banner",()->BlockEntityType.Builder.of(ThaumicBannerEntity::new,BANNERS.values().stream().map(Supplier::get).toArray(Block[]::new)).build(null));
+    public static final DeferredBlock<ThaumicBannerBlock> CRIMSON_BANNER=PortContent.BLOCKS.register("banner_crimson_cult",()->new ThaumicBannerBlock(DyeColor.RED,true,BlockBehaviour.Properties.of().strength(1).sound(SoundType.WOOD).noOcclusion().noCollission()));
+    static {PortContent.ITEMS.registerItem("banner_crimson_cult",p->new ThaumicBannerItem(CRIMSON_BANNER.get(),p));}
+    public static final Supplier<BlockEntityType<ThaumicBannerEntity>> BANNER_ENTITY=ENTITIES.register("banner",()->BlockEntityType.Builder.of(ThaumicBannerEntity::new,java.util.stream.Stream.concat(BANNERS.values().stream().map(Supplier::get),java.util.stream.Stream.of(CRIMSON_BANNER.get())).toArray(Block[]::new)).build(null));
     public static final Supplier<BlockEntityType<BarrierStoneEntity>> BARRIER_STONE_ENTITY=ENTITIES.register("barrier_stone",()->BlockEntityType.Builder.of(BarrierStoneEntity::new,PAVING_STONE_BARRIER.get()).build(null));
     private static DeferredBlock<PavingStoneBlock> paving(String name,boolean barrier){var block=PortContent.BLOCKS.register(name,()->new PavingStoneBlock(barrier,BlockBehaviour.Properties.of().strength(2.5f).sound(SoundType.STONE).noOcclusion()));PortContent.ITEMS.registerSimpleBlockItem(name,block);return block;}
     public static void register(IEventBus bus){ENTITIES.register(bus);bus.addListener(CloudJumpPayload::register);}

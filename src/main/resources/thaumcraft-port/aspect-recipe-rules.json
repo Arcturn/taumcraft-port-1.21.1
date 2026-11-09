@@ -3017,5 +3017,122 @@
     ],
     "line": 558,
     "expression": "ThaumcraftApi.registerComplexObjectTag(new ItemStack(BlocksTC.arcaneEar), new AspectList().add(Aspect.SENSES, 20));"
+  },
+  {
+    "target": "thaumcraft:crimson_plate_chest",
+    "kind": "copy",
+    "source": "minecraft:iron_chestplate",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alienis",
+        "amount": 5
+      }
+    ],
+    "line": 561,
+    "expression": "Original cultist equipment: copy iron counterpart and add eldritch essence."
+  },
+  {
+    "target": "thaumcraft:crimson_praetor_chest",
+    "kind": "copy",
+    "source": "minecraft:iron_chestplate",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alienis",
+        "amount": 10
+      }
+    ],
+    "line": 562,
+    "expression": "Original cultist equipment: copy iron counterpart and add eldritch essence."
+  },
+  {
+    "target": "thaumcraft:crimson_plate_legs",
+    "kind": "copy",
+    "source": "minecraft:iron_leggings",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alienis",
+        "amount": 5
+      }
+    ],
+    "line": 564,
+    "expression": "Original cultist equipment: copy iron counterpart and add eldritch essence."
+  },
+  {
+    "target": "thaumcraft:crimson_praetor_legs",
+    "kind": "copy",
+    "source": "minecraft:iron_leggings",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alienis",
+        "amount": 10
+      }
+    ],
+    "line": 565,
+    "expression": "Original cultist equipment: copy iron counterpart and add eldritch essence."
+  },
+  {
+    "target": "thaumcraft:crimson_plate_helm",
+    "kind": "copy",
+    "source": "minecraft:iron_helmet",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alienis",
+        "amount": 5
+      }
+    ],
+    "line": 567,
+    "expression": "Original cultist equipment: copy iron counterpart and add eldritch essence."
+  },
+  {
+    "target": "thaumcraft:crimson_praetor_helm",
+    "kind": "copy",
+    "source": "minecraft:iron_helmet",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alienis",
+        "amount": 10
+      }
+    ],
+    "line": 568,
+    "expression": "Original cultist equipment: copy iron counterpart and add eldritch essence."
+  },
+  {
+    "target": "thaumcraft:crimson_boots",
+    "kind": "copy",
+    "source": "minecraft:iron_boots",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alienis",
+        "amount": 5
+      }
+    ],
+    "line": 570,
+    "expression": "Original cultist equipment: copy iron counterpart and add eldritch essence."
+  },
+  {
+    "target": "thaumcraft:crimson_blade",
+    "kind": "copy",
+    "source": "minecraft:iron_sword",
+    "operations": [
+      {
+        "op": "add",
+        "aspect": "alienis",
+        "amount": 10
+      },
+      {
+        "op": "add",
+        "aspect": "mortuus",
+        "amount": 10
+      }
+    ],
+    "line": 571,
+    "expression": "Original cultist equipment: copy iron counterpart and add eldritch essence and death essence."
   }
 ]
