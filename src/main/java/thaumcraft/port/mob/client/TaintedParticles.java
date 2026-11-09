@@ -90,13 +90,13 @@ public final class TaintedParticles {
     };
     private static final class TaintDebris extends TextureSheetParticle{
         private final float u,v;
-        TaintDebris(ClientLevel level,double x,double y,double z){super(level,x,y,z,0,0,0);setSprite(Minecraft.getInstance().getItemRenderer().getModel(new ItemStack(Items.SLIME_BALL),level,null,0).getParticleIcon());u=random.nextFloat()*3;v=random.nextFloat()*3;setColor(.4f,0,.4f);gravity=1;quadSize*=.25f;lifetime=(int)(66/(random.nextFloat()*.9f+.1f));}
+        TaintDebris(ClientLevel level,double x,double y,double z){super(level,x,y,z,0,0,0);setSprite(Minecraft.getInstance().getItemRenderer().getModel(new ItemStack(Items.SLIME_BALL),level,null,0).getParticleIcon());u=random.nextFloat()*3;v=random.nextFloat()*3;setColor(.4f,0,.4f);gravity=1;quadSize*=.5f;alpha=.5f;lifetime=(int)(66/(random.nextFloat()*.9f+.1f));}
         @Override protected float getU0(){return sprite.getU(u/4);}
         @Override protected float getU1(){return sprite.getU((u+1)/4);}
         @Override protected float getV0(){return sprite.getV(v/4);}
         @Override protected float getV1(){return sprite.getV((v+1)/4);}
         @Override public ParticleRenderType getRenderType(){return DEBRIS_LAYER;}
-        @Override public void render(VertexConsumer out,Camera camera,float partial){alpha=1-age/(float)lifetime;super.render(out,camera,partial);}
+        @Override public void render(VertexConsumer out,Camera camera,float partial){alpha=.5f*(1-age/(float)lifetime);super.render(out,camera,partial);}
     }
     private TaintedParticles(){}
 }

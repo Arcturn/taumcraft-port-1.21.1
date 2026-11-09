@@ -14,6 +14,7 @@ import net.minecraft.world.entity.ai.attributes.*;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.phys.Vec3;
 import thaumcraft.port.aspect.Aspect;
@@ -38,6 +39,9 @@ public final class TaintSwarm extends Monster implements TaintedMob {
     @Override public boolean isAlliedTo(Entity other){return other instanceof TaintedMob||super.isAlliedTo(other);}
     @Override public void setTarget(LivingEntity target){super.setTarget(target instanceof TaintedMob?null:target);}
     @Override public boolean doHurtTarget(Entity target){return !(target instanceof TaintedMob)&&super.doHurtTarget(target);}
+    @Override public boolean checkSpawnRules(LevelAccessor level,MobSpawnType reason){
+        return level.hasChunkAt(blockPosition())&&level.getMaxLocalRawBrightness(blockPosition())<=random.nextInt(7)&&level.getDifficulty()!=net.minecraft.world.Difficulty.PEACEFUL&&super.checkSpawnRules(level,reason);
+    }
     @Override public boolean isPushable(){return false;}
     @Override public boolean isIgnoringBlockTriggers(){return true;}
     @Override public boolean causeFallDamage(float distance,float multiplier,DamageSource source){return false;}

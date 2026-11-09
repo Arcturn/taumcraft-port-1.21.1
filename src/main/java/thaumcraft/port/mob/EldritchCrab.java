@@ -8,6 +8,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -34,6 +35,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.storage.loot.BuiltInLootTables;
+import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.phys.Vec3;
 import thaumcraft.port.content.PortSounds;
 import thaumcraft.port.warp.entity.EldritchMob;
@@ -57,6 +60,7 @@ public final class EldritchCrab extends Monster implements EldritchMob {
     public int getAttackTime(){return attackTime;}
     public int getRiding(){return getVehicle()==null?-1:getVehicle().getId();}
     @Override public boolean canPickUpLoot(){return false;}
+    @Override protected ResourceKey<LootTable> getDefaultLootTable(){return BuiltInLootTables.EMPTY;}
     @Override public int getArmorValue(){return hasHelm()?5:0;}
     @Override public boolean isAlliedTo(Entity other){return other instanceof EldritchCrab;}
     @Override public boolean canBeAffected(MobEffectInstance effect){return !effect.is(MobEffects.POISON)&&super.canBeAffected(effect);}

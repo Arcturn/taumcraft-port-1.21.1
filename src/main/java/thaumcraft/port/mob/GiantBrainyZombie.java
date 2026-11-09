@@ -30,8 +30,8 @@ public final class GiantBrainyZombie extends BrainyZombie {
     }
     @Override public EntityDimensions getDefaultDimensions(Pose pose){
         // The original updates collision size only while anger > 1, unlike its always-scaled model.
-        float scale=bodyScale>0?bodyScale:1;
-        return super.getDefaultDimensions(pose).scale(scale).withEyeHeight(1.74f*(1+getAnger())-(isBaby()?.81f:0));
+        var dimensions=bodyScale>1?EntityDimensions.scalable(.6f*bodyScale,1.95f*bodyScale):super.getDefaultDimensions(pose);
+        return dimensions.withEyeHeight(1.74f*(1+getAnger())-(isBaby()?.81f:0));
     }
     @Override public void onSyncedDataUpdated(EntityDataAccessor<?> key){super.onSyncedDataUpdated(key);if(ANGER.equals(key))refreshDimensions();}
 }

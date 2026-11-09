@@ -39,9 +39,15 @@ public class Taintacle extends Monster implements TaintedMob {
         super.tick();
         if(level().isClientSide){if(flailIntensity>1)flailIntensity=Math.max(1,flailIntensity-.01f);return;}
         if(!isAlive()||tickCount%20!=0)return;
-        if(!onTaint(level(),blockPosition()))hurt(damageSources().starve(),1);
+        if(!onTaint(level(),blockPosition()))decayDamage(damageSources().starve(),1);
         var target=getTarget();
         if(!isSmall()&&tickCount%40==0&&target!=null&&target.isAlive()&&distanceToSqr(target)>16&&distanceToSqr(target)<256&&hasLineOfSight(target))spawnTentacles(target);
+    }
+    /** The original damageEntity call bypassed hit cooldown and did not trigger death loot. */
+    protected void decayDamage(DamageSource source,float amount){
+        // NeoForge's actuallyHurt requires a damage container even outside the normal hurt path.
+        damageContainers.push(new net.neoforged.neoforge.common.damagesource.DamageContainer(source,amount));
+        try{actuallyHurt(source,amount);}finally{damageContainers.pop();}
     }
     /** Returns the created minion, or null when the target's terrain is unsuitable/unloaded. */
     public TaintacleSmall spawnTentacles(Entity target){return isSmall()?null:summonTentacle(this,target);}

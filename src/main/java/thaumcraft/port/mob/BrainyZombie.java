@@ -25,6 +25,7 @@ public class BrainyZombie extends Zombie {
     @Override protected void registerGoals(){super.registerGoals();targetSelector.addGoal(1,new HurtByTargetGoal(this));}
     @Override public int getArmorValue(){return super.getArmorValue()+1;}
     @Override protected boolean convertsInWater(){return false;}
+    @Override protected boolean isSunSensitive(){return !isBaby();}
     @Override protected void randomizeReinforcementsChance(){getAttribute(Attributes.SPAWN_REINFORCEMENTS_CHANCE).setBaseValue(0);}
     @Override protected ResourceKey<LootTable> getDefaultLootTable(){return ResourceKey.create(Registries.LOOT_TABLE,ResourceLocation.withDefaultNamespace("entities/zombie"));}
     @Override protected void dropCustomDeathLoot(ServerLevel level,DamageSource source,boolean recentlyHit){

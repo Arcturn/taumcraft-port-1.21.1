@@ -34,6 +34,7 @@ public final class InhabitedZombie extends Zombie implements EldritchMob {
     public static AttributeSupplier.Builder attributes(){return Zombie.createAttributes().add(Attributes.MAX_HEALTH,30).add(Attributes.ATTACK_DAMAGE,5).add(Attributes.SPAWN_REINFORCEMENTS_CHANCE,0);}
     @Override protected void registerGoals(){super.registerGoals();targetSelector.addGoal(1,new HurtByTargetGoal(this).setAlertOthers());targetSelector.addGoal(3,new NearestAttackableTargetGoal<>(this,Cultist.class,true));}
     @Override protected boolean convertsInWater(){return false;}
+    @Override protected boolean isSunSensitive(){return !isBaby();}
     @Override protected void randomizeReinforcementsChance(){getAttribute(Attributes.SPAWN_REINFORCEMENTS_CHANCE).setBaseValue(0);}
     @Override public boolean killedEntity(ServerLevel level,LivingEntity victim){return true;}
     @Override public SpawnGroupData finalizeSpawn(ServerLevelAccessor level,DifficultyInstance difficulty,MobSpawnType reason,SpawnGroupData group){
@@ -53,7 +54,7 @@ public final class InhabitedZombie extends Zombie implements EldritchMob {
         if(level() instanceof ServerLevel server){
             var crab=MobContent.ELDRITCH_CRAB.get().create(server);
             if(crab!=null){crab.moveTo(getX(),getEyeY(),getZ(),getYRot(),getXRot());crab.setHelm(true);server.addFreshEntity(crab);}
-            dropExperience();server.sendParticles(ParticleTypes.POOF,getX(),getY()+getBbHeight()/2,getZ(),20,getBbWidth(),getBbHeight()/2,getBbWidth(),.02);discard();
+            dropExperience(lastHurtByPlayer);server.sendParticles(ParticleTypes.POOF,getX(),getY()+getBbHeight()/2,getZ(),20,getBbWidth(),getBbHeight()/2,getBbWidth(),.02);discard();
         }
     }
     @Override public boolean checkSpawnRules(LevelAccessor level,MobSpawnType reason){return level().getEntitiesOfClass(InhabitedZombie.class,new AABB(getX(),getY(),getZ(),getX()+1,getY()+1,getZ()+1).inflate(32,16,32),e->e!=this).isEmpty()&&super.checkSpawnRules(level,reason);}
