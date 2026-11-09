@@ -1,8 +1,7 @@
 {
-  "render_type": "minecraft:cutout",
   "textures": {
-    "fibre": "thaumcraft:block/taint_fibres",
-    "particle": "thaumcraft:block/taint_fibres"
+    "particle": "thaumcraft:blocks/taint_fibres",
+    "crust": "thaumcraft:blocks/taint_fibres"
   },
   "elements": [
     {
@@ -13,17 +12,21 @@
       ],
       "to": [
         16,
-        0.1,
+        0.01,
         16
       ],
       "faces": {
         "up": {
-          "texture": "#fibre"
-        },
-        "down": {
-          "texture": "#fibre"
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#crust"
         }
       }
     }
-  ]
+  ],
+  "render_type": "minecraft:cutout"
 }

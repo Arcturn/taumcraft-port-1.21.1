@@ -1,28 +1,52 @@
 {
   "variants": {
-    "level=0": {
+    "level=0,covered=false": {
       "model": "thaumcraft:block/flux_goo_0"
     },
-    "level=1": {
+    "level=0,covered=true": {
+      "model": "thaumcraft:block/flux_goo_covered"
+    },
+    "level=1,covered=false": {
       "model": "thaumcraft:block/flux_goo_1"
     },
-    "level=2": {
+    "level=1,covered=true": {
+      "model": "thaumcraft:block/flux_goo_covered"
+    },
+    "level=2,covered=false": {
       "model": "thaumcraft:block/flux_goo_2"
     },
-    "level=3": {
+    "level=2,covered=true": {
+      "model": "thaumcraft:block/flux_goo_covered"
+    },
+    "level=3,covered=false": {
       "model": "thaumcraft:block/flux_goo_3"
     },
-    "level=4": {
+    "level=3,covered=true": {
+      "model": "thaumcraft:block/flux_goo_covered"
+    },
+    "level=4,covered=false": {
       "model": "thaumcraft:block/flux_goo_4"
     },
-    "level=5": {
+    "level=4,covered=true": {
+      "model": "thaumcraft:block/flux_goo_covered"
+    },
+    "level=5,covered=false": {
       "model": "thaumcraft:block/flux_goo_5"
     },
-    "level=6": {
+    "level=5,covered=true": {
+      "model": "thaumcraft:block/flux_goo_covered"
+    },
+    "level=6,covered=false": {
       "model": "thaumcraft:block/flux_goo_6"
     },
-    "level=7": {
+    "level=6,covered=true": {
+      "model": "thaumcraft:block/flux_goo_covered"
+    },
+    "level=7,covered=false": {
       "model": "thaumcraft:block/flux_goo_7"
+    },
+    "level=7,covered=true": {
+      "model": "thaumcraft:block/flux_goo_covered"
     }
   }
 }

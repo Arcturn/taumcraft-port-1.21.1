@@ -4246,5 +4246,8 @@
   "block.thaumcraft.banner_crimson_cult": "Знамя багрового культа",
   "item.thaumcraft.void_boots": "Пустотные ботинки",
   "entity.thaumcraft.cultist_leader.custom": "Претор %s — %s",
-  "entity.thaumcraft.eldritch_golem_orb": "Сфера потусторонней конструкции"
+  "entity.thaumcraft.eldritch_golem_orb": "Сфера потусторонней конструкции",
+  "block.thaumcraft.taint_geyser": "Заражённый гейзер",
+  "block.thaumcraft.taint_feature": "Разбухшее заражение",
+  "entity.thaumcraft.falling_taint": "Падающая заражённая корка"
 }

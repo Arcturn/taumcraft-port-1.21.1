@@ -111,5 +111,15 @@
     "bestia": 5,
     "volatus": 5,
     "ignis": 10
+  },
+  "item:thaumcraft:taint_geyser": {
+    "auram": 5,
+    "aqua": 5,
+    "vitium": 10
+  },
+  "item:thaumcraft:taint_feature": {
+    "auram": 5,
+    "bestia": 5,
+    "vitium": 10
   }
 }

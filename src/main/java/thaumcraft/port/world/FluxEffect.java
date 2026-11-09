@@ -2,15 +2,17 @@ package thaumcraft.port.world;
 import net.minecraft.world.effect.*;
 import net.minecraft.world.entity.LivingEntity;
 public final class FluxEffect extends MobEffect {
+    public static final net.minecraft.resources.ResourceKey<net.minecraft.world.damagesource.DamageType> TAINT_DAMAGE=net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE,net.minecraft.resources.ResourceLocation.parse("thaumcraft:taint"));
     private final boolean taint;
     public FluxEffect(boolean taint){super(MobEffectCategory.HARMFUL,taint?0x7c1689:0x665577);this.taint=taint;}
     @Override public String getDescriptionId(){return taint?"potion.flux_taint":"potion.infvisexhaust";}
     @Override public boolean shouldApplyEffectTickThisTick(int duration,int amplifier){return duration%Math.max(1,taint?40>>Math.min(amplifier,8):40)==0;}
     @Override public boolean applyEffectTick(LivingEntity target,int amplifier){
         if(target.level().isClientSide)return true;
-        if(taint){if(thaumcraft.port.champion.ChampionSystem.isTainted(target))target.heal(1);else if(!target.getType().is(net.minecraft.tags.EntityTypeTags.UNDEAD))target.hurt(target.damageSources().magic(),1);}
+        if(taint){if(thaumcraft.port.champion.ChampionSystem.isTainted(target))target.heal(1);else if(!target.getType().is(net.minecraft.tags.EntityTypeTags.UNDEAD))target.hurt(taintDamage(target),1);}
         else for(var e:target.level().getEntitiesOfClass(LivingEntity.class,target.getBoundingBox().inflate(4)))
             if(!e.hasEffect(WorldEntities.INFECTIOUS))e.addEffect(new MobEffectInstance(amplifier>0?WorldEntities.INFECTIOUS:WorldEntities.VIS_EXHAUST,6000,Math.max(0,amplifier-1)));
         return true;
     }
+    public static net.minecraft.world.damagesource.DamageSource taintDamage(LivingEntity target){return new net.minecraft.world.damagesource.DamageSource(target.registryAccess().lookupOrThrow(net.minecraft.core.registries.Registries.DAMAGE_TYPE).getOrThrow(TAINT_DAMAGE));}
 }

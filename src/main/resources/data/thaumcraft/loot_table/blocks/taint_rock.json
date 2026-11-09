@@ -6,12 +6,27 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thaumcraft:taint_rock",
-          "conditions": [
-            {
-              "condition": "minecraft:survives_explosion"
+          "name": "thaumcraft:taint_rock"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        },
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:silk_touch",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
             }
-          ]
+          }
         }
       ]
     }

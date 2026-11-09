@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "thaumcraft:block/log_taintwood_0"
-  }
+  "parent": "thaumcraft:block/log_taintwood"
 }

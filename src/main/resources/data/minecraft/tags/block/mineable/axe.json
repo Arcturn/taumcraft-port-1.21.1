@@ -23,6 +23,7 @@
     "thaumcraft:banner_green",
     "thaumcraft:banner_red",
     "thaumcraft:banner_black",
-    "#thaumcraft:crafting/axe"
+    "#thaumcraft:crafting/axe",
+    "thaumcraft:taint_log"
   ]
 }

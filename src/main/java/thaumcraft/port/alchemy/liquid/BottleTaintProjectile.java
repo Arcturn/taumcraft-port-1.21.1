@@ -11,8 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.HitResult;
-import thaumcraft.port.world.TaintSeed;
-import thaumcraft.port.world.ThaumicSlime;
+import thaumcraft.port.mob.TaintedMob;
 import thaumcraft.port.world.WorldContent;
 import thaumcraft.port.world.WorldEntities;
 
@@ -28,7 +27,7 @@ public final class BottleTaintProjectile extends ThrowableItemProjectile {
         if (level().isClientSide || isRemoved()) return;
         var box = new AABB(getX(), getY(), getZ(), getX(), getY(), getZ()).inflate(5);
         for (var living : level().getEntitiesOfClass(LivingEntity.class, box)) {
-            if (living instanceof TaintSeed || living instanceof ThaumicSlime || living.getType().is(EntityTypeTags.UNDEAD)) continue;
+            if (living instanceof TaintedMob || living.getType().is(EntityTypeTags.UNDEAD)) continue;
             living.addEffect(new MobEffectInstance(WorldEntities.TAINT, 100, 0, false, true));
         }
         for (int attempt = 0; attempt < 10; attempt++) {
@@ -40,7 +39,8 @@ public final class BottleTaintProjectile extends ThrowableItemProjectile {
         level().broadcastEntityEvent(this, (byte)3); discard();
     }
     private boolean placeGoo(BlockPos pos) {
-        if (!level().getBlockState(pos.below()).isFaceSturdy(level(), pos.below(), Direction.UP)
+        if (!level().hasChunkAt(pos)||!level().hasChunkAt(pos.below())||level().isOutsideBuildHeight(pos)
+                ||!level().getBlockState(pos.below()).isFaceSturdy(level(), pos.below(), Direction.UP)
                 || !level().getBlockState(pos).canBeReplaced()) return false;
         return level().setBlockAndUpdate(pos, WorldContent.block("flux_goo").defaultBlockState());
     }

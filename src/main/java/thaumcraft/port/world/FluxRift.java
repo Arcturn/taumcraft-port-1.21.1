@@ -95,10 +95,7 @@ public final class FluxRift extends Entity {
                 if(random.nextInt(5)==0)w.aspect(Aspect.FLUX);else w.aspect(Aspect.values()[random.nextInt(6)]);
                 if(l.hasChunkAt(w.blockPosition())&&l.noCollision(w)&&l.addFreshEntity(w))addStability(5);}
         }else if(choice<60){
-            if(!WorldConfig.TAINT.get()||TaintSystem.nearby(l,blockPosition()))return;
-            int x=(int)(getX()+random.nextGaussian()*5),z=(int)(getZ()+random.nextGaussian()*5);if(!l.hasChunk(x>>4,z>>4))return;
-            var seed=WorldEntities.PRIME.get().create(l);if(seed!=null){seed.moveTo(x+.5,l.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,x,z),z+.5,0,0);seed.boost=size();
-                if(l.noCollision(seed)&&l.addFreshEntity(seed)){AuraSystem.add(l,blockPosition(),size()/2f,true);discard();}}
+            trySpawnTaintSeed(new BlockPos((int)(getX()+random.nextGaussian()*5),(int)(getY()+random.nextGaussian()*5),(int)(getZ()+random.nextGaussian()*5)));
         }else if(choice<80){
             var targets=l.getEntitiesOfClass(LivingEntity.class,getBoundingBox().inflate(16));
             for(var target:targets)target.addEffect(new MobEffectInstance(WorldEntities.INFECTIOUS,3000,2));if(!targets.isEmpty())addStability(10);
@@ -106,6 +103,16 @@ public final class FluxRift extends Entity {
             var target=l.getNearestPlayer(this,16);if(target==null)return;
             var cloud=new AreaEffectCloud(l,target.getX(),target.getY(),target.getZ());cloud.setRadius(1+random.nextInt(3));cloud.setDuration(Math.max(20,Math.min(size(),120)*20));cloud.setParticle(ParticleTypes.WITCH);cloud.addEffect(new MobEffectInstance(WorldEntities.TAINT,100));l.addFreshEntity(cloud);addStability(10);
         }else collapse();
+    }
+    /** Source rift event: seed spacing, fluids and collision are checked before consuming the rift. */
+    public boolean trySpawnTaintSeed(BlockPos pos){
+        if(!(level() instanceof ServerLevel level)||!isAlive()||!WorldConfig.TAINT.get()||level.isOutsideBuildHeight(pos)||!level.hasChunkAt(pos))return false;
+        var seed=WorldEntities.PRIME.get().create(level);if(seed==null)return false;
+        seed.moveTo(pos.getX()+.5,pos.getY(),pos.getZ()+.5,random.nextInt(360),0);seed.boost=size();
+        var bounds=seed.getBoundingBox();
+        if(!level.hasChunksAt(BlockPos.containing(bounds.minX,bounds.minY,bounds.minZ),BlockPos.containing(bounds.maxX,bounds.maxY,bounds.maxZ))
+                ||!level.getWorldBorder().isWithinBounds(bounds)||!seed.checkSpawnRules(level,MobSpawnType.MOB_SUMMONED)||!seed.checkSpawnObstruction(level)||!level.addFreshEntity(seed))return false;
+        AuraSystem.add(level,blockPosition(),size()/2,true);discard();return true;
     }
     private void finish(ServerLevel l){
         int count=(int)Math.sqrt(maxSize);

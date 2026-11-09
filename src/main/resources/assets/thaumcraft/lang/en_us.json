@@ -4259,5 +4259,8 @@
   "block.thaumcraft.banner_crimson_cult": "Crimson Cult Banner",
   "item.thaumcraft.void_boots": "Void Boots",
   "entity.thaumcraft.cultist_leader.custom": "Praetor %s the %s",
-  "entity.thaumcraft.eldritch_golem_orb": "Eldritch Construct Orb"
+  "entity.thaumcraft.eldritch_golem_orb": "Eldritch Construct Orb",
+  "block.thaumcraft.taint_geyser": "Taint Geyser",
+  "block.thaumcraft.taint_feature": "Swollen Taint",
+  "entity.thaumcraft.falling_taint": "Falling Taint"
 }

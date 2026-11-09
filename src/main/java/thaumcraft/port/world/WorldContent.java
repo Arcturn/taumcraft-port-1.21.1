@@ -50,8 +50,12 @@ public final class WorldContent {
             String id="loot_"+container+"_"+rarity;
             add(id,()->new LootContainerBlock(container.equals("urn"),BlockBehaviour.Properties.of().strength(.15f).sound(container.equals("urn")?thaumcraft.port.content.PortSounds.URN:SoundType.WOOD).noOcclusion()));
         }
-        for(String kind:List.of("taint_fibre","taint_soil","taint_rock","taint_crust","taint_log"))
-            add(kind,()->new TaintBlock(kind,BlockBehaviour.Properties.of().strength(kind.equals("taint_rock")?1.5f:.5f).sound(thaumcraft.port.content.PortSounds.GORE).noOcclusion()));
+        add("taint_fibre",()->new TaintFibreBlock(BlockBehaviour.Properties.of().strength(1).sound(thaumcraft.port.content.PortSounds.GORE).noOcclusion()));
+        add("taint_log",()->new TaintLogBlock(BlockBehaviour.Properties.of().strength(3,60).sound(thaumcraft.port.content.PortSounds.GORE)));
+        for(String kind:List.of("taint_soil","taint_rock","taint_crust"))
+            add(kind,()->new TaintBlock(kind,BlockBehaviour.Properties.of().strength(10,60).sound(thaumcraft.port.content.PortSounds.GORE)));
+        add("taint_geyser",()->new TaintGeyserBlock(BlockBehaviour.Properties.of().strength(10,60).sound(thaumcraft.port.content.PortSounds.GORE)));
+        add("taint_feature",()->new TaintFeatureBlock(BlockBehaviour.Properties.of().strength(.1f,1.5f).noOcclusion().lightLevel(s->9)));
         add("flux_goo",()->new FluxGooBlock(BlockBehaviour.Properties.of().strength(100).sound(thaumcraft.port.content.PortSounds.GORE)));
         PortContent.ITEMS.registerSimpleItem("void_seed");
         for(String material:List.of("iron","gold","copper","cinnabar"))PortContent.ITEMS.registerSimpleItem("cluster_"+material);
